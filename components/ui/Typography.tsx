@@ -8,6 +8,8 @@ type TypographyProps = {
   variant?: TypographyVariant;
   children: ReactNode;
   className?: string;
+  letterSpacing?: string;
+  fontWeight?: string | number;
 };
 
 export function Typography({
@@ -15,6 +17,8 @@ export function Typography({
   variant = "base",
   children,
   className,
+  letterSpacing: customLetterSpacing,
+  fontWeight: customFontWeight,
 }: TypographyProps) {
   const fontSize = typography.fontSize[variant][0] as string;
   const fontConfig = typography.fontSize[variant][1] as {
@@ -25,8 +29,9 @@ export function Typography({
   const style = {
     fontSize: fontSize,
     lineHeight: fontConfig.lineHeight,
-    letterSpacing: fontConfig.letterSpacing,
+    letterSpacing: customLetterSpacing || fontConfig.letterSpacing,
     fontFamily: typography.fontFamily.sans.join(", "),
+    ...(customFontWeight && { fontWeight: customFontWeight }),
   };
 
   return (

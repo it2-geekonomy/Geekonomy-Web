@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black w-full relative">
-      <div className="px-4 sm:px-6 lg:px-10 py-4">
+      <div className="px-4 sm:px-6 lg:px-6 xl:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - Always on left */}
           <Link href="/" className="flex items-center gap-3 z-50" onClick={closeMenu}>
@@ -52,24 +52,24 @@ export default function Navbar() {
               alt="GEEKONOMY Logo"
               width={350}
               height={350}
-              className="object-contain"
+              className="object-contain lg:w-74 xl:w-full"
               priority
             />
           </Link>
 
           {/* Desktop Navigation - Hidden on mobile */}
-          <ul className="hidden lg:flex items-center gap-6 lg:gap-7 xl:gap-18 2xl:gap-24">
+          <ul className="hidden lg:flex items-center gap-6 lg:gap-7 xl:gap-12 2xl:gap-24">
             {NAVIGATION_ITEMS.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`font-medium uppercase transition-colors duration-200 ${
+                  className={`font-normal uppercase transition-colors duration-200 ${
                     item.isActive
                       ? "text-accent-green"
                       : "text-white hover:text-accent-green"
                   }`}
                 >
-                  <Typography as="span" variant="base">
+                  <Typography as="span" variant="base" className="font-normal">
                     {item.label}
                   </Typography>
                 </Link>
