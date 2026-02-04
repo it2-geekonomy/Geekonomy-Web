@@ -42,7 +42,7 @@ export default function FirstStepSection() {
           <Typography
             as="p"
             variant="base"
-            className="text-gray-400 max-w-lg mb-12 leading-relaxed"
+            className="text-gray-400 max-w-xl mb-12 leading-relaxed"
           >
             Just a clear discussion on where you are, where you want to go, and what actually needs to be built to get there.
           </Typography>
@@ -50,7 +50,7 @@ export default function FirstStepSection() {
           {/* Call-to-Action Button */}
           <Link
             href="/contact"
-            className="inline-block bg-[#6eaf4c] text-white px-8 py-4 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
+            className="inline-block bg-[#6eaf4c] text-white px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
           >
             <Typography as="span" variant="sm" className="font-normal">
               START A CONVERSATION
