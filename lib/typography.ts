@@ -23,47 +23,47 @@ export const typography = {
       { lineHeight: "1.5", letterSpacing: "0.025em" },
     ],
     base: [
-      "clamp(0.875rem, 0.825rem + 0.125vw, 1rem)",
+      "clamp(0.9375rem, 0.875rem + 0.15vw, 1.0625rem)",
       { lineHeight: "1.6", letterSpacing: "0" },
     ],
     lg: [
-      "clamp(1rem, 0.95rem + 0.125vw, 1.125rem)",
+      "clamp(1.125rem, 1rem + 0.5vw, 1.5rem)",
       { lineHeight: "1.6", letterSpacing: "-0.025em" },
     ],
     xl: [
-      "clamp(1.125rem, 1.075rem + 0.125vw, 1.25rem)",
+      "clamp(1.25rem, 1.125rem + 0.5vw, 1.75rem)",
       { lineHeight: "1.5", letterSpacing: "-0.025em" },
     ],
     "2xl": [
-      "clamp(1.25rem, 1.1rem + 0.25vw, 1.5rem)",
+      "clamp(1.5rem, 1.25rem + 1vw, 2.25rem)",
       { lineHeight: "1.4", letterSpacing: "-0.025em" },
     ],
     "3xl": [
-      "clamp(1.5rem, 1.35rem + 0.25vw, 1.875rem)",
+      "clamp(1.875rem, 1.5rem + 1.5vw, 3rem)",
       { lineHeight: "1.3", letterSpacing: "-0.05em" },
     ],
     "4xl": [
-      "clamp(1.75rem, 1.6rem + 0.25vw, 2.25rem)",
+      "clamp(2.25rem, 1.75rem + 2vw, 4rem)",
       { lineHeight: "1.2", letterSpacing: "-0.05em" },
     ],
     "5xl": [
-      "clamp(2rem, 1.7rem + 0.5vw, 3rem)",
+      "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
       { lineHeight: "1.1", letterSpacing: "-0.05em" },
     ],
     "6xl": [
-      "clamp(2.5rem, 2.2rem + 0.5vw, 3.75rem)",
+      "clamp(3.75rem, 2.75rem + 4vw, 7rem)",
       { lineHeight: "1.1", letterSpacing: "-0.05em" },
     ],
     "7xl": [
-      "clamp(3rem, 2.7rem + 0.5vw, 4.5rem)",
+      "clamp(4.5rem, 3.5rem + 5vw, 9rem)",
       { lineHeight: "1", letterSpacing: "-0.05em" },
     ],
     "8xl": [
-      "clamp(3.5rem, 3.2rem + 1vw, 6rem)",
+      "clamp(5.5rem, 4.5rem + 6vw, 11rem)",
       { lineHeight: "1", letterSpacing: "-0.05em" },
     ],
     "9xl": [
-      "clamp(4.5rem, 4.2rem + 1vw, 8rem)",
+      "clamp(3.5rem, 3rem + 8vw, 10rem)",
       { lineHeight: "1", letterSpacing: "-0.05em" },
     ],
   },
