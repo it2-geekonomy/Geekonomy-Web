@@ -69,7 +69,7 @@ export default function Navbar() {
                       : "text-white hover:text-accent-green"
                   }`}
                 >
-                  <Typography as="span" variant="lg">
+                  <Typography as="span" variant="base">
                     {item.label}
                   </Typography>
                 </Link>

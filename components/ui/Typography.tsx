@@ -23,14 +23,17 @@ export function Typography({
   };
 
   const style = {
-    fontSize,
+    fontSize: fontSize,
     lineHeight: fontConfig.lineHeight,
     letterSpacing: fontConfig.letterSpacing,
     fontFamily: typography.fontFamily.sans.join(", "),
   };
 
   return (
-    <Component style={style} className={className}>
+    <Component 
+      style={style} 
+      className={className}
+    >
       {children}
     </Component>
   );
