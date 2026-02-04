@@ -7,9 +7,9 @@ export default function DisconnectSection() {
   return (
     <section className="relative w-full bg-black py-10 lg:py-20">
       <div className="w-full px-4 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 xl:gap-16 lg:mx-10 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+10vw,16rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 xl:gap-16 lg:mx-8 xl:mx-[clamp(0.5rem,0.5rem+6vw,10rem)] 2xl:mx-[clamp(1rem,1rem+10vw,20rem)]">
           {/* Left Section - Main Content */}
-          <div className="lg:col-span-2">
+          <div>
             {/* Introductory Text */}
             <Typography
               as="p"
@@ -61,12 +61,12 @@ export default function DisconnectSection() {
           </div>
 
           {/* Right Section - The Geekonomy Approach Box */}
-          <div className="lg:col-span-1">
+          <div className="pt-[clamp(1rem,1rem+10vw,5rem)]">
             <div className="relative bg-black pt-8 px-8 pb-6 flex flex-col">
               {/* Top Left */}
-              <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#6eaf4c]" />
+              <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#6eaf4c]/50" />
               {/* Bottom Right */}
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#6eaf4c]" />
+              <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#6eaf4c]/50" />
               
               {/* Heading */}
               <Typography
@@ -89,9 +89,9 @@ export default function DisconnectSection() {
               {/* Call to Action */}
               <Link
                 href="/process"
-                className="text-[#6eaf4c] font-semibold hover:text-[#6eaf4c]/80 transition-colors duration-200 inline-flex items-center gap-2"
+                className="font-semibold text-[#6eaf4c]/80 transition-colors duration-200 inline-flex items-center gap-2"
               >
-                <Typography as="span" variant="sm" className="font-semibold">
+                <Typography as="span" variant="base" className="font-semibold">
                   SEE OUR PROCESS →
                 </Typography>
               </Link>

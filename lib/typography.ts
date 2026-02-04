@@ -23,7 +23,7 @@ export const typography = {
       { lineHeight: "1.5", letterSpacing: "0.025em" },
     ],
     base: [
-      "clamp(0.9375rem, 0.875rem + 0.15vw, 1.0625rem)",
+      "clamp(1rem, 1rem + 0.5vw, 1.2rem)",
       { lineHeight: "1.6", letterSpacing: "0" },
     ],
     lg: [
