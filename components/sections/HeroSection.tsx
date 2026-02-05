@@ -9,7 +9,7 @@ export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
   const [isClarityHovered, setIsClarityHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
+
   return (
     <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
       {/* Green gradient background from bottom-left to top-right */}
