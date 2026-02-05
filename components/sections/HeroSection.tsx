@@ -119,7 +119,7 @@ export default function HeroSection() {
                 className="font-bold text-white leading-[1.1]"
                 letterSpacing="-0.125em"
               >
-                NOT
+                OVER
               </Typography>
               <motion.div
                 className="inline-block"
