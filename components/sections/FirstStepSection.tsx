@@ -5,13 +5,11 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function FirstStepSection() {
   return (
-    <section className="relative w-full flex items-center justify-center bg-black py-10 lg:py-32">
+    <section className="relative w-full flex items-center justify-center bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col items-center text-center">
           {/* Vertical green line with gradient */}
           <div className="w-1 h-12 mb-4 bg-[linear-gradient(to_bottom,transparent,#6eaf4c)]" />
-
-          {/* "THE FIRST STEP" text */}
           <Typography
             as="p"
             variant="base"
