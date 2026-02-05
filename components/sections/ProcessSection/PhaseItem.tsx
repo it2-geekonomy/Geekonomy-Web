@@ -16,9 +16,10 @@ interface PhaseItemProps {
   phase: ProcessPhase;
   index: number;
   isActive: boolean;
+  isFilled: boolean;
 }
 
-export function PhaseItem({ phase, index, isActive }: PhaseItemProps) {
+export function PhaseItem({ phase, index, isActive, isFilled }: PhaseItemProps) {
   const baseDelay = index * ANIMATION_DELAYS.phaseStagger;
 
   return (
@@ -33,7 +34,7 @@ export function PhaseItem({ phase, index, isActive }: PhaseItemProps) {
         ease: ANIMATION_EASING,
       }}
     >
-      <PhaseMarker isActive={isActive} index={index} />
+      <PhaseMarker isActive={isActive} isFilled={isFilled} index={index} />
 
       <div>
         <motion.div
@@ -64,15 +65,27 @@ export function PhaseItem({ phase, index, isActive }: PhaseItemProps) {
             ease: ANIMATION_EASING,
           }}
         >
-          <Typography
-            as="h3"
-            variant="2xl"
-            className={`text-[#6FAF4E] mb-4 transition-all duration-300 ${
-              isActive ? "font-bold" : "font-normal"
-            }`}
+          <motion.span
+            className="inline-block"
+            animate={{
+              scale: isActive ? [1, 1.15, 1] : 1,
+            }}
+            transition={{
+              duration: 0.6,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            style={{ transformOrigin: "left center" }}
           >
-            {phase.name}
-          </Typography>
+            <Typography
+              as="h3"
+              variant="2xl"
+              className={`text-[#6FAF4E] mb-4 transition-all duration-300 ${
+                isActive ? "font-bold" : "font-normal"
+              }`}
+            >
+              {phase.name}
+            </Typography>
+          </motion.span>
         </motion.div>
         <KeyQuestion question={phase.keyQuestion} index={index} />
       </div>

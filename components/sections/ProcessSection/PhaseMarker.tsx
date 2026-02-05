@@ -9,14 +9,15 @@ import {
 
 interface PhaseMarkerProps {
   isActive: boolean;
+  isFilled: boolean;
   index: number;
 }
 
-export function PhaseMarker({ isActive, index }: PhaseMarkerProps) {
+export function PhaseMarker({ isActive, isFilled, index }: PhaseMarkerProps) {
   return (
     <motion.div
       className={`absolute left-1/2 -translate-x-[710%] w-3 h-3 rounded-full transition-colors duration-500 ${
-        isActive ? "bg-[#6eaf4c]" : "bg-white"
+        isFilled ? "bg-[#6eaf4c]" : "bg-white"
       }`}
       style={{
         left: "24px",
