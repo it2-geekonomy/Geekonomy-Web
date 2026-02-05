@@ -14,7 +14,7 @@ export default function ProcessSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-black py-20 lg:py-32"
+      className="relative w-full bg-black py-10 lg:py-32"
     >
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 w-full px-4 sm:px-6 lg:px-10 2xl:max-w-7xl 2xl:mx-auto">

@@ -55,29 +55,13 @@ export function PhaseItem({ phase, index, isActive }: PhaseItemProps) {
           </Typography>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 10, scale: 1 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          animate={{
-            scale: isActive ? [1, 1.15, 1] : 1,
-          }}
           transition={{
-            opacity: {
-              duration: ANIMATION_DURATIONS.normal,
-              delay: baseDelay + ANIMATION_DELAYS.titleOffset,
-              ease: ANIMATION_EASING,
-            },
-            y: {
-              duration: ANIMATION_DURATIONS.normal,
-              delay: baseDelay + ANIMATION_DELAYS.titleOffset,
-              ease: ANIMATION_EASING,
-            },
-            scale: {
-              duration: isActive ? 0.5 : 0.3,
-              ease: [0.16, 1, 0.3, 1],
-              repeat: isActive ? Infinity : 0,
-              repeatType: "reverse" as const,
-            },
+            duration: ANIMATION_DURATIONS.normal,
+            delay: baseDelay + ANIMATION_DELAYS.titleOffset,
+            ease: ANIMATION_EASING,
           }}
         >
           <Typography
