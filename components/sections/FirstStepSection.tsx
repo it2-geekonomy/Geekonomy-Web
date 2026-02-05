@@ -10,8 +10,6 @@ export default function FirstStepSection() {
         <div className="flex flex-col items-center text-center">
           {/* Vertical green line with gradient */}
           <div className="w-1 h-12 mb-4 bg-[linear-gradient(to_bottom,transparent,#6eaf4c)]" />
-
-          {/* "THE FIRST STEP" text */}
           <Typography
             as="p"
             variant="base"
