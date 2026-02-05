@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Green gradient background from bottom-left to top-right */}
       <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_top_right,transparent,transparent,rgba(34,197,94,0.1))]" />
       
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-8 lg:py-32">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-8 lg:py-30">
         <div className="lg:pl-[clamp(1rem,1rem+8vw,10rem)] xl:pl-[clamp(1rem,1rem+12vw,16rem)]">
           {/* Introductory text with green line */}
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-4 mb-6 xl:mb-10">
