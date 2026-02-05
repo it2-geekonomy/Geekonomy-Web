@@ -35,3 +35,27 @@ export const PROCESS_PHASES: readonly ProcessPhase[] = [
     keyQuestion: "How do we execute with precision while maintaining agility for change?",
   },
 ] as const;
+
+export interface Service {
+  number: string;
+  name: string;
+  description: string;
+}
+
+export const SERVICES: readonly Service[] = [
+  {
+    number: "01",
+    name: "Brand Foundry",
+    description: "We help businesses define how they should be seen, understood and remembered before a single design decision is made.",
+  },
+  {
+    number: "02",
+    name: "Code Craft",
+    description: "We design and build websites, applications and custom systems engineered for performance, scalability and longevity",
+  },
+  {
+    number: "03",
+    name: "Digi 360",
+    description: "We create focused growth strategies that prioritise meaningful outcomes over vanity metrics",
+  },
+] as const;
