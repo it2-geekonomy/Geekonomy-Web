@@ -33,8 +33,16 @@ export default function ProcessSection() {
                   PROCESS_PHASES.length - 1
                 );
                 
-                // Only the current phase should be active
+                // Phase is active if it's the current phase
                 const isActive = index === currentPhaseIndex;
+                
+                // Phase is filled if scroll progress has passed its threshold
+                // Divide scroll into equal segments: 0-25%, 25-50%, 50-75%, 75-100%
+                // Each phase fills when entering its segment
+                const segmentSize = 1 / PROCESS_PHASES.length; // 0.25 for 4 phases
+                const phaseThreshold = index * segmentSize;
+                // Fill when scroll progress enters this phase's segment
+                const isFilled = scrollProgress >= phaseThreshold;
 
                 return (
                   <PhaseItem
@@ -42,6 +50,7 @@ export default function ProcessSection() {
                     phase={phase}
                     index={index}
                     isActive={isActive}
+                    isFilled={isFilled}
                   />
                 );
               })}

@@ -7,6 +7,8 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isClarityHovered, setIsClarityHovered] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   return (
     <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
@@ -25,15 +27,89 @@ export default function HeroSection() {
 
           {/* Main Heading */}
           <div className="mb-5">
-            <Typography
-              as="h1"
-              variant="3xl"
-              className="text-[#6FAF4E] mb-6 leading-[1.1] text-center lg:text-left"
-              letterSpacing="1em"
-              fontWeight={275}
-            >
-              CLARITY
-            </Typography>
+            <div className="text-center lg:text-left relative">
+              <motion.div
+                className="relative inline-block cursor-pointer"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ 
+                  opacity: 1, 
+                  scale: 1,
+                }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ 
+                  duration: 1,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                onMouseEnter={() => setIsClarityHovered(true)}
+                onMouseLeave={() => {
+                  setIsClarityHovered(false);
+                  setMousePosition({ x: 0, y: 0 });
+                }}
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  setMousePosition({
+                    x: e.clientX - rect.left,
+                    y: e.clientY - rect.top,
+                  });
+                }}
+              >
+                <Typography
+                  as="h1"
+                  variant="3xl"
+                  className="text-[#6FAF4E] mb-6 leading-[1.1] relative"
+                  letterSpacing="1em"
+                  fontWeight={275}
+                >
+                  CLARITY
+                </Typography>
+                {/* Shine sweep effect - on enter */}
+                <motion.div
+                  className="absolute inset-0 pointer-events-none"
+                  initial={{ x: "-100%", opacity: 0 }}
+                  whileInView={{ x: "200%", opacity: [0, 1, 0] }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{
+                    delay: 0.6,
+                    duration: 1.5,
+                    ease: "easeInOut",
+                  }}
+                  style={{
+                    background: "linear-gradient(90deg, transparent, rgba(110, 175, 78, 0.6), transparent)",
+                    filter: "blur(15px)",
+                    transform: "skewX(-25deg)",
+                    width: "50%",
+                    height: "100%",
+                  }}
+                />
+                {/* Shine effect - on hover at mouse position */}
+                {isClarityHovered && (
+                  <motion.div
+                    className="absolute pointer-events-none"
+                    animate={{ 
+                      x: mousePosition.x,
+                      y: mousePosition.y,
+                      opacity: 0.8,
+                      scale: 1.5,
+                    }}
+                    transition={{
+                      x: { type: "spring", stiffness: 500, damping: 30 },
+                      y: { type: "spring", stiffness: 500, damping: 30 },
+                      opacity: { duration: 0.2 },
+                      scale: { duration: 0.2 },
+                    }}
+                    style={{
+                      left: 0,
+                      top: 0,
+                      width: "120px",
+                      height: "120px",
+                      background: "radial-gradient(circle, rgba(110, 175, 78, 0.7), transparent 70%)",
+                      filter: "blur(25px)",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  />
+                )}
+              </motion.div>
+            </div>
             {/* Gray horizontal line */}
             <div className="h-px w-84 sm:w-95 md:w-120 lg:w-130 xl:w-140 bg-[#414340] mb-3 mx-auto lg:mx-0" />
             <div className="flex items-baseline gap-18 justify-center lg:justify-start">
