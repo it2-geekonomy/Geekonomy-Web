@@ -7,8 +7,6 @@ import { ProcessLeftSection } from "./ProcessSection/ProcessLeftSection";
 import { TimelineLine } from "./ProcessSection/TimelineLine";
 import { PhaseItem } from "./ProcessSection/PhaseItem";
 
-const ACTIVE_THRESHOLD = 0.2;
-
 export default function ProcessSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const scrollProgress = useScrollProgress(sectionRef);
@@ -29,9 +27,14 @@ export default function ProcessSection() {
             {/* Phases */}
             <div className="relative pl-20 space-y-8 md:space-y-16">
               {PROCESS_PHASES.map((phase, index) => {
-                const phaseProgress = (index + 1) / PROCESS_PHASES.length;
-                const isActive =
-                  scrollProgress >= phaseProgress - ACTIVE_THRESHOLD;
+                // Calculate which phase the scroll progress is currently in
+                const currentPhaseIndex = Math.min(
+                  Math.floor(scrollProgress * PROCESS_PHASES.length),
+                  PROCESS_PHASES.length - 1
+                );
+                
+                // Only the current phase should be active
+                const isActive = index === currentPhaseIndex;
 
                 return (
                   <PhaseItem
