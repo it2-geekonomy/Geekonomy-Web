@@ -1,5 +1,6 @@
 import HeroSection from "@/components/sections/HeroSection";
 import DisconnectSection from "@/components/sections/DisconnectSection";
+import ProcessSection from "@/components/sections/ProcessSection";
 import FirstStepSection from "@/components/sections/FirstStepSection";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-black">
       <HeroSection />
       <DisconnectSection />
+      <ProcessSection />
       <FirstStepSection />
     </main>
   );
