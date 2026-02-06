@@ -48,7 +48,7 @@ export default function FirstStepSection() {
           {/* Call-to-Action Button */}
           <Link
             href="/contact"
-            className="inline-block bg-[#6eaf4c] text-white px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
+            className="inline-block bg-[#6eaf4c]/80 text-white px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
           >
             <Typography as="span" variant="sm" className="font-normal">
               START A CONVERSATION
