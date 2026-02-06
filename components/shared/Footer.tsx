@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-22">
 
           {/* Logo */}
-          <div className="flex flex-col items-center justify-center sm:col-span-2 lg:col-span-1 text-center md:text-left relative translate-x-0 lg:translate-x-20 pr-0 lg:pr-8">
+          <div className="flex flex-col items-center justify-center sm:col-span-2 lg:col-span-1 text-center md:text-left relative pl-4 lg:pr-8">
             <div className="hidden lg:block absolute -right-6 top-0 bottom-0 w-[2px] bg-gray-700" />
             <div className="mb-0 sm:mb-2 lg:mb-8">
               <Link href="/" className="inline-flex items-center justify-center w-full">
