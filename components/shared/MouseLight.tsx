@@ -26,12 +26,37 @@ export default function MouseLight() {
     // Only add mouse event listeners on desktop
     if (!isDesktop) return;
 
+    const isOverVisualElement = (x: number, y: number): boolean => {
+      const element = document.elementFromPoint(x, y);
+      if (!element) return false;
+
+      // Check if element is an image, map, or has background image
+      const tagName = element.tagName.toLowerCase();
+      const isImage = tagName === 'img' || tagName === 'picture' || tagName === 'map';
+      
+      // Check if element or parent has background image
+      const hasBackgroundImage = (el: Element | null): boolean => {
+        if (!el) return false;
+        const style = window.getComputedStyle(el);
+        const bgImage = style.backgroundImage;
+        if (bgImage && bgImage !== 'none' && bgImage !== 'initial') {
+          return true;
+        }
+        return hasBackgroundImage(el.parentElement);
+      };
+
+      return isImage || hasBackgroundImage(element);
+    };
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX,
         y: e.clientY,
       });
-      setIsVisible(true);
+
+      // Hide if over images or maps, show otherwise
+      const overVisual = isOverVisualElement(e.clientX, e.clientY);
+      setIsVisible(!overVisual);
     };
 
     const handleMouseLeave = () => {
