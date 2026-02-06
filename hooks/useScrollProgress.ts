@@ -2,6 +2,7 @@ import { useEffect, useState, RefObject } from "react";
 
 /**
  * Custom hook to calculate scroll progress for a section
+ * Starts filling when section reaches middle of viewport (from top or bottom)
  * @param sectionRef - Reference to the section element
  * @returns Progress value between 0 and 1
  */
@@ -13,21 +14,33 @@ export function useScrollProgress(sectionRef: RefObject<HTMLElement | null>): nu
       if (!sectionRef.current) return;
 
       const section = sectionRef.current;
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
+      const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      const scrollY = window.scrollY;
-
-      // Calculate when section enters viewport
-      const sectionStart = sectionTop - windowHeight;
-      const sectionEnd = sectionTop + sectionHeight;
-
-      // Calculate progress: 0 when section enters, 1 when fully scrolled
+      const sectionHeight = rect.height;
+      
+      // Middle of the viewport
+      const viewportMiddle = windowHeight / 2;
+      
+      // Section's top and bottom positions relative to viewport
+      const sectionTop = rect.top;
+      const sectionBottom = rect.bottom;
+      
+      // Start filling when section top reaches middle of viewport
+      // Complete filling when section bottom reaches middle of viewport
       let progress = 0;
-      if (scrollY >= sectionStart) {
-        const scrolled = scrollY - sectionStart;
-        const totalScroll = sectionEnd - sectionStart;
-        progress = Math.min(1, scrolled / totalScroll);
+      
+      // When section top is above middle and section bottom is below middle
+      if (sectionTop <= viewportMiddle && sectionBottom >= viewportMiddle) {
+        // Calculate progress: 0 when top reaches middle, 1 when bottom reaches middle
+        const distanceFromMiddle = viewportMiddle - sectionTop;
+        const totalDistance = sectionHeight;
+        progress = Math.min(1, Math.max(0, distanceFromMiddle / totalDistance));
+      } else if (sectionTop < viewportMiddle && sectionBottom < viewportMiddle) {
+        // Section has fully passed the middle point (scrolled past)
+        progress = 1;
+      } else if (sectionTop > viewportMiddle && sectionBottom > viewportMiddle) {
+        // Section hasn't reached the middle point yet
+        progress = 0;
       }
 
       setScrollProgress(progress);
