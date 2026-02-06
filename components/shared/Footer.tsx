@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-black w-full border-t-2 border-gray-600">
       <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-22">
 
           {/* Logo */}
           <div className="flex flex-col items-center justify-center sm:col-span-2 lg:col-span-1 text-center md:text-left relative translate-x-0 lg:translate-x-20 pr-0 lg:pr-8">
@@ -28,27 +28,30 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-
           {/* WHAT WE DO */}
-          <div className="flex flex-col relative items-center sm:items-center text-left sm:text-left sm:border-r sm:border-gray-700 lg:border-none sm:px-18 lg:px-20">
+          <div
+            className="flex flex-col relative items-center sm:items-start text-center sm:text-left sm:border-r sm:border-gray-700 lg:border-none sm:px-6 lg:px-12 lg:translate-x-8 mt-0 lg:mt-8"
+          >
+            {/* Divider for desktop */}
             <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[2px] bg-gray-700" />
 
+            {/* Header */}
             <Typography
               as="h3"
               variant="base"
-              className="uppercase mb-4 text-white text-left relative
-                after:block after:h-[2px] after:w-full after:bg-white after:mt-2 sm:after:hidden font-light text-xs sm:text-sm md:text-base lg:text-lg"
+              className="uppercase mb-4 text-white relative
+      after:block after:h-[2px] after:w-full after:bg-white after:mt-2 sm:after:hidden font-light text-xs sm:text-sm md:text-base lg:text-lg"
             >
               WHAT WE DO
             </Typography>
 
+            {/* Nav items */}
             <nav>
-              <ul className="flex flex-col gap-5 items-start">
+              <ul className="flex flex-col gap-5 items-start translate-x-8 sm:-translate-x-0">
                 {FOOTER_NAV_ITEMS.map((item) => (
                   <li key={item.href}>
                     <Link href={item.href} className="uppercase">
                       <Typography
-                        as="span"
                         variant="base"
                         className="font-light text-white hover:text-[#6FAF4E] transition-colors duration-200"
                       >
@@ -59,7 +62,6 @@ export default function Footer() {
                 ))}
               </ul>
             </nav>
-
           </div>
 
           {/* ADDRESS */}

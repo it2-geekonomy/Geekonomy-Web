@@ -39,12 +39,12 @@ export default function IndustriesSection() {
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Logo - slides in on hover */}
-              <div className="absolute bottom-6 left-6 z-10 opacity-0 translate-x-[-20px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+              <div className="absolute bottom-4 left-6 z-10 opacity-0 translate-x-[-20px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                 <Image
                   src={item.logo}
                   alt={item.name}
-                  width={120}
-                  height={60}
+                  width={item.width}
+                  height={item.height}
                   className="object-contain"
                 />
               </div>

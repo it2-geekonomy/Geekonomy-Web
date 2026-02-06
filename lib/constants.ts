@@ -10,8 +10,7 @@ export const NAVIGATION_ITEMS = [
 export const FOOTER_NAV_ITEMS = [
   { label: "INDUSTRIES", href: "/industries" },
   { label: "OUR WORK", href: "/our-work" },
-  { label: "ABOUT ", href: "/about" },
-  { label: "GEEKONOMY", href: "/geekonomy" },
+  { label: "ABOUT GEEKONOMY", href: "/about" },
   { label: "CAREER", href: "/career" },
   { label: "BLOGS", href: "/blogs" },
   { label: "CONTACT US", href: "/contact" },
@@ -56,29 +55,37 @@ export const PROCESS_PHASES: readonly ProcessPhase[] = [
 export const HEADING_TEXT =
   "Over the years, Geekonomy has worked across industries from real estate and manufacturing to education, automotive and enterprise services";
 
-
 export const CLIENTS = [
   {
     name: "DivyaSree",
-    logo: "/Logo.png",
+    logo: "/IndustryServicesImages/divyasreelogo.png",
     image: "/IndustryservicesImages/I1.webp",
+    width: 180,
+    height: 100,
   },
   {
     name: "Musashi",
-    logo: "/Logo.png",
+    logo: "/IndustryServicesImages/mushashilogo.png",
     image: "/IndustryservicesImages/I2.webp",
+    width: 130,
+    height: 50,
   },
   {
     name: "Hindustan Power",
-    logo: "/Logo.png",
+    logo: "/IndustryServicesImages/hindusthanlogo.png",
     image: "/IndustryservicesImages/I3.webp",
+    width: 240,
+    height: 100,
   },
   {
     name: "VST Group",
-    logo: "/Logo.png",
+    logo: "/IndustryServicesImages/VSTlogo.png",
     image: "/IndustryservicesImages/I4.webp",
+    width: 200,
+    height: 140,
   },
 ];
+
 export interface Service {
   number: string;
   name: string;
