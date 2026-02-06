@@ -30,22 +30,59 @@ export default function MouseLight() {
       const element = document.elementFromPoint(x, y);
       if (!element) return false;
 
-      // Check if element is an image, map, or has background image
+      // Check if directly over img, picture, map, or iframe (for maps)
       const tagName = element.tagName.toLowerCase();
-      const isImage = tagName === 'img' || tagName === 'picture' || tagName === 'map';
+      if (tagName === 'img' || tagName === 'picture' || tagName === 'map' || tagName === 'iframe') {
+        return true;
+      }
+
+      // Check if element has object-cover/object-contain (Next.js Image with fill prop)
+      const classList = element.classList;
+      if (classList && (classList.contains('object-cover') || classList.contains('object-contain'))) {
+        return true;
+      }
+
+      // Traverse up the DOM tree to find image/map containers
+      let current: Element | null = element;
+      let depth = 0;
+      const maxDepth = 6; // Increased for Next.js Image nested structure
       
-      // Check if element or parent has background image
-      const hasBackgroundImage = (el: Element | null): boolean => {
-        if (!el) return false;
-        const style = window.getComputedStyle(el);
-        const bgImage = style.backgroundImage;
-        if (bgImage && bgImage !== 'none' && bgImage !== 'initial') {
+      while (current && depth < maxDepth) {
+        const currentTag = current.tagName.toLowerCase();
+        
+        // Check for iframe, img, picture, map
+        if (currentTag === 'iframe' || currentTag === 'img' || currentTag === 'picture' || currentTag === 'map') {
           return true;
         }
-        return hasBackgroundImage(el.parentElement);
-      };
 
-      return isImage || hasBackgroundImage(element);
+        // Check if current element has object-cover/object-contain (Next.js Image)
+        const currentClasses = current.classList;
+        if (currentClasses && (currentClasses.contains('object-cover') || currentClasses.contains('object-contain'))) {
+          // If element has these classes, it's definitely an image
+          return true;
+        }
+
+        // Check if we're inside an image container - verify the image actually contains our element
+        const images = current.querySelectorAll('img, iframe, picture');
+        for (const img of images) {
+          // Check if the image element or its parent contains our current element
+          if (img.contains(element) || img.parentElement?.contains(element)) {
+            return true;
+          }
+        }
+
+        // Check for background image (excluding gradients)
+        const style = window.getComputedStyle(current);
+        const bgImage = style.backgroundImage;
+        if (bgImage && bgImage !== 'none' && bgImage !== 'initial' && bgImage !== '' && !bgImage.includes('gradient')) {
+          return true;
+        }
+
+        current = current.parentElement;
+        depth++;
+      }
+
+      return false;
     };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -54,8 +91,9 @@ export default function MouseLight() {
         y: e.clientY,
       });
 
-      // Hide if over images or maps, show otherwise
+      // Check if over visual element
       const overVisual = isOverVisualElement(e.clientX, e.clientY);
+      // Always update visibility - show when NOT over visual, hide when over visual
       setIsVisible(!overVisual);
     };
 
