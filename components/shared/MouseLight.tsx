@@ -6,8 +6,26 @@ import { motion } from "framer-motion";
 export default function MouseLight() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    // Check if screen width is above 1024px (desktop)
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth > 1024);
+    };
+
+    checkDesktop();
+    window.addEventListener("resize", checkDesktop);
+
+    return () => {
+      window.removeEventListener("resize", checkDesktop);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Only add mouse event listeners on desktop
+    if (!isDesktop) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX,
@@ -27,9 +45,9 @@ export default function MouseLight() {
       window.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []);
+  }, [isDesktop]);
 
-  if (!isVisible) return null;
+  if (!isVisible || !isDesktop) return null;
 
   return (
     <motion.div
@@ -45,10 +63,10 @@ export default function MouseLight() {
         damping: 30,
       }}
       style={{
-        width: "200px",
-        height: "200px",
+        width: "150px",
+        height: "150px",
         background: "radial-gradient(circle, rgba(110, 175, 78, 0.7), transparent 70%)",
-        filter: "blur(50px)",
+        filter: "blur(40px)",
         transform: "translate(-50%, -50%)",
       }}
     />
