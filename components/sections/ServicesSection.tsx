@@ -66,7 +66,7 @@ export default function ServicesSection() {
                 key={service.number}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className={`relative bg-black p-6 lg:p-6 xl:p-8 flex flex-col transition-all duration-300 ${
+                className={`relative bg-black p-6 lg:p-6 xl:p-8 flex flex-col transition-all duration-300 cursor-pointer ${
                   hoveredIndex === index
                     ? "scale-105 z-10"
                     : hoveredIndex !== null
