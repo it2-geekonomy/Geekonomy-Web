@@ -10,7 +10,7 @@ export const NAVIGATION_ITEMS = [
 export const FOOTER_NAV_ITEMS = [
   { label: "INDUSTRIES", href: "/industries" },
   { label: "OUR WORK", href: "/our-work" },
-  { label: "ABOUT", href: "/about" },
+  { label: "ABOUT ", href: "/about" },
   { label: "GEEKONOMY", href: "/geekonomy" },
   { label: "CAREER", href: "/career" },
   { label: "BLOGS", href: "/blogs" },
@@ -52,3 +52,30 @@ export const PROCESS_PHASES: readonly ProcessPhase[] = [
     keyQuestion: "How do we execute with precision while maintaining agility for change?",
   },
 ] as const;
+
+export const HEADING_TEXT =
+  "Over the years, Geekonomy has worked across industries from real estate and manufacturing to education, automotive and enterprise services";
+
+
+export const CLIENTS = [
+  {
+    name: "DivyaSree",
+    logo: "/Logo.png",
+    image: "/IndustryservicesImages/I1.webp",
+  },
+  {
+    name: "Musashi",
+    logo: "/Logo.png",
+    image: "/IndustryservicesImages/I2.webp",
+  },
+  {
+    name: "Hindustan Power",
+    logo: "/Logo.png",
+    image: "/IndustryservicesImages/I3.webp",
+  },
+  {
+    name: "VST Group",
+    logo: "/Logo.png",
+    image: "/IndustryservicesImages/I4.webp",
+  },
+];
