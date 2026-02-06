@@ -48,6 +48,25 @@ export default function HeroSection() {
                 >
                   CLARITY
                 </Typography>
+                {/* Shine sweep effect - on enter */}
+                <motion.div
+                  className="absolute inset-0 pointer-events-none"
+                  initial={{ x: "-100%", opacity: 0 }}
+                  whileInView={{ x: "200%", opacity: [0, 1, 0] }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{
+                    delay: 0.6,
+                    duration: 1.5,
+                    ease: "easeInOut",
+                  }}
+                  style={{
+                    background: "linear-gradient(90deg, transparent, rgba(110, 175, 78, 0.6), transparent)",
+                    filter: "blur(15px)",
+                    transform: "skewX(-25deg)",
+                    width: "50%",
+                    height: "100%",
+                  }}
+                />
               </motion.div>
             </div>
             {/* Gray horizontal line */}
@@ -187,7 +206,7 @@ export default function HeroSection() {
           <div className="relative lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 w-full lg:w-auto text-center lg:text-left">
             <Link
               href="/contact"
-              className="inline-block bg-[#6eaf4c] text-white px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
+              className="inline-block bg-[#6FAF4E]/80 text-white px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
             >
               <Typography as="span" variant="sm" className="font-normal">
                 START A CONVERSATION
