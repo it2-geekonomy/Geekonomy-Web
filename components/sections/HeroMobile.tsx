@@ -20,7 +20,7 @@ export default function HeroMobile() {
       }}
     >
       {/* Dark olive green rounded rectangle container - positioned slightly to the right */}
-      <div className="relative mr-4 min-h-[85vh] bg-[#6FAF4E66] rounded-tr-4xl rounded-br-4xl p-6 sm:p-8 flex flex-col justify-between">
+      <div className="relative mr-4 min-h-[85vh] bg-[#6FAF4E66] rounded-tr-4xl rounded-br-4xl p-6 sm:p-8 flex flex-col space-y-5 sm:space-y-8 md:space-y-10">
         {/* Top section with green line and intro text */}
         <div className="flex items-center gap-3 mb-4 pt-6">
           <div className="h-1 w-12 bg-[#6FAF4E]" />
