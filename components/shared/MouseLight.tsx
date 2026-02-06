@@ -45,8 +45,8 @@ export default function MouseLight() {
         damping: 30,
       }}
       style={{
-        width: "250px",
-        height: "250px",
+        width: "200px",
+        height: "200px",
         background: "radial-gradient(circle, rgba(110, 175, 78, 0.7), transparent 70%)",
         filter: "blur(50px)",
         transform: "translate(-50%, -50%)",
