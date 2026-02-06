@@ -2,7 +2,7 @@ export const NAVIGATION_ITEMS = [
   { label: "HOME", href: "/", isActive: false },
   { label: "WHAT WE DO", href: "/what-we-do", isActive: false },
   { label: "HOW WE WORK", href: "/how-we-work", isActive: false },
-  { label: "PROOF", href: "/proof", isActive: false },
+  { label: "SUCCESS LAB", href: "/proof", isActive: false },
   { label: "ABOUT", href: "/about", isActive: false },
   { label: "CONTACT", href: "/contact", isActive: false },
 ] as const;
@@ -79,3 +79,26 @@ export const CLIENTS = [
     image: "/IndustryservicesImages/I4.webp",
   },
 ];
+export interface Service {
+  number: string;
+  name: string;
+  description: string;
+}
+
+export const SERVICES: readonly Service[] = [
+  {
+    number: "01",
+    name: "Brand Foundry",
+    description: "We help businesses define how they should be seen, understood and remembered before a single design decision is made.",
+  },
+  {
+    number: "02",
+    name: "Code Craft",
+    description: "We design and build websites, applications and custom systems engineered for performance, scalability and longevity",
+  },
+  {
+    number: "03",
+    name: "Digi 360",
+    description: "We create focused growth strategies that prioritise meaningful outcomes over vanity metrics",
+  },
+] as const;

@@ -5,7 +5,7 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function DisconnectSection() {
   return (
-    <section className="relative w-full bg-black py-10 lg:py-20">
+    <section className="relative w-full bg-black py-10 lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 xl:gap-16 lg:mx-8 xl:mx-[clamp(0.5rem,0.5rem+6vw,10rem)] 2xl:mx-[clamp(1rem,1rem+10vw,20rem)]">
           {/* Left Section - Main Content */}
@@ -39,21 +39,21 @@ export default function DisconnectSection() {
 
             {/* Bullet Points */}
             <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-[#6eaf4c]" />
-                <Typography as="p" variant="base" className="text-white">
+              <div className="flex items-start gap-4">
+                <div className="h-px w-8 bg-[#6eaf4c] shrink-0 mt-2" />
+                <Typography as="p" variant="base" className="text-white flex-1">
                   That's where things slow down.
                 </Typography>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-[#6eaf4c]" />
-                <Typography as="p" variant="base" className="text-white">
+              <div className="flex items-start gap-4">
+                <div className="h-px w-8 bg-[#6eaf4c] shrink-0 mt-2" />
+                <Typography as="p" variant="base" className="text-white flex-1">
                   That's where money leaks.
                 </Typography>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-[#6eaf4c]" />
-                <Typography as="p" variant="base" className="text-white">
+              <div className="flex items-start gap-4">
+                <div className="h-px w-8 bg-[#6eaf4c] shrink-0 mt-2" />
+                <Typography as="p" variant="base" className="text-white flex-1">
                   That's where growth becomes unpredictable.
                 </Typography>
               </div>
@@ -61,7 +61,7 @@ export default function DisconnectSection() {
           </div>
 
           {/* Right Section - The Geekonomy Approach Box */}
-          <div className="pt-[clamp(1rem,1rem+10vw,5rem)]">
+          <div className="sm:pt-[clamp(1rem,1rem+10vw,5rem)]">
             <div className="relative bg-black pt-8 px-8 pb-6 flex flex-col">
               {/* Top Left */}
               <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#6eaf4c]/50" />
