@@ -36,14 +36,16 @@ export default function Footer() {
             <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[2px] bg-gray-700" />
 
             {/* Header */}
-            <Typography
-              as="h3"
-              variant="base"
-              className="uppercase mb-4 text-white relative
-      after:block after:h-[2px] after:w-full after:bg-white after:mt-2 sm:after:hidden font-light text-xs sm:text-sm md:text-base lg:text-lg"
-            >
-              WHAT WE DO
-            </Typography>
+            <Link href="/what-we-do">
+              <Typography
+                as="h3"
+                variant="base"
+                className="uppercase mb-4 text-white relative
+      after:block after:h-[2px] after:w-full after:bg-white after:mt-2 sm:after:hidden font-light text-xs sm:text-sm md:text-base lg:text-lg hover:text-[#6FAF4E] transition-colors duration-200 cursor-pointer"
+              >
+                WHAT WE DO
+              </Typography>
+            </Link>
 
             {/* Nav items */}
             <nav>
