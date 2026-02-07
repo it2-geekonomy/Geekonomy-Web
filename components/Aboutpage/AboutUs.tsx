@@ -10,7 +10,7 @@ export default function AboutUs() {
                 <Typography
                     as="h1"
                     variant="5xl"
-                    className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+                    className="font-bold"
                 >
                     ABOUT US
                 </Typography>
@@ -21,7 +21,7 @@ export default function AboutUs() {
                 <Typography
                     as="p"
                     variant="2xl"
-                    className="text-white font-light leading-relaxed text-left text-base sm:text-lg md:text-xl lg:text-2xl"
+                    className="text-white font-light"
                 >
                     {/* Wrap in a span and force break at lg */}
                     <span className="lg:block">
@@ -37,7 +37,7 @@ export default function AboutUs() {
                     <Typography
                         as="p"
                         variant="base"
-                        className="text-[#A0A0A0] font-light leading-relaxed text-left text-sm sm:text-base md:text-lg lg:text-xl">
+                        className="text-[#A0A0A0] font-light">
                         <span className="text-[#6FAF4E] font-semibold">Geekonomy</span> is a growth systems company
                         that partners with businesses to create structure, clarity and momentum in how they grow.
                         We believe growth is not achieved through isolated efforts, but through well-built systems
