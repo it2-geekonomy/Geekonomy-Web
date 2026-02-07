@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
 import { NAVIGATION_ITEMS } from "@/lib/constants";
 import { Typography } from "@/components/ui/Typography";
@@ -10,6 +11,7 @@ import { Typography } from "@/components/ui/Typography";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -59,22 +61,25 @@ export default function Navbar() {
 
           {/* Desktop Navigation - Hidden on mobile */}
           <ul className="hidden lg:flex items-center gap-6 lg:gap-3 xl:gap-10 2xl:gap-20">
-            {NAVIGATION_ITEMS.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className={`font-normal uppercase transition-colors duration-200 ${
-                    item.isActive
-                      ? "text-accent-green"
-                      : "text-white hover:text-accent-green"
-                  }`}
-                >
-                  <Typography as="span" variant="base" className="font-normal">
-                    {item.label}
-                  </Typography>
-                </Link>
-              </li>
-            ))}
+            {NAVIGATION_ITEMS.map((item) => {
+              const isActive = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={`font-normal uppercase transition-colors duration-200 ${
+                      isActive
+                        ? "text-[#6FAF4E]"
+                        : "text-white hover:text-[#6FAF4E]"
+                    }`}
+                  >
+                    <Typography as="span" variant="base" className="font-normal">
+                      {item.label}
+                    </Typography>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           {/* Mobile: GET IN TOUCH button and Hamburger Menu */}
@@ -125,31 +130,34 @@ export default function Navbar() {
           }`}
         >
           <ul className="flex flex-col items-center justify-start gap-8 pt-8 px-4">
-            {NAVIGATION_ITEMS.map((item, index) => (
-              <li
-                key={item.href}
-                className="w-full text-center"
-                style={{
-                  animation: isMenuOpen
-                    ? `fadeInUp 0.5s ease-out ${index * 0.1}s both`
-                    : "none",
-                }}
-              >
-                <Link
-                  href={item.href}
-                  onClick={closeMenu}
-                  className={`block font-medium uppercase transition-all duration-300 py-3 px-4 rounded-lg ${
-                    item.isActive
-                      ? "text-accent-green bg-accent-green/10"
-                      : "text-white hover:text-accent-green hover:bg-gray-900"
-                  }`}
+            {NAVIGATION_ITEMS.map((item, index) => {
+              const isActive = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
+              return (
+                <li
+                  key={item.href}
+                  className="w-full text-center"
+                  style={{
+                    animation: isMenuOpen
+                      ? `fadeInUp 0.5s ease-out ${index * 0.1}s both`
+                      : "none",
+                  }}
                 >
-                  <Typography as="span" variant="lg">
-                    {item.label}
-                  </Typography>
-                </Link>
-              </li>
-            ))}
+                  <Link
+                    href={item.href}
+                    onClick={closeMenu}
+                    className={`block font-medium uppercase transition-all duration-300 py-3 px-4 rounded-lg ${
+                      isActive
+                        ? "text-accent-green bg-accent-green/10"
+                        : "text-white hover:text-accent-green hover:bg-gray-900"
+                    }`}
+                  >
+                    <Typography as="span" variant="lg">
+                      {item.label}
+                    </Typography>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
