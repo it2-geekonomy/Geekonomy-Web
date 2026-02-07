@@ -2,6 +2,7 @@
 
 import { Typography } from "@/components/ui/Typography";
 import CoreCapabilitiesSection from "@/components/sections/CoreCapabilitiesSection";
+import HowWeWorkSection from "@/components/sections/HowWeWorkSection";
 
 export default function WhatWeDoPage() {
   return (
@@ -95,6 +96,9 @@ export default function WhatWeDoPage() {
           </div>
         </div>
       </section>
+
+      {/* How We Work Section */}
+      <HowWeWorkSection />
     </main>
   );
 }
