@@ -6,28 +6,34 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import FirstStepSection from "@/components/sections/FirstStepSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
-import Section3DSheet from "@/components/animations/Section3DSheet";
+import AlternateSlideSection from "@/components/animations/AlternateSlideSection";
 
-export default function Home() {
+export default function AlternateSlidePage() {
   return (
     <main className="min-h-screen bg-black">
+      {/* Hero - No animation */}
       <HeroSection />
-      <Section3DSheet direction="bottom">
+
+      {/* Alternating left and right slides */}
+      <AlternateSlideSection direction="right">
         <DisconnectSection />
-      </Section3DSheet>
-      <Section3DSheet direction="top">
+      </AlternateSlideSection>
+
+      <AlternateSlideSection direction="left">
         <ServicesSection />
-      </Section3DSheet>
-      <Section3DSheet direction="bottom">
+      </AlternateSlideSection>
+
+      <AlternateSlideSection direction="right">
         <ProcessSection />
-      </Section3DSheet>
-      <Section3DSheet direction="top">
+      </AlternateSlideSection>
+
+      <AlternateSlideSection direction="left">
         <IndustriesSection />
-      </Section3DSheet>
-      <Section3DSheet direction="bottom">
+      </AlternateSlideSection>
+
+      <AlternateSlideSection direction="right">
         <FirstStepSection />
-      </Section3DSheet>
+      </AlternateSlideSection>
     </main>
   );
 }
-
