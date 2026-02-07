@@ -27,7 +27,6 @@ export default function IndustriesSection() {
             <br />
             {headingWords.slice(midIndex).join(" ")}
           </span>
-
           {/* Mobile / Tablet */}
           <span className="inline lg:hidden">{HEADING_TEXT}</span>
         </Typography>
@@ -62,6 +61,7 @@ export default function IndustriesSection() {
                       height={300}
                       className="object-contain block transition-transform duration-700 group-hover:scale-105 sm:object-contain max-w-full"
                       style={{
+                        display: "block",
                         width: "100%",
                         height: "auto",
                         maxWidth: "100%",
