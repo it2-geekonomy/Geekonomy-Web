@@ -10,7 +10,7 @@ import Section3DSheet from "@/components/animations/Section3DSheet";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black overflow-x-hidden">
       <HeroSection />
       <Section3DSheet direction="bottom">
         <DisconnectSection />

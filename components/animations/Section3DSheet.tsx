@@ -1,6 +1,6 @@
 "use client";
 
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion, useSpring } from "framer-motion";
 import { useRef, ReactNode } from "react";
 
 interface Section3DSheetProps {
@@ -16,43 +16,62 @@ export default function Section3DSheet({
   
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "center center"],
+    offset: ["start end", "start center"], // Animation starts from bottom, completes at center
   });
 
-  // 3D sheet rolling effect - rolls in from top or bottom
+  // Smooth spring animation for stable, fluid motion
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    mass: 0.5,
+  });
+
+  // More noticeable 3D sheet rolling effect - starts from further down
   const rotateX = useTransform(
-    scrollYProgress, 
-    [0, 1], 
-    direction === "top" ? [60, 0] : [-60, 0]
+    smoothProgress, 
+    [0, 0.5, 0.7, 1], // More gradual progression
+    direction === "top" ? [50, 20, 5, 0] : [-50, -20, -5, 0]
   );
   
-  // Scale and zoom effect
-  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  // More noticeable scale effect
+  const scale = useTransform(smoothProgress, [0, 0.5, 0.7, 1], [0.75, 0.9, 0.98, 1]);
   
-  // Z depth for 3D space
-  const z = useTransform(scrollYProgress, [0, 1], [-200, 0]);
+  // More depth for better 3D feel
+  const z = useTransform(smoothProgress, [0, 0.5, 0.7, 1], [-200, -80, -20, 0]);
   
-  // Opacity fade
-  const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [0, 0.5, 1]);
+  // Opacity with better progression - clear by 70%
+  const opacity = useTransform(smoothProgress, [0, 0.3, 0.6, 0.8, 1], [0, 0.4, 0.85, 1, 1]);
+  
+  // Add Y translation for more visible entry
+  const y = useTransform(
+    smoothProgress,
+    [0, 0.5, 0.7, 1],
+    direction === "top" ? [80, 30, 10, 0] : [-80, -30, -10, 0]
+  );
 
   return (
     <div 
       ref={sectionRef}
+      className="w-full overflow-hidden"
       style={{ 
         perspective: "2500px", 
         transformStyle: "preserve-3d",
-        width: "100%",
+        isolation: "isolate",
       }}
     >
       <motion.div
+        className="w-full"
         style={{
           rotateX: rotateX,
           scale: scale,
           z: z,
+          y: y,
           opacity: opacity,
           transformStyle: "preserve-3d",
           transformOrigin: direction === "top" ? "center top" : "center bottom",
           willChange: "transform",
+          backfaceVisibility: "hidden",
+          WebkitBackfaceVisibility: "hidden",
         }}
       >
         {children}
