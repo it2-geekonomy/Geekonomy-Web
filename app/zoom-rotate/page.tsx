@@ -6,34 +6,34 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import FirstStepSection from "@/components/sections/FirstStepSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
-import AlternateSlideSection from "@/components/animations/AlternateSlideSection";
+import MagneticRevealSection from "@/components/animations/MagneticRevealSection";
 
-export default function AlternateSlidePage() {
+export default function MagneticRevealPage() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black overflow-hidden">
       {/* Hero - No animation */}
       <HeroSection />
 
-      {/* Alternating left and right slides */}
-      <AlternateSlideSection direction="right">
+      {/* Magnetic reveal with 3D depth - premium award-winning effect */}
+      <MagneticRevealSection index={0}>
         <DisconnectSection />
-      </AlternateSlideSection>
+      </MagneticRevealSection>
 
-      <AlternateSlideSection direction="left">
+      <MagneticRevealSection index={1}>
         <ServicesSection />
-      </AlternateSlideSection>
+      </MagneticRevealSection>
 
-      <AlternateSlideSection direction="right" variant="fast">
+      <MagneticRevealSection index={2}>
         <ProcessSection />
-      </AlternateSlideSection>
+      </MagneticRevealSection>
 
-      <AlternateSlideSection direction="left">
+      <MagneticRevealSection index={3}>
         <IndustriesSection />
-      </AlternateSlideSection>
+      </MagneticRevealSection>
 
-      <AlternateSlideSection direction="right">
+      <MagneticRevealSection index={4}>
         <FirstStepSection />
-      </AlternateSlideSection>
+      </MagneticRevealSection>
     </main>
   );
 }
