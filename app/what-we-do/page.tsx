@@ -101,11 +101,6 @@ export default function WhatWeDoPage() {
         </div>
       </section>
       </MagneticRevealSection>
-
-      {/* How We Work Section */}
-      <MagneticRevealSection index={2}>
-        <HowWeWorkSection />
-      </MagneticRevealSection>
     </main>
   );
 }
