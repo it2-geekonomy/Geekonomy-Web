@@ -4,19 +4,19 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function AboutUs() {
     return (
-        <section className="w-full bg-black text-white py-20 px-6 sm:px-8 md:px-12 lg:px-24">
+        <section className="w-full bg-black text-white py-20 px-6 sm:px-8 md:px-12 lg:px-16">
             {/* Heading */}
             <div className="text-center mb-12">
                 <Typography
                     as="h1"
-                    variant="5xl"
-                    className="font-bold"
+                    variant="4xl"
+                    className="font-semibold"
                 >
                     ABOUT US
                 </Typography>
             </div>
 
-            <div className="px-0 sm:px-2 md:px-4 lg:px-8 xl:px-12 2xl:px-38">
+            <div className="px-0 sm:px-2 md:px-4 lg:px-0 xl:px-12 2xl:px-38">
                 {/* Subtitle */}
                 <Typography
                     as="p"
@@ -33,7 +33,7 @@ export default function AboutUs() {
                 </Typography>
 
                 {/* About Paragraphs */}
-                <div className="space-y-6 mt-6 w-full lg:w-2/3 xl:w-2/4">
+                <div className="space-y-6 mt-6 w-full lg:w-2/2 xl:w-2/4">
                     <Typography
                         as="p"
                         variant="base"

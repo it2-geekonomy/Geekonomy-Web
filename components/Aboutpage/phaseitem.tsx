@@ -1,0 +1,95 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Typography } from "@/components/ui/Typography";
+import { GrowthSystemPhase } from "@/lib/constants";
+import {
+  ANIMATION_DELAYS,
+  ANIMATION_DURATIONS,
+  ANIMATION_EASING,
+  VIEWPORT_OPTIONS_WIDE,
+} from "@/components/sections/ProcessSection/animations";
+import { PhaseMarker } from "@/components/sections/ProcessSection/PhaseMarker";
+
+interface PhaseItemProps {
+  phase: GrowthSystemPhase;
+  index: number;
+  isActive: boolean;
+  isFilled: boolean;
+}
+
+export function PhaseItem({ phase, index, isActive, isFilled }: PhaseItemProps) {
+  const baseDelay = index * ANIMATION_DELAYS.phaseStagger;
+
+  return (
+    <motion.div
+      className="relative"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={VIEWPORT_OPTIONS_WIDE}
+      transition={{
+        duration: ANIMATION_DURATIONS.slow,
+        delay: baseDelay,
+        ease: ANIMATION_EASING,
+      }}
+    >
+      <PhaseMarker isActive={isActive} isFilled={isFilled} index={index} />
+
+      <div>
+        {/* STEP */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: ANIMATION_DURATIONS.normal,
+            delay: baseDelay + ANIMATION_DELAYS.contentOffset,
+            ease: ANIMATION_EASING,
+          }}
+        >
+          <Typography
+            as="p"
+            variant="sm"
+            className="text-white/90 mb-1"
+          >
+            {phase.number}
+          </Typography>
+        </motion.div>
+
+        {/* HEADING */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: ANIMATION_DURATIONS.normal,
+            delay: baseDelay + ANIMATION_DELAYS.titleOffset,
+            ease: ANIMATION_EASING,
+          }}
+        >
+          <motion.span
+            className="inline-block"
+            animate={{
+              scale: isActive ? [1, 1.15, 1] : 1,
+            }}
+            transition={{
+              duration: 0.6,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            style={{ transformOrigin: "left center" }}
+          >
+            <Typography
+              as="h3"
+              variant="xl"
+              className={`text-[#6FAF4E] mb-4 transition-all duration-300 ${
+                isActive ? "font-bold" : "font-normal"
+              }`}
+            >
+              {phase.name}
+            </Typography>
+          </motion.span>
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+}
