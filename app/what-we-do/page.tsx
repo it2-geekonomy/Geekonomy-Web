@@ -2,6 +2,8 @@
 
 import { Typography } from "@/components/ui/Typography";
 import CoreCapabilitiesSection from "@/components/sections/CoreCapabilitiesSection";
+import MagneticRevealSection from "@/components/animations/MagneticRevealSection";
+import HowWeWorkSection from "@/components/Aboutpage/Whatwedo";
 
 export default function WhatWeDoPage() {
   return (
@@ -51,10 +53,13 @@ export default function WhatWeDoPage() {
       </section>
 
       {/* Core Capabilities Section */}
-      <CoreCapabilitiesSection />
+      <MagneticRevealSection index={0}>
+        <CoreCapabilitiesSection />
+      </MagneticRevealSection>
 
       {/* How It Comes Together & Our Role Section */}
-      <section className="relative w-full bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)] sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
+      <MagneticRevealSection index={1}>
+        <section className="relative w-full bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)] sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
         <div className="w-full px-4 lg:pl-[clamp(3rem,3rem+3vw,8rem)]">
           <div className="max-w-4xl space-y-16 lg:space-y-20">
             {/* How It Comes Together */}
@@ -95,6 +100,12 @@ export default function WhatWeDoPage() {
           </div>
         </div>
       </section>
+      </MagneticRevealSection>
+
+      {/* How We Work Section */}
+      <MagneticRevealSection index={2}>
+        <HowWeWorkSection />
+      </MagneticRevealSection>
     </main>
   );
 }
