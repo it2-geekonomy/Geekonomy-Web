@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { Typography } from "@/components/ui/Typography";
 
 export default function HowWeWorkSection() {
@@ -35,11 +35,17 @@ export default function HowWeWorkSection() {
                 We work as long-term partners, not just service providers. Our role is to think with you, build with you and evolve systems as your business grows.
               </Typography>
               
-              {/* Bulleted List with Green Arrows */}
+              {/* Bulleted List with SVG Arrows */}
               <ul className="space-y-3 mb-6">
                 {bulletPoints.map((point, index) => (
-                  <li key={index} className="flex items-start gap-12">
-                    <ArrowRight className="w-8 h-6 text-[#6FAF4E] shrink-0 mt-0.5 scale-x-[2.8] origin-left" />
+                  <li key={index} className="flex items-start gap-2 lg:gap-8">
+                    <Image
+                      src="/HowWeWork/Arrow 1.svg"
+                      alt=""
+                      width={28}
+                      height={24}
+                      className="shrink-0 mt-2 scale-x-[1] lg:scale-x-[1.5] scale-y-[1.5] origin-left"
+                    />
                     <Typography as="span" variant="base" className="text-white">
                       {point}
                     </Typography>
