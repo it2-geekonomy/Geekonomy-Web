@@ -78,6 +78,11 @@ export default function MouseLight() {
           return true;
         }
 
+        // Check for data attribute to hide mouse light (e.g., hover gradient cards)
+        if (current.hasAttribute && current.hasAttribute('data-hide-mouse-light')) {
+          return true;
+        }
+
         current = current.parentElement;
         depth++;
       }

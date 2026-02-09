@@ -16,7 +16,7 @@ export default function MagneticRevealSection({
   
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"],
+    offset: ["start end", "start center"],
   });
 
   // Ultra-smooth spring animation - refined for premium feel
@@ -26,23 +26,11 @@ export default function MagneticRevealSection({
     mass: 0.8,
   });
 
-  // Refined magnetic pull - smoother, more subtle
-  const y = useTransform(
-    smoothProgress,
-    [0, 0.4, 0.6, 1],
-    [
-      index % 2 === 0 ? 120 : -120, 
-      0, 
-      0, 
-      index % 2 === 0 ? -60 : 60
-    ]
-  );
-
-  // Enhanced 3D depth - smoother transitions
+  // Enhanced 3D depth - smoother transitions (reduced to prevent gaps)
   const z = useTransform(
     smoothProgress, 
     [0, 0.5, 1], 
-    [-250, 0, 150]
+    [-150, 0, 100]
   );
   
   // Refined scale - more subtle peak
@@ -59,11 +47,11 @@ export default function MagneticRevealSection({
     [0, 1, 1, 0.9]
   );
   
-  // Subtle refined 3D rotation
+  // Subtle refined 3D rotation (reduced to prevent gaps)
   const rotateX = useTransform(
     smoothProgress,
     [0, 0.5, 1],
-    index % 2 === 0 ? [20, 0, -8] : [-20, 0, 8]
+    index % 2 === 0 ? [10, 0, -4] : [-10, 0, 4]
   );
 
   return (
@@ -73,11 +61,14 @@ export default function MagneticRevealSection({
         perspective: "2500px",
         transformStyle: "preserve-3d",
         width: "100%",
+        overflow: "hidden",
+        margin: 0,
+        padding: 0,
+        display: "block",
       }}
     >
       <motion.div
         style={{
-          y,
           z,
           scale,
           opacity,
@@ -85,6 +76,9 @@ export default function MagneticRevealSection({
           transformStyle: "preserve-3d",
           transformOrigin: "center center",
           willChange: "transform",
+          width: "100%",
+          margin: 0,
+          padding: 0,
         }}
       >
         {children}
