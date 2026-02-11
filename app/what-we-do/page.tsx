@@ -2,60 +2,61 @@
 
 import { Typography } from "@/components/ui/Typography";
 import CoreCapabilitiesSection from "@/components/sections/CoreCapabilitiesSection";
-import MagneticRevealSection from "@/components/animations/MagneticRevealSection";
+import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
 import HowWeWorkSection from "@/components/Aboutpage/Whatwedo";
 
 export default function WhatWeDoPage() {
   return (
     <main className="min-h-screen bg-black relative overflow-hidden">
-  
-      <section className="relative w-full flex flex-col justify-center lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
-        <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
-          <div className="">
-            {/* Main Title - Centered */}
-            <div className="text-center mb-12 lg:mb-16">
-              <Typography
-                as="h1"
-                variant="4xl"
-                className="text-white font-semibold uppercase tracking-tight"
-              >
-                WHAT WE DO?
-              </Typography>
-            </div>
+      <ScrollRevealSection index={0}>
+        <section className="relative w-full flex flex-col justify-center lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
+          <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
+            <div className="">
+              {/* Main Title - Centered */}
+              <div className="text-center mb-12 lg:mb-16">
+                <Typography
+                  as="h1"
+                  variant="4xl"
+                  className="text-white font-semibold uppercase tracking-tight"
+                >
+                  WHAT WE DO?
+                </Typography>
+              </div>
 
-            {/* Content - Left Aligned */}
-            <div className="space-y-6 lg:space-y-8 lg:pl-[clamp(3rem,3rem+3vw,8rem)]">
-              {/* Headline */}
-              <Typography
-                as="h2"
-                variant="2xl"
-                className="text-white font-normal leading-tight"
-              >
-                We create structure where growth takes shape.
-              </Typography>
+              {/* Content - Left Aligned */}
+              <div className="space-y-6 lg:space-y-8 lg:pl-[clamp(3rem,3rem+3vw,8rem)]">
+                {/* Headline */}
+                <Typography
+                  as="h2"
+                  variant="2xl"
+                  className="text-white font-normal leading-tight"
+                >
+                  We create structure where growth takes shape.
+                </Typography>
 
-              {/* Body Text */}
-              <Typography
-                as="p"
-                variant="lg"
-                className="text-[#A0A0A0] font-normal leading-relaxed max-w-3xl"
-              >
-                At{" "}
-                <span className="text-[#6eaf4c]">Geekonomy</span>
-                , our work focuses on bringing clarity and alignment to how businesses grow. We connect strategy, tech, branding and marketing into integrated frameworks that support scale, consistency and long-term progress. Rather than isolated efforts, we focus on building systems that work together allowing businesses to move forward with confidence and intent.
-              </Typography>
+                {/* Body Text */}
+                <Typography
+                  as="p"
+                  variant="lg"
+                  className="text-[#A0A0A0] font-normal leading-relaxed max-w-3xl"
+                >
+                  At{" "}
+                  <span className="text-[#6eaf4c]">Geekonomy</span>
+                  , our work focuses on bringing clarity and alignment to how businesses grow. We connect strategy, tech, branding and marketing into integrated frameworks that support scale, consistency and long-term progress. Rather than isolated efforts, we focus on building systems that work together allowing businesses to move forward with confidence and intent.
+                </Typography>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ScrollRevealSection>
 
       {/* Core Capabilities Section */}
-      <MagneticRevealSection index={0}>
+      <ScrollRevealSection index={1}>
         <CoreCapabilitiesSection />
-      </MagneticRevealSection>
+      </ScrollRevealSection>
 
       {/* How It Comes Together & Our Role Section */}
-      <MagneticRevealSection index={1}>
+      <ScrollRevealSection index={2}>
         <section className="relative w-full bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)] sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
         <div className="w-full px-4 lg:pl-[clamp(3rem,3rem+3vw,8rem)]">
           <div className="max-w-4xl space-y-16 lg:space-y-20">
@@ -97,7 +98,7 @@ export default function WhatWeDoPage() {
           </div>
         </div>
       </section>
-      </MagneticRevealSection>
+      </ScrollRevealSection>
     </main>
   );
 }

@@ -6,27 +6,27 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import FirstStepSection from "@/components/sections/FirstStepSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
-import MagneticRevealSection from "@/components/animations/MagneticRevealSection";
+import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black overflow-hidden">
       <HeroSection />
-      <MagneticRevealSection index={0}>
+      <ScrollRevealSection index={0}>
         <DisconnectSection />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={1}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={1}>
         <ServicesSection />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={2}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={2}>
         <ProcessSection />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={3}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={3}>
         <IndustriesSection />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={4}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={4}>
         <FirstStepSection />
-      </MagneticRevealSection>
+      </ScrollRevealSection>
     </main>
   );
 }
