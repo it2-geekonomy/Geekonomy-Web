@@ -3,15 +3,24 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { X } from "lucide-react";
 import { NAVIGATION_ITEMS } from "@/lib/constants";
 import { Typography } from "@/components/ui/Typography";
+import { gsap } from "gsap";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const lastScrollY = useRef(0);
   const pathname = usePathname();
+  const router = useRouter();
+  const curtainRef = useRef<HTMLDivElement | null>(null);
+
+  // Fix hydration: only use pathname after mount
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,6 +28,72 @@ export default function Navbar() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Don't transition if clicking the same page
+    if (href === pathname) {
+      return;
+    }
+
+    // Only show transition on desktop (>= 1024px) - check if window exists
+    if (typeof window !== "undefined" && window.innerWidth < 1024) {
+      router.push(href);
+      return;
+    }
+
+    e.preventDefault();
+    
+    // Get or create curtain element
+    let curtain = curtainRef.current;
+    if (!curtain) {
+      curtain = document.createElement("div");
+      curtain.className = "fixed top-0 left-0 w-full h-full bg-black pointer-events-none";
+      curtain.setAttribute("data-page-curtain", "true");
+      curtain.style.display = "none";
+      curtain.style.zIndex = "9999";
+      
+      // Add logo in center of curtain - bigger and responsive
+      const logo = document.createElement("img");
+      logo.src = "/Geekonomy Logo.webp";
+      logo.alt = "Geekonomy Logo";
+      logo.style.position = "absolute";
+      logo.style.top = "50%";
+      logo.style.left = "50%";
+      logo.style.transform = "translate(-50%, -50%)";
+      logo.style.width = "clamp(300px, 25vw, 500px)";
+      logo.style.height = "auto";
+      logo.style.opacity = "1";
+      logo.style.maxWidth = "90%";
+      logo.setAttribute("data-curtain-logo", "true");
+      curtain.appendChild(logo);
+      
+      document.body.appendChild(curtain);
+      curtainRef.current = curtain;
+    }
+
+    // Kill any existing animations on curtain
+    gsap.killTweensOf(curtain);
+    
+    const windowHeight = window.innerHeight;
+    
+    // Set initial state - curtain at top, logo visible normally
+    gsap.set(curtain, {
+      y: -windowHeight,
+      opacity: 1,
+      display: "block",
+    });
+
+    // Smooth slow curtain drop - THEN navigate
+    gsap.to(curtain, {
+      y: 0,
+      duration: 1.8,
+      ease: "power1.out",
+      onComplete: () => {
+        // Navigate when curtain is fully down
+        router.push(href);
+      },
+    });
   };
 
   // Close menu on upward scroll
@@ -48,7 +123,16 @@ export default function Navbar() {
       <div className="px-4 sm:px-6 lg:px-6 xl:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - Always on left */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 z-50 shrink-0" onClick={closeMenu}>
+          <Link 
+            href="/" 
+            className="flex items-center gap-2 sm:gap-3 z-50 shrink-0" 
+            onClick={(e) => {
+              closeMenu();
+              if (pathname !== "/") {
+                handleNavigation(e, "/");
+              }
+            }}
+          >
             <Image
               src="/Geekonomy Logo.webp"
               alt="GEEKONOMY Logo"
@@ -62,11 +146,12 @@ export default function Navbar() {
           {/* Desktop Navigation - Hidden on mobile */}
           <ul className="hidden lg:flex items-center gap-6 lg:gap-3 xl:gap-10 2xl:gap-20">
             {NAVIGATION_ITEMS.map((item) => {
-              const isActive = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
+              const isActive = isMounted && (pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href)));
               return (
                 <li key={item.href}>
                   <Link
                     href={item.href}
+                    onClick={(e) => handleNavigation(e, item.href)}
                     className={`font-normal uppercase transition-colors duration-200 ${
                       isActive
                         ? "text-[#6FAF4E]"
@@ -131,7 +216,7 @@ export default function Navbar() {
         >
           <ul className="flex flex-col items-center justify-start gap-8 pt-8 px-4">
             {NAVIGATION_ITEMS.map((item, index) => {
-              const isActive = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
+              const isActive = isMounted && (pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href)));
               return (
                 <li
                   key={item.href}
@@ -144,7 +229,10 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    onClick={closeMenu}
+                    onClick={(e) => {
+                      closeMenu();
+                      handleNavigation(e, item.href);
+                    }}
                     className={`block font-medium uppercase transition-all duration-300 py-3 px-4 rounded-lg ${
                       isActive
                         ? "text-accent-green bg-accent-green/10"

@@ -8,10 +8,7 @@ import HowWeWorkSection from "@/components/Aboutpage/Whatwedo";
 export default function WhatWeDoPage() {
   return (
     <main className="min-h-screen bg-black relative overflow-hidden">
-      {/* Subtle green gradient/glow from top-right */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#6eaf4c]/10 blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#6eaf4c]/5 blur-[100px] -translate-y-1/3 translate-x-1/3 pointer-events-none" />
-
+  
       <section className="relative w-full flex flex-col justify-center lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
         <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
           <div className="">
