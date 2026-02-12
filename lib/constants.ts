@@ -12,7 +12,7 @@ export const FOOTER_NAV_ITEMS = [
   { label: "OUR WORK", href: "/our-work" },
   { label: "ABOUT GEEKONOMY", href: "/about" },
   { label: "CAREER", href: "/career" },
-  { label: "BLOGS", href: "/blogs" },
+  {label: "BLOGS", href: "/blogs" },
   { label: "CONTACT US", href: "/contact" },
 ] as const;
 

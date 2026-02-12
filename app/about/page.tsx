@@ -5,24 +5,26 @@ import FoundersNote from "@/components/Aboutpage/Foundersnote";
 import OurApproach from "@/components/Aboutpage/OurApproach";
 import GrowthSystems from "@/components/Aboutpage/GrowthSystems";
 import Whatwedo from "@/components/Aboutpage/Whatwedo";
-import MagneticRevealSection from "@/components/animations/MagneticRevealSection";
+import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black overflow-hidden">
-      <AboutUs />
-      <MagneticRevealSection index={0}>
+      <ScrollRevealSection index={0}>
+        <AboutUs />
+      </ScrollRevealSection>
+      <ScrollRevealSection index={1}>
         <FoundersNote />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={1}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={2}>
         <OurApproach />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={2}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={3}>
         <GrowthSystems />
-      </MagneticRevealSection>
-      <MagneticRevealSection index={3}>
+      </ScrollRevealSection>
+      <ScrollRevealSection index={4}>
         <Whatwedo />
-      </MagneticRevealSection>
+      </ScrollRevealSection>
     </main>
   );
 }

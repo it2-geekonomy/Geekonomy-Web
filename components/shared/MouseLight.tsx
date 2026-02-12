@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function MouseLight() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Start visible by default
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -98,19 +98,30 @@ export default function MouseLight() {
 
       // Check if over visual element
       const overVisual = isOverVisualElement(e.clientX, e.clientY);
-      // Always update visibility - show when NOT over visual, hide when over visual
+      // Show when NOT over visual, hide when over visual
       setIsVisible(!overVisual);
     };
 
+    const handleMouseEnter = () => {
+      // Show when mouse enters the document
+      setIsVisible(true);
+    };
+
     const handleMouseLeave = () => {
+      // Only hide when mouse actually leaves the document
       setIsVisible(false);
     };
 
+    // Set initial visibility
+    setIsVisible(true);
+    
     window.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseenter", handleMouseEnter);
     document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseenter", handleMouseEnter);
       document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, [isDesktop]);

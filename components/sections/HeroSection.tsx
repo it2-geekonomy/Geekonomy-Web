@@ -10,8 +10,6 @@ export default function HeroSection() {
   
   return (
     <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
-      {/* Green gradient background from bottom-left to top-right */}
-      <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_top_right,transparent,transparent,rgba(34,197,94,0.1))]" />
       
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-8 lg:py-30">
         <div className="lg:pl-[clamp(1rem,1rem+8vw,10rem)] xl:pl-[clamp(1rem,1rem+12vw,16rem)]">
