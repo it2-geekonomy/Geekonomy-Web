@@ -68,13 +68,27 @@ export function CapabilityItem({ capability, index, isActive, isFilled }: Capabi
             ease: ANIMATION_EASING,
           }}
         >
-          <Typography
-            as="h3"
-            variant="2xl"
-            className="text-[#6FAF4E] mb-4 font-normal"
+          <motion.span
+            className="inline-block"
+            animate={{
+              scale: isActive ? [1, 1.15, 1] : 1,
+            }}
+            transition={{
+              duration: 0.6,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            style={{ transformOrigin: "left center" }}
           >
-            {capability.title}
-          </Typography>
+            <Typography
+              as="h3"
+              variant="2xl"
+              className={`text-[#6FAF4E] mb-4 transition-all duration-300 ${
+                isActive ? "font-bold" : "font-normal"
+              }`}
+            >
+              {capability.title}
+            </Typography>
+          </motion.span>
         </motion.div>
 
         {/* Description with Checkmark */}
