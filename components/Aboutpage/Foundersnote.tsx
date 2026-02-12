@@ -12,7 +12,7 @@ export default function FoundersNote() {
         <Typography
           as="h2"
           variant="3xl"
-          className="font-semi-bold lg:translate-y-10"
+          className="font-semi-bold"
         >
           Founder's Note
         </Typography>
