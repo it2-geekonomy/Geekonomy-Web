@@ -172,3 +172,35 @@ export const GROWTH_SYSTEM_PHASES: readonly GrowthSystemPhase[] = [
   { number: "STEP 04", name: "Processes that bring clarity and reduce friction" },
   { number: "STEP 05", name: "Each part is built to support the whole." },
 ] as const;
+
+export interface HowWeWorkPhase {
+  number: string;
+  name: string;
+  description: string;
+  bullets?: string[];
+  conclusion?: string;
+}
+
+export const HOW_WE_WORK_PHASES: readonly HowWeWorkPhase[] = [
+  {
+    number: "01",
+    name: "Communication should create focus, not noise.",
+    description: "Effective collaboration relies on predictable communication. Clients work with defined points of contact, structured updates and purposeful interactions rather than constant noise. Meetings are held with discussed intent, documentation is shared across every stakeholder and expectations remain visible to you throughout the engagement. This keeps projects calm and focused, even when complexity increases.",
+  },
+  {
+    number: "02",
+    name: "Delivery is never the finish line.",
+    description: "Geekonomy stays involved where value continues, for example, supporting evolution, optimisation and future initiatives whenever you need it. Many of our relationships extend across multiple phases of a business's journey. We believe, growth rarely happens in a single step, so we plan accordingly.",
+  },
+  {
+    number: "03",
+    name: "Alignment matters on both sides.",
+    description: "We work best with businesses that:",
+    bullets: [
+      "value thoughtful decision-making",
+      "respect structured processes",
+      "see digital investments as long-term assets",
+    ],
+    conclusion: "This alignment allows both sides to focus on meaningful outcomes rather than constant recalibration.",
+  },
+] as const;
