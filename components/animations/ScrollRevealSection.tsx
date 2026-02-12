@@ -50,7 +50,6 @@ export default function ScrollRevealSection({
       const elements = getAnimatableElements();
       if (elements.length === 0) return;
 
-      // Set initial states - elements come from left/right alternately
       elements.forEach((el, i) => {
         const isEven = i % 2 === 0;
         const direction = isEven ? -1 : 1; // -1 = left, 1 = right
