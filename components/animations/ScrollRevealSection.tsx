@@ -67,8 +67,8 @@ export default function ScrollRevealSection({
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 96%",
-          end: "top 4%",
+          start: "top 85%",
+          end: "top 50%",
           scrub: 0.15, // Ultra-tight scrub - perfectly follows mouse scroll
           invalidateOnRefresh: true,
           anticipatePin: 1,

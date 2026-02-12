@@ -21,7 +21,7 @@ export default function OurApproach() {
   }, []);
 
   return (
-    <section className="w-full bg-black text-white py-20 px-6 sm:px-2 md:px-12 lg:px-18">
+    <section className="w-full bg-black text-white md:py-20 px-6 sm:px-2 md:px-12 lg:px-18">
       {/* Heading */}
       <div className="mb-6 xl:ml-16 2xl:ml-32">
         <Typography as="h2" variant="3xl" className="text-[#6eaf4c] font-medium">

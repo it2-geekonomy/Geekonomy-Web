@@ -4,7 +4,7 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function AboutUs() {
     return (
-        <section className="w-full bg-black text-white py-20 px-6 sm:px-8 md:px-12 lg:px-16">
+        <section className="w-full bg-black text-white py-10 lg:py-20 px-6 sm:px-8 md:px-12 lg:px-16">
             {/* Heading */}
             <div className="text-center mb-12">
                 <Typography

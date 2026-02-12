@@ -18,10 +18,10 @@ export const FOOTER_NAV_ITEMS = [
 
 export const ADDRESS = {
   lines: [
-    "No. 1357, Ground Floor, 9th Cross, ITI Layout,JP Nagar 1st Phase, Bengaluru, Karnataka - 560 078",
+    "No. 1357, Ground Floor, 9th Cross, ITI Layout, JP Nagar 1st Phase, Bengaluru, Karnataka - 560 078",
   ],
   mapUrl:
-    "https://www.google.com/maps?q=No.+1357,+Ground+Floor,+9th+Cross,+ITI+Layout,+JP+Nagar+1st+Phase,+Bengaluru,+Karnataka+560078&output=embed",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4785.231563352286!2d77.57796587585655!3d12.910929016204019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1681f9dec0e9%3A0xdaec705c2f2ff0ed!2sGeekonomy!5e1!3m2!1sen!2sin!4v1770895049794!5m2!1sen!2sin",
 };
 export interface ProcessPhase {
   number: string;
@@ -179,3 +179,34 @@ export const CONTACT_SUBJECTS = [
   { id: "branding", label: "Brand Foundry" },
   { id: "codecraft", label: "Code Craft" },
 ];
+export interface HowWeWorkPhase {
+  number: string;
+  name: string;
+  description: string;
+  bullets?: string[];
+  conclusion?: string;
+}
+
+export const HOW_WE_WORK_PHASES: readonly HowWeWorkPhase[] = [
+  {
+    number: "01",
+    name: "Communication should create focus, not noise.",
+    description: "Effective collaboration relies on predictable communication. Clients work with defined points of contact, structured updates and purposeful interactions rather than constant noise. Meetings are held with discussed intent, documentation is shared across every stakeholder and expectations remain visible to you throughout the engagement. This keeps projects calm and focused, even when complexity increases.",
+  },
+  {
+    number: "02",
+    name: "Delivery is never the finish line.",
+    description: "Geekonomy stays involved where value continues, for example, supporting evolution, optimisation and future initiatives whenever you need it. Many of our relationships extend across multiple phases of a business's journey. We believe, growth rarely happens in a single step, so we plan accordingly.",
+  },
+  {
+    number: "03",
+    name: "Alignment matters on both sides.",
+    description: "We work best with businesses that:",
+    bullets: [
+      "value thoughtful decision-making",
+      "respect structured processes",
+      "see digital investments as long-term assets",
+    ],
+    conclusion: "This alignment allows both sides to focus on meaningful outcomes rather than constant recalibration.",
+  },
+] as const;
