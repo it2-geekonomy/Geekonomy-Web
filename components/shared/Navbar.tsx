@@ -171,9 +171,11 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center gap-2 sm:gap-3 shrink-0">
             <Link
               href="/contact"
-              className="px-2 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#6eaf4c]/30 border border-[#6eaf4c] text-white uppercase text-xs sm:text-sm font-normal transition-all duration-200 hover:bg-[#6eaf4c]/40 whitespace-nowrap"
+              className="inline-block bg-[#6FAF4E]/80 text-white border-2 border-transparent px-6 sm:px-10 py-2 sm:py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6FAF4E] hover:text-[#6FAF4E] hover:scale-105 whitespace-nowrap"
             >
-              <span className="block leading-tight">GET IN TOUCH</span>
+              <Typography as="span" variant="sm" className="font-normal">
+                GET IN TOUCH
+              </Typography>
             </Link>
             
             <button
