@@ -134,7 +134,7 @@ export default function Navbar() {
             }}
           >
             <Image
-              src="/Geekonomy Logo.webp"
+              src="/Geekonomy Logo.png"
               alt="GEEKONOMY Logo"
               width={350}
               height={350}
