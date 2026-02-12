@@ -35,7 +35,7 @@ export default function HowWeWorkCards() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
   const cardsRef = useRef<HTMLDivElement | null>(null);
 
-  // Reset when clicking outside cards
+  // 👇 Reset when clicking outside cards
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (cardsRef.current && !cardsRef.current.contains(e.target as Node)) {
@@ -48,15 +48,15 @@ export default function HowWeWorkCards() {
   }, []);
 
   return (
-    <section className="w-full bg-black text-white pb-20 px-6 sm:px-2 md:px-12 lg:px-18">
+    <section className="w-full bg-black text-white py-8 md:py-10 xl:py-20 px-6 sm:px-2 md:px-12 lg:px-18">
       {/* Cards */}
       <div ref={cardsRef} className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12 xl:gap-8 2xl:gap-12 max-w-[1600px] mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12 xl:gap-16 2xl:gap-20">
           {CARDS.map((card) => (
             <div
               key={card.id}
               onClick={() => setActiveCard(activeCard === card.id ? null : card.id)}
-              className="group relative bg-[#0f0f0f] w-full min-w-0 md:min-w-[280px] xl:min-w-0 px-4 md:px-6 py-8 md:py-12 flex flex-col items-center text-center cursor-pointer"
+              className="group relative bg-[#0f0f0f] w-full min-w-[280px] xl:min-w-[285px] 2xl:min-w-[320px] px-6 py-12 flex flex-col items-center text-center cursor-pointer"
             >
               <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6eaf4c]/60" />
               <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6eaf4c]/60" />
@@ -71,31 +71,17 @@ export default function HowWeWorkCards() {
                 {card.title}
               </Typography>
 
-              <div className="mb-6 relative w-[120px] h-[90px] flex items-center justify-center">
-                <Image
-                  src={card.image}
-                  alt={card.title}
-                  width={120}
-                  height={90}
-                  className={`transition-all duration-300 ${
-                    activeCard === card.id
-                      ? "scale-[1.18] drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
-                      : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
-                  }`}
-                  onError={(e) => {
-                    // Fallback if image doesn't exist - show a placeholder
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = "none";
-                    const parent = target.parentElement;
-                    if (parent && !parent.querySelector(".placeholder-icon")) {
-                      const placeholder = document.createElement("div");
-                      placeholder.className = "placeholder-icon w-full h-full flex items-center justify-center text-[#6eaf4c] text-4xl";
-                      placeholder.textContent = "✓";
-                      parent.appendChild(placeholder);
-                    }
-                  }}
-                />
-              </div>
+              <Image
+                src={card.image}
+                alt={card.title}
+                width={120}
+                height={90}
+                className={`mb-6 transition-all duration-300 ${
+                  activeCard === card.id
+                    ? "scale-[1.18] drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
+                    : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
+                }`}
+              />
 
               <Typography
                 as="p"
