@@ -4,7 +4,7 @@ export const NAVIGATION_ITEMS = [
   { label: "HOW WE WORK", href: "/how-we-work", isActive: false },
   { label: "SUCCESS LAB", href: "/proof", isActive: false },
   { label: "ABOUT", href: "/about", isActive: false },
-  { label: "CONTACT", href: "/contact", isActive: false },
+  { label: "CONTACT US", href: "/contact", isActive: false },
 ] as const;
 
 export const FOOTER_NAV_ITEMS = [
@@ -172,3 +172,10 @@ export const GROWTH_SYSTEM_PHASES: readonly GrowthSystemPhase[] = [
   { number: "STEP 04", name: "Processes that bring clarity and reduce friction" },
   { number: "STEP 05", name: "Each part is built to support the whole." },
 ] as const;
+
+export const CONTACT_SUBJECTS = [
+  { id: "general", label: "General Enquiry" },
+  { id: "digi360", label: "Digi 360" },
+  { id: "branding", label: "Brand Foundry" },
+  { id: "codecraft", label: "Code Craft" },
+];
