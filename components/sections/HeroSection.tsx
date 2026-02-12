@@ -203,7 +203,7 @@ export default function HeroSection() {
           {/* Call-to-Action Button - Centered on mobile, absolute on desktop */}
           <div className="relative lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 w-full lg:w-auto text-center lg:text-left">
             <Link
-              href="/contact"
+              href="/contact#form"
               className="inline-block bg-[#6FAF4E]/80 text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6FAF4E] hover:text-[#6FAF4E] hover:scale-105"
             >
               <Typography as="span" variant="sm" className="font-normal">
