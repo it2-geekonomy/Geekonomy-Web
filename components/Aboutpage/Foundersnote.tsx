@@ -7,34 +7,21 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 export default function FoundersNote() {
   return (
     <section className="w-full bg-black text-white py-2 pb-10 md:pb-0 px-6 sm:px-8 md:px-12 lg:px-16">
-      {/* Content Container - Image Left, Card Right */}
-      <div className="flex flex-col items-center lg:flex-row lg:items-center gap-4 lg:gap-10 xl:gap-12 2xl:gap-16 lg:ml-0 xl:ml-16 2xl:ml-32">
-        {/* Left Side - Image */}
-        <div className="w-4/5 lg:w-[clamp(400px,400px+2vw,400px)] shrink-0">
-          <div className="relative w-full">
-            <Image
-              src="/Arjun Self-Potrait.webp"
-              alt="Arjun"
-              width={600}
-              height={600}
-              className="w-full h-full object-contain"
-              priority
-            />
-            {/* Heading Overlay */}
-            <div className="absolute top-0 left-0 w-full">
-              <Typography
-                as="h2"
-                variant="3xl"
-                className="font-semi-bold text-white"
-              >
-                Founder's Note
-              </Typography>
-            </div>
-          </div>
-        </div>
+      {/* Heading */}
+      <div className="text-left mb-5 lg:ml-2 xl:ml-16 2xl:ml-32">
+        <Typography
+          as="h2"
+          variant="3xl"
+          className="font-semi-bold lg:translate-y-10"
+        >
+          Founder's Note
+        </Typography>
+      </div>
 
-        {/* Right Side - Single Card */}
-        <div className="w-full lg:w-1/2 xl:w-3/5">
+      {/* Content Container - Text Left, Image Right on Desktop */}
+      <div className="flex flex-col items-center lg:flex-row lg:items-center gap-0 lg:gap-10 xl:gap-12 2xl:gap-16 lg:ml-0 xl:ml-16 2xl:ml-32 -mt-2 lg:mt-0">
+        {/* Text Box - Left on Desktop, Second on Mobile */}
+        <div className="w-full lg:w-1/2 xl:w-3/5 order-2 lg:order-1">
           <HoverBorderGradient
             containerClassName="w-full rounded-none"
             className="w-full"
@@ -65,6 +52,20 @@ export default function FoundersNote() {
               </div>
             </div>
           </HoverBorderGradient>
+        </div>
+
+        {/* Image - Right on Desktop, First on Mobile */}
+        <div className="w-4/5 lg:w-[clamp(400px,400px+2vw,400px)] shrink-0 order-1 lg:order-2">
+          <div className="relative w-full">
+            <Image
+              src="/Arjun Self-Potrait.webp"
+              alt="Arjun"
+              width={600}
+              height={600}
+              className="w-full h-full object-contain"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
