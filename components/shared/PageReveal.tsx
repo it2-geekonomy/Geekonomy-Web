@@ -7,7 +7,6 @@ export default function PageReveal() {
   const revealRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const [isMounted, setIsMounted] = useState(false);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     setIsMounted(true);
@@ -15,33 +14,6 @@ export default function PageReveal() {
 
   useEffect(() => {
     if (!isMounted || typeof window === "undefined") return;
-    
-    // Check if splash already completed - if so, hide completely
-    try {
-      const splashComplete = (
-        localStorage.getItem("splashComplete") === "true" || 
-        sessionStorage.getItem("splashComplete") === "true"
-      );
-      
-      if (splashComplete) {
-        // Already completed - hide PageReveal
-        if (revealRef.current) {
-          gsap.set(revealRef.current, { display: "none", opacity: 0 });
-        }
-        return;
-      }
-    } catch (error) {
-      if (revealRef.current) {
-        gsap.set(revealRef.current, { display: "none", opacity: 0 });
-      }
-      return;
-    }
-
-    // Hide PageReveal completely during splash
-    if (revealRef.current && overlayRef.current) {
-      gsap.set(revealRef.current, { opacity: 0, display: "none" });
-      gsap.set(overlayRef.current, { opacity: 1 });
-    }
     
     // Simple, professional reveal animation
     const animateReveal = () => {
@@ -66,49 +38,13 @@ export default function PageReveal() {
       });
     };
 
-    // Wait for splash to complete, then show PageReveal
-    const checkSplashComplete = () => {
-      if (!revealRef.current || !overlayRef.current) {
-        setTimeout(checkSplashComplete, 100);
-        return;
-      }
-
-      // Poll for splash completion
-      intervalRef.current = setInterval(() => {
-        try {
-          const completed = (
-            localStorage.getItem("splashComplete") === "true" || 
-            sessionStorage.getItem("splashComplete") === "true"
-          );
-          
-          if (completed) {
-            if (intervalRef.current) {
-              clearInterval(intervalRef.current);
-              intervalRef.current = null;
-            }
-            // Show and animate PageReveal after splash completes
-            setTimeout(() => {
-              animateReveal();
-            }, 100);
-          }
-        } catch (error) {
-          if (intervalRef.current) {
-            clearInterval(intervalRef.current);
-            intervalRef.current = null;
-          }
-        }
-      }, 100);
-    };
-
     // Small delay to ensure DOM is ready
-    const timeoutId = setTimeout(checkSplashComplete, 100);
+    const timeoutId = setTimeout(() => {
+      animateReveal();
+    }, 100);
     
     return () => {
       clearTimeout(timeoutId);
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
     };
   }, [isMounted]);
 
