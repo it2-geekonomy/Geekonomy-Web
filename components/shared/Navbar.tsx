@@ -170,7 +170,7 @@ export default function Navbar() {
           {/* Mobile: GET IN TOUCH button and Hamburger Menu */}
           <div className="lg:hidden flex items-center gap-2 sm:gap-3 shrink-0">
             <Link
-              href="/contact"
+              href="/contact#form"
               className="inline-block bg-[#6FAF4E]/80 text-white border-2 border-transparent px-6 sm:px-10 py-2 sm:py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6FAF4E] hover:text-[#6FAF4E] hover:scale-105 whitespace-nowrap"
             >
               <Typography as="span" variant="sm" className="font-normal">
