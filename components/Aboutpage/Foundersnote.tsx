@@ -8,7 +8,7 @@ export default function FoundersNote() {
   return (
     <section className="w-full bg-black text-white py-2 pb-10 md:pb-0 px-6 sm:px-8 md:px-12 lg:px-16">
       {/* Heading */}
-      <div className="text-left mb-5 lg:ml-2 xl:ml-16 2xl:ml-32">
+      <div className="text-left mb-5 lg:mb-0 lg:ml-2 xl:ml-16 2xl:ml-32">
         <Typography
           as="h2"
           variant="3xl"
