@@ -37,9 +37,11 @@ export default function ComingSoon({ title }: ComingSoonProps) {
         
         <Link
           href="/"
-          className="inline-block px-8 py-3 rounded-full bg-[#6eaf4c]/30 border border-[#6eaf4c] text-white uppercase text-sm font-normal transition-all duration-200 hover:bg-[#6eaf4c]/40"
+          className="inline-block bg-[#6FAF4E]/80 text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6FAF4E] hover:text-[#6FAF4E] hover:scale-105"
         >
-          Back to Home
+          <Typography as="span" variant="sm" className="font-normal">
+            Back to Home
+          </Typography>
         </Link>
       </div>
     </main>
