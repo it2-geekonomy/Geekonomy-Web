@@ -39,7 +39,7 @@ export default function FoundersNote() {
                   className="text-[#FFFFFF] leading-relaxed"
                 >
                   &ldquo;Geekonomy was founded with a clear belief, growth is most effective when it is intentional and well structured.
-                  When strategy, tech, branding and marketing work together as a system, businesses move forward with clarity, confidence and consistency.&rdquo;
+                  When strategy, tech, branding and marketing work together as a system, businesses move forward with clarity, confidence and consistency.
                 </Typography>
 
                 <Typography
@@ -47,7 +47,7 @@ export default function FoundersNote() {
                   variant="base"
                   className="text-[#FFFFFF] leading-relaxed"
                 >
-                  &ldquo;That belief shapes everything we do at Geekonomy. Our focus is on building growth systems that are connected structures that evolve with the business and support long-term progress. Building with intent, clarity and purpose guides every decision we make.&rdquo;
+                  That belief shapes everything we do at Geekonomy. Our focus is on building growth systems that are connected structures that evolve with the business and support long-term progress. Building with intent, clarity and purpose guides every decision we make.&rdquo;
                 </Typography>
               </div>
             </div>
