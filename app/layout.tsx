@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import PageReveal from "@/components/shared/PageReveal";
 import MouseLight from "@/components/shared/MouseLight";
 import PageContentWrapper from "@/components/shared/PageContentWrapper";
 import PageTransition from "@/components/shared/PageTransition";
@@ -29,7 +28,6 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <PageReveal />
         <MouseLight />
         <PageTransition>
           <PageContentWrapper>
