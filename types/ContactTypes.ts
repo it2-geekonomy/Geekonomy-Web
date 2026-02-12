@@ -11,7 +11,7 @@ export interface ContactFormValues {
   lastName: string;
   email: string;
   phone: string;
-  organization: string;
+  organisation: string;
   subject: ContactSubject[];
   message: string;
 }
