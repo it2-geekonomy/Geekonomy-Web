@@ -9,7 +9,7 @@ interface ComingSoonProps {
 
 export default function ComingSoon({ title }: ComingSoonProps) {
   return (
-    <main className="min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 lg:px-10">
+    <main className="min-h-screen bg-black flex items-start justify-center px-4 sm:px-6 lg:px-10 pt-[20vh] sm:pt-[25vh]">
       <div className="text-center max-w-2xl mx-auto">
         <Typography
           as="h1"
