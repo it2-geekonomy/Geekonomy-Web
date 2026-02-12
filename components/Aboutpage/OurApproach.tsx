@@ -65,7 +65,7 @@ export default function OurApproach() {
             </Typography>
 
             <Image
-              src="/ourapproach/Structured.webp"
+              src="/ourapproach/Structured.png"
               alt="Structured"
               width={120}
               height={90}
@@ -111,7 +111,7 @@ export default function OurApproach() {
             </Typography>
 
             <Image
-              src="/ourapproach/Practical.webp"
+              src="/ourapproach/Practical.png"
               alt="Practical"
               width={100}
               height={90}
@@ -157,7 +157,7 @@ export default function OurApproach() {
             </Typography>
 
             <Image
-              src="/ourapproach/Scalable.webp"
+              src="/ourapproach/Scalable.png"
               alt="Scalable"
               width={100}
               height={90}
