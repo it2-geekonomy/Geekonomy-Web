@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Typography } from "@/components/ui/Typography";
@@ -22,6 +22,7 @@ export const StickyScroll = ({
 
   const pageRef = useRef<HTMLDivElement | null>(null);
   const desktopRef = useRef<HTMLDivElement | null>(null);
+  const sectionsWrapperRef = useRef<HTMLDivElement | null>(null);
 
   const mobileScroll = useScroll({
     target: pageRef,
@@ -35,32 +36,56 @@ export const StickyScroll = ({
 
   const cardLength = content.length;
 
-  const updateActive = (latest: number) => {
-    const points = content.map((_, i) =>
-      cardLength === 1 ? 0 : i / (cardLength - 1)
-    );
-
-    let closest = 0;
-    let min = Infinity;
-
-    points.forEach((p, i) => {
-      const d = Math.abs(latest - p);
-      if (d < min) {
-        min = d;
-        closest = i;
+  // Active = section that CONTAINS the viewport center. Prevents first image showing between others.
+  const updateActiveFromViewport = () => {
+    if (window.innerWidth < 1024 || !sectionsWrapperRef.current) return;
+    const wrapper = sectionsWrapperRef.current;
+    const children = Array.from(wrapper.children) as HTMLElement[];
+    if (children.length !== cardLength) return;
+    const viewportCenterY = window.innerHeight / 2;
+    let active = 0;
+    for (let i = 0; i < children.length; i++) {
+      const rect = children[i].getBoundingClientRect();
+      if (viewportCenterY >= rect.top && viewportCenterY < rect.bottom) {
+        active = i;
+        break;
       }
-    });
+      if (viewportCenterY < rect.top) break;
+      active = i;
+    }
+    setActiveCard(active);
+  };
 
-    setActiveCard(closest);
+  const updateActiveFromProgress = (latest: number) => {
+    if (cardLength <= 1) {
+      setActiveCard(0);
+      return;
+    }
+    setActiveCard(Math.min(Math.floor(latest * cardLength), cardLength - 1));
   };
 
   useMotionValueEvent(mobileScroll.scrollYProgress, "change", (v) => {
-    if (window.innerWidth < 1024) updateActive(v);
+    if (window.innerWidth < 1024) updateActiveFromProgress(v);
   });
 
-  useMotionValueEvent(desktopScroll.scrollYProgress, "change", (v) => {
-    if (window.innerWidth >= 1024) updateActive(v);
+  useMotionValueEvent(desktopScroll.scrollYProgress, "change", () => {
+    if (window.innerWidth >= 1024) updateActiveFromViewport();
   });
+
+  useEffect(() => {
+    if (window.innerWidth < 1024 || cardLength === 0) return;
+    updateActiveFromViewport();
+    const scrollContainer = desktopRef.current;
+    const onScroll = () => updateActiveFromViewport();
+    scrollContainer?.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    const t = setInterval(updateActiveFromViewport, 150);
+    return () => {
+      scrollContainer?.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scroll", onScroll);
+      clearInterval(t);
+    };
+  }, [cardLength]);
 
   useStickyScrollLock(desktopRef, pageRef);
 
@@ -103,14 +128,14 @@ export const StickyScroll = ({
         </div>
 
         <div className="w-full lg:w-[60%]">
-          <div className="space-y-8 md:pb-0">
+          <div ref={sectionsWrapperRef} className="space-y-8 md:pb-0">
             {content.map((item, index) => (
               <div key={item.title + index}>
                 <motion.div
                   animate={{ opacity: activeCard === index ? 1 : 0.3 }}
                 >
                   <Typography
-                    as="h2"
+                    as="h1"
                     variant="2xl"
                     className="text-[#FFFFFF] font-bold"
                   >
