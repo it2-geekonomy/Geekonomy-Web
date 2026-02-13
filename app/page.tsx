@@ -21,9 +21,7 @@ export default function Home() {
       <ScrollRevealSection index={2}>
         <ProcessSection />
       </ScrollRevealSection>
-      <ScrollRevealSection index={3}>
         <IndustriesSection />
-      </ScrollRevealSection>
       <ScrollRevealSection index={4}>
         <FirstStepSection />
       </ScrollRevealSection>
