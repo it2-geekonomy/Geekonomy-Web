@@ -138,13 +138,13 @@ export default function Navbar() {
               alt="GEEKONOMY Logo"
               width={350}
               height={350}
-              className="object-contain w-[clamp(190px,10vw,150px)] sm:w-[clamp(250px,10vw,150px)] lg:w-74 xl:w-full"
+              className="object-contain w-[clamp(190px,10vw,150px)] sm:w-[clamp(250px,10vw,150px)] lg:w-70 xl:w-full"
               priority
             />
           </Link>
 
           {/* Desktop Navigation - Hidden on mobile */}
-          <ul className="hidden lg:flex items-center gap-6 lg:gap-3 xl:gap-10 2xl:gap-20">
+          <ul className="hidden lg:flex items-center gap-6 lg:gap-3 xl:gap-9 2xl:gap-20">
             {NAVIGATION_ITEMS.map((item) => {
               const isActive = isMounted && (pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href)));
               return (
