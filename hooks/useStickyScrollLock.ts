@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 
 export function useStickyScrollLock(
-  desktopRef: React.RefObject<HTMLDivElement>,
-  pageRef: React.RefObject<HTMLElement>
+  desktopRef: React.RefObject<HTMLDivElement | null>,
+  pageRef: React.RefObject<HTMLElement | null>
 ) {
   useEffect(() => {
     if (!desktopRef.current || !pageRef.current) return;
