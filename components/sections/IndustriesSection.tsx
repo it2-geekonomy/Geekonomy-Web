@@ -226,3 +226,34 @@ export default function IndustriesSection() {
     </section>
   );
 }
+
+// for the below code us aspect ratio?
+// {/* Image wrapper with fixed square container */}
+// <div className="relative w-full aspect-square bg-black overflow-hidden rounded-lg">
+//   <Image
+//     src={item.image}
+//     alt={item.name}
+//     fill
+//     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+//   />
+
+//   {/* Overlay */}
+//   <div
+//     className={`
+//       absolute inset-0 bg-black/50 transition-opacity duration-300
+//       ${isActive ? "opacity-100" : "opacity-0"}
+//       group-hover:opacity-100
+//     `}
+//   />
+
+//   {/* Logo centered inside image */}
+//   <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+//     <Image
+//       src={item.logo}
+//       alt={item.name}
+//       width={item.width}
+//       height={item.height}
+//       className="object-contain max-w-[60%] max-h-[60%]"
+//     />
+//   </div>
+// </div>

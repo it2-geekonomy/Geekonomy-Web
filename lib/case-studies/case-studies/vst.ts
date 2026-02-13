@@ -11,12 +11,12 @@ export const vstCaseStudy: CaseStudy = {
   slug: "vst-group",
   pdfUrl: "/case-studies/VST.pdf",
   banner: "/case-studies/image4.webp",
-  imageGrid1: [
-    "/case-studies/1.webp",
-    "/case-studies/2.webp",
-    "/case-studies/3.webp",
-    "/case-studies/4.webp",
-  ],
+  // imageGrid1: [
+  //   "/case-studies/1.webp",
+  //   "/case-studies/2.webp",
+  //   "/case-studies/3.webp",
+  //   "/case-studies/4.webp",
+  // ],
   imageGrid2: [
     {
       img: "/case-studies/5.webp",
