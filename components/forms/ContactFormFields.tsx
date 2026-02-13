@@ -17,7 +17,7 @@ export function ContactFormFields({
   toggleSubject,
 }: ContactFormFieldsProps) {
   return (
-    <div className="space-y-6 lg:space-y-16 relative text-left pl-0 lg:pl-14 min-w-0">
+    <div className="space-y-6 lg:space-y-16 relative text-left pl-0 lg:pl-5 xl:pl-14 min-w-0">
       <div className="hidden lg:block absolute left-0 top-0 h-full w-px bg-white/50" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-22">
@@ -53,8 +53,8 @@ export function ContactFormFields({
       </div>
 
       <div>
-        <Typography as="p" variant="base" className="text-white mb-8">
-          Select Subject?
+        <Typography as="p" variant="base" className="text-[#6FAF4E] mb-8">
+          How can we be your Growth Partners
         </Typography>
         <div className="grid grid-cols-1 gap-y-10 gap-x-12 sm:grid-cols-2">
           {CONTACT_SUBJECTS.map((item) => (
@@ -75,9 +75,19 @@ export function ContactFormFields({
                   <span className="text-[#6FAF4E] text-[14px] leading-none font-bold">✓</span>
                 )}
               </span>
-              <Typography as="span" variant="base" className="text-white">
-                {item.label}
-              </Typography>
+              <div className="flex flex-col leading-tight">
+                <Typography as="span" variant="base" className="text-white">
+                  {item.title}
+                </Typography>
+
+                {item.sub && (
+                  <span className="text-white text-lg lg:text-[14px] xl:text-lg">
+                    ({item.sub})
+                  </span>
+                )}
+
+              </div>
+
             </label>
           ))}
         </div>

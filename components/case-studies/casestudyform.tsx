@@ -1,7 +1,5 @@
 "use client";
-
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { CaseStudy } from "@/types";
 import Button from "@/components/ui/Button";
 import { Typography } from "../ui/Typography";
@@ -171,14 +169,6 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
                 >
                     <div className="flex items-center gap-3">
                         <span>Submit and View</span>
-                        <div className="relative w-6 h-6 flex-shrink-0">
-                            <Image
-                                src="/case-studies/Icon.png"
-                                alt="Icon"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
                     </div>
                 </Button>
             </div>

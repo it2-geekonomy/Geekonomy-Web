@@ -1,6 +1,6 @@
 export const CONTACT_SUBJECTS = [
-  { id: "general", label: "General Enquiry" },
-  { id: "digi360", label: "Digi 360" },
-  { id: "branding", label: "Brand Foundry" },
-  { id: "codecraft", label: "Code Craft" },
+  { id: "general", title: "General Enquiry" },
+  { id: "digi360", title: "Digi 360", sub: "Marketing" },
+  { id: "branding", title: "BrandFoundry", sub: "Branding" },
+  { id: "codecraft", title: "CodeCraft", sub: "Custom Development" },
 ];
