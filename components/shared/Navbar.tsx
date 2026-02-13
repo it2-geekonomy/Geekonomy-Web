@@ -138,7 +138,7 @@ export default function Navbar() {
               alt="GEEKONOMY Logo"
               width={350}
               height={350}
-              className="object-contain w-[clamp(190px,10vw,150px)] sm:w-[clamp(250px,10vw,150px)] lg:w-74 xl:w-full"
+              className="object-contain w-[clamp(190px,10vw,150px)] sm:w-[clamp(250px,10vw,150px)] lg:w-70 xl:w-full"
               priority
             />
           </Link>
