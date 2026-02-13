@@ -1,12 +1,109 @@
 "use client";
+import { useState, useRef } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { CaseStudy } from "@/types";
 import CaseStudyForm from "@/components/case-studies/casestudyform";
 import LastSection from "./LastSection";
 import OptionalGrid from "@/components/case-studies/OptionalGrid";
 import { Typography } from "../ui/Typography";
+
 interface CaseStudyLayoutProps {
   post: CaseStudy;
+}
+
+interface MetricItemProps {
+  item: {
+    icon?: string;
+    title: string;
+    text: string;
+  };
+  index: number;
+}
+
+function MetricItem({ item, index }: MetricItemProps) {
+  const [mousePosition, setMousePosition] = useState({ x: 50 });
+  const [isHovered, setIsHovered] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      setMousePosition({ x });
+    }
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect();
+      setMousePosition({ x: rect.width / 2 });
+    }
+  };
+
+  return (
+    <div
+      ref={containerRef}
+      className="group relative flex flex-col items-center text-center rounded-lg pt-4 pb-6 bg-[#18181B] bg-opacity-80 border border-gray-700 cursor-pointer transition-all duration-300 overflow-hidden"
+      data-hide-mouse-light="true"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={() => setIsHovered(false)}
+      onMouseMove={handleMouseMove}
+    >
+      {/* Gradient glow - appears behind/below the card */}
+      {isHovered && (
+        <motion.div
+          className="absolute bottom-0 left-0 right-0 h-[4px] z-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <motion.div
+            className="absolute bottom-0 h-full"
+            style={{
+              left: `${mousePosition.x}px`,
+              width: "300px",
+              transform: "translateX(-50%)",
+              background: `radial-gradient(circle at center, #6FAF4E, #4ade80, #22c55e, transparent 70%)`,
+              filter: "blur(12px)",
+              boxShadow: "0 0 24px #6FAF4E, 0 0 12px #4ade80",
+            }}
+          />
+        </motion.div>
+      )}
+
+      <div className="relative z-10 w-full">
+        {item.icon && (
+          <div className="w-8 h-8 sm:w-10 sm:h-10 relative mb-3 mx-auto">
+            <Image
+              src={item.icon}
+              alt={`icon-${index}`}
+              fill
+              className="object-contain"
+            />
+          </div>
+        )}
+
+        <Typography
+          as="h3"
+          variant="lg"
+          className="font-normal mb-1 text-white"
+        >
+          {item.title}
+        </Typography>
+
+        <Typography
+          as="p"
+          variant="base"
+          className="text-[#FFFFFF99] text-opacity-60 mb-8 px-3"
+        >
+          {item.text}
+        </Typography>
+      </div>
+    </div>
+  );
 }
 
 export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
@@ -58,40 +155,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
               }`}
           >
             {post.imageGrid2.map((item, i) => (
-              <div
-                key={i}
-                className="relative flex flex-col items-center text-center rounded-lg pt-4 pb-6 bg-[#18181B] bg-opacity-80 border border-gray-700"
-              >
-                {item.icon && (
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 relative mb-3">
-                    <Image
-                      src={item.icon}
-                      alt={`icon-${i}`}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                )}
-
-                <Typography
-                  as="h3"
-                  variant="lg"
-                  className="font-normal mb-1 text-white"
-                >
-                  {item.title}
-                </Typography>
-
-                <Typography
-                  as="p"
-                  variant="base"
-                  className="text-[#FFFFFF99] text-opacity-60 mb-8 px-3"
-                >
-                  {item.text}
-                </Typography>
-
-                {/* Gradient line */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[2px] bg-gradient-to-r from-transparent via-[#6FAF4E] to-transparent shadow-[0_0_12px_#6FAF4E]" />
-              </div>
+              <MetricItem key={i} item={item} index={i} />
             ))}
           </div>
 
@@ -142,7 +206,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
         </div>
       )}
 
-      <CaseStudyForm post={post} />
+      {/* <CaseStudyForm post={post} /> */}
       <LastSection />
     </section>
   );
