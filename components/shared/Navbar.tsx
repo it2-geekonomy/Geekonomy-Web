@@ -144,7 +144,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation - Hidden on mobile */}
-          <ul className="hidden lg:flex items-center gap-6 lg:gap-3 xl:gap-10 2xl:gap-20">
+          <ul className="hidden lg:flex items-center gap-6 lg:gap-3 xl:gap-9 2xl:gap-20">
             {NAVIGATION_ITEMS.map((item) => {
               const isActive = isMounted && (pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href)));
               return (
