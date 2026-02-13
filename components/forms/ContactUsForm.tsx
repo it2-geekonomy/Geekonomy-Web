@@ -177,7 +177,7 @@ export default function ContactUsForm() {
                 {/* Social icons */}
                 <div className="flex items-center gap-4 pt-4 mb-8 lg:mb-0">
                     <Link
-                        href="https://x.com/TheGeekonomy?s=20"
+                        href="https://x.com/TheGeekonomy"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Geekonomy on X"
@@ -186,7 +186,7 @@ export default function ContactUsForm() {
                     </Link>
 
                     <Link
-                        href="https://www.facebook.com/geekonomytechpvtltd"
+                        href="https://www.facebook.com/thegeekonomy"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Geekonomy on Facebook"
@@ -195,7 +195,7 @@ export default function ContactUsForm() {
                     </Link>
 
                     <Link
-                        href="https://www.instagram.com/geekonomy_?igsh=MTlpdTMzaG83ZmJ5MA%3D%3D"
+                        href="https://www.instagram.com/geekonomy"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Geekonomy on Instagram"
@@ -204,7 +204,7 @@ export default function ContactUsForm() {
                     </Link>
 
                     <Link
-                        href="https://www.linkedin.com/company/geekonomy-technology-private-limited/"
+                        href="https://www.linkedin.com/company/thegeekonomy/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Geekonomy on LinkedIn"
