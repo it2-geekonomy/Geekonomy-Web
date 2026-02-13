@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Typography } from "@/components/ui/Typography";
-import { ADDRESS } from "@/lib/constants";
-import { FOOTER_NAV_ITEMS } from "@/lib/constants";
+import { ADDRESS } from "@/lib/constants/company";
+import { FOOTER_NAV_ITEMS } from "@/lib/constants/navigation";
 
 export default function Footer() {
   return (

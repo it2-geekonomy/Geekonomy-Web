@@ -98,7 +98,7 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
                 <Typography
                     as="h2"
                     variant="lg"
-                    className="text-xl md:text-2xl font-medium text-white mb-4"
+                    className="font-medium text-white mb-4"
                 >
                     Please fill the details to view the project insights
                 </Typography>
