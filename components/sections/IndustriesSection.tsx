@@ -2,8 +2,40 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Typography } from "@/components/ui/Typography";
 import { HEADING_TEXT, CLIENTS } from "@/lib/constants";
+import { caseStudies } from "@/lib/caseStudies";
+
+// Helper function to slugify (matching the one in case study page)
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+// Map client names to case study slugs
+const CLIENT_TO_SLUG: Record<string, string> = {
+  "DivyaSree": "divyasree-builders",
+  "Musashi": "mushashi-delta",
+  "Hindustan Power": "hindustan-power",
+  "VST Group": "vst-group",
+};
+
+// Get case study link for a client
+function getCaseStudyLink(clientName: string): string | null {
+  const slug = CLIENT_TO_SLUG[clientName];
+  if (!slug) return null;
+  
+  const caseStudy = caseStudies.find((cs) => cs.slug === slug);
+  if (!caseStudy || !caseStudy.category || caseStudy.category.length === 0) return null;
+  
+  const category = slugify(caseStudy.category[0]);
+  return `/case-studies/${category}/${slug}`;
+}
 
 export default function IndustriesSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -45,12 +77,10 @@ export default function IndustriesSection() {
                   ? "w-40 sm:w-44 lg:w-auto"
                   : "w-26 sm:w-30 lg:w-auto";
 
-            return (
-              <div
-                key={i}
-                onClick={() => setActiveIndex(isActive ? null : i)}
-                className="relative group cursor-pointer w-full"
-              >
+            const caseStudyLink = getCaseStudyLink(item.name);
+
+            const cardContent = (
+              <>
                 {/* Image wrapper */}
                 <div className="relative w-full overflow-hidden bg-black">
                   <div className="relative w-full h-auto">
@@ -97,6 +127,25 @@ export default function IndustriesSection() {
                     </div>
                   </div>
                 </div>
+              </>
+            );
+
+            return (
+              <div key={i} className="w-full">
+                {caseStudyLink ? (
+                  <Link href={caseStudyLink} className="block">
+                    <div className="relative group cursor-pointer w-full">
+                      {cardContent}
+                    </div>
+                  </Link>
+                ) : (
+                  <div
+                    onClick={() => setActiveIndex(isActive ? null : i)}
+                    className="relative group cursor-pointer w-full"
+                  >
+                    {cardContent}
+                  </div>
+                )}
               </div>
             );
           })}

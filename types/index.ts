@@ -32,3 +32,31 @@ export type ContentItem =
       className?: string;
       alt?: string;
     };
+
+export interface CaseStudy {
+  id: number;
+  title: string;
+  internalTitle: string;
+  subtitle: string;
+  image: string;
+  slug: string;
+  pdfUrl: string;
+  banner: string;
+  imageGrid1?: string[];
+  imageGrid2?: Array<{
+    img: string;
+    icon: string;
+    title: string;
+    text: string;
+  }>;
+  contentSections: Array<{
+    id: number;
+    content: string;
+  }>;
+  imageGridOptional?: string[];
+  button: {
+    label: string;
+    link: string;
+  };
+  category: string[];
+}
