@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Typography } from "@/components/ui/Typography";
-import { useStickyScrollLock } from "@/hooks/useStickyScrollLock";
 
 export const StickyScroll = ({
   content,
@@ -13,8 +12,8 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
-    image?: React.ReactNode;
-    table?: React.ReactNode;
+    image?: React.ReactNode;   
+    table?: React.ReactNode;   
   }[];
   contentClassName?: string;
 }) => {
@@ -62,7 +61,62 @@ export const StickyScroll = ({
     if (window.innerWidth >= 1024) updateActive(v);
   });
 
-  useStickyScrollLock(desktopRef, pageRef);
+  // -----------------------------
+  // HARD LOCK / UNLOCK BLOG SCROLL
+  // -----------------------------
+  useEffect(() => {
+    if (!desktopRef.current || !pageRef.current) return;
+
+    const container = desktopRef.current;
+    const section = pageRef.current;
+    const footer = document.querySelector("footer");
+
+    const lock = () => {
+      container.style.overflowY = "hidden";
+      container.style.pointerEvents = "none"; // HARD stop scroll
+    };
+
+    const unlock = () => {
+      container.style.overflowY = "auto";
+      container.style.pointerEvents = "auto";
+    };
+
+    lock(); // start locked
+
+    const sectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.intersectionRatio >= 0.6) {
+          unlock();
+        } else {
+          lock();
+        }
+      },
+      { threshold: [0, 0.6] }
+    );
+
+    sectionObserver.observe(section);
+
+    let footerObserver: IntersectionObserver | null = null;
+
+    if (footer) {
+      footerObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            lock(); 
+          }
+        },
+        { threshold: 0.01 }
+      );
+
+      footerObserver.observe(footer);
+    }
+
+    return () => {
+      sectionObserver.disconnect();
+      footerObserver?.disconnect();
+      unlock();
+    };
+  }, []);
 
   return (
     <section ref={pageRef} className="relative w-full -mt-12">
@@ -79,9 +133,10 @@ export const StickyScroll = ({
           msOverflowStyle: "none",
           paddingRight: "12px",
           marginRight: "-12px",
-          overflowY: "hidden",
+          overflowY: "hidden", // default locked
         }}
       >
+        {/* ✅ STICKY IMAGE (mobile) */}
         <div
           className={cn(
             `
@@ -97,6 +152,7 @@ export const StickyScroll = ({
           {content[activeCard]?.image}
         </div>
 
+        {/* ✅ CONTENT */}
         <div className="w-full lg:w-[60%]">
           <div className="space-y-12 md:pb-0">
             {content.map((item, index) => (
@@ -132,6 +188,7 @@ export const StickyScroll = ({
           </div>
         </div>
 
+        {/* ✅ DESKTOP STICKY IMAGE */}
         <div
           className={cn(
             `
