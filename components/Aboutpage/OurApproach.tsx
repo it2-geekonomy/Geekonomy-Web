@@ -186,12 +186,11 @@ export default function OurApproach() {
         </div>
       </div>
 
-      {/* Bottom copy */}
       <div className="mt-20 xl:flex xl:justify-center xl:px-24">
         <div className="w-full text-center flex flex-col items-center 2xl:w-[80%]">
           <Typography as="p" variant="base" className="text-white/80 leading-relaxed">
             Every system we build is tailored to the business it serves, whether
-            it’s establishing a strong digital foundation, improving efficiency
+            it's establishing a strong digital foundation, improving efficiency
             or enabling long-term expansion.
           </Typography>
         </div>

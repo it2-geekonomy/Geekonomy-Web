@@ -88,7 +88,7 @@ export default function DisconnectSection() {
 
               {/* Call to Action */}
               <Link
-                href="/process"
+                href="/how-we-work"
                 className="font-semibold text-[#6eaf4c]/80 transition-colors duration-200 inline-flex items-center gap-2"
               >
                 <Typography as="span" variant="base" className="font-semibold">

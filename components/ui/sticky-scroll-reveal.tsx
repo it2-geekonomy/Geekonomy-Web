@@ -119,11 +119,11 @@ export const StickyScroll = ({
   }, []);
 
   return (
-    <section ref={pageRef} className="relative w-full -mt-12">
+    <section ref={pageRef} className="relative w-full">
       <div
         ref={desktopRef}
         className="
-          relative flex w-full gap-8
+          relative flex w-full gap-6 lg:gap-8
           px-4 sm:px-8 md:px-14
           flex-col lg:flex-row   
           lg:h-[calc(100vh-4rem)] lg:no-scrollbar
@@ -140,21 +140,26 @@ export const StickyScroll = ({
         <div
           className={cn(
             `
-            sticky top-2 z-30
+            sticky top-0 z-30
             flex lg:hidden        
-            w-full h-[40vh]
+            w-full
             items-center justify-center
-            overflow-hidden rounded-xl
+            mb-4
+            overflow-visible
             `,
             contentClassName
           )}
         >
-          {content[activeCard]?.image}
+          <div className="relative w-full aspect-video min-h-[300px] max-h-[500px]">
+            <div className="relative w-full h-full *:object-contain! *:w-full! *:h-full!">
+              {content[activeCard]?.image}
+            </div>
+          </div>
         </div>
 
         {/* ✅ CONTENT */}
         <div className="w-full lg:w-[60%]">
-          <div className="space-y-12 md:pb-0">
+          <div className="space-y-8 md:pb-0">
             {content.map((item, index) => (
               <div key={item.title + index}>
                 <motion.div
@@ -193,14 +198,19 @@ export const StickyScroll = ({
           className={cn(
             `
             hidden lg:flex       
-            sticky top-50
-            w-[40%] h-[60vh]
+            sticky
+            w-[40%] h-[50vh]
             lg:h-[50vh]
             items-center justify-center
             overflow-hidden rounded-xl
             `,
             contentClassName
           )}
+          style={{
+            top: '30%',
+            transform: 'translateY(-50%)',
+            alignSelf: 'flex-start',
+          }}
         >
           {content[activeCard]?.image}
         </div>
