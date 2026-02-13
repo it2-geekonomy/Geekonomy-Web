@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { allBlogsData } from "@/lib/blog";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
-import BlogDetailClient from "@/app/blog/[slug]/BlogDetailClient";
+import BlogDetailClient from "@/app/blogs/[slug]/BlogDetailClient";
 
 export async function generateMetadata({
   params,
@@ -76,7 +76,7 @@ export default async function BlogDetailPage({
             The blog you're looking for doesn't exist.
           </p>
           <Link
-            href="/blog"
+            href="/blogs"
             className="text-[#6FAF4E] hover:underline font-medium"
           >
             ← Back to Blogs
