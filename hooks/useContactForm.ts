@@ -51,7 +51,7 @@ export function useContactForm() {
       try {
         const selectedSubjects = CONTACT_SUBJECTS.filter((item) =>
           values.subject.includes(item.id as any)
-        ).map((item) => item.label);
+        ).map((item) => item.title);
 
         const subjectText = selectedSubjects.join(", ") || "Not specified";
 
