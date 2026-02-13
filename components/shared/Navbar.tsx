@@ -237,8 +237,8 @@ export default function Navbar() {
                     }}
                     className={`block font-medium uppercase transition-all duration-300 py-3 px-4 rounded-lg ${
                       isActive
-                        ? "text-accent-green bg-accent-green/10"
-                        : "text-white hover:text-accent-green hover:bg-gray-900"
+                        ? "text-[#6FAF4E] bg-[#6FAF4E]/10"
+                        : "text-white hover:text-[#6FAF4E] hover:bg-gray-900"
                     }`}
                   >
                     <Typography as="span" variant="lg">
