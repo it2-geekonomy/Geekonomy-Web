@@ -1,42 +1,35 @@
 "use client";
 
 import { useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, MotionValue, useTransform, useSpring } from "framer-motion";
 import { Check } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { HOW_WE_WORK_PHASES } from "@/lib/constants";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 import { TimelineLine } from "./ProcessSection/TimelineLine";
 import { PhaseMarker } from "./ProcessSection/PhaseMarker";
-import {
-  ANIMATION_DELAYS,
-  ANIMATION_DURATIONS,
-  ANIMATION_EASING,
-  VIEWPORT_OPTIONS,
-  VIEWPORT_OPTIONS_WIDE,
-} from "./ProcessSection/animations";
+
+const SPRING = { stiffness: 55, damping: 18, mass: 1.2 };
+
+function scrollRange(start: number, width: number): [number, number, number, number] {
+  return [
+    Math.max(0, start - width),
+    start,
+    Math.min(1, start + width),
+    Math.min(1, start + width * 1.2),
+  ];
+}
 
 function HowWeWorkLeftSection() {
   return (
     <div className="lg:col-span-2 2xl:-translate-x-12">
-      <motion.div
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: ANIMATION_DURATIONS.slower,
-          delay: 0.2,
-          ease: ANIMATION_EASING,
-        }}
+      <Typography
+        as="p"
+        variant="base"
+        className="text-[#A0A0A0] leading-relaxed max-w-lg"
       >
-        <Typography
-          as="p"
-          variant="base"
-          className="text-[#A0A0A0] leading-relaxed max-w-lg"
-        >
-          We favour measured progress over rushed delivery. Quality holds longer than speed.
-        </Typography>
-      </motion.div>
+        We favour measured progress over rushed delivery. Quality holds longer than speed.
+      </Typography>
     </div>
   );
 }
@@ -46,98 +39,104 @@ interface HowWeWorkPhaseItemProps {
   index: number;
   isActive: boolean;
   isFilled: boolean;
+  scrollProgress: MotionValue<number>;
+  totalPhases: number;
 }
 
-function HowWeWorkPhaseItem({ phase, index, isActive, isFilled }: HowWeWorkPhaseItemProps) {
-  const baseDelay = index * ANIMATION_DELAYS.phaseStagger;
+function HowWeWorkPhaseItem({ phase, index, isActive, isFilled, scrollProgress, totalPhases }: HowWeWorkPhaseItemProps) {
+  const seg = 1 / totalPhases;
+  const trigger = index * seg;
+  const revealW = seg * 0.18;
+  const S = seg * 0.04;
+
+  // Container
+  const containerRange = scrollRange(trigger, revealW);
+  const rawOp = useTransform(scrollProgress, containerRange, [0, 0, 1, 1]);
+  const rawX  = useTransform(scrollProgress, containerRange, [40, 40, 0, 0]);
+  const op    = useSpring(rawOp, SPRING);
+  const x     = useSpring(rawX, SPRING);
+
+  // Number - stagger 1
+  const numberRange = scrollRange(trigger + S, revealW);
+  const rawNumberOp = useTransform(scrollProgress, numberRange, [0, 0, 1, 1]);
+  const rawNumberY  = useTransform(scrollProgress, numberRange, [10, 10, 0, 0]);
+  const numberOp    = useSpring(rawNumberOp, SPRING);
+  const numberY     = useSpring(rawNumberY, SPRING);
+
+  // Title - stagger 2
+  const titleRange = scrollRange(trigger + S * 2, revealW);
+  const rawTitleOp = useTransform(scrollProgress, titleRange, [0, 0, 1, 1]);
+  const rawTitleY  = useTransform(scrollProgress, titleRange, [14, 14, 0, 0]);
+  const titleOp    = useSpring(rawTitleOp, SPRING);
+  const titleY     = useSpring(rawTitleY, SPRING);
+
+  // Scale pulse peaks at segment midpoint
+  const mid = trigger + seg * 0.5;
+  const rawScale = useTransform(
+    scrollProgress,
+    [trigger, mid, trigger + seg],
+    [1, 1.05, 1]
+  );
+  const scale = useSpring(rawScale, { stiffness: 70, damping: 22 });
+
+  // Description with Checkmark - stagger 3
+  const checkRange   = scrollRange(trigger + S * 3, revealW);
+  const rawCheckOp   = useTransform(scrollProgress, checkRange, [0, 0, 1, 1]);
+  const rawCheckX    = useTransform(scrollProgress, checkRange, [-16, -16, 0, 0]);
+  const checkOp      = useSpring(rawCheckOp, SPRING);
+  const checkX       = useSpring(rawCheckX, SPRING);
+  const rawIconScale = useTransform(scrollProgress, checkRange, [0, 0, 1, 1]);
+  const iconScale    = useSpring(rawIconScale, { stiffness: 200, damping: 15 });
+
+  // Bullets/Conclusion - stagger 4
+  const contentRange = scrollRange(trigger + S * 4, revealW);
+  const rawContentOp = useTransform(scrollProgress, contentRange, [0, 0, 1, 1]);
+  const rawContentY  = useTransform(scrollProgress, contentRange, [12, 12, 0, 0]);
+  const contentOp    = useSpring(rawContentOp, SPRING);
+  const contentY     = useSpring(rawContentY, SPRING);
 
   return (
     <motion.div
       className="relative"
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={VIEWPORT_OPTIONS_WIDE}
-      transition={{
-        duration: ANIMATION_DURATIONS.slow,
-        delay: baseDelay,
-        ease: ANIMATION_EASING,
-      }}
+      style={{ opacity: op, x }}
+      initial={{ opacity: 0, x: 40 }}
     >
-      <PhaseMarker isActive={isActive} isFilled={isFilled} index={index} />
-
       <div>
         <motion.div
+          style={{ opacity: numberOp, y: numberY }}
           initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: ANIMATION_DURATIONS.normal,
-            delay: baseDelay + ANIMATION_DELAYS.contentOffset,
-            ease: ANIMATION_EASING,
-          }}
         >
-          <Typography
-            as="p"
-            variant="sm"
-            className="text-white/90 mb-1"
-          >
+          <Typography as="p" variant="sm" className="text-white/90 mb-1">
             {phase.number}
           </Typography>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: ANIMATION_DURATIONS.normal,
-            delay: baseDelay + ANIMATION_DELAYS.titleOffset,
-            ease: ANIMATION_EASING,
-          }}
+          style={{ opacity: titleOp, y: titleY }}
+          initial={{ opacity: 0, y: 14 }}
         >
           <motion.span
             className="inline-block"
-            animate={{
-              scale: isActive ? [1, 1.15, 1] : 1,
-            }}
-            transition={{
-              duration: 0.6,
-              ease: [0.16, 1, 0.3, 1],
-            }}
-            style={{ transformOrigin: "left center" }}
+            style={{ scale, transformOrigin: "left center" }}
+            initial={{ scale: 1 }}
           >
             <Typography
               as="h3"
               variant="2xl"
-              className={`text-[#6FAF4E] mb-4 transition-all duration-300 ${
-                isActive ? "font-bold" : "font-normal"
-              }`}
+              className="text-[#6FAF4E] mb-4 font-normal"
             >
               {phase.name}
             </Typography>
           </motion.span>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: ANIMATION_DURATIONS.fast,
-            delay: baseDelay + ANIMATION_DELAYS.checkmarkOffset,
-            ease: ANIMATION_EASING,
-          }}
           className="flex items-start gap-3 mb-4"
+          style={{ opacity: checkOp, x: checkX }}
+          initial={{ opacity: 0, x: -16 }}
         >
           <motion.div
             className="w-5 h-5 rounded-full border-2 border-[#6FAF4E] flex items-center justify-center shrink-0 mt-0.5"
-            initial={{ scale: 0, rotate: -180 }}
-            whileInView={{ scale: 1, rotate: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 15,
-              delay: baseDelay + ANIMATION_DELAYS.checkmarkInnerOffset,
-            }}
+            style={{ scale: iconScale }}
+            initial={{ scale: 0 }}
           >
             <Check className="w-3 h-3 text-[#6FAF4E] stroke-4" />
           </motion.div>
@@ -150,14 +149,8 @@ function HowWeWorkPhaseItem({ phase, index, isActive, isFilled }: HowWeWorkPhase
           </Typography>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: ANIMATION_DURATIONS.normal,
-            delay: baseDelay + ANIMATION_DELAYS.questionOffset,
-            ease: ANIMATION_EASING,
-          }}
+          style={{ opacity: contentOp, y: contentY }}
+          initial={{ opacity: 0, y: 12 }}
         >
           {phase.bullets && (
             <ul className="space-y-2 mb-4">
@@ -188,7 +181,14 @@ function HowWeWorkPhaseItem({ phase, index, isActive, isFilled }: HowWeWorkPhase
 
 export default function HowWeWorkProcess() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const scrollProgress = useScrollProgress(sectionRef);
+  
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start center", "end center"],
+  });
+
+  const plainProgress = useScrollProgress(sectionRef); // For isActive/isFilled
+  const n = HOW_WE_WORK_PHASES.length;
 
   return (
     <section
@@ -199,33 +199,39 @@ export default function HowWeWorkProcess() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 w-full px-4 sm:px-6 lg:px-10 2xl:max-w-7xl 2xl:mx-auto">
           <HowWeWorkLeftSection />
 
-          {/* Right Section - Timeline */}
           <div className="lg:col-span-3 relative">
-            <TimelineLine scrollProgress={scrollProgress} />
+            <TimelineLine scrollProgress={scrollYProgress} />
 
-            {/* Phases */}
             <div className="relative pl-20 space-y-8 md:space-y-16">
-              {HOW_WE_WORK_PHASES.map((phase, index) => {
-                const currentPhaseIndex = Math.min(
-                  Math.floor(scrollProgress * HOW_WE_WORK_PHASES.length),
-                  HOW_WE_WORK_PHASES.length - 1
-                );
-                
-                const isActive = index === currentPhaseIndex;
-                const segmentSize = 1 / HOW_WE_WORK_PHASES.length;
-                const phaseThreshold = index * segmentSize;
-                const isFilled = scrollProgress >= phaseThreshold;
+              {HOW_WE_WORK_PHASES.map((phase, index) => (
+                <div key={phase.number} className="relative">
+                  <div
+                    className="absolute"
+                    style={{ left: "-56px", top: "0", transform: "translateX(-50%)" }}
+                  >
+                    <PhaseMarker
+                      index={index}
+                      totalPhases={n}
+                      scrollProgress={scrollYProgress}
+                    />
+                  </div>
 
-                return (
                   <HowWeWorkPhaseItem
-                    key={phase.number}
                     phase={phase}
                     index={index}
-                    isActive={isActive}
-                    isFilled={isFilled}
+                    isActive={
+                      index ===
+                      Math.min(
+                        Math.floor(plainProgress * HOW_WE_WORK_PHASES.length),
+                        HOW_WE_WORK_PHASES.length - 1
+                      )
+                    }
+                    isFilled={plainProgress >= index / HOW_WE_WORK_PHASES.length}
+                    scrollProgress={scrollYProgress}
+                    totalPhases={n}
                   />
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
         </div>

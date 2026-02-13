@@ -1,16 +1,18 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ANIMATION_DURATIONS, ANIMATION_EASING } from "../ProcessSection/animations";
+import { motion, MotionValue, useTransform } from "framer-motion";
 
 const TIMELINE_LINE_POSITION = "left-6";
 const TIMELINE_LINE_WIDTH = "w-px";
 
 interface CapabilitiesTimelineProps {
-  scrollProgress: number;
+  scrollProgress: MotionValue<number>;
 }
 
 export function CapabilitiesTimeline({ scrollProgress }: CapabilitiesTimelineProps) {
+  const height = useTransform(scrollProgress, (progress) => `${progress * 100}%`);
+  const opacity = useTransform(scrollProgress, [0, 0.01, 1], [0, 1, 1]);
+
   return (
     <>
       {/* Vertical line - background */}
@@ -20,19 +22,19 @@ export function CapabilitiesTimeline({ scrollProgress }: CapabilitiesTimelinePro
         whileInView={{ scaleY: 1 }}
         viewport={{ once: true }}
         transition={{
-          duration: ANIMATION_DURATIONS.slowest,
-          ease: ANIMATION_EASING,
+          duration: 1.5,
+          ease: [0.16, 1, 0.3, 1],
         }}
         style={{ transformOrigin: "top" }}
       />
 
       {/* Animated fill line */}
-      <div
-        className={`absolute ${TIMELINE_LINE_POSITION} top-0 ${TIMELINE_LINE_WIDTH} bg-[#6eaf4c] z-10 transition-all duration-300 ease-out`}
+      <motion.div
+        className={`absolute ${TIMELINE_LINE_POSITION} top-0 ${TIMELINE_LINE_WIDTH} bg-[#6eaf4c] z-10`}
         style={{
-          height: `${scrollProgress * 100}%`,
+          height,
+          opacity,
           transformOrigin: "top",
-          opacity: scrollProgress > 0 ? 1 : 0,
         }}
       />
     </>
