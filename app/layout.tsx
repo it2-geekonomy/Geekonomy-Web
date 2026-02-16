@@ -6,6 +6,8 @@ import PageContentWrapper from "@/components/shared/PageContentWrapper";
 import PageTransition from "@/components/shared/PageTransition";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
+import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,17 +39,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                // Set initial navbar height immediately to prevent layout shift
+                if (typeof document !== 'undefined') {
+                  document.documentElement.style.setProperty('--navbar-height', '72px');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <MouseLight />
-        <PageTransition>
-          <PageContentWrapper>
-            <Navbar />
-            {children}
-            <Footer />
-          </PageContentWrapper>
-        </PageTransition>
+        <NavbarHeightProvider>
+          <MouseLight />
+          <Navbar />
+          <PageTransition>
+            <PageContentWrapper>
+              {children}
+              <Footer />
+              {/* <ChatwootIntegration /> */}
+            </PageContentWrapper>
+          </PageTransition>
+        </NavbarHeightProvider>
       </body>
     </html>
   );
