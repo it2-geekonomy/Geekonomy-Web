@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
+import { useStickyScrollLock } from "@/hooks/useStickyScrollLock";
 import { cn } from "@/lib/utils";
 import { Typography } from "@/components/ui/Typography";
 
