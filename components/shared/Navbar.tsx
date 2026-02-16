@@ -26,7 +26,7 @@ export default function Navbar() {
       navRef.current = node;
       setNavbarRef(node);
       
-      if (node && typeof window !== "undefined") {
+      if (node && typeof window !== "undefined" && typeof document !== "undefined") {
         // Measure and set CSS variable with multiple strategies to ensure we catch it
         const measureAndSet = () => {
           // Force a reflow to ensure layout is calculated
@@ -34,7 +34,9 @@ export default function Navbar() {
           const height = node.offsetHeight;
           if (height > 0) {
             node.style.setProperty("--navbar-height", `${height}px`);
-            document.documentElement.style.setProperty("--navbar-height", `${height}px`);
+            if (document.documentElement) {
+              document.documentElement.style.setProperty("--navbar-height", `${height}px`);
+            }
           }
         };
         
@@ -54,11 +56,11 @@ export default function Navbar() {
 
   // Also measure on layout changes and when component mounts
   useLayoutEffect(() => {
-    if (!navRef.current || typeof window === "undefined") return;
+    if (!navRef.current || typeof window === "undefined" || typeof document === "undefined") return;
     
     const measureHeight = () => {
       const height = navRef.current?.offsetHeight;
-      if (height && height > 0) {
+      if (height && height > 0 && document.documentElement) {
         navRef.current?.style.setProperty("--navbar-height", `${height}px`);
         document.documentElement.style.setProperty("--navbar-height", `${height}px`);
       }
