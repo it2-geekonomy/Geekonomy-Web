@@ -103,8 +103,8 @@ export const whichEcommercePlatformIsBestForSEOSEO = {
   title: "Which eCommerce Platform Is Best for SEO",
   description:
     "Discover the best e-commerce platforms for SEO in 2026. Compare Shopify, WooCommerce, and BigCommerce to find the perfect SEO-friendly platform for your online store.",
-  url: "https://thegeekonomy.com/blogs/which-ecommerce-platform-is-best-for-seo",
-  canonical: "https://thegeekonomy.com/blogs/which-ecommerce-platform-is-best-for-seo",
+  url: "https://thegeekonomy.com/blog/which-ecommerce-platform-is-best-for-seo",
+  canonical: "https://thegeekonomy.com/blog/which-ecommerce-platform-is-best-for-seo",
   image: "https://thegeekonomy.com/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };

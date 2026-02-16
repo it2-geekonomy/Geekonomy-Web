@@ -114,8 +114,8 @@ export const whatDoYouNeedToBalanceWhenDoingSEOSEO = {
   title: "What Do You Need To Balance When Doing SEO in 2026",
   description:
     "When doing SEO, balance content quality, keywords, technical SEO, user experience, backlinks, and search intent for steady growth.",
-  url: "https://thegeekonomy.com/blogs/what-do-you-need-to-balance-when-doing-seo",
-  canonical: "https://thegeekonomy.com/blogs/what-do-you-need-to-balance-when-doing-seo",
+  url: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
+  canonical: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
   image: "https://thegeekonomy.com/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026.webp",
   twitterHandle: "@GeekonomyTech",
 };
