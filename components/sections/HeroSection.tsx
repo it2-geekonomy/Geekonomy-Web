@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="lg:pl-[clamp(1rem,1rem+8vw,10rem)] xl:pl-[clamp(1rem,1rem+12vw,16rem)]">
           {/* Introductory text with green line */}
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-4 mb-6 xl:mb-10">
-            <div className="h-8 w-1 lg:h-1 lg:w-12 bg-[#6FAF4E]" />
+            <div className="h-8 w-1 lg:h-1 lg:w-12 bg-[#69AE44]" />
             <Typography as="p" variant="2xl" className="text-white font-normal text-center lg:text-left">
               We help businesses grow with
             </Typography>
@@ -40,7 +40,7 @@ export default function HeroSection() {
                 <Typography
                   as="h1"
                   variant="3xl"
-                  className="text-[#6FAF4E] mb-6 leading-[1.1] relative"
+                  className="text-[#69AE44] mb-6 leading-[1.1] relative"
                   letterSpacing="1em"
                   fontWeight={275}
                 >
@@ -204,7 +204,7 @@ export default function HeroSection() {
           <div className="relative lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 w-full lg:w-auto text-center lg:text-left">
             <Link
               href="/contact#form"
-              className="inline-block bg-[#6FAF4E]/80 text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6FAF4E] hover:text-[#6FAF4E] hover:scale-105"
+              className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
             >
               <Typography as="span" variant="sm" className="font-normal">
                 START A CONVERSATION

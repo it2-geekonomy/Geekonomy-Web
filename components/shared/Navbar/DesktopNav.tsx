@@ -20,8 +20,8 @@ export function DesktopNav({ pathname, isMounted, onNavigate }: DesktopNavProps)
               onClick={(e) => onNavigate(e, item.href)}
               className={`font-normal uppercase transition-colors duration-200 ${
                 isActive
-                  ? "text-[#6FAF4E]"
-                  : "text-white hover:text-[#6FAF4E]"
+                  ? "text-[#69AE44]"
+                  : "text-white hover:text-[#69AE44]"
               }`}
             >
               <Typography as="span" variant="base" className="font-normal">

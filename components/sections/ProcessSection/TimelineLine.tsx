@@ -25,7 +25,7 @@ export function TimelineLine({ scrollProgress }: TimelineLineProps) {
 
       {/* Green fill — same origin */}
       <motion.div
-        className="absolute left-6 bottom-0 w-px bg-[#6eaf4c] z-10 origin-top"
+        className="absolute left-6 bottom-0 w-px bg-[#69AE44] z-10 origin-top"
         style={{ scaleY, opacity, top: "10px" }}
       />
     </>

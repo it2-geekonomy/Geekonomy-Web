@@ -14,7 +14,7 @@ export default function DisconnectSection() {
             <Typography
               as="p"
               variant="lg"
-              className="text-[#6eaf4c] mb-6 font-normal"
+              className="text-[#69AE44] mb-6 font-normal"
             >
               // THE DISCONNECT
             </Typography>
@@ -31,7 +31,7 @@ export default function DisconnectSection() {
               <Typography
                 as="span"
                 variant="3xl"
-                className="text-[#6eaf4c] font-normal leading-tight"
+                className="text-[#69AE44] font-normal leading-tight"
               >
                 different directions.
               </Typography>
@@ -40,19 +40,19 @@ export default function DisconnectSection() {
             {/* Bullet Points */}
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="h-px w-8 bg-[#6eaf4c] shrink-0 mt-2" />
+                <div className="h-px w-8 bg-[#69AE44] shrink-0 mt-2" />
                 <Typography as="p" variant="base" className="text-white flex-1">
                   That's where things slow down.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
-                <div className="h-px w-8 bg-[#6eaf4c] shrink-0 mt-2" />
+                <div className="h-px w-8 bg-[#69AE44] shrink-0 mt-2" />
                 <Typography as="p" variant="base" className="text-white flex-1">
                   That's where money leaks.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
-                <div className="h-px w-8 bg-[#6eaf4c] shrink-0 mt-2" />
+                <div className="h-px w-8 bg-[#69AE44] shrink-0 mt-2" />
                 <Typography as="p" variant="base" className="text-white flex-1">
                   That's where growth becomes unpredictable.
                 </Typography>
@@ -64,9 +64,9 @@ export default function DisconnectSection() {
           <div className="sm:pt-[clamp(1rem,1rem+10vw,5rem)]">
             <div className="relative bg-black pt-8 px-8 pb-6 flex flex-col">
               {/* Top Left */}
-              <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#6eaf4c]/50" />
+              <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#69AE44]" />
               {/* Bottom Right */}
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#6eaf4c]/50" />
+              <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#69AE44]" />
               
               {/* Heading */}
               <Typography
@@ -89,7 +89,7 @@ export default function DisconnectSection() {
               {/* Call to Action */}
               <Link
                 href="/how-we-work"
-                className="font-semibold text-[#6eaf4c]/80 transition-colors duration-200 inline-flex items-center gap-2"
+                className="font-semibold text-[#69AE44] transition-colors duration-200 inline-flex items-center gap-2"
               >
                 <Typography as="span" variant="base" className="font-semibold">
                   SEE OUR PROCESS →

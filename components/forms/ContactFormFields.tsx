@@ -53,7 +53,7 @@ export function ContactFormFields({
       </div>
 
       <div>
-        <Typography as="p" variant="base" className="text-[#6FAF4E] mb-8">
+        <Typography as="p" variant="base" className="text-[#69AE44] mb-8">
           How can we be your Growth Partners
         </Typography>
         <div className="grid grid-cols-1 gap-y-10 gap-x-12 sm:grid-cols-2">
@@ -67,12 +67,12 @@ export function ContactFormFields({
               />
               <span
                 className={cn(
-                  "w-5 h-5 border-2 border-[#6FAF4E] flex items-center justify-center transition bg-black",
+                  "w-5 h-5 border-2 border-[#69AE44] flex items-center justify-center transition bg-black",
                   values.subject.includes(item.id as any) && "bg-black"
                 )}
               >
                 {values.subject.includes(item.id as any) && (
-                  <span className="text-[#6FAF4E] text-[14px] leading-none font-bold">✓</span>
+                  <span className="text-[#69AE44] text-[14px] leading-none font-bold">✓</span>
                 )}
               </span>
               <div className="flex flex-col leading-tight">

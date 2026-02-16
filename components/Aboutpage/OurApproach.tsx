@@ -24,7 +24,7 @@ export default function OurApproach() {
     <section className="w-full bg-black text-white md:py-20 px-6 sm:px-2 md:px-12 lg:px-18">
       {/* Heading */}
       <div className="mb-6 xl:ml-16 2xl:ml-32">
-        <Typography as="h2" variant="3xl" className="text-[#6eaf4c] font-medium">
+        <Typography as="h2" variant="3xl" className="text-[#69AE44] font-medium">
           Our Approach
         </Typography>
       </div>
@@ -34,8 +34,8 @@ export default function OurApproach() {
         <div className="w-full xl:w-[68%] text-left">
           <Typography as="p" variant="lg" className="text-[#FFFFFF] leading-relaxed">
             We don’t start with deliverables. We start with understanding{" "}
-            <span className="text-[#6eaf4c]">how a business operates</span>, where{" "}
-            <span className="text-[#6eaf4c]">
+            <span className="text-[#69AE44]">how a business operates</span>, where{" "}
+            <span className="text-[#69AE44]">
               it wants to go and what’s holding it back
             </span>
             . From there, we build growth systems that are:
@@ -51,8 +51,8 @@ export default function OurApproach() {
             onClick={() => setActiveCard(activeCard === 0 ? null : 0)}
             className="group relative bg-[#0f0f0f] w-full min-w-[280px] xl:min-w-[340px] px-6 py-12 flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6eaf4c]/60" />
-            <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6eaf4c]/60" />
+            <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#69AE44]" />
+            <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
             <Typography
               as="h3"
@@ -85,7 +85,7 @@ export default function OurApproach() {
             >
               <span className="relative z-10">Not scattered</span>
               <span
-                className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
+                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
                   activeCard === 0 ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
@@ -97,8 +97,8 @@ export default function OurApproach() {
             onClick={() => setActiveCard(activeCard === 1 ? null : 1)}
             className="group relative bg-[#0f0f0f] w-full min-w-[280px] xl:min-w-[340px] px-8 py-12 flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6eaf4c]/60" />
-            <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6eaf4c]/60" />
+            <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#69AE44]" />
+            <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
             <Typography
               as="h3"
@@ -131,7 +131,7 @@ export default function OurApproach() {
             >
               <span className="relative z-10">Not theoretical</span>
               <span
-                className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
+                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
                   activeCard === 1 ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
@@ -143,8 +143,8 @@ export default function OurApproach() {
             onClick={() => setActiveCard(activeCard === 2 ? null : 2)}
             className="group relative bg-[#0f0f0f] w-full min-w-[280px] xl:min-w-[340px] px-8 py-12 flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6eaf4c]/60" />
-            <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6eaf4c]/60" />
+            <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#69AE44]" />
+            <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
             <Typography
               as="h3"
@@ -177,7 +177,7 @@ export default function OurApproach() {
             >
               <span className="relative z-10">Not short-term</span>
               <span
-                className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
+                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
                   activeCard === 2 ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />

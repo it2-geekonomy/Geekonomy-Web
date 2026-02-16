@@ -41,7 +41,7 @@ export default function Footer() {
                 as="h3"
                 variant="base"
                 className="uppercase mb-4 text-white relative
-        font-light hover:text-[#6FAF4E] transition-colors duration-200 cursor-pointer"
+        font-light hover:text-[#69AE44] transition-colors duration-200 cursor-pointer"
               >
                 WHAT WE DO
               </Typography>
@@ -55,7 +55,7 @@ export default function Footer() {
                     <Link href={item.href} className="uppercase">
                       <Typography
                         variant="base"
-                        className="font-light text-white hover:text-[#6FAF4E] transition-colors duration-200"
+                        className="font-light text-white hover:text-[#69AE44] transition-colors duration-200"
                       >
                         {item.label}
                       </Typography>

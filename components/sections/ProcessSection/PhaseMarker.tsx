@@ -73,7 +73,7 @@ function PhaseMarkerScroll({
     >
       <div className="w-3 h-3 rounded-full bg-white" />
       <motion.div
-        className="absolute inset-0 rounded-full bg-[#6eaf4c]"
+        className="absolute inset-0 rounded-full bg-[#69AE44]"
         style={{ opacity: fill }}
         initial={{ opacity: 0 }}
       />
@@ -99,7 +99,7 @@ function PhaseMarkerSimple({
     >
       <div className="w-3 h-3 rounded-full bg-white" />
       <motion.div
-        className="absolute inset-0 rounded-full bg-[#6eaf4c]"
+        className="absolute inset-0 rounded-full bg-[#69AE44]"
         animate={{ opacity: isFilled ? 1 : 0 }}
         transition={{ stiffness: 55, damping: 18 }}
       />

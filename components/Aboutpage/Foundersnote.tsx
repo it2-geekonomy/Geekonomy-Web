@@ -41,9 +41,9 @@ export default function FoundersNote() {
             >
               <div className="relative bg-[#111111] p-6 lg:p-8 w-full">
                 {/* Top Left - Hidden on hover */}
-                <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#6eaf4c]/50 group-hover:opacity-0 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[#69AE44] group-hover:opacity-0 transition-opacity duration-300" />
                 {/* Bottom Right - Hidden on hover */}
-                <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#6eaf4c]/50 group-hover:opacity-0 transition-opacity duration-300" />
+                <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[#69AE44] group-hover:opacity-0 transition-opacity duration-300" />
 
                 <div className="space-y-6">
                   <Typography
@@ -51,7 +51,7 @@ export default function FoundersNote() {
                     variant="base"
                     className="text-[#FFFFFF] leading-relaxed"
                   >
-                    <span className="text-[#6FAF4E] font-serif inline-block" style={{ transform: 'scale(1.5)', transformOrigin: 'left center' }}>&ldquo;</span> Geekonomy was founded with a clear belief, growth is most effective when it is intentional and well structured.
+                    <span className="text-[#69AE44] font-serif inline-block" style={{ transform: 'scale(1.5)', transformOrigin: 'left center' }}>&ldquo;</span> Geekonomy was founded with a clear belief, growth is most effective when it is intentional and well structured.
                     When strategy, tech, branding and marketing work together as a system, businesses move forward with clarity, confidence and consistency.
                   </Typography>
 
@@ -60,7 +60,7 @@ export default function FoundersNote() {
                     variant="base"
                     className="text-[#FFFFFF] leading-relaxed"
                   >
-                    That belief shapes everything we do at Geekonomy. Our focus is on building growth systems that are connected structures that evolve with the business and support long-term progress. Building with intent, clarity and purpose guides every decision we make. <span className="text-[#6FAF4E] font-serif inline-block" style={{ transform: 'scale(1.5)', transformOrigin: 'right center' }}>&rdquo;</span>
+                    That belief shapes everything we do at Geekonomy. Our focus is on building growth systems that are connected structures that evolve with the business and support long-term progress. Building with intent, clarity and purpose guides every decision we make. <span className="text-[#69AE44] font-serif inline-block" style={{ transform: 'scale(1.5)', transformOrigin: 'right center' }}>&rdquo;</span>
                   </Typography>
                 </div>
               </div>

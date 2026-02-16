@@ -91,7 +91,7 @@ export function PhaseItem({ phase, index, totalPhases, scrollProgress }: PhaseIt
             <Typography
               as="h3"
               variant="2xl"
-              className="text-[#6FAF4E] mb-4 font-normal"
+              className="text-[#69AE44] mb-4 font-normal"
             >
               {phase.name}
             </Typography>

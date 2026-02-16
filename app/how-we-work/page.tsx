@@ -41,31 +41,31 @@ export default function HowWeWorkPage() {
                     className="text-[#A0A0A0] font-normal leading-relaxed max-w-7xl"
                   >
                     Every engagement at{" "}
-                    <span className="text-[#6FAF4E]">Geekonomy</span>
+                    <span className="text-[#69AE44]">Geekonomy</span>
                     {" "}begins with understanding, not assumptions. Before anything is designed, developed or marketed we take the time to learn:
                   </Typography>
 
                   <ul className="space-y-3 max-w-3xl">
                     <li className="flex items-start gap-3">
-                      <span className="text-[#6FAF4E] mt-1.5 shrink-0">•</span>
+                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
                       <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
                         where your business stands today
                       </Typography>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#6FAF4E] mt-1.5 shrink-0">•</span>
+                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
                       <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
                         what it's truly trying to achieve
                       </Typography>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#6FAF4E] mt-1.5 shrink-0">•</span>
+                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
                       <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
                         what constraints exist
                       </Typography>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-[#6FAF4E] mt-1.5 shrink-0">•</span>
+                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
                       <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
                         what success to you actually looks like
                       </Typography>
@@ -75,7 +75,7 @@ export default function HowWeWorkPage() {
                   <Typography
                     as="p"
                     variant="lg"
-                    className="text-[#6FAF4E] font-normal leading-relaxed max-w-3xl"
+                    className="text-[#69AE44] font-normal leading-relaxed max-w-3xl"
                   >
                     This ensures that what gets built has purpose, not just momentum.
                   </Typography>
@@ -127,7 +127,7 @@ export default function HowWeWorkPage() {
                 className="text-white font-normal leading-relaxed"
               >
                 Once alignment is established,{" "}
-                <span className="text-[#6FAF4E]">execution follows a structured path</span>
+                <span className="text-[#69AE44]">execution follows a structured path</span>
                 . Projects move through clearly defined stages: planning, creation, refinement and delivery. All these steps are done with visibility at each step. Decisions are documented, feedback is integrated and progress is steady.
               </Typography>
             </div>
@@ -153,7 +153,7 @@ export default function HowWeWorkPage() {
               <Typography
                 as="p"
                 variant="2xl"
-                className="text-[#6FAF4E] font-normal leading-relaxed"
+                className="text-[#69AE44] font-normal leading-relaxed"
               >
                 That is how Geekonomy works.
               </Typography>

@@ -38,7 +38,7 @@ export default function AboutUs() {
                         as="p"
                         variant="base"
                         className="text-[#A0A0A0] font-light">
-                        <span className="text-[#6FAF4E] font-semibold">Geekonomy</span> is a growth systems company
+                        <span className="text-[#69AE44] font-semibold">Geekonomy</span> is a growth systems company
                         that partners with businesses to create structure, clarity and momentum in how they grow.
                         We believe growth is not achieved through isolated efforts, but through well-built systems
                         that work together over time. <br className="hidden lg:block" />Our work sits at the intersection of strategy, technology, branding, and marketing, bringing
