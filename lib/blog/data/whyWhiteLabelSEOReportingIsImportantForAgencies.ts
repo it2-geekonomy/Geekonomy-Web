@@ -121,7 +121,8 @@ export const whyWhiteLabelSEOReportingIsImportantForAgencies: BlogData = {
   coverImage,
   sections: contentToSections(
     whyWhiteLabelSEOReportingIsImportantForAgenciesContent,
-    { src: coverImage, alt: "Why White Label SEO Reporting is Important for Agencies" }
+    { src: coverImage, alt: "Why White Label SEO Reporting is Important for Agencies" },
+    { introTitle: "Why White Label SEO Reporting is Important for" }
   ),
 };
 

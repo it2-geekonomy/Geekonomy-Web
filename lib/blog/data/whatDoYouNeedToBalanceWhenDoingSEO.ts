@@ -105,7 +105,8 @@ export const whatDoYouNeedToBalanceWhenDoingSEO: BlogData = {
   coverImage,
   sections: contentToSections(
     whatDoYouNeedToBalanceWhenDoingSEOContent,
-    { src: coverImage, alt: "What Do You Need To Balance When Doing SEO in 2026" }
+    { src: coverImage, alt: "What Do You Need To Balance When Doing SEO in 2026" },
+    { introTitle: "What Do You Need To Balance When Doing SEO in 2026" }
   ),
 };
 

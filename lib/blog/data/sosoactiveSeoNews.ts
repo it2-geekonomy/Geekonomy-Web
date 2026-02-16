@@ -133,7 +133,11 @@ export const sosoactiveSeoNews: BlogData = {
   slug: "sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
   heading: "Sosoactive SEO News: Digital Marketing Trends & Future Lifestyle",
   coverImage,
-  sections: contentToSections(sosoactiveSEONewsContent, { src: coverImage, alt: "Sosoactive SEO News" }),
+  sections: contentToSections(
+    sosoactiveSEONewsContent,
+    { src: coverImage, alt: "Sosoactive SEO News" },
+    { introTitle: "Sosoactive SEO News: Digital Marketing Trends & Future | Geekonomy" }
+  ),
 };
 
 // SEO data for this blog

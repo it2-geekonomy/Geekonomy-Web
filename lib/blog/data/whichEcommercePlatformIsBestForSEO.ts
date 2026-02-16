@@ -94,7 +94,8 @@ export const whichEcommercePlatformIsBestForSEO: BlogData = {
   coverImage,
   sections: contentToSections(
     whichEcommercePlatformIsBestForSEOContent,
-    { src: coverImage, alt: "Which eCommerce Platform Is Best for SEO" }
+    { src: coverImage, alt: "Which eCommerce Platform Is Best for SEO" },
+    { introTitle: "Which eCommerce Platform Is Best for SEO? | Best in 2026 | Geekonomy" }
   ),
 };
 
