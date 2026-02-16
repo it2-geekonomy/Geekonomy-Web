@@ -76,7 +76,8 @@ export const howImportantIsBrandingForSEO: BlogData = {
   coverImage,
   sections: contentToSections(
     howImportantIsBrandingForSEOContent,
-    { src: coverImage, alt: "How Important is Branding for SEO" }
+    { src: coverImage, alt: "How Important is Branding for SEO" },
+    { introTitle: "How Important is Branding for SEO: A Complete Guide | Geekonomy" }
   ),
 };
 
@@ -85,8 +86,8 @@ export const howImportantIsBrandingForSEOSEO = {
   title: "How Important is Branding for SEO: A Complete Guide",
   description:
     "Discover how branding impacts SEO success. Learn strategies to combine branding with SEO for better visibility, rankings, and organic traffic growth.",
-  url: "https://thegeekonomy.com/blogs/how-important-is-branding-for-seo",
-  canonical: "https://thegeekonomy.com/blogs/how-important-is-branding-for-seo",
+  url: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",
+  canonical: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",
   image: "https://thegeekonomy.com/How%20Important%20is%20Branding%20for%20SEO/How%20Important%20is%20Branding%20for%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };

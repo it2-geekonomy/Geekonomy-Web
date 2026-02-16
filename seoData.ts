@@ -93,7 +93,7 @@ const seoData: Record<string, SEOData> = {
     twitterHandle: "@GeekonomyTech",
   },
 
-  blogs: {
+  blog: {
     title: "Geekonomy Insights | Web, SEO & Marketing Trends",
     description:
       "Explore expert blogs on web design, SEO, and marketing by Geekonomy Technology. Learn digital strategies to grow your business smarter.",
@@ -106,13 +106,13 @@ const seoData: Record<string, SEOData> = {
 
 // Aggregate blog SEO data from individual blog files
 const blogSEOData: Record<string, SEOData> = {
-  "blogs/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
-  "blogs/how-to-create-white-label-seo-reports-and-automate-them": howToCreateWhiteLabelSEOReportsAndAutomateThemSEO,
-  "blogs/how-important-is-branding-for-seo": howImportantIsBrandingForSEOSEO,
-  "blogs/which-ecommerce-platform-is-best-for-seo": whichEcommercePlatformIsBestForSEOSEO,
-  "blogs/what-do-you-need-to-balance-when-doing-seo": whatDoYouNeedToBalanceWhenDoingSEOSEO,
-  "blogs/how-much-does-seo-cost-in-australia": howMuchDoesSEOCostInAustraliaSEO,
-  "blogs/why-white-label-seo-reporting-is-important-for-agencies": whyWhiteLabelSEOReportingIsImportantForAgenciesSEO,
+  "blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
+  "blog/how-to-create-white-label-seo-reports-and-automate-them": howToCreateWhiteLabelSEOReportsAndAutomateThemSEO,
+  "blog/how-important-is-branding-for-seo": howImportantIsBrandingForSEOSEO,
+  "blog/which-ecommerce-platform-is-best-for-seo": whichEcommercePlatformIsBestForSEOSEO,
+  "blog/what-do-you-need-to-balance-when-doing-seo": whatDoYouNeedToBalanceWhenDoingSEOSEO,
+  "blog/how-much-does-seo-cost-in-australia": howMuchDoesSEOCostInAustraliaSEO,
+  "blog/why-white-label-seo-reporting-is-important-for-agencies": whyWhiteLabelSEOReportingIsImportantForAgenciesSEO,
 };
 
 /**

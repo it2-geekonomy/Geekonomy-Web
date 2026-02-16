@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams, useRouter } from "next/navigation";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BLOGS } from "@/components/Blogs/blogs";
@@ -9,9 +9,7 @@ import { Typography } from "@/components/ui/Typography";
 const BLOGS_PER_PAGE = 6;
 
 export default function BlogsPageClient() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const currentPage = parseInt(searchParams.get("page") || "1", 10);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(BLOGS.length / BLOGS_PER_PAGE);
   const startIndex = (currentPage - 1) * BLOGS_PER_PAGE;
@@ -20,7 +18,7 @@ export default function BlogsPageClient() {
 
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
-      router.push(`/blog?page=${page}`);
+      setCurrentPage(page);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
