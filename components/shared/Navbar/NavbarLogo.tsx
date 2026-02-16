@@ -20,7 +20,7 @@ export function NavbarLogo({ pathname, onNavigate, onCloseMenu }: NavbarLogoProp
       }}
     >
       <Image
-        src="/Geekonomy Logo.webp"
+        src="/Geekonomy Logo.webp" 
         alt="GEEKONOMY Logo"
         width={350}
         height={350}
