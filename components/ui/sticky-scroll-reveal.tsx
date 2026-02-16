@@ -107,27 +107,6 @@ export const StickyScroll = ({
           overflowY: "hidden", // default locked
         }}
       >
-        {/* ✅ STICKY IMAGE (mobile) */}
-        <div
-          className={cn(
-            `
-            sticky top-0 z-30
-            flex lg:hidden        
-            w-full
-            items-center justify-center
-            mb-4
-            overflow-visible
-            `,
-            contentClassName
-          )}
-        >
-          <div className="relative w-full aspect-video min-h-[300px] max-h-[500px]">
-            <div className="relative w-full h-full *:object-contain! *:w-full! *:h-full!">
-              {content[activeCard]?.image}
-            </div>
-          </div>
-        </div>
-
         {/* ✅ CONTENT */}
         <div className="w-full lg:w-[60%]">
           <div ref={sectionsWrapperRef} className="space-y-8 md:pb-0">
@@ -143,7 +122,23 @@ export const StickyScroll = ({
                   >
                     {item.title}
                   </Typography>
+                </motion.div>
 
+                  {/* Mobile: image inline, always at full brightness (outside opacity animation) */}
+                  {item.image && (
+                    <div
+                      className={cn(
+                        "relative w-full aspect-video min-h-[200px] overflow-hidden rounded-xl my-6",
+                        "lg:hidden"
+                      )}
+                    >
+                      {item.image}
+                    </div>
+                  )}
+
+                <motion.div
+                  animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                >
                   <div
                     className="mt-6 text-[#FFFFFF] text-lg leading-relaxed space-y-4
                       [&>p]:mb-4
