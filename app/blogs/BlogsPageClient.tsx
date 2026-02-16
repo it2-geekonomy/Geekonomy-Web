@@ -78,15 +78,9 @@ export default function BlogsPageClient() {
             variant="3xl"
             className="text-white font-bold mb-4"
           >
-            Our Blog
+          Blog
           </Typography>
-          <Typography
-            as="p"
-            variant="lg"
-            className="text-white/70 max-w-2xl mx-auto"
-          >
-            Explore the latest insights, trends, and strategies in digital marketing, SEO, and web development.
-          </Typography>
+          
         </div>
 
         {/* Blog Grid */}
