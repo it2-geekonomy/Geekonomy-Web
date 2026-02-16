@@ -16,14 +16,16 @@ export function NavbarHeightProvider({ children }: { children: ReactNode }) {
   const resizeHandlerRef = useRef<(() => void) | null>(null);
 
   const measureHeight = useCallback(() => {
-    if (!navbarElement) return;
+    if (!navbarElement || typeof window === "undefined" || typeof document === "undefined") return;
     
     const height = navbarElement.offsetHeight;
     if (height > 0) {
       setNavbarHeight(height);
       // Set on both navbar element and document root for redundancy
       navbarElement.style.setProperty("--navbar-height", `${height}px`);
-      document.documentElement.style.setProperty("--navbar-height", `${height}px`);
+      if (document.documentElement) {
+        document.documentElement.style.setProperty("--navbar-height", `${height}px`);
+      }
     }
   }, [navbarElement]);
 
@@ -32,7 +34,7 @@ export function NavbarHeightProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useLayoutEffect(() => {
-    if (!navbarElement) return;
+    if (!navbarElement || typeof window === "undefined") return;
 
     // Measure immediately after layout
     measureHeight();
@@ -43,12 +45,14 @@ export function NavbarHeightProvider({ children }: { children: ReactNode }) {
     });
 
     // Set up ResizeObserver for responsive updates
-    const resizeObserver = new ResizeObserver(() => {
-      measureHeight();
-    });
+    if (typeof ResizeObserver !== "undefined") {
+      const resizeObserver = new ResizeObserver(() => {
+        measureHeight();
+      });
 
-    resizeObserver.observe(navbarElement);
-    resizeObserverRef.current = resizeObserver;
+      resizeObserver.observe(navbarElement);
+      resizeObserverRef.current = resizeObserver;
+    }
 
     // Also listen to window resize as fallback
     const handleResize = () => measureHeight();
@@ -77,14 +81,13 @@ export function NavbarHeightProvider({ children }: { children: ReactNode }) {
 export function useNavbarHeight() {
   const context = useContext(NavbarHeightContext);
   if (context === undefined) {
-    // During SSR/prerendering, return a safe default
-    if (typeof window === "undefined") {
-      return {
-        navbarHeight: 0,
-        setNavbarRef: () => {},
-      };
-    }
-    throw new Error("useNavbarHeight must be used within a NavbarHeightProvider");
+    // This should never happen if NavbarHeightProvider is properly set up
+    // But provide a safe fallback to prevent crashes
+    console.warn("useNavbarHeight called outside NavbarHeightProvider - using fallback");
+    return {
+      navbarHeight: 0,
+      setNavbarRef: () => {},
+    };
   }
   return context;
 }
