@@ -94,7 +94,7 @@ const seoData: Record<string, SEOData> = {
     twitterHandle: "@GeekonomyTech",
   },
 
-  blog: {
+  blogs: {
     title: "Geekonomy Insights | Web, SEO & Marketing Trends",
     description:
       "Explore expert blogs on web design, SEO, and marketing by Geekonomy Technology. Learn digital strategies to grow your business smarter.",
