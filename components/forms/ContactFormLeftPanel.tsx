@@ -19,7 +19,7 @@ export function ContactFormLeftPanel() {
             className="w-6 h-6 sm:w-[38px] sm:h-[38px]"
           />
           <Typography as="p" variant="base" className="text-white">
-            +91 90000 05968
+            +91 99000 05968
           </Typography>
         </div>
 
