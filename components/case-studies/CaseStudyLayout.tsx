@@ -206,7 +206,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
         </div>
       )}
 
-      {/* <CaseStudyForm post={post} /> */}
+      <CaseStudyForm post={post} /> 
       <LastSection />
     </section>
   );
