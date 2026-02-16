@@ -40,7 +40,7 @@ export function useNavbar() {
       curtain.className = "fixed top-0 left-0 w-full h-full bg-black pointer-events-none";
       curtain.setAttribute("data-page-curtain", "true");
       curtain.style.display = "none";
-      curtain.style.zIndex = "9999";
+      curtain.style.zIndex = "99999";
 
       const logo = document.createElement("img");
       logo.src = "/Geekonomy Logo.webp";

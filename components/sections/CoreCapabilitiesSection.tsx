@@ -22,6 +22,7 @@ export default function CoreCapabilitiesSection() {
     <section
       ref={sectionRef}
       className="relative w-full bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)]"
+      suppressHydrationWarning
     >
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 w-full 2xl:max-w-7xl 2xl:mx-auto">
@@ -36,6 +37,7 @@ export default function CoreCapabilitiesSection() {
                   <div
                     className="absolute"
                     style={{ left: "-56px", top: "0", transform: "translateX(-50%)" }}
+                    suppressHydrationWarning
                   >
                     <CapabilityMarker
                       index={index}
