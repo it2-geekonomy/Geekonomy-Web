@@ -77,6 +77,13 @@ export function NavbarHeightProvider({ children }: { children: ReactNode }) {
 export function useNavbarHeight() {
   const context = useContext(NavbarHeightContext);
   if (context === undefined) {
+    // During SSR/prerendering, return a safe default
+    if (typeof window === "undefined") {
+      return {
+        navbarHeight: 0,
+        setNavbarRef: () => {},
+      };
+    }
     throw new Error("useNavbarHeight must be used within a NavbarHeightProvider");
   }
   return context;
