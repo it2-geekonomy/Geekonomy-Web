@@ -51,7 +51,7 @@ export function ContactFormLeftPanel() {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 pt-4 mb-8 lg:mb-0">
+      <div className="flex items-center gap-4 pt-4 mb-8 justify-center lg:justify-start lg:mb-0">
         <Link
           href="https://x.com/TheGeekonomy?s=20"
           target="_blank"

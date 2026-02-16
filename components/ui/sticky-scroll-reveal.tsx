@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Typography } from "@/components/ui/Typography";
-import { useStickyScrollLock } from "@/hooks/useStickyScrollLock";
 
 export const StickyScroll = ({
   content,
@@ -13,8 +13,8 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
-    image?: React.ReactNode;
-    table?: React.ReactNode;
+    image?: React.ReactNode;   
+    table?: React.ReactNode;   
   }[];
   contentClassName?: string;
 }) => {
@@ -104,9 +104,10 @@ export const StickyScroll = ({
           msOverflowStyle: "none",
           paddingRight: "12px",
           marginRight: "-12px",
-          overflowY: "hidden",
+          overflowY: "hidden", // default locked
         }}
       >
+        {/* ✅ STICKY IMAGE (mobile) */}
         <div
           className={cn(
             `
@@ -127,6 +128,7 @@ export const StickyScroll = ({
           </div>
         </div>
 
+        {/* ✅ CONTENT */}
         <div className="w-full lg:w-[60%]">
           <div ref={sectionsWrapperRef} className="space-y-8 md:pb-0">
             {content.map((item, index) => (
@@ -162,6 +164,7 @@ export const StickyScroll = ({
           </div>
         </div>
 
+        {/* ✅ DESKTOP STICKY IMAGE */}
         <div
           className={cn(
             `

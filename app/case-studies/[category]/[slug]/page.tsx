@@ -62,7 +62,7 @@ export async function generateMetadata({
         post.subtitle ||
         `Explore our ${post.title} case study showcasing our expertise in ${post.category.join(", ")}.`,
       url: currentUrl,
-      siteName: "Geekonomy Technology",
+      siteName: "Geekonomy",
       type: "article",
       images: post.image ? [{ url: post.image }] : [],
     },
