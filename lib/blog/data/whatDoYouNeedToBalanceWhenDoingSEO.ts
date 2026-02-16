@@ -2,8 +2,8 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/What Do You Need To Balance When Doing SEO in 2026/What Do You Need To Balance When Doing SEO in 2026.webp";
-const imageDir = "/What Do You Need To Balance When Doing SEO in 2026";
+const coverImage = "/blog image/What Do You Need To Balance When Doing SEO in 2026/What Do You Need To Balance When Doing SEO in 2026.webp";
+const imageDir = "/blog image/What Do You Need To Balance When Doing SEO in 2026";
 
 const whatDoYouNeedToBalanceWhenDoingSEOContent: BlogContentItem[] = [
   p("Great SEO results with the help of different SEO strategies are like walking on a tightrope. It has nothing to do with loading content with keywords or chasing rankings blindly, but rather understanding the Google algorithm and producing useful content."),
@@ -117,6 +117,6 @@ export const whatDoYouNeedToBalanceWhenDoingSEOSEO = {
     "When doing SEO, balance content quality, keywords, technical SEO, user experience, backlinks, and search intent for steady growth.",
   url: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
   canonical: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
-  image: "https://thegeekonomy.com/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026.webp",
+  image: "https://thegeekonomy.com/blog%20image/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026.webp",
   twitterHandle: "@GeekonomyTech",
 };

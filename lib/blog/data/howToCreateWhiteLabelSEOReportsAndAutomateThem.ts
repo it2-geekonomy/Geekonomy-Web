@@ -2,8 +2,8 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/How to Create White-Label SEO Reports and Automate Them/How to Create White-Label SEO Reports and Automate Them.webp";
-const imageDir = "/How to Create White-Label SEO Reports and Automate Them";
+const coverImage = "/blog image/How to Create White-Label SEO Reports and Automate Them/How to Create White-Label SEO Reports and Automate Them.webp";
+const imageDir = "/blog image/How to Create White-Label SEO Reports and Automate Them";
 
 const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] = [
   p("In today's online world, your brand affects how high you show up in search results."),
@@ -89,6 +89,6 @@ export const howToCreateWhiteLabelSEOReportsAndAutomateThemSEO = {
     "Learn how to create white-label SEO reports and automate them to save time, impress clients, and build trust with professional branded reports.",
   url: "https://thegeekonomy.com/blog/how-to-create-white-label-seo-reports-and-automate-them",
   canonical: "https://thegeekonomy.com/blog/how-to-create-white-label-seo-reports-and-automate-them",
-  image: "https://thegeekonomy.com/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them.webp",
+  image: "https://thegeekonomy.com/blog%20image/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them.webp",
   twitterHandle: "@GeekonomyTech",
 };

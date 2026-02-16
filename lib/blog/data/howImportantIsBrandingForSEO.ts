@@ -2,8 +2,8 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/How Important is Branding for SEO/How Important is Branding for SEO main image.webp";
-const imageDir = "/How Important is Branding for SEO";
+const coverImage = "/blog image/How Important is Branding for SEO/How Important is Branding for SEO main image.webp";
+const imageDir = "/blog image/How Important is Branding for SEO";
 
 const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("In today's online world, your brand affects how high you show up in search results."),
@@ -88,6 +88,6 @@ export const howImportantIsBrandingForSEOSEO = {
     "Discover how branding impacts SEO success. Learn strategies to combine branding with SEO for better visibility, rankings, and organic traffic growth.",
   url: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",
   canonical: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",
-  image: "https://thegeekonomy.com/How%20Important%20is%20Branding%20for%20SEO/How%20Important%20is%20Branding%20for%20SEO%20main%20image.webp",
+  image: "https://thegeekonomy.com/blog%20image/How%20Important%20is%20Branding%20for%20SEO/How%20Important%20is%20Branding%20for%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
