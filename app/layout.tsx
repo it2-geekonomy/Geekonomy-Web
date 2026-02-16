@@ -6,7 +6,7 @@ import PageContentWrapper from "@/components/shared/PageContentWrapper";
 import PageTransition from "@/components/shared/PageTransition";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
+// import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
 import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 
 const poppins = Poppins({
