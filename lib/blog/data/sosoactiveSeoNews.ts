@@ -141,8 +141,8 @@ export const sosoactiveSeoNewsSEO = {
   title: "Sosoactive SEO News: Digital Marketing Trends & Future Lifestyle",
   description:
     "Discover Sosoactive SEO News and explore digital marketing trends, future lifestyle, community building, and how Sosoactive transforms digital engagement for content creators and marketers.",
-  url: "https://thegeekonomy.com/blogs/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
-  canonical: "https://thegeekonomy.com/blogs/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
+  url: "https://thegeekonomy.com/blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
+  canonical: "https://thegeekonomy.com/blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
   image: "https://thegeekonomy.com/Sosoactive%20SEO%20News/Sosoactive%20SEO%20News.webp",
   twitterHandle: "@GeekonomyTech",
 };

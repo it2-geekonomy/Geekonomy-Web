@@ -86,8 +86,8 @@ export const howToCreateWhiteLabelSEOReportsAndAutomateThemSEO = {
   title: "How to Create White-Label SEO Reports and Automate Them",
   description:
     "Learn how to create white-label SEO reports and automate them to save time, impress clients, and build trust with professional branded reports.",
-  url: "https://thegeekonomy.com/blogs/how-to-create-white-label-seo-reports-and-automate-them",
-  canonical: "https://thegeekonomy.com/blogs/how-to-create-white-label-seo-reports-and-automate-them",
+  url: "https://thegeekonomy.com/blog/how-to-create-white-label-seo-reports-and-automate-them",
+  canonical: "https://thegeekonomy.com/blog/how-to-create-white-label-seo-reports-and-automate-them",
   image: "https://thegeekonomy.com/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them.webp",
   twitterHandle: "@GeekonomyTech",
 };

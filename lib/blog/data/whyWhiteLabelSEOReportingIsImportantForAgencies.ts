@@ -130,8 +130,8 @@ export const whyWhiteLabelSEOReportingIsImportantForAgenciesSEO = {
   title: "Why White Label SEO Reporting is Important for Agencies",
   description:
     "White label SEO reporting is important for agencies to build trust, show results, save time, and scale client services professionally.",
-  url: "https://thegeekonomy.com/blogs/why-white-label-seo-reporting-is-important-for-agencies",
-  canonical: "https://thegeekonomy.com/blogs/why-white-label-seo-reporting-is-important-for-agencies",
+  url: "https://thegeekonomy.com/blog/why-white-label-seo-reporting-is-important-for-agencies",
+  canonical: "https://thegeekonomy.com/blog/why-white-label-seo-reporting-is-important-for-agencies",
   image: "https://thegeekonomy.com/Why%20White%20Label%20SEO%20Reporting%20is%20Important%20for%20Agencies/Why%20White%20Label%20SEO%20Reporting%20is%20Important%20for%20Agencies%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
