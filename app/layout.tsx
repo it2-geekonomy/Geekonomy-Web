@@ -13,7 +13,10 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thegeekonomy.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Geekonomy | Branding, Marketing & Development",
   description: "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
   icons: {

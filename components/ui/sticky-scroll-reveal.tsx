@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
+import { useStickyScrollLock } from "@/hooks/useStickyScrollLock";
 import { cn } from "@/lib/utils";
 import { Typography } from "@/components/ui/Typography";
 
@@ -21,6 +22,7 @@ export const StickyScroll = ({
 
   const pageRef = useRef<HTMLDivElement | null>(null);
   const desktopRef = useRef<HTMLDivElement | null>(null);
+  const sectionsWrapperRef = useRef<HTMLDivElement | null>(null);
 
   const mobileScroll = useScroll({
     target: pageRef,
@@ -34,89 +36,58 @@ export const StickyScroll = ({
 
   const cardLength = content.length;
 
-  const updateActive = (latest: number) => {
-    const points = content.map((_, i) =>
-      cardLength === 1 ? 0 : i / (cardLength - 1)
-    );
-
-    let closest = 0;
-    let min = Infinity;
-
-    points.forEach((p, i) => {
-      const d = Math.abs(latest - p);
-      if (d < min) {
-        min = d;
-        closest = i;
+  // Active = section that CONTAINS the viewport center. Prevents first image showing between others.
+  const updateActiveFromViewport = () => {
+    if (window.innerWidth < 1024 || !sectionsWrapperRef.current) return;
+    const wrapper = sectionsWrapperRef.current;
+    const children = Array.from(wrapper.children) as HTMLElement[];
+    if (children.length !== cardLength) return;
+    const viewportCenterY = window.innerHeight / 2;
+    let active = 0;
+    for (let i = 0; i < children.length; i++) {
+      const rect = children[i].getBoundingClientRect();
+      if (viewportCenterY >= rect.top && viewportCenterY < rect.bottom) {
+        active = i;
+        break;
       }
-    });
+      if (viewportCenterY < rect.top) break;
+      active = i;
+    }
+    setActiveCard(active);
+  };
 
-    setActiveCard(closest);
+  const updateActiveFromProgress = (latest: number) => {
+    if (cardLength <= 1) {
+      setActiveCard(0);
+      return;
+    }
+    setActiveCard(Math.min(Math.floor(latest * cardLength), cardLength - 1));
   };
 
   useMotionValueEvent(mobileScroll.scrollYProgress, "change", (v) => {
-    if (window.innerWidth < 1024) updateActive(v);
+    if (window.innerWidth < 1024) updateActiveFromProgress(v);
   });
 
-  useMotionValueEvent(desktopScroll.scrollYProgress, "change", (v) => {
-    if (window.innerWidth >= 1024) updateActive(v);
+  useMotionValueEvent(desktopScroll.scrollYProgress, "change", () => {
+    if (window.innerWidth >= 1024) updateActiveFromViewport();
   });
 
-  // -----------------------------
-  // HARD LOCK / UNLOCK BLOG SCROLL
-  // -----------------------------
   useEffect(() => {
-    if (!desktopRef.current || !pageRef.current) return;
-
-    const container = desktopRef.current;
-    const section = pageRef.current;
-    const footer = document.querySelector("footer");
-
-    const lock = () => {
-      container.style.overflowY = "hidden";
-      container.style.pointerEvents = "none"; // HARD stop scroll
-    };
-
-    const unlock = () => {
-      container.style.overflowY = "auto";
-      container.style.pointerEvents = "auto";
-    };
-
-    lock(); // start locked
-
-    const sectionObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.intersectionRatio >= 0.6) {
-          unlock();
-        } else {
-          lock();
-        }
-      },
-      { threshold: [0, 0.6] }
-    );
-
-    sectionObserver.observe(section);
-
-    let footerObserver: IntersectionObserver | null = null;
-
-    if (footer) {
-      footerObserver = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            lock(); 
-          }
-        },
-        { threshold: 0.01 }
-      );
-
-      footerObserver.observe(footer);
-    }
-
+    if (window.innerWidth < 1024 || cardLength === 0) return;
+    updateActiveFromViewport();
+    const scrollContainer = desktopRef.current;
+    const onScroll = () => updateActiveFromViewport();
+    scrollContainer?.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    const t = setInterval(updateActiveFromViewport, 150);
     return () => {
-      sectionObserver.disconnect();
-      footerObserver?.disconnect();
-      unlock();
+      scrollContainer?.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scroll", onScroll);
+      clearInterval(t);
     };
-  }, []);
+  }, [cardLength]);
+
+  useStickyScrollLock(desktopRef, pageRef);
 
   return (
     <section ref={pageRef} className="relative w-full">
@@ -136,43 +107,38 @@ export const StickyScroll = ({
           overflowY: "hidden", // default locked
         }}
       >
-        {/* ✅ STICKY IMAGE (mobile) */}
-        <div
-          className={cn(
-            `
-            sticky top-0 z-30
-            flex lg:hidden        
-            w-full
-            items-center justify-center
-            mb-4
-            overflow-visible
-            `,
-            contentClassName
-          )}
-        >
-          <div className="relative w-full aspect-video min-h-[300px] max-h-[500px]">
-            <div className="relative w-full h-full *:object-contain! *:w-full! *:h-full!">
-              {content[activeCard]?.image}
-            </div>
-          </div>
-        </div>
-
         {/* ✅ CONTENT */}
         <div className="w-full lg:w-[60%]">
-          <div className="space-y-8 md:pb-0">
+          <div ref={sectionsWrapperRef} className="space-y-8 md:pb-0">
             {content.map((item, index) => (
               <div key={item.title + index}>
                 <motion.div
                   animate={{ opacity: activeCard === index ? 1 : 0.3 }}
                 >
                   <Typography
-                    as="h2"
+                    as="h1"
                     variant="2xl"
                     className="text-[#FFFFFF] font-bold"
                   >
                     {item.title}
                   </Typography>
+                </motion.div>
 
+                  {/* Mobile: image inline, always at full brightness (outside opacity animation) */}
+                  {item.image && (
+                    <div
+                      className={cn(
+                        "relative w-full aspect-video min-h-[200px] overflow-hidden rounded-xl my-6",
+                        "lg:hidden"
+                      )}
+                    >
+                      {item.image}
+                    </div>
+                  )}
+
+                <motion.div
+                  animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                >
                   <div
                     className="mt-6 text-[#FFFFFF] text-lg leading-relaxed space-y-4
                       [&>p]:mb-4
