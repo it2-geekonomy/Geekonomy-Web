@@ -4,10 +4,11 @@ import { ReactNode } from "react";
 interface ButtonProps {
   variant?: "primary" | "secondary";
   href?: string;
-  onClick?: () => void;
+  onClick?: () => void | Promise<void>;
   children: ReactNode;
   className?: string;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 export default function Button({
@@ -17,6 +18,7 @@ export default function Button({
   children,
   className = "",
   type = "button",
+  disabled = false,
 }: ButtonProps) {
   const baseStyles =
     "inline-block text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200";
@@ -39,7 +41,7 @@ export default function Button({
   }
 
   return (
-    <button type={type} onClick={onClick} className={combinedClassName}>
+    <button type={type} onClick={onClick} disabled={disabled} className={combinedClassName}>
       {children}
     </button>
   );
