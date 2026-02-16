@@ -2,8 +2,8 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/Which eCommerce Platform Is Best for SEO/Which eCommerce Platform Is Best for SEO main image.webp";
-const imageDir = "/Which eCommerce Platform Is Best for SEO";
+const coverImage = "/blog image/Which eCommerce Platform Is Best for SEO/Which eCommerce Platform Is Best for SEO main image.webp";
+const imageDir = "/blog image/Which eCommerce Platform Is Best for SEO";
 
 const whichEcommercePlatformIsBestForSEOContent: BlogContentItem[] = [
   p("Digital marketing trends are constantly evolving. One of the most important aspects of digital marketing is search engine optimisation, or SEO. SEO is the process of optimising your website to rank higher in search engine results pages, or SERPs."),
@@ -106,6 +106,6 @@ export const whichEcommercePlatformIsBestForSEOSEO = {
     "Discover the best e-commerce platforms for SEO in 2026. Compare Shopify, WooCommerce, and BigCommerce to find the perfect SEO-friendly platform for your online store.",
   url: "https://thegeekonomy.com/blog/which-ecommerce-platform-is-best-for-seo",
   canonical: "https://thegeekonomy.com/blog/which-ecommerce-platform-is-best-for-seo",
-  image: "https://thegeekonomy.com/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO%20main%20image.webp",
+  image: "https://thegeekonomy.com/blog%20image/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };

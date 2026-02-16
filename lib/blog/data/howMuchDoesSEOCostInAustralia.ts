@@ -2,8 +2,8 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/How Much Does SEO Cost in Australia for Businesses/How Much Does SEO Cost in Australia for Businesses.webp";
-const imageDir = "/How Much Does SEO Cost in Australia for Businesses";
+const coverImage = "/blog image/How Much Does SEO Cost in Australia for Businesses/How Much Does SEO Cost in Australia for Businesses.webp";
+const imageDir = "/blog image/How Much Does SEO Cost in Australia for Businesses";
 
 const howMuchDoesSEOCostInAustraliaContent: BlogContentItem[] = [
   p("Understanding and optimising a website for search engines (Search Engine Optimisation, SEO) is often a complicated matter, and this complexity is increased by the fact that such a service has some costs."),
@@ -120,6 +120,6 @@ export const howMuchDoesSEOCostInAustraliaSEO = {
     "SEO cost in Australia explained with typical price ranges, services included, value factors, and tips to choose the right plan.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-australia",
   canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-australia",
-  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Australia%20for%20Businesses/How%20Much%20Does%20SEO%20Cost%20in%20Australia%20for%20Businesses.webp",
+  image: "https://thegeekonomy.com/blog%20image/How%20Much%20Does%20SEO%20Cost%20in%20Australia%20for%20Businesses/How%20Much%20Does%20SEO%20Cost%20in%20Australia%20for%20Businesses.webp",
   twitterHandle: "@GeekonomyTech",
 };
