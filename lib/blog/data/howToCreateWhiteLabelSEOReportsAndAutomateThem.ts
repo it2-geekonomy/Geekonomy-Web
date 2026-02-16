@@ -77,7 +77,8 @@ export const howToCreateWhiteLabelSEOReportsAndAutomateThem: BlogData = {
   coverImage,
   sections: contentToSections(
     howToCreateWhiteLabelSEOReportsAndAutomateThemContent,
-    { src: coverImage, alt: "How to Create White-Label SEO Reports and Automate Them" }
+    { src: coverImage, alt: "How to Create White-Label SEO Reports and Automate Them" },
+    { introTitle: "How to Create White-Label SEO Reports and Automate Them | Geekonomy" }
   ),
 };
 

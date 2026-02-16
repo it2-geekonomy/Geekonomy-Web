@@ -108,7 +108,8 @@ export const howMuchDoesSEOCostInAustralia: BlogData = {
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInAustraliaContent,
-    { src: coverImage, alt: "How Much Does SEO Cost in Australia for Businesses" }
+    { src: coverImage, alt: "How Much Does SEO Cost in Australia for Businesses" },
+    { introTitle: "How Much Does SEO Cost in Australia for Businesses" }
   ),
 };
 

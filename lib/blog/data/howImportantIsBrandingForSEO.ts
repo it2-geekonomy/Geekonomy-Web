@@ -76,7 +76,8 @@ export const howImportantIsBrandingForSEO: BlogData = {
   coverImage,
   sections: contentToSections(
     howImportantIsBrandingForSEOContent,
-    { src: coverImage, alt: "How Important is Branding for SEO" }
+    { src: coverImage, alt: "How Important is Branding for SEO" },
+    { introTitle: "How Important is Branding for SEO: A Complete Guide | Geekonomy" }
   ),
 };
 
