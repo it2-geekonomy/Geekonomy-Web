@@ -1,15 +1,21 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { useScroll, useMotionValueEvent } from "framer-motion";
 import { GROWTH_SYSTEM_PHASES } from "@/lib/constants";
-import { useScrollProgress } from "@/hooks/useScrollProgress";
 import { ProcessLeftSection } from "@/components/Aboutpage/leftsection";
 import { TimelineLine } from "@/components/sections/ProcessSection/TimelineLine";
 import { PhaseItem } from "@/components/Aboutpage/phaseitem";
 
 export default function GrowthSystemSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const scrollProgress = useScrollProgress(sectionRef);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start center", "end center"],
+  });
+
+  const [scrollProgress, setScrollProgress] = useState(0);
+  useMotionValueEvent(scrollYProgress, "change", (v) => setScrollProgress(v));
 
   return (
     <section
@@ -22,7 +28,7 @@ export default function GrowthSystemSection() {
 
           {/* Right Section */}
           <div className="lg:col-span-3 relative">
-            <TimelineLine scrollProgress={scrollProgress} />
+            <TimelineLine scrollProgress={scrollYProgress} />
 
             <div className="relative pl-20 space-y-8 md:space-y-16">
               {GROWTH_SYSTEM_PHASES.map((phase, index) => {

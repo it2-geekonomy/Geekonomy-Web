@@ -49,8 +49,7 @@ export async function getBaseUrlFromHeaders(): Promise<string> {
       }
     }
   } catch {
-    // If headers are not available, fall back to default
-    console.warn('Headers not available, using fallback URL');
+    // Headers unavailable during static build; fallback to getBaseUrl()
   }
   
   return getBaseUrl();

@@ -1,5 +1,5 @@
 import LastSection from "@/components/case-studies/LastSection";
-import { getStaticSEOData } from "@/lib/seoData";
+import { getStaticSEOData } from "@/seoData";
 import type { Metadata } from "next";
 
 export function generateMetadata(): Metadata {
