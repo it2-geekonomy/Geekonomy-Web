@@ -42,7 +42,7 @@ export default function ServicesSection() {
                 className="text-white font-normal leading-tight"
               >
                 We don't just sell services. We engineer{" "}
-                <span className="text-[#6FAF4E]">growth systems</span>.
+                <span className="text-[#69AE44]">growth systems</span>.
               </Typography>
             </div>
 
@@ -88,7 +88,7 @@ export default function ServicesSection() {
                     <Typography
                       as="span"
                       variant="sm"
-                      className="text-white border border-[#6FAF4E4D] rounded-full w-8 h-8 font-normal flex items-center justify-center"
+                      className="text-white border border-[#69AE44] rounded-full w-8 h-8 font-normal flex items-center justify-center"
                     >
                       {service.number}
                     </Typography>
@@ -106,7 +106,7 @@ export default function ServicesSection() {
                 <Typography
                   as="h3"
                   variant="2xl"
-                  className="text-[#6FAF4E] font-bold mb-4"
+                  className="text-[#69AE44] font-bold mb-4"
                 >
                   {service.name.split(" ").map((word, index) => (
                     <span key={index} className="block leading-[1.1]">

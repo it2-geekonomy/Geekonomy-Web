@@ -9,11 +9,11 @@ export default function FirstStepSection() {
       <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col items-center text-center">
           {/* Vertical green line with gradient */}
-          <div className="w-1 h-12 mb-4 bg-[linear-gradient(to_bottom,transparent,#6eaf4c)]" />
+          <div className="w-1 h-12 mb-4 bg-[linear-gradient(to_bottom,transparent,#69AE44)]" />
           <Typography
             as="p"
             variant="base"
-            className="text-[#6eaf4c] uppercase font-normal tracking-wider"
+            className="text-[#69AE44] uppercase font-normal tracking-wider"
           >
             THE FIRST STEP
           </Typography>
@@ -31,7 +31,7 @@ export default function FirstStepSection() {
           <Typography
             as="h2"
             variant="4xl"
-            className="font-normal text-[#6eaf4c] mb-8 leading-tight"
+            className="font-normal text-[#69AE44] mb-8 leading-tight"
           >
             No assumptions.
           </Typography>
@@ -48,7 +48,7 @@ export default function FirstStepSection() {
           {/* Call-to-Action Button */}
           <Link
             href="/contact#form"
-            className="inline-block bg-[#6eaf4c]/80 text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6eaf4c] hover:text-[#6eaf4c] hover:scale-105"
+            className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
           >
             <Typography as="span" variant="sm" className="font-normal">
               START A CONVERSATION

@@ -22,10 +22,10 @@ export default function ContactUsForm() {
       onSubmit={handleSubmit}
       className="relative w-full mx-auto grid grid-cols-1 place-items-center lg:place-items-stretch lg:grid-cols-[40%_60%] gap-8 p-6 lg:p-18 bg-black/80 backdrop-blur-md border border-white/20"
     >
-      <span className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6FAF4E]/70" />
-      <span className="absolute top-0 right-0 w-5 h-5 border-t border-r border-[#6FAF4E]/70" />
-      <span className="absolute bottom-0 left-0 w-5 h-5 border-b border-l border-[#6FAF4E]/70" />
-      <span className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6FAF4E]/70" />
+      <span className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#69AE44]" />
+      <span className="absolute top-0 right-0 w-5 h-5 border-t border-r border-[#69AE44]" />
+      <span className="absolute bottom-0 left-0 w-5 h-5 border-b border-l border-[#69AE44]" />
+      <span className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
       <ContactFormLeftPanel />
 
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
 
         {submitStatus === "success" && (
           <div className="pt-4">
-            <Typography as="p" variant="base" className="text-[#6FAF4E]">
+            <Typography as="p" variant="base" className="text-[#69AE44]">
               ✓ Message sent successfully! We'll get back to you soon.
             </Typography>
           </div>
@@ -58,7 +58,7 @@ export default function ContactUsForm() {
             type="submit"
             disabled={isSubmitting}
             className={cn(
-              "block lg:ml-auto bg-[#6FAF4E] text-white border-2 border-transparent px-12 py-3 rounded-full transition-all hover:bg-black hover:text-[#6FAF4E] hover:border-[#6FAF4E] hover:scale-105",
+              "block lg:ml-auto bg-[#69AE44] text-white border-2 border-transparent px-12 py-3 rounded-full transition-all hover:bg-black hover:text-[#69AE44] hover:border-[#69AE44] hover:scale-105",
               isSubmitting && "opacity-50 cursor-not-allowed hover:scale-100"
             )}
           >

@@ -109,7 +109,7 @@ export function CapabilityItem({
             <Typography
               as="h3"
               variant="2xl"
-              className="text-[#6FAF4E] mb-4 font-normal"
+              className="text-[#69AE44] mb-4 font-normal"
             >
               {capability.title}
             </Typography>
@@ -123,11 +123,11 @@ export function CapabilityItem({
           initial={{ opacity: 0, x: -16 }}
         >
           <motion.div
-            className="w-5 h-5 rounded-full border-2 border-[#6FAF4E] flex items-center justify-center shrink-0 mt-0.5"
+            className="w-5 h-5 rounded-full border-2 border-[#69AE44] flex items-center justify-center shrink-0 mt-0.5"
             style={{ scale: iconScale }}
             initial={{ scale: 0 }}
           >
-            <Check className="w-3 h-3 text-[#6FAF4E] stroke-4" />
+            <Check className="w-3 h-3 text-[#69AE44] stroke-4" />
           </motion.div>
           <Typography as="p" variant="base" className="text-[#A0A0A0]">
             {capability.description}
@@ -146,7 +146,7 @@ export function CapabilityItem({
           <ul className="space-y-1">
             {capability.includes.map((item, itemIndex) => (
               <li key={itemIndex} className="flex items-start gap-2">
-                <span className="text-[#6FAF4E] mt-1.5 shrink-0">•</span>
+                <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
                 <Typography as="span" variant="base" className="text-white">
                   {item}
                 </Typography>

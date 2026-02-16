@@ -22,7 +22,7 @@ export default function ComingSoon({ title }: ComingSoonProps) {
         <Typography
           as="p"
           variant="2xl"
-          className="text-[#6FAF4E] font-normal mb-8"
+          className="text-[#69AE44] font-normal mb-8"
         >
           Coming Soon
         </Typography>
@@ -37,7 +37,7 @@ export default function ComingSoon({ title }: ComingSoonProps) {
         
         <Link
           href="/"
-          className="inline-block bg-[#6FAF4E]/80 text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#6FAF4E] hover:text-[#6FAF4E] hover:scale-105"
+          className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
         >
           <Typography as="span" variant="sm" className="font-normal">
             Back to Home
