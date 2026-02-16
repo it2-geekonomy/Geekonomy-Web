@@ -116,7 +116,7 @@ export const StickyScroll = ({
                   animate={{ opacity: activeCard === index ? 1 : 0.3 }}
                 >
                   <Typography
-                    as="h1"
+                    as={index === 0 ? "h1" : "h2"}
                     variant="2xl"
                     className="text-[#FFFFFF] font-bold"
                   >

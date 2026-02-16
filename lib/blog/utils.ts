@@ -43,11 +43,11 @@ export function contentToHTML(items: BlogContentItem[]): string {
     .map((item) => {
       switch (item.type) {
         case "h1":
-          return `<h1 class="text-[clamp(1.5rem,2vw,2.5rem)] font-bold mt-6 mb-3 ${item.className || ""}">${item.text}</h1>`;
+          return `<h2 class="text-[clamp(1.5rem,2vw,2.5rem)] font-bold mt-6 mb-3 ${item.className || ""}">${item.text}</h2>`;
         case "heading":
-          return `<h2 class="text-[clamp(1.3rem,1.5vw,2rem)] font-medium mt-6 mb-3 ${item.className || ""}">${item.text}</h2>`;
+          return `<h3 class="text-[clamp(1.3rem,1.5vw,2rem)] font-medium mt-6 mb-3 ${item.className || ""}">${item.text}</h3>`;
         case "h3":
-          return `<h3 class="text-xl font-semibold mt-4 mb-2 ${item.className || ""}">${item.text}</h3>`;
+          return `<h4 class="text-xl font-semibold mt-4 mb-2 ${item.className || ""}">${item.text}</h4>`;
         case "paragraph":
           return `<p class="leading-relaxed text-[#FFFFFFB2] text-[clamp(1rem,1vw,1.5rem)] mb-4">${item.text}</p>`;
         case "list":
