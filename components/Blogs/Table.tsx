@@ -157,3 +157,70 @@ export function SmallPackageSEOTable() {
     </div>
   );
 }
+export function BangaloreSEOPackagesTable() {
+  return (
+    <div className="my-6 w-full table-container table-bangalore-packages overflow-x-auto">
+      <table className="w-full border-collapse border border-gray-600">
+        <thead>
+          <tr className="bg-black">
+            <th className="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">
+              Package Types
+            </th>
+            <th className="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">
+              Services Generally Included
+            </th>
+            <th className="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">
+              Approximation Cost Per Month (Bangalore)
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr className="bg-black border-b border-gray-600">
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              Basic SEO Package
+            </td>
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              Keyword research, on-page optimization, Google Business Profile
+              optimization, and basic local SEO. This package is most suitable
+              for small businesses in Bangalore.
+            </td>
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              ₹15,000 – ₹30,000
+            </td>
+          </tr>
+
+          <tr className="bg-black border-b border-gray-600">
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              Standard SEO Package
+            </td>
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              All Basic services plus improvement on technical SEO, continuous
+              content creation, and initial link building — this package is most
+              favorable to escalating local competition.
+            </td>
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              ₹30,000 – ₹70,000
+            </td>
+          </tr>
+
+          <tr className="bg-black">
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              Complete E-commerce SEO Package
+            </td>
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              Comprehensive audit of the website, customized SEO strategy,
+              advanced technical SEO, product/category optimization, content
+              marketing, robust backlink building, and ongoing support:
+              suitable for larger e-commerce businesses or very competitive
+              niches.
+            </td>
+            <td className="border border-gray-600 px-4 py-3 text-white text-sm">
+              ₹70,000+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+}

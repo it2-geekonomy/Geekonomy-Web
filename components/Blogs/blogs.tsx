@@ -1,8 +1,9 @@
 import Image from "next/image";
 import type { BlogData, BlogTableComponentKey } from "@/lib/blog";
-import { MumbaiSEOPackagesTable, SmallPackageSEOTable } from "./Table";
+import { BangaloreSEOPackagesTable, MumbaiSEOPackagesTable, SmallPackageSEOTable } from "./Table";
 
 // Import all individual blog data files
+import { howMuchDoesSEOCostInBangalore } from "@/lib/blog/data/HowMuchDoesSEOCostinBangalore";// Centralized blog data aggregation - all blogs are registered here
 import { howToCreateWhiteLabelSEOReportsAndAutomateThem } from "@/lib/blog/data/howToCreateWhiteLabelSEOReportsAndAutomateThem";
 import { sosoactiveSeoNews } from "@/lib/blog/data/sosoactiveSeoNews";
 import { howImportantIsBrandingForSEO } from "@/lib/blog/data/howImportantIsBrandingForSEO";
@@ -10,9 +11,8 @@ import { whichEcommercePlatformIsBestForSEO } from "@/lib/blog/data/whichEcommer
 import { whatDoYouNeedToBalanceWhenDoingSEO } from "@/lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO";
 import { howMuchDoesSEOCostInAustralia } from "@/lib/blog/data/howMuchDoesSEOCostInAustralia";
 import { whyWhiteLabelSEOReportingIsImportantForAgencies } from "@/lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies";
-
-// Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  howMuchDoesSEOCostInBangalore,
   howToCreateWhiteLabelSEOReportsAndAutomateThem,
   sosoactiveSeoNews,
   howImportantIsBrandingForSEO,
@@ -40,6 +40,7 @@ export interface Blog {
 const TABLE_COMPONENTS: Record<BlogTableComponentKey, React.ReactNode> = {
   MumbaiSEOPackagesTable: <MumbaiSEOPackagesTable />,
   SmallPackageSEOTable: <SmallPackageSEOTable />,
+  BangaloreSEOPackagesTable: <BangaloreSEOPackagesTable />
 };
 
 function hydrateBlog(data: BlogData): Blog {
