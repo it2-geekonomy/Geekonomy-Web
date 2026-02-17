@@ -67,7 +67,7 @@ export default function OurApproach() {
             <Image
               src="/ourapproach/Structured.png"
               alt="Structured"
-              width={120}
+              width={100}
               height={90}
               className={`mb-6 transition-all duration-300 ${
                 activeCard === 0
