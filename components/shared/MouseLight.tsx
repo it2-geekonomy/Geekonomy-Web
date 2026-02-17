@@ -130,7 +130,7 @@ export default function MouseLight() {
 
   return (
     <motion.div
-      className="fixed pointer-events-none z-50"
+      className="fixed pointer-events-none z-[70]"
       initial={{ left: mousePosition.x, top: mousePosition.y }}
       animate={{
         left: mousePosition.x,

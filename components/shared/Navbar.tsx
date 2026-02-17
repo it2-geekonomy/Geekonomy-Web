@@ -79,7 +79,7 @@ export default function Navbar() {
 
   return (
     <nav ref={navRefCallback} className="bg-black w-full fixed top-0 left-0 right-0 z-50">
-      <div className="px-4 sm:px-6 lg:px-6 xl:px-10 py-4">
+      <div className="px-4 sm:px-6 lg:px-6 xl:px-10 py-2 lg:py-0">
         <div className="flex items-center justify-between">
           <NavbarLogo
             pathname={pathname}
