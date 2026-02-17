@@ -25,15 +25,15 @@ export default function AboutUs() {
                 >
                     {/* Wrap in a span and force break at lg */}
                     <span className="lg:block">
-                        We build growth systems for businesses
+                        We build growth systems for businesses that want to move forward.
                     </span>
                     <span className="lg:block">
-                        that want to move forward.
+                        
                     </span>
                 </Typography>
 
                 {/* About Paragraphs */}
-                <div className="space-y-6 mt-6 w-full lg:w-2/2 xl:w-2/4">
+                <div className="space-y-6 mt-6 w-full lg:w-4/5">
                     <Typography
                         as="p"
                         variant="base"
