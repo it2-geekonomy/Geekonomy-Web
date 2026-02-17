@@ -37,6 +37,8 @@ const seoCostBangaloreContent: BlogContentItem[] = [
 
     h1("SEO Pricing and Cost Factors"),
     img(`${imageDir}/How Much Does SEO Cost in Bangalore image2.webp`, "SEO Pricing and Cost Factors"),
+    list('<div class="my-6 w-full table-container table-manchester-seo-pricing"><table class="w-full border-collapse border border-gray-600"><thead><tr class="bg-black"><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Package Types</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Services Generally Included</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Approximation Cost Per Month (Bangalore)</th></tr></thead><tbody><tr class="bg-black border-b border-gray-600"><td class="border-r border-gray-600 px-4 py-3 text-white text-sm"><strong>Basic SEO Package</strong></td><td class="border-r border-gray-600 px-4 py-3 text-white text-sm">Keyword research, on-page optimization, Google Business Profile optimization, and basic local SEO. This package is most suitable for small businesses in Bangalore.</td><td class="px-4 py-3 text-white text-sm">₹15,000 – ₹30,000</td></tr><tr class="bg-black border-b border-gray-600"><td class="border-r border-gray-600 px-4 py-3 text-white text-sm"><strong>Standard SEO Package</strong></td><td class="border-r border-gray-600 px-4 py-3 text-white text-sm">All Basic services plus improvement on technical SEO, continuous content creation, and initial link building - this package is most favorable to escalating local competition.</td><td class="px-4 py-3 text-white text-sm">₹30,000 – ₹70,000</td></tr><tr class="bg-black border-b border-gray-600"><td class="border-r border-gray-600 px-4 py-3 text-white text-sm"><strong>Complete E-commerce SEO Package</strong></td><td class="border-r border-gray-600 px-4 py-3 text-white text-sm">Comprehensive audit of the website, customized SEO strategy, advanced technical SEO, product/category optimization, content marketing, robust backlink building, and ongoing support: suitable for larger e-commerce businesses or very competitive niches.</td><td class="px-4 py-3 text-white text-sm">₹70,000+</td></tr></tbody></table></div>'),
+
     h2("Key Factors Influencing SEO Costs"),
     p("In pricing terms, a lot of things affect SEO, one of which is the extent of your site, because large and complicated sites are likely to require very extensive SEO work, which can ultimately add to the amount spent on SEO by the clients."),
     p("Local competition for your niche in Bangalore would also be a cost factor, as with highly competitive niches, more aggressive and more sustained SEO strategies will be required."),
@@ -177,7 +179,7 @@ const seoCostBangaloreContent: BlogContentItem[] = [
 
     h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+  <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
     <a href="/blog/how-much-does-seo-cost-in-delhi-ncr" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
       SEO Service Cost in Delhi
     </a>
