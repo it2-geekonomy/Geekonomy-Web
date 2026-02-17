@@ -10,9 +10,29 @@ import { whichEcommercePlatformIsBestForSEO } from "@/lib/blog/data/whichEcommer
 import { whatDoYouNeedToBalanceWhenDoingSEO } from "@/lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO";
 import { howMuchDoesSEOCostInAustralia } from "@/lib/blog/data/howMuchDoesSEOCostInAustralia";
 import { whyWhiteLabelSEOReportingIsImportantForAgencies } from "@/lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies";
+import { bestSeoServicesForStartupsInBangalore } from "@/lib/blog/data/bestSeoServicesForStartupsInBangalore";
+import { seoForStartups } from "@/lib/blog/data/seoForStartups";
+import { howMuchDoesSEOCostInManchester } from "@/lib/blog/data/howMuchDoesSEOCostInManchester";
+import { howMuchDoesSEOCostInBirmingham } from "@/lib/blog/data/howMuchDoesSEOCostInBirmingham";
+import { howMuchDoesSEOCostInNewYork } from "@/lib/blog/data/howMuchDoesSEOCostInNewYork";
+import { howMuchDoesSEOCostInLondon } from "@/lib/blog/data/howMuchDoesSEOCostInLondon";
+import { howMuchDoesSEOCostInHouston } from "@/lib/blog/data/howMuchDoesSEOCostInHouston";
+import { howMuchDoesSEOCostInSeattle } from "@/lib/blog/data/howMuchDoesSEOCostInSeattle";
+import { howMuchDoesSEOCostInBoston } from "@/lib/blog/data/howMuchDoesSEOCostInBoston";
+import { howMuchDoesSEOCostInSanFrancisco } from "@/lib/blog/data/howMuchDoesSEOCostInSanFrancisco";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  bestSeoServicesForStartupsInBangalore,
+  seoForStartups,
+  howMuchDoesSEOCostInManchester,
+  howMuchDoesSEOCostInBirmingham,
+  howMuchDoesSEOCostInNewYork,
+  howMuchDoesSEOCostInLondon,
+  howMuchDoesSEOCostInHouston,
+  howMuchDoesSEOCostInSeattle,
+  howMuchDoesSEOCostInBoston,
+  howMuchDoesSEOCostInSanFrancisco,
   howToCreateWhiteLabelSEOReportsAndAutomateThem,
   sosoactiveSeoNews,
   howImportantIsBrandingForSEO,
