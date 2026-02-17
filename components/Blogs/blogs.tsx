@@ -39,6 +39,23 @@ import { fashionSEOAgency } from "@/lib/blog/data/fashionSEOAgency";
 import {  howMuchDoesSEOCostInHyderabad } from "@/lib/blog/data/HowMuchDoesSEOCostinHyderabad"
 import { howMuchDoesSEOCostInDelhiNCR } from "@/lib/blog/data/HowMuchDoesSEOCostinDelhiNCR";
 import { howMuchDoesSEOCostInMumbai } from "@/lib/blog/data/HowMuchDoesSEOCostinMumbai";
+import { seoForAutoBodyShops } from "@/lib/blog/data/seoForAutoBodyShops";
+import { commonSEOMistakesSmallBusinesses } from "@/lib/blog/data/commonSEOMistakesSmallBusinesses";
+import { localSEOForTradies } from "@/lib/blog/data/localSEOForTradies";
+import { howCelebritySEOServicesBuildOnlineAuthority } from "@/lib/blog/data/howCelebritySEOServicesBuildOnlineAuthority";
+import { seoForHomeInspectors } from "@/lib/blog/data/seoForHomeInspectors";
+import { bestFintechSEOAgency } from "@/lib/blog/data/bestFintechSEOAgency";
+import { seoFriendlyCMS } from "@/lib/blog/data/seoFriendlyCMS";
+import { localSEORoadsideAssistance } from "@/lib/blog/data/localSEORoadsideAssistance";
+import { seoForImmigrationAttorneys } from "@/lib/blog/data/seoForImmigrationAttorneys";
+import { sevenReasonsInvestInSEO } from "@/lib/blog/data/sevenReasonsInvestInSEO";
+import { localSEOForHotels } from "@/lib/blog/data/localSEOForHotels";
+import { seoStrategyFunnel } from "@/lib/blog/data/seoStrategyFunnel";
+import { technicalSEOContentSEOAudits } from "@/lib/blog/data/technicalSEOContentSEOAudits";
+import { wordPressSEOOxfordshire } from "@/lib/blog/data/wordPressSEOOxfordshire";
+import { travelSEOCompany } from "@/lib/blog/data/travelSEOCompany";
+import { localSEOGeneralContractors } from "@/lib/blog/data/localSEOGeneralContractors";
+
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
   bestSeoServicesForStartupsInBangalore,
@@ -77,6 +94,22 @@ export const allBlogsData: BlogData[] = [
   howMuchDoesSEOCostInHyderabad,
   howMuchDoesSEOCostInDelhiNCR,
   howMuchDoesSEOCostInMumbai,
+  seoForAutoBodyShops,
+  commonSEOMistakesSmallBusinesses,
+  localSEOForTradies,
+  howCelebritySEOServicesBuildOnlineAuthority,
+  seoForHomeInspectors,
+  bestFintechSEOAgency,
+  seoFriendlyCMS,
+  localSEORoadsideAssistance,
+  seoForImmigrationAttorneys,
+  sevenReasonsInvestInSEO,
+  localSEOForHotels,
+  seoStrategyFunnel,
+  technicalSEOContentSEOAudits,
+  wordPressSEOOxfordshire,
+  travelSEOCompany,
+  localSEOGeneralContractors,
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */
