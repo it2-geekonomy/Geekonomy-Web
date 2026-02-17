@@ -210,10 +210,9 @@ export const howMuchDoesSEOCostInBangalore: BlogData = {
 export const howMuchDoesSEOCostInBangaloreSEO = {
     title: "How Much Does SEO Cost in Bangalore | 2026 Guide",
     description:
-        "Explore SEO pricing in Bangalore, package types, cost factors, and how to choose the right SEO strategy for long-term business growth.",
-    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-bangalore",
-    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-bangalore",
-    image:
-        "https://thegeekonomy.com/blog%20image/SEO%20Cost%20Bangalore/SEO%20Cost%20Bangalore.webp",
+      "Discover premium SEO services in Bangalore. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
+    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-bangalore",
+    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-bangalore",
+    image: "https://geekonomytech.com/How Much Does SEO Cost in Bangalore/How Much Does SEO Cost in Bangalore main image.webp",
     twitterHandle: "@GeekonomyTech",
 };

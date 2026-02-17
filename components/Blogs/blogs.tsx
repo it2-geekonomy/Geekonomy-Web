@@ -36,7 +36,9 @@ import { threeSixtyInternationalSEOService } from "@/lib/blog/data/threeSixtyInt
 import { bestFuneralHomeSEOCompany } from "@/lib/blog/data/bestFuneralHomeSEOCompany";
 import { seoForMSPsBestPractices } from "@/lib/blog/data/seoForMSPsBestPractices";
 import { fashionSEOAgency } from "@/lib/blog/data/fashionSEOAgency";
-
+import {  howMuchDoesSEOCostInHyderabad } from "@/lib/blog/data/HowMuchDoesSEOCostinHyderabad"
+import { howMuchDoesSEOCostInDelhiNCR } from "@/lib/blog/data/HowMuchDoesSEOCostinDelhiNCR";
+import { howMuchDoesSEOCostInMumbai } from "@/lib/blog/data/HowMuchDoesSEOCostinMumbai";
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
   bestSeoServicesForStartupsInBangalore,
@@ -72,6 +74,9 @@ export const allBlogsData: BlogData[] = [
   bestFuneralHomeSEOCompany,
   seoForMSPsBestPractices,
   fashionSEOAgency,
+  howMuchDoesSEOCostInHyderabad,
+  howMuchDoesSEOCostInDelhiNCR,
+  howMuchDoesSEOCostInMumbai,
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */
