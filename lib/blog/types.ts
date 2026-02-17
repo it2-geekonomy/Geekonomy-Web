@@ -3,7 +3,8 @@
  */
 export type BlogTableComponentKey =
   | "MumbaiSEOPackagesTable"
-  | "SmallPackageSEOTable";
+  | "SmallPackageSEOTable"
+  | "BangaloreSEOPackagesTable";
 
 export interface BlogSectionData {
   title: string;
