@@ -7,6 +7,7 @@ import PageTransition from "@/components/shared/PageTransition";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 // import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
+import DisableRightClick from "@/components/shared/DisableRightClick";
 import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 
 const poppins = Poppins({
@@ -38,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased`}
       >
+        <DisableRightClick />
         <NavbarHeightProvider>
           <MouseLight />
           <Navbar />
