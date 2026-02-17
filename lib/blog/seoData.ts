@@ -30,6 +30,22 @@ import { threeSixtyInternationalSEOServiceSEO } from "./data/threeSixtyInternati
 import { bestFuneralHomeSEOCompanySEO } from "./data/bestFuneralHomeSEOCompany";
 import { seoForMSPsBestPracticesSEO } from "./data/seoForMSPsBestPractices";
 import { fashionSEOAgencySEO } from "./data/fashionSEOAgency";
+import { seoForAutoBodyShopsSEO } from "./data/seoForAutoBodyShops";
+import { commonSEOMistakesSmallBusinessesSEO } from "./data/commonSEOMistakesSmallBusinesses";
+import { localSEOForTradiesSEO } from "./data/localSEOForTradies";
+import { howCelebritySEOServicesBuildOnlineAuthoritySEO } from "./data/howCelebritySEOServicesBuildOnlineAuthority";
+import { seoForHomeInspectorsSEO } from "./data/seoForHomeInspectors";
+import { bestFintechSEOAgencySEO } from "./data/bestFintechSEOAgency";
+import { seoFriendlyCMSSEO } from "./data/seoFriendlyCMS";
+import { localSEORoadsideAssistanceSEO } from "./data/localSEORoadsideAssistance";
+import { seoForImmigrationAttorneysSEO } from "./data/seoForImmigrationAttorneys";
+import { sevenReasonsInvestInSEOSEO } from "./data/sevenReasonsInvestInSEO";
+import { localSEOForHotelsSEO } from "./data/localSEOForHotels";
+import { seoStrategyFunnelSEO } from "./data/seoStrategyFunnel";
+import { technicalSEOContentSEOAuditsSEO } from "./data/technicalSEOContentSEOAudits";
+import { wordPressSEOOxfordshireSEO } from "./data/wordPressSEOOxfordshire";
+import { travelSEOCompanySEO } from "./data/travelSEOCompany";
+import { localSEOGeneralContractorsSEO } from "./data/localSEOGeneralContractors";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -65,4 +81,20 @@ export const blogSEOData = {
   "blog/best-funeral-home-seo-company-for-growth": bestFuneralHomeSEOCompanySEO,
   "blog/seo-for-msps-best-practices-and-local-seo": seoForMSPsBestPracticesSEO,
   "blog/fashion-seo-agency-seo-strategies-to-grow": fashionSEOAgencySEO,
+  "blog/seo-for-auto-body-shops-strategies-to-boost-local-seo": seoForAutoBodyShopsSEO,
+  "blog/common-seo-mistakes-small-businesses-make": commonSEOMistakesSmallBusinessesSEO,
+  "blog/local-seo-for-tradies-get-more-trade-business-with-seo": localSEOForTradiesSEO,
+  "blog/how-celebrity-seo-servies-build-online-authority": howCelebritySEOServicesBuildOnlineAuthoritySEO,
+  "blog/seo-for-home-inspectors-business-best-seo-strategies": seoForHomeInspectorsSEO,
+  "blog/how-the-best-fintech-seo-agency-help-you-rank": bestFintechSEOAgencySEO,
+  "blog/seo-friendly-cms-find-the-best": seoFriendlyCMSSEO,
+  "blog/local-seo-for-roadside-assistance-providers-best-strategies": localSEORoadsideAssistanceSEO,
+  "blog/seo-for-immigration-attorneys-get-more-clients": seoForImmigrationAttorneysSEO,
+  "blog/7-reasons-why-your-business-should-invest-in-seo": sevenReasonsInvestInSEOSEO,
+  "blog/local-seo-for-hotels-boost-visibility": localSEOForHotelsSEO,
+  "blog/seo-strategy-funnel": seoStrategyFunnelSEO,
+  "blog/difference-between-technical-seo-and-content-seo-audits": technicalSEOContentSEOAuditsSEO,
+  "blog/how-to-improve-wordpress-seo-for-oxfordshire-sites": wordPressSEOOxfordshireSEO,
+  "blog/how-a-travel-seo-company-helps-you-rank-higher": travelSEOCompanySEO,
+  "blog/best-local-seo-strategies-for-general-contractors": localSEOGeneralContractorsSEO,
 };
