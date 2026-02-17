@@ -11,7 +11,44 @@ import { whichEcommercePlatformIsBestForSEO } from "@/lib/blog/data/whichEcommer
 import { whatDoYouNeedToBalanceWhenDoingSEO } from "@/lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO";
 import { howMuchDoesSEOCostInAustralia } from "@/lib/blog/data/howMuchDoesSEOCostInAustralia";
 import { whyWhiteLabelSEOReportingIsImportantForAgencies } from "@/lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies";
+import { bestSeoServicesForStartupsInBangalore } from "@/lib/blog/data/bestSeoServicesForStartupsInBangalore";
+import { seoForStartups } from "@/lib/blog/data/seoForStartups";
+import { howMuchDoesSEOCostInManchester } from "@/lib/blog/data/howMuchDoesSEOCostInManchester";
+import { howMuchDoesSEOCostInBirmingham } from "@/lib/blog/data/howMuchDoesSEOCostInBirmingham";
+import { howMuchDoesSEOCostInNewYork } from "@/lib/blog/data/howMuchDoesSEOCostInNewYork";
+import { howMuchDoesSEOCostInLondon } from "@/lib/blog/data/howMuchDoesSEOCostInLondon";
+import { howMuchDoesSEOCostInHouston } from "@/lib/blog/data/howMuchDoesSEOCostInHouston";
+import { howMuchDoesSEOCostInSeattle } from "@/lib/blog/data/howMuchDoesSEOCostInSeattle";
+import { howMuchDoesSEOCostInBoston } from "@/lib/blog/data/howMuchDoesSEOCostInBoston";
+import { howMuchDoesSEOCostInSanFrancisco } from "@/lib/blog/data/howMuchDoesSEOCostInSanFrancisco";
+import { howToUseScreamingFrogToImproveOnPageSEO } from "@/lib/blog/data/howToUseScreamingFrogToImproveOnPageSEO";
+import { seoForEstatePlanningLawyers } from "@/lib/blog/data/seoForEstatePlanningLawyers";
+import { bestToolsForSEOTopicalMap } from "@/lib/blog/data/bestToolsForSEOTopicalMap";
+import { enterpriseSEOAudits } from "@/lib/blog/data/enterpriseSEOAudits";
+import { bestPracticesForSEOEnhancingAIVisibility } from "@/lib/blog/data/bestPracticesForSEOEnhancingAIVisibility";
+import { whySEOForPersonalInjuryLawyersMatters } from "@/lib/blog/data/whySEOForPersonalInjuryLawyersMatters";
+import { howToCheckIfYourSEOIsWorking } from "@/lib/blog/data/howToCheckIfYourSEOIsWorking";
+import { howDoesBenStaceDoSemanticSEO } from "@/lib/blog/data/howDoesBenStaceDoSemanticSEO";
+import { howAISeoToolsHelpScaleAgileSolutionsFaster } from "@/lib/blog/data/howAISeoToolsHelpScaleAgileSolutionsFaster";
+import { howToRankNationallyInSEO } from "@/lib/blog/data/howToRankNationallyInSEO";
+import { seoForAddictionTreatmentCenters } from "@/lib/blog/data/seoForAddictionTreatmentCenters";
+import { threeSixtyInternationalSEOService } from "@/lib/blog/data/threeSixtyInternationalSEOService";
+import { bestFuneralHomeSEOCompany } from "@/lib/blog/data/bestFuneralHomeSEOCompany";
+import { seoForMSPsBestPractices } from "@/lib/blog/data/seoForMSPsBestPractices";
+import { fashionSEOAgency } from "@/lib/blog/data/fashionSEOAgency";
+
+// Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  bestSeoServicesForStartupsInBangalore,
+  seoForStartups,
+  howMuchDoesSEOCostInManchester,
+  howMuchDoesSEOCostInBirmingham,
+  howMuchDoesSEOCostInNewYork,
+  howMuchDoesSEOCostInLondon,
+  howMuchDoesSEOCostInHouston,
+  howMuchDoesSEOCostInSeattle,
+  howMuchDoesSEOCostInBoston,
+  howMuchDoesSEOCostInSanFrancisco,
   howMuchDoesSEOCostInBangalore,
   howToCreateWhiteLabelSEOReportsAndAutomateThem,
   sosoactiveSeoNews,
@@ -20,6 +57,21 @@ export const allBlogsData: BlogData[] = [
   whatDoYouNeedToBalanceWhenDoingSEO,
   howMuchDoesSEOCostInAustralia,
   whyWhiteLabelSEOReportingIsImportantForAgencies,
+  howToUseScreamingFrogToImproveOnPageSEO,
+  seoForEstatePlanningLawyers,
+  bestToolsForSEOTopicalMap,
+  enterpriseSEOAudits,
+  bestPracticesForSEOEnhancingAIVisibility,
+  whySEOForPersonalInjuryLawyersMatters,
+  howToCheckIfYourSEOIsWorking,
+  howDoesBenStaceDoSemanticSEO,
+  howAISeoToolsHelpScaleAgileSolutionsFaster,
+  howToRankNationallyInSEO,
+  seoForAddictionTreatmentCenters,
+  threeSixtyInternationalSEOService,
+  bestFuneralHomeSEOCompany,
+  seoForMSPsBestPractices,
+  fashionSEOAgency,
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */

@@ -1,11 +1,4 @@
-// Import SEO data from individual blog files
-import { sosoactiveSeoNewsSEO } from "@/lib/blog/data/sosoactiveSeoNews";
-import { howToCreateWhiteLabelSEOReportsAndAutomateThemSEO } from "@/lib/blog/data/howToCreateWhiteLabelSEOReportsAndAutomateThem";
-import { howImportantIsBrandingForSEOSEO } from "@/lib/blog/data/howImportantIsBrandingForSEO";
-import { whichEcommercePlatformIsBestForSEOSEO } from "@/lib/blog/data/whichEcommercePlatformIsBestForSEO";
-import { whatDoYouNeedToBalanceWhenDoingSEOSEO } from "@/lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO";
-import { howMuchDoesSEOCostInAustraliaSEO } from "@/lib/blog/data/howMuchDoesSEOCostInAustralia";
-import { whyWhiteLabelSEOReportingIsImportantForAgenciesSEO } from "@/lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies";
+import { blogSEOData } from "@/lib/blog/seoData";
 
 export interface SEOData {
   title: string;
@@ -16,25 +9,15 @@ export interface SEOData {
   twitterHandle?: string;
 }
 
-/**
- * Get the base URL dynamically based on environment
- * For server-side: uses NEXT_PUBLIC_BASE_URL or falls back to production URL
- * For client-side: uses window.location.origin
- */
 export function getBaseUrl(): string {
   // Check if we're on the client side
   if (typeof window !== 'undefined') {
     return window.location.origin;
   }
   
-  // Server-side: use environment variable or default to production
   return process.env.NEXT_PUBLIC_BASE_URL || 'https://thegeekonomy.com';
 }
 
-/**
- * Get the base URL from Next.js headers (for server components)
- * This is used to determine the actual host the site is being served from
- */
 export async function getBaseUrlFromHeaders(): Promise<string> {
   try {
     // Only import headers if we're on the server
@@ -49,23 +32,15 @@ export async function getBaseUrlFromHeaders(): Promise<string> {
       }
     }
   } catch {
-    // Headers unavailable during static build; fallback to getBaseUrl()
   }
   
   return getBaseUrl();
 }
 
-/**
- * Get SEO data with dynamic URLs based on current environment
- */
 export function getDynamicSEOData(key: string): SEOData {
   return normalizeSeoData(key, getBaseUrl());
 }
 
-/**
- * Get SEO data with dynamic URLs based on request headers (for server-side metadata)
- * Use this in generateMetadata functions
- */
 export async function getDynamicSEODataFromHeaders(key: string): Promise<SEOData> {
   const baseUrl = await getBaseUrlFromHeaders();
   return normalizeSeoData(key, baseUrl);
@@ -104,31 +79,16 @@ const seoData: Record<string, SEOData> = {
   },
 };
 
-// Aggregate blog SEO data from individual blog files
-const blogSEOData: Record<string, SEOData> = {
-  "blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
-  "blog/how-to-create-white-label-seo-reports-and-automate-them": howToCreateWhiteLabelSEOReportsAndAutomateThemSEO,
-  "blog/how-important-is-branding-for-seo": howImportantIsBrandingForSEOSEO,
-  "blog/which-ecommerce-platform-is-best-for-seo": whichEcommercePlatformIsBestForSEOSEO,
-  "blog/what-do-you-need-to-balance-when-doing-seo": whatDoYouNeedToBalanceWhenDoingSEOSEO,
-  "blog/how-much-does-seo-cost-in-australia": howMuchDoesSEOCostInAustraliaSEO,
-  "blog/why-white-label-seo-reporting-is-important-for-agencies": whyWhiteLabelSEOReportingIsImportantForAgenciesSEO,
-};
-
 /**
  * Get all SEO data (static + blog SEO data)
  */
 function getAllSEOData(): Record<string, SEOData> {
   return {
     ...seoData,
-    ...blogSEOData,
+    ...(blogSEOData as Record<string, SEOData>),
   };
 }
 
-/**
- * Get SEO data without any environment inference. Useful for build-time or
- * metadata generation that must run entirely on the server without streaming.
- */
 export function getStaticSEOData(key: string): SEOData {
   return getAllSEOData()[key] || getAllSEOData().home;
 }
