@@ -74,13 +74,14 @@ export default function HowWeWorkCards() {
               <Image
                 src={card.image}
                 alt={card.title}
-                width={120}
+                width={1000}
                 height={90}
-                className={`mb-6 transition-all duration-300 ${
+                className={`mb-6 transition-all duration-300 object-contain ${
                   activeCard === card.id
                     ? "scale-[1.18] drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
                     : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
                 }`}
+                style={{ width: 'auto', height: 'auto', maxWidth: '100px', maxHeight: '90px' }}
               />
 
               <Typography
