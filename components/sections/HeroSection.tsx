@@ -1,12 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typography } from "@/components/ui/Typography";
 
 export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
+  const [animationKey, setAnimationKey] = useState(0);
+
+  useEffect(() => {
+    if (!isHovered) {
+      // Reset animation key when leaving hover to restart chaotic animation
+      setAnimationKey((prev) => prev + 1);
+    }
+  }, [isHovered]);
   
   return (
     <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
@@ -37,15 +45,36 @@ export default function HeroSection() {
                   ease: [0.16, 1, 0.3, 1],
                 }}
               >
-                <Typography
-                  as="h1"
-                  variant="3xl"
+                <h1
                   className="text-[#69AE44] mb-6 leading-[1.1] relative"
-                  letterSpacing="1em"
-                  fontWeight={275}
+                  style={{
+                    fontSize: "clamp(1.5rem, 1.25rem + 2vw, 3rem)",
+                    fontWeight: 275,
+                    letterSpacing: "1em",
+                    fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
+                  }}
                 >
-                  CLARITY
-                </Typography>
+                  {["C", "L", "A", "R", "I", "T", "Y"].map((letter, index) => (
+                    <motion.span
+                      key={index}
+                      className="inline-block"
+                      animate={{
+                        textShadow: isHovered
+                          ? "0 0 8px rgba(105, 174, 68, 0.6), 0 0 12px rgba(105, 174, 68, 0.4)"
+                          : "0 0 0px rgba(105, 174, 68, 0)",
+                        filter: isHovered
+                          ? "drop-shadow(0 0 4px rgba(105, 174, 68, 0.5))"
+                          : "drop-shadow(0 0 0px rgba(105, 174, 68, 0))",
+                      }}
+                      transition={{
+                        duration: 0.3,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      {letter}
+                    </motion.span>
+                  ))}
+                </h1>
                 {/* Shine sweep effect - on enter */}
                 <motion.div
                   className="absolute inset-0 pointer-events-none"
@@ -69,20 +98,34 @@ export default function HeroSection() {
             </div>
             {/* Gray horizontal line */}
             <div className="h-px w-84 sm:w-95 md:w-120 lg:w-130 xl:w-140 bg-[#414340] mb-3 mx-auto lg:mx-0" />
-            <div className="flex items-baseline gap-18 justify-center lg:justify-start">
-              <Typography
-                as="h2"
-                variant="5xl"
+            <div className="flex items-baseline gap-10 justify-center lg:justify-start">
+              <motion.h2
                 className="font-bold text-white leading-[1.1]"
-                letterSpacing="-0.125em"
+                style={{
+                  fontSize: "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
+                  fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
+                }}
+                animate={{
+                  letterSpacing: isHovered ? "0em" : "-0.125em",
+                }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                }}
               >
                 OVER
-              </Typography>
+              </motion.h2>
               <motion.div
                 className="inline-block"
-                style={{ letterSpacing: "-0.125em" }}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                animate={{
+                  letterSpacing: isHovered ? "0em" : "-0.125em",
+                }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                }}
               >
                 {["C", "H", "A", "O", "S"].map((letter, index) => {
                   // Generate unique chaotic patterns for each letter
@@ -103,15 +146,14 @@ export default function HeroSection() {
                   
                   return (
                     <motion.span
-                      key={index}
+                      key={`${index}-${animationKey}`}
                       className="inline-block font-bold text-white"
                       style={{
                         fontSize: "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
                         lineHeight: "1.1",
-                        letterSpacing: "-0.125em",
                         fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
                       }}
-                      initial={{ x: 0, y: 0, rotate: 0, scale: 1 }}
+                      initial={false}
                       animate={
                         isHovered
                           ? {
@@ -119,6 +161,7 @@ export default function HeroSection() {
                               y: 0,
                               rotate: 0,
                               scale: 1,
+                              letterSpacing: "0em",
                             }
                           : {
                               x: [
@@ -165,6 +208,7 @@ export default function HeroSection() {
                                 1.05,
                                 1,
                               ],
+                              letterSpacing: "-0.125em",
                             }
                       }
                       transition={
@@ -179,6 +223,7 @@ export default function HeroSection() {
                               ease: "linear",
                               repeatType: "loop",
                               delay: baseDelay,
+                              repeatDelay: 0,
                             }
                       }
                     >
