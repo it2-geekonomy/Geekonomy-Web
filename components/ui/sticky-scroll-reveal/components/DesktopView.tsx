@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
-import { Typography } from "@/components/ui/Typography";
 import { StickyScrollContent } from "../types";
 
 interface DesktopViewProps {
@@ -51,13 +50,12 @@ export const DesktopView = ({
           {content.map((item, i) => (
             <div key={`${item.title}-${i}`}>
               <motion.div>
-                <Typography
-                  as={i === 0 ? "h1" : "h2"}
-                  variant="2xl"
-                  className="text-[#FFFFFF] font-bold"
+                <div
+                  aria-hidden="true"
+                  className="text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight"
                 >
                   {item.title}
-                </Typography>
+                </div>
               </motion.div>
               <motion.div>
                 <div

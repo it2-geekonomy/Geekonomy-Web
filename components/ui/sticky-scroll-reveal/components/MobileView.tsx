@@ -93,18 +93,33 @@ export const MobileView = ({
             }}
           >
             <motion.div>
-              <h2
-                style={{
-                  color: "#fff",
-                  fontSize: "1.375rem",
-                  fontWeight: 700,
-                  lineHeight: "1.9rem",
-                  marginTop: 0,
-                  marginBottom: "1rem",
-                }}
-              >
-                {item.title}
-              </h2>
+              {i === 0 ? (
+                <h1
+                  style={{
+                    color: "#fff",
+                    fontSize: "1.375rem",
+                    fontWeight: 700,
+                    lineHeight: "1.9rem",
+                    marginTop: 0,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {item.title}
+                </h1>
+              ) : (
+                <h2
+                  style={{
+                    color: "#fff",
+                    fontSize: "1.375rem",
+                    fontWeight: 700,
+                    lineHeight: "1.9rem",
+                    marginTop: 0,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {item.title}
+                </h2>
+              )}
               <div
                 className="mob-desc"
                 style={{ fontSize: "1rem", lineHeight: "1.75rem" }}
