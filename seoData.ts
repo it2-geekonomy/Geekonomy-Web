@@ -1,11 +1,4 @@
-// Import SEO data from individual blog files
-import { sosoactiveSeoNewsSEO } from "@/lib/blog/data/sosoactiveSeoNews";
-import { howToCreateWhiteLabelSEOReportsAndAutomateThemSEO } from "@/lib/blog/data/howToCreateWhiteLabelSEOReportsAndAutomateThem";
-import { howImportantIsBrandingForSEOSEO } from "@/lib/blog/data/howImportantIsBrandingForSEO";
-import { whichEcommercePlatformIsBestForSEOSEO } from "@/lib/blog/data/whichEcommercePlatformIsBestForSEO";
-import { whatDoYouNeedToBalanceWhenDoingSEOSEO } from "@/lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO";
-import { howMuchDoesSEOCostInAustraliaSEO } from "@/lib/blog/data/howMuchDoesSEOCostInAustralia";
-import { whyWhiteLabelSEOReportingIsImportantForAgenciesSEO } from "@/lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies";
+import { blogSEOData } from "@/lib/blog/seoData";
 
 export interface SEOData {
   title: string;
@@ -104,24 +97,13 @@ const seoData: Record<string, SEOData> = {
   },
 };
 
-// Aggregate blog SEO data from individual blog files
-const blogSEOData: Record<string, SEOData> = {
-  "blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
-  "blog/how-to-create-white-label-seo-reports-and-automate-them": howToCreateWhiteLabelSEOReportsAndAutomateThemSEO,
-  "blog/how-important-is-branding-for-seo": howImportantIsBrandingForSEOSEO,
-  "blog/which-ecommerce-platform-is-best-for-seo": whichEcommercePlatformIsBestForSEOSEO,
-  "blog/what-do-you-need-to-balance-when-doing-seo": whatDoYouNeedToBalanceWhenDoingSEOSEO,
-  "blog/how-much-does-seo-cost-in-australia": howMuchDoesSEOCostInAustraliaSEO,
-  "blog/why-white-label-seo-reporting-is-important-for-agencies": whyWhiteLabelSEOReportingIsImportantForAgenciesSEO,
-};
-
 /**
  * Get all SEO data (static + blog SEO data)
  */
 function getAllSEOData(): Record<string, SEOData> {
   return {
     ...seoData,
-    ...blogSEOData,
+    ...(blogSEOData as Record<string, SEOData>),
   };
 }
 
