@@ -19,6 +19,7 @@ export function useStickyScrollLock(
     const unlock = () => {
       container.style.overflowY = "auto";
       container.style.pointerEvents = "auto";
+      container.style.scrollBehavior = "smooth";
     };
 
     lock();

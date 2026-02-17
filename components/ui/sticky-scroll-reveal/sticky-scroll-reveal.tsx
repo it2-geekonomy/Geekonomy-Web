@@ -2,10 +2,10 @@
 
 import { useRef } from "react";
 import { useStickyScrollLock } from "@/hooks/useStickyScrollLock";
-import { StickyScrollProps } from "./sticky-scroll-reveal/types";
-import { useScreenWidth, useActiveCard, useMobileImageHeight } from "./sticky-scroll-reveal/hooks";
-import { MobileView } from "./sticky-scroll-reveal/components/MobileView";
-import { DesktopView } from "./sticky-scroll-reveal/components/DesktopView";
+import { StickyScrollProps } from "./types";
+import { useScreenWidth, useActiveCard, useMobileImageHeight } from "./hooks";
+import { MobileView } from "./components/MobileView";
+import { DesktopView } from "./components/DesktopView";
 
 export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) => {
   const pageRef = useRef<HTMLDivElement | null>(null);
