@@ -3,7 +3,6 @@
 import { Typography } from "@/components/ui/Typography";
 import CoreCapabilitiesSection from "@/components/sections/CoreCapabilitiesSection";
 import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
-import HowWeWorkSection from "@/components/Aboutpage/Whatwedo";
 
 export default function WhatWeDoPage() {
   return (
@@ -38,7 +37,7 @@ export default function WhatWeDoPage() {
                 <Typography
                   as="p"
                   variant="lg"
-                  className="text-[#A0A0A0] font-normal leading-relaxed max-w-3xl"
+                  className="text-[#A0A0A0] font-normal leading-relaxed max-w-7xl"
                 >
                   At{" "}
                   <span className="text-[#6eaf4c]">Geekonomy</span>
