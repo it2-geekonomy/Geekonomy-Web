@@ -31,7 +31,16 @@ export const MobileView = ({
 
   return (
     <div className="lg:hidden">
-      <style>{`.mob-img-box{width:100%!important;height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important}.mob-img-box>*,.mob-img-box img,.mob-img-box span{width:100%!important;height:100%!important;object-fit:contain!important;display:block!important;max-width:100%!important;max-height:100%!important;position:static!important}.mob-desc h2,.mob-desc h3,.mob-desc h4,.mob-desc p,.mob-desc li,.mob-desc span,.mob-desc div{color:#ffffff!important}`}</style>
+      <style>{`
+.mob-img-box{width:100%!important;height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important}
+.mob-img-box>*,.mob-img-box img,.mob-img-box span{width:100%!important;height:100%!important;object-fit:contain!important;display:block!important;max-width:100%!important;max-height:100%!important;position:static!important}
+.mob-desc h2,.mob-desc h3,.mob-desc h4,.mob-desc p,.mob-desc li,.mob-desc span,.mob-desc div{color:#ffffff!important}
+.mob-desc{max-width:100%!important;overflow-x:hidden!important}
+.mob-desc .table-container,.mob-table-wrap{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important;max-width:100%!important}
+.mob-desc table,.mob-table-wrap table{width:100%!important;table-layout:fixed!important;border-collapse:collapse!important}
+.mob-desc table th,.mob-desc table td,.mob-table-wrap table th,.mob-table-wrap table td{padding:6px 6px!important;font-size:0.68rem!important;line-height:1.3!important;word-break:break-word!important;overflow-wrap:break-word!important;hyphens:auto!important;white-space:normal!important}
+.mob-desc table th,.mob-table-wrap table th{font-size:0.7rem!important;font-weight:600!important}
+      `}</style>
       <div
         ref={imageRef}
         style={{
@@ -75,27 +84,51 @@ export const MobileView = ({
         }}
       >
         {content.map((item, i) => (
-          <div key={`${item.title}-${i}`} style={{ padding: "1.5rem 1rem" }}>
+          <div
+            key={`${item.title}-${i}`}
+            style={{
+              padding: "1.5rem 1rem",
+              overflowX: "hidden",
+              maxWidth: "100vw",
+            }}
+          >
             <motion.div>
-              <h2
-                style={{
-                  color: "#fff",
-                  fontSize: "1.375rem",
-                  fontWeight: 700,
-                  lineHeight: "1.9rem",
-                  marginTop: 0,
-                  marginBottom: "1rem",
-                }}
-              >
-                {item.title}
-              </h2>
+              {i === 0 ? (
+                <h1
+                  style={{
+                    color: "#fff",
+                    fontSize: "1.375rem",
+                    fontWeight: 700,
+                    lineHeight: "1.9rem",
+                    marginTop: 0,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {item.title}
+                </h1>
+              ) : (
+                <h2
+                  style={{
+                    color: "#fff",
+                    fontSize: "1.375rem",
+                    fontWeight: 700,
+                    lineHeight: "1.9rem",
+                    marginTop: 0,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {item.title}
+                </h2>
+              )}
               <div
                 className="mob-desc"
                 style={{ fontSize: "1rem", lineHeight: "1.75rem" }}
                 dangerouslySetInnerHTML={{ __html: item.description }}
               />
               {item.table != null && (
-                <div style={{ marginTop: "1.5rem" }}>{item.table}</div>
+                <div className="mob-table-wrap" style={{ marginTop: "1.5rem" }}>
+                  {item.table}
+                </div>
               )}
             </motion.div>
           </div>

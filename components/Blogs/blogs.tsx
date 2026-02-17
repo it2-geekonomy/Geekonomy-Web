@@ -98,7 +98,7 @@ function hydrateBlog(data: BlogData): Blog {
     heading: data.heading,
     coverImage: data.coverImage,
     sections: data.sections.map((section, index) => ({
-      title: section.title,
+      title: index === 0 ? `${data.heading} | Geekonomy` : section.title,
       description: section.description,
       image: (
         <Image
