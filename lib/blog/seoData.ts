@@ -15,6 +15,21 @@ import { howMuchDoesSEOCostInHoustonSEO } from "./data/howMuchDoesSEOCostInHoust
 import { howMuchDoesSEOCostInSeattleSEO } from "./data/howMuchDoesSEOCostInSeattle";
 import { howMuchDoesSEOCostInBostonSEO } from "./data/howMuchDoesSEOCostInBoston";
 import { howMuchDoesSEOCostInSanFranciscoSEO } from "./data/howMuchDoesSEOCostInSanFrancisco";
+import { howToUseScreamingFrogToImproveOnPageSEOSEO } from "./data/howToUseScreamingFrogToImproveOnPageSEO";
+import { seoForEstatePlanningLawyersSEO } from "./data/seoForEstatePlanningLawyers";
+import { bestToolsForSEOTopicalMapSEO } from "./data/bestToolsForSEOTopicalMap";
+import { enterpriseSEOAuditsSEO } from "./data/enterpriseSEOAudits";
+import { bestPracticesForSEOEnhancingAIVisibilitySEO } from "./data/bestPracticesForSEOEnhancingAIVisibility";
+import { whySEOForPersonalInjuryLawyersMattersSEO } from "./data/whySEOForPersonalInjuryLawyersMatters";
+import { howToCheckIfYourSEOIsWorkingSEO } from "./data/howToCheckIfYourSEOIsWorking";
+import { howDoesBenStaceDoSemanticSEOSEO } from "./data/howDoesBenStaceDoSemanticSEO";
+import { howAISeoToolsHelpScaleAgileSolutionsFasterSEO } from "./data/howAISeoToolsHelpScaleAgileSolutionsFaster";
+import { howToRankNationallyInSEOSEO } from "./data/howToRankNationallyInSEO";
+import { seoForAddictionTreatmentCentersSEO } from "./data/seoForAddictionTreatmentCenters";
+import { threeSixtyInternationalSEOServiceSEO } from "./data/threeSixtyInternationalSEOService";
+import { bestFuneralHomeSEOCompanySEO } from "./data/bestFuneralHomeSEOCompany";
+import { seoForMSPsBestPracticesSEO } from "./data/seoForMSPsBestPractices";
+import { fashionSEOAgencySEO } from "./data/fashionSEOAgency";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -35,4 +50,19 @@ export const blogSEOData = {
   "blog/how-much-does-seo-cost-in-seattle": howMuchDoesSEOCostInSeattleSEO,
   "blog/how-much-does-seo-cost-in-boston": howMuchDoesSEOCostInBostonSEO,
   "blog/how-much-does-seo-cost-in-san-francisco": howMuchDoesSEOCostInSanFranciscoSEO,
+  "blog/how-to-use-screaming-frog-to-improve-on-page-seo": howToUseScreamingFrogToImproveOnPageSEOSEO,
+  "blog/seo-for-estate-planning-lawyers-complete-guide": seoForEstatePlanningLawyersSEO,
+  "blog/best-tools-for-seo-topical-map-boost-your-seo": bestToolsForSEOTopicalMapSEO,
+  "blog/enterprise-seo-audits-complete-guide-for-large-websites": enterpriseSEOAuditsSEO,
+  "blog/best-practices-for-seo-enhancing-ai-visibility": bestPracticesForSEOEnhancingAIVisibilitySEO,
+  "blog/why-seo-for-personal-injury-lawyers-matters": whySEOForPersonalInjuryLawyersMattersSEO,
+  "blog/how-to-check-if-your-seo-is-working": howToCheckIfYourSEOIsWorkingSEO,
+  "blog/how-does-ben-stace-do-semantic-seo": howDoesBenStaceDoSemanticSEOSEO,
+  "blog/how-ai-seo-tools-help-scale-agile-solutions-faster": howAISeoToolsHelpScaleAgileSolutionsFasterSEO,
+  "blog/how-to-rank-nationally-in-seo": howToRankNationallyInSEOSEO,
+  "blog/seo-for-addiction-treatment-centers-complete-guide": seoForAddictionTreatmentCentersSEO,
+  "blog/360-international-seo-service-complete-guide": threeSixtyInternationalSEOServiceSEO,
+  "blog/best-funeral-home-seo-company-for-growth": bestFuneralHomeSEOCompanySEO,
+  "blog/seo-for-msps-best-practices-and-local-seo": seoForMSPsBestPracticesSEO,
+  "blog/fashion-seo-agency-seo-strategies-to-grow": fashionSEOAgencySEO,
 };
