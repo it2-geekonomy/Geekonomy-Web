@@ -7,8 +7,7 @@ export type ContactSubject =
   | "codecraft";
 
 export interface ContactFormValues {
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
   phone: string;
   organisation: string;

@@ -6,8 +6,7 @@ import { validateContactForm } from "@/lib/validations";
 
 export function useContactForm() {
   const [values, setValues] = useState<ContactFormValues>({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
     organisation: "",
@@ -56,8 +55,7 @@ export function useContactForm() {
         const subjectText = selectedSubjects.join(", ") || "Not specified";
 
         const templateParams = {
-          firstName: values.firstName,
-          lastName: values.lastName,
+          name: values.name,
           email: values.email,
           phoneNumber: values.phone,
           selectSubject: subjectText,
@@ -78,8 +76,7 @@ export function useContactForm() {
 
         setSubmitStatus("success");
         setValues({
-          firstName: "",
-          lastName: "",
+          name: "",
           email: "",
           phone: "",
           organisation: "",

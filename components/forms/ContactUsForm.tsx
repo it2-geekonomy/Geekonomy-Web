@@ -20,7 +20,7 @@ export default function ContactUsForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative w-full mx-auto grid grid-cols-1 place-items-center lg:place-items-stretch lg:grid-cols-[40%_60%] gap-8 p-6 lg:p-18 bg-black/80 backdrop-blur-md border border-white/20"
+      className="relative w-full mx-auto grid grid-cols-1 place-items-center lg:place-items-stretch lg:grid-cols-[40%_60%] gap-8 p-6 lg:p-[clamp(1.5rem,1.5rem+1.5vw,8rem)] bg-black/80 backdrop-blur-md border border-white/20"
     >
       <span className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#69AE44]" />
       <span className="absolute top-0 right-0 w-5 h-5 border-t border-r border-[#69AE44]" />

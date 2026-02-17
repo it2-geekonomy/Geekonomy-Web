@@ -4,19 +4,19 @@ import { Typography } from "@/components/ui/Typography";
 
 export function ContactFormLeftPanel() {
   return (
-    <div className="space-y-12 lg:space-y-22">
+    <div className="space-y-12">
       <Typography as="p" variant="xl" className="text-white">
         Let's Get Your Portfolio Strategy
       </Typography>
 
-      <div className="space-y-12 lg:space-y-22">
+      <div className="space-y-12">
         <div className="flex items-center gap-5">
           <Image
             src="/contactimages/phone.svg"
             alt="phone"
             width={34}
             height={34}
-            className="w-6 h-6 sm:w-[38px] sm:h-[38px]"
+            className="w-6 h-6 sm:w-[34px] sm:h-[34px]"
           />
           <Typography as="p" variant="base" className="text-white">
             +91 99000 05968
@@ -29,7 +29,7 @@ export function ContactFormLeftPanel() {
             alt="email"
             width={34}
             height={34}
-            className="w-7 h-7 sm:w-[38px] sm:h-[38px]"
+            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
           />
           <Typography as="p" variant="base" className="text-white">
             connect@geekonomy.in
@@ -42,7 +42,7 @@ export function ContactFormLeftPanel() {
             alt="location"
             width={34}
             height={34}
-            className="w-7 h-7 sm:w-[38px] sm:h-[38px]"
+            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
           />
           <Typography as="p" variant="base" className="text-white leading-relaxed">
             No. 1357, Ground Floor, 9th Cross, ITI Layout, JP Nagar 1st Phase,
@@ -51,7 +51,7 @@ export function ContactFormLeftPanel() {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 pt-4 mb-8 justify-center lg:justify-start lg:mb-0">
+      <div className="flex items-center gap-4 pt-4 mb-8 justify-center lg:justify-start lg:space-x-2 lg:mb-0">
         <Link
           href="https://x.com/TheGeekonomy?s=20"
           target="_blank"
@@ -63,7 +63,7 @@ export function ContactFormLeftPanel() {
             alt="twitter"
             width={38}
             height={38}
-            className="w-6 h-6 sm:w-[38px] sm:h-[38px]"
+            className="w-6 h-6 sm:w-[34px] sm:h-[34px]"
           />
         </Link>
 
@@ -78,7 +78,7 @@ export function ContactFormLeftPanel() {
             alt="facebook"
             width={38}
             height={38}
-            className="w-7 h-7 sm:w-[38px] sm:h-[38px]"
+            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
           />
         </Link>
 
@@ -93,7 +93,7 @@ export function ContactFormLeftPanel() {
             alt="instagram"
             width={38}
             height={38}
-            className="w-7 h-7 sm:w-[38px] sm:h-[38px]"
+            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
           />
         </Link>
 
@@ -108,7 +108,7 @@ export function ContactFormLeftPanel() {
             alt="linkedin"
             width={38}
             height={38}
-            className="w-7 h-7 sm:w-[38px] sm:h-[38px]"
+            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
           />
         </Link>
       </div>

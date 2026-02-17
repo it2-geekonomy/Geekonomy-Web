@@ -17,48 +17,66 @@ export function ContactFormFields({
   toggleSubject,
 }: ContactFormFieldsProps) {
   return (
-    <div className="space-y-6 lg:space-y-16 relative text-left pl-0 lg:pl-5 xl:pl-14 min-w-0">
+    <div className="space-y-6 relative text-left pl-0 lg:pl-5 xl:pl-14 min-w-0">
       <div className="hidden lg:block absolute left-0 top-0 h-full w-px bg-white/50" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-22">
-        {["firstName", "lastName"].map((field) => (
-          <div key={field}>
-            <Typography as="label" variant="base" className="text-white block mb-2">
-              {field === "firstName" ? "First Name" : "Last Name"}
-            </Typography>
-            <input
-              name={field}
-              value={values[field as keyof ContactFormValues] as string}
-              onChange={handleChange}
-              className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-6 pr-1 text-white"
-            />
-          </div>
-        ))}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
+        <div>
+          <Typography as="label" variant="base" className="text-white block mb-2">
+            Name
+          </Typography>
+          <input
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+          />
+        </div>
+        <div>
+          <Typography as="label" variant="base" className="text-white block mb-2">
+            Organization
+          </Typography>
+          <input
+            name="organisation"
+            value={values.organisation}
+            onChange={handleChange}
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+          />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-22">
-        {["email", "phone"].map((field) => (
-          <div key={field}>
-            <Typography as="label" variant="base" className="text-white block mb-2">
-              {field === "email" ? "Email" : "Contact Number"}
-            </Typography>
-            <input
-              name={field}
-              value={values[field as keyof ContactFormValues] as string}
-              onChange={handleChange}
-              className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-6 pr-1 text-white"
-            />
-          </div>
-        ))}
+        <div>
+          <Typography as="label" variant="base" className="text-white block mb-2">
+            Email
+          </Typography>
+          <input
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+          />
+        </div>
+        <div>
+          <Typography as="label" variant="base" className="text-white block mb-2">
+            Contact Number
+          </Typography>
+          <input
+            name="phone"
+            value={values.phone}
+            onChange={handleChange}
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+          />
+        </div>
       </div>
 
       <div>
-        <Typography as="p" variant="base" className="text-[#69AE44] mb-8">
+        <Typography as="p" variant="base" className="text-[#69AE44] py-6">
           How can we be your Growth Partners
         </Typography>
-        <div className="grid grid-cols-1 gap-y-10 gap-x-12 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-y-8 gap-x-12 sm:grid-cols-2">
           {CONTACT_SUBJECTS.map((item) => (
-            <label key={item.id} className="flex items-center gap-6 text-white">
+            <label key={item.id} className="flex items-center gap-5 text-white">
               <input
                 type="checkbox"
                 className="hidden"
@@ -93,17 +111,6 @@ export function ContactFormFields({
         </div>
       </div>
 
-      <div>
-        <Typography as="label" variant="base" className="text-white block mb-1 lg:mb-2">
-          Organisation
-        </Typography>
-        <input
-          name="organisation"
-          value={values.organisation}
-          onChange={handleChange}
-          className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-6 pr-1 text-white"
-        />
-      </div>
 
       <div>
         <Typography as="label" variant="base" className="text-white block mb-1 lg:mb-2">
@@ -114,7 +121,7 @@ export function ContactFormFields({
           value={values.message}
           rows={1}
           onChange={handleChange}
-          className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-6 pr-1 text-white resize-none"
+          className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-2 pr-1 text-white resize-none"
         />
       </div>
     </div>
