@@ -96,6 +96,16 @@ import { brandingCostUKSEO } from "./data/brandingCostUK";
 import { seoCostUKSEO } from "./data/seoCostUK";
 import { omnichannelMarketingSEO } from "./data/omnichannelMarketing";
 import { nursingHomesSEOCompanySEO } from "./data/nursingHomesSEOCompany";
+import { howMuchDoesSEOCostInLosAngelesSEO } from "./data/HowMuchDoesSEOCostinLosAngeles";
+import { howMuchDoesSEOCostInChicagoSEO } from "./data/HowMuchDoesSEOCostinChicago";
+import { howMuchDoesSEOCostInAhmedabadSEO } from "./data/HowMuchDoesSEOCostinAhmedabad";
+import { howMuchDoesSEOCostInKolkataSEO } from "./data/HowMuchDoesSEOCostinKolkata";
+import { howMuchDoesSEOCostInPuneSEO } from "./data/HowMuchDoesSEOCostinPune";
+import { howMuchDoesSEOCostInChennaiSEO } from "./data/HowMuchDoesSEOCostinChennai";
+import { howMuchDoesSEOCostInMumbaiSEO } from "./data/HowMuchDoesSEOCostinMumbai";
+import { howMuchDoesSEOCostInDelhiNCRSEO } from "./data/HowMuchDoesSEOCostinDelhiNCR";
+import { howMuchDoesSEOCostInHyderabadSEO } from "./data/HowMuchDoesSEOCostinHyderabad";
+import { howMuchDoesSEOCostInBangaloreSEO } from "./data/HowMuchDoesSEOCostinBangalore";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -196,4 +206,14 @@ export const blogSEOData = {
   "blog/how-much-does-seo-cost-in-uk": seoCostUKSEO,
   "blog/omnichannel-marketing": omnichannelMarketingSEO,
   "blog/nursing-homes-seo-company-help-you-rank": nursingHomesSEOCompanySEO,
+  "blog/how-much-does-seo-cost-in-los-angeles": howMuchDoesSEOCostInLosAngelesSEO,
+  "blog/how-much-does-seo-cost-in-chicago": howMuchDoesSEOCostInChicagoSEO,
+  "blog/how-much-does-seo-cost-in-ahmedabad": howMuchDoesSEOCostInAhmedabadSEO,
+  "blog/how-much-does-seo-cost-in-kolkata": howMuchDoesSEOCostInKolkataSEO,
+  "blog/how-much-does-seo-cost-in-pune": howMuchDoesSEOCostInPuneSEO,
+  "blog/how-much-does-seo-cost-in-chennai": howMuchDoesSEOCostInChennaiSEO,
+  "blog/how-much-does-seo-cost-in-mumbai": howMuchDoesSEOCostInMumbaiSEO,
+  "blog/how-much-does-seo-cost-in-delhi-ncr": howMuchDoesSEOCostInDelhiNCRSEO,
+  "blog/how-much-does-seo-cost-in-hyderabad": howMuchDoesSEOCostInHyderabadSEO,
+  "blog/how-much-does-seo-cost-in-bangalore": howMuchDoesSEOCostInBangaloreSEO,
 };
