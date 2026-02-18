@@ -4,7 +4,7 @@ export const NAVIGATION_ITEMS = [
   { label: "HOW WE WORK", href: "/how-we-work", isActive: false },
   { label: "SUCCESS LAB", href: "/success-lab", isActive: false },
   { label: "ABOUT", href: "/about", isActive: false },
-  { label: "CONTACT US", href: "/contact", isActive: false },
+  { label: "CONTACT US", href: "/contact-us", isActive: false },
 ] as const;
 
 export const FOOTER_NAV_ITEMS = [
@@ -13,5 +13,5 @@ export const FOOTER_NAV_ITEMS = [
   { label: "ABOUT GEEKONOMY", href: "/about" },
   { label: "CAREER", href: "/career" },
   { label: "BLOGS", href: "/blog" },
-  { label: "CONTACT US", href: "/contact" },
+  { label: "CONTACT US", href: "/contact-us" },
 ] as const;
