@@ -32,7 +32,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-2 lg:px-4 py-4 lg:py-[clamp(1.5rem,1.5rem+1.5vw,8rem)]">
-      <div className="w-full max-w-7xl">
+      <div className="w-full max-w-7xl" id="contact-form">
         {/* Heading */}
         <h1 className="text-center font-semibold mb-6">
           <Typography as="p" variant="3xl" className="text-white pb-10">
@@ -41,7 +41,7 @@ export default function ContactPage() {
           </Typography>
         </h1>
         {/* Contact Form */}
-        <div id="contact-form">
+        <div>
           <ContactUsForm />
         </div>
       </div>
