@@ -168,7 +168,6 @@ export const blogSEOData = {
   "blog/b2b-seo-audit-strategies": b2bSEOAuditStrategiesSEO,
   "blog/carpet-cleaning-seo-services-complete-guide": carpetCleaningSEOServicesCompleteGuideSEO,
   "blog/seo-for-architects-best-strategies": seoForArchitectsBestStrategiesSEO,
-  "blog/what-elements-are-foundational-for-seo-with-ai": seoWithAISEO,
   "blog/benefits-of-bespoke-website-development": bespokeWebsiteDevelopmentSEO,
   "blog/seo-for-financial-services-strategies": seoForFinancialServicesSEO,
   "blog/ecommerce-website-development-services-help-you-grow": ecommerceWebsiteDevelopmentSEO,
