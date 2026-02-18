@@ -55,6 +55,10 @@ import { technicalSEOContentSEOAudits } from "@/lib/blog/data/technicalSEOConten
 import { wordPressSEOOxfordshire } from "@/lib/blog/data/wordPressSEOOxfordshire";
 import { travelSEOCompany } from "@/lib/blog/data/travelSEOCompany";
 import { localSEOGeneralContractors } from "@/lib/blog/data/localSEOGeneralContractors";
+import { howMuchDoesSEOCostInChennai } from "@/lib/blog/data/HowMuchDoesSEOCostinChennai";
+import { howMuchDoesSEOCostInPune } from "@/lib/blog/data/HowMuchDoesSEOCostinPune";
+import { howMuchDoesSEOCostInKolkata } from "@/lib/blog/data/HowMuchDoesSEOCostinKolkata";
+import { howMuchDoesSEOCostInAhmedabad } from "@/lib/blog/data/HowMuchDoesSEOCostinAhmedabad";
 import { seoForBanks } from "@/lib/blog/data/seoForBanks";
 import { localSEOForCarpenters } from "@/lib/blog/data/localSEOForCarpenters";
 import { seoForBeautyIndustryBrands } from "@/lib/blog/data/seoForBeautyIndustryBrands";
@@ -131,6 +135,10 @@ export const allBlogsData: BlogData[] = [
   wordPressSEOOxfordshire,
   travelSEOCompany,
   localSEOGeneralContractors,
+  howMuchDoesSEOCostInChennai,
+  howMuchDoesSEOCostInPune,
+  howMuchDoesSEOCostInKolkata,
+  howMuchDoesSEOCostInAhmedabad,
   provenSEOStrategies,
   seoPlatformB2B,
   searchGPTSEOAgency,
