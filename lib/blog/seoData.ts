@@ -67,6 +67,36 @@ import { localSEOForOrthodontistsSEO } from "./data/localSEOForOrthodontists";
 import { b2bSEOAuditStrategiesSEO } from "./data/b2bSEOAuditStrategies";
 import { carpetCleaningSEOServicesCompleteGuideSEO } from "./data/carpetCleaningSEOServicesCompleteGuide";
 import { seoForArchitectsBestStrategiesSEO } from "./data/seoForArchitectsBestStrategies";
+import { seoWithAISEO } from "./data/seoWithAI";
+import { bespokeWebsiteDevelopmentSEO } from "./data/bespokeWebsiteDevelopment";
+import { seoForFinancialServicesSEO } from "./data/seoForFinancialServices";
+import { ecommerceWebsiteDevelopmentSEO } from "./data/ecommerceWebsiteDevelopment";
+import { indexceptionalIndexingToolSEO } from "./data/indexceptionalIndexingTool";
+import { customSoftwareDevelopmentCompanySEO } from "./data/customSoftwareDevelopmentCompany";
+import { b2bEcommerceWebsiteDevelopmentSEO } from "./data/b2bEcommerceWebsiteDevelopment";
+import { bestSaaSSEOAgencyStrategiesSEO } from "./data/bestSaaSSEOAgencyStrategies";
+import { seoForPlumbersSEO } from "./data/seoForPlumbers";
+import { canAddingMorePicturesImproveSEOSEO } from "./data/canAddingMorePicturesImproveSEO";
+import { whatTriggersAIOverviewSEOSEO } from "./data/whatTriggersAIOverviewSEO";
+import { hotelSEOConsultantSEO } from "./data/hotelSEOConsultant";
+import { ppcForHomeServicesSEO } from "./data/ppcForHomeServices";
+import { multilingualPPCServicesSEO } from "./data/multilingualPPCServices";
+import { internationalSEORapidURLIndexerSEO } from "./data/internationalSEORapidURLIndexer";
+import { seoForLegalFirmsSEO } from "./data/seoForLegalFirms";
+import { howToChooseBestEcommerceSEOCompanySEO } from "./data/howToChooseBestEcommerceSEOCompany";
+import { localSEOServiceExplainedSEO } from "./data/localSEOServiceExplained";
+import { automotiveSEOForCarDealershipsSEO } from "./data/automotiveSEOForCarDealerships";
+import { seoAuditServicesSEO } from "./data/seoAuditServices";
+import { localSEOForEstateAgentsSEO } from "./data/localSEOForEstateAgents";
+import { uxUIDesignSEO } from "./data/uxUIDesign";
+import { goodBusinessWebsiteUKSEO } from "./data/goodBusinessWebsiteUK";
+import { websiteCostUKSEO } from "./data/websiteCostUK";
+import { whiteLabelPPCUSASEO } from "./data/whiteLabelPPCUSA";
+import { brandingCostUKSEO } from "./data/brandingCostUK";
+import { seoCostUKSEO } from "./data/seoCostUK";
+import { omnichannelMarketingSEO } from "./data/omnichannelMarketing";
+import { nursingHomesSEOCompanySEO } from "./data/nursingHomesSEOCompany";
+
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
@@ -138,4 +168,33 @@ export const blogSEOData = {
   "blog/b2b-seo-audit-strategies": b2bSEOAuditStrategiesSEO,
   "blog/carpet-cleaning-seo-services-complete-guide": carpetCleaningSEOServicesCompleteGuideSEO,
   "blog/seo-for-architects-best-strategies": seoForArchitectsBestStrategiesSEO,
+  "blog/what-elements-are-foundational-for-seo-with-ai": seoWithAISEO,
+  "blog/benefits-of-bespoke-website-development": bespokeWebsiteDevelopmentSEO,
+  "blog/seo-for-financial-services-strategies": seoForFinancialServicesSEO,
+  "blog/ecommerce-website-development-services-help-you-grow": ecommerceWebsiteDevelopmentSEO,
+  "blog/why-indexceptional-is-the-best-website-indexing-tool-for-seo": indexceptionalIndexingToolSEO,
+  "blog/choose-the-right-custom-software-development-company": customSoftwareDevelopmentCompanySEO,
+  "blog/b2b-ecommerce-website-development-strategies": b2bEcommerceWebsiteDevelopmentSEO,
+  "blog/best-b2b-saas-seo-agency-strategies": bestSaaSSEOAgencyStrategiesSEO,
+  "blog/seo-for-plumbers-proven-techniques-to-rank": seoForPlumbersSEO,
+  "blog/can-adding-more-pictures-improve-seo": canAddingMorePicturesImproveSEOSEO,
+  "blog/what-triggers-an-ai-overview-seo": whatTriggersAIOverviewSEOSEO,
+  "blog/how-a-hotel-seo-consultant-helps-you-rank": hotelSEOConsultantSEO,
+  "blog/ppc-home-services-complete-guide": ppcForHomeServicesSEO,
+  "blog/multilingual-ppc-services-reach-global-customers-faster": multilingualPPCServicesSEO,
+  "blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer": internationalSEORapidURLIndexerSEO,
+  "blog/seo-for-legal-firms-complete-guide": seoForLegalFirmsSEO,
+  "blog/how-to-choose-the-best-ecommerce-seo-company": howToChooseBestEcommerceSEOCompanySEO,
+  "blog/local-seo-service-Explained": localSEOServiceExplainedSEO,
+  "blog/automotive-seo-for-car-dealerships": automotiveSEOForCarDealershipsSEO,
+  "blog/how-seo-audit-services-improve-seo": seoAuditServicesSEO,
+  "blog/local-seo-for-estate-agents": localSEOForEstateAgentsSEO,
+  "blog/ux-ui-design-explained-for-uk-business-owners": uxUIDesignSEO,
+  "blog/what-makes-a-good-business-website-in-the-uk": goodBusinessWebsiteUKSEO,
+  "blog/how-to-reduce-website-cost-uk": websiteCostUKSEO,
+  "blog/white-label-ppc-services-usa": whiteLabelPPCUSASEO,
+  "blog/how-much-does-branding-cost-in-the-uk": brandingCostUKSEO,
+  "blog/how-much-does-seo-cost-in-uk": seoCostUKSEO,
+  "blog/omnichannel-marketing": omnichannelMarketingSEO,
+  "blog/nursing-homes-seo-company-help-you-rank": nursingHomesSEOCompanySEO,
 };
