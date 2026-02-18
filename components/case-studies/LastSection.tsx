@@ -16,7 +16,7 @@ const LastSection: React.FC = () => {
           <span>brand legacy together.</span>
         </Typography>
 
-<Button href="/contact" variant="primary" 
+<Button href="/contact-us" variant="primary" 
  className="mt-4 md:mt-8 mx-auto block text-[clamp(0.7rem,1.5vw,1.1rem)] normal-case mb-4">
   Contact Us
 </Button>

@@ -47,7 +47,7 @@ export default function FirstStepSection() {
 
           {/* Call-to-Action Button */}
           <Link
-            href="/contact#form"
+            href="/contact-us#form"
             className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
           >
             <Typography as="span" variant="sm" className="font-normal">

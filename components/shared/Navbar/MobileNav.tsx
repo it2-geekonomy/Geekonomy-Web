@@ -25,7 +25,7 @@ export function MobileNav({
     <>
       <div className="lg:hidden flex items-center gap-2 sm:gap-3 shrink-0">
         <Link
-          href="/contact#form"
+          href="/contact-us#form"
           className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-4 sm:px-10 py-1 sm:py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105 whitespace-nowrap"
         >
           <Typography as="span" variant="sm" className="font-normal ">
