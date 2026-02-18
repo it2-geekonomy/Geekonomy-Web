@@ -7,7 +7,7 @@
  * - @/lib/constants/services
  * - @/lib/constants/clients
  * - @/lib/constants/growth
- * - @/lib/constants/contact
+ * - @/lib/constants/contact-us
  * 
  * Or use the barrel export: @/lib/constants
  */
