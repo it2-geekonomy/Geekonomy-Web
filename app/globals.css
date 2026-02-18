@@ -179,3 +179,20 @@ body {
   display: inline-block;
   white-space: nowrap;
 }
+
+/* Ensure Chatwoot widget stays below page content */
+#woot-widget-holder,
+.woot-widget-holder,
+[class*="woot-widget"],
+[class*="chatwoot"] {
+  z-index: 5 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Ensure page content is above Chatwoot */
+.relative.z-10 {
+  position: relative;
+  z-index: 10;
+}

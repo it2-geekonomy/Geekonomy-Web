@@ -3,11 +3,10 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import MouseLight from "@/components/shared/MouseLight";
 import PageContentWrapper from "@/components/shared/PageContentWrapper";
-import PageTransition from "@/components/shared/PageTransition";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-// import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
-import DisableRightClick from "@/components/shared/DisableRightClick";
+import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
+// import DisableRightClick from "@/components/shared/DisableRightClick";
 import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 
 const poppins = Poppins({
@@ -40,34 +39,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                // Set initial navbar height immediately to prevent layout shift
-                if (typeof document !== 'undefined') {
-                  document.documentElement.style.setProperty('--navbar-height', '72px');
-                }
-              })();
-            `,
-          }}
-        />
-      </head>
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <DisableRightClick />
+        {/* <DisableRightClick /> */}
         <NavbarHeightProvider>
           <MouseLight />
           <Navbar />
-          <PageTransition>
-            <PageContentWrapper>
-              {children}
-              <Footer />
-              {/* <ChatwootIntegration /> */}
-            </PageContentWrapper>
-          </PageTransition>
+          <PageContentWrapper>
+            {children}
+            <Footer />
+            <ChatwootIntegration />
+          </PageContentWrapper>
         </NavbarHeightProvider>
       </body>
     </html>
