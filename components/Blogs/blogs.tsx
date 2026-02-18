@@ -82,6 +82,35 @@ import { carpetCleaningSEOServicesCompleteGuide } from "@/lib/blog/data/carpetCl
 import { seoForArchitectsBestStrategies } from "@/lib/blog/data/seoForArchitectsBestStrategies";
 import { howMuchDoesSEOCostInChicago } from "@/lib/blog/data/HowMuchDoesSEOCostinChicago";
 import { howMuchDoesSEOCostInLosAngeles} from "@/lib/blog/data/HowMuchDoesSEOCostinLosAngeles";
+import { seoWithAI } from "@/lib/blog/data/seoWithAI";
+import { bespokeWebsiteDevelopment } from "@/lib/blog/data/bespokeWebsiteDevelopment";
+import { seoForFinancialServices } from "@/lib/blog/data/seoForFinancialServices";
+import { ecommerceWebsiteDevelopment } from "@/lib/blog/data/ecommerceWebsiteDevelopment";
+import { indexceptionalIndexingTool } from "@/lib/blog/data/indexceptionalIndexingTool";
+import { customSoftwareDevelopmentCompany } from "@/lib/blog/data/customSoftwareDevelopmentCompany";
+import { b2bEcommerceWebsiteDevelopment } from "@/lib/blog/data/b2bEcommerceWebsiteDevelopment";
+import { bestSaaSSEOAgencyStrategies } from "@/lib/blog/data/bestSaaSSEOAgencyStrategies";
+import { seoForPlumbers } from "@/lib/blog/data/seoForPlumbers";
+import { canAddingMorePicturesImproveSEO } from "@/lib/blog/data/canAddingMorePicturesImproveSEO";
+import { whatTriggersAIOverviewSEO } from "@/lib/blog/data/whatTriggersAIOverviewSEO";
+import { hotelSEOConsultant } from "@/lib/blog/data/hotelSEOConsultant";
+import { ppcForHomeServices } from "@/lib/blog/data/ppcForHomeServices";
+import { multilingualPPCServices } from "@/lib/blog/data/multilingualPPCServices";
+import { internationalSEORapidURLIndexer } from "@/lib/blog/data/internationalSEORapidURLIndexer";
+import { seoForLegalFirms } from "@/lib/blog/data/seoForLegalFirms";
+import { howToChooseBestEcommerceSEOCompany } from "@/lib/blog/data/howToChooseBestEcommerceSEOCompany";
+import { localSEOServiceExplained } from "@/lib/blog/data/localSEOServiceExplained";
+import { automotiveSEOForCarDealerships } from "@/lib/blog/data/automotiveSEOForCarDealerships";
+import { seoAuditServices } from "@/lib/blog/data/seoAuditServices";
+import { localSEOForEstateAgents } from "@/lib/blog/data/localSEOForEstateAgents";
+import { uxUIDesign } from "@/lib/blog/data/uxUIDesign";
+import { goodBusinessWebsiteUK } from "@/lib/blog/data/goodBusinessWebsiteUK";
+import { websiteCostUK } from "@/lib/blog/data/websiteCostUK";
+import { whiteLabelPPCUSA } from "@/lib/blog/data/whiteLabelPPCUSA";
+import { brandingCostUK } from "@/lib/blog/data/brandingCostUK";
+import { seoCostUK } from "@/lib/blog/data/seoCostUK";
+import { omnichannelMarketing } from "@/lib/blog/data/omnichannelMarketing";
+import { nursingHomesSEOCompany } from "@/lib/blog/data/nursingHomesSEOCompany";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
@@ -164,6 +193,35 @@ export const allBlogsData: BlogData[] = [
   seoForArchitectsBestStrategies,
   howMuchDoesSEOCostInChicago,
   howMuchDoesSEOCostInLosAngeles,
+  seoWithAI,
+  bespokeWebsiteDevelopment,
+  seoForFinancialServices,
+  ecommerceWebsiteDevelopment,
+  indexceptionalIndexingTool,
+  customSoftwareDevelopmentCompany,
+  b2bEcommerceWebsiteDevelopment,
+  bestSaaSSEOAgencyStrategies,
+  seoForPlumbers,
+  canAddingMorePicturesImproveSEO,
+  whatTriggersAIOverviewSEO,
+  hotelSEOConsultant,
+  ppcForHomeServices,
+  multilingualPPCServices,
+  internationalSEORapidURLIndexer,
+  seoForLegalFirms,
+  howToChooseBestEcommerceSEOCompany,
+  localSEOServiceExplained,
+  automotiveSEOForCarDealerships,
+  seoAuditServices,
+  localSEOForEstateAgents,
+  uxUIDesign,
+  goodBusinessWebsiteUK,
+  websiteCostUK,
+  whiteLabelPPCUSA,
+  brandingCostUK,
+  seoCostUK,
+  omnichannelMarketing,
+  nursingHomesSEOCompany,
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */
