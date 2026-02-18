@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           {/* WHAT WE DO */}
           <div
-            className="flex flex-col relative items-center sm:items-start text-center sm:text-left sm:border-r sm:border-gray-700 lg:border-none sm:px-6 lg:px-12 lg:translate-x-8 mt-0 lg:mt-8 lg:-ml-6 xl:ml-0"
+            className="flex flex-col relative items-center sm:items-start text-center sm:text-left sm:border-r sm:border-gray-700 lg:border-none sm:px-6 lg:px-12 lg:translate-x-8 mt-0 lg:mt-0 lg:-ml-6 xl:ml-0"
           >
             {/* Divider for desktop */}
             <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[2px] bg-gray-700" />
@@ -41,7 +41,7 @@ export default function Footer() {
                 as="h3"
                 variant="base"
                 className="uppercase mb-4 text-white relative
-        font-light hover:text-[#69AE44] transition-colors duration-200 cursor-pointer"
+        font-light hover:text-[#69AE44] transition-colors duration-200 cursor-pointer mt-0 lg:mt-16 "
               >
                 WHAT WE DO
               </Typography>

@@ -29,7 +29,7 @@ export function ContactFormFields({
             name="name"
             value={values.name}
             onChange={handleChange}
-            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#6FAF4E] outline-none py-1 lg:py-1 pr-1 text-white"
           />
         </div>
         <div>
@@ -40,7 +40,7 @@ export function ContactFormFields({
             name="organisation"
             value={values.organisation}
             onChange={handleChange}
-            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#6FAF4E] outline-none py-1 lg:py-1 pr-1 text-white"
           />
         </div>
       </div>
@@ -54,7 +54,7 @@ export function ContactFormFields({
             name="email"
             value={values.email}
             onChange={handleChange}
-            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#6FAF4E] outline-none py-1 lg:py-1 pr-1 text-white"
           />
         </div>
         <div>
@@ -65,7 +65,7 @@ export function ContactFormFields({
             name="phone"
             value={values.phone}
             onChange={handleChange}
-            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-1 pr-1 text-white"
+            className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#6FAF4E] outline-none py-1 lg:py-1 pr-1 text-white"
           />
         </div>
       </div>
@@ -112,18 +112,28 @@ export function ContactFormFields({
       </div>
 
 
-      <div>
-        <Typography as="label" variant="base" className="text-white block mb-1 lg:mb-2">
-          Message
-        </Typography>
-        <textarea
-          name="message"
-          value={values.message}
-          rows={1}
-          onChange={handleChange}
-          className="w-full box-border bg-transparent border-b border-white/60 focus:border-[#A0A0A0] outline-none py-1 lg:py-2 pr-1 text-white resize-none"
-        />
-      </div>
+     <div>
+  <Typography
+    as="label"
+    variant="base"
+    className="text-white block mb-1 lg:mb-2"
+  >
+    Message
+  </Typography>
+
+ <textarea
+  name="message"
+  value={values.message}
+  rows={4}
+  onChange={(e) => {
+    handleChange(e);
+    e.target.style.height = "auto";
+    e.target.style.height = e.target.scrollHeight + "px";
+  }}
+  maxLength={500}
+  className="w-full box-border bg-transparent border border-white/60 focus:border-[#6FAF4E] rounded-md px-3 py-2 text-white outline-none resize-none overflow-hidden transition-colors duration-200"
+/>
+</div>
     </div>
   );
 }
