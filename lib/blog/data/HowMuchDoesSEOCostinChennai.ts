@@ -185,7 +185,7 @@ export const howMuchDoesSEOCostInChennai: BlogData = {
         { introTitle: "How Much Does SEO Cost in Chennai | 2026 Guide" }
     ),
 };
-export const howMuchDoesSEOCostInMumbaiSEO = {
+export const howMuchDoesSEOCostInChennaiSEO = {
     title: "How Much Does SEO Cost in Chennai | 2026 Guide",
     description:
         "Discover how much SEO costs in Chennai. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
