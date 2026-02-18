@@ -46,7 +46,27 @@ import { technicalSEOContentSEOAuditsSEO } from "./data/technicalSEOContentSEOAu
 import { wordPressSEOOxfordshireSEO } from "./data/wordPressSEOOxfordshire";
 import { travelSEOCompanySEO } from "./data/travelSEOCompany";
 import { localSEOGeneralContractorsSEO } from "./data/localSEOGeneralContractors";
-
+import { seoForBanksSEO } from "./data/seoForBanks";
+import { localSEOForCarpentersSEO } from "./data/localSEOForCarpenters";
+import { seoForBeautyIndustryBrandsSEO } from "./data/seoForBeautyIndustryBrands";
+import { bestFoundationRepairSEOStrategiesSEO } from "./data/bestFoundationRepairSEOStrategies";
+import { howDoLocalSEOAgenciesUseRapidURLIndexerSEO } from "./data/howDoLocalSEOAgenciesUseRapidURLIndexer";
+import { pythonNLPSEO } from "./data/pythonNLP";
+import { searchGPTSEOAgencySEO } from "./data/searchGPTSEOAgency";
+import { seoPlatformB2BSEO } from "./data/seoPlatformB2B";
+import { provenSEOStrategiesSEO } from "./data/provenSEOStrategies";
+import { seoForPhysiotherapistsSEO } from "./data/seoForPhysiotherapists";
+import { howLongDoesMedicalSEOWorkSEO } from "./data/howLongDoesMedicalSEOWork";
+import { seoForDentistsSEO } from "./data/seoForDentists";
+import { whatElementsFoundationalSEOWithAISEO } from "./data/whatElementsFoundationalSEOWithAI";
+import { howWordPressSEOServicesImproveTrafficSEO } from "./data/howWordPressSEOServicesImproveTraffic";
+import { whySEOImportantForBusinessesInNYCSEO } from "./data/whySEOImportantForBusinessesInNYC";
+import { outsourceSEOIndiaSEO } from "./data/outsourceSEOIndia";
+import { bestCleaningServiceSEOStrategiesSEO } from "./data/bestCleaningServiceSEOStrategies";
+import { localSEOForOrthodontistsSEO } from "./data/localSEOForOrthodontists";
+import { b2bSEOAuditStrategiesSEO } from "./data/b2bSEOAuditStrategies";
+import { carpetCleaningSEOServicesCompleteGuideSEO } from "./data/carpetCleaningSEOServicesCompleteGuide";
+import { seoForArchitectsBestStrategiesSEO } from "./data/seoForArchitectsBestStrategies";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
@@ -97,4 +117,25 @@ export const blogSEOData = {
   "blog/how-to-improve-wordpress-seo-for-oxfordshire-sites": wordPressSEOOxfordshireSEO,
   "blog/how-a-travel-seo-company-helps-you-rank-higher": travelSEOCompanySEO,
   "blog/best-local-seo-strategies-for-general-contractors": localSEOGeneralContractorsSEO,
+  "blog/seo-for-banks-proven-tactics": seoForBanksSEO,
+  "blog/local-seo-for-carpenters-complete-guide": localSEOForCarpentersSEO,
+  "blog/seo-for-beauty-industry-brands-complete-guide": seoForBeautyIndustryBrandsSEO,
+  "blog/best-foundation-repair-seo-strategies": bestFoundationRepairSEOStrategiesSEO,
+  "blog/how-do-local-seo-agencies-use-rapid-url-indexer": howDoLocalSEOAgenciesUseRapidURLIndexerSEO,
+  "blog/how-to-use-python-for-nlp-and-semantic-seo": pythonNLPSEO,
+  "blog/choose-the-best-searchgpt-seo-agency": searchGPTSEOAgencySEO,
+  "blog/seo-platform-for-b2b-companies": seoPlatformB2BSEO,
+  "blog/10-proven-seo-strategies-to-boost-seo-organic-traffic": provenSEOStrategiesSEO,
+  "blog/seo-for-physiotherapists-rank-higher": seoForPhysiotherapistsSEO,
+  "blog/how-long-does-it-take-for-medical-seo-to-work": howLongDoesMedicalSEOWorkSEO,
+  "blog/seo-for-dentists-local-seo-to-get-more-patients": seoForDentistsSEO,
+  "blog/what-elements-are-foundational-for-seo-with-ai": whatElementsFoundationalSEOWithAISEO,
+  "blog/how-wordpress-seo-services-improve-traffic": howWordPressSEOServicesImproveTrafficSEO,
+  "blog/why-seo-is-important-for-businesses-in-nyc": whySEOImportantForBusinessesInNYCSEO,
+  "blog/outsource-seo-india-smart-choice-for-companies": outsourceSEOIndiaSEO,
+  "blog/best-cleaning-service-seo-strategies": bestCleaningServiceSEOStrategiesSEO,
+  "blog/local-seo-for-orthodontists-best-strategies": localSEOForOrthodontistsSEO,
+  "blog/b2b-seo-audit-strategies": b2bSEOAuditStrategiesSEO,
+  "blog/carpet-cleaning-seo-services-complete-guide": carpetCleaningSEOServicesCompleteGuideSEO,
+  "blog/seo-for-architects-best-strategies": seoForArchitectsBestStrategiesSEO,
 };

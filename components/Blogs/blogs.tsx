@@ -59,6 +59,27 @@ import { howMuchDoesSEOCostInChennai } from "@/lib/blog/data/HowMuchDoesSEOCosti
 import { howMuchDoesSEOCostInPune } from "@/lib/blog/data/HowMuchDoesSEOCostinPune";
 import { howMuchDoesSEOCostInKolkata } from "@/lib/blog/data/HowMuchDoesSEOCostinKolkata";
 import { howMuchDoesSEOCostInAhmedabad } from "@/lib/blog/data/HowMuchDoesSEOCostinAhmedabad";
+import { seoForBanks } from "@/lib/blog/data/seoForBanks";
+import { localSEOForCarpenters } from "@/lib/blog/data/localSEOForCarpenters";
+import { seoForBeautyIndustryBrands } from "@/lib/blog/data/seoForBeautyIndustryBrands";
+import { bestFoundationRepairSEOStrategies } from "@/lib/blog/data/bestFoundationRepairSEOStrategies";
+import { howDoLocalSEOAgenciesUseRapidURLIndexer } from "@/lib/blog/data/howDoLocalSEOAgenciesUseRapidURLIndexer";
+import { pythonNLP } from "@/lib/blog/data/pythonNLP";
+import { searchGPTSEOAgency } from "@/lib/blog/data/searchGPTSEOAgency";
+import { seoPlatformB2B } from "@/lib/blog/data/seoPlatformB2B";
+import { provenSEOStrategies } from "@/lib/blog/data/provenSEOStrategies";
+import { seoForPhysiotherapists } from "@/lib/blog/data/seoForPhysiotherapists";
+import { howLongDoesMedicalSEOWork } from "@/lib/blog/data/howLongDoesMedicalSEOWork";
+import { seoForDentists } from "@/lib/blog/data/seoForDentists";
+import { whatElementsFoundationalSEOWithAI } from "@/lib/blog/data/whatElementsFoundationalSEOWithAI";
+import { howWordPressSEOServicesImproveTraffic } from "@/lib/blog/data/howWordPressSEOServicesImproveTraffic";
+import { whySEOImportantForBusinessesInNYC } from "@/lib/blog/data/whySEOImportantForBusinessesInNYC";
+import { outsourceSEOIndia } from "@/lib/blog/data/outsourceSEOIndia";
+import { bestCleaningServiceSEOStrategies } from "@/lib/blog/data/bestCleaningServiceSEOStrategies";
+import { localSEOForOrthodontists } from "@/lib/blog/data/localSEOForOrthodontists";
+import { b2bSEOAuditStrategies } from "@/lib/blog/data/b2bSEOAuditStrategies";
+import { carpetCleaningSEOServicesCompleteGuide } from "@/lib/blog/data/carpetCleaningSEOServicesCompleteGuide";
+import { seoForArchitectsBestStrategies } from "@/lib/blog/data/seoForArchitectsBestStrategies";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
@@ -118,6 +139,27 @@ export const allBlogsData: BlogData[] = [
   howMuchDoesSEOCostInPune,
   howMuchDoesSEOCostInKolkata,
   howMuchDoesSEOCostInAhmedabad,
+  provenSEOStrategies,
+  seoPlatformB2B,
+  searchGPTSEOAgency,
+  pythonNLP,
+  howDoLocalSEOAgenciesUseRapidURLIndexer,
+  bestFoundationRepairSEOStrategies,
+  seoForBeautyIndustryBrands,
+  localSEOForCarpenters,
+  seoForBanks,
+  seoForPhysiotherapists,
+  howLongDoesMedicalSEOWork,
+  seoForDentists,
+  whatElementsFoundationalSEOWithAI,
+  howWordPressSEOServicesImproveTraffic,
+  whySEOImportantForBusinessesInNYC,
+  outsourceSEOIndia,
+  bestCleaningServiceSEOStrategies,
+  localSEOForOrthodontists,
+  b2bSEOAuditStrategies,
+  carpetCleaningSEOServicesCompleteGuide,
+  seoForArchitectsBestStrategies,
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */
