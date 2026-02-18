@@ -55,6 +55,10 @@ import { technicalSEOContentSEOAudits } from "@/lib/blog/data/technicalSEOConten
 import { wordPressSEOOxfordshire } from "@/lib/blog/data/wordPressSEOOxfordshire";
 import { travelSEOCompany } from "@/lib/blog/data/travelSEOCompany";
 import { localSEOGeneralContractors } from "@/lib/blog/data/localSEOGeneralContractors";
+import { howMuchDoesSEOCostInChennai } from "@/lib/blog/data/HowMuchDoesSEOCostinChennai";
+import { howMuchDoesSEOCostInPune } from "@/lib/blog/data/HowMuchDoesSEOCostinPune";
+import { howMuchDoesSEOCostInKolkata } from "@/lib/blog/data/HowMuchDoesSEOCostinKolkata";
+import { howMuchDoesSEOCostInAhmedabad } from "@/lib/blog/data/HowMuchDoesSEOCostinAhmedabad";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
@@ -110,6 +114,10 @@ export const allBlogsData: BlogData[] = [
   wordPressSEOOxfordshire,
   travelSEOCompany,
   localSEOGeneralContractors,
+  howMuchDoesSEOCostInChennai,
+  howMuchDoesSEOCostInPune,
+  howMuchDoesSEOCostInKolkata,
+  howMuchDoesSEOCostInAhmedabad,
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */
