@@ -68,6 +68,8 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("Looking at how others have combined SEO and branding can give you some ideas for your own marketing. These stories often show that when SEO and branding work together, it can really increase your website's search visibility and get your message out there."),
   p("Lots of brands have seen more traffic and engagement just by aligning their SEO with their brand. When companies focus on quality content, use the right SEO keywords, and keep their brand consistent, they usually rank better and get more attention."),
   p("Seeing how others have used SEO to grow their brand can spark some ideas for you. These stories show that if you want to reach your online marketing goals, you need to link SEO and branding."),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO Presence?</h3><p class="text-white/70 text-lg mb-6">Get expert help combining branding and SEO strategies. Build a stronger online presence that drives both brand recognition and search rankings.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howImportantIsBrandingForSEO: BlogData = {

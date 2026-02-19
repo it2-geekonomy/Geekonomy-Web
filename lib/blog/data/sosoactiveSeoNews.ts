@@ -127,6 +127,8 @@ const sosoactiveSEONewsContent: BlogContentItem[] = [
   p("The marketing department also uses data analytics in personalising content, audience segmentation, and measuring campaign effectiveness."),
   p("With data analytics in place, marketers can step up their SEO strategies, modernise online engagement along with modern SEO techniques, optimise user experience, and thus drive much bigger results through their SEO metrics."),
   p("Platforms like Sosoactive have integrated data analytics for engagement with meaning."),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Transform Your Digital Marketing Strategy?</h3><p class="text-white/70 text-lg mb-6">Learn how to leverage the latest digital marketing trends and SEO techniques. Get expert guidance to boost your online presence and engagement.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const sosoactiveSeoNews: BlogData = {
