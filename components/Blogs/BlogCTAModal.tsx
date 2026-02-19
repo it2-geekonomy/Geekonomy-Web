@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import emailjs from "@emailjs/browser";
 import { Typography } from "@/components/ui/Typography";
 import { cn } from "@/lib/utils";
 
@@ -24,14 +23,6 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
-
-  // Initialize EmailJS
-  useEffect(() => {
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-    if (publicKey) {
-      emailjs.init(publicKey);
-    }
-  }, []);
 
   // Reset form when modal closes
   useEffect(() => {
@@ -92,32 +83,33 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
     setSubmitStatus("idle");
 
     try {
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_CONTACT;
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+      const response = await fetch("/api/send-blog-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          contact: formData.contact,
+          organisation: formData.organisation || "",
+          message: formData.message,
+          blogName: blogName,
+        }),
+      });
 
-      if (!serviceId || !templateId || !publicKey) {
-        throw new Error("EmailJS configuration is missing");
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send email");
       }
-
-      const templateParams = {
-        name: formData.name,
-        email: formData.email,
-        phoneNumber: formData.contact,
-        organisation: formData.organisation || "Not provided",
-        message: formData.message,
-        blogName: blogName,
-        subject: `Inquiry from Blog: ${blogName}`,
-      };
-
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
       setSubmitStatus("success");
       setTimeout(() => {
         onClose();
       }, 2000);
     } catch (error: any) {
-      console.error("EmailJS Error:", error);
+      console.error("Email Error:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
