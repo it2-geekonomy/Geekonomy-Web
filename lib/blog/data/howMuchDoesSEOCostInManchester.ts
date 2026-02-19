@@ -10,6 +10,8 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("The guide will be used to offer clarity on the pricing of SEO in Manchester so that businesses can make informed decisions regarding their investment in digital marketing."),
   p("We will discuss the different considerations that affect SEO prices, compare the Manchester SEO services, and the common pricing frameworks of SEO services, so that you can identify the appropriate SEO solutions for your business requirements."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing for Your Manchester Business?</h3><p class="text-white/70 text-lg mb-6">Get a customized SEO quote tailored to your business needs. Understand exactly what you\'ll pay and what results you can expect.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
+
   h1("Understanding SEO Costs in Manchester"),
   img(`${imageDir}/How Much Does SEO Cost in Manchester image2.webp`, "Understanding SEO Costs in Manchester"),
   p("Discussions on the prices of SEO in Manchester are critical; it is imperative to appreciate that SEO is a long-term commitment, and there is no blanket solution."),
@@ -171,7 +173,8 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("The SEO firm of your choice has years of experience in SEO."),
   p("The SEO methods that we create specifically for your business needs will increase your website traffic and generate more leads while driving business expansion."),
   p('<a href="https://thegeekonomy.com/">The Geekonomy</a> will assist your company in achieving search engine supremacy throughout 2026.'),
-  p('<a href="/contact-us">Contact Here</a>'),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Manchester Business?</h3><p class="text-white/70 text-lg mb-6">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInManchester: BlogData = {

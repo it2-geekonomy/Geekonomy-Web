@@ -14,6 +14,8 @@ const seoForStartupsContent: BlogContentItem[] = [
   p("You are a startup and have few resources, but that does not mean that you cannot compete."),
   p("This map will demonstrate how to invest in SEO reasonably and achieve long-term growth."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Accelerate Your Startup\'s Growth?</h3><p class="text-white/70 text-lg mb-6">Get expert SEO strategies tailored for startups. Learn how to compete effectively and achieve sustainable organic growth with limited resources.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Strategy Session</a></div>'),
+
   h1("Understanding SEO for Startups"),
   img(`${imageDir}/SEO for Startups image1.webp`, "Understanding SEO for Startups"),
   h2("What is SEO and Why is it Important for Startups?"),
@@ -198,7 +200,8 @@ const seoForStartupsContent: BlogContentItem[] = [
   p("The practice of SEO outcome management allows you to enhance your SEO efforts, which will bring continuous growth to your business."),
   p("Are you prepared to boost your startup growth through search engine optimization?"),
   p('Connect with <a href="https://thegeekonomy.com/">The Geekonomy</a> to enhance your visibility, enable targeted audience attraction, and create sustainable outcomes for your business.'),
-  p('<a href="/contact-us">Contact Here</a>'),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Start Your SEO Journey Today</h3><p class="text-white/70 text-lg mb-6">Don\'t let limited resources hold you back. Get a customized SEO roadmap that fits your startup\'s budget and drives real, measurable growth.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Consultation</a></div>'),
 ];
 
 export const seoForStartups: BlogData = {
