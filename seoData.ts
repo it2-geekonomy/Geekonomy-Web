@@ -108,6 +108,26 @@ const seoData: Record<string, SEOData> = {
     twitterHandle: "@GeekonomyTech",
   },
 
+  "our-work": {
+    title: "Our Work | Portfolio & Case Studies",
+    description:
+      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+    url: "https://thegeekonomy.com/our-work",
+    canonical: "https://thegeekonomy.com/our-work",
+    image: "https://thegeekonomy.com/assets/og-home.jpg",
+    twitterHandle: "@GeekonomyTech",
+  },
+
+  career: {
+    title: "Career | Join Our Team",
+    description:
+      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+    url: "https://thegeekonomy.com/career",
+    canonical: "https://thegeekonomy.com/career",
+    image: "https://thegeekonomy.com/assets/og-home.jpg",
+    twitterHandle: "@GeekonomyTech",
+  },
+
   blog: {
     title: "Geekonomy Insights | Web, SEO & Marketing Trends",
     description:
