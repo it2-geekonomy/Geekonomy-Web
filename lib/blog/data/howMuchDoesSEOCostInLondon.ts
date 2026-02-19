@@ -9,6 +9,8 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   p("The world of search engine optimisation in a competitive market such as London can be tricky to survive in."),
   p("It is also important to comprehend the factors that affect the cost of SEO and the various pricing models that are provided to the business in order to enhance their presence online and gain a good return on the investment."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Struggling to Understand SEO Pricing in London?</h3><p class="text-white/70 text-lg mb-6">Get clarity on SEO costs and find the right package for your London business. Receive a transparent quote tailored to your needs.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Cost Estimate</a></div>'),
+
   h1("Understanding SEO Costs"),
   h1("What Drives SEO Pricing?"),
   p("There are a number of forces that influence the cost of SEO. These are strategies such as PPC, content marketing, and technical SEO."),
@@ -140,7 +142,8 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   p("The ROI of SEO can be measured by monitoring key performance indicators (KPIs), including the ranking of the keywords in relation to the websites, the traffic intake, the rate of conversion, and the revenues. Although the outcome of the SEO process can be delayed, an effective SEO strategy can provide a great ROI in the long run, and that is why it is a valuable investment that every business planning to achieve long-term growth and become more visible in the online world should consider."),
   p("Want to know the exact SEO costs for your London business in 2026?"),
   p('Connect with <a href="https://thegeekonomy.com/">The Geekonomy</a> today'),
-  p('<a href="/contact-us">Contact Here</a>'),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your London Business?</h3><p class="text-white/70 text-lg mb-6">Stop guessing about SEO costs. Get a customized SEO package with transparent pricing that fits your budget and drives real results.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInLondon: BlogData = {

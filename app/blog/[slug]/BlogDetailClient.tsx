@@ -1,8 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BLOGS } from "@/components/Blogs/blogs";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { BlogCTAModal } from "@/components/Blogs/BlogCTAModal";
 
 interface BlogDetailClientProps {
   blogSlug: string;
@@ -10,10 +12,32 @@ interface BlogDetailClientProps {
 
 export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
   const blog = BLOGS.find((b) => b.slug === blogSlug);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   if (!blog) {
     return null; // Error case handled in parent
   }
+
+  // Handle CTA button clicks
+  useEffect(() => {
+    const handleCTAClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const ctaLink = target.closest('a[href="/contact-us"]');
+      
+      if (ctaLink) {
+        e.preventDefault();
+        e.stopPropagation();
+        setIsModalOpen(true);
+      }
+    };
+
+    // Add click listener to the document
+    document.addEventListener("click", handleCTAClick);
+
+    return () => {
+      document.removeEventListener("click", handleCTAClick);
+    };
+  }, []);
 
   // Find current blog index and get previous/next blogs
   const currentIndex = BLOGS.findIndex((b) => b.slug === blogSlug);
@@ -28,6 +52,13 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
   return (
     <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <StickyScroll content={blog.sections} />
+      
+      {/* CTA Modal */}
+      <BlogCTAModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        blogName={blog.heading}
+      />
       
       {/* Previous and Next Blog Buttons */}
       {showNavigation && (
