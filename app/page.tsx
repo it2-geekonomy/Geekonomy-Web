@@ -10,7 +10,8 @@ import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black overflow-hidden">
+    
+    <main className="min-h-screen bg-black">
       <HeroSection />
       <ScrollRevealSection index={0}>
         <DisconnectSection />
@@ -18,14 +19,11 @@ export default function Home() {
       <ScrollRevealSection index={1}>
         <ServicesSection />
       </ScrollRevealSection>
-      <ScrollRevealSection index={2}>
-        <ProcessSection />
-      </ScrollRevealSection>
-        <IndustriesSection />
+      <ProcessSection />
+      <IndustriesSection />
       <ScrollRevealSection index={4}>
         <FirstStepSection />
       </ScrollRevealSection>
     </main>
   );
 }
-
