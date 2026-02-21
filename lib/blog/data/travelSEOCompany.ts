@@ -9,7 +9,7 @@ const travelSEOCompanyContent: BlogContentItem[] = [
   p("On the internet, which is the main tool nowadays, it is very important to have a strong online presence if you want to be successful. In particular, this is very important for businesses that are part of the travel industry. A travel SEO company is a travel brand that, through various strategies, helps a tourism business to rank higher in search engines and gain more traffic. By competent agents and through efficient procedures, timely results can be obtained in a very short period."),
   p("Your online presence can be changed completely, and you can be able to attract more customers. If you want to increase your travel business, and you lack the necessary knowledge of SEO, then it would be a wise decision to hire a travel SEO agency."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Travel Brand to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for travel and tourism. More visibility, more bookings, and less reliance on paid ads.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Travel Brand to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for travel and tourism. More visibility, more bookings, and less reliance on paid ads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO for Travel Businesses"),
   h2("What is SEO?"),
@@ -128,7 +128,7 @@ const travelSEOCompanyContent: BlogContentItem[] = [
   h2("12. Do you help websites penalized by Google?"),
   p("Indeed, we are a full-service penalty recovery outfit, handling the disdainful backlink removal, the correction of the technical issues, and the strategies for the ranking restoration. We are the ones to thank for your travel site if its drop is due to algorithm changes or bad SEO; we will get your results back to a steady state and retrieve the lost visibility and rankings efficiently."),
   p('Need help growing your travel business online? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert travel SEO services to boost your rankings and bookings.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Travel Business With SEO?</h3><p class="text-white/70 text-lg mb-6">We help travel brands rank for destinations and keywords that drive bookings. Get a strategy that works.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Travel Business With SEO?</h3><p class="text-white/70 text-lg mb-6">We help travel brands rank for destinations and keywords that drive bookings. Get a strategy that works.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const travelSEOCompany: BlogData = {
@@ -150,3 +150,5 @@ export const travelSEOCompanySEO = {
   image: "https://geekonomytech.com/How a Travel SEO Company Helps You Rank Higher/Travel SEO main image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

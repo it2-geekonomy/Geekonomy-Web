@@ -6,7 +6,7 @@ const coverImage = "/blog image/Audit Services Improve SEO/Audit Services Improv
 const imageDir = "/blog image/Audit Services Improve SEO";
 
 const seoAuditServicesContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Professional SEO Audit?</h3><p class="text-white/70 text-lg mb-6">Get a full audit and a clear roadmap. We find issues and opportunities so you can rank better.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Professional SEO Audit?</h3><p class="text-white/70 text-lg mb-6">Get a full audit and a clear roadmap. We find issues and opportunities so you can rank better.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO Audits"),
   p("In the ever-changing digital environment, having a robust online presence is a must for businesses that are looking to expand and get noticed. SEO (search engine optimisation) is the main tool of any successful digital marketing plan. The most important element of SEO is the SEO audit."),
   p('An SEO audit is the way to get the freshest and most relevant data that will drastically <a href="/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">enhance your local SEO</a> and, furthermore, your entire web/network performance.'),
@@ -121,7 +121,7 @@ const seoAuditServicesContent: BlogContentItem[] = [
   p("An example of a technically audited website for speed and mobile-friendliness illustrates how an SEO audit can be a powerful tool to achieve better results, and hence had a significant increase in organic traffic and user engagement."),
   p("A company, after resolving the on-page SEO issues identified in the SEO audit report, was able to get more elevated positions for the targeted keywords. These instances show the importance of an SEO audit and the importance of professional SEO services as a tool for achieving actual measurable SEO results for a website."),
   p('Ready to improve your website\'s SEO performance? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers professional SEO audit services to identify issues, optimize your site, and boost your search rankings.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get Your SEO Audit?</h3><p class="text-white/70 text-lg mb-6">We deliver full audits and actionable fixes. Get a plan that improves rankings and traffic.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get Your SEO Audit?</h3><p class="text-white/70 text-lg mb-6">We deliver full audits and actionable fixes. Get a plan that improves rankings and traffic.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoAuditServices: BlogData = {
@@ -143,3 +143,5 @@ export const seoAuditServicesSEO = {
   image: "https://geekonomytech.com/Audit%20Services%20Improve%20SEO/Audit%20Services%20Improve%20SEO.main%20image%20new.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

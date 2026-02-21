@@ -10,7 +10,7 @@ const howCelebritySEOServicesBuildOnlineAuthorityContent: BlogContentItem[] = [
   p("Any negative buzz on the web can be disastrous for a public figure if the right steps are not taken to counter it promptly and effectively. This is precisely the point at which celebrity SEO services arrive at your rescue to help you keep your digital presence safe and make sure that you have a lasting impact."),
   p("These services are tailored to guarantee that your online presence is set up in the most advantageous way possible for success. They raise a celebrity's visibility in search engine results, defend their online reputation, and create a stable, lasting online authority."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Build or Protect Your Online Authority?</h3><p class="text-white/70 text-lg mb-6">Celebrity and personal brand SEO. Control what shows up in search and strengthen your digital reputation.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Build or Protect Your Online Authority?</h3><p class="text-white/70 text-lg mb-6">Celebrity and personal brand SEO. Control what shows up in search and strengthen your digital reputation.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Celebrity SEO Services"),
   h2("What are Celebrity SEO Services?"),
@@ -111,7 +111,7 @@ const howCelebritySEOServicesBuildOnlineAuthorityContent: BlogContentItem[] = [
   p('A top celebrity <a href="/blog/choose-the-best-searchgpt-seo-agency" class="underline text-[#6FAF4E]">SEO agency</a> can help in these activities, tracking and analysing these metrics and thus staying ahead in providing insights and recommendations to optimise your SEO campaigns.'),
   p("Through the measurement of celebrity advertising effectiveness, you are able to keep your brand in the lead of investment maximisation and, thus, achieve the desired outcomes by celebrity online reputation management that is done efficiently."),
   p('Ready to build your online authority? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists craft a tailored strategy for your brand.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Take Control of Your Search Presence?</h3><p class="text-white/70 text-lg mb-6">Expert SEO for public figures and brands. Build visibility, manage reputation, and own the first page.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Take Control of Your Search Presence?</h3><p class="text-white/70 text-lg mb-6">Expert SEO for public figures and brands. Build visibility, manage reputation, and own the first page.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const howCelebritySEOServicesBuildOnlineAuthority: BlogData = {
@@ -133,3 +133,5 @@ export const howCelebritySEOServicesBuildOnlineAuthoritySEO = {
   image: "https://geekonomytech.com/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

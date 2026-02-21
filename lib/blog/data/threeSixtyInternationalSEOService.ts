@@ -9,7 +9,7 @@ const threeSixtyInternationalSEOServiceContent: BlogContentItem[] = [
   p("With the advent of the interconnected digital world, businesses cannot be said to be bound by geographical locations, and an international SEO company makes sure that they can use this fact to their advantage."),
   p("To be really successful and to have a constant increase in their turnover, businesses have to think globally and go to foreign markets by using proficient international SEO services. A 360 international SEO service can help you in such a situation, as it provides a complete range of tools to make your business visible online and to open up the business of your company to the whole world."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Go Global with SEO?</h3><p class="text-white/70 text-lg mb-6">Get a 360 international SEO strategy. Reach multiple markets, languages, and search engines with one coherent plan.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Go Global with SEO?</h3><p class="text-white/70 text-lg mb-6">Get a 360 international SEO strategy. Reach multiple markets, languages, and search engines with one coherent plan.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding 360 International SEO Services"),
   h2("What is International SEO?"),
@@ -96,7 +96,7 @@ const threeSixtyInternationalSEOServiceContent: BlogContentItem[] = [
   p("Make some adjustments in your keyword strategy and concentrate more on the relevant keywords in case some of the previously used keywords are not getting good results. By continuing to analyse your outputs and adjust your strategies, you, in the process, make sure that your SEO efforts do not wear out, regardless of the fact that they are in tandem with your business objectives in any given overseas market."),
   p("You could use the services of SEO professionals and then think about international SEO experts for the best SEO and free SEO tips."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Rank in Multiple Countries?</h3><p class="text-white/70 text-lg mb-6">Our international SEO experts help you expand into new markets. Get visibility, traffic, and leads from search engines worldwide.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Rank in Multiple Countries?</h3><p class="text-white/70 text-lg mb-6">Our international SEO experts help you expand into new markets. Get visibility, traffic, and leads from search engines worldwide.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const threeSixtyInternationalSEOService: BlogData = {
@@ -120,3 +120,5 @@ export const threeSixtyInternationalSEOServiceSEO = {
   image: "https://thegeekonomy.com/blog%20image/360%20International%20SEO%20Service/360%20International%20SEO%20Service%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

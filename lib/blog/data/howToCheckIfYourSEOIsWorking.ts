@@ -10,7 +10,7 @@ const howToCheckIfYourSEOIsWorkingContent: BlogContentItem[] = [
   p("SEO, which stands for Search Engine Optimisation, is the most important thing for any website that wants to be successful in the online world. Just being online is not enough; you must appear in the search results and get the right kind of traffic to your website. But the question is, how can you tell if your SEO activities are yielding results?"),
   p("This manual is a detailed resource on determining whether your SEO is effective. It concentrates on the metrics and the instruments that can be used to measure SEO performance. Knowing these factors will not only allow you to adjust your SEO strategies but also let you ensure that your site's SEO is in harmony with your business objectives and will still be attractive to both the search engines and users."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Not Sure If Your SEO Is Working?</h3><p class="text-white/70 text-lg mb-6">Get a clear picture of your SEO performance. We\'ll review your metrics, rankings, and traffic and show you exactly what\'s working and what to fix.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Health Check</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Not Sure If Your SEO Is Working?</h3><p class="text-white/70 text-lg mb-6">Get a clear picture of your SEO performance. We\'ll review your metrics, rankings, and traffic and show you exactly what\'s working and what to fix.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Health Check</a></div>'),
 
   h1("Understanding SEO and Its Importance"),
   h2("What is SEO?"),
@@ -102,7 +102,7 @@ const howToCheckIfYourSEOIsWorkingContent: BlogContentItem[] = [
   p("In addition, to be able to keep on succeeding with SEO in the long run and also to be able to maintain good SEO conditions, it is very necessary to adjust to changes in search intent and algorithm by refreshing content regularly and optimising SEO tactics."),
   p("These signals assist you in continuously verifying that your SEO plan is effective, and that users are not departing from your website after viewing only one page, which search engines would also easily detect."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Measure and Improve Your SEO?</h3><p class="text-white/70 text-lg mb-6">Stop guessing. Get a data-driven SEO assessment and a clear plan to improve rankings, traffic, and conversions.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Measure and Improve Your SEO?</h3><p class="text-white/70 text-lg mb-6">Stop guessing. Get a data-driven SEO assessment and a clear plan to improve rankings, traffic, and conversions.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howToCheckIfYourSEOIsWorking: BlogData = {
@@ -126,3 +126,5 @@ export const howToCheckIfYourSEOIsWorkingSEO = {
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Check%20If%20Your%20SEO%20Is%20Working/How%20to%20Check%20If%20Your%20SEO%20Is%20Working%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

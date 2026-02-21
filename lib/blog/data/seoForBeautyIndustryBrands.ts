@@ -8,7 +8,7 @@ const imageDir = "/blog image/SEO for Beauty Industry Brands";
 const seoForBeautyIndustryBrandsContent: BlogContentItem[] = [
   p("You're very fortunate to have the number one SEO guide right here in front of you! The comprehensive article explores how beauty brands can leverage the power of search engine optimisation to enhance their online visibility, attract more customers, and stay ahead of the competitive beauty market."),
   p("No matter if you are an experienced digital marketing professional or a beginner, this guide is filled with actionable insights and strategies that will help your beauty brand thrive in the process of constructing your beauty personality."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Beauty Brand to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for beauty and skincare. More visibility, more traffic, more sales.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Beauty Brand to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for beauty and skincare. More visibility, more traffic, more sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO in the Beauty Industry"),
   h2("What is SEO?"),
   p("SEO, or search engine optimisation, is basically the work of making a beauty business website more attractive to the eyes of the search engine, thus more visible on the search results pages."),
@@ -126,7 +126,7 @@ const seoForBeautyIndustryBrandsContent: BlogContentItem[] = [
   p("The technical SEO services must be aimed at site speed, mobile optimisation, and the use of schema markup so that successful beauty customers can be better served."),
   p("In addition, beauty brands can benefit from local SEO services that will help them attract local customers and increase their visibility in local search results."),
   p("If you pick SEO services that are specifically designed for the unique needs of the beauty industry, your brand will receive the most effective and relevant SEO support."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Beauty Brand With SEO?</h3><p class="text-white/70 text-lg mb-6">We help beauty and skincare brands rank for the right keywords. Get a strategy that drives traffic and sales.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Beauty Brand With SEO?</h3><p class="text-white/70 text-lg mb-6">We help beauty and skincare brands rank for the right keywords. Get a strategy that drives traffic and sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForBeautyIndustryBrands: BlogData = {
@@ -149,3 +149,5 @@ export const seoForBeautyIndustryBrandsSEO = {
   image: "https://geekonomytech.com/SEO%20for%20Beauty%20Industry%20Brands/SEO%20for%20Beauty%20Industry%20Brands%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

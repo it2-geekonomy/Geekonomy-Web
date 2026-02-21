@@ -6,7 +6,7 @@ const coverImage = "/blog image/SEO for Immigration Attorneys/SEO for Immigratio
 const imageDir = "/blog image/SEO for Immigration Attorneys";
 
 const seoForImmigrationAttorneysContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Immigration Clients From Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for immigration attorneys. Rank for visa and immigration keywords and grow your practice.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Immigration Clients From Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for immigration attorneys. Rank for visa and immigration keywords and grow your practice.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO for Immigration Law Firms"),
   p("Nowadays, in this digital world, search engine optimisation (SEO) is what an immigration lawyer must have if they want to reach out more and get more clients in local immigration markets. With the help of proper SEO strategies, immigration law firms can typically appear on the web and thus attract new clients who need legal services and help with their immigration problems."),
@@ -96,7 +96,7 @@ const seoForImmigrationAttorneysContent: BlogContentItem[] = [
   p("SEO for immigration should be regarded as a continuous marketing investment for your law firm, whereby you will always be visible to clients who are looking for immigration services."),
   p("This is particularly important given that immigration clients tend to research extensively to find the best immigration lawyer near them. Thus, with steady work and a strategic approach, your law firm's SEO can be the vehicle through which your immigration firm becomes the first to be found and a leader in the local immigration field."),
   p('Need expert SEO for your immigration law firm? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> can help you rank higher and attract more clients with proven <a href="/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">SEO strategies</a> tailored for legal practices.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Immigration Practice Online?</h3><p class="text-white/70 text-lg mb-6">Expert SEO for immigration lawyers. Attract more clients searching for visa and immigration help.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Immigration Practice Online?</h3><p class="text-white/70 text-lg mb-6">Expert SEO for immigration lawyers. Attract more clients searching for visa and immigration help.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForImmigrationAttorneys: BlogData = {
@@ -118,3 +118,5 @@ export const seoForImmigrationAttorneysSEO = {
   image: "https://geekonomytech.com/SEO%20for%20Immigration%20Attorneys/SEO%20for%20Immigration%20Attorneys%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

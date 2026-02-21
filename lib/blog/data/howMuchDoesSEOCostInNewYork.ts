@@ -12,7 +12,7 @@ const howMuchDoesSEOCostInNewYorkContent: BlogContentItem[] = [
   p("Business owners who lead small enterprises must learn SEO pricing details that help them select SEO investments and handle their SEO financial resources."),
   p("The research will present SEO pricing structures together with current SEO pricing data and expected costs for effective SEO work in New York City."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing in New York?</h3><p class="text-white/70 text-lg mb-6">Get a customized SEO quote tailored to your New York business. Understand exactly what you\'ll pay and what results you can expect.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing in New York?</h3><p class="text-white/70 text-lg mb-6">Get a customized SEO quote tailored to your New York business. Understand exactly what you\'ll pay and what results you can expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
 
   h1("Understanding SEO Costs in New York"),
   img(`${imageDir}/How Much Does SEO Cost in New York image1.webp`, "Understanding SEO Costs in New York"),
@@ -208,7 +208,7 @@ const howMuchDoesSEOCostInNewYorkContent: BlogContentItem[] = [
   p("The Geekonomy assists small businesses, local brands, and e-commerce companies in developing SEO strategies that use data to achieve sustainable business growth."),
   p('How Much Does SEO Cost in New York? Connect with <a href="https://thegeekonomy.com/">The Geekonomy</a> Today to Get Your Pricing'),
   
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your New York Business?</h3><p class="text-white/70 text-lg mb-6">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your New York Business?</h3><p class="text-white/70 text-lg mb-6">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInNewYork: BlogData = {
@@ -232,3 +232,5 @@ export const howMuchDoesSEOCostInNewYorkSEO = {
   image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20New%20York/How%20Much%20Does%20SEO%20Cost%20in%20New%20York%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

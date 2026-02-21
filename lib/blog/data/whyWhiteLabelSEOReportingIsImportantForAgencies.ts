@@ -10,7 +10,7 @@ const whyWhiteLabelSEOReportingIsImportantForAgenciesContent: BlogContentItem[] 
   p("White label SEO reporting is a great weapon for agencies troubled by branding issues, wanting to regulate their report-making and impress their clientele, to solve all these problems at once."),
   p("The usage of white-label SEO reporting aids the agencies in the creation of customer-facing reports that illustrate the SEO results in a visually appealing manner and are made without a direct reference to the software or platform."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Impress Clients with Professional SEO Reports?</h3><p class="text-white/70 text-lg mb-6">White-label reporting builds trust and saves time. Get expert guidance on the right tools and setup for your agency.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Impress Clients with Professional SEO Reports?</h3><p class="text-white/70 text-lg mb-6">White-label reporting builds trust and saves time. Get expert guidance on the right tools and setup for your agency.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO Reports"),
   h2("What is an SEO Report?"),
@@ -117,7 +117,7 @@ const whyWhiteLabelSEOReportingIsImportantForAgenciesContent: BlogContentItem[] 
   p("White-label SEO reports are a complete solution for agencies that want to effectively present SEO data to their clients."),
   p("The white-label SEO reporting tool has an indirect effect on their success by facilitating easy data collection and report generation."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Elevate Your Agency\'s SEO Reporting?</h3><p class="text-white/70 text-lg mb-6">Streamline client reporting with white-label solutions. Get expert support to scale your agency\'s SEO services.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Elevate Your Agency\'s SEO Reporting?</h3><p class="text-white/70 text-lg mb-6">Streamline client reporting with white-label solutions. Get expert support to scale your agency\'s SEO services.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const whyWhiteLabelSEOReportingIsImportantForAgencies: BlogData = {
@@ -141,3 +141,5 @@ export const whyWhiteLabelSEOReportingIsImportantForAgenciesSEO = {
   image: "https://thegeekonomy.com/blog%20image/Why%20White%20Label%20SEO%20Reporting%20is%20Important%20for%20Agencies/Why%20White%20Label%20SEO%20Reporting%20is%20Important%20for%20Agencies%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

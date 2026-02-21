@@ -8,7 +8,7 @@ const imageDir = "/blog image/How Does Ben Stace Do Semantic SEO";
 const howDoesBenStaceDoSemanticSEOContent: BlogContentItem[] = [
   p("Ben Stace's time is far behind, and Search engine optimisation (SEO) has undergone a major transformation and is a totally different thing now. Old-fashioned SEO that mainly concentrates on keywords is slowly being replaced by semantic SEO. The user's intent and the semantic relations between words and concepts are what this method is all about."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Implement Semantic SEO Like the Pros?</h3><p class="text-white/70 text-lg mb-6">Get a strategy built on topical authority, user intent, and structured content. Rank for meaning, not just keywords.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Implement Semantic SEO Like the Pros?</h3><p class="text-white/70 text-lg mb-6">Get a strategy built on topical authority, user intent, and structured content. Rank for meaning, not just keywords.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Semantic SEO"),
   h2("What is Semantic SEO?"),
@@ -94,7 +94,7 @@ const howDoesBenStaceDoSemanticSEOContent: BlogContentItem[] = [
   p("Besides that, we never give up on trying the latest tools and ways of semantic analysis and content optimisation. As long as continuous improvement is our lifestyle, we can continue to present to our clients the <a href=\"https://geekonomytech.com/blog/seo-strategy-funnel\">best available SEO strategies</a>."),
   p("With semantic SEO, it is a constant work and adaptation that allows maintaining topical competence and increasing the rating of a site in search engines. Our employees, by continuously training and upgrading, are dedicated to providing our customers with high-quality services."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Build Topical Authority?</h3><p class="text-white/70 text-lg mb-6">Our team applies semantic SEO principles to grow your visibility and organic traffic. Get a content and structure plan that matches search intent.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Build Topical Authority?</h3><p class="text-white/70 text-lg mb-6">Our team applies semantic SEO principles to grow your visibility and organic traffic. Get a content and structure plan that matches search intent.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const howDoesBenStaceDoSemanticSEO: BlogData = {
@@ -118,3 +118,5 @@ export const howDoesBenStaceDoSemanticSEOSEO = {
   image: "https://thegeekonomy.com/blog%20image/How%20Does%20Ben%20Stace%20Do%20Semantic%20SEO/How%20Does%20Ben%20Stace%20Do%20Semantic%20SEO.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

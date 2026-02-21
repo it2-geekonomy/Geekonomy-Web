@@ -6,7 +6,7 @@ const coverImage = "/blog image/PPC for Home Services/PPC for Home Services main
 const imageDir = "/blog image/PPC for Home Services";
 
 const ppcForHomeServicesContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Leads for Your Home Service Business?</h3><p class="text-white/70 text-lg mb-6">Get PPC built for home services. More calls, more jobs, better ROI.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Leads for Your Home Service Business?</h3><p class="text-white/70 text-lg mb-6">Get PPC built for home services. More calls, more jobs, better ROI.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Home Services and PPC"),
   p("Pay-per-click (PPC) advertising is one of the most effective instruments that can be used by a large number of home service companies to raise their presence in the market amid the tight online competition of today. Through a detailed analysis of the impact of PPC on the generation of leads and bookings in the home services sector, this article has been composed. Discover the ways to create effective PPC initiatives, make the most of your advertising efforts, and witness a great increase in the value of your home service advertising in money terms (ROI) in the form of customer acquisition."),
   h2("What Are Home Services?"),
@@ -76,7 +76,7 @@ const ppcForHomeServicesContent: BlogContentItem[] = [
   p("It is very important to compare them thoroughly if you want to get the most out of your home service ads while looking for a marketing agency that will best promote your home services."),
   p('Select the pay-per-click (PPC) agencies that have been effective in the home services sector and can demonstrate that they have not only perfected the <a href="/blog/white-label-ppc-services-usa" class="underline text-[#6FAF4E]">technique of PPC</a> but also comprehend the nature of the business of home services. Look into their proficiency in carrying out pay-per-click campaigns with Google Ads or Local Service Ads and check if they have any particular tactics for a home service business. Also, if you want to know more about them, you can ask about their reporting method, communication style, and client testimonials to check their capability in delivering the results. The right PPC agency will be instrumental in helping you achieve optimal PPC and thus be able to maximize your ROI.'),
   p('Ready to boost your home service business with effective PPC campaigns? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert PPC services tailored for home service companies to help you reach more customers and increase conversions.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Scale Your Home Service PPC?</h3><p class="text-white/70 text-lg mb-6">We run PPC campaigns that get calls and jobs. Get a strategy that pays for itself.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free PPC Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Scale Your Home Service PPC?</h3><p class="text-white/70 text-lg mb-6">We run PPC campaigns that get calls and jobs. Get a strategy that pays for itself.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free PPC Audit</a></div>'),
 ];
 
 export const ppcForHomeServices: BlogData = {
@@ -98,3 +98,5 @@ export const ppcForHomeServicesSEO = {
   image: "https://geekonomytech.com/PPC%20for%20Home%20Services/PPC%20for%20Home%20Services%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

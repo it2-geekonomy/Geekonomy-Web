@@ -10,7 +10,7 @@ const localSEORoadsideAssistanceContent: BlogContentItem[] = [
   p("By using local SEO, towing services will be able to reach more customers who are in need of their services, and they will be able to find them quickly. We will discuss in this article what local SEO means and the best ways of implementing it for your business as a tow company or a roadside assistance business."),
   p("With this, you will be able to draw more local customers and raise your presence."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Towing Business Found First?</h3><p class="text-white/70 text-lg mb-6">Get local SEO for roadside assistance and towing. Rank for \"tow truck near me\" and get more emergency calls.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Towing Business Found First?</h3><p class="text-white/70 text-lg mb-6">Get local SEO for roadside assistance and towing. Rank for \"tow truck near me\" and get more emergency calls.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Local SEO for Towing Services"),
   h2("What is Local SEO?"),
@@ -111,7 +111,7 @@ const localSEORoadsideAssistanceContent: BlogContentItem[] = [
   p("While SEO efforts may take a while before you see the results, Google Ads can be the game-changer for you that allows instant progress for your SEO."),
   p('More visitors to your website and increased lead generation for your <a href="/blog/choose-the-best-searchgpt-seo-agency" class="underline text-[#6FAF4E]">SEO agency</a> can be accomplished through the use of Google Ads. If you are in the business of towing, this tool is what you need.'),
   p('Want to grow your roadside assistance business? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists create a local SEO strategy tailored to your needs.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get More Towing and Roadside Leads?</h3><p class="text-white/70 text-lg mb-6">Our team helps towing and roadside businesses dominate local search. Be the first name customers see.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get More Towing and Roadside Leads?</h3><p class="text-white/70 text-lg mb-6">Our team helps towing and roadside businesses dominate local search. Be the first name customers see.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const localSEORoadsideAssistance: BlogData = {
@@ -133,3 +133,5 @@ export const localSEORoadsideAssistanceSEO = {
   image: "https://geekonomytech.com/Local%20SEO%20for%20Roadside%20Assistance%20Providers/Local%20SEO%20for%20Roadside%20Assistance%20Providers.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

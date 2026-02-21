@@ -10,7 +10,7 @@ const whichEcommercePlatformIsBestForSEOContent: BlogContentItem[] = [
   p("As more and more e-commerce businesses have started online selling, it's become increasingly important to choose an e-commerce platform that is SEO-friendly."),
   p("To choose the best e-commerce platform for SEO, it's important to understand which platform will work best for your needs in 2026. Let's take a look at some of the best e-commerce platforms for SEO."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Choosing the Right eCommerce Platform for SEO?</h3><p class="text-white/70 text-lg mb-6">Get expert advice on SEO-friendly platforms for your online store. Compare options and find the best fit for your business.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Choosing the Right eCommerce Platform for SEO?</h3><p class="text-white/70 text-lg mb-6">Get expert advice on SEO-friendly platforms for your online store. Compare options and find the best fit for your business.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Consultation</a></div>'),
 
   h1("Understanding eCommerce Platforms"),
   h2("Definition of eCommerce Platforms"),
@@ -90,7 +90,7 @@ const whichEcommercePlatformIsBestForSEOContent: BlogContentItem[] = [
   p("Also, doing e-commerce in a way that's good for the world and fair will change what people buy and how search engines rank sites."),
   p("To do well, online stores need to keep up with these changes by having features that help them make marketing personal, use videos well, and run their businesses sustainably. Picking the right e-commerce platform for SEO can give you an edge over others."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Maximise Your eCommerce SEO?</h3><p class="text-white/70 text-lg mb-6">Our team can help you choose and optimise the best platform for your store. Drive more organic traffic and sales.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Maximise Your eCommerce SEO?</h3><p class="text-white/70 text-lg mb-6">Our team can help you choose and optimise the best platform for your store. Drive more organic traffic and sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const whichEcommercePlatformIsBestForSEO: BlogData = {
@@ -114,3 +114,5 @@ export const whichEcommercePlatformIsBestForSEOSEO = {
   image: "https://thegeekonomy.com/blog%20image/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO/Which%20eCommerce%20Platform%20Is%20Best%20for%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

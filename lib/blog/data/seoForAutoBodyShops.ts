@@ -6,7 +6,7 @@ const coverImage = "/blog image/SEO for Auto Body Shops/SEO for Auto Body Shops 
 const imageDir = "/blog image/SEO for Auto Body Shops";
 
 const seoForAutoBodyShopsContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Customers for Your Auto Body Shop?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for auto body and collision repair shops. Rank for \"body shop near me\" and fill your bays.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Customers for Your Auto Body Shop?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for auto body and collision repair shops. Rank for \"body shop near me\" and fill your bays.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO for Auto Body Shops"),
   p("In today's digital world, an auto body shop needs to have a strong online presence if it wants to get more customers and be considered a reliable option. What mainly contributes to this success is Search Engine Optimisation or SEO. A local search for an auto repair shop can be highly extended through just a good and skilful performance of SEO, hence making the place the most convenient and attractive to the local people."),
@@ -109,7 +109,7 @@ const seoForAutoBodyShopsContent: BlogContentItem[] = [
   p("After that, compare it with the cost of your ad spend and SEO campaigns to see if there is a positive customer flow. A positive SEO ROI means that your SEO efforts are successfully attracting traffic to your site."),
   p("Local SEO is very important if you want to generate leads and increase your revenue through local SEO-focused strategies. This analysis is a decision to invest in SEO, helping to set the priorities for SEO and marketing strategies optimisation. In order to be most profitable, your auto body shop should focus on raising search traffic and visibility."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Dominate Local Auto Repair Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for auto body shops. Get more calls and bookings from nearby customers.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Dominate Local Auto Repair Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for auto body shops. Get more calls and bookings from nearby customers.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForAutoBodyShops: BlogData = {
@@ -132,3 +132,5 @@ export const seoForAutoBodyShopsSEO = {
   image: "https://geekonomytech.com/SEO%20for%20Auto%20Body%20Shops/SEO%20for%20Auto%20Body%20Shops%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

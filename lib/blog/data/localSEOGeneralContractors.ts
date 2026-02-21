@@ -9,7 +9,7 @@ const localSEOGeneralContractorsContent: BlogContentItem[] = [
   p("Working with an SEO professional, general contractors must build a solid online presence if they want to survive and succeed in the market of today which is very competitive and digital. Local SEO, i.e., local search engine optimisation, is not a matter of choosing whether to use it or not; it is a must for getting SEO results and being able to handle the SEO basics. The post is about how contractors can use the most effective local SEO tactics to become a leader in the local search and meet local clients in 2026."),
   p("By using these strategies that have been verified, contractors can raise their profile in the local search market to a great extent, and thus they can get more business from their service area."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Leads for Your Contracting Business?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for general contractors. Rank for \"contractor near me\" and fill your pipeline.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Leads for Your Contracting Business?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for general contractors. Rank for \"contractor near me\" and fill your pipeline.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Local SEO for Contractors"),
   h2("What is Local SEO?"),
@@ -101,7 +101,7 @@ const localSEOGeneralContractorsContent: BlogContentItem[] = [
   p("Make use of local SEO tools like SEMrush, Ahrefs, and Moz Local to be aware of your local search visibility, find the areas of your accounts that need improvement, and monitor your online reputation. Moreover, such tools help you to examine your local citations, identify broken links, and keep track of your progress over time."),
   p("By efficiently employing these tools, contractors will be in a position to make decisions based on data and optimise their SEO efforts to have the greatest effect. Any local SEO efforts for contractors will be facilitated by the use of tools such as Google."),
   p('Ready to dominate local search as a general contractor? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert local SEO services to help contractors grow.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Dominate Local Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for general contractors. Get more jobs from \"near me\" and local searches.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Dominate Local Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for general contractors. Get more jobs from \"near me\" and local searches.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const localSEOGeneralContractors: BlogData = {
@@ -123,3 +123,5 @@ export const localSEOGeneralContractorsSEO = {
   image: "https://geekonomytech.com/Best Local SEO Strategies for General Contractors 2026/main image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

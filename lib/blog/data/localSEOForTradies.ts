@@ -6,7 +6,7 @@ const coverImage = "/blog image/Local SEO for Tradies/Local SEO for Tradies.webp
 const imageDir = "/blog image/Local SEO for Tradies";
 
 const localSEOForTradiesContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Local Jobs for Your Trade Business?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for tradies. Be found first when locals search for your services and win more work.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Local Jobs for Your Trade Business?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for tradies. Be found first when locals search for your services and win more work.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Local SEO for Tradies"),
   p("If you are a tradie wanting to grow your trade business and bring in more local customers by means of marketing that is effective for tradies, and you understand that SEO is no longer something you can choose to have or not, then this article is for you."),
@@ -101,7 +101,7 @@ const localSEOForTradiesContent: BlogContentItem[] = [
   p("Besides, local SEO can be beneficial in helping you reach the right audience through environmentally friendly SEO methods. It helps you in targeting the local area where your marketing efforts will be most effective among the customers who are most likely to need your services."),
   p("Which means that by choosing to spend your money on SEO, you are actually investing in the long haul to see your trade business thrive and grow further while you find more local work and broaden your community reach."),
   p('Ready to boost your trade business with local SEO? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists create a tailored strategy for your business.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get More Local Tradie Leads?</h3><p class="text-white/70 text-lg mb-6">Our team helps tradies rank in local search. Get more calls and quotes from customers in your area.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get More Local Tradie Leads?</h3><p class="text-white/70 text-lg mb-6">Our team helps tradies rank in local search. Get more calls and quotes from customers in your area.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const localSEOForTradies: BlogData = {
@@ -123,3 +123,5 @@ export const localSEOForTradiesSEO = {
   image: "https://geekonomytech.com/Local%20SEO%20for%20Tradies/Local%20SEO%20for%20Tradies.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

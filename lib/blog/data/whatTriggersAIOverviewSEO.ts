@@ -6,7 +6,7 @@ const coverImage = "/blog image/Triggers an AI Overview SEO/Triggers an AI Overv
 const imageDir = "/blog image/Triggers an AI Overview SEO";
 
 const whatTriggersAIOverviewSEOContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Show Up in AI Overviews?</h3><p class="text-white/70 text-lg mb-6">Get content and SEO tuned for Google\'s AI results. We help you stay visible as search evolves.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Show Up in AI Overviews?</h3><p class="text-white/70 text-lg mb-6">Get content and SEO tuned for Google\'s AI results. We help you stay visible as search evolves.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding AI Overviews"),
   p("AI summaries are, without hesitation, the main factor that is redefining the SEO world which is a blend of both problems and opportunities that digital marketers have to change their strategies to fit AI results. As Google continues to integrate generative AI deeper into its search engine, it will be extremely necessary to figure out how AI summaries obtain visibility and in what manner they affect SEO if you intend to maintain and increase your rank at the top of Google search. The piece here is to know the workings of AI overviews, figuring out the factors that bring them up in search results, and pointing out SEO tactics to efficiently prepare content for AI."),
   h2("Definition of AI Overviews"),
@@ -72,7 +72,7 @@ const whatTriggersAIOverviewSEOContent: BlogContentItem[] = [
   p("If AI overviews are changing your SEO performance, you can find out through analytics and SEO tools, and this will help you to be very flexible with your content marketing strategies by adapting and refining them. By being very active in content optimisation to suit AI overviews and also keeping up with the latest changes in Google's AI, companies will be able to retain their visibility and hence generate traffic in the evolving search landscape."),
   p("The knowledge of how to effectively trigger AI overviews and the understanding of how to optimize content in line with that will lay the foundation for success which is the changing scene of AI overview SEO."),
   p('Ready to optimize your content for AI Overviews? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> can help you develop effective SEO strategies tailored for Google\'s AI-powered search results.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise for AI Search?</h3><p class="text-white/70 text-lg mb-6">We help you adapt content and SEO for AI overviews. Get a strategy that future-proofs your visibility.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise for AI Search?</h3><p class="text-white/70 text-lg mb-6">We help you adapt content and SEO for AI overviews. Get a strategy that future-proofs your visibility.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const whatTriggersAIOverviewSEO: BlogData = {
@@ -94,3 +94,5 @@ export const whatTriggersAIOverviewSEOSEO = {
   image: "https://geekonomytech.com/Triggers%20an%20AI%20Overview%20SEO/Triggers%20an%20AI%20Overview%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

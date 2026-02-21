@@ -6,7 +6,7 @@ const coverImage = "/blog image/branding cost UK/main image of branding cost uk.
 const imageDir = "/blog image/branding cost UK";
 
 const brandingCostUKContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Brand That Stands Out?</h3><p class="text-white/70 text-lg mb-6">Get branding that builds recognition and trust. We deliver identity and strategy that fits your budget.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Brand That Stands Out?</h3><p class="text-white/70 text-lg mb-6">Get branding that builds recognition and trust. We deliver identity and strategy that fits your budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("What Is Included in Branding Costs?"),
   p("Your brand is the face, the voice, and the energy of your company. It is how customers recognize you, how they associate with you, and, in a competitive marketplace such as London and the rest of the UK, how they remember you. Therefore, having a strong and effective brand is one of the most essential elements of creating a successful business."),
   p("However, when it actually comes to the creation or the refreshing of your brand, a business owner frequently asks the question, \"What is the cost of branding in the UK?\""),
@@ -224,7 +224,7 @@ const brandingCostUKContent: BlogContentItem[] = [
   p("It's possible to start up using DIY branding tools and still create a design on a budget. However, a professionally developed brand has a proven higher return on investment through strategic long-term value and customer trust."),
   h3("6. Why is branding important for small businesses?"),
   p("The most important reason to invest in branding is that good branding helps build trust, recognition, and loyalty. This empowers small businesses to compete with larger competitors and attract higher-value customers."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in Your Brand?</h3><p class="text-white/70 text-lg mb-6">We help UK businesses build brands that last. Get a quote and a plan that fits your goals.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in Your Brand?</h3><p class="text-white/70 text-lg mb-6">We help UK businesses build brands that last. Get a quote and a plan that fits your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const brandingCostUK: BlogData = {
@@ -246,3 +246,5 @@ export const brandingCostUKSEO = {
   image: "https://geekonomytech.com/branding cost UK/main image of branding cost uk.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

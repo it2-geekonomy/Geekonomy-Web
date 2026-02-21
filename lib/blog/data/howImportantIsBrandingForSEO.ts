@@ -10,7 +10,7 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("A strong brand, beyond just a logo, supports solid SEO. Combining branding with SEO improves your online visibility and growth."),
   p("Let's explore how branding can boost your SEO and why having a brand supports success with SEO. When branding and SEO partner, you can gain more organic traffic and better search rankings."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO?</h3><p class="text-white/70 text-lg mb-6">Combine branding and SEO for better visibility and rankings. Get expert help to build a stronger online presence.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO?</h3><p class="text-white/70 text-lg mb-6">Combine branding and SEO for better visibility and rankings. Get expert help to build a stronger online presence.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Branding and SEO"),
   h2("What is Branding?"),
@@ -72,7 +72,7 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("Lots of brands have seen more traffic and engagement just by aligning their SEO with their brand. When companies focus on quality content, use the right SEO keywords, and keep their brand consistent, they usually rank better and get more attention."),
   p("Seeing how others have used SEO to grow their brand can spark some ideas for you. These stories show that if you want to reach your online marketing goals, you need to link SEO and branding."),
   
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO Presence?</h3><p class="text-white/70 text-lg mb-6">Get expert help combining branding and SEO strategies. Build a stronger online presence that drives both brand recognition and search rankings.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO Presence?</h3><p class="text-white/70 text-lg mb-6">Get expert help combining branding and SEO strategies. Build a stronger online presence that drives both brand recognition and search rankings.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howImportantIsBrandingForSEO: BlogData = {
@@ -96,3 +96,5 @@ export const howImportantIsBrandingForSEOSEO = {
   image: "https://thegeekonomy.com/blog%20image/How%20Important%20is%20Branding%20for%20SEO/How%20Important%20is%20Branding%20for%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

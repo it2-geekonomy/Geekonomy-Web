@@ -6,7 +6,7 @@ const coverImage = "/blog image/Ecommerce SEO/Ecommerce SEO main image .webp";
 const imageDir = "/blog image/Ecommerce SEO";
 
 const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need an Ecommerce SEO Partner?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for online stores. Rank for product and category terms and grow sales.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need an Ecommerce SEO Partner?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for online stores. Rank for product and category terms and grow sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Ecommerce SEO Services"),
   p('Choosing an ideal ecommerce <a href="/blog/seo-for-legal-firms-complete-guide" class="underline text-[#6FAF4E]">SEO firm</a> is a very significant step for augmenting the presence and generating traffic from your e-commerce store. As a result of the presence of a great number of SEO agencies that try to attract your attention, it is very important to know the details of an e-commerce SEO service and the qualities of a possible partner. The present manual comprises the information concerned with the ways of locating a proficient seo company or a group with 25 years of experience to elevate your online presence and expand your e-commerce business.'),
   h2("What is Ecommerce SEO?"),
@@ -106,7 +106,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   p("Continuous monitoring of significant figures such as organic traffic, keyword rankings, conversion rates, and revenue is required."),
   p("Use SEO instruments like Google Analytics and Google Search Console to monitor your journey. Be consistent in looking at your SEO reports and spotting the places where you can work better. If you keep on watching and analyzing your SEO results, then you are able to take the right decisions based on data to fine-tune your SEO tactics for ecommerce and to reach your business objectives. These are the indicators that will point to the best ecommerce SEO services."),
   p('Ready to boost your ecommerce store\'s visibility? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert ecommerce SEO services to help you rank higher, attract more customers, and increase sales.'),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Store With SEO?</h3><p class="text-white/70 text-lg mb-6">We help ecommerce sites rank and convert. Get a strategy that drives traffic and sales.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Store With SEO?</h3><p class="text-white/70 text-lg mb-6">We help ecommerce sites rank and convert. Get a strategy that drives traffic and sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const howToChooseBestEcommerceSEOCompany: BlogData = {
@@ -128,3 +128,5 @@ export const howToChooseBestEcommerceSEOCompanySEO = {
   image: "https://geekonomytech.com/Ecommerce%20SEO/Ecommerce%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
