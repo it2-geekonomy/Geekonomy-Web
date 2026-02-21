@@ -162,8 +162,8 @@ export const howMuchDoesSEOCostInLondonSEO = {
   title: "How Much Does SEO Cost in London | 2026 Guide",
   description:
     "Discover SEO pricing and service costs for London businesses. Learn about SEO packages and pricing models to boost your online visibility and rankings.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-london",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-london",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20London/How%20Much%20Does%20SEO%20Cost%20in%20London%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20London/How%20Much%20Does%20SEO%20Cost%20in%20London%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };

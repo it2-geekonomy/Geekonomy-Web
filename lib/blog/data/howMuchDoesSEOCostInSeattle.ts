@@ -55,7 +55,7 @@ const howMuchDoesSEOCostInSeattleContent: BlogContentItem[] = [
   p('<em>Note: The estimated package costs and pricing information will vary according to the specific combination of your project\'s complexity and its scope requirements. Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements.</em>'),
 
   h1("Local SEO Packages in Seattle"),
-  p('The business needs of local Seattle companies that want to increase their customer base through search engine optimization require <a href="https://geekonomytech.com/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">special local SEO services</a> that improve their online presence for Seattle search results.'),
+  p('The business needs of local Seattle companies that want to increase their customer base through search engine optimization require <a href="https://thegeekonomy.com/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">special local SEO services</a> that improve their online presence for Seattle search results.'),
   p("Local SEO pricing typically ranges from $750 to $3,000 per month, depending on factors which include the number of targeted keywords and website pages, service locations, and current search rankings within the area."),
   p("Local SEO packages enable businesses to improve their online search results for Seattle customers, which leads to increased customer visits to their stores."),
   p("The services provide customers with Google Business Profile optimization and local citation management, as well as on-page and off-page SEO services, which help build a strong local presence."),
@@ -96,7 +96,7 @@ const howMuchDoesSEOCostInSeattleContent: BlogContentItem[] = [
   p("The organization provides SEO packages or technical SEO work through a cost-per-project model, which includes extensive content production."),
   p("The SEO services expertise and reputation should guide you in selecting the most suitable partner for your business requirements."),
   p("The SEO companies or digital marketing companies need to provide you with their complete SEO audit reports and their ongoing communication about their SEO strategies."),
-  p('The process of selecting the appropriate SEO service requires you to find a partner who comprehends your business requirements while delivering affordable SEO solutions through <a href="https://geekonomytech.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">well-planned SEO strategies</a>.'),
+  p('The process of selecting the appropriate SEO service requires you to find a partner who comprehends your business requirements while delivering affordable SEO solutions through <a href="https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">well-planned SEO strategies</a>.'),
   p("The implementation of SEO drives business expansion through effective methods."),
 
   h1("Investing in SEO for Small Businesses"),
@@ -212,8 +212,8 @@ export const howMuchDoesSEOCostInSeattleSEO = {
   title: "How Much Does SEO Cost in Seattle | 2026 Guide",
   description:
     "Discover SEO pricing and service costs for Seattle businesses. Learn about SEO packages and pricing models to boost your online visibility and rankings.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-seattle",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-seattle",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20Seattle/How%20Much%20Does%20SEO%20Cost%20in%20Seattle%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-seattle",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-seattle",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Seattle/How%20Much%20Does%20SEO%20Cost%20in%20Seattle%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
