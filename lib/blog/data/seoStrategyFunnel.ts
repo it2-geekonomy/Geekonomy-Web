@@ -10,6 +10,8 @@ const seoStrategyFunnelContent: BlogContentItem[] = [
   p("This piece of writing will analyse the SEO funnel by explaining each stage and providing useful SEO techniques that can be used with relevant keywords to raise the conversion rate at every level of the funnel."),
   p("We will cover the topics of producing material, personalising content, and enhancing your site to fit the user's needs in the end, making the traffic to your site a source of income through the conversion funnel."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Turn Search Traffic Into Revenue?</h3><p class="text-white/70 text-lg mb-6">Get an SEO funnel strategy built for your business. We align content and conversion at every stage.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding the SEO Funnel"),
   h2("What is the SEO Funnel?"),
   p("The SEO funnel is basically the same as the sales funnel or marketing funnel. However, in this case, the focus is on brand interaction via SEO (search engine optimisation). It basically depicts the stages through which the customer goes in the traditional sales or marketing funnel, but concentrates on organic search."),
@@ -100,7 +102,7 @@ const seoStrategyFunnelContent: BlogContentItem[] = [
   h2("12. What Mistakes Should Be Avoided in an SEO Funnel?"),
   p('Common SEO funnel errors consist of the following: aiming at the incorrect keyword intention, releasing content that lacks clear calls-to-action, not measuring the metrics of each funnel stage, and ignoring conversion rate optimisation (CRO). If you stay away from these <a href="/blog/common-seo-mistakes-small-businesses-make" class="underline text-[#6FAF4E]">common mistakes</a>, you will have a funnel that works more efficiently and brings the desired results on a regular basis.'),
   p('Ready to build an SEO funnel that drives real revenue? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> can craft a data-driven SEO strategy tailored to every stage of your customer journey.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Build an SEO Funnel That Converts</h3><p class="text-white/70 text-lg mb-6">From awareness to purchase—we design content and tracking for every stage. Get a strategy that turns traffic into leads and sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const seoStrategyFunnel: BlogData = {
@@ -122,3 +124,5 @@ export const seoStrategyFunnelSEO = {
   image: "https://geekonomytech.com/SEO%20Strategy%20Funnel/SEO%20Strategy%20Funnel%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

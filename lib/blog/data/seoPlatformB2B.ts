@@ -8,6 +8,7 @@ const imageDir = "/blog image/SEO Platform for B2B Companies";
 const seoPlatformB2BContent: BlogContentItem[] = [
   p("In the present fiercely-vying digital market environment, B2B enterprises must have a solid SEO plan in their arsenal to be able to grow in a lasting way. Picking out a proper SEO tool covering a range of features is highly important for the realisation of the goals such as increasing the organic traffic volume, creating fresh leads, and thus valuating the business growth."),
   p("B2B marketing outlooks, the significance of SEO for B2B companies, and how the most effective SEO instruments could be used to bypass these obstacles and eventually reach the top of the SERP are the issues that this paper deals with."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need an SEO Platform That Fits Your B2B Goals?</h3><p class="text-white/70 text-lg mb-6">Get B2B SEO that drives leads and rankings. We use the right tools and strategies for your market.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding B2B SEO"),
   h2("What is B2B SEO?"),
   p("B2B SEO (Business-to-Business Search Engine Optimisation) represents a unique set of SEO strategies that are solely focused on B2B companies and their buyers' needs."),
@@ -91,6 +92,7 @@ const seoPlatformB2BContent: BlogContentItem[] = [
   p("As AI technology keeps on developing, B2B marketers will have access to even more advanced SEO tools that can help them optimise their SEO efforts and accomplish top-ranking content, thus basic SEO practices will get streamlined."),
   h2("Preparing for Future Changes in SEO"),
   p("B2B businesses have to be proactive and adaptive if they want to be ready for any future modifications in SEO. One should keep abreast with the newest SEO trends, including WordPress SEO changes, by reading industry blogs, attending conferences, and having conversations with the SEO community. One should also get the best SEO platform for B2B that will be able to offer the necessary flexibility and scalability, as far as the changing SEO landscape is concerned. One should concentrate on establishing a good technical SEO, creating quality content, and making the website attractive to the users. Through a continuous learning and adaptation process, B2B companies will be able to keep their SEO strategies up-to-date and have the advantage over the competition in the world of SEO and digital marketing that is always changing."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Scale Your B2B SEO?</h3><p class="text-white/70 text-lg mb-6">We help B2B companies choose and use the right SEO tools. Get audits, strategy, and ongoing support.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoPlatformB2B: BlogData = {
@@ -113,3 +115,5 @@ export const seoPlatformB2BSEO = {
   image: "https://geekonomytech.com/SEO%20Platform%20for%20B2B%20Companies/SEO%20Platform%20for%20B2B%20Companies%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

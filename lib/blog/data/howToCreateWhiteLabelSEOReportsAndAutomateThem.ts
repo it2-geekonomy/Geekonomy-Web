@@ -11,6 +11,8 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   p("These let you show off what you've done and wow clients with reports that have your branding and show how well their SEO is working."),
   p("By automating these reports, you save time and keep your clients happy."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help Setting Up White-Label SEO Reports?</h3><p class="text-white/70 text-lg mb-6">Get expert guidance on creating and automating professional SEO reports. Save time and impress your clients with branded reporting.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding SEO Reports"),
   h2("What is an SEO Report?"),
   p("An SEO report gives a summary of how well a website is doing in search engine rankings. It uses data to show if the SEO work is helping."),
@@ -115,7 +117,7 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   p("The right white-label reporting setup helps agencies provide consistent, branded, and data-driven communication."),
   p("If report creation is still manual, automation is the next step to improve both efficiency and client satisfaction."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help Setting Up Automated SEO Reports?</h3><p class="text-white/70 text-lg mb-6">Streamline your client reporting process with white-label SEO reports. Get expert guidance on automation and professional reporting solutions.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help Setting Up Automated SEO Reports?</h3><p class="text-white/70 text-lg mb-6">Streamline your client reporting process with white-label SEO reports. Get expert guidance on automation and professional reporting solutions.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howToCreateWhiteLabelSEOReportsAndAutomateThem: BlogData = {
@@ -139,3 +141,5 @@ export const howToCreateWhiteLabelSEOReportsAndAutomateThemSEO = {
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them/How%20to%20Create%20White-Label%20SEO%20Reports%20and%20Automate%20Them.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

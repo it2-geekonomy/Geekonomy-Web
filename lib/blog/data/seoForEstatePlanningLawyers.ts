@@ -8,6 +8,9 @@ const imageDir = "/blog image/SEO for Estate Planning Lawyers";
 const seoForEstatePlanningLawyersContent: BlogContentItem[] = [
   p("This comprehensive text addresses the structure of SEO as it relates to estate planning. In SEO for estate planning, things are a little different in terms of strategies that can be employed to improve online visibility and drive prospective clients, who are looking for estate planning services, to the site."),
   p("The Social Media Toolkit boosts any law firm's chances of being found by individuals searching for assistance with wills, trusts, probate, estate tax matters, or elder law."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Estate Planning Clients Through Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO strategies tailored for estate planning law firms. Attract more qualified leads and improve your visibility in search results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding SEO and Its Importance for Estate Planning Lawyers"),
   h2("What is SEO?"),
   p("SEO, or Search Engine Optimisation, refers to making a website more improved so that it can garner more attention and have a higher ranking on SERPs. SEO techniques primarily refer to the range of methods that will mould the amount and quality of traffic that comes to a website through organic search engine results."),
@@ -116,6 +119,8 @@ const seoForEstatePlanningLawyersContent: BlogContentItem[] = [
   p("Ideally, you will include estate planning and probate content on your website since this is a very strategic way of expanding your potential audience for clients. You can include thorough guides on how estate planning and probate are related, emphasising how proper estate planning will make the probate process simpler."),
   p("Write blogs that would focus on common queries regarding both estate planning and probate, optimised with the right keywords for search engines."),
   p("Your website should mention that you are knowledgeable in both topics; thus, potential clients can easily find such types of services. Aside from what it does to your SEO rankings, this will also make your law firm the go-to resource in all estate-related legal issues."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Estate Planning Practice Online?</h3><p class="text-white/70 text-lg mb-6">Expert SEO for estate planning lawyers. Get a strategy that brings in more clients searching for wills, trusts, and probate services.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForEstatePlanningLawyers: BlogData = {
@@ -139,3 +144,5 @@ export const seoForEstatePlanningLawyersSEO = {
   image: "https://thegeekonomy.com/blog%20image/SEO%20for%20Estate%20Planning%20Lawyers/SEO%20for%20Estate%20Planning%20Lawyers%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

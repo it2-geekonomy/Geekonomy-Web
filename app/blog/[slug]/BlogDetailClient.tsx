@@ -18,11 +18,11 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
     return null; // Error case handled in parent
   }
 
-  // Handle CTA button clicks
+  // Handle in-blog CTA button clicks only (navbar Contact goes to /contact-us)
   useEffect(() => {
     const handleCTAClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const ctaLink = target.closest('a[href="/contact-us"]');
+      const ctaLink = target.closest('a[data-blog-cta]');
       
       if (ctaLink) {
         e.preventDefault();
@@ -31,7 +31,6 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
       }
     };
 
-    // Add click listener to the document
     document.addEventListener("click", handleCTAClick);
 
     return () => {

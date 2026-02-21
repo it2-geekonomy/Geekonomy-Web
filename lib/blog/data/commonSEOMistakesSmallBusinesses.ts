@@ -6,6 +6,8 @@ const coverImage = "/blog image/Common SEO Mistakes Small Businesses/Common SEO 
 const imageDir = "/blog image/Common SEO Mistakes Small Businesses";
 
 const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Making Common SEO Mistakes?</h3><p class="text-white/70 text-lg mb-6">Get an audit that finds the errors holding your small business back. Fix them and start growing organically.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Audit</a></div>'),
+
   h1("Understanding Common SEO Mistakes"),
   p("Search Engine Optimisation (SEO) is the lifeblood of small businesses that are ambitious to survive and eventually succeed in the digital world. Still, a majority of small business owners are making some typical SEO blunders, which are like invisible walls that block their online presence and business expansion."),
   p('Knowing these traps shall pave the way for the formulation of an <a href="/blog/seo-strategy-funnel" class="underline text-[#6FAF4E]">effective SEO plan</a> through which you will not make the mistake of business SEO, which most people do.'),
@@ -101,7 +103,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Consequently, this decreases the bounce rate and increases the time spent on the page, which, in turn, informs Google as well as other search engines that your website is of great value and highly relevant and at the same time, they are willing to rank your site for competitive keywords that are related to your business."),
   p("By having a robust online presence and frequently updating your website, you become the leader of the industry and attract loyal customers who are more and more eager to purchase from you. Hence, an investment in professional SEO services is a wise decision that can bring you a great deal of benefit in the future."),
   p('Want to fix your SEO mistakes and grow your business? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let SEO specialists create a strategy tailored to your business goals.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Fix Your Small Business SEO?</h3><p class="text-white/70 text-lg mb-6">Stop losing traffic to simple mistakes. Get a clear plan and ongoing support to rank higher and win more customers.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const commonSEOMistakesSmallBusinesses: BlogData = {
@@ -123,3 +125,5 @@ export const commonSEOMistakesSmallBusinessesSEO = {
   image: "https://geekonomytech.com/Common%20SEO%20Mistakes%20Small%20Businesses/Common%20SEO%20Mistakes%20Small%20Businesses.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

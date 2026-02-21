@@ -7,6 +7,9 @@ const coverImage = "/blog image/Sosoactive SEO News/Sosoactive SEO News.webp";
 const sosoactiveSEONewsContent: BlogContentItem[] = [
   p("Are you ready for Sosoactive SEO News, home for digital marketing trends and peeks into the future of digital lifestyle? Here, we talk about the way Sosoactive is reinventing the way things are done in the digital world, how it is making it possible for content creators and marketers alike to be successful in what they do, and explore its role in shaping modern digital engagement where users are guaranteed a meaningful experience and the growth of one's personal life influenced by platforms like Sosoactive."),
   p("With information from the Sosoactive SEO news, that's how you keep yourself ahead of the pack in the busy digital world. Make way for SEO success and boost your entire digital strategy."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Stay Ahead in Digital Marketing?</h3><p class="text-white/70 text-lg mb-6">Leverage the latest digital trends and SEO strategies. Get expert guidance to boost your online presence and engagement.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+
   h1("Sosoactive and the Future of Digital Engagement"),
   p("Either with a low profile or otherwise, Sosoactive represents a major change in thinking from the classic SEO-style approach to one of community building and user focus. Sosoactive, providing digital news and content on personal development and wellness, distinctly encourages active participation from the people on these matters. Understanding the uses of Sosoactive is extremely important for all who want to augment their digital lives and use it for SEO purposes."),
   p("For sites like Sosoactive, connecting with people is more important than their place in search engine rankings."),
@@ -128,7 +131,7 @@ const sosoactiveSEONewsContent: BlogContentItem[] = [
   p("With data analytics in place, marketers can step up their SEO strategies, modernise online engagement along with modern SEO techniques, optimise user experience, and thus drive much bigger results through their SEO metrics."),
   p("Platforms like Sosoactive have integrated data analytics for engagement with meaning."),
   
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Transform Your Digital Marketing Strategy?</h3><p class="text-white/70 text-lg mb-6">Learn how to leverage the latest digital marketing trends and SEO techniques. Get expert guidance to boost your online presence and engagement.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Transform Your Digital Marketing Strategy?</h3><p class="text-white/70 text-lg mb-6">Learn how to leverage the latest digital marketing trends and SEO techniques. Get expert guidance to boost your online presence and engagement.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const sosoactiveSeoNews: BlogData = {
@@ -152,3 +155,5 @@ export const sosoactiveSeoNewsSEO = {
   image: "https://thegeekonomy.com/blog%20image/Sosoactive%20SEO%20News/Sosoactive%20SEO%20News.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

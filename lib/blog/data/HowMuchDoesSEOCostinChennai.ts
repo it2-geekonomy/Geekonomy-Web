@@ -14,6 +14,8 @@ const seoCostChennaiContent: BlogContentItem[] = [
     p("We will cover the variables that really affect SEO pricing, average SEO costs, and insights into cost comparisons through various SEO companies in Chennai."),
     p("It is vital for small startups and enterprises alike to know all building blocks of SEO pricing since those factors are paramount to maximizing their Online Marketing Goals and Return on Investment (ROI)."),
 
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for Chennai?</h3><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your business. We offer clear pricing and packages that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
     h1("Understanding SEO Costs in Chennai"),
     img(`${imageDir}/How Much Does SEO Cost in Chennai image2.webp`, "Understanding SEO Costs in Chennai"),
     p("The price ranges of SEO services vary quite considerably in Chennai, owing to several things. All of these factors are things that companies that are in pursuit of exemplary SEO strategies should know."),
@@ -173,6 +175,7 @@ const seoCostChennaiContent: BlogContentItem[] = [
     </a>
   </div>
 `),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in Chennai?</h3><p class="text-white/70 text-lg mb-6">Get a tailored SEO package and transparent pricing. We help Chennai businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInChennai: BlogData = {
@@ -194,3 +197,4 @@ export const howMuchDoesSEOCostInChennaiSEO = {
     image: "https://geekonomytech.com/How Much Does SEO Cost in Chennai/How Much Does SEO Cost in Chennai main image.webp",
     twitterHandle: "@GeekonomyTech",
 };
+

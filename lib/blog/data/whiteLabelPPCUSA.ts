@@ -6,6 +6,7 @@ const coverImage = "/blog image/PPC Services USA/PPC Services USA image main.web
 const imageDir = "/blog image/PPC Services USA";
 
 const whiteLabelPPCUSAContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need White Label PPC for Your Agency?</h3><p class="text-white/70 text-lg mb-6">Get white label PPC that runs under your brand. Scale without the in-house cost.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("What are White Label PPC Services?"),
   p("In today's digital world, every business is competing for a chance to get in front of the right audience at the right time. PPC (Pay-Per-Click) advertising plays a vital role here. Google Ads, Bing Ads, social media advertising, display ads, and more all provide one of the most measurable, fastest ways to generate leads, sales, and brand awareness – especially in competitive markets across the U.S."),
   p('PPC has become a table-stakes service offering for agencies and freelancers. Managing campaigns for multiple clients across platforms is extremely knowledge-intensive, requiring constant optimization and significant resources. Enter white label <a href="/blog/multilingual-ppc-services-reach-global-customers-faster" class="underline text-[#6FAF4E]">PPC services</a>. Agencies now can deliver high-level PPC management under their own brand, without the overhead of in-house specialists. Partnering with a white-label PPC provider means agencies can scale faster and at lower cost, and focus on clients while the experts handle execution. It\'s a smarter, more efficient way to grow in the ever-evolving world of digital advertising.'),
@@ -162,6 +163,7 @@ const whiteLabelPPCUSAContent: BlogContentItem[] = [
   p("Many white label PPC companies manage more than one platform such as Google Ads, Bing Ads, Meta (Facebook & Instagram) Ads, LinkedIn Ads, and YouTube campaigns so you can offer complete digital presence to your clients."),
   h3("7. Can I resell white label PPC services under my own brand?"),
   p("Definitely. That is the reason for white labeling. Your clients get the look and feel of your agency, and the white label provider is in the back seat to help you execute at the highest possible quality for campaign performance."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Add White Label PPC?</h3><p class="text-white/70 text-lg mb-6">We deliver PPC under your brand. Get reports, strategy, and execution that your clients will love.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const whiteLabelPPCUSA: BlogData = {
@@ -183,3 +185,5 @@ export const whiteLabelPPCUSASEO = {
   image: "https://geekonomytech.com/images/ppc.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

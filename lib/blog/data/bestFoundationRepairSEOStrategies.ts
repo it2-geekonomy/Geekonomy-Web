@@ -8,6 +8,7 @@ const imageDir = "/blog image/Best Foundation Repair SEO Strategies for Growth 2
 const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("In the present highly competitive digital world, a well-honed search engine optimisation (SEO) strategy is definitely a must-have for local foundation repair companies to expand their business. This post dives into the top SEO tactics that will not only improve your online visibility but also bring in potential customers and increase your leads, thus making your foundation repair business the winner in 2026 and beyond."),
   p("As the competition is fierce in the foundation repair market, getting seen in the search results is extremely important."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Foundation Repair Leads From Search?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for foundation repair. Rank for \"foundation repair near me\" and fill your pipeline.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO for Foundation Repair"),
   img(`${imageDir}/Understanding SEO for Foundation Repair.webp`, "Understanding SEO for Foundation Repair"),
   h2("Importance of SEO in Foundation Repair"),
@@ -75,6 +76,7 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("Data-driven decision-making should be at the core of your SEO efforts if you want to keep optimising your SEO in a sustainable way, as SEO done right is basically a long-term win for attracting customers who are actively looking for foundation repair. Turn the data that you have into content improvements, new keyword targets, more backlink creation, and local SEO enhancements."),
   p("Using data as the main driver in your SEO marketing strategy is a way of keeping your SEO in line with the needs and the behaviour of your target audience, which then produces better results and a higher return on investment. Regular tests and audits are part and parcel of a long-term SEO plan."),
   p("This is the best way to keep your foundation repair <a href=\"https://geekonomytech.com/blog/why-indexceptional-is-the-best-website-indexing-tool-for-seo\">website SEO</a> well optimised and enhance your lead generation efforts so that local customers will have an easy time finding you."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Foundation Repair Business?</h3><p class="text-white/70 text-lg mb-6">We specialise in local SEO for contractors. Get more calls and quotes from homeowners in your area.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const bestFoundationRepairSEOStrategies: BlogData = {
@@ -97,3 +99,5 @@ export const bestFoundationRepairSEOStrategiesSEO = {
   image: "https://geekonomytech.com/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026%20.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

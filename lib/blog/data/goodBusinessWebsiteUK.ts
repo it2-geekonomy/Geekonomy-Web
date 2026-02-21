@@ -6,6 +6,7 @@ const coverImage = "/blog image/business website in UK/business website in UK ma
 const imageDir = "/blog image/business website in UK";
 
 const goodBusinessWebsiteUKContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Business Website That Works?</h3><p class="text-white/70 text-lg mb-6">Get a UK business website built for search and conversion. Mobile-first, fast, and compliant.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("1. Mobile-First Design is Non-Negotiable"),
   p("If you run a UK business, you are already familiar with the need for a website. In today's digital-first economy, your online presence is your first impression with potential customers. It doesn't matter if you're based in Birmingham or Belfast. If you have a brick-and-mortar store or provide services online, a website is a vital cog in your business machine. It has to be just as effective at closing sales as your top salesperson."),
   p("British consumers are getting more savvy and demanding every year. From fast loading times to a slick look and feel, it is no longer good enough to have a website. Your site must make it as easy as possible for visitors to find information and convert into customers. Recent research even showed that 94% of first impressions are based on web design alone and that 75% of users will make judgements about a company's credibility based on their website. If you want to compete in the UK, you cannot afford a poor online presence."),
@@ -226,6 +227,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("Review your analytics data at least monthly. Track key metrics like conversions, traffic sources, bounce rates, and user behaviour."),
   h2("12. What security features should I have on a UK business website?"),
   p("Keep software updated, use firewalls and malware scanning, regularly back up data, and enforce strong passwords. If processing payments, ensure PCI compliance."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Build or Upgrade Your UK Business Website?</h3><p class="text-white/70 text-lg mb-6">We build sites that rank and convert. Get a quote tailored to your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const goodBusinessWebsiteUK: BlogData = {
@@ -247,3 +249,5 @@ export const goodBusinessWebsiteUKSEO = {
   image: "https://geekonomytech.com/business%20website%20in%20UK/business%20website%20in%20UK%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

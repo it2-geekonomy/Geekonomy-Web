@@ -10,7 +10,7 @@ const howMuchDoesSEOCostInSeattleContent: BlogContentItem[] = [
   p("Seattle businesses that want to improve their online visibility and search engine performance should learn about different SEO services, which come with specific pricing details."),
   p("The article explains Seattle's SEO packages by analyzing the elements that determine SEO rates and showing you which SEO methods will help your business succeed."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Struggling to Understand SEO Pricing in Seattle?</h3><p class="text-white/70 text-lg mb-6">Get clarity on SEO costs and find the right package for your Seattle business. Receive a transparent quote tailored to your needs.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Cost Estimate</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Struggling to Understand SEO Pricing in Seattle?</h3><p class="text-white/70 text-lg mb-6">Get clarity on SEO costs and find the right package for your Seattle business. Receive a transparent quote tailored to your needs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Cost Estimate</a></div>'),
 
   h1("SEO Packages and Costs"),
   img(`${imageDir}/How Much Does SEO Cost in Seattle image2.webp`, "SEO Packages and Costs"),
@@ -193,7 +193,7 @@ const howMuchDoesSEOCostInSeattleContent: BlogContentItem[] = [
   h1("Ready to grow your Seattle traffic?"),
   p('Get in touch with <a href="https://thegeekonomy.com/">The Geekonomy</a> today to find out exactly what SEO strategy and pricing will work best for your business.'),
   
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Seattle Business?</h3><p class="text-white/70 text-lg mb-6">Stop guessing about SEO costs. Get a customized SEO package with transparent pricing that fits your budget and drives real results.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Seattle Business?</h3><p class="text-white/70 text-lg mb-6">Stop guessing about SEO costs. Get a customized SEO package with transparent pricing that fits your budget and drives real results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInSeattle: BlogData = {
@@ -217,3 +217,5 @@ export const howMuchDoesSEOCostInSeattleSEO = {
   image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Seattle/How%20Much%20Does%20SEO%20Cost%20in%20Seattle%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
