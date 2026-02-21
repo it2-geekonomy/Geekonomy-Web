@@ -102,7 +102,7 @@ const seoForStartupsContent: BlogContentItem[] = [
   p("Your internal links will make relevant pages in your site interrelated to add to the architecture of your site and link juice. This facilitates an easy way for search engine crawlers find and index your content."),
   p("A good internal linking strategy improves user experience by providing more resources and information to them and information."),
   p("Internal links also serve to build the relevance and authority of your pages with respect to a certain keyword."),
-  p('A simple but effective means to enhance the overall performance and growth of the SEO of your site and to enhance the organic growth of your site is by incorporating internal linking into <a href="https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic">your SEO strategies</a>.'),
+  p('A simple but effective means to enhance the overall performance and growth of the SEO of your site and to enhance the organic growth of your site is by incorporating internal linking into <a href="https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">your SEO strategies</a>.'),
 
   h1("Building Backlinks: A Key Strategy for SEO Success"),
   img(`${imageDir}/SEO for Startups image5.webp`, "Building Backlinks: A Key Strategy for SEO Success"),
@@ -146,7 +146,7 @@ const seoForStartupsContent: BlogContentItem[] = [
   p("You should consider using an SEO agency or hiring in-house SEO experts to enable you to create and execute your SEO strategies successfully."),
   p("It is necessary to remember that SEO is a long-term investment, and the benefits will multiply with time as you gain power and trust."),
   h2("Monitoring and Adjusting Your SEO Strategies"),
-  p('It is important to keep up with and manage <a href="https://thegeekonomy.com/blog/seo-for-banks-proven-tactics">your SEO tactics</a> to stay afloat and ensure progress in your online presence in the long run.'),
+  p('It is important to keep up with and manage <a href="https://thegeekonomy.com/blog/seo-for-banks-proven-tactics" class="underline text-[#6FAF4E]">your SEO tactics</a> to stay afloat and ensure progress in your online presence in the long run.'),
   p("Monitored the position of your site in search engines (keywords) regularly by using such tools as Semrush."),
   p("You should be able to monitor your organic traffic and conversion rates in order to determine how effectively you are doing in terms of SEO."),
   p("Googling and using the analysis services of Google Analytics and Google Search Console to find out about any technical difficulties or improvements needed in the work on local search."),
@@ -169,7 +169,7 @@ const seoForStartupsContent: BlogContentItem[] = [
   p("Blogs, infographics, and videos are SEO content that will make your startup a leader in the industry, enhancing your visibility in the search engines and real growth without any quick fixes."),
   p("With constant provision of useful SEO content, you can gain a dedicated following, and your organic search framework, thus increasing your SEO success."),
   h2("SEO Tools Every Startup Should Use"),
-  p('In startups, there is a need to maximize the use of SEO resources with few resources, and this is where the <a href="https://thegeekonomy.com/blog/best-tools-for-seo-topical-map-boost-your-seo">appropriate SEO tools</a> come in.'),
+  p('In startups, there is a need to maximize the use of SEO resources with few resources, and this is where the <a href="https://thegeekonomy.com/blog/best-tools-for-seo-topical-map-boost-your-seo" class="underline text-[#6FAF4E]">appropriate SEO tools</a> come in.'),
   p("Google Search Console and Google Analytics are essential to oversee the organic traffic, monitor the ranking of the keywords, and note technical SEO problems."),
   p("The Semrush or Ahrefs tool offers full functionality in the field of keyword search, enabling you to find useful target keywords and competitor strategies."),
   p("To optimize the page and perform an on-page SEO checklist, it is possible to use such tools as Yoast SEO or Surfer SEO."),
@@ -220,8 +220,8 @@ export const seoForStartupsSEO = {
   title: "SEO for Startups: A Step-by-Step Growth Strategy",
   description:
     "Learn how to implement effective SEO strategies for your startup. Discover actionable tips, technical SEO, keyword research, and growth tactics to boost your online presence.",
-  url: "https://geekonomytech.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
-  canonical: "https://geekonomytech.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
-  image: "https://geekonomytech.com/SEO%20for%20Startups/SEO%20for%20Startups%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
+  canonical: "https://thegeekonomy.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
+  image: "https://thegeekonomy.com/SEO%20for%20Startups/SEO%20for%20Startups%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
