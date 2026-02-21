@@ -6,6 +6,7 @@ const coverImage = "/blog image/How to Reduce Website Cost in the UK/How to Redu
 const imageDir = "/blog image/How to Reduce Website Cost in the UK";
 
 const websiteCostUKContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Reduce Your Website Costs?</h3><p class="text-white/70 text-lg mb-6">Get a transparent quote and a plan that keeps costs under control. We build for performance and value.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding What Drives Website Costs in the UK"),
   p("Given the UK mindset on a good website being one of the main necessities for a business, whether one is starting from scratch or well past the start-up phase, it comes as no surprise that costs of web development have been on an open discussion forum, as assumptions can sometimes let the final sum go above the estimated amount."),
   p("This has led to renewed vigor in the question as to how to cut costs while keeping web development effective and worthy."),
@@ -187,7 +188,8 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("Yes — Regular maintenance is key to updates, backups, and security. A traditional maintenance plan in the UK ranges from £30 to £100 per month and prevents expensive future repairs."),
   h3("6. Can I reduce website costs without losing quality?"),
   p("Planned thus, maximizing the use of everything open-source and outsourcing parts of the project rather than the whole. Quality is not always put on the back burner because of reduced cost, but rather the right qualifications should be made."),
-  p('Do you want to decrease your website expenses for the year 2026? Connect with <a href="https://geekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology</a> here and let our experts optimise your website for performance, scalability, and lower long-term costs. <a href="https://geekonomytech.com/contact-us" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('Do you want to decrease your website expenses for the year 2026? Connect with <a href="https://geekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology</a> here and let our experts optimise your website for performance, scalability, and lower long-term costs.'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Lower Your Website Costs?</h3><p class="text-white/70 text-lg mb-6">We help UK businesses build and maintain cost-effective websites. Get a plan that fits your budget.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const websiteCostUK: BlogData = {

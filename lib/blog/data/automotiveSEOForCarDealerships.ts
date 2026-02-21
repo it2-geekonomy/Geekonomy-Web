@@ -6,6 +6,7 @@ const coverImage = "/blog image/SEO for Car Dealerships/SEO for Car Dealerships.
 const imageDir = "/blog image/SEO for Car Dealerships";
 
 const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Leads for Your Car Dealership?</h3><p class="text-white/70 text-lg mb-6">Get automotive SEO built for dealerships. Rank for local and brand searches and fill your pipeline.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Automotive SEO"),
   p("Welcome to the Automotive SEO world!"),
   p("Car dealerships in the competitive environment of the automotive industry have to seize the slightest advantage if they are to survive."),
@@ -123,7 +124,7 @@ const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
   p("Benchmark your SEO performance against the more standard or average levels in the industry to pinpoint where you can do better."),
   p('Keep an eye on your <a href="/blog/how-much-does-seo-cost-in-london" class="underline text-[#6FAF4E]">SEO expenditures regularly</a> and, if necessary, make changes to them to be able to get the highest possible return on investment and get more local customers through effective SEO strategies tailored for local businesses.'),
   p('Ready to boost your car dealership\'s online visibility? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert automotive SEO services to help you rank higher, attract more leads, and increase sales.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Dealership With SEO?</h3><p class="text-white/70 text-lg mb-6">We specialise in automotive and local SEO for car dealers. Get more leads from search.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const automotiveSEOForCarDealerships: BlogData = {

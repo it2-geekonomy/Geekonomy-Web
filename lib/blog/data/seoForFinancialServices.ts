@@ -6,6 +6,7 @@ const coverImage = "/blog image/SEO for Financial Services/SEO for Financial Ser
 const imageDir = "/blog image/SEO for Financial Services";
 
 const seoForFinancialServicesContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Financial Firm to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for financial services. Build trust, rank for high-intent terms, and grow qualified leads.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Financial Services SEO"),
   p('Financial service companies that want to have a strong online presence must prioritize effective SEO as a matter of great importance in this digital era. This piece acts as an SEO manual, drafted to provide the necessary <a href="/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">SEO strategies</a> to financial service firms so that they could appear higher in the search results. We will delve into mastering the intricacies of SEO for the financial sector and using the top practice methods to solve the puzzle of the financial industry and win at SEO from every angle.'),
   h2("What is Financial Services SEO?"),
@@ -71,7 +72,7 @@ const seoForFinancialServicesContent: BlogContentItem[] = [
   list('<ul><li>This will allow you to invest in financial services content and SEO around those keywords.</li><li>If you uncover that there are technical SEO challenges that are affecting the decline of your website\'s SEO for finance ranking, then you should be the one to decide that fixing those issues should be your top priority so as to get an overall SEO performance boost.</li><li>You can not only increase your total performance by financial sector SEO activities but also plan your strategies accordingly.</li></ul>'),
   p("Keeping a well-executed SEO strategy in play, your financial services firm will be able to stay ahead of the competition and achieve its financial goals."),
   p('Need expert SEO for your financial services business? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> specialises in SEO strategies that help financial firms rank higher and grow.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Scale Your Financial Services SEO?</h3><p class="text-white/70 text-lg mb-6">We help financial firms rank for competitive terms. Get a strategy that complies and converts.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForFinancialServices: BlogData = {

@@ -8,6 +8,7 @@ const imageDir = "/blog image/SEO for Architects";
 const seoForArchitectsBestStrategiesContent: BlogContentItem[] = [
   p("Any business would greatly benefit from a strong online presence in today's digital world, and architecture firms offering architecture services are no exception. They need to put in place effective SEO strategies to draw in new clients."),
   p("So, how do you achieve that? The answer lies in Search Engine Optimisation or SEO, which is the tool that helps businesses to be found online. This handbook contains real-life SEO tactics targeted at architects that will be helpful to you in increasing your firm's visibility to the public through the internet, and thus, potential clients will find you."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Architecture Firm to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for architects. Attract more clients searching for architectural services.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO for Architects"),
   h2("What is SEO and Why is it Important for Architects?"),
   p("SEO for architects means optimising an architectural firm's online presence in such a way that the firm will be ranked higher in the lists that search engines produce, Google Search being the most important one. Good SEO is important because most of the potential clients will approach the services of an architect by searching online; thus, SEO becomes a vital part of the total architect marketing plan."),
@@ -113,6 +114,7 @@ const seoForArchitectsBestStrategiesContent: BlogContentItem[] = [
   p("Be aware of the latest SEO modifications and algorithm updates so that you are able to adjust your strategies accordingly."),
   p("A tool like Google Analytics is often recommended by marketing agencies to be used for this purpose."),
   p("If you keep up with the long-term SEO work and you are always tweaking your online presence, then you can enjoy the benefits of continuous growth, and you can stay ahead of the competition in the digital world. Thus, the possibility of finding an architect via the internet will become more convenient for you."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Architecture Firm With SEO?</h3><p class="text-white/70 text-lg mb-6">We help architecture firms rank for the right keywords. Get more client inquiries from search.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForArchitectsBestStrategies: BlogData = {

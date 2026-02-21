@@ -6,6 +6,7 @@ const coverImage = "/blog image/UXUI Design UK/UXUI Design UK main image.webp";
 const imageDir = "/blog image/UXUI Design UK";
 
 const uxUIDesignContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need UX/UI Design That Converts?</h3><p class="text-white/70 text-lg mb-6">Get a website or app that looks great and works for users. We design for clarity and conversion.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("UX/UI Design: Breaking Down the Basics"),
   p("Are you aware that a majority of people would not revisit a site after a negative experience? Nearly 9 out of 10 users quit and never return. Such behaviour is a huge issue for UK businesses, as it can equate to losing both sales and customers."),
   p("The website experience is relevant for any kind of business, whether you run an online shop in Manchester, have a startup in London, or provide a local service in Edinburgh. The right experience will attract and retain customers, while the wrong one will drive them away."),
@@ -448,7 +449,8 @@ const uxUIDesignContent: BlogContentItem[] = [
   p("At last, work on the whole site to ensure that it is consistent and fully optimized,  which might cost from £15,000 to £40,000 or even more."),
   p("Utilising this gradual approach, you get to see the results early and have the opportunity to put in more later without the risk of losing money."),
   p("From wireframes to final design, we've got you covered."),
-  p('Hire <a href="https://geekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology\'s</a> UI/UX experts to create visually stunning and user-focused products. <a href="https://geekonomytech.com/contact-us" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('Hire <a href="https://geekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology\'s</a> UI/UX experts to create visually stunning and user-focused products.'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready for UX/UI That Drives Results?</h3><p class="text-white/70 text-lg mb-6">We design interfaces that users love and that support your business goals. Get a quote today.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const uxUIDesign: BlogData = {

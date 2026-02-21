@@ -9,6 +9,9 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   p("Reveal how to utilize Screaming Frog in SEO on-page to rank your site in search engines with this booklet."),
   p("By harnessing this SEO tool, you can greatly amplify the visibility of your webpage in the search results, which is a win-win situation for both you and the user, as the traffic will increase organically and the user experience will get better."),
   p("Find out practical ways in which the Screaming Frog tool could be employed to carry out in-depth SEO audits and uncover optimisation opportunities."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Uncover SEO Issues on Your Site?</h3><p class="text-white/70 text-lg mb-6">Learn how to use Screaming Frog and other tools to audit your pages, fix issues, and improve rankings. Get expert guidance.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Audit</a></div>'),
+
   h1("Introduction to Screaming Frog"),
   h2("What is Screaming Frog?"),
   p("Screaming Frog SEO Spider is an advanced and flexible SEO tool that can be used to scan websites and collect necessary crawl data."),
@@ -148,6 +151,8 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   p("Then you just go on shifting your SEO strategy as per the bits of information and insight that you get."),
   p("Screaming Frog, used with commitment and grit, is undoubtedly an instrument for turning your site into the ultimate go-to for search engines."),
   p("If you learn how to use Screaming Frog in such a way, you will experience improved on-page seo."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Take Your On-Page SEO to the Next Level?</h3><p class="text-white/70 text-lg mb-6">Our team can help you run technical audits and implement fixes that drive real ranking improvements.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howToUseScreamingFrogToImproveOnPageSEO: BlogData = {

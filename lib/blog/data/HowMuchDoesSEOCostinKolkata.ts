@@ -14,6 +14,8 @@ const seoCostKolkataContent: BlogContentItem[] = [
     p("All businesses, from small startups to large enterprises, need to understand SEO cost details because this knowledge enables them to make better investment choices, which result in higher returns."),
     p("The search engine optimization field requires us to discover effective methods that will help your business gain success against online competitors."),
 
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for Kolkata?</h3><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
     h2("Overview of SEO in Kolkata"),
     h2("What is Search Engine Optimization?"),
     p("You have acquired knowledge through your training, which extends until the month of October in the year 2023."),
@@ -211,6 +213,7 @@ const seoCostKolkataContent: BlogContentItem[] = [
     </a>
   </div>
 `),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in Kolkata?</h3><p class="text-white/70 text-lg mb-6">Get a tailored SEO package and transparent pricing. We help Kolkata businesses rank higher and grow.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 
 ];
 

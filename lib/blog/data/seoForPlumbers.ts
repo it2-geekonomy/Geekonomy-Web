@@ -6,6 +6,7 @@ const coverImage = "/blog image/SEO for Plumbers/SEO for Plumbers main image.web
 const imageDir = "/blog image/SEO for Plumbers";
 
 const seoForPlumbersContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Plumbing Jobs From Search?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for plumbers. Rank for \"plumber near me\" and get more emergency calls.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO for Plumbers"),
   p("It is important for every business to be visible online in this modern world of the internet, a bigness no exception being the plumbing industry. Search engine optimization, or SEO, is the main tool for SEO clients and their plumbers to open up their online potential. This manual explores the most efficient SEO techniques that are the most suitable for a plumber, so that your plumbing business would be the first to come up in the customer's request when he looks for a plumbing service in his area."),
   h2("What is Plumbing SEO?"),
@@ -73,7 +74,7 @@ const seoForPlumbersContent: BlogContentItem[] = [
   p("An efficiently optimized plumbing website is like a power station for all your marketing efforts, it offers up, to, date information, it highlights your services, and it can capture plumbing leads."),
   p("Involving SEO in your marketing plan is like having a well, orchestrated and effective way of getting and keeping local customers, which is the guarantee of the long, term success of your plumbing business in a competitive market."),
   p('Ready to improve your plumbing business\'s online presence? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert <a href="/blog/best-local-seo-strategies-for-general-contractors" class="underline text-[#6FAF4E]">local SEO strategies</a> that can help plumbers rank higher and attract more local customers.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Plumbing Business?</h3><p class="text-white/70 text-lg mb-6">We specialise in local SEO for plumbers. Get more jobs from \"near me\" and local search.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForPlumbers: BlogData = {

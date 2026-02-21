@@ -11,6 +11,8 @@ const technicalSEOContentSEOAuditsContent: BlogContentItem[] = [
   p("We will look at the fundamentals of each audit, showing the pivotal moments that these audits provide in confirming that your website is attaining SEO success through the right use of technical SEO vs content SEO, which is different from content audits that do not take into account technical insights."),
   p("It is necessary to integrate technical SEO and content SEO if one wants to have a complete SEO strategy."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Technical or Content SEO Audit?</h3><p class="text-white/70 text-lg mb-6">Get a full audit that covers both technical health and content. Find issues and opportunities in one place.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding Technical SEO"),
   h2("What is Technical SEO?"),
   p("Technical SEO is basically the process of making a website visually appealing to search engine robots. These search engines should be able to access, index, and understand the site content without any difficulty. This forms the technical foundation on which the rest of the SEO work is based. In addition to that, technical SEO is not only the technical side of the issues; it is also still about enhancing user experience and giving users and search engines access to your site in a straightforward manner."),
@@ -82,7 +84,7 @@ const technicalSEOContentSEOAuditsContent: BlogContentItem[] = [
   p("Integration of technical SEO and content SEO should not be seen only as a strategy but rather as a condition for sustained success in digital marketing."),
   p("Knowing the interrelation between technical and content SEO is very crucial to accomplishing SEO success, especially when we talk about content SEO vs technical SEO."),
   p('Need help with your technical or content SEO audit? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers comprehensive <a href="/blog/carpet-cleaning-seo-services-complete-guide" class="underline text-[#6FAF4E]">SEO services</a> to boost your search performance.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Get a Full Technical & Content SEO Audit</h3><p class="text-white/70 text-lg mb-6">We pinpoint technical issues and content gaps so your site can rank and convert. Transparent reporting and clear next steps.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const technicalSEOContentSEOAudits: BlogData = {

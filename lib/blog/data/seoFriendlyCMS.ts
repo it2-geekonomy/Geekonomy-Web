@@ -8,6 +8,8 @@ const imageDir = "/blog image/10 Best SEO Friendly CMS";
 const seoFriendlyCMSContent: BlogContentItem[] = [
   p("Properly selecting a CMS is a key factor in achieving great SEO results. As the online world keeps on changing, it is still necessary to pick one of the top SEO-friendly CMS platforms if you want to keep your website in good standing with the search engines and improve your SEO. So, which CMS is best for SEO? The answer is the top 10 CMS in 2026 that will be unveiled here. We will help you figure out how to make an educated choice to increase your SEO work."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help Choosing an SEO-Friendly CMS?</h3><p class="text-white/70 text-lg mb-6">Get expert guidance on the best CMS for SEO in 2026. We\'ll help you pick and optimise the right platform.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Introduction to CMS and SEO"),
   h2("What is a CMS?"),
   p("A CMS or Content Management System is essentially a software application that enables users to create, administer, and alter content on a website without the support of a technical expert."),
@@ -106,7 +108,7 @@ const seoFriendlyCMSContent: BlogContentItem[] = [
   p("To achieve the best SEO, a platform with advanced features of SEO and easy integration with other marketing tools is what one ought to consider. In case you are fairly inept when it comes to technology, then ensure user-friendliness and ease of management are your key considerations."),
   p('By pondering over these factors and picking the right CMS for SEO, you will be able to set up a firm base for your <a href="/blog/how-long-does-it-take-for-medical-seo-to-work" class="underline text-[#6FAF4E]">SEO work</a> and achieve long-term success in the digital world where the best CMS for SEO are your goal. Consequently, you ought to select the appropriate CMS.'),
   p('Need help choosing the right CMS for your SEO strategy? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists guide you to the best solution.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise Your CMS for SEO?</h3><p class="text-white/70 text-lg mb-6">Our team can audit your current setup or help you migrate to an SEO-friendly platform. Get more organic traffic.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoFriendlyCMS: BlogData = {

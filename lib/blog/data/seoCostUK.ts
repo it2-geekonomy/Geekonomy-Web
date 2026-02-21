@@ -6,6 +6,7 @@ const coverImage = "/blog image/How Much Does SEO Cost in the UK/How Much Does S
 const imageDir = "/blog image/How Much Does SEO Cost in the UK";
 
 const seoCostUKContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for the UK?</h3><p class="text-white/70 text-lg mb-6">Get a custom SEO quote based on your goals. We deliver clear pricing and strategies that work.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Why SEO Pricing in the UK Varies"),
   p("Search's big marketing investment for UK businesses today is Search Engine Optimization or SEO."),
   p("Whether you're propping up a small local Mancunian business or running an e-commerce operation in London, being visible on Google can affect how many customers find and trust your online business."),
@@ -303,7 +304,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("Cheap SEO commonly proves to be a wrong decision over time. Cheap suppliers often apply black-hat tactics or deliver poor-quality content, which will negatively impact your ranking. Look for value over low price."),
   p('Ready to invest in effective SEO services that will assure returns on investments?'),
   p('Get personal pricing information on SEO services from <a href="https://geekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology</a> that follows a strategy based on your business goals instead of pure guesswork.'),
-  p('<a href="https://geekonomytech.com/contact-us" class="underline text-[#6FAF4E]">Contact Here Today</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in the UK?</h3><p class="text-white/70 text-lg mb-6">We help UK businesses rank and grow. Get a tailored quote and a strategy that fits your budget.</p><a href="/contact-us" class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 ];
 
 export const seoCostUK: BlogData = {
