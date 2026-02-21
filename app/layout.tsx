@@ -6,7 +6,7 @@ import PageContentWrapper from "@/components/shared/PageContentWrapper";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
-// import DisableRightClick from "@/components/shared/DisableRightClick";
+import DisableRightClick from "@/components/shared/DisableRightClick";
 import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
 
@@ -94,7 +94,7 @@ fbq('track', 'PageView');`,
             alt=""
           />
         </noscript>
-        {/* <DisableRightClick /> */}
+        <DisableRightClick />
         <NavbarHeightProvider>
           <MouseLight />
           <Navbar />
