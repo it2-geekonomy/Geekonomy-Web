@@ -6,6 +6,7 @@ const coverImage = "/blog image/Ecommerce Website Development/Ecommerce Website 
 const imageDir = "/blog image/Ecommerce Website Development";
 
 const ecommerceWebsiteDevelopmentContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need an Ecommerce Website That Converts?</h3><p class="text-white/70 text-lg mb-6">Get a custom ecommerce site built for performance and growth. We build stores that rank and sell.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Ecommerce Websites"),
   p('In the current digital era, having a robust online presence is a must for any business to thrive, and an effectively designed e-commerce website is basically what leads the way for the creation of e-commerce platforms. The article goes on to explain how hiring an e-commerce website developer can become your business promoter, with the first-hand knowledge on the necessary factors of a prosperous online store establishment and its upkeep.'),
   h2("What is an Ecommerce website?"),
@@ -76,7 +77,7 @@ const ecommerceWebsiteDevelopmentContent: BlogContentItem[] = [
   p("They should explain their testing and quality assurance procedures upon being asked. They should also be able to tell you about their security measures and how they protect your e-commerce site from cyber threats, thus, allowing for a trusted e-commerce environment, when questioned. Besides, you should be inquiring about the services of the e-commerce agency in terms of the ongoing support and maintenance."),
   p("By asking these questions, you will be able to evaluate their proficiency, communication and interpersonal skills, and the degree of their commitment to providing high-quality e-commerce web design and development services."),
   p('Need expert ecommerce website development to grow your business? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> builds custom ecommerce solutions designed for performance and scalability.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Build or Upgrade Your Online Store?</h3><p class="text-white/70 text-lg mb-6">We build ecommerce sites that rank and convert. Get a solution that scales with your business.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const ecommerceWebsiteDevelopment: BlogData = {
@@ -98,3 +99,5 @@ export const ecommerceWebsiteDevelopmentSEO = {
   image: "https://geekonomytech.com/Ecommerce%20Website%20Development/Ecommerce%20Website%20Development%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

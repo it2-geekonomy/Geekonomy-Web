@@ -9,6 +9,9 @@ const enterpriseSEOAuditsContent: BlogContentItem[] = [
   p("By the time you started reading this guide, you were likely aware that an SEO audit, in its general sense, is insufficient for very large websites; this means adjacent enterprise SEO is not just for basic optimisation."),
   p("The enterprise SEO audit is extensive enough in its processes, designed to discover in-depth-rooted technical SEO problems, optimise content strategies for international SEO, and generally improve your website's overall SEO performance."),
   p("Following them, you would now be prepared, step by step, to execute the most effective enterprise SEO audit to ensure your enterprise site gets maximum visibility and ranking in search results; that is basic old-fashioned SEO style."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need an Enterprise SEO Audit?</h3><p class="text-white/70 text-lg mb-6">Get a comprehensive audit for your large-scale website. Uncover technical issues, content gaps, and opportunities to boost organic traffic and rankings.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Audit</a></div>'),
+
   h1("Understanding Enterprise SEO Audits"),
   h2("What is an Enterprise SEO Audit?"),
   p("An enterprise SEO audit involves evaluating how good an enterprise website's SEO performance is, and that would probably include all aspects of technical SEO, on-page SEO, off-page SEO, and content strategies, which are very important for <a href=\"https://geekonomytech.com/blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer\">large-scale SEO efforts</a>."),
@@ -141,6 +144,8 @@ const enterpriseSEOAuditsContent: BlogContentItem[] = [
   p("You should also consider A/B testing to maximise on-page elements like title tags and meta descriptions."),
   p("Embedded within a culture of continuous improvement will help ensure your enterprise website stays competitive and ranks highly on the search results list, thereby attracting sustained organic traffic and fulfilling business objectives."),
   p("An enterprise SEO consultant can be particularly valuable in these engagements."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise Your Enterprise Site?</h3><p class="text-white/70 text-lg mb-6">Our team delivers in-depth enterprise SEO audits and ongoing optimisation. Get a clear roadmap to higher visibility and sustained organic growth.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Enterprise SEO Plan</a></div>'),
 ];
 
 export const enterpriseSEOAudits: BlogData = {
@@ -164,3 +169,5 @@ export const enterpriseSEOAuditsSEO = {
   image: "https://thegeekonomy.com/blog%20image/Enterprise%20SEO%20Audits/Enterprise%20SEO%20Audits%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

@@ -9,12 +9,15 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   p("Reveal how to utilize Screaming Frog in SEO on-page to rank your site in search engines with this booklet."),
   p("By harnessing this SEO tool, you can greatly amplify the visibility of your webpage in the search results, which is a win-win situation for both you and the user, as the traffic will increase organically and the user experience will get better."),
   p("Find out practical ways in which the Screaming Frog tool could be employed to carry out in-depth SEO audits and uncover optimisation opportunities."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Uncover SEO Issues on Your Site?</h3><p class="text-white/70 text-lg mb-6">Learn how to use Screaming Frog and other tools to audit your pages, fix issues, and improve rankings. Get expert guidance.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Audit</a></div>'),
+
   h1("Introduction to Screaming Frog"),
   h2("What is Screaming Frog?"),
   p("Screaming Frog SEO Spider is an advanced and flexible SEO tool that can be used to scan websites and collect necessary crawl data."),
   p("The tool basically imitates the way a search engine spider works. It goes through the URLs, looks at the page content and checks out other elements for their SEO performance."),
   p("Using Screaming Frog efficiently is a great help to digital marketing professionals and website owners in revealing SEO problems, which are frequently the reasons for their websites ranking low in the search results. Such issues include broken links and duplicate content."),
-  p("Screaming Frog makes the <a href=\"https://geekonomytech.com/blog/how-seo-audit-services-improve-seo\">technical SEO audit process</a> easy and gives the most appropriate data for SEO enhancements."),
+  p("Screaming Frog makes the <a href=\"https://thegeekonomy.com/blog/how-seo-audit-services-improve-seo\" class=\"underline text-[#6FAF4E]\">technical SEO audit process</a> easy and gives the most appropriate data for SEO enhancements."),
   h2("Importance of On-Page SEO"),
   p("On-page SEO plays an important part in elevating a website's position on search engines and drawing in organic traffic."),
   p("Through the optimisation of page titles and meta descriptions, the strengthening of internal linking, and the provision of high-quality page content, website owners are able to very effectively raise their website's visibility in the search results."),
@@ -79,12 +82,12 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   h2("Utilizing Custom Extraction"),
   p("Custom extraction is an advanced feature of Screaming Frog that lets you get specific data from your crawl data, which is not locatable in the default crawl results."),
   p("By employing Screaming Frog, you are able to set up custom extraction to identify the HTML elements, text patterns, or attributes of the web pages of your site."),
-  p("This tool is extremely helpful when you want to collect data like product prices, product descriptions, or some specific pieces of content that are your <a href=\"https://geekonomytech.com/blog/seo-for-architects-best-strategies\">SEO strategy's factors</a>."),
+  p("This tool is extremely helpful when you want to collect data like product prices, product descriptions, or some specific pieces of content that are your <a href=\"https://thegeekonomy.com/blog/seo-for-architects-best-strategies\" class=\"underline text-[#6FAF4E]\">SEO strategy's factors.</a>"),
   p("The custom extraction may go a long way to augment your SEO audit of the site and unearth the optimisation opportunities; the command of such ways of Screaming Frog is indeed strong."),
   h2("Setting Up Scheduled Crawls"),
   p("Scheduled crawls in Screaming Frog enable you to set up a process that automatically scans your site at regular intervals for SEO monitoring. Scheduling the crawls means that you will always be aware of the newest SEO problems and potential areas for optimisation."),
   p("It is possible to set up the schedule via Screaming Frog so that the crawls take place daily, weekly, or monthly, as per your requirement."),
-  p("The feature is great for sites with a lot of content or those that are updated frequently. Scheduled crawls are a great time-saving and convenient tool that helps to keep your <a href=\"https://geekonomytech.com/\">website SEO-friendly</a> through the use of Screaming Frog SEO."),
+  p("The feature is great for sites with a lot of content or those that are updated frequently. Scheduled crawls are a great time-saving and convenient tool that helps to keep your <a href=\"https://thegeekonomy.com/\" class=\"underline text-[#6FAF4E]\">website SEO-friendly</a> through the use of Screaming Frog SEO."),
   h2("Integrating with Google Analytics"),
   p("If you integrate Screaming Frog with Google Analytics, this means that besides the crawl data, you will also have the traffic data of your website, from which you get a more comprehensive understanding of your website's SEO performance."),
   p("Once you link Screaming Frog to your Google Analytics account, you get the opportunity to see very important metrics such as bounce rate, session duration, and conversion rates in addition to your crawl data."),
@@ -103,7 +106,7 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   p("By means of Screaming Frog, you can keep track of your crawl budget through the inspection of the number of pages crawled and the crawl depth."),
   p("By working on your website's layout and internal linking, you can increase your crawl budget and make sure that the search engines' spiders will be able to visit and index all of your important pages, which is made possible by the tool Screaming Frog."),
   h2("Leveraging Internal Linking"),
-  p("Internal linking is one of the best on-page <a href=\"https://geekonomytech.com/blog/seo-for-banks-proven-tactics\">SEO tactics</a>, where you connect one page of your website with another."),
+  p("Internal linking is one of the best on-page <a href=\"https://thegeekonomy.com/blog/seo-for-banks-proven-tactics\" class=\"underline text-[#6FAF4E]\">SEO tactics</a>, where you connect one page of your website with another."),
   p("Internal linking makes it easier for the search engine spiders to know the layout and the different pages of your site, as well as the content."),
   p("Besides that, internal linking can be very helpful to the website visitors as it allows them to easily move from one related page to another."),
   p("Screaming Frog is a tool that helps you look at the different ways your site is internally linked and be able to tell where you have link-building gaps that need filling."),
@@ -138,7 +141,7 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   h2("Future Steps for SEO Improvement"),
   p("After mastering the use of Screaming Frog to enhance on-page SEO, you might want to extend your SEO efforts beyond what they are currently."),
   p("One way to do this is by linking Screaming Frog with Google Analytics and Google Search Console, which will allow you to get more detailed insights into how your website is performing."),
-  p("Explore the <a href=\"https://geekonomytech.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic\">next-level SEO strategies</a>, such as schema markup and structured data, that help in making your site very friendly to search engines."),
+  p("Explore the <a href=\"https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic\" class=\"underline text-[#6FAF4E]\">next-level SEO strategies</a>, such as schema markup and structured data, that help in making your site very friendly to search engines."),
   p("Keep yourself always up-to-date with SEO trends and best practices, and keep checking the performance of your site regularly by using Screaming Frog so that you know where you can make improvements."),
   p("Next-level SEO optimisations cover only a small part of the accurate identification of the most frequent SEO issues, just to name a few."),
   h2("Encouragement to Utilize Screaming Frog"),
@@ -148,6 +151,8 @@ const howToUseScreamingFrogToImproveOnPageSEOContent: BlogContentItem[] = [
   p("Then you just go on shifting your SEO strategy as per the bits of information and insight that you get."),
   p("Screaming Frog, used with commitment and grit, is undoubtedly an instrument for turning your site into the ultimate go-to for search engines."),
   p("If you learn how to use Screaming Frog in such a way, you will experience improved on-page seo."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Take Your On-Page SEO to the Next Level?</h3><p class="text-white/70 text-lg mb-6">Our team can help you run technical audits and implement fixes that drive real ranking improvements.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howToUseScreamingFrogToImproveOnPageSEO: BlogData = {
@@ -171,3 +176,5 @@ export const howToUseScreamingFrogToImproveOnPageSEOSEO = {
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Use%20Screaming%20Frog%20to%20Improve%20On-Page%20SEO/How%20to%20Use%20Screaming%20Frog%20to%20Improve%20On-Page%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

@@ -8,6 +8,7 @@ const imageDir = "/blog image/Best Cleaning Service SEO";
 const bestCleaningServiceSEOStrategiesContent: BlogContentItem[] = [
   p("Being at the top of search engine results is extremely important for a cleaning business to attract new clients and to grow its business through the use of proper keywords in a competitive cleaning industry. The year 2026 is just around the corner, and for a cleaning company that aims to increase its local online presence and get more bookings, the implementation of SEO strategies is still the key to success."),
   p("In fact, the whole article is devoted to the best SEO tactics that could bring a cleaning service business to the next level of online visibility and allow it to outrank its competitors and reach its target audience."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Bookings for Your Cleaning Business?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for cleaning companies. Rank for \"cleaning near me\" and get more jobs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO for Cleaning Companies"),
   h2("What is SEO and Why is it Important for Cleaning Businesses?"),
   p("Search Engine Optimisation or SEO is the process of making your web content more attractive to search engines such as Google, which will result in a higher ranking, giving more visibility to your business online, whereby people looking for cleaning services during business hours will easily find you. SEO is a lifeline to your cleaning business because it leads your business to appear in search results when potential clients are looking for cleaning services that you provide, like house cleaning, office cleaning, or deep cleaning."),
@@ -70,6 +71,7 @@ const bestCleaningServiceSEOStrategiesContent: BlogContentItem[] = [
   h2("Preparing Your Cleaning Business for SEO in 2026"),
   img(`${imageDir}/Best Cleaning Service SEO image4.webp`, "Preparing Your Cleaning Business for SEO in 2026"),
   p("Cleaning businesses in different locations still need to put on their brave face and try to update local SEO rankings. Keyword research is the basis of any good initiative, so it has to be conducted all the time, and the best keywords have to be identified in order to optimise them. SEO tactics and keywords have to be used not only to the benefit of your business but also those of your customers. Make sure that quality content is produced and media are invested in in order to attract more customers to the cleaning industry and eventually to grow your cleaning business. Revise your strategy by mixing local SEO and SEO in general, and add some keywords relevant to your industry. By optimising your Google My Business profile and gaining more local citations, you will be able to enhance your presence in the local SEO environment. Stay updated with the latest SEO strategies and changes regarding the SEO algorithm if you want to stay on top as a cleaning service. You will be able to increase your local awareness and attract the right kind of traffic to your site if you plan wisely."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Cleaning Business With SEO?</h3><p class="text-white/70 text-lg mb-6">We specialise in local SEO for cleaning companies. Get more bookings from local search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const bestCleaningServiceSEOStrategies: BlogData = {
@@ -92,3 +94,5 @@ export const bestCleaningServiceSEOStrategiesSEO = {
   image: "https://geekonomytech.com/Best%20Cleaning%20Service%20SEO/Best%20Cleaning%20Service%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

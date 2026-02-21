@@ -6,6 +6,7 @@ const coverImage = "/blog image/Nursing Homes SEO Company/Nursing Homes SEO Comp
 const imageDir = "/blog image/Nursing Homes SEO Company";
 
 const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Inquiries for Your Nursing Home?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for senior living and care. Rank for local and family searches and fill more beds.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO Services for Nursing Homes"),
   p("In the digital world that is constantly changing, nursing homes need a strong online presence to be able to attract new residents and stay profitable. This article explains how a specialised nursing home SEO company, which is a company that specialises in the optimisation of websites for senior living clients, can implement effective SEO strategies to significantly boost your online marketing efforts."),
   p("Learn how search engine optimisation, specifically designed for senior living clients. Search is a vital tool for senior living facilities to employ effective strategies to raise their online presence. Digital marketing strategies' success can be greatly influenced by the increase in visibility in search engine results. Lead generation becomes more and more important for healthcare providers if they want to stay competitive in the market."),
@@ -83,6 +84,7 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("Make money from a constant education program for your marketing experts who work inside your company."),
   p("Healthcare providers can help you in this work if you go with them to a digital marketing agency, and you may also benefit from the expertise of a senior living SEO company that is always innovative."),
   p("It is most important to produce premium, informative, and user-friendly content that directly delivers what potential residents and their families are looking for and what they worry about. By implementing a content strategy that is proactive and flexible, you can raise the content level of your facility. Health care facilities will be able to keep their online presence strong and effective amidst the changes of the digital world, which is a big plus in their ranking for the searches that are related and also a big visibility push through the most efficient SEO tactics. Lead generation."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Nursing Home With SEO?</h3><p class="text-white/70 text-lg mb-6">We specialise in SEO for senior living and care. Get more inquiries from families searching online.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const nursingHomesSEOCompany: BlogData = {
@@ -104,3 +106,5 @@ export const nursingHomesSEOCompanySEO = {
   image: "https://geekonomytech.com/blog%20image/Nursing%20Homes%20SEO%20Company/Nursing%20Homes%20SEO%20Company%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

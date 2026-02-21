@@ -6,6 +6,7 @@ const coverImage = "/blog image/seo with AI/seo with AI main image.webp";
 const imageDir = "/blog image/seo with AI";
 
 const seoWithAIContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want SEO That Works With AI?</h3><p class="text-white/70 text-lg mb-6">Get a strategy that combines core SEO and AI-ready optimisation. We help you rank today and adapt for tomorrow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO Fundamentals"),
   p('With the rise of AI, search engine optimisation (SEO) that used to be about keywords and backlinks is not that simple anymore. Basically, artificial intelligence has changed the way search engines work, and thus, the whole SEO scenario came to be different. Knowing the basics of SEO is still very important, but it is also necessary to know how to use AI with SEO for a higher presence and long-term success. The present article discusses the basic components of <a href="/blog/best-practices-for-seo-enhancing-ai-visibility" class="underline text-[#6FAF4E]">SEO in the time of AI</a> and gives ideas about the adjustment of business strategies to the new environment with AI, powered by SEO, for their survival and success.'),
   h2("What is SEO?"),
@@ -76,7 +77,7 @@ const seoWithAIContent: BlogContentItem[] = [
   p("In what way are AI and search connected, because AI is changing the way search engines rank content? Will allow search engines to comprehend and rank content even better based on quality, relevance, and user experience. By incorporating AI into SEO tactics, one can still reap the SEO benefits of the long term through creative strategies and the use of core SEO principles."),
   p("AI is an excellent tool that will help to enhance SEO strategies and thus increase one's presence and achievements in the constantly changing digital world. AI is going to be the key that will open new doors of opportunities for brands to interact with their target markets and offer them amazing online experiences. The fundamental aspects of SEO need to be AI, AI-integrated for better results. Must represent the centre of any plan that is driven by AI."),
   p('Want to leverage AI for your SEO strategy? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> can help you build a future-proof SEO plan powered by AI.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Combine SEO and AI?</h3><p class="text-white/70 text-lg mb-6">We help you build a strategy that ranks now and adapts to AI search. Get a plan that lasts.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const seoWithAI: BlogData = {
@@ -98,3 +99,5 @@ export const seoWithAISEO = {
   image: "https://geekonomytech.com/seo%20with%20AI/seo%20with%20AI%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

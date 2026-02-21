@@ -10,6 +10,8 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("The guide will be used to offer clarity on the pricing of SEO in Manchester so that businesses can make informed decisions regarding their investment in digital marketing."),
   p("We will discuss the different considerations that affect SEO prices, compare the Manchester SEO services, and the common pricing frameworks of SEO services, so that you can identify the appropriate SEO solutions for your business requirements."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing for Your Manchester Business?</h3><p class="text-white/70 text-lg mb-6">Get a customized SEO quote tailored to your business needs. Understand exactly what you\'ll pay and what results you can expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
+
   h1("Understanding SEO Costs in Manchester"),
   img(`${imageDir}/How Much Does SEO Cost in Manchester image2.webp`, "Understanding SEO Costs in Manchester"),
   p("Discussions on the prices of SEO in Manchester are critical; it is imperative to appreciate that SEO is a long-term commitment, and there is no blanket solution."),
@@ -106,7 +108,7 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("In case you are thinking of an SEO agency in Manchester, ensure that it is compatible with your requirements. seo company in manchester request years of experience in SEO."),
   p("This makes sure that the seo company has been in the SEO industry for years, targeting manchester based clients. The UK of the Manchester area."),
   h2("Getting in Touch with Local SEO Agencies"),
-  p('To connect with <a href="https://thegeekonomy.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer">the local SEO agencies</a>, begin by doing some online research and finding a number of SEO candidates who are capable of making your business grow.'),
+  p('To connect with <a href="https://thegeekonomy.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer" class="underline text-[#6FAF4E]">the local SEO agencies</a>, begin by doing some online research and finding a number of SEO candidates who are capable of making your business grow.'),
   p("Go to their websites and get to know more about their services, their staff, and the list of their clients, especially those manchester based agencies. There are several seo agencies in Manchester to assist businesses in improving their performance online."),
   p("that provide free seo audit to determine the level of performance of your website and where improvements can be made to increase traffic to your business, which in this case, is the manchester based businesses. Use such offers and learn more valuable information, and obtain an idea about the experience of the agency."),
   p("After shortening your list, contact us and plan your consultations, and talk about your particular needs in SEO support and expectations."),
@@ -124,7 +126,7 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("In addition, local SEO involves the control of online reviews and the correct listing of businesses on different platforms."),
   p("SEO agencies in Manchester could assist the companies in improving their ranking within the search results and gain more local traffic by adjusting the SEO strategies to the specifics of the local business."),
   h2("Importance of Keyword Research"),
-  p('<a href="https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic">The success of any SEO strategy</a>, and in particular of SEO marketing in Manchester, is based on keyword research. When trying to identify the appropriate SEO agency, it can also be done by examining their knowledge in the execution of the SEO strategies.'),
+  p('<a href="https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">The success of any SEO strategy</a>, and in particular of SEO marketing in Manchester, is based on keyword research. When trying to identify the appropriate SEO agency, it can also be done by examining their knowledge in the execution of the SEO strategies.'),
   p("Keywords that your target market is using in identifying your products or services are important to manchester based marketing strategies. Bring traffic to your new site."),
   p("The search engine optimization analysis of SEO firms in Manchester assists in the discovery of undiscovered keywords that the competitors may be missing."),
   p("The effective search of the keywords must take into account both the high volume of the key words but also the requirements of the Manchester businesses to improve the traffic to your site in Manchester to help your search engine ranking."),
@@ -154,7 +156,7 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("SEO activities that do not break the bank, particularly when hiring a trusted SEO agency."),
   p("Google Analytics and Google Search Console are useful in understanding the traffic of the websites, the performance of the keywords, and the technical troubles."),
   p("The tools available in the market to conduct keyword research are Google Keyword Planner and Ubersuggest, which can assist you in finding some pertinent keywords to enhance your ranking in the search engine in Manchester. Keywords for your business in Manchester."),
-  p('Also, there are plenty of technical fixes that can help you improve your SEO activities. free <a href="https://thegeekonomy.com/blog/enterprise-seo-audits-complete-guide-for-large-websites">SEO audit tools</a> which can analyse your on-page and technical SEO.'),
+  p('Also, there are plenty of technical fixes that can help you improve your SEO activities. free <a href="https://thegeekonomy.com/blog/enterprise-seo-audits-complete-guide-for-large-websites" class="underline text-[#6FAF4E]">SEO audit tools</a> which can analyse your on-page and technical SEO.'),
   p("Such online sources as the Google SEO Starter Guide or the Moz Blog are inappropriate sources of information and advice on the best practices in SEO."),
   p("Through these technical solutions, you will be able to substantially improve your SEO activity. free SEO tools and resources, small businesses in Manchester may have a better insight into their SEO performance and make evidence-based choices that would drive more people to their site. ranking in search engines."),
   p("This makes it have a superior user experience."),
@@ -171,7 +173,8 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("The SEO firm of your choice has years of experience in SEO."),
   p("The SEO methods that we create specifically for your business needs will increase your website traffic and generate more leads while driving business expansion."),
   p('<a href="https://thegeekonomy.com/">The Geekonomy</a> will assist your company in achieving search engine supremacy throughout 2026.'),
-  p('<a href="/contact-us">Contact Here</a>'),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Manchester Business?</h3><p class="text-white/70 text-lg mb-6">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInManchester: BlogData = {
@@ -190,8 +193,10 @@ export const howMuchDoesSEOCostInManchesterSEO = {
   title: "How Much Does SEO Cost in Manchester | 2026 Guide",
   description:
     "Discover SEO pricing and costs for Manchester businesses. Learn about packages to boost your online visibility and rankings.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-manchester",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-manchester",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20Manchester/How%20Much%20Does%20SEO%20Cost%20in%20Manchester%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-manchester",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-manchester",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Manchester/How%20Much%20Does%20SEO%20Cost%20in%20Manchester%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

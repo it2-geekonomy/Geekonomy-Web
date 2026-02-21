@@ -9,6 +9,8 @@ const wordPressSEOOxfordshireContent: BlogContentItem[] = [
   p("SEO or search engine optimisation is a must if a business wants to survive in today's cut-throat, competitive online world, and the same goes for businesses in Oxfordshire. This comprehensive guide offers practical steps to accomplish the same using WordPress SEO locally in Oxfordshire, so that not only is your site seen by a large number of people, but also those who are most likely to be interested in what you have to offer are the ones to come across it."),
   p("By using locally targeted SEO strategies, you can broaden your reach and attract more visitors who convert into loyal customers without having to spend money on paid advertisements."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Better WordPress SEO in Oxfordshire?</h3><p class="text-white/70 text-lg mb-6">Get WordPress and local SEO built for Oxfordshire. Rank higher and attract more local customers.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding SEO and Its Importance for Oxfordshire Businesses"),
   h2("What is SEO?"),
   p("SEO is an acronym for search engine optimisation, and it refers to the process through which a site is improved to get a better position in the results of searches performed on search engines like Google. Proper SEO means using different methods, which include finding the right keywords, optimising the content of the page, and link building. All these are aimed at making a website more visible and relevant, especially for e-commerce sites."),
@@ -100,7 +102,7 @@ const wordPressSEOOxfordshireContent: BlogContentItem[] = [
   h2("8. How often should I update my WordPress site for SEO?"),
   p("At least once every month, you are required to update the content of your website and perform plugin or theme updates every week. Content that is regularly refreshed informs Google that your business is alive and well, whereas a site that is frequently updated from a technical standpoint is secure, fast, and SEO-friendly."),
   p('Want to improve your WordPress SEO in Oxfordshire? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert <a href="/blog/carpet-cleaning-seo-services-complete-guide" class="underline text-[#6FAF4E]">SEO services</a> to help your business grow.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow With WordPress SEO?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in WordPress and local SEO for Oxfordshire. Get more visibility and more leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const wordPressSEOOxfordshire: BlogData = {
@@ -122,3 +124,5 @@ export const wordPressSEOOxfordshireSEO = {
   image: "https://geekonomytech.com/How to Improve WordPress SEO for Oxfordshire Sites/SEO for Oxfordshire Sites main image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

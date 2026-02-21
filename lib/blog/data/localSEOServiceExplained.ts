@@ -6,6 +6,7 @@ const coverImage = "/blog image/Local SEO Service Explained/Local SEO Service Ex
 const imageDir = "/blog image/Local SEO Service Explained";
 
 const localSEOServiceGuideContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Dominate Local Search?</h3><p class="text-white/70 text-lg mb-6">Get local SEO that gets you found. Rank for \"near me\" and attract more local customers.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Local SEO Service"),
   p("In the present digital era, it is very important to have a robust online presence for any business, which is particularly true for businesses that are locally oriented. The intention behind this manual is to explain what local SEO means in detail, why it is important, and how it could be a source of success for small local businesses. Knowing the ins and outs of local search engine optimisation is the best way to get hold of more local customers and increase your presence in your locality."),
   h2("What is Local SEO?"),
@@ -82,7 +83,7 @@ const localSEOServiceGuideContent: BlogContentItem[] = [
   p("Employing different tools to track your local citations, as well as pinpointing opportunities for local SEO, is another step in the local process of SEO."),
   p("In this way, you will be able to keep on refining your local SEO service and also make sure that it provides you with results that can be measured."),
   p('Ready to improve your local search visibility? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert local SEO services to help your business rank higher in local search results and attract more local customers.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow With Local SEO?</h3><p class="text-white/70 text-lg mb-6">We help local businesses rank and get found. Get a strategy that brings in more local leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const localSEOServiceExplained: BlogData = {
@@ -104,3 +105,5 @@ export const localSEOServiceExplainedSEO = {
   image: "https://geekonomytech.com/Local%20SEO%20Service%20Explained/Local%20SEO%20Service%20Explained.main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

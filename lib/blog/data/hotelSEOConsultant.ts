@@ -6,6 +6,7 @@ const coverImage = "/blog image/Hotel SEO Consultant/Hotel SEO Consultant .webp"
 const imageDir = "/blog image/Hotel SEO Consultant";
 
 const hotelSEOConsultantContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Direct Hotel Bookings?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for hotels. Rank for \"hotel near me\" and reduce reliance on OTAs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Hotel SEO Services"),
   p("In the equally tough hospitality industry, hotels that want to be noticed by potential guests and secure direct bookings must have a strong online presence. The hotel SEO services are the answer as they come with advanced tools and strategies that make your hotel appear more in the search engine results. As a matter of fact, a proficient SEO hotel agency through improving your digital footprint might be able to bring a great deal of unpaid visitors to your site, which is a win-win situation resulting in more money flow, and also creating brand loyalty with the help of a well-executed hotel SEO strategy."),
   p("Why not dig into the details and figure out how top-level SEO professionals can do the magic to help your hotel get to the first position on search engines?"),
@@ -81,7 +82,7 @@ const hotelSEOConsultantContent: BlogContentItem[] = [
   h2("10. Does SEO work for international travelers?"),
   p("Yes, hotels can definitely benefit from multilingual SEO and location-based content as they become more visible to international visitors who extensively research online before their trips, leading to higher bookings, better worldwide exposure, and making it possible for the hotel to be found by travelers using different languages and coming from various areas."),
   p('Looking for expert hotel SEO services? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> specializes in <a href="/blog/local-seo-for-hotels-boost-visibility" class="underline text-[#6FAF4E]">local SEO for hotels</a> to help you rank higher and increase direct bookings.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Fill More Rooms From Search?</h3><p class="text-white/70 text-lg mb-6">We specialise in hotel and accommodation SEO. Get more direct bookings and better visibility.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const hotelSEOConsultant: BlogData = {
@@ -103,3 +104,5 @@ export const hotelSEOConsultantSEO = {
   image: "https://geekonomytech.com/Hotel%20SEO%20Consultant/Hotel%20SEO%20Consultant%20.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
