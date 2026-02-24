@@ -92,10 +92,10 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p("Updating posts on your profile regularly and replying to reviews quickly will help you to attract and retain clients and agents."),
   p("Then, do keyword research to find the customer language that will bring you. Clients searching for home inspection services in their area are essentially looking for the top digital marketing strategies."),
   p("Use these keywords in a natural manner in the content of your website, meta descriptions, and image alt tags. After that, if you wish to become recognised as a home inspector that people can trust, then focus on obtaining online reviews."),
+  p('Want to grow your home inspection business online? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists create a strategy tailored to your needs.'),
   p("Your site can be accessed from mobile devices, and it is loading quickly, which are some of the vital factors considered by search engines when ranking web pages."),
   p("As a real estate agent, you may also want to consider referrals to increase your visibility as a home inspector. Get quality backlinks from trusted websites, either in your industry or local area."),
   p("Committing to these SEO tasks regularly will help you improve your search engine rankings, draw more organic traffic to your site, and, eventually, expand your home inspection business."),
-  p('Want to grow your home inspection business online? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists create a strategy tailored to your needs.'),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Home Inspection Business?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for home inspectors. Get more leads and appointments from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 

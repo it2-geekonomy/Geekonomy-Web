@@ -6,10 +6,11 @@ const coverImage = "/blog image/Local SEO for Hotels/SEO for Hotels main image.w
 const imageDir = "/blog image/Local SEO for Hotels";
 
 const localSEOForHotelsContent: BlogContentItem[] = [
+  p("Welcome to your ultimate local SEO guide for hotels! In the modern world of the internet, making sure that your hotel is visible online is very important. Local SEO is not only a word used in passing; it is essential if you want to increase the number of direct bookings and also to get new customers who are looking for a place to stay in your locality. We shall explore effective local SEO tactics that you can use to lift your hotel's presence on the web."),
+
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Direct Hotel Bookings?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for hotels. Rank for \"hotel near me\" and reduce reliance on OTAs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Local SEO for Hotels"),
-  p("Welcome to your ultimate local SEO guide for hotels! In the modern world of the internet, making sure that your hotel is visible online is very important. Local SEO is not only a word used in passing; it is essential if you want to increase the number of direct bookings and also to get new customers who are looking for a place to stay in your locality. We shall explore effective local SEO tactics that you can use to lift your hotel's presence on the web."),
   h2("What is Local SEO?"),
   p('Local SEO, or local search engine optimisation, is all about making your online presence attractive to local customers. It involves ensuring that your business profile on Google Search is not only complete but also visually appealing. In contrast to traditional SEO methods, which aim at a larger audience, local SEO techniques are used to attract customers who are looking for specific services such as "pet-friendly hotels."'),
   p("Local SEO is all about satisfying the local intent; thus, it is a great tool for local businesses like your hotel to gain more visibility in local search results."),
@@ -84,7 +85,6 @@ const localSEOForHotelsContent: BlogContentItem[] = [
   p("Keep an eye on your keyword ranking all the time and make changes to your SEO if that is the case. Your hotel website has to be mobile-friendly and offer a smooth booking process to potential guests."),
   p("Get local backlinks of good quality from trusted websites in your area so that you can raise your business profile on Google Search and become more credible. Negative reviews that any hotel receives should be dealt with quickly and courteously in order to keep up a positive online reputation."),
   p("By implementing these insider tips, hotels will be able to keep their positioning in local search and continue to get new potential guests, thus increasing their direct bookings."),
-  p('Want to boost your hotel\'s local SEO and drive more direct bookings? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> can help you dominate local search results with a tailored <a href="/blog/seo-strategy-funnel" class="underline text-[#6FAF4E]">SEO strategy</a>.'),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Fill More Rooms From Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in hotel and accommodation SEO. Get more direct bookings and better visibility.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
