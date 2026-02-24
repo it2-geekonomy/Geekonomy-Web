@@ -155,7 +155,7 @@ const seoCostChennaiContent: BlogContentItem[] = [
     p("Open and transparent pricing policies and structures are very important; startups must be very clear on what is being offered in terms of service packages and what parameters would be used to monitor their progress."),
     p("Although on a small scale, any investment made into affordably priced SEO packages would build a solid structure that would greatly contribute to startups in Chennai attaining long-term online success and gradually making it to the top ranks."),
     p("An apt plan for SEO could create good ROI to the benefit of your business."),
-    p('<a href="https://geekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology</a> can be your partner through the right SEO package, perfect for your business to enhance your rankings, traffic, and even leads.'),
+    p('<a href="https://thegeekonomytech.com/" class="underline text-[#6FAF4E]">Geekonomy Technology</a> can be your partner through the right SEO package, perfect for your business to enhance your rankings, traffic, and even leads.'),
 
 
     h2("SEO Services Cost in India – Tier 1 Cities"),
