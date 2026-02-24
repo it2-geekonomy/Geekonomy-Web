@@ -11,6 +11,8 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p('This post is going to be the <a href="/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">best SEO strategies</a> that are most beneficial to home inspectors, thus enabling you to increase your business via the Internet and get more jobs. Some of the essential points we will discuss are the significance of local service ads and good SEO work for home inspectors.'),
   list('<ul><li>Knowing the fundamentals of SEO.</li><li>Use sophisticated strategies to increase your visibility in the search results.</li><li>If you are a newbie or an experienced professional willing to polish your existing strategy, this manual will equip you with the necessary know-how and instruments for your success.</li></ul>'),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Home Inspection Jobs From Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for home inspectors. Rank for \"home inspector near me\" and book more inspections.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding SEO for Home Inspectors"),
   h2("What is SEO and Why It Matters for Home Inspectors"),
   p("SEO, or search engine optimisation, is a set of actions aimed at making a website and any other online resource be ranked higher in a search engine results, e.g., Google Search. It is basically the way to help potential customers quickly locate the home inspection business in the area that the customers are in, by just typing the keywords related to the services requested."),
@@ -94,7 +96,7 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p("As a real estate agent, you may also want to consider referrals to increase your visibility as a home inspector. Get quality backlinks from trusted websites, either in your industry or local area."),
   p("Committing to these SEO tasks regularly will help you improve your search engine rankings, draw more organic traffic to your site, and, eventually, expand your home inspection business."),
   p('Want to grow your home inspection business online? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists create a strategy tailored to your needs.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Home Inspection Business?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for home inspectors. Get more leads and appointments from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForHomeInspectors: BlogData = {
@@ -116,3 +118,5 @@ export const seoForHomeInspectorsSEO = {
   image: "https://geekonomytech.com/SEO%20for%20Home%20Inspectors%20Business/SEO%20for%20Home%20Inspectors%20Business%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

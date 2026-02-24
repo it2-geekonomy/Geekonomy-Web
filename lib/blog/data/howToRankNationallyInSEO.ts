@@ -8,6 +8,9 @@ const imageDir = "/blog image/How to Rank Nationally in SEO";
 const howToRankNationallyInSEOContent: BlogContentItem[] = [
   p("A person needs to understand completely what search engine optimisation is if they want to succeed with SEO on a national level. This detailed strategy manual comprises the essentials for attaining a national SEO ranking, which, in turn, makes your business grow and allows you to get more visibility in the national search results while at the same time working out how to rank nationally."),
   p("Whether you are a local business looking to expand your audience nationally or a digital marketing agency that creates national SEO campaigns, it is still necessary to know these techniques if you want to be able to get a ranking at the national level and serve the local customers."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Rank Nationally?</h3><p class="text-white/70 text-lg mb-6">Get a national SEO strategy tailored to your business. Expand your reach, capture nationwide search demand, and grow organic traffic.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free National SEO Plan</a></div>'),
+
   h1("Understanding National SEO"),
   h2("What is National SEO?"),
   p("National SEO is basically the effort of working on your website in such a manner that it comes at the top of the national search results and thereby increases its visibility at the national level."),
@@ -101,6 +104,8 @@ const howToRankNationallyInSEOContent: BlogContentItem[] = [
   p("The SEO world is always changing, as Google keeps updating its search engine algorithms and ranking factors on a regular basis; it is quite necessary to be up-to-date all the time."),
   p("If you desire to be on top of the SEO game, you have to keep on tracking your SEO results, reviewing the data coming from the different analytics tools, and also be aware of the latest national search trends."),
   p("Change your link-building, content, and technical SEO operations from these sources in such a way that you are always one step ahead of your competitors and keep your national-level rankings in SEO."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Dominate National Search Results?</h3><p class="text-white/70 text-lg mb-6">Our team builds national SEO campaigns that drive visibility and traffic across the country. Get a custom strategy and ongoing support.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howToRankNationallyInSEO: BlogData = {
@@ -124,3 +129,5 @@ export const howToRankNationallyInSEOSEO = {
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Rank%20Nationally%20in%20SEO/How%20to%20Rank%20Nationally%20in%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

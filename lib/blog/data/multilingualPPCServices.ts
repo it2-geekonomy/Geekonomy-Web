@@ -6,6 +6,7 @@ const coverImage = "/blog image/Multilingual PPC Services/Multilingual PPC Servi
 const imageDir = "/blog image/Multilingual PPC Services";
 
 const multilingualPPCServicesContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want to Reach International Audiences With PPC?</h3><p class="text-white/70 text-lg mb-6">Get multilingual PPC that converts. We run campaigns in your target languages and markets.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Multilingual PPC Services"),
   p("Nonetheless companies are no longer restricted to a site. Thanks to the internet they can connect with individuals. Therefore new markets, for growth can be identified in any place provided the language used to engage customers is clearly defined. However here's the challenge: to truly connect with your audience and make an impression simply translating your advertisements won't suffice. You need to use the language of your audience. That's when multilingual PPC services and relevant keyword research come in. They assist in developing localized campaigns for each geographical market to ensure that the advertisements have relevance to the target audience. By setting up bid strategies and focusing on ad campaigns, one can optimize not just their reach but also their reach of the target audience. That's how you get 'return' from your PPC (pay-per-click) investments."),
   h2("Definition and Importance of Multilingual PPC"),
@@ -74,7 +75,7 @@ const multilingualPPCServicesContent: BlogContentItem[] = [
   p("Strategic PPC consulting is what you need when you are getting ready for global growth. A multilingual PPC agency can be that expert guide who will show you the right way of extending your PPC advertising to new market. PPC specialists will review your current PPC strategies and find the areas where you can make improvements. In addition to that, they will perform exhaustive keyword research and prepare your ad copy and landing page in such a way that the local people feel it is meant for them. Apart from that, they will be there for you whenever you need their help and they will also be a great source of insight to keep your Google Ads campaigns up to the mark."),
   p("In order for your multilingual Google Ads to be effective, you must take into account the cultural differences and how they influence your products or services. A multilingual PPC service is a great way to ensure that you are getting the best return on your investment. When you employ PPC consulting, you can take on the challenge of international paid search with ease and confidence. If you use PPC ads in an effective way, then it is possible for you to have a steady growth in international markets which is actually what global growth is all about."),
   p('Ready to expand globally with multilingual PPC? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert multilingual PPC services to help you reach international audiences and boost conversions.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Go Global With PPC?</h3><p class="text-white/70 text-lg mb-6">We run multilingual campaigns that convert. Get a strategy for your target markets.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const multilingualPPCServices: BlogData = {
@@ -96,3 +97,5 @@ export const multilingualPPCServicesSEO = {
   image: "https://geekonomytech.com/Multilingual%20PPC%20Services/Multilingual%20PPC%20Services%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

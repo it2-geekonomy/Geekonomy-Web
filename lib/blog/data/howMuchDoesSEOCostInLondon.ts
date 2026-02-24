@@ -9,6 +9,8 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   p("The world of search engine optimisation in a competitive market such as London can be tricky to survive in."),
   p("It is also important to comprehend the factors that affect the cost of SEO and the various pricing models that are provided to the business in order to enhance their presence online and gain a good return on the investment."),
 
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Struggling to Understand SEO Pricing in London?</h3><p class="text-white/70 text-lg mb-6">Get clarity on SEO costs and find the right package for your London business. Receive a transparent quote tailored to your needs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Cost Estimate</a></div>'),
+
   h1("Understanding SEO Costs"),
   h1("What Drives SEO Pricing?"),
   p("There are a number of forces that influence the cost of SEO. These are strategies such as PPC, content marketing, and technical SEO."),
@@ -18,7 +20,7 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   img(`${imageDir}/How Much Does SEO Cost in London image2.webp`, "SEO Packages Pricing in London"),
   p("Various models of SEO pricing are used according to the business needs and budgets, with the availability of PPC and local SEO models."),
   p("The knowledge of these pricing models will assist the UK clients in selecting the best, based on their SEO requirements in London. Some common models include:"),
-  list('<table class="w-full border-collapse border border-gray-700 mt-4 mb-4"><thead><tr class="bg-gray-800"><th class="border border-gray-700 p-3 text-left">SEO Package</th><th class="border border-gray-700 p-3 text-left">Price Range (Monthly)</th><th class="border border-gray-700 p-3 text-left">Who It\'s For</th></tr></thead><tbody><tr><td class="border border-gray-700 p-3">Small Business SEO</td><td class="border border-gray-700 p-3">£397 - £1,589</td><td class="border border-gray-700 p-3">This is suitable for start-ups, local businesses, or small organisations that just need to establish themselves on the internet.</td></tr><tr><td class="border border-gray-700 p-3">Local SEO</td><td class="border border-gray-700 p-3">£595 - £2,383</td><td class="border border-gray-700 p-3">This is best suited to a brick-and-mortar store, service provider, or a professional with a local customer base.</td></tr><tr><td class="border border-gray-700 p-3"><a href="https://thegeekonomy.com/blog/how-to-choose-the-best-ecommerce-seo-company">eCommerce SEO</a></td><td class="border border-gray-700 p-3">£1,191 - £3,972</td><td class="border border-gray-700 p-3">This service is aimed at online stores, brands, and organizations in need of increasing their position, product presence, and traffic to the site.</td></tr><tr><td class="border border-gray-700 p-3">Enterprise SEO</td><td class="border border-gray-700 p-3">£3,972 - £19,862+</td><td class="border border-gray-700 p-3">This plan is appropriate when a large company, a national brand, or a highly competitive industry requires more complex strategies at the scale.</td></tr></tbody></table>'),
+  list('<table class="w-full border-collapse border border-gray-700 mt-4 mb-4"><thead><tr class="bg-gray-800"><th class="border border-gray-700 p-3 text-left">SEO Package</th><th class="border border-gray-700 p-3 text-left">Price Range (Monthly)</th><th class="border border-gray-700 p-3 text-left">Who It\'s For</th></tr></thead><tbody><tr><td class="border border-gray-700 p-3">Small Business SEO</td><td class="border border-gray-700 p-3">£397 - £1,589</td><td class="border border-gray-700 p-3">This is suitable for start-ups, local businesses, or small organisations that just need to establish themselves on the internet.</td></tr><tr><td class="border border-gray-700 p-3">Local SEO</td><td class="border border-gray-700 p-3">£595 - £2,383</td><td class="border border-gray-700 p-3">This is best suited to a brick-and-mortar store, service provider, or a professional with a local customer base.</td></tr><tr><td class="border border-gray-700 p-3"><a href="https://thegeekonomy.com/blog/how-to-choose-the-best-ecommerce-seo-company" class="underline text-[#6FAF4E]">eCommerce SEO</a></td><td class="border border-gray-700 p-3">£1,191 - £3,972</td><td class="border border-gray-700 p-3">This service is aimed at online stores, brands, and organizations in need of increasing their position, product presence, and traffic to the site.</td></tr><tr><td class="border border-gray-700 p-3">Enterprise SEO</td><td class="border border-gray-700 p-3">£3,972 - £19,862+</td><td class="border border-gray-700 p-3">This plan is appropriate when a large company, a national brand, or a highly competitive industry requires more complex strategies at the scale.</td></tr></tbody></table>'),
   p("The other models are project-based pricing, where a single fee is paid in relation to a given project of SEO, and hourly rates, usual when contracting freelancers or consultants to perform all the tasks related to SEO."),
 
   h1("Small Business SEO Package Prices in London"),
@@ -57,7 +59,7 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   h3("Overview of SEO Packages"),
   p("SEO packages are organized service packages aimed at increasing the exposure of a website in search engines such as Google, and it is usually customized to suit the needs of the targeted market."),
   p("The content and technical basis of such packages are quite different and might involve on-page optimisation, technical SEO, link building, research of keywords, and such tools as Ahrefs to analyse it better."),
-  p('<a href="https://thegeekonomy.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer">The SEO agencies</a> normally provide various levels of SEO packages like the basic, standard, and the premium packages with varying levels of service, and therefore, the extent to which the SEO will cost.'),
+  p('<a href="https://thegeekonomy.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer" class="underline text-[#6FAF4E]">The SEO agencies</a> normally provide various levels of SEO packages like the basic, standard, and the premium packages with varying levels of service, and therefore, the extent to which the SEO will cost.'),
   p("What each SEO package entails is of paramount importance to businesses so that they can fit their needs to their budget when determining the SEO they need."),
   p("The prices are based on the volume of work that would be involved and the experience that the SEO professional or the company would bring."),
   p("The UK clients need to be attentive to the scope of the SEO work being provided in order to make sure that it matches the needs of their business."),
@@ -83,7 +85,7 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   p("There is a big difference in the price of SEO in the UK depending on the region. London is a very competitive market, and as such, the prices of SEO are usually higher than in other regions. The high cost of overheads and the need to pay more for quality SEO services make the London SEO agencies more expensive."),
   p("Conversely, less competitive areas might have cheaper SEO packages provided by the SEO companies. The level of work needed to be ranked highly in the search engine also varies depending on the region, and this determines the total cost of SEO."),
   p("The prices of local SEO, including London SEO, should be researched, and the competitiveness of the target market should be factored in when budgeting for search engine optimisation to buy the SEO you need."),
-  p('The strategy can be evaluated with the help of a <a href="https://thegeekonomy.com/blog/b2b-seo-audit-strategies">detailed SEO audit</a> to understand the regional context and strengthen the pricing strategy.'),
+  p('The strategy can be evaluated with the help of a <a href="https://thegeekonomy.com/blog/b2b-seo-audit-strategies" class="underline text-[#6FAF4E]">detailed SEO audit</a> to understand the regional context and strengthen the pricing strategy.'),
 
   h3("SEO Prices: What to Expect"),
   p("In planning search engine optimisation, it is important to know what to anticipate insofar as the price of SEO is concerned when a business aims at forming a concise plan on how to go about its digital marketing plan."),
@@ -140,7 +142,8 @@ const howMuchDoesSEOCostInLondonContent: BlogContentItem[] = [
   p("The ROI of SEO can be measured by monitoring key performance indicators (KPIs), including the ranking of the keywords in relation to the websites, the traffic intake, the rate of conversion, and the revenues. Although the outcome of the SEO process can be delayed, an effective SEO strategy can provide a great ROI in the long run, and that is why it is a valuable investment that every business planning to achieve long-term growth and become more visible in the online world should consider."),
   p("Want to know the exact SEO costs for your London business in 2026?"),
   p('Connect with <a href="https://thegeekonomy.com/">The Geekonomy</a> today'),
-  p('<a href="/contact-us">Contact Here</a>'),
+  
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your London Business?</h3><p class="text-white/70 text-lg mb-6">Stop guessing about SEO costs. Get a customized SEO package with transparent pricing that fits your budget and drives real results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInLondon: BlogData = {
@@ -159,8 +162,10 @@ export const howMuchDoesSEOCostInLondonSEO = {
   title: "How Much Does SEO Cost in London | 2026 Guide",
   description:
     "Discover SEO pricing and service costs for London businesses. Learn about SEO packages and pricing models to boost your online visibility and rankings.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-london",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-london",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20London/How%20Much%20Does%20SEO%20Cost%20in%20London%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20London/How%20Much%20Does%20SEO%20Cost%20in%20London%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

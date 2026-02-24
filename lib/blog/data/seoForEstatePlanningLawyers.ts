@@ -8,13 +8,16 @@ const imageDir = "/blog image/SEO for Estate Planning Lawyers";
 const seoForEstatePlanningLawyersContent: BlogContentItem[] = [
   p("This comprehensive text addresses the structure of SEO as it relates to estate planning. In SEO for estate planning, things are a little different in terms of strategies that can be employed to improve online visibility and drive prospective clients, who are looking for estate planning services, to the site."),
   p("The Social Media Toolkit boosts any law firm's chances of being found by individuals searching for assistance with wills, trusts, probate, estate tax matters, or elder law."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Estate Planning Clients Through Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO strategies tailored for estate planning law firms. Attract more qualified leads and improve your visibility in search results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+
   h1("Understanding SEO and Its Importance for Estate Planning Lawyers"),
   h2("What is SEO?"),
   p("SEO, or Search Engine Optimisation, refers to making a website more improved so that it can garner more attention and have a higher ranking on SERPs. SEO techniques primarily refer to the range of methods that will mould the amount and quality of traffic that comes to a website through organic search engine results."),
   p("Estate planning lawyers have to learn and optimise their SEO strategies to convince clients who are really passionate about searching for estate planning and probate solutions online. Online optimisation is done where people rank higher in relevant searches, thus making it easier to find law firms when they are in need of estate planning."),
   h2("Why SEO Matters for Law Firms"),
   p("For an estate planning law firm, search engine optimisation is not an option but a reality. Most potential clients have scoured the Internet for some legal assistance. If your estate planning law firm doesn't appear on the search engines, then you're missing out on quite a lot of potential clients."),
-  p("<a href=\"https://geekonomytech.com/blog/seo-strategy-funnel\">Effective SEO strategies</a> will ensure that your estate planning law firm appears on the first page of the search when people search for \"estate planning attorney near me,\" \"estate planning lawyer,\" and other so-called related keywords that work for estate planning law and elder law. High SEO ranks will directly translate to increased visibility, more site traffic, and ultimately more clients for your estate planning law firm."),
+  p("<a href=\"https://thegeekonomy.com/blog/seo-strategy-funnel\" class=\"underline text-[#6FAF4E]\">Effective SEO strategies</a> will ensure that your estate planning law firm appears on the first page of the search when people search for \"estate planning attorney near me,\" \"estate planning lawyer,\" and other so-called related keywords that work for estate planning law and elder law. High SEO ranks will directly translate to increased visibility, more site traffic, and ultimately more clients for your estate planning law firm."),
   h2("Key SEO Terms for Estate Planning Lawyers"),
   p("Essential Search Engine Optimisation Terms for Estate Planning Lawyers who want to promote their practice online. Keywords are the actual words put into search engines by potential clients looking for estate planning services: \"estate planning,\" \"will,\" \"probate,\" and \"estate tax,\" for example."),
   p("Search engine optimisation (SEO) is the process by which you improve the ranking of your estate planning website in search results for these keywords. Backlinks are called because they are like votes from other websites for your site, according to search engines."),
@@ -56,7 +59,7 @@ const seoForEstatePlanningLawyersContent: BlogContentItem[] = [
   p("Create traffic on your blogs by advertising them on social media and through email marketing. Consistency in blogging would not only help in achieving better SEO end results but also make your estate planning law firm one of the thought leaders in the sector."),
   h2("Leveraging Social Media for SEO Benefits"),
   p("Social media could indirectly help your SEO efforts by increasing brand awareness, generating more traffic to your website, and generating social signals. Post your blogs, articles, and other handy content to wider-reaching social platforms, including LinkedIn, Facebook, and Twitter."),
-  p("Interact with your followers, respond to comments and queries, and engage in discussions of relevance in the industry. Although social media links do not affect SEO rankings directly, the visibility and traffic can, in turn, enhance website authority and ranking potential, affecting your <a href=\"https://geekonomytech.com/blog/local-seo-for-estate-agents\">complete estate planning SEO</a> strategy for estate planning lawyers."),
+  p("Interact with your followers, respond to comments and queries, and engage in discussions of relevance in the industry. Although social media links do not affect SEO rankings directly, the visibility and traffic can, in turn, enhance website authority and ranking potential, affecting your <a href=\"https://thegeekonomy.com/blog/local-seo-for-estate-agents\" class=\"underline text-[#6FAF4E]\">complete estate planning SEO</a> strategy for estate planning lawyers."),
   h1("Utilizing Google Business Profile for Estate Planning"),
   h2("Setting Up Your Google Business Profile"),
   p("Having a Google Business Profile offers SEO for estate planning only as a starting point. For estate planning lawyers, this FREE tool improves local SEO visibility as results on their respective online searches show up. Claim and verify your listing first."),
@@ -88,12 +91,13 @@ const seoForEstatePlanningLawyersContent: BlogContentItem[] = [
   p("This is essential for SEO for estate planning."),
   h1("Working with SEO Professionals and Agencies"),
   h2("Choosing the Right SEO Company for Your Law Firm"),
-  p("The apt selection of an SEO company is critical for any law firm having aspirations of increasing online visibility. Your estate-planning law firm should look for an agency that has experience in SEO for estate planning and <a href=\"https://geekonomytech.com/\">legal digital marketing</a>."),
+  p("The apt selection of an SEO company is critical for any law firm having aspirations of increasing online visibility."),
+  p("Your estate-planning law firm should look for an agency that has experience in SEO for estate planning and <a href=\"https://thegeekonomy.com/\" class=\"underline text-[#6FAF4E]\">legal digital marketing</a>."),
   p("The company should be equally attuned to the intricacies of challenges and opportunities that exist within the scope of the legal area."),
   p("They should convincingly demonstrate results by providing evidence for the improvement of SEO rankings for estate planning lawyers."),
   p("Their reporting should be completely transparent, and they should discuss a campaign flow of their SEO aimed at achieving goals that are specific to your firm in the estate planning area."),
   h2("How SEO Agencies Can Help Estate Planning Lawyers"),
-  p("<a href=\"https://geekonomytech.com/blog/how-the-best-fintech-seo-agency-help-you-rank\">SEO agencies</a> offer a suite of services aimed at helping estate-planning lawyers develop their presence on the web. SEO agencies conduct thorough keyword research to capture the words and phrases that prospective clients use in their search for estate planning services."),
+  p("SEO agencies offer a suite of services aimed at helping estate-planning lawyers develop their presence on the web. <a href=\"https://thegeekonomy.com/blog/how-the-best-fintech-seo-agency-help-you-rank\" class=\"underline text-[#6FAF4E]\">SEO agencies</a> conduct thorough keyword research to capture the words and phrases that prospective clients use in their search for estate planning services."),
   p("That being said, they help in optimising an estate planning website for search engines, such as structure, content, and technical optimisation."),
   p("They build high-quality backlinks from reputable websites in an effort to help boost the authority of your site. Furthermore, estate planning SEO also includes managing your Google Business Profile to help your local SEO efforts. Marketing for lawyers fits within this constellation."),
   h2("Evaluating the Effectiveness of SEO Services"),
@@ -115,6 +119,8 @@ const seoForEstatePlanningLawyersContent: BlogContentItem[] = [
   p("Ideally, you will include estate planning and probate content on your website since this is a very strategic way of expanding your potential audience for clients. You can include thorough guides on how estate planning and probate are related, emphasising how proper estate planning will make the probate process simpler."),
   p("Write blogs that would focus on common queries regarding both estate planning and probate, optimised with the right keywords for search engines."),
   p("Your website should mention that you are knowledgeable in both topics; thus, potential clients can easily find such types of services. Aside from what it does to your SEO rankings, this will also make your law firm the go-to resource in all estate-related legal issues."),
+
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Estate Planning Practice Online?</h3><p class="text-white/70 text-lg mb-6">Expert SEO for estate planning lawyers. Get a strategy that brings in more clients searching for wills, trusts, and probate services.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForEstatePlanningLawyers: BlogData = {
@@ -138,3 +144,5 @@ export const seoForEstatePlanningLawyersSEO = {
   image: "https://thegeekonomy.com/blog%20image/SEO%20for%20Estate%20Planning%20Lawyers/SEO%20for%20Estate%20Planning%20Lawyers%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

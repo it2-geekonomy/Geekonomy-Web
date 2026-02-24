@@ -6,6 +6,7 @@ const coverImage = "/blog image/Adding More Pictures Improve SEO/Adding More Pic
 const imageDir = "/blog image/Adding More Pictures Improve SEO";
 
 const canAddingMorePicturesImproveSEOContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help With Image SEO?</h3><p class="text-white/70 text-lg mb-6">Get your images optimised for search. We help you rank in image and standard results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Image SEO"),
   p("In the current digital world, one cannot do without the optimization of a website for search engines (SEO) if the site owner wants to be visible online. Many concentrate on the text content only, but hardly anyone gives a thought to how influential images can be. More pictures can certainly help with a website's SEO. Image SEO is a necessary part of a well, rounded SEO plan. Making your pictures user, friendly is one thing, but the effect on your ranking is quite another. So, let's get into the impact of image SEO and how essentially just throwing up more pics can increase your website's SEO performance on the social media platforms."),
   h2("What is Image SEO?"),
@@ -78,7 +79,7 @@ const canAddingMorePicturesImproveSEOContent: BlogContentItem[] = [
   p("By reviewing these metrics in a complete way, you get a full picture of the real impact of your image optimization work in the world and thus, you can adjust your SEO strategies accordingly."),
   p("Consequently, make image optimization work well for SEO."),
   p('Need help optimizing your images for better SEO? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> can help you implement effective image SEO strategies to improve your search rankings and user experience.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise Your Images for SEO?</h3><p class="text-white/70 text-lg mb-6">We audit and optimise image SEO so you rank better and load faster. Get a plan that works.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const canAddingMorePicturesImproveSEO: BlogData = {
@@ -100,3 +101,5 @@ export const canAddingMorePicturesImproveSEOSEO = {
   image: "https://geekonomytech.com/Adding%20More%20Pictures%20Improve%20SEO/Adding%20More%20Pictures%20Improve%20SEO%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

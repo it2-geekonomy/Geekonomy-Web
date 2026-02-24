@@ -6,6 +6,7 @@ const coverImage = "/blog image/omni-channel-technology-online-retail-business-a
 const imageDir = "/blog image/omni-channel-technology-online-retail-business-approach";
 
 const omnichannelMarketingContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want an Omnichannel Strategy That Works?</h3><p class="text-white/70 text-lg mb-6">Get a unified customer experience across channels. We help you connect digital, physical, and inbound.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("What is Omnichannel Marketing?"),
   p("Consumers can move easily between online and offline interactions with businesses. Brands today are tasked with building integrated and seamless experiences. In 2025, it will be essential to tap into every interaction – be it digital, social, physical, or inbound – to create a cohesive and memorable customer experience."),
   p("Omnichannel marketing refers to creating a seamless and consistent brand experience across all channels and devices. You want to make sure every interaction the consumer, customer, or shopper has – digital or not – is aligned with the brand's identity, values, and promise – to create an intuitive and seamless transition between online and in-store experiences."),
@@ -19,7 +20,8 @@ const omnichannelMarketingContent: BlogContentItem[] = [
 
   h1("The Bottom Line"),
   p("A connected world in 2025 means omnichannel strategies are no longer optional – they are essential to building meaningful relationships with customers. Brands that unite technology, storytelling, and data to produce a unified experience will build loyalty, trust, and long-term growth."),
-];
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Build Your Omnichannel Experience?</h3><p class="text-white/70 text-lg mb-6">We help brands unify channels and data. Get a strategy that drives loyalty and growth.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
+  ];
 
 export const omnichannelMarketing: BlogData = {
   slug: "omnichannel-marketing",
@@ -40,3 +42,5 @@ export const omnichannelMarketingSEO = {
   image: "https://geekonomytech.com/blog%20image/omni-channel-technology-online-retail-business-approach/omni-channel-technology-online-retail-business-approach.045aab5fc2e885466ac3.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

@@ -6,6 +6,7 @@ const coverImage = "/blog image/Bespoke Website Development/Bespoke Website Deve
 const imageDir = "/blog image/Bespoke Website Development";
 
 const bespokeWebsiteDevelopmentContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Bespoke Website?</h3><p class="text-white/70 text-lg mb-6">Get a custom website built for your business. Performance, SEO, and growth in one package.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Bespoke Website Development"),
   p("In the modern digital environment where competition is fierce, it is necessary for a business to have a strong online presence if it wants to be successful."),
   p('A custom website means a different and personalized way of designing the web, thus giving a lot of benefits in comparison with a ready-made template, particularly if it is developed from scratch. We will, therefore, delve into the primary reasons why one should consider a bespoke website development.'),
@@ -108,7 +109,7 @@ const bespokeWebsiteDevelopmentContent: BlogContentItem[] = [
   p("A lot of people speak highly of the adaptability and customisation capabilities that bespoke web development HubSpot provides, thus businesses can use them to come up with a complete digital strategy."),
   p("Web design that is tailored to their unique design concept. branding. Those reviews are proof of the worth of a custom design that is made especially for the needs and goals of the business. The creation of a new site is a significant step, and it has to be done by the right people."),
   p('Looking for bespoke website development tailored to your business? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> builds custom websites designed for performance and growth.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready for a Custom Website?</h3><p class="text-white/70 text-lg mb-6">We build bespoke sites that convert and rank. Get a quote tailored to your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const bespokeWebsiteDevelopment: BlogData = {
@@ -130,3 +131,5 @@ export const bespokeWebsiteDevelopmentSEO = {
   image: "https://geekonomytech.com/Bespoke%20Website%20Development/Bespoke%20Website%20Development%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

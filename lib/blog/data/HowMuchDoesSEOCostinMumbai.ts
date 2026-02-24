@@ -15,6 +15,8 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     p("As Mumbai is a busy commercial and competitive hub, it requires more investment in SEO than any other city. Understanding the approximate costs of SEO is crucial for making well-informed decisions about marketing investments."),
     p("This article will throw more light on the complexities of SEO costs in Mumbai, the various packages and services in SEO, the different parameters affecting pricing, and then the means to locate the best SEO solution fit for your business needs."),
 
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing in Mumbai?</h3><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your Mumbai business. Understand costs and what results to expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
+
     h1("Overview of SEO Costs"),
     img(`${imageDir}/How Much Does SEO Cost in Mumbai image2.webp`, "Overview of SEO Costs"),
     p("The cost of SEO is highly variable and is shaped by various factors affecting different SEO services and commonly used price models with SEO agencies, including known SEO packages."),
@@ -200,6 +202,8 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     </a>
   </div>
 `),
+
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Mumbai Business?</h3><p class="text-white/70 text-lg mb-6">Get transparent pricing and a package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInMumbai: BlogData = {
@@ -221,3 +225,4 @@ export const howMuchDoesSEOCostInMumbaiSEO = {
     image: "https://geekonomytech.com/How Much Does SEO Cost in Mumbai/How Much Does SEO Cost in Mumbai main image.webp",
     twitterHandle: "@GeekonomyTech",
 };
+

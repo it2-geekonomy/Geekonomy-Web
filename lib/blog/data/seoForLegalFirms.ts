@@ -6,6 +6,7 @@ const coverImage = "/blog image/SEO for Legal Firms/SEO for Legal Firms main ima
 const imageDir = "/blog image/SEO for Legal Firms";
 
 const seoForLegalFirmsContent: BlogContentItem[] = [
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Law Firm to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for legal firms. Attract more qualified clients from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("The Importance of SEO for Law Firms in 2026"),
   p("The legal profession is facing intense competition. The way clients used to look for lawyers does not apply to today's clients. They do not rely much on word-of-mouth referrals or printed directories. Most people now start their search online, typically entering terms like \"divorce lawyer near me,\" \"immigration solicitor in London,\" or \"best criminal attorney near me.\""),
   p("In case your law firm fails to be found when your prospective clients conduct such searches on Google, the opportunities that will be essential in the development of your firm are your competitors, who are SEO-sensitive and are thus capitalising on these searches."),
@@ -290,7 +291,7 @@ const seoForLegalFirmsContent: BlogContentItem[] = [
   list('<ul><li>Competition in your niche</li><li>Local demand for services</li><li>Investment in content, local SEO, and authority building</li></ul>'),
   p("Smaller, specialised practices can also often outperform larger firms in local search results with a targeted SEO strategy."),
   p('Ready to improve your law firm\'s online visibility? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert SEO services tailored for legal firms to help you rank higher and attract more qualified clients.'),
-  p('<a href="https://thegeekonomy.com/contact" class="underline text-[#6FAF4E]">Contact Here</a>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Law Firm With SEO?</h3><p class="text-white/70 text-lg mb-6">We specialise in SEO for legal firms. Get more case inquiries from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForLegalFirms: BlogData = {
@@ -312,3 +313,5 @@ export const seoForLegalFirmsSEO = {
   image: "https://geekonomytech.com/SEO%20for%20Legal%20Firms/SEO%20for%20Legal%20Firms%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+

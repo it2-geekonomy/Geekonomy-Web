@@ -7,6 +7,7 @@ const imageDir = "/blog image/B2B SEO Audit Strategies to Improve SEO Performanc
 
 const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("In the world of digital marketing, a strong B2B SEO tactic is a must for B2B firms that want to increase their visibility on the web and draw in targeted organic traffic. Most B2B SEO specialists advise a detailed strategy for B2B SEO, as the best starting point for a B2B SEO campaign is a thorough SEO audit. This article is your complete B2B SEO manual, with the help of which you can get the required results from your B2B search engine optimisation by employing the strategies introduced here. Learn how performing a B2B SEO audit can result in higher rankings for your B2B site and more conversions."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a B2B SEO Audit?</h3><p class="text-white/70 text-lg mb-6">Get a full B2B SEO audit and a clear roadmap. We help B2B companies rank and generate leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("B2B SEO Overview"),
   h2("Understanding B2B SEO"),
   p("B2B SEO is the business-to-business search engine optimisation, which is a separate sector that deals with the creation of such content that would attract other businesses rather than individual consumers. Whereas B2C SEO is usually directed at quick sales, B2B SEO is about trust and long-term relationships."),
@@ -89,6 +90,7 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   h2("Long-term Strategies for B2B SEO Success"),
   p("One of the requirements for achieving sustainable organic search visibility is the need for continuous optimisation. To achieve SEO success, B2B companies should implement long-term SEO strategies that involve activities such as content creation, metric monitoring, best practice implementation, and brand reputation building. A well-planned and executed e-commerce SEO strategy will result in increased online sales."),
   p("Through the implementation of a B2B SEO strategy, a company can not only obtain a competitive advantage but also keep the flow of consistent organic traffic, which in turn will lead to more B2B marketing. It is necessary for B2B companies to align their marketing strategies with B2B SEO, which is heavily dependent on effective communication. Use the right enterprise SEO strategies designed for B2B marketers to compete successfully in the market. These strategies are what B2B SEO depends on to get a competitive advantage."),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready for a B2B SEO Audit?</h3><p class="text-white/70 text-lg mb-6">We deliver full B2B SEO audits and actionable roadmaps. Get more leads from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const b2bSEOAuditStrategies: BlogData = {
@@ -111,3 +113,5 @@ export const b2bSEOAuditStrategiesSEO = {
   image: "https://geekonomytech.com/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
