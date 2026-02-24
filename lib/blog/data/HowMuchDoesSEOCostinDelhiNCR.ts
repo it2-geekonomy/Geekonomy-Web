@@ -183,7 +183,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("As search engines evolve, including updates to Google algorithms, businesses can expect more advanced AI-driven solutions for keyword research, personalized content experiences, and enhanced mobile optimization."),
     p("SEO pricing models are also expected to shift toward performance-based structures, where payment is tied to measurable results and ROI."),
     p("The demand for local SEO will continue to rise, as businesses increasingly target local consumers. Being aware of these trends will help businesses make informed decisions when investing in SEO and choosing the right package."),
-    p(`Discover the Right SEO Package for Your Business in Delhi. Talk to <a href="https://thegeekonomy.com/" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Geekonomy Technology</a> Today. <a href="https://thegeekonomy.com/contact" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Contact here.</a>`),
+    p(`Discover the Right SEO Package for Your Business in Delhi. Talk to <a href="https://thegeekonomy.com/" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Geekonomy Technology</a> Today.`),
 
     h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`

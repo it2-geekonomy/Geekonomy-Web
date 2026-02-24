@@ -170,7 +170,7 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     p("An audit analyzes a website in great detail, looking at its structure, content, and sometimes other technical matters, with a view to pointing out areas that might need fixing, for SEO is yet another major consideration affecting success."),
     p("The SEO professional will also account for factors like loading times, mobile-friendliness, keyword usage, and backlink profile."),
     p("The final report from the SEO audit shall be used as one of the pillars to collate a customized SEO plan, evaluating your unique business objectives to ensure that your products or services are marketed successfully through an SEO agency in India."),
-    p("A thorough SEO audit will ensure that your on-site SEO work addresses the most serious problems affecting your site's performance on Google search results."),
+    p('A <a href="/blog/b2b-seo-audit-strategies" class="underline text-[#6FAF4E]">thorough SEO audit</a> will ensure that your on-site SEO work addresses the most serious problems affecting your site\'s performance on Google search results.'),
 
     h2("Creating an Effective SEO Plan"),
     p("An SEO plan can only be effective if it clearly states the business objectives and thereafter monitors these objectives based on the SEO strategies put forth."),
@@ -183,7 +183,7 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     p("It would be necessary to track metrics such as keyword rankings, organic traffic, conversions, and ROI to keep the site highly searchable and high on Google."),
     p("Reporting in intervals will help the business keep track of the performance of the SEO campaigns ex-post and determine the relevant data through which appropriate decisions could be made for further work in optimization of the SEO performance."),
     p("Measuring SEO results and ROI enables companies to substantiate their SEO spending and illustrate how tailored and affordable SEO packages can provide a fair chance for their business in search engine results."),
-    p(`Get the Right SEO Package for Business and Talk to <a href="https://thegeekonomy.com/" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Geekonomy Technology </a> Today. <a href="https://thegeekonomy.com/contact" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Contact Here. </a>`),
+    p(`Get the Right SEO Package for Business and Talk to <a href="https://thegeekonomy.com/" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Geekonomy Technology </a> Today.`),
 
     h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`
