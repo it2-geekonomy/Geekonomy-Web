@@ -110,7 +110,6 @@ const localSEORoadsideAssistanceContent: BlogContentItem[] = [
   p("Although it is important to develop your online presence among local customers, the use of online directories will not be left behind in terms of its power to increase your visibility."),
   p("While SEO efforts may take a while before you see the results, Google Ads can be the game-changer for you that allows instant progress for your SEO."),
   p('More visitors to your website and increased lead generation for your <a href="/blog/choose-the-best-searchgpt-seo-agency" class="underline text-[#6FAF4E]">SEO agency</a> can be accomplished through the use of Google Ads. If you are in the business of towing, this tool is what you need.'),
-  p('Want to grow your roadside assistance business? Consult <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> and let our SEO specialists create a local SEO strategy tailored to your needs.'),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Get More Towing and Roadside Leads?</h3><p class="text-white/70 text-lg mb-6">Our team helps towing and roadside businesses dominate local search. Be the first name customers see.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
