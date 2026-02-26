@@ -61,7 +61,7 @@ const seoData: Record<string, SEOData> = {
   about: {
     title: "Our Story | Branding | Web development | Customer Retention",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "Discover Geekonomy's journey building growth systems for businesses through integrated strategy, technology, branding, and marketing solutions.",
     url: "https://thegeekonomy.com/about",
     canonical: "https://thegeekonomy.com/about",
     image: "https://thegeekonomy.com/assets/og-about.jpg",
@@ -71,7 +71,7 @@ const seoData: Record<string, SEOData> = {
   "what-we-do": {
     title: "What We Do | Branding, Marketing & Development Services",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "Geekonomy builds integrated frameworks for businesses to scale and grow through strategy, tech, branding, and marketing services.",
     url: "https://thegeekonomy.com/what-we-do",
     canonical: "https://thegeekonomy.com/what-we-do",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -81,7 +81,7 @@ const seoData: Record<string, SEOData> = {
   "how-we-work": {
     title: "How We Work | Our Process & Approach",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "Learn about Geekonomy's approach to building brand legacies through research, design, and code, emphasizing clarity and purpose.",
     url: "https://thegeekonomy.com/how-we-work",
     canonical: "https://thegeekonomy.com/how-we-work",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -91,7 +91,7 @@ const seoData: Record<string, SEOData> = {
   "success-lab": {
     title: "Success Lab | Case Studies & Success Stories",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "Explore Geekonomy's case studies and success stories showcasing real results in branding, digital marketing, and full-stack development.",
     url: "https://thegeekonomy.com/success-lab",
     canonical: "https://thegeekonomy.com/success-lab",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -101,7 +101,7 @@ const seoData: Record<string, SEOData> = {
   "contact-us": {
     title: "Contact Us | Get in Touch with Geekonomy",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "Get in touch with Geekonomy for branding, digital marketing, and development services. Let's build your brand legacy together.",
     url: "https://thegeekonomy.com/contact-us",
     canonical: "https://thegeekonomy.com/contact-us",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -111,7 +111,7 @@ const seoData: Record<string, SEOData> = {
   "our-work": {
     title: "Our Work | Portfolio & Case Studies",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "View Geekonomy's portfolio showcasing innovative branding, digital marketing campaigns, and full-stack development projects.",
     url: "https://thegeekonomy.com/our-work",
     canonical: "https://thegeekonomy.com/our-work",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -121,7 +121,7 @@ const seoData: Record<string, SEOData> = {
   career: {
     title: "Career | Join Our Team",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "Join Geekonomy's team of creative professionals. Explore career opportunities in branding, marketing, and development.",
     url: "https://thegeekonomy.com/career",
     canonical: "https://thegeekonomy.com/career",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
