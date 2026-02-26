@@ -81,6 +81,20 @@ fbq('init', '803972362726573');
 fbq('track', 'PageView');`,
           }}
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RGKDG2K8H6"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RGKDG2K8H6');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${poppins.variable} antialiased`}
