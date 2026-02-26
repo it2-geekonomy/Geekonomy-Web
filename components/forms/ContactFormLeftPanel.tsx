@@ -68,7 +68,7 @@ export function ContactFormLeftPanel() {
         </Link>
 
         <Link
-          href="https://www.facebook.com/geekonomytechpvtltd"
+          href="https://www.facebook.com/thegeekonomy"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Geekonomy on Facebook"
@@ -83,7 +83,7 @@ export function ContactFormLeftPanel() {
         </Link>
 
         <Link
-          href="https://www.instagram.com/geekonomy_?igsh=MTlpdTMzaG83ZmJ5MA%3D%3D"
+          href="https://www.instagram.com/geekonomy_?igsh=MTlpdTMzaG83ZmJ5MA=="
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Geekonomy on Instagram"
@@ -98,7 +98,7 @@ export function ContactFormLeftPanel() {
         </Link>
 
         <Link
-          href="https://www.linkedin.com/company/geekonomy-technology-private-limited/"
+          href="https://www.linkedin.com/company/thegeekonomy/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Geekonomy on LinkedIn"
