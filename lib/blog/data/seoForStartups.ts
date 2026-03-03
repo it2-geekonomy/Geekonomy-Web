@@ -198,9 +198,6 @@ const seoForStartupsContent: BlogContentItem[] = [
   p("You need to investigate all possible reasons that might lead to your organic traffic decline, starting from algorithm changes through to technical SEO issues."),
   p("The examination of rival sites allows you to find fresh market opportunities while you adjust your business strategies according to the changes in customer demand."),
   p("The practice of SEO outcome management allows you to enhance your SEO efforts, which will bring continuous growth to your business."),
-  p("Are you prepared to boost your startup growth through search engine optimization?"),
-  p('Connect with <a href="https://thegeekonomy.com/">The Geekonomy</a> to enhance your visibility, enable targeted audience attraction, and create sustainable outcomes for your business.'),
-  
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Start Your SEO Journey Today</h3><p class="text-white/70 text-lg mb-6">Don\'t let limited resources hold you back. Get a customized SEO roadmap that fits your startup\'s budget and drives real, measurable growth.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Consultation</a></div>'),
 ];
 

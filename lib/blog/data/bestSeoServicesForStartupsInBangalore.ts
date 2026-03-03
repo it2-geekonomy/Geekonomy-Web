@@ -170,9 +170,6 @@ const bestSeoServicesForStartupsInBangaloreContent: BlogContentItem[] = [
   p("The best SEO companies in Bangalore provide effective strategies, which you should implement to develop business partnerships."),
   p("The Bangalore company provides monitoring and optimization services, which help your business monitor its progress through operational metrics."),
   p("The top SEO company maintains its competitive advantage through continuous improvement of its business strategies."),
-  p("Are you prepared to expand your startup through data-driven search engine optimization?"),
-  p('The <a href="https://thegeekonomy.com/">Geekonomy</a> partnership enables you to convert search engine traffic into actual business expansion.'),
-  
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Your Competitors Are Ranking. Are You?</h3><p class="text-white/70 text-lg mb-6">Don\'t let your startup get buried in search results. Unlock data-driven SEO strategies that drive real traffic and revenue.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Strategy Call</a></div>'),
 ];
 

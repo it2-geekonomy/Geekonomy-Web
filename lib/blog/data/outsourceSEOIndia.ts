@@ -91,7 +91,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   h2("Effective White Hat SEO Strategies"),
   p("Effective white hat SEO strategies usually consist of various methods that are directed at enhancing the user experience and the website's position in the search results in a natural way, where the techniques include on-page as well as off-page SEO practices."),
   p("It is a complete SEO solution that takes into consideration both on-page as well as off-page SEO strategies."),
-  p("Comprehensive keyword research, on-page optimisation, and content creation of top quality are the services that have been put in place to raise your SEO strategy to a higher level."),
+  p('Comprehensive keyword research, on-page optimisation, and content creation of top quality are the services that have been put in place to <a href="/blog/seo-strategy-funnel" class="underline text-[#6FAF4E]">raise your SEO strategy</a> to a higher level.'),
   p("It is equally important to create natural links from trustworthy sources."),
   p("By concentrating on these white hat SEO techniques, you will be able to raise your website's visibility, get more organic traffic, and build a strong online presence, which is rewarded by search engines."),
   h2("Measuring Success with White Hat SEO"),
@@ -117,7 +117,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("Keyword research services are meant to reveal the most effective words for your SEO plan."),
   p("It is the primary element of any successful SEO strategy."),
   p("It means finding out the words and expressions that your potential customers use to look for products or services related to your business, which is the core of content optimisation."),
-  p("An SEO outsourcing partner of yours should go deeply into keyword research by means of SEO tools used to locate the volume, competition and relevance of a search, thus making services efficient in targeting the right audience."),
+  p('An SEO outsourcing partner of yours should go deeply into keyword research by <a href="/blog/best-tools-for-seo-topical-map-boost-your-seo" class="underline text-[#6FAF4E]">means of SEO tools</a> used to locate the volume, competition and relevance of a search, thus making services efficient in targeting the right audience.'),
   p("After finding the keywords, the following step is optimisation."),
   p("Web content, meta tags, and URLs are the parts of the websites where the selected keywords are cleverly and in a planned manner injected."),
   p("As a result, your site becomes friendly to search engine algorithms and can be ranked at a high level with a greater chance of getting noticed or new customers, especially local ones, as a result of targeted off-page SEO efforts."),
@@ -153,7 +153,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("Your SEO outsourcing agency should be very active in following industry trends, understanding algorithm changes, and trying out new SEO methods."),
   p("An SEO outsourcing company, which is trustworthy and located in India, should also be very willing to put their SEO team through different kinds of training and development activities so that they can be up to date with the latest information and skills in website analysis."),
   p("Your ability to be flexible and willing to change will help you to overcome the ever-changing SEO world and still be able to have an advantage over other competitors."),
-  p("Get the best SEO results and professional SEO services by working with a top-notch SEO outsourcing partner."),
+  p('Get the best SEO results and <a href="/blog/how-wordpress-seo-services-improve-traffic" class="underline text-[#6FAF4E]">professional SEO services</a> by working with a top-notch SEO outsourcing partner.'),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Outsource SEO the Right Way?</h3><p class="text-white/70 text-lg mb-6">We deliver expert SEO with transparent reporting. Get results without the in-house cost.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
