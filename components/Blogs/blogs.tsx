@@ -82,7 +82,6 @@ import { carpetCleaningSEOServicesCompleteGuide } from "@/lib/blog/data/carpetCl
 import { seoForArchitectsBestStrategies } from "@/lib/blog/data/seoForArchitectsBestStrategies";
 import { howMuchDoesSEOCostInChicago } from "@/lib/blog/data/HowMuchDoesSEOCostinChicago";
 import { howMuchDoesSEOCostInLosAngeles} from "@/lib/blog/data/HowMuchDoesSEOCostinLosAngeles";
-import { seoWithAI } from "@/lib/blog/data/seoWithAI";
 import { bespokeWebsiteDevelopment } from "@/lib/blog/data/bespokeWebsiteDevelopment";
 import { seoForFinancialServices } from "@/lib/blog/data/seoForFinancialServices";
 import { ecommerceWebsiteDevelopment } from "@/lib/blog/data/ecommerceWebsiteDevelopment";
@@ -193,7 +192,6 @@ export const allBlogsData: BlogData[] = [
   seoForArchitectsBestStrategies,
   howMuchDoesSEOCostInChicago,
   howMuchDoesSEOCostInLosAngeles,
-  seoWithAI,
   bespokeWebsiteDevelopment,
   seoForFinancialServices,
   ecommerceWebsiteDevelopment,

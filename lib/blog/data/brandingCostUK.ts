@@ -6,7 +6,6 @@ const coverImage = "/blog image/branding cost UK/main image of branding cost uk.
 const imageDir = "/blog image/branding cost UK";
 
 const brandingCostUKContent: BlogContentItem[] = [
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Brand That Stands Out?</h3><p class="text-white/70 text-lg mb-6">Get branding that builds recognition and trust. We deliver identity and strategy that fits your budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("What Is Included in Branding Costs?"),
   p("Your brand is the face, the voice, and the energy of your company. It is how customers recognize you, how they associate with you, and, in a competitive marketplace such as London and the rest of the UK, how they remember you. Therefore, having a strong and effective brand is one of the most essential elements of creating a successful business."),
   p("However, when it actually comes to the creation or the refreshing of your brand, a business owner frequently asks the question, \"What is the cost of branding in the UK?\""),
@@ -16,6 +15,7 @@ const brandingCostUKContent: BlogContentItem[] = [
   p("You will know what to expect, how to budget, and what to look for in a branding partner."),
   p("Knowing how much branding costs in the UK, London is fine but before that, we should clarify what exactly you pay for. It is a fact that not everything is just a logo; there is a whole system that defines the look, the feel, and the interaction of your business with your customers."),
   p("The breakdown of the branding costs:"),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Brand That Stands Out?</h3><p class="text-white/70 text-lg mb-6">Get branding that builds recognition and trust. We deliver identity and strategy that fits your budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h3("1. Brand Strategy"),
   p("Brand strategy is the foundation from which a great brand is born. The process includes market research, competitor analysis, customer profiling, and determining the unique value of the brand."),
   p("It implies the questions like:"),
