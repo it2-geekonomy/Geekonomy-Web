@@ -38,7 +38,6 @@ export default function Footer() {
             {/* Header */}
             <Link href="/what-we-do">
               <Typography
-                as="h3"
                 variant="base"
                 className="uppercase mb-4 text-white relative
         font-light hover:text-[#69AE44] transition-colors duration-200 cursor-pointer mt-0 lg:mt-16 "
@@ -70,7 +69,6 @@ export default function Footer() {
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <div className="w-full mx-auto sm:mx-0 items-start">
               <Typography
-                as="h3"
                 variant="base"
                 className="uppercase mb-3 sm:mb-6 inline-block text-left relative
                   after:block after:h-[2px] after:w-full after:bg-white after:mt-2 sm:after:hidden text-white -translate-x-5 sm:-translate-x-0"
