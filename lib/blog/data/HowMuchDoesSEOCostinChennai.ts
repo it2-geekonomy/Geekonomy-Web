@@ -212,17 +212,26 @@ const seoCostChennaiContent: BlogContentItem[] = [
     h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`
   <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
-    <a href="/blog/how-much-does-seo-cost-in-bangalore" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Bangalore
+    <a href="/blog/how-much-does-seo-cost-in-pune" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
+      SEO service cost in Pune
+    </a>
+    <a href="/blog/how-much-does-seo-cost-in-ahmedabad" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
+      SEO service cost in Ahmedabad
+    </a>
+    <a href="/blog/how-much-does-seo-cost-in-kolkata" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
+      SEO service cost in Kolkata
     </a>
     <a href="/blog/how-much-does-seo-cost-in-delhi-ncr" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
      SEO service cost in Delhi
     </a>
-    <a href="/blog/how-much-does-seo-cost-in-mumbai" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">    
-    SEO service cost in Mumbai
+    <a href="/blog/how-much-does-seo-cost-in-bangalore" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
+     SEO service cost in Bangalore
+    </a>
+    <a href="/blog/how-much-does-seo-cost-in-mumbai" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
+      SEO service cost in Mumbai
     </a>
     <a href="/blog/how-much-does-seo-cost-in-hyderabad" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-    SEO service cost in Hyderabad
+      SEO service cost in Hyderabad
     </a>
   </div>
 `),
