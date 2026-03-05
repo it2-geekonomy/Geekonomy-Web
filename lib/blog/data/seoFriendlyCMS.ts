@@ -10,7 +10,7 @@ const seoFriendlyCMSContent: BlogContentItem[] = [
   p("As the online world keeps on changing, it is still necessary to pick one of the top SEO-friendly CMS platforms if you want to keep your website in good standing with the search engines and improve your SEO."),
   p("We will help you figure out how to make an educated choice to increase your SEO work."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help Choosing an SEO-Friendly CMS?</h3><p class="text-white/70 text-lg mb-6">Get expert guidance on the best CMS for SEO in 2026. We\'ll help you pick and optimise the right platform.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need Help Choosing an SEO-Friendly CMS?</p><p class="text-white/70 text-lg mb-6">Get expert guidance on the best CMS for SEO in 2026. We\'ll help you pick and optimise the right platform.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Introduction to CMS and SEO"),
   h2("What is a CMS?"),
@@ -148,7 +148,7 @@ const seoFriendlyCMSContent: BlogContentItem[] = [
   p("In case you are fairly inept when it comes to technology, then ensure user-friendliness and ease of management are your key considerations."),
   p('By pondering over these factors and picking the right CMS for SEO, you will be able to set up a firm base for your <a href="/blog/how-long-does-it-take-for-medical-seo-to-work" class="underline text-[#6FAF4E]">SEO work</a> and achieve long-term success in the digital world, where the best CMS for SEO is your goal.'),
   p("Consequently, you ought to select the appropriate CMS."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise Your CMS for SEO?</h3><p class="text-white/70 text-lg mb-6">Our team can audit your current setup or help you migrate to an SEO-friendly platform. Get more organic traffic.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Optimise Your CMS for SEO?</p><p class="text-white/70 text-lg mb-6">Our team can audit your current setup or help you migrate to an SEO-friendly platform. Get more organic traffic.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoFriendlyCMS: BlogData = {

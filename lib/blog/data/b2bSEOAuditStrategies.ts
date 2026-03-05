@@ -10,7 +10,7 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("Most B2B SEO specialists recommend starting with a detailed strategy, as the best starting point for a B2B SEO campaign is a thorough SEO audit."),
   p("This article is your complete B2B SEO guide: use the strategies below to get the results you need from your B2B search engine optimisation."),
   p("Learn how performing a B2B SEO audit can lead to higher rankings for your B2B site and more conversions."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a B2B SEO Audit?</h3><p class="text-white/70 text-lg mb-6">Get a full B2B SEO audit and a clear roadmap. We help B2B companies rank and generate leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need a B2B SEO Audit?</p><p class="text-white/70 text-lg mb-6">Get a full B2B SEO audit and a clear roadmap. We help B2B companies rank and generate leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("B2B SEO Overview"),
   h2("Understanding B2B SEO"),
   p("B2B SEO (business-to-business search engine optimisation) is a distinct discipline focused on creating content that attracts other businesses rather than individual consumers."),
@@ -133,7 +133,7 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("By implementing a B2B SEO strategy, a company can gain a competitive edge and sustain a flow of organic traffic, which supports B2B marketing goals."),
   p("B2B companies need to align their marketing strategies with B2B SEO, which depends on clear communication and consistent execution."),
   p("Use enterprise SEO strategies designed for B2B marketers to compete effectively. These strategies are what B2B SEO relies on for a lasting competitive advantage."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready for a B2B SEO Audit?</h3><p class="text-white/70 text-lg mb-6">We deliver full B2B SEO audits and actionable roadmaps. Get more leads from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready for a B2B SEO Audit?</p><p class="text-white/70 text-lg mb-6">We deliver full B2B SEO audits and actionable roadmaps. Get more leads from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const b2bSEOAuditStrategies: BlogData = {

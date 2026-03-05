@@ -12,7 +12,7 @@ const canAddingMorePicturesImproveSEOContent: BlogContentItem[] = [
   p("Image SEO is a necessary part of a well-rounded SEO plan."),
   p("Making your pictures user-friendly is one thing, but the effect on your ranking is quite another."),
   p("So, let's get into the impact of image SEO and how essentially just throwing up more pics can increase your website's SEO performance on social media platforms."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Help With Image SEO?</h3><p class="text-white/70 text-lg mb-6">Get your images optimised for search. We help you rank in image and standard results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need Help With Image SEO?</p><p class="text-white/70 text-lg mb-6">Get your images optimised for search. We help you rank in image and standard results.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Image SEO"),
   h2("What is Image SEO?"),
   p("Image SEO is the process of making images more friendly for search engines by employing different techniques so that search engines can understand the content and context of the images."),
@@ -139,7 +139,7 @@ const canAddingMorePicturesImproveSEOContent: BlogContentItem[] = [
   p("User surveys can be done, or feedback can be collected to know how your images are improving the user experience and are influencing SEO."),
   p("By reviewing these metrics in a complete way, you get a full picture of the real impact of your image optimization work in the world, and thus, you can adjust your SEO strategies accordingly."),
   p("Consequently, make image optimization work well for SEO."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Optimise Your Images for SEO?</h3><p class="text-white/70 text-lg mb-6">We audit and optimise image SEO so you rank better and load faster. Get a plan that works.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Optimise Your Images for SEO?</p><p class="text-white/70 text-lg mb-6">We audit and optimise image SEO so you rank better and load faster. Get a plan that works.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const canAddingMorePicturesImproveSEO: BlogData = {
