@@ -156,7 +156,7 @@ const seoCostPuneContent: BlogContentItem[] = [
     p("The businesses in Pune need to maintain their local presence by using local SEO keywords and building connections with residents in their community."),
     p("The main tool for maintaining Google ranking improvement, along with the continuous improvement over time, comprises two elements, which are the SEO performance analysis and the algorithmic strategy changes."),
     p("Using proven methods of SEO will help businesses in Pune to achieve both sustainable growth and an online competitive edge."),
-    h2("SEO Services Cost in India –  Major Cities"),
+    h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`
   <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
     <a href="/blog/how-much-does-seo-cost-in-kolkata" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">

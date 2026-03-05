@@ -196,7 +196,7 @@ const seoCostHyderabadContent: BlogContentItem[] = [
     p("Tend to other such schemes or plans implemented, such as local SEO optimization for their Google Business Profiles or personalized plans for highly competitive industries."),
     p("For example, real-life instances demonstrate that SEO materialized in practical terms, allowing the reader to draw in concrete lines what he/she expects from that investment."),
 
-    h2("SEO Services Cost in India –  Major Cities"),
+    h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`
   <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
     <a href="/blog/how-much-does-seo-cost-in-pune" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">

@@ -209,7 +209,7 @@ const seoCostChennaiContent: BlogContentItem[] = [
     p("Although on a small scale, any investment made into affordably priced SEO packages would build a solid structure that would greatly contribute to startups in Chennai attaining long-term online success and gradually making it to the top ranks."),
     p("An apt plan for SEO could create good ROI to the benefit of your business."),
 
-    h2("SEO Services Cost in India –  Major Cities"),
+    h2("SEO Services Cost in India – Tier 1 Cities"),
     p(`
   <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
     <a href="/blog/how-much-does-seo-cost-in-pune" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
