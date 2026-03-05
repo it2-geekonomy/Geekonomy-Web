@@ -13,7 +13,7 @@ const fashionSEOAgencyContent: BlogContentItem[] = [
   p("Content of excellent quality is very helpful when you want to accomplish your SEO objectives."),
   p("These specialised agencies know the fashion industry inside out and use tailored SEO strategies to help fashion brands achieve their business goals."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Want Your Fashion Brand to Rank Higher?</p><p class="text-white/70 text-lg mb-6">Get SEO built for fashion and e-commerce. Drive organic traffic, rank for trend and product keywords, and grow sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Fashion Brand to Rank Higher?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for fashion and e-commerce. Drive organic traffic, rank for trend and product keywords, and grow sales.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Fashion SEO"),
   h2("What is Fashion SEO?"),
@@ -138,7 +138,7 @@ const fashionSEOAgencyContent: BlogContentItem[] = [
   p("Those fashion brands that go along with these trends and change their SEO tactics accordingly are going to be the ones to make it."),
   p("Fashion SEO professionals assist fashion brands in getting ready for this."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Grow Your Fashion Brand Online?</p><p class="text-white/70 text-lg mb-6">Work with a fashion SEO agency that gets your industry. Get a strategy for product pages, trends, and visual search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Fashion Brand Online?</h3><p class="text-white/70 text-lg mb-6">Work with a fashion SEO agency that gets your industry. Get a strategy for product pages, trends, and visual search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const fashionSEOAgency: BlogData = {

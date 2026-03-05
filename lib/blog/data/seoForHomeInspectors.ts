@@ -13,7 +13,7 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p("Some of the essential points we will discuss are the significance of local service ads and good SEO work for home inspectors."),
   list('<ul><li>Knowing the fundamentals of SEO.</li><li>Use sophisticated strategies to increase your visibility in the search results.</li><li>If you are a newbie or an experienced professional willing to polish your existing strategy, this manual will equip you with the necessary know-how and instruments for your success.</li></ul>'),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Want More Home Inspection Jobs From Search?</p><p class="text-white/70 text-lg mb-6">Get SEO built for home inspectors. Rank for \"home inspector near me\" and book more inspections.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Home Inspection Jobs From Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for home inspectors. Rank for \"home inspector near me\" and book more inspections.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO for Home Inspectors"),
   h2("What is SEO and Why It Matters for Home Inspectors"),
@@ -141,7 +141,7 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p("As a real estate agent, you may also want to consider referrals to increase your visibility as a home inspector."),
   p("Get quality backlinks from trusted websites, either in your industry or local area."),
   p("Committing to these SEO tasks regularly will help you improve your search engine rankings, draw more organic traffic to your site, and, eventually, expand your home inspection business."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Grow Your Home Inspection Business?</p><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for home inspectors. Get more leads and appointments from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Home Inspection Business?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for home inspectors. Get more leads and appointments from search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForHomeInspectors: BlogData = {

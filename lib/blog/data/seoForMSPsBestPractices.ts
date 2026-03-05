@@ -12,7 +12,7 @@ const seoForMSPsBestPracticesContent: BlogContentItem[] = [
   p("To be able to compete in the tech service market, MSPs who concentrate on SEO will be found by the clients."),
   p("A strong MSP SEO strategy is no longer an option but rather a requirement."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Want More MSP Leads From Search?</p><p class="text-white/70 text-lg mb-6">Get SEO built for managed service providers. Rank for IT, cybersecurity, and cloud terms and fill your pipeline with qualified leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More MSP Leads From Search?</h3><p class="text-white/70 text-lg mb-6">Get SEO built for managed service providers. Rank for IT, cybersecurity, and cloud terms and fill your pipeline with qualified leads.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO for MSPs"),
   h2("What is SEO and Why is it Important for MSPs?"),
@@ -153,7 +153,7 @@ const seoForMSPsBestPracticesContent: BlogContentItem[] = [
   p("Keep yourself updated with the modifications in search engines and make changes in your SEO strategies accordingly."),
   p("If you keep on learning, you will still be able to make your SEO work efficient and up-to-date in the rapidly changing digital world."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Scale Your MSP with SEO?</p><p class="text-white/70 text-lg mb-6">Our team specialises in MSP and B2B tech SEO. Get more visibility for managed IT, security, and cloud services.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Scale Your MSP with SEO?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in MSP and B2B tech SEO. Get more visibility for managed IT, security, and cloud services.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const seoForMSPsBestPractices: BlogData = {
