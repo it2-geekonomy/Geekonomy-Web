@@ -5,6 +5,7 @@ import { contentToSections, p, h1, h2, img } from "../utils";
 const coverImage = "/blog image/SEO for Car Dealerships/SEO for Car Dealerships.main image.webp";
 const imageDir = "/blog image/SEO for Car Dealerships";
 
+
 const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
   p("Car dealerships in the competitive environment of the automotive industry have to seize the slightest advantage if they are to survive."),
   p("Search Engine Optimisation (SEO) is the tool that car dealerships cannot dispense with any more if they want to be successful in local markets and attract local audiences."),
