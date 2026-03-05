@@ -18,7 +18,7 @@ const seoCostChicagoContent: BlogContentItem[] = [
     p("The document describes SEO pricing structures and the factors that affect SEO pricing variations for various SEO services."),
     p("The document explains the different components that determine SEO pricing across Chicago."),
 
-    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for Chicago?</p><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for Chicago?</h3><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
     h1("Understanding SEO Costs"),
     h2("What is SEO?"),
@@ -229,7 +229,7 @@ const seoCostChicagoContent: BlogContentItem[] = [
     p("The organization needs to deliver personalized solutions that include a complete understanding of your business objectives in relation to Chicago SEO activities."),
     p("The process of evaluating SEO service providers enables you to make an educated choice, which helps you select the most suitable SEO partner for your requirements."),
     p("Your SEO strategy needs to cover both improvement areas and comprehension of SEO pricing models, and all elements that lead to effective paid SEO campaigns."),
-    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in Chicago?</p><p class="text-white/70 text-lg mb-6">Get a tailored SEO package and transparent pricing. We help Chicago businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in Chicago?</h3><p class="text-white/70 text-lg mb-6">Get a tailored SEO package and transparent pricing. We help Chicago businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 
 ];
 export const howMuchDoesSEOCostInChicago: BlogData = {

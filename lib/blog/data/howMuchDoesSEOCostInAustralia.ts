@@ -11,7 +11,7 @@ const howMuchDoesSEOCostInAustraliaContent: BlogContentItem[] = [
   p("This article serves as a complete guide to SEO expenses in Australia and helps to understand the reasons behind the price changes."),
   p("Also, with this information, clients can decide wisely whether they should invest in SEO or not."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing in Australia?</p><p class="text-white/70 text-lg mb-6">Get a customized SEO quote tailored to your Australian business. Understand costs and what results to expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing in Australia?</h3><p class="text-white/70 text-lg mb-6">Get a customized SEO quote tailored to your Australian business. Understand costs and what results to expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
 
   h1("Overview of SEO Costs"),
   h2("What is SEO Pricing in Australia?"),
@@ -119,7 +119,7 @@ const howMuchDoesSEOCostInAustraliaContent: BlogContentItem[] = [
   p("If companies are conscious of these trends, they can change their SEO tactics and strategies to comply with them."),
   p("Facilitate your SEO execution by planning to purchase new and creative Fiverr SEO services. Keep abreast of the changes via a seasoned SEO team."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Australian Business?</p><p class="text-white/70 text-lg mb-6">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Australian Business?</h3><p class="text-white/70 text-lg mb-6">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInAustralia: BlogData = {

@@ -11,7 +11,7 @@ const bestSeoServicesForStartupsInBangaloreContent: BlogContentItem[] = [
   p("The search for effective SEO services in Bangalore provides startups with a crucial tool for building successful business expansion paths."),
   p("The SEO landscape in Bangalore serves as a guide for startups to develop their SEO strategies through this comprehensive guide."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Struggling to Get Your Startup Ranked on Google?</p><p class="text-white/70 text-lg mb-6">Get expert SEO strategies tailored for Bangalore startups and start attracting high-quality leads consistently.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Struggling to Get Your Startup Ranked on Google?</h3><p class="text-white/70 text-lg mb-6">Get expert SEO strategies tailored for Bangalore startups and start attracting high-quality leads consistently.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 
   h1("Understanding SEO Services in Bangalore"),
   img(`${imageDir}/Best SEO Services for Startups in Bangalore image2.webp`, "Understanding SEO Services in Bangalore"),
@@ -170,7 +170,7 @@ const bestSeoServicesForStartupsInBangaloreContent: BlogContentItem[] = [
   p("The best SEO companies in Bangalore provide effective strategies, which you should implement to develop business partnerships."),
   p("The Bangalore company provides monitoring and optimization services, which help your business monitor its progress through operational metrics."),
   p("The top SEO company maintains its competitive advantage through continuous improvement of its business strategies."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Your Competitors Are Ranking. Are You?</p><p class="text-white/70 text-lg mb-6">Don\'t let your startup get buried in search results. Unlock data-driven SEO strategies that drive real traffic and revenue.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Your Competitors Are Ranking. Are You?</h3><p class="text-white/70 text-lg mb-6">Don\'t let your startup get buried in search results. Unlock data-driven SEO strategies that drive real traffic and revenue.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Strategy Call</a></div>'),
 ];
 
 export const bestSeoServicesForStartupsInBangalore: BlogData = {

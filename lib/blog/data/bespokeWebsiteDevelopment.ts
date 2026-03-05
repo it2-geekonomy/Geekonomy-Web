@@ -10,7 +10,7 @@ const bespokeWebsiteDevelopmentContent: BlogContentItem[] = [
   p("In the modern digital environment where competition is fierce, it is necessary for a business to have a strong online presence if it wants to be successful."),
   p("A custom website means a different and personalized way of designing the web, thus giving a lot of benefits in comparison with a ready-made template, particularly if it is developed from scratch."),
   p("We will, therefore, delve into the primary reasons why one should consider bespoke website development."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need a Bespoke Website?</p><p class="text-white/70 text-lg mb-6">Get a custom website built for your business. Performance, SEO, and growth in one package.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Bespoke Website?</h3><p class="text-white/70 text-lg mb-6">Get a custom website built for your business. Performance, SEO, and growth in one package.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding Bespoke Website Development"),
   h2("What is a Bespoke Website?"),
   p("A bespoke website is basically a custom site that has been intentionally created and built from the bottom up to comply with the needs and objectives of a particular business, normally with the help of a web design agency."),
@@ -116,7 +116,7 @@ const bespokeWebsiteDevelopmentContent: BlogContentItem[] = [
   p("Web design that is tailored to their unique design concept. branding."),
   p("Those reviews are proof of the worth of a custom design that is made especially for the needs and goals of the business."),
   p("The creation of a new site is a significant step, and it has to be done by the right people."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready for a Custom Website?</p><p class="text-white/70 text-lg mb-6">We build bespoke sites that convert and rank. Get a quote tailored to your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready for a Custom Website?</h3><p class="text-white/70 text-lg mb-6">We build bespoke sites that convert and rank. Get a quote tailored to your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const bespokeWebsiteDevelopment: BlogData = {

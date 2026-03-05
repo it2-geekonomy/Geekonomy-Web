@@ -16,7 +16,7 @@ const seoCostLosAngelesContent: BlogContentItem[] = [
     p("The factors affecting SEO costs need to be understood by both small businesses and large enterprises that want to improve their website visibility in local search results."),
     p("We will discuss everything from the details of SEO packages to the comparison between SEO agencies and freelancers, which you need to know for effective SEO spending."),
 
-    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for Los Angeles?</p><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need Transparent SEO Pricing for Los Angeles?</h3><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
     h1("Understanding SEO Cost"),
     p("The SEO cost consists of multiple components, which depend on different factors and reveal the typical expenses required to implement SEO techniques that will achieve specified ranking enhancements."),
@@ -225,7 +225,7 @@ const seoCostLosAngelesContent: BlogContentItem[] = [
     p("The SEO agency needs to match your business requirements and budget while delivering essential results that help your business thrive in the Los Angeles online competition."),
     p("The SEO services you receive from your Los Angeles agency should be your main consideration before evaluating the costs associated with SEO."),
     p("Quality SEO should always take precedence over all the expenses associated with SEO services."),
-    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in Los Angeles?</p><p class="text-white/70 text-lg mb-6">Get a tailored SEO package and transparent pricing. We help LA businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO in Los Angeles?</h3><p class="text-white/70 text-lg mb-6">Get a tailored SEO package and transparent pricing. We help LA businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 
 ];
 
