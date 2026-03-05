@@ -10,7 +10,7 @@ const bestPracticesForSEOEnhancingAIVisibilityContent: BlogContentItem[] = [
   p("AI-powered search engines and generative models have made it imperative for us to view SEO strategies that focus on how AI systems evaluate and rank content, rather than relying on traditional SEO tactics."),
   p("Therefore, this article will traverse AI visibility best practices to optimise content and data structure, thereby ensuring your content ranks high in AI search disruptions."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want Your Content to Rank in AI Search?</h3><p class="text-white/70 text-lg mb-6">Get expert help optimising for AI visibility. Structure your content and data so AI systems surface your brand in search and overviews.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Want Your Content to Rank in AI Search?</p><p class="text-white/70 text-lg mb-6">Get expert help optimising for AI visibility. Structure your content and data so AI systems surface your brand in search and overviews.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding AI Visibility"),
   h2("What is AI Visibility?"),
@@ -157,7 +157,7 @@ const bestPracticesForSEOEnhancingAIVisibilityContent: BlogContentItem[] = [
   p("The use of AI-based search is changing at a very high rate, and those that keep changing will be seen as competitive."),
   p("With the right practices of AI visibility and keeping on top of the industry trends, your content will get the desired attention in the ever-increasing AI-powered search environment."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Boost Your AI Visibility?</h3><p class="text-white/70 text-lg mb-6">Our experts help you optimise for AI search and stay ahead of the curve. Get a strategy that wins in both traditional and AI-powered search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Boost Your AI Visibility?</p><p class="text-white/70 text-lg mb-6">Our experts help you optimise for AI search and stay ahead of the curve. Get a strategy that wins in both traditional and AI-powered search.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
 export const bestPracticesForSEOEnhancingAIVisibility: BlogData = {

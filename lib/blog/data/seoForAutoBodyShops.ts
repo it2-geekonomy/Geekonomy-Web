@@ -10,7 +10,7 @@ const seoForAutoBodyShopsContent: BlogContentItem[] = [
   p("What mainly contributes to this success is Search Engine Optimisation or SEO."),
   p("A local search for an auto repair shop can be highly extended through just a good and skilful performance of SEO, hence making the place the most convenient and attractive to the local people."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Customers for Your Auto Body Shop?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for auto body and collision repair shops. Rank for \"body shop near me\" and fill your bays.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Want More Customers for Your Auto Body Shop?</p><p class="text-white/70 text-lg mb-6">Get local SEO built for auto body and collision repair shops. Rank for \"body shop near me\" and fill your bays.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding SEO for Auto Body Shops"),
   h2("What is SEO and Why is it Important?"),
@@ -162,7 +162,7 @@ const seoForAutoBodyShopsContent: BlogContentItem[] = [
   p("This analysis is a decision to invest in SEO, helping to set the priorities for SEO and marketing strategies optimisation."),
   p("In order to be most profitable, your auto body shop should focus on raising search traffic and visibility."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Dominate Local Auto Repair Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for auto body shops. Get more calls and bookings from nearby customers.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Dominate Local Auto Repair Search?</p><p class="text-white/70 text-lg mb-6">Our team specialises in local SEO for auto body shops. Get more calls and bookings from nearby customers.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const seoForAutoBodyShops: BlogData = {

@@ -19,7 +19,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("In this complete guide, we cover everything you need to make your business website work hard for your business in the UK."),
   p("We'll look at what you need to do to help your business website stand out in search results from competitors."),
   p("Everything from mobile responsiveness and visual design through to compliance with UK laws."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Need a Business Website That Works?</h3><p class="text-white/70 text-lg mb-6">Get a UK business website built for search and conversion. Mobile-first, fast, and compliant.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need a Business Website That Works?</p><p class="text-white/70 text-lg mb-6">Get a UK business website built for search and conversion. Mobile-first, fast, and compliant.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Mobile-First Design is Non-Negotiable"),
   img(`${imageDir}/business website in UK image1.webp`, "Mobile-First Design"),
   p("More than 60% of all web traffic in the UK is from people visiting sites using their mobile devices."),
@@ -454,7 +454,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   h2("12. What security features should I have on a UK business website?"),
   p("Keep software updated, use firewalls and malware scanning, regularly back up data, and enforce strong passwords."),
   p("If processing payments, ensure PCI compliance."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Build or Upgrade Your UK Business Website?</h3><p class="text-white/70 text-lg mb-6">We build sites that rank and convert. Get a quote tailored to your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Build or Upgrade Your UK Business Website?</p><p class="text-white/70 text-lg mb-6">We build sites that rank and convert. Get a quote tailored to your goals.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Consultation</a></div>'),
 ];
 
 export const goodBusinessWebsiteUK: BlogData = {

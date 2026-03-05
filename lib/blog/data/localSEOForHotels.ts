@@ -10,7 +10,7 @@ const localSEOForHotelsContent: BlogContentItem[] = [
   p("Local SEO is not only a word used in passing; it is essential if you want to increase the number of direct bookings and also to get new customers who are looking for a place to stay in your locality."),
   p("We shall explore effective local SEO tactics that you can use to lift your hotel's presence on the web."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Want More Direct Hotel Bookings?</h3><p class="text-white/70 text-lg mb-6">Get local SEO built for hotels. Rank for \"hotel near me\" and reduce reliance on OTAs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Want More Direct Hotel Bookings?</p><p class="text-white/70 text-lg mb-6">Get local SEO built for hotels. Rank for \"hotel near me\" and reduce reliance on OTAs.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Local SEO for Hotels"),
   h2("What is Local SEO?"),
@@ -119,7 +119,7 @@ const localSEOForHotelsContent: BlogContentItem[] = [
   p("Get local backlinks of good quality from trusted websites in your area so that you can raise your business profile on Google Search and become more credible."),
   p("Negative reviews that any hotel receives should be dealt with quickly and courteously in order to keep up a positive online reputation."),
   p("By implementing these insider tips, hotels will be able to keep their positioning in local search and continue to get new potential guests, thus increasing their direct bookings."),
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Fill More Rooms From Search?</h3><p class="text-white/70 text-lg mb-6">Our team specialises in hotel and accommodation SEO. Get more direct bookings and better visibility.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Fill More Rooms From Search?</p><p class="text-white/70 text-lg mb-6">Our team specialises in hotel and accommodation SEO. Get more direct bookings and better visibility.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Audit</a></div>'),
 ];
 
 export const localSEOForHotels: BlogData = {
