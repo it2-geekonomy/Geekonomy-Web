@@ -11,7 +11,7 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("Let's explore how branding can boost your SEO and why having a brand supports success with SEO."),
   p("When branding and SEO partner, you can gain more organic traffic and better search rankings."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO?</h3><p class="text-white/70 text-lg mb-6">Combine branding and SEO for better visibility and rankings. Get expert help to build a stronger online presence.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO?</p><p class="text-white/70 text-lg mb-6">Combine branding and SEO for better visibility and rankings. Get expert help to build a stronger online presence.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
   h1("Understanding Branding and SEO"),
   h2("What is Branding?"),
@@ -98,7 +98,7 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("Seeing how others have used SEO to grow their brand can spark some ideas for you."),
   p("These stories show that if you want to reach your online marketing goals, you need to link SEO and branding."),
 
-  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO Presence?</h3><p class="text-white/70 text-lg mb-6">Get expert help combining branding and SEO strategies. Build a stronger online presence that drives both brand recognition and search rankings.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
+  p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Strengthen Your Brand\'s SEO Presence?</p><p class="text-white/70 text-lg mb-6">Get expert help combining branding and SEO strategies. Build a stronger online presence that drives both brand recognition and search rankings.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 ];
 
 export const howImportantIsBrandingForSEO: BlogData = {
