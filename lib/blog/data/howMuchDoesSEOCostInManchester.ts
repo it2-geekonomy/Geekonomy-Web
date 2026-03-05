@@ -184,6 +184,13 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
   p("Ensure the SEO services in Manchester you settle on are in line with your entire needs when it comes to SEO."),
   p("The SEO firm of your choice has years of experience in SEO."),
   p("The SEO methods that we create specifically for your business needs will increase your website traffic and generate more leads while driving business expansion."),
+  h2("SEO Services Cost in UK – Major Cities"),
+  p(`
+  <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
+    <a href="/blog/how-much-does-seo-cost-in-birmingham" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Birmingham SEO Service Pricing</a>
+    <a href="/blog/how-much-does-seo-cost-in-london" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">London SEO Service Pricing</a>
+  </div>
+`),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Ready to Invest in SEO for Your Manchester Business?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get transparent pricing and a customized SEO package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Contact Here</a></div>'),
 ];
 
