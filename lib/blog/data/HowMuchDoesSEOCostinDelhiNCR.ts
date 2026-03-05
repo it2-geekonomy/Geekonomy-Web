@@ -17,7 +17,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("This write-up will throw some light on different factors affecting the SEO cost, some of the most popular pricing models for SEO services, and average SEO prices in Delhi NCR."),
     p("This gives you a good idea of what to expect when investing in SEO and how to select the best SEO package for your needs."),
 
-    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Need Clarity on SEO Pricing in Delhi NCR?</p><p class="text-white/70 text-lg mb-6">Get a custom SEO quote for your Delhi NCR business. Understand costs and what results to expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need Clarity on SEO Pricing in Delhi NCR?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a custom SEO quote for your Delhi NCR business. Understand costs and what results to expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
 
     h1("Understanding SEO Pricing"),
     img(`${imageDir}/How Much Does SEO Cost in Delhi NCR image2.webp`, "Understanding SEO Pricing"),
@@ -272,7 +272,7 @@ Cost of SEO services in Mumbai
   </div>
 `),
 
-    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><p class="text-white text-2xl font-bold mb-4">Ready to Invest in SEO for Your Delhi NCR Business?</p><p class="text-white/70 text-lg mb-6">Get transparent pricing and a package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
+    p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Ready to Invest in SEO for Your Delhi NCR Business?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get transparent pricing and a package that fits your budget. Start driving more traffic and leads today.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Request Your Custom SEO Package</a></div>'),
 ];
 
 export const howMuchDoesSEOCostInDelhiNCR: BlogData = {
