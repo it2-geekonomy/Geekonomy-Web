@@ -185,7 +185,6 @@ const seoCostKolkataContent: BlogContentItem[] = [
     p("The implementation of effective SEO strategies will lead to higher organic traffic levels, which will enhance brand visibility and deliver sustainable business development for your organization, because you need to view SEO as a long-term investment."),
     p("The use of SEO experts will help companies build their online presence better, which will result in better business outcomes."),
     p("The top SEO company in Kolkata will help you establish an enduring online presence that lets you achieve your business goals throughout Kolkata's competitive environment. A leading SEO expert in Kolkata will ensure that your SEO investment will create actual business benefits for your Indian company. business in Kolkata."),
-    p(`Looking for the right SEO Solution for your Kolkata-based firm? Then connect with <a href="https://thegeekonomy.com/" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block"> Geekonomy Technology </a> Today.`),
 
     h2("SEO Services Cost in India –  Major Cities"),
     p(`

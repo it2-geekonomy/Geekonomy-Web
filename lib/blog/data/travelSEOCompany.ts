@@ -163,7 +163,6 @@ const travelSEOCompanyContent: BlogContentItem[] = [
   h2("12. Do you help websites penalized by Google?"),
   p("Indeed, we are a full-service penalty recovery outfit, handling the disdainful backlink removal, the correction of the technical issues, and the strategies for the ranking restoration."),
   p("We are the ones to thank for your travel site if its drop is due to algorithm changes or bad SEO; we will get your results back to a steady state and retrieve the lost visibility and rankings efficiently."),
-  p('Need help growing your travel business online? <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">The Geekonomy</a> offers expert travel SEO services to boost your rankings and bookings.'),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-xl p-8 my-8 text-center"><h3 class="text-white text-2xl font-bold mb-4">Ready to Grow Your Travel Business With SEO?</h3><p class="text-white/70 text-lg mb-6">We help travel brands rank for destinations and keywords that drive bookings. Get a strategy that works.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-3.5 px-8 rounded-full no-underline text-base transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free Strategy Call</a></div>'),
 ];
 
