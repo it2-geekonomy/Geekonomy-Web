@@ -254,30 +254,16 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("The demand for local SEO will keep rising, with businesses gravitating towards targeting local consumers."),
     p("Being aware of these trends will help businesses to make sound decisions when investing in SEO and identify the right SEO package."),
 
-    h2("SEO Services Cost in India – Tier 1 Cities"),
+    h2("SEO Services Cost in India –  Major Cities"),
     p(`
   <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
-    <a href="/blog/how-much-does-seo-cost-in-pune" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Pune
-    </a>
-    <a href="/blog/how-much-does-seo-cost-in-ahmedabad" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Ahmedabad
-    </a>
-    <a href="/blog/how-much-does-seo-cost-in-kolkata" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Kolkata
-    </a>
-    <a href="/blog/how-much-does-seo-cost-in-chennai" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Chennai
-    </a>
-    <a href="/blog/how-much-does-seo-cost-in-bangalore" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-     SEO service cost in Bangalore
-    </a>
-    <a href="/blog/how-much-does-seo-cost-in-mumbai" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Mumbai
-    </a>
-    <a href="/blog/how-much-does-seo-cost-in-hyderabad" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">
-      SEO service cost in Hyderabad
-    </a>
+    <a href="/blog/how-much-does-seo-cost-in-pune" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Pune</a>
+    <a href="/blog/how-much-does-seo-cost-in-ahmedabad" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Ahmedabad</a>
+    <a href="/blog/how-much-does-seo-cost-in-kolkata" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Kolkata</a>
+    <a href="/blog/how-much-does-seo-cost-in-chennai" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Chennai</a>
+    <a href="/blog/how-much-does-seo-cost-in-bangalore" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Bangalore</a>
+    <a href="/blog/how-much-does-seo-cost-in-mumbai" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Mumbai</a>
+    <a href="/blog/how-much-does-seo-cost-in-hyderabad" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Monthly SEO Cost in Hyderabad</a>
   </div>
 `),
 
