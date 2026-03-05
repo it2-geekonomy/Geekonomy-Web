@@ -227,6 +227,17 @@ const seoCostLosAngelesContent: BlogContentItem[] = [
     p("Quality SEO should always take precedence over all the expenses associated with SEO services."),
     p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Ready to Invest in SEO in Los Angeles?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a tailored SEO package and transparent pricing. We help LA businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 
+    h2("SEO Services Cost in USA – Major Cities"),
+    p(`
+  <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
+    <a href="/blog/how-much-does-seo-cost-in-boston" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Average SEO Cost in Boston</a>
+    <a href="/blog/how-much-does-seo-cost-in-chicago" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Average SEO Cost in Chicago</a>
+    <a href="/blog/how-much-do-seo-services-cost-in-houston" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Average SEO Cost in Houston</a>
+    <a href="/blog/how-much-does-seo-cost-in-new-york" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Average SEO Cost in New York</a>
+    <a href="/blog/how-much-does-seo-cost-in-san-francisco" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Average SEO Cost in San Francisco</a>
+    <a href="/blog/how-much-does-seo-cost-in-seattle" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">Average SEO Cost in Seattle</a>
+  </div>
+`),
 ];
 
 export const howMuchDoesSEOCostInLosAngeles: BlogData = {
