@@ -9,6 +9,8 @@ interface DesktopViewProps {
   sectionsWrapperRef: React.RefObject<HTMLDivElement | null>;
   desktopRef: React.RefObject<HTMLDivElement | null>;
   contentClassName?: string;
+  /** When false, section titles render as divs (for hidden copy to avoid duplicate outline). */
+  semanticHeadings?: boolean;
 }
 
 export const DesktopView = ({
@@ -17,6 +19,7 @@ export const DesktopView = ({
   sectionsWrapperRef,
   desktopRef,
   contentClassName,
+  semanticHeadings = true,
 }: DesktopViewProps) => {
   useEffect(() => {
     const container = desktopRef.current;
@@ -50,12 +53,21 @@ export const DesktopView = ({
           {content.map((item, i) => (
             <div key={`${item.title}-${i}`}>
               <motion.div>
-                <div
-                  aria-hidden="true"
-                  className="text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight"
-                >
-                  {item.title}
-                </div>
+                {semanticHeadings ? (
+                  i === 0 ? (
+                    <h1 className="text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight mt-0 mb-0">
+                      {item.title}
+                    </h1>
+                  ) : (
+                    <h2 className="text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight mt-0 mb-0">
+                      {item.title}
+                    </h2>
+                  )
+                ) : (
+                  <div className="text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight mt-0 mb-0" aria-hidden>
+                    {item.title}
+                  </div>
+                )}
               </motion.div>
               <motion.div>
                 <div
@@ -76,7 +88,7 @@ export const DesktopView = ({
       </div>
       <div
         className={cn(
-          "hidden lg:flex sticky w-[40%] h-[50vh] lg:h-[50vh] items-center justify-center overflow-hidden rounded-xl",
+          "hidden lg:flex sticky shrink-0 w-[40%] h-[50vh] items-center justify-center overflow-hidden rounded-xl",
           contentClassName
         )}
         style={{

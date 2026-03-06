@@ -12,6 +12,8 @@ interface MobileViewProps {
   screenWidth: number;
   imageRef: React.RefObject<HTMLDivElement | null>;
   contentRef: React.RefObject<HTMLDivElement | null>;
+  /** When false, section titles render as divs (for hidden copy to avoid duplicate outline). */
+  semanticHeadings?: boolean;
 }
 
 export const MobileView = ({
@@ -21,6 +23,7 @@ export const MobileView = ({
   screenWidth,
   imageRef,
   contentRef,
+  semanticHeadings = true,
 }: MobileViewProps) => {
   const isSectionVisible = useSectionVisibility(contentRef);
   const imgH = useMemo(() => getImageHeight(screenWidth), [screenWidth]);
@@ -34,7 +37,7 @@ export const MobileView = ({
       <style>{`
 .mob-img-box{width:100%!important;height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important}
 .mob-img-box>*,.mob-img-box img,.mob-img-box span{width:100%!important;height:100%!important;object-fit:contain!important;display:block!important;max-width:100%!important;max-height:100%!important;position:static!important}
-.mob-desc h2,.mob-desc h3,.mob-desc h4,.mob-desc p,.mob-desc li,.mob-desc span,.mob-desc div{color:#ffffff!important}
+.mob-desc h3,.mob-desc h4,.mob-desc h5,.mob-desc p,.mob-desc li,.mob-desc span,.mob-desc div{color:#ffffff!important}
 .mob-desc{max-width:100%!important;overflow-x:hidden!important}
 .mob-desc .table-container,.mob-table-wrap{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important;max-width:100%!important}
 .mob-desc table,.mob-table-wrap table{width:100%!important;table-layout:fixed!important;border-collapse:collapse!important}
@@ -93,21 +96,37 @@ export const MobileView = ({
             }}
           >
             <motion.div>
-              {i === 0 ? (
-                <h1
-                  style={{
-                    color: "#fff",
-                    fontSize: "1.375rem",
-                    fontWeight: 700,
-                    lineHeight: "1.9rem",
-                    marginTop: 0,
-                    marginBottom: "1rem",
-                  }}
-                >
-                  {item.title}
-                </h1>
+              {semanticHeadings ? (
+                i === 0 ? (
+                  <h1
+                    style={{
+                      color: "#fff",
+                      fontSize: "1.375rem",
+                      fontWeight: 700,
+                      lineHeight: "1.9rem",
+                      marginTop: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    {item.title}
+                  </h1>
+                ) : (
+                  <h2
+                    style={{
+                      color: "#fff",
+                      fontSize: "1.375rem",
+                      fontWeight: 700,
+                      lineHeight: "1.9rem",
+                      marginTop: 0,
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    {item.title}
+                  </h2>
+                )
               ) : (
-                <h2
+                <div
+                  aria-hidden
                   style={{
                     color: "#fff",
                     fontSize: "1.375rem",
@@ -118,7 +137,7 @@ export const MobileView = ({
                   }}
                 >
                   {item.title}
-                </h2>
+                </div>
               )}
               <div
                 className="mob-desc"

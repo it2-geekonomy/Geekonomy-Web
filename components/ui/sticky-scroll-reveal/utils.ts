@@ -20,3 +20,10 @@ export const calculateContentPadding = (imgH: number, screenW: number): string =
   if (imgH > 0) return `${NAV_HEIGHT + imgH * getPaddingMultiplier(screenW)}px`;
   return `calc(${NAV_HEIGHT}px + ${getImageHeight(screenW)})`;
 };
+
+/** Replaces h1–h5 with div (same attributes) so hidden copy doesn’t add to document outline. */
+export function replaceHeadingsWithDivs(html: string): string {
+  return html
+    .replace(/<h([1-5])(\s[^>]*)?>/gi, "<div$2>")
+    .replace(/<\/h[1-5]>/gi, "</div>");
+}

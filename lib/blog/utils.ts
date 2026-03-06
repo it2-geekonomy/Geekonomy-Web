@@ -37,13 +37,14 @@ export const img = (src: string, alt: string): BlogContentItem => ({
 });
 export const list = (html: string): BlogContentItem => ({ type: "list", text: html });
 
-/** Renders only text content (paragraph, heading, h1, h3, list). Image items are ignored—used for side panel only. */
+/** Renders only text content (paragraph, heading, h1, h3, list). Image items are ignored—used for side panel only.
+ * Section titles are H1/H2 in the layout; content uses H3/H4 so the outline is H1 > H2 > H3 > H4 (no skipped levels). */
 export function contentToHTML(items: BlogContentItem[]): string {
   return items
     .map((item) => {
       switch (item.type) {
         case "h1":
-          return `<h2 class="text-[clamp(1.5rem,2vw,2.5rem)] font-bold mt-6 mb-3 ${item.className || ""}">${item.text}</h2>`;
+          return `<h3 class="text-[clamp(1.5rem,2vw,2.5rem)] font-bold mt-6 mb-3 ${item.className || ""}">${item.text}</h3>`;
         case "heading":
           return `<h3 class="text-[clamp(1.3rem,1.5vw,2rem)] font-medium mt-6 mb-3 ${item.className || ""}">${item.text}</h3>`;
         case "h3":
