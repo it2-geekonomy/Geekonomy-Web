@@ -1,15 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BLOGS } from "@/components/Blogs/blogs";
 import { Typography } from "@/components/ui/Typography";
 
 const BLOGS_PER_PAGE = 6;
+const NARROW_PAGINATION_WIDTH = 420;
 
 export default function BlogsPageClient() {
   const [currentPage, setCurrentPage] = useState(1);
+  const [isNarrow, setIsNarrow] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsNarrow(typeof window !== "undefined" && window.innerWidth <= NARROW_PAGINATION_WIDTH);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   const totalPages = Math.ceil(BLOGS.length / BLOGS_PER_PAGE);
   const startIndex = (currentPage - 1) * BLOGS_PER_PAGE;
@@ -25,8 +34,21 @@ export default function BlogsPageClient() {
 
   const getPageNumbers = () => {
     const pages: (number | string)[] = [];
-    const maxVisible = 5;
 
+    if (isNarrow && totalPages > 1) {
+      if (totalPages <= 3) {
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
+      } else if (currentPage <= 2) {
+        pages.push(1, 2, "...", totalPages);
+      } else if (currentPage >= totalPages - 1) {
+        pages.push(1, "...", totalPages - 1, totalPages);
+      } else {
+        pages.push(1, "...", currentPage, "...", totalPages);
+      }
+      return pages;
+    }
+
+    const maxVisible = 5;
     if (totalPages <= maxVisible) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -134,58 +156,66 @@ export default function BlogsPageClient() {
               {BLOGS.length} blogs
             </Typography>
 
-            {/* Pagination Controls */}
-            <div className="flex items-center gap-2">
-              {/* Previous Button */}
-              <button
-                onClick={() => handlePageChange(currentPage - 1)}
-                disabled={currentPage === 1}
-                className="px-4 py-2 rounded-lg bg-[#0f0f0f] text-white border border-gray-800 hover:border-[#6FAF4E] hover:text-[#6FAF4E] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-gray-800 disabled:hover:text-white"
-              >
-                Previous
-              </button>
+            {/* Pagination Controls - compact on narrow (≤420px), scrollable with hidden scrollbar on larger mobile */}
+            <div className="w-full max-w-full overflow-x-auto overflow-y-hidden scrollbar-hide -mx-1 sm:mx-0 sm:px-0">
+              <div className={`flex items-center justify-center min-w-max ${isNarrow ? "gap-1 flex-wrap" : "gap-1.5 sm:gap-2"}`}>
+                {/* Previous Button */}
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className={`shrink-0 rounded-lg bg-[#0f0f0f] text-white border border-gray-800 hover:border-[#6FAF4E] hover:text-[#6FAF4E] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-gray-800 disabled:hover:text-white ${
+                    isNarrow ? "px-2 py-1 text-xs" : "px-2 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base"
+                  }`}
+                >
+                  Previous
+                </button>
 
-              {/* Page Numbers */}
-              <div className="flex items-center gap-2">
-                {getPageNumbers().map((page, index) => {
-                  if (page === "...") {
+                {/* Page Numbers */}
+                <div className={`flex items-center ${isNarrow ? "gap-1" : "gap-1.5 sm:gap-2"}`}>
+                  {getPageNumbers().map((page, index) => {
+                    if (page === "...") {
+                      return (
+                        <span
+                          key={`ellipsis-${index}`}
+                          className={`text-white/40 ${isNarrow ? "px-0.5 text-xs" : "px-1 sm:px-2 text-sm sm:text-base"}`}
+                        >
+                          ...
+                        </span>
+                      );
+                    }
+
+                    const pageNum = page as number;
+                    const isActive = pageNum === currentPage;
+
                     return (
-                      <span
-                        key={`ellipsis-${index}`}
-                        className="px-2 text-white/40"
+                      <button
+                        key={pageNum}
+                        onClick={() => handlePageChange(pageNum)}
+                        className={`shrink-0 rounded-lg transition-all duration-300 ${
+                          isNarrow ? "px-2 py-1 min-w-[28px] text-xs" : "px-2.5 py-1.5 sm:px-4 sm:py-2 min-w-[32px] sm:min-w-[40px] text-sm sm:text-base"
+                        } ${
+                          isActive
+                            ? "bg-[#6FAF4E] text-white font-semibold"
+                            : "bg-[#0f0f0f] text-white border border-gray-800 hover:border-[#6FAF4E] hover:text-[#6FAF4E]"
+                        }`}
                       >
-                        ...
-                      </span>
+                        {pageNum}
+                      </button>
                     );
-                  }
+                  })}
+                </div>
 
-                  const pageNum = page as number;
-                  const isActive = pageNum === currentPage;
-
-                  return (
-                    <button
-                      key={pageNum}
-                      onClick={() => handlePageChange(pageNum)}
-                      className={`px-4 py-2 rounded-lg min-w-[40px] transition-all duration-300 ${
-                        isActive
-                          ? "bg-[#6FAF4E] text-white font-semibold"
-                          : "bg-[#0f0f0f] text-white border border-gray-800 hover:border-[#6FAF4E] hover:text-[#6FAF4E]"
-                      }`}
-                    >
-                      {pageNum}
-                    </button>
-                  );
-                })}
+                {/* Next Button */}
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  className={`shrink-0 rounded-lg bg-[#0f0f0f] text-white border border-gray-800 hover:border-[#6FAF4E] hover:text-[#6FAF4E] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-gray-800 disabled:hover:text-white ${
+                    isNarrow ? "px-2 py-1 text-xs" : "px-2 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base"
+                  }`}
+                >
+                  Next
+                </button>
               </div>
-
-              {/* Next Button */}
-              <button
-                onClick={() => handlePageChange(currentPage + 1)}
-                disabled={currentPage === totalPages}
-                className="px-4 py-2 rounded-lg bg-[#0f0f0f] text-white border border-gray-800 hover:border-[#6FAF4E] hover:text-[#6FAF4E] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:border-gray-800 disabled:hover:text-white"
-              >
-                Next
-              </button>
             </div>
           </div>
         )}
