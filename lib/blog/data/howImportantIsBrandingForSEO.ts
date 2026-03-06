@@ -50,7 +50,7 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
   p("Social media activity, like likes and shares, will also help."),
   p("If you work on your brand and SEO, it tells search engines that you're a helpful and trustworthy source. When people support your brand, it makes these signals even stronger."),
   h1("Measuring the Impact of Branding on SEO"),
-  img(`${imageDir}/How Important is Branding for SEO image4.webp`, "Measuring the Impact of Branding on SEO"),
+  img(`${imageDir}/How Important is Branding for SEO new.webp`, "Measuring the Impact of Branding on SEO"),
   h2("Tracking Brand Visibility and Authority"),
   p("It's important to watch your brand's visibility and how people see it. That way, you know if your branding and SEO work is paying off."),
   p('Seeing where people mention <a href="https://thegeekonomy.com/" class="underline text-[#6FAF4E]">your brand online</a> and on social media gives you clues about what folks think.'),

@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/Sosoactive SEO News/Sosoactive SEO News.webp";
+const coverImage = "/blog image/Sosoactive SEO News/Sosoactive SEO News new.webp";
 
 const imageDir = "/blog image/Sosoactive SEO News";
 
@@ -64,7 +64,7 @@ const sosoactiveSEONewsContent: BlogContentItem[] = [
   p("By this means, those consumers are turned from being passive spectators into active members, which leads to greater and higher visibility of the platform in terms of search engine optimisation."),
   p("Strong community building ensures that SEO is aligned with the user values, and therefore, sustainable growth into the future will follow as the digital world grows."),
   h1("Digital Lifestyle and Personal Development"),
-  img(`${imageDir}/Digital Lifestyle and Personal Development.webp`, "Digital Lifestyle and Personal Development"),
+  img(`${imageDir}/Sosoactive SEO News new1.webp`, "Digital Lifestyle and Personal Development"),
   h2("Integrating Sosoactive into Your Daily Life"),
   p("Sosoactive is the way to go as far as your daily routine goes for either personal or professional lives."),
   p("This means that it is a very active digital platform with tools and resources for personal enhancement and wellness."),
@@ -117,7 +117,7 @@ const sosoactiveSEONewsContent: BlogContentItem[] = [
   p("It is also vital that they remain aware of Sosoactive SEO news, much to the benefit of keeping their digital marketing aligned with the ever-changing landscape of the platform."),
   p("Sosoactive provides a ground for SEO and user experience, thus converting conventional SEO practice into a modern digital strategy."),
   h1("Technical SEO and Digital Media Strategies"),
-  img(`${imageDir}/Technical SEO and Digital Media Strategies.webp`, "Technical SEO and Digital Media Strategies"),
+  img(`${imageDir}/Sosoactive SEO News new2.webp`, "Technical SEO and Digital Media Strategies"),
   h2("Optimizing Content for Search Engines"),
   p("Search engines are quite optimizable in terms of technicality, making sure relevant content is visible on the web."),
   p("Content must be created such that super-engaging content is made with proper use of trending social media words and keywords, along with pertinent naturalness."),
@@ -184,7 +184,7 @@ export const sosoactiveSeoNewsSEO = {
     "Discover Sosoactive SEO News and explore digital marketing trends, future lifestyle, community building, and how Sosoactive transforms digital engagement for content creators and marketers.",
   url: "https://thegeekonomy.com/blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
   canonical: "https://thegeekonomy.com/blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
-  image: "https://thegeekonomy.com/blog%20image/Sosoactive%20SEO%20News/Sosoactive%20SEO%20News.webp",
+  image: "https://thegeekonomy.com/blog%20image/Sosoactive%20SEO%20News/Sosoactive%20SEO%20News%20new.webp",
   twitterHandle: "@GeekonomyTech",
 };
 
