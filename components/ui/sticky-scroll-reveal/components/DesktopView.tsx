@@ -2,6 +2,12 @@ import { useEffect } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { StickyScrollContent } from "../types";
+import { stripHeadingTags } from "../utils";
+
+/** Section index → heading tag. Add "h3", "h4" etc. to the array only if you want those levels; last tag is used for remaining sections. */
+const SECTION_TITLE_TAGS: readonly ["h1", "h2", ...string[]] = ["h1", "h2"];
+const SECTION_TITLE_CLASS =
+  "text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight mt-0 mb-3";
 
 interface DesktopViewProps {
   content: StickyScrollContent[];
@@ -9,6 +15,7 @@ interface DesktopViewProps {
   sectionsWrapperRef: React.RefObject<HTMLDivElement | null>;
   desktopRef: React.RefObject<HTMLDivElement | null>;
   contentClassName?: string;
+  useSemanticHeadings?: boolean;
 }
 
 export const DesktopView = ({
@@ -17,6 +24,7 @@ export const DesktopView = ({
   sectionsWrapperRef,
   desktopRef,
   contentClassName,
+  useSemanticHeadings = true,
 }: DesktopViewProps) => {
   useEffect(() => {
     const container = desktopRef.current;
@@ -50,12 +58,18 @@ export const DesktopView = ({
           {content.map((item, i) => (
             <div key={`${item.title}-${i}`}>
               <motion.div>
-                <div
-                  aria-hidden="true"
-                  className="text-[#FFFFFF] font-bold text-[clamp(1.5rem,2vw,2.5rem)] leading-tight"
-                >
-                  {item.title}
-                </div>
+                {(() => {
+                  const tagName = SECTION_TITLE_TAGS[Math.min(i, SECTION_TITLE_TAGS.length - 1)];
+                  const Tag = tagName as "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+                  return (
+                    <Tag
+                      className={SECTION_TITLE_CLASS}
+                      aria-hidden={!useSemanticHeadings || undefined}
+                    >
+                      {item.title}
+                    </Tag>
+                  );
+                })()}
               </motion.div>
               <motion.div>
                 <div
@@ -64,7 +78,9 @@ export const DesktopView = ({
                     [&>ul]:list-disc [&>ul]:ml-6 [&>ul]:space-y-2
                     [&>ol]:list-decimal [&>ol]:ml-6 [&>ol]:space-y-2
                     [&>li]:ml-2"
-                  dangerouslySetInnerHTML={{ __html: item.description }}
+                  dangerouslySetInnerHTML={{
+                    __html: useSemanticHeadings ? item.description : stripHeadingTags(item.description),
+                  }}
                 />
                 {item.table != null && (
                   <div className="mt-8">{item.table}</div>
