@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/SEO for Auto Body Shops/SEO for Auto Body Shops main image.webp";
+const coverImage = "/blog image/SEO for Auto Body Shops/SEO for Auto Body Shops.webp";
 const imageDir = "/blog image/SEO for Auto Body Shops";
 
 const seoForAutoBodyShopsContent: BlogContentItem[] = [
@@ -60,6 +60,7 @@ const seoForAutoBodyShopsContent: BlogContentItem[] = [
   p('By making use of these tools, auto body shop owners can decide their SEO strategies more wisely and <a href="/blog/how-long-does-it-take-for-medical-seo-to-work" class="underline text-[#6FAF4E]">concentrate SEO work</a> where it would give them the greatest return on keywords.'),
 
   h1("On-Page SEO Strategies for Auto Repair Shops"),
+  img(`${imageDir}/On-Page SEO Strategies for Auto Repair Shops.webp`, "On-Page SEO Strategies for Auto Repair Shops"),
   h2("Optimizing Website Content"),
   p("SEO content gives a comprehensive presentation of services through easy words like collision repair, dent removal, and hail damage repair."),
   p("Clear and concise words have to be used so that the new customers will easily understand the benefits of the auto repair shop they choose."),
@@ -115,7 +116,7 @@ const seoForAutoBodyShopsContent: BlogContentItem[] = [
   p("Regular updates and interactions on your Google Business Profile are going to let you improve your local SEO, attract more potential customers, and raise your position in the local search."),
 
   h1("Content Marketing for Auto Body Shop SEO"),
-  img(`${imageDir}/SEO for Auto Body Shops image4.webp`, "Content Marketing for Auto Body Shop SEO"),
+  img(`${imageDir}/Content Marketing for Auto Body Shop SEO.webp`, "Content Marketing for Auto Body Shop SEO"),
   h2("Creating Valuable Content for Customers"),
   p("Creating content that has value is a major factor in the SEO strategy of auto body shops."),
   p("It is necessary to produce content of a high standard that leads, teaches, and gets the participation of potential customers."),

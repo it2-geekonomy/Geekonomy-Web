@@ -72,7 +72,7 @@ const seoForImmigrationAttorneysContent: BlogContentItem[] = [
   p("These immigration SEO tactics are the core of your website's overall SEO performance and the main reason your firm will reach the top ranks."),
 
   h1("Optimizing Your Immigration Law Firm's Online Presence"),
-  img(`${imageDir}/SEO for Immigration Attorneys image4.webp`, "Optimizing Your Immigration Law Firm's Online Presence"),
+  img(`${imageDir}/Optimizing Your Immigration Law Firm's Online Presence.webp`, "Optimizing Your Immigration Law Firm's Online Presence"),
   h2("Technical SEO for Immigration Lawyers"),
   p("Technical SEO is just as important as any other aspect of SEO work that immigration lawyers have to do."),
   p("It is all about what search engines can do to read and categorise the sites of specialists in immigration law."),

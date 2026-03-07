@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, h1, h2, img, list, p } from "../utils";
 
-const coverImage = "/blog image/Common SEO Mistakes Small Businesses/Common SEO Mistakes Small Businesses.webp";
+const coverImage = "/blog image/Common SEO Mistakes Small Businesses/Common SEO Mistakes Small Businesses new.webp";
 const imageDir = "/blog image/Common SEO Mistakes Small Businesses";
 
 const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
@@ -66,10 +66,10 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("By focusing on particular, high-value keywords, a small business can rank higher in the search results and thereby attract more of the right leads."),
   p("Moreover, it is a good idea to keep an eye on your SEO performance in order to know which keywords are bringing the most traffic and conversions."),
   p("If a business owner ensures that they constantly review their SEO efforts and adjust their keyword strategy, then they are able to elevate their SEO and thus achieve growth that is sustainable."),
-  img(`${imageDir}/Local SEO Strategies for Small Businesses.webp`, "Local SEO Strategies for Small Businesses"),
   p("It is quite common to make a mistake of neglecting this point, which will, however, gradually slow down the overall SEO success, especially in the case of local SEO and Google My Business, which most businesses seem to ignore in their strategies related to their business."),
 
   h1("Local SEO Strategies for Small Businesses"),
+  img(`${imageDir}/Local SEO Strategies for Small Businesses.webp`, "Local SEO Strategies for Small Businesses"),
   h2("Common Local SEO Mistakes to Avoid"),
   p("One of the many SEO errors that small businesses make is the failure to optimise their website for search engines like Google."),
   p("In the case of local businesses, if you do not update your website with local-specific keywords, it can result in the loss of new customers."),
@@ -121,6 +121,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Keeping an eye on your SEO performance and changing your SEO tactics according to these findings will elevate your SEO and make you reap better results."),
 
   h1("SEO Services for Small Business Owners"),
+  img(`${imageDir}/SEO Services for Small Business Owners.webp`, "SEO Services for Small Business Owners"),
   h2("Choosing the Right SEO Services for Your Business"),
   p("Small business owners must take great care when selecting the right SEO services, as it is a pivotal step in enhancing their e-business presence and business expansion."),
   p("Determine the SEO goals and the budget first."),

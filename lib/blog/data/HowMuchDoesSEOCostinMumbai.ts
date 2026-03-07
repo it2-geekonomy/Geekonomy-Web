@@ -50,7 +50,7 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     p("By comparing different offers, affordable SEO packages in India will allow businesses to make sound decisions, investing in SEO packages that suit their budget and business objectives."),
 
     h1("Small Business SEO Package Prices in Mumbai"),
-    img(`${imageDir}/How Much Does SEO Cost in Mumbai image3.webp`, "Small Business SEO Package Prices in Mumbai"),
+    img(`${imageDir}/Small Business SEO Package Prices in Mumbai.webp`, "Small Business SEO Package Prices in Mumbai"),
     p("The SEO system functions as a vital mechanism that enables small Mumbai businesses to expand their digital presence."),
     p("The standard pricing for budget SEO packages ranges from ₹15,000 to ₹50,000 for websites with 10 to 50 pages and depends on multiple factors, which include the level of competition, selected keywords, the structure of the website, and the specific city areas that are being targeted."),
     p("Local businesses can use the plans for permanent solutions that deliver ongoing results throughout their entire business operations."),
@@ -60,7 +60,7 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("Local SEO Packages in Mumbai"),
-    img(`${imageDir}/How Much Does SEO Cost in Mumbai image4.webp`, "Local SEO Packages in Mumbai"),
+    img(`${imageDir}/Local SEO Packages in Mumbai.webp`, "Local SEO Packages in Mumbai"),
     p("Local SEO services help Mumbai businesses improve their online presence in local search results because they want to increase both their website traffic and their store visitor numbers."),
     p("The team will develop your Google Business Profile through local citation development while improving your website's on-page and off-page SEO capabilities."),
     p("These services typically range from ₹20,000 to ₹60,000 per month, depending on scope and competition."),
@@ -70,7 +70,7 @@ const seoCostMumbaiContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("eCommerce Website SEO Packages in Mumbai"),
-    img(`${imageDir}/How Much Does SEO Cost in Mumbai image5.webp`, "eCommerce Website SEO Packages in Mumbai"),
+    img(`${imageDir}/eCommerce Website SEO Packages in Mumbai.webp`, "eCommerce Website SEO Packages in Mumbai"),
     p("The eCommerce SEO packages that we offer to businesses in Mumbai start at Rs. 25,000 and reach a maximum pricing limit of Rs. 70,000."),
     p("The project expenses will vary according to three factors, which include your eCommerce website visitor count, the level of competition, the total number of products in your catalog, the eCommerce platform you select, and the customer demographic you want to reach."),
     p("Your company will experience enhanced online sales because our solution, which boosts organic website traffic, will increase your search engine visibility."),

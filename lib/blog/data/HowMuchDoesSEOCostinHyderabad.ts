@@ -65,7 +65,7 @@ const seoCostHyderabadContent: BlogContentItem[] = [
     p("Such benefits are ongoing visibility in the online platform, better ranking, and customized SEO planning according to the shifting business goals, which will, in turn, engage widespread success as far as SEO is concerned for your e-presence in Hyderabad."),
 
     h1("Small Business SEO Package Prices in Hyderabad"),
-    img(`${imageDir}/How Much Does SEO Cost in Hyderabad image3 (2).webp`, "Small Business SEO Package Prices in Hyderabad"),
+    img(`${imageDir}/Small Business SEO Package Prices in Hyderabad.webp`, "Small Business SEO Package Prices in Hyderabad"),
     p("SEO services Hyderabad small business owners use to improve their website visibility, which enables them to attract more customers from their local area."),
     p("The price of basic SEO packages in Hyderabad starts at ₹12,000 and goes up to ₹60,000 for websites with 10 to 50 pages."),
     p("The pricing structure depends on multiple elements, which include the total number of keywords required, the website's page count, the selected content management system, current website traffic levels, competitive analysis requirements, and the specific areas selected for targeting within Hyderabad."),

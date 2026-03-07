@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/7 Reasons Why Your Business Should Invest in SEO in 2026/Should Invest in SEO in 2026 main image.webp";
+const coverImage = "/blog image/7 Reasons Why Your Business Should Invest in SEO in 2026/7 Reasons Why Your Business Should Invest in SEO in 2026.webp";
 const imageDir = "/blog image/7 Reasons Why Your Business Should Invest in SEO in 2026";
 
 const sevenReasonsInvestInSEOContent: BlogContentItem[] = [
@@ -33,7 +33,7 @@ const sevenReasonsInvestInSEOContent: BlogContentItem[] = [
   p("So if you refrain from SEO, you are letting go of the potential ROI."),
 
   h1("7 Reasons Why Your Business Should Invest in SEO"),
-  img(`${imageDir}/Should Invest in SEO in 2026 image1.webp`, "7 Reasons Why Your Business Should Invest in SEO"),
+  img(`${imageDir}/7 Reasons Why Your Business Should Invest in SEO.webp`, "7 Reasons Why Your Business Should Invest in SEO"),
   h2("Increased Visibility in Search Results"),
   p("One of the seven specifically pointed reasons to be willed and to dole out money on SEO is the huge increase in visibility on the net, especially after every update to the search algorithm."),
   p("It is extremely necessary to be on the first page of the search results so that your future customers will find the products or services that your business offers when searching."),
@@ -89,7 +89,7 @@ const sevenReasonsInvestInSEOContent: BlogContentItem[] = [
   p("Through the assessment of business needs, companies will have a clearer picture of how to adjust their SEO strategies and enhance them."),
 
   h1("Making SEO a Priority for Your Business"),
-  img(`${imageDir}/Making SEO a Priority image3.webp`, "Making SEO a Priority for Your Business"),
+  img(`${imageDir}/Making SEO a Priority for Your Business.webp`, "Making SEO a Priority for Your Business"),
   h2("Integrating SEO with Overall Marketing Strategy"),
   p("It is very important to combine SEO with your overall marketing plan if you want to make the maximum impact of it and make sure that every business can reach its target audience effectively, as SEO is one of the main strategies."),
   p("Enhancing your SEO should not be considered as a separate unit that you do only once, but rather as a necessary part of your wider digital marketing strategy, especially when you are aware of the latest trends from online sources."),

@@ -68,7 +68,7 @@ const howCelebritySEOServicesBuildOnlineAuthorityContent: BlogContentItem[] = [
   p("The right methods of SEO pave the way for the future. Public figures will be able to handle their online presence and have the power over the narrative by making use of these methods."),
 
   h1("SEO Strategies for Influencers and Celebrities"),
-  img(`${imageDir}/How Celebrity SEO Services Build Online Authority image3.webp`, "SEO Strategies for Influencers and Celebrities"),
+  img(`${imageDir}/SEO Strategies for Influencers and Celebrities.webp.jpg`, "SEO Strategies for Influencers and Celebrities"),
   h2("Effective SEO Strategies for Personal Brands"),
   p("SEO strategies that work well are very important for a celebrity or influencer who wants to build a personal brand."),
   p("The first thing is to have a thorough knowledge of keyword research in order to find out what fans and potential collaborators are looking for."),
@@ -92,7 +92,7 @@ const howCelebritySEOServicesBuildOnlineAuthorityContent: BlogContentItem[] = [
   p("Leading celebrity SEO agencies offer a comprehensive and anticipatory strategy to SEO that is free from these errors, thereby securing the continuous success of a celebrity's digital marketing and increasing their visibility on the web; in fact, celebrity SEO is the key to holding a strong online presence."),
 
   h1("Selecting the Right Celebrity SEO Agency"),
-  img(`${imageDir}/How Celebrity SEO Services Build Online Authority image4.webp`, "Selecting the Right Celebrity SEO Agency"),
+  img(`${imageDir}/Local SEO Packages in Mumbai.webp`, "Selecting the Right Celebrity SEO Agency"),
   h2("What to Look for in a Celebrity SEO Agency"),
   p("While picking a celebrity SEO agency, you must consider several main aspects that would guarantee the best results concerning your brand visibility and online reputation management strategies."),
   p("First of all, a top-tier celebrity SEO agency must operate a data-driven approach in order to tailor strategies that are in line with the celebrity's brand."),
@@ -118,7 +118,7 @@ const howCelebritySEOServicesBuildOnlineAuthorityContent: BlogContentItem[] = [
   p("In the end, by carefully considering all these aspects, you will find the right SEO consultant for a celebrity like you who, through first-class management services, will not only create but also maintain your online presence strong and favourable."),
 
   h1("The Impact of Celebrity Advertising on Online Presence"),
-  img(`${imageDir}/How Celebrity SEO Services Build Online Authority image5.webp`, "The Impact of Celebrity Advertising on Online Presence"),
+  img(`${imageDir}/eCommerce Website SEO Packages in Mumbai.webp`, "The Impact of Celebrity Advertising on Online Presence"),
   h2("How Celebrity Advertising Enhances Digital Presence"),
   p("Celebrity advertising has the power to considerably extend a brand's digital reach by using a celebrity's online image and following to make the brand more well-known and accessible to more people."),
   p("Their influence can be the main reason for the brand's website visits, social media activities, and search optimisation results if a celebrity decides to publicly promote a product or service."),
