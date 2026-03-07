@@ -2,8 +2,17 @@ import { useMemo } from "react";
 import { motion } from "motion/react";
 import { StickyScrollContent } from "../types";
 import { NAV_HEIGHT, OPACITY_TRANSITION } from "../constants";
-import { getImageHeight, calculateContentPadding } from "../utils";
+import { getImageHeight, calculateContentPadding, stripHeadingTags } from "../utils";
 import { useSectionVisibility } from "../hooks";
+
+const SECTION_TITLE_STYLE: React.CSSProperties = {
+  color: "#fff",
+  fontSize: "1.375rem",
+  fontWeight: 700,
+  lineHeight: "1.9rem",
+  marginTop: 0,
+  marginBottom: "1rem",
+};
 
 interface MobileViewProps {
   content: StickyScrollContent[];
@@ -12,6 +21,7 @@ interface MobileViewProps {
   screenWidth: number;
   imageRef: React.RefObject<HTMLDivElement | null>;
   contentRef: React.RefObject<HTMLDivElement | null>;
+  useSemanticHeadings?: boolean;
 }
 
 export const MobileView = ({
@@ -21,6 +31,7 @@ export const MobileView = ({
   screenWidth,
   imageRef,
   contentRef,
+  useSemanticHeadings = true,
 }: MobileViewProps) => {
   const isSectionVisible = useSectionVisibility(contentRef);
   const imgH = useMemo(() => getImageHeight(screenWidth), [screenWidth]);
@@ -45,7 +56,7 @@ export const MobileView = ({
         ref={imageRef}
         style={{
           position: isSectionVisible ? "fixed" : "absolute",
-          top: isSectionVisible ? NAV_HEIGHT : "auto",
+          top: isSectionVisible ? `${NAV_HEIGHT}px` : "auto",
           left: 0,
           right: 0,
           zIndex: isSectionVisible ? 30 : -1,
@@ -93,37 +104,24 @@ export const MobileView = ({
             }}
           >
             <motion.div>
-              {i === 0 ? (
-                <h1
-                  style={{
-                    color: "#fff",
-                    fontSize: "1.375rem",
-                    fontWeight: 700,
-                    lineHeight: "1.9rem",
-                    marginTop: 0,
-                    marginBottom: "1rem",
-                  }}
-                >
-                  {item.title}
-                </h1>
-              ) : (
-                <h2
-                  style={{
-                    color: "#fff",
-                    fontSize: "1.375rem",
-                    fontWeight: 700,
-                    lineHeight: "1.9rem",
-                    marginTop: 0,
-                    marginBottom: "1rem",
-                  }}
-                >
-                  {item.title}
-                </h2>
-              )}
+              {(() => {
+                const tagName = i === 0 ? "h1" : "h2";
+                const Tag = tagName as "h1" | "h2";
+                return (
+                  <Tag
+                    style={SECTION_TITLE_STYLE}
+                    aria-hidden={!useSemanticHeadings || undefined}
+                  >
+                    {item.title}
+                  </Tag>
+                );
+              })()}
               <div
                 className="mob-desc"
                 style={{ fontSize: "1rem", lineHeight: "1.75rem" }}
-                dangerouslySetInnerHTML={{ __html: item.description }}
+                dangerouslySetInnerHTML={{
+                  __html: useSemanticHeadings ? item.description : stripHeadingTags(item.description),
+                }}
               />
               {item.table != null && (
                 <div className="mob-table-wrap" style={{ marginTop: "1.5rem" }}>
