@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/Local SEO for Hotels/SEO for Hotels main image.webp";
+const coverImage = "/blog image/Local SEO for Hotels/Local SEO for Hotels.webp";
 const imageDir = "/blog image/Local SEO for Hotels";
 
 const localSEOForHotelsContent: BlogContentItem[] = [
@@ -64,7 +64,7 @@ const localSEOForHotelsContent: BlogContentItem[] = [
   p("Hotel SEO and local search visibility can be boosted by focusing on local keywords."),
 
   h1("SEO Strategies to Drive More Direct Bookings"),
-  img(`${imageDir}/SEO for Hotels image4.webp`, "SEO Strategies to Drive More Direct Bookings"),
+  img(`${imageDir}/SEO Strategies to Drive More Direct Bookings.webp`, "SEO Strategies to Drive More Direct Bookings"),
   h2("Best Practices for Hotel SEO"),
   p("In fact, if a hotel wants to really add more direct bookings, it is necessary to apply hotel SEO best practices, like enhancing its Google Business Profile and using local schema markup for all kinds of hotels."),
   p("Performing an initial SEO audit will help you find the parts of the hotel site that need to be optimised so that you can effectively implement local SEO strategies to get more guests to your boutique hotel."),

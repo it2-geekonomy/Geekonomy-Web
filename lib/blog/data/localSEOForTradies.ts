@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Local SEO for Tradies/Local SEO for Tradies.webp";
+const coverImage = "/blog image/Local SEO for Tradies/Local SEO for Tradies new.webp";
 const imageDir = "/blog image/Local SEO for Tradies";
 
 const localSEOForTradiesContent: BlogContentItem[] = [

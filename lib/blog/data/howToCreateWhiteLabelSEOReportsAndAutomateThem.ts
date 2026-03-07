@@ -48,7 +48,7 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   p("Bottom line: if you run an agency, using white-label SEO reporting is a smart way to wow clients, keep them happy, and build solid, lasting business relationships."),
 
   h1("Choosing the Right Reporting Tools"),
-  img(`${imageDir}/The Benefits of White-Label SEO Reporting.webp`, "Choosing the Right Reporting Tools"),
+  img(`${imageDir}/How to Create White-Label SEO Reports and Automate Them new.webp`, "Choosing the Right Reporting Tools"),
   h2("Essential Features of an SEO Reporting Tool"),
   p("Keep in mind a few vital points when picking an SEO reporting tool: it has to work fine for you and your clients alike."),
   p("The best tool must have profound in-depth analytics, real-time data, customizability, and be user-friendly in using the dashboard."),
@@ -96,7 +96,7 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   p("This way, you'll end up with an automated SEO reporting tool that fits your budget and reporting needs, which means your SEO company can create awesome white-label SEO reports."),
 
   h1("Creating White-Label SEO Reports"),
-  img(`${imageDir}/Creating White-Label SEO Reports.webp`, "Creating White-Label SEO Reports"),
+  img(`${imageDir}/How to Create White-Label SEO Reports and Automate Them new1.webp`, "Creating White-Label SEO Reports"),
   h2("How to Create a White-Label SEO Report Template"),
   p("A good white-label SEO report template makes it easy to send branded reports to your clients about the most important metrics in a nice layout."),
   p("First off, find the key metrics and analytics that you want to highlight that best show how well the SEO is working."),
@@ -120,7 +120,7 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   p("If new metrics or features drop, add them in. Do this, and your white-label SEO reports will stay valuable and keep impressing your clients."),
 
   h1("Rank Tracking and Reporting"),
-  img(`${imageDir}/Rank Tracking and Reporting.webp`, "Rank Tracking and Reporting"),
+  img(`${imageDir}/How to Create White-Label SEO Reports and Automate Them new2.webp`, "Rank Tracking and Reporting"),
   h2("Importance of Rank Tracking in SEO Reports"),
   p("Rank tracking is an important part of SEO reports because it shows how visible a website is and how well SEO strategies are working."),
   p("Monitoring keyword rankings can provide insights into how visible a website is in search engine result pages (SERPs)."),
@@ -139,7 +139,7 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   list('<div class="my-6 w-full table-container"><table class="w-full border-collapse border border-gray-600"><thead><tr class="bg-black"><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Name of Tool</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Main Features</th></tr></thead><tbody><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">SEMrush</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">A full-fledged SEO software with powerful rank tracking across various search engines and devices.</td></tr><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Ahrefs</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Obtain accurate rank tracking information along with competitor analysis.</td></tr><tr class="bg-black"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Moz Rank Monitor</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Customizable report capabilities and user friendly interface.</td></tr></tbody></table></div>'),
 
   h1("Local SEO Reporting"),
-  img(`${imageDir}/Local SEO Reporting.webp`, "Local SEO Reporting"),
+  img(`${imageDir}/How to Create White-Label SEO Reports and Automate Them new3.webp`, "Local SEO Reporting"),
   h2("Understanding Local SEO Reports"),
   p("For companies aiming at particular regions, local SEO reports that concentrate on local search visibility data are quite important."),
   p("Instead of some SEO researchers, they prioritise local keywords rankings, Google My Business (GMB) performance, and citation analysis, which are all local search visibility-related measures."),
@@ -161,7 +161,7 @@ const howToCreateWhiteLabelSEOReportsAndAutomateThemContent: BlogContentItem[] =
   p("Impressive clients will definitely bring higher client retention rates. White-label reporting has aroused interest in the marketing world."),
 
   h1("Final Thoughts on SEO Reports and Automation"),
-  img(`${imageDir}/Final Thoughts on SEO Reports and Automation.webp`, "Final Thoughts on SEO Reports and Automation"),
+  img(`${imageDir}/How to Create White-Label SEO Reports and Automate Them new4.webp`, "Final Thoughts on SEO Reports and Automation"),
   h2("Summary of Key Takeaways"),
   p("This whole guide emphasises why it is so important that one needs to create a white-label SEO reporting system that can be automated for the sake of efficiency."),
   p("Once all of the above things are kept, SEO reports to clients are very useful to show value gained and trust built; white-label reporting is to keep brand continuity; and automation saves time and costs."),

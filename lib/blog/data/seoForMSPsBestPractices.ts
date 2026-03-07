@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/SEO for MSPs Best Practices/SEO for MSPs Best Practices and Local SEO for MSPs.webp";
+const coverImage = "/blog image/SEO for MSPs Best Practices/SEO for MSPs.webp";
 const imageDir = "/blog image/SEO for MSPs Best Practices";
 
 const seoForMSPsBestPracticesContent: BlogContentItem[] = [
@@ -57,7 +57,7 @@ const seoForMSPsBestPracticesContent: BlogContentItem[] = [
   p("If your site is also well adjusted to different screen sizes and is loading quickly, then these are the most significant factors that decide the ranking in the SEO world for the services you deliver."),
   p("Regularly auditing and refining your on-page SEO will keep you in top SEO performance and will attract more local business."),
   h1("Technical SEO Best Practices for MSPs"),
-  img(`${imageDir}/Technical SEO Best Practices for MSPs.webp`, "Technical SEO Best Practices for MSPs"),
+  img(`${imageDir}/Technical SEO Best Practices for MSPs.webp.jpg`, "Technical SEO Best Practices for MSPs"),
   h2("Optimizing Your MSP Website Structure"),
   p("In order to be effective for search engine results, you must optimise your MSP website structure."),
   p("Basically, a well-structured site is more accessible to search engines for them to index and understand, which eventually leads to a higher ranking and increased visibility of your SEO efforts."),

@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/What Do You Need To Balance When Doing SEO in 2026/What Do You Need To Balance When Doing SEO in 2026.webp";
+const coverImage = "/blog image/What Do You Need To Balance When Doing SEO in 2026/What Do You Need To Balance When Doing SEO in 2026 new.webp";
 const imageDir = "/blog image/What Do You Need To Balance When Doing SEO in 2026";
 
 const whatDoYouNeedToBalanceWhenDoingSEOContent: BlogContentItem[] = [
@@ -52,7 +52,7 @@ const whatDoYouNeedToBalanceWhenDoingSEOContent: BlogContentItem[] = [
   p("Keep track of the changes you make to your on-page SEO elements so that they can work at their best and also be in line with the latest SEO best practices, such as new content creation that really meets customer needs and the strategies suggested by HubSpot."),
   p("On-page SEO is the most important instrument when balancing SEO and at the same time making sure users and search engines can easily understand and navigate your content, thus, also, marketing company strategies become more efficient."),
   h1("Technical SEO: A Vital Component of Balance"),
-  img(`${imageDir}/Technical SEO A Vital Component of Balance.webp`, "Technical SEO: A Vital Component of Balance"),
+  img(`${imageDir}/What Do You Need To Balance When Doing SEO in 2026 new1.webp`, "Technical SEO: A Vital Component of Balance"),
   h2("Optimizing Your Sitemap for Search Engines"),
   p("Optimising your sitemap is crucial to help search engines like Google locate and index your website quickly."),
   p("An efficiently designed sitemap is essentially a guide for search engine bots to navigate through your site's content and confirm that they have found and ranked all the pages that are of importance."),
@@ -77,7 +77,7 @@ const whatDoYouNeedToBalanceWhenDoingSEOContent: BlogContentItem[] = [
   p("Moreover, structured data helps creative content to be more visible rather than just being self-ranked."),
   p("This is an <a href=\"https://thegeekonomy.com/blog/difference-between-technical-seo-and-content-seo-audits\" class=\"underline text-[#6FAF4E]\">essential part of technical SEO</a> that helps search engines provide more relevant and insightful results to users and also helps search engines find the most appropriate content."),
   h1("Building Authority Through Backlinks"),
-  img(`${imageDir}/Building Authority Through Backlinks.webp`, "Building Authority Through Backlinks"),
+  img(`${imageDir}/What Do You Need To Balance When Doing SEO in 2026 new2.webp`, "Building Authority Through Backlinks"),
   h2("Strategies for Acquiring Quality Backlinks"),
   p("Gaining good backlinks is one of the main requirements of any SEO strategy that leads to success, and it is also a major factor in achieving the right SEO equilibrium for the search engine to work properly, especially when customers are looking for quality content."),
   p("Rather than concentrating only on quantity, you should put more effort into establishing relationships with trustworthy websites in your field so that you can get authoritative backlinks, which will be the best way to your SEO."),
@@ -97,7 +97,7 @@ const whatDoYouNeedToBalanceWhenDoingSEOContent: BlogContentItem[] = [
   p("It is very important for you to keep an eye on your backlink profile consistently so that you are able to spot the links that are of poor quality or are of a spammy nature and, therefore, you can disavow them so that they will not be a factor in lowering your ranking in the search results."),
   p("Having a balanced strategy that puts more emphasis on quality backlinks rather than on the mere number will, in the long run, bring you the SEO advantages and better positions on Google. The right way is to know the balance in SEO, and that it is not only the quantity of backlinks that matters in SEO."),
   h1("Measuring the Impact of Your SEO Efforts"),
-  img(`${imageDir}/Measuring the Impact of Your SEO Efforts.webp`, "Measuring the Impact of Your SEO Efforts"),
+  img(`${imageDir}/What Do You Need To Balance When Doing SEO in 2026 new3.webp`, "Measuring the Impact of Your SEO Efforts"),
   h2("Auditing Your SEO Strategies"),
   p("Regularly auditing your SEO strategies is very important to know whether they are working well and to find new ways of improvement."),
   p("An <a href=\"https://thegeekonomy.com/blog/b2b-seo-audit-strategies\" class=\"underline text-[#6FAF4E]\">exhaustive SEO audit</a> should be conducted to open the evaluation to different aspects, such as keyword performance, on-page optimisation, technical SEO, and backlink profile."),
@@ -142,7 +142,7 @@ export const whatDoYouNeedToBalanceWhenDoingSEOSEO = {
     "When doing SEO, balance content quality, keywords, technical SEO, user experience, backlinks, and search intent for steady growth.",
   url: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
   canonical: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
-  image: "https://thegeekonomy.com/blog%20image/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026.webp",
+  image: "https://thegeekonomy.com/blog%20image/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026%20new.webp",
   twitterHandle: "@GeekonomyTech",
 };
 

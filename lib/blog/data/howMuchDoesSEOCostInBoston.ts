@@ -15,6 +15,7 @@ const howMuchDoesSEOCostInBostonContent: BlogContentItem[] = [
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need Clarity on SEO Pricing in Boston?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a customized SEO quote tailored to your Boston business. Understand exactly what you\'ll pay and what results you can expect.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Quote</a></div>'),
 
   h1("Understanding SEO Costs"),
+  img(`${imageDir}/How Much Does SEO Cost in Boston new.webp`, "Understanding SEO Costs"),
   h3("What is SEO?"),
   p("Businesses use Search Engine Optimization, which SEO functions to improve their website performance for better Google and Bing search engine results page rankings."),
   p("Professional SEO services create pathways that enable users to discover your website through unpaid search engine results, which results in increased organic traffic for websites."),
@@ -88,6 +89,7 @@ const howMuchDoesSEOCostInBostonContent: BlogContentItem[] = [
   p("A smaller business might find an affordable plan that fits their specific needs, while larger organizations should prepare to invest more."),
 
   h3("Average Costs of SEO Services in Boston"),
+  img(`${imageDir}/How Much Does SEO Cost in Boston new1.webp`, "Average Costs of SEO Services in Boston"),
   p("Hourly Rates: Agencies typically charge their services at an hourly rate that ranges from one hundred dollars to three hundred dollars."),
   p("Monthly Retainers: The cost of ongoing SEO services starts at seven hundred fifty dollars per month and can reach over five thousand dollars, depending on the complete package requirements."),
   p("Project-Based Pricing: The initial cost for project-based hiring services starts at one thousand dollars and can reach a maximum of thirty thousand dollars due to project complexity and necessary work requirements."),
@@ -141,6 +143,7 @@ const howMuchDoesSEOCostInBostonContent: BlogContentItem[] = [
   p("Hence, by providing details about which SEO agency to choose, we can avail ourselves of assessing investment needs in order to deliver results in our favor."),
 
   h1("Investing in SEO"),
+  img(`${imageDir}/How Much Does SEO Cost in Boston new2.webp`, "Investing in SEO"),
   h3("SEO Budgeting for Small Businesses"),
   p("Boston small businesses should develop specific SEO budgeting procedures through their planned approach to budget creation."),
   p("All resource distribution starts with determining the total costs for all SEO service expenses."),

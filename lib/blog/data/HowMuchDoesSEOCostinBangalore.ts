@@ -62,6 +62,7 @@ const seoCostBangaloreContent: BlogContentItem[] = [
   p("This allows you to see different pricing models that different SEO agencies offer and find the best one for your budget and needs."),
 
   h2("Small Business SEO Package Prices in Bangalore"),
+  img(`${imageDir}/How Much Does SEO Cost in Bangalore new.webp`, "Small Business SEO Package Prices in Bangalore"),
   p("Small business owners in Bangalore can boost their website visibility through SEO services, which help them attract additional nearby customers."),
   p("Websites that have between 10 and 50 pages can select from budget-friendly SEO packages that cost between Rs. 15,000 and Rs. 70,000."),
   p("The total cost of the project depends on multiple factors, which include total keyword count, website page count, CMS selection, existing website traffic, market competition, and targeted keywords for Bangalore."),
@@ -86,6 +87,7 @@ const seoCostBangaloreContent: BlogContentItem[] = [
   p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
   h2("eCommerce Website SEO Packages in Bangalore"),
+  img(`${imageDir}/How Much Does SEO Cost in Bangalore new1.webp`, "eCommerce Website SEO Packages in Bangalore"),
   p("The eCommerce SEO packages for businesses in Bangalore range from Rs. 25,000 to Rs. 70,000."),
   p("The pricing structure depends on three factors, which include product count, eCommerce platform selection, website traffic levels, competition intensity, and targeted geographical area."),
   p("The eCommerce SEO packages work to enhance search engine ranking positions, which results in increased organic traffic and higher sales revenue."),

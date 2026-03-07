@@ -58,7 +58,7 @@ const fashionSEOAgencyContent: BlogContentItem[] = [
   p("Find fashion brand <a href=\"/blog/carpet-cleaning-seo-services-complete-guide\" class=\"underline text-[#6FAF4E]\">SEO services that provide highly personalised solutions</a> because they realise that bespoke SEO strategies are the secret to succeeding in the fiercely competitive fashion market."),
   p("Reason why their proposed SEO activities fit with your general business goals. The right SEO service can do wonders for a fashion brand to grow."),
   h1("SEO Strategies for Fashion E-commerce"),
-  img(`${imageDir}/SEO Strategies for Fashion E-commerce.webp`, "SEO Strategies for Fashion E-commerce"),
+  img(`${imageDir}/Fashion SEO Agency.webp`, "SEO Strategies for Fashion E-commerce"),
   h2("Optimizing Your Fashion Store for Search Engines"),
   p("Without a strong technical SEO core, fashion store optimisation for search engines will not work efficiently."),
   p("Such a fashion website must be mobile-friendly, have fast loading speeds, and be easily accessible to search engine crawlers."),

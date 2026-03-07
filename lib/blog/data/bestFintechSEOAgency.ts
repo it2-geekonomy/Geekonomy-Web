@@ -64,7 +64,7 @@ const bestFintechSEOAgencyContent: BlogContentItem[] = [
   p("Properly implemented SEO strategies can be the best allies for fintech brands in realising their objectives."),
 
   h1("Fintech Marketing Strategies"),
-  img(`${imageDir}/Best Fintech SEO Agency image4.webp`, "Fintech Marketing Strategies"),
+  img(`${imageDir}/Fintech Marketing Strategies.webp`, "Fintech Marketing Strategies"),
   h2("Key Components of Fintech Marketing"),
   p("Fintech marketing key components are somewhat different from a regular marketing mix."),
   p("While they still involve various forms of traditional digital marketing, they also require the marketer to have a deeper understanding of financial services and fintech companies, thus indicating that fintech SEO is a completely different ball game."),

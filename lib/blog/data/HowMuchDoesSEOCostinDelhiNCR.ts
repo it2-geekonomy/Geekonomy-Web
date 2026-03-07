@@ -50,7 +50,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("In the end, SEO services should be treated as an investment that directly returns in the form of traffic, leads, and sales. So an understanding of local SEO pricing is important."),
 
     h1("Small Business SEO Package Prices in Delhi"),
-    img(`${imageDir}/How Much Does SEO Cost in Delhi NCR image3.webp`, "Small Business SEO Package Prices in Delhi"),
+    img(`${imageDir}/Small Business SEO Package Prices in Delhi.webp`, "Small Business SEO Package Prices in Delhi"),
     p("The SEO services in Delhi will help you increase your website's visibility to local customers who search for your products."),
     p("The cost of SEO services in Delhi starts from ₹12,000 and goes up to ₹60,000 for 10 to 50-page websites."),
     p("The service cost depends on various elements, which include total keyword count, website page count, content management system, existing website traffic, business competition, and selected Delhi service areas."),
@@ -65,7 +65,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("Local SEO Packages in Delhi"),
-    img(`${imageDir}/How Much Does SEO Cost in Delhi NCR image4.webp`, "Local SEO Packages in Delhi"),
+    img(`${imageDir}/Local SEO Packages in Delhi.webp`, "Local SEO Packages in Delhi"),
     p("The local SEO packages that business owners in Delhi select will improve their ability to appear in local search results."),
     p("The local SEO services in Delhi start at Rs. 15,000 and reach up to Rs. 55,000 based on the chosen service package."),
     p("The package selection process applies different factors, which include the total number of keywords, the total number of web pages, the total number of business locations, the existing search position, the degree of market rivalry, and the designated search regions."),
@@ -78,7 +78,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("eCommerce Website SEO Packages in Delhi"),
-    img(`${imageDir}/How Much Does SEO Cost in Delhi NCR image5.webp`, "eCommerce Website SEO Packages in Delhi"),
+    img(`${imageDir}/eCommerce Website SEO Packages in Delhi.webp`, "eCommerce Website SEO Packages in Delhi"),
     p("The eCommerce SEO packages that are provided to Delhi businesses start from Rs. 20,000 and reach a maximum of Rs. 60,000."),
     p("The pricing structure depends on multiple factors, which include product quantity, selected eCommerce platform, website visitor counts, market competition, and specific geographic area."),
     p("The three different packages we offer will enhance your website's search engine performance while generating organic visitors who will increase your sales."),
@@ -92,6 +92,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("Types of SEO Packages in Delhi"),
+    img(`${imageDir}/Types of SEO Packages in Delhi.webp`, "Types of SEO Packages in Delhi"),
     h2("Standard SEO Packages"),
     p("Standard seo packages in Delhi generally have core seo services, aimed at improving the search engine ranking of a website."),
     p("The basic on-page optimization activities like keyword research, meta tags updates, content optimization, and simple link building are generally included in such packages."),
@@ -117,7 +118,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("Pricing plan for local seo pricing for your business."),
 
     h1("Affordable SEO Services in Delhi"),
-    img(`${imageDir}/How Much Does SEO Cost in Delhi NCR image6.webp`, "Affordable SEO Services in Delhi"),
+    img(`${imageDir}/Affordable SEO Services in Delhi.webp`, "Affordable SEO Services in Delhi"),
     h2("Finding Budget-Friendly SEO Options"),
     p("Identifying SEO Options that are within Budget. You'll get what I mean when you identify affordable seo options in Delhi."),
     p("Careful research and comparison of different seo service providers are needed."),

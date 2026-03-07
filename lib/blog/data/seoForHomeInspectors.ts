@@ -47,7 +47,7 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p("Coaches to surpass these obstacles are a planned strategy, hard work, and probably the help of SEO companies dealing with marketing for home inspectors, which can help your clients find you on the internet."),
 
   h1("Optimizing Your Home Inspection Website"),
-  img(`${imageDir}/SEO for Home Inspectors Business image2.webp`, "Optimizing Your Home Inspection Website"),
+  img(`${imageDir}/SEO for Home Inspectors Business new.webp`, "Optimizing Your Home Inspection Website"),
   h2("Best Practices for Website Design in the Home Inspection Business"),
   p("Good website design is necessary for any home inspection business to be successful on SEO."),
   p("Your website is the most common interaction of your business with new customers, so it has to bring good results."),
@@ -82,7 +82,7 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
   p("If you concentrate on these local SEO tactics, you will be in a position to assure prospective clients in your locality that they will find your home inspection business without any difficulty when they go online to search, thus helping you to get more bookings and increase your visibility."),
 
   h1("Digital Marketing Services for Home Inspectors"),
-  img(`${imageDir}/SEO for Home Inspectors Business image4.webp`, "Digital Marketing Services for Home Inspectors"),
+  img(`${imageDir}/Digital Marketing Services for Home Inspectors.webp`, "Digital Marketing Services for Home Inspectors"),
   h2("Leveraging Google Business Profile for Increased Visibility"),
   p("A Google Business Profile is one of the most important tools that a home inspector should have in his/her toolbox if he/she wants to improve his/her online presence."),
   p("It is a free listing that shows up in Google Search and Google Maps, thereby giving the business a significant visibility boost for local searches, which is a must for home inspector marketing and SEO services for home inspectors."),
