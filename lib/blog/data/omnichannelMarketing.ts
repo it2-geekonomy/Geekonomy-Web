@@ -36,7 +36,7 @@ export const omnichannelMarketing: BlogData = {
 
 export const omnichannelMarketingSEO = {
   title: "Omnichannel Marketing & The Future of CX 2025",
-  description: "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+  description: "Learn how omnichannel marketing creates seamless customer experiences across channels to boost engagement, brand loyalty, and business growth.",
   url: "https://geekonomytech.com/blog/omnichannel-marketing",
   canonical: "https://geekonomytech.com/blog/omnichannel-marketing",
   image: "https://geekonomytech.com/blog%20image/omni-channel-technology-online-retail-business-approach/omni-channel-technology-online-retail-business-approach.045aab5fc2e885466ac3.webp",
