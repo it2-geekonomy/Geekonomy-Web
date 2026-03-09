@@ -1,14 +1,10 @@
+import type { AuthorInfo } from "@/lib/blog/authorMapping";
+
 export interface StickyScrollContent {
   title: string;
   description: string;
   image?: React.ReactNode;
   table?: React.ReactNode;
-}
-
-export interface AuthorInfo {
-  name: string;
-  role: string;
-  image: string;
 }
 
 export interface DateInfo {
@@ -22,3 +18,5 @@ export interface StickyScrollProps {
   authorInfo?: AuthorInfo;
   dateInfo?: DateInfo | null;
 }
+
+export type { AuthorInfo };
