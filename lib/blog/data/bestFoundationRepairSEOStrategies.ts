@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Best Foundation Repair SEO Strategies for Growth 2026/Best Foundation Repair SEO Strategies for Growth 2026 .webp";
+const coverImage = "/blog image/Best Foundation Repair SEO Strategies for Growth 2026/Best Foundation Repair SEO Strategies for Growth 2026.webp";
 const imageDir = "/blog image/Best Foundation Repair SEO Strategies for Growth 2026";
 
 const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
@@ -28,6 +28,7 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("Developing content that is relevant to your site, optimising meta descriptions, and confirming that your site is mobile-friendly are some of the ways through which local customers can easily access your services."),
   p("Off-page SEO is about, among other things, establishing citations on such platforms as Angie's List and getting backlinks from trustworthy sites, all of which lead to higher search ranking."),
   h1("Effective On-Page SEO Techniques"),
+  img(`${imageDir}/Effective On-Page SEO Techniques.webp`, "Effective On-Page SEO Techniques"),
   h2("Optimizing Your Foundation Repair Website"),
   p("Making your site mobile-friendly, loading it quickly, and ensuring a hassle-free user experience should be your main goals if you want to improve local search visibility for your foundation repair services."),
   p("By using clear calls to action, you will not only be able to attract the customers who are looking for a quote or contacting you, but you will also make it very convenient for the local customers to decide on your services."),
@@ -46,6 +47,7 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("Place these keywords decorously in the text of your site, in meta descriptions, and even in the alt tags of images."),
   p("Long-tail keywords, which are more detailed and longer phrases, can also bring excellent leads that are users and who have very specific needs, thus enhancing your SEO campaign."),
   h1("Local SEO Strategies for Foundation Repair Businesses"),
+  img(`${imageDir}/Local SEO Strategies for Foundation Repair Businesses.webp`, "Local SEO Strategies for Foundation Repair Businesses"),
   h2("Importance of Local SEO in Home Services"),
   p("Local SEO is crucial, especially for businesses offering home services such as foundation repair, because it elevates the business's visibility to potential customers within the local area."),
   p("The majority of homeowners will look up \"foundation repair near me\" or use other local terms, hence the necessity of optimising for the right keywords."),
@@ -66,6 +68,7 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("You should aim to create your citations on reliable sites such as Angie's List and obtain backlinks from the local businesses and community groups so that you can be visible in the search results when your potential customers are looking for foundation repair services."),
   p("This step can not only raise your foundation repair company's authority level but also enhance your local search results ranking, thereby making it easier for customers to access your services."),
   h1("Off-Page SEO Strategies"),
+  img(`${imageDir}/Off-Page SEO Strategies.webp`, "Off-Page SEO Strategies"),
   h2("Leveraging Social Media for SEO Growth"),
   img(`${imageDir}/Leveraging Social Media for SEO Growth.webp`, "Leveraging Social Media for SEO Growth"),
   p("Foundation repair companies can significantly improve their SEO through social media channels."),
@@ -86,6 +89,7 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("Content outreach is about sharing your content with the right sites and influencers in order to get more exposure and backlinks, thus helping to attract more leads."),
   p("This is an SEO strategy that can increase the number of visitors to your website and, thus, your foundation repair business."),
   h1("Measuring SEO Success and Results"),
+  img(`${imageDir}/Measuring SEO Success and Results.webp`, "Measuring SEO Success and Results"),
   h2("Key Metrics to Track for SEO Campaigns"),
   p("It is necessary to keep an eye on key indicators if you want to know whether your SEO campaign has been successful and how it affects your return on investment."),
   p("This is especially true for local search visibility, where customers are looking for foundation repair."),
