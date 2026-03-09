@@ -66,7 +66,7 @@ const seoCostChennaiContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("Local SEO Packages in Chennai"),
-    img(`${imageDir}/How Much Does SEO Cost in Chennai image2.webp`, "Local SEO Packages in Chennai"),
+    img(`${imageDir}/Local SEO Packages in Chennai.webp`, "Local SEO Packages in Chennai"),
     p("Local SEO packages, which are customized for business owners in Chennai, help them to improve their local search results because they want to attract local customers."),
     p("The cost of local SEO services in Chennai starts from Rs. 15,000 and goes up to Rs. 55,000 because of various factors, which include keyword count, page count, branch count, current ranking, competition level, and targeted geographical area."),
     p("These services increase visibility on local search engines, which leads to more business traffic and greater physical store customer visits."),
@@ -78,7 +78,7 @@ const seoCostChennaiContent: BlogContentItem[] = [
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
     h1("eCommerce Website SEO Packages in Chennai"),
-    img(`${imageDir}/How Much Does SEO Cost in Chennai image2.webp`, "eCommerce Website SEO Packages in Chennai"),
+    img(`${imageDir}/eCommerce Website SEO Packages in Chennai.webp`, "eCommerce Website SEO Packages in Chennai"),
     p("Customized eCommerce SEO packages are available for businesses in Chennai, with pricing ranging from Rs. 20,000 to Rs. 60,000."),
     p("The costs to create a website depend on multiple elements, which include product count, the eCommerce system used, website visitor volume, market competitiveness, and the geographic area targeted."),
     p("Chennai-specific packages focus on boosting search engine rankings, driving organic traffic, and increasing sales."),
@@ -240,7 +240,7 @@ export const howMuchDoesSEOCostInChennaiSEO = {
         "Discover how much SEO costs in Chennai. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-chennai",
     canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-chennai",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Chennai/How Much Does SEO Cost in Chennai main image.webp",
+    image: "https://geekonomytech.com/blog image/How Much Does SEO Cost in Chennai/How Much Does SEO Cost in Chennai main image.webp",
     twitterHandle: "@GeekonomyTech",
 };
 

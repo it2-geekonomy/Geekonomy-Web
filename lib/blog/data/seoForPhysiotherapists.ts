@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/SEO for Physiotherapists/SEO for Physiotherapists.webp";
+const coverImage = "/blog image/SEO for Physiotherapists/SEO for Physiotherapists new.webp";
 const imageDir = "/blog image/SEO for Physiotherapists";
 
 const seoForPhysiotherapistsContent: BlogContentItem[] = [
@@ -20,7 +20,6 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("In the end, SEO for physical therapy that is done right will result in more patients coming your way as they look for physical therapists near them."),
   p("Some of the things you do to enhance your offline to online presence include on-page elements such as website content and meta descriptions, while off-page factors like obtaining quality backlinks and working on your Google Business Profile complete the picture."),
   h1("Importance of SEO for Physical Therapy Clinics"),
-  img(`${imageDir}/Importance of SEO for Physical Therapy Clinics.webp`, "Importance of SEO for Physical Therapy Clinics"),
   p("The significance of SEO for physical therapy clinics is just beyond measure."),
   p("In the present internet world, the majority of people rely on search engines like Google to find them the needed medical care, physical therapy included."),
   p("A physical therapy website of yours that rarely shows up on the first page of the search results is your chance at losing a large number of potential patients and website visitors."),
@@ -34,6 +33,7 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("Off-page SEO, the activities that are done, for example, by getting links from other reputable websites to your website and managing your Google Business Profile, is very important for attracting more website visitors."),
   p("Being proficient in these ranking factors is essential to your practice of increasing online visibility and driving more traffic to your website, thus bringing more patients to your physical therapy practice."),
   h1("Local SEO Strategies for Physiotherapists"),
+  img(`${imageDir}/Local SEO Strategies for Physiotherapists.webp`, "Local SEO Strategies for Physiotherapists"),
   h2("Optimising Your Google Business Profile"),
   p("For any local SEO strategy of a physical therapy clinic, a Google Business Profile is a must-have."),
   p("When you optimise your Google Business Profile, you get more visible online to people in your local area who use Google to find services."),
@@ -69,7 +69,6 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("Firstly, write down a list of probable physical therapy keywords by thinking of the services you could offer to patients and what they might search for, e.g., \"physical therapy for back pain\", \"sports physical therapy\", or \"pediatric physical therapy.\""),
   p("After that, employ keyword research tools like Google Keyword Planner or Ahrefs to discover more popular search terms that will be your SEO strategy."),
   h1("Incorporating Keywords into Your Website"),
-  img(`${imageDir}/Incorporating Keywords into Your Website.webp`, "Incorporating Keywords into Your Website"),
   p("Once you have figured out what your target keywords are, it is still very important that you incorporate them into your physical therapy website in a very strategic way."),
   p("First of all, make your titles and meta descriptions physical therapy-related with the use of relevant keywords, so that your click-through rate from the search results will be higher."),
   p("Within the website content, natural keyword usage should also be included in the headings, body text, and image alt tags."),
@@ -81,6 +80,7 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("The use of relevant physical therapy keywords for the optimisation of your site is one of the most important steps towards increasing your online visibility, driving qualified traffic to your site, and acquiring a greater number of potential patients for your physical therapy clinic."),
   p('The <a href="/blog/fashion-seo-agency-seo-strategies-to-grow" class="underline text-[#6FAF4E]">implementation of effective SEO strategies</a> for physical therapists is mainly about the use of these strategies to enhance your website.'),
   h1("On-Page SEO Techniques for Physiotherapy Websites"),
+  img(`${imageDir}/On-Page SEO Techniques for Physiotherapy Websites.webp`, "On-Page SEO Techniques for Physiotherapy Websites"),
   h2("Optimising Content for Search Engines"),
   p("One of the best ways to make your physiotherapy website more popular with search engines is to implement on-page SEO."),
   p("The first thing you need to do is to carry out a good keyword research in order to find out what kind of therapy-related words potential patients use when searching for local physical therapy services."),
@@ -90,7 +90,6 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("It is equally important to optimize pictures for SEO and to do this it is necessary to use descriptive alt tags with relevant physiotherapy keywords in order to not only help visitors but also for the purpose of improving the SEO."),
   p("When you optimise your content in a very thoughtful way, you make it easier for patients to find you online; hence, their visits to your website will be more frequent, and eventually, you will have more patients at your physiotherapy clinic."),
   h1("Best Practices for SEO Audits"),
-  img(`${imageDir}/Best Practices for SEO Audits.webp`, "Best Practices for SEO Audits"),
   p("SEO audits on a regular basis are a must if you want to keep your physiotherapy site ranking high and even improve it."),
   p("It means that an SEO audit is basically a thorough examination of technical, on-page, and off-page SEO factors of your website, through which issues can be found to get the improvement of the site."),
   p("First of all, inspect your website architecture, loading speed, and whether your site is mobile-friendly or not for a good user experience without any hassle."),
@@ -110,8 +109,8 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("Take the hour or so of your day to disseminate your blog posts to social networking members and email recipients and create traffic to your site."),
   p("By continuously yielding top-notch SEO-friendly blog pieces, you secure a spot as a trusted resource, heighten your visibility, and pull in more clients to your PT practice."),
   h1("Growing Your Practice through SEO"),
+  img(`${imageDir}/Growing Your Practice through SEO.webp`, "Growing Your Practice through SEO"),
   h2("Measuring SEO Success for Your PT Practice"),
-  img(`${imageDir}/Measuring SEO Success for Your PT Practice.webp`, "Measuring SEO Success for Your PT Practice"),
   p("Firstly, it is a must to gauge the success of SEO to know how well the SEO strategies worked."),
   p("Besides, it is through data acquired that informed decisions can be made to further grow the practice."),
   p("Indeed, KPIs are the measurements that tell us the ranking, traffic, and user engagement of the website."),
@@ -120,7 +119,6 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
   p("Equally important is to have a look at the bounce rate, time on page, and conversion rate of your website in order to gauge user engagement and come up with a plan to improve the parts that are weak."),
   p("That is, by regular monitoring and evaluation of these KPIs, you become capable of refining your SEO strategies so as to get the maximum benefit of the local SEO for physical therapy services."),
   h1("Future Trends in SEO for Physiotherapy Clinics in 2026"),
-  img(`${imageDir}/Future Trends in SEO for Physiotherapy Clinics in 2026.webp`, "Future Trends in SEO for Physiotherapy Clinics in 2026"),
   p('Keeping your <a href="/blog/best-practices-for-seo-enhancing-ai-visibility" class="underline text-[#6FAF4E]">SEO practice</a> in line with future developments means you are always improving the online presence of your practice in order to keep your position on the market and increase your visibility among possible clients.'),
   p("The main attention will be on the mobile-first indexing in 2026."),
   p("Simply put, people will be searching for services almost exclusively through their mobile devices."),

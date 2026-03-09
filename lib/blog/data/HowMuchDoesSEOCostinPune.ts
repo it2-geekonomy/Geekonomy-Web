@@ -81,7 +81,8 @@ const seoCostPuneContent: BlogContentItem[] = [
     p("<Strong>Note: </Strong>The estimated package costs and pricing information will vary according to the specific combination of your project's complexity and its scope requirements."),
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
-    h2("Local SEO Packages in Pune"),
+    h1("Local SEO Packages in Pune"),
+    img(`${imageDir}/Local SEO Packages in Pune.webp`, "Local SEO Packages in Pune"),
     p("Business owners who operate their companies in Pune should implement local SEO packages that focus on their specific area to improve their search engine presence within the local market."),
     p("The cost of local SEO services in Pune starts at Rs. 15,000 and reaches a maximum of Rs. 55,000, depending on the total number of keywords and pages, branches, the present ranking, level of competition, and the designated service area."),
     p("The organization uses these services to boost its local search engine presence, which results in higher customer acquisition and increased visitor traffic to its brick-and-mortar stores."),
@@ -92,7 +93,8 @@ const seoCostPuneContent: BlogContentItem[] = [
     p("<Strong>Note: </Strong>The estimated package costs and pricing information will vary according to the specific combination of your project's complexity and its scope requirements."),
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
-    h2("eCommerce Website SEO Packages in Pune"),
+    h1("eCommerce Website SEO Packages in Pune"),
+    img(`${imageDir}/eCommerce Website SEO Packages in Pune.webp`, "eCommerce Website SEO Packages in Pune"),
     p("The eCommerce SEO packages for Pune businesses provide customized solutions that their clients can purchase for prices between Rs. 20,000 and Rs. 60,000."),
     p("The project cost will be determined by multiple elements, which include product quantity, chosen eCommerce system, anticipated website visitors, market competition, and product distribution areas."),
     p("The packages create improvements for search engine results, which result in more website visitors and increased sales revenue."),
@@ -103,7 +105,8 @@ const seoCostPuneContent: BlogContentItem[] = [
     p("<Strong>Note: </Strong>The estimated package costs and pricing information will vary according to the specific combination of your project's complexity and its scope requirements."),
     p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
-    h2("Choosing the Best SEO Companies in Pune"),
+    h1("Choosing the Best SEO Companies in Pune"),
+    img(`${imageDir}/Choosing the Best SEO Companies in Pune.webp`, "Choosing the Best SEO Companies in Pune"),
     h2("Top SEO Agencies and Their Offerings"),
     p("You need to understand how Indian SEO companies provide their different SEO services before you can identify the best SEO companies that operate in Pune."),
     p("The leading SEO agencies deliver comprehensive SEO packages that start with initial website SEO audits and proceed to ongoing optimization and link building to improve your online presence."),
@@ -188,7 +191,7 @@ export const howMuchDoesSEOCostInPuneSEO = {
         "Discover premium SEO services in Pune. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-pune",
     canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-pune",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Pune/How Much Does SEO Cost in Pune main image.webp",
+    image: "https://geekonomytech.com/blog image/How Much Does SEO Cost in Pune/How Much Does SEO Cost in Pune main image.webp",
     twitterHandle: "@GeekonomyTech",
 };
 

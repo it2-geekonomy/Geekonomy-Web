@@ -124,6 +124,7 @@ const localSEOGeneralContractorsContent: BlogContentItem[] = [
   p("The aim is for Google to recognise the area your business is operating in the local district, thus improving SEO performance."),
 
   h1("Future Trends in Local SEO for Contractors"),
+  img(`${imageDir}/Future Trends in Local SEO for Contractors.webp`, "Future Trends in Local SEO for Contractors"),
   h2("Emerging Local SEO Techniques for 2026"),
   img(`${imageDir}/image3.webp`, "Emerging Local SEO Techniques for 2026"),
   p("In 2026, a handful of local SEO strategies that are currently just visible on the horizon will gradually gain significance for contractors to a great extent."),

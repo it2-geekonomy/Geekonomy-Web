@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/Outsource SEO India/Outsource SEO India main image.webp";
+const coverImage = "/blog image/Outsource SEO India/Outsource SEO India.webp";
 const imageDir = "/blog image/Outsource SEO India";
 
 const outsourceSEOIndiaContent: BlogContentItem[] = [
@@ -13,7 +13,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Considering Outsourcing Your SEO?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">We deliver expert, cost-effective SEO. Get a dedicated team and clear reporting without the overhead.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO Outsourcing"),
   h2("What is SEO Outsourcing?"),
-  img(`${imageDir}/Outsource SEO India image1.webp`, "What is SEO Outsourcing?"),
+  img(`${imageDir}/What is SEO Outsourcing.webp`, "What is SEO Outsourcing?"),
   p("SEO outsourcing is basically when you decide to let a third party, an external agency or a dedicated SEO team that is different from you, rather than an in-house SEO team, handle your optimisation for search engines."),
   p("Afterwards, businesses can continue to operate as they were doing, and simultaneously, they can benefit from the expertise of an SEO agency, which is a specialist in SEO strategies."),
   p("Through the use of professional SEO services, outsourcing SEO enables a company to expand its digital footprint and to elevate its rank in SERPs."),
@@ -34,13 +34,13 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("Honest reporting and good communication are two of the most important features of an SEO outsourcing India partnership."),
   p("They stay in contact with you through the whole SEO project, making sure that it fits with your business goals and that SEO results can be measured."),
   h1("SEO Outsourcing Services in India"),
+  img(`${imageDir}/SEO Outsourcing Services in India.webp`, "SEO Outsourcing Services in India"),
   h2("Overview of SEO Services Offered"),
   p("Outsourcing SEO in India is like opening a treasure chest full of different services that are designed to increase your visibility online and get you a good ranking on search engines."),
   p("The services are like a recipe, beginning with detailed keyword research and on-page optimisation and drilling down to link building and content creation on a large scale."),
   p("An SEO offshoring partner working towards your goal will carry out the most effective SEO strategies, such as technical SEO audits, competitor analysis, and conversion rate optimisation, thereby ensuring that the services provided are success-oriented."),
   p("By handing over your SEO project to a proficient SEO team, you are making sure that all aspects of your digital marketing are taken care of in a professional and efficient manner, which, in the end, will lead to an increase in organic traffic and the accomplishment of SEO goals that can be measured."),
   h2("Why India is a Preferred Outsourcing Destination"),
-  img(`${imageDir}/Outsource SEO India image2.webp`, "Why India is a Preferred Outsourcing Destination"),
   p("India has become the go-to place for SEO outsourcing, in light of multiple factors, which are quite convincing."),
   p("To exemplify, India has what it takes to be attractive by giving ways of saving money and easy access to lots of SEO professionals."),
   p("An extensive workforce of well-trained and seasoned SEO experts, along with reasonable prices, is what India offers."),
@@ -56,7 +56,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("The Indian SEO outsourcing market has a wide range of options from which you can choose, either a dedicated SEO team or a white-label SEO partner, to help you raise your search engine results pages (SERPs) and achieve your digital marketing goals."),
   p("Hiring an Agency in India for your local SEO will definitely make your business more visible to local customers."),
   h1("Partnering with an Outsourcing SEO Company"),
-  img(`${imageDir}/Outsource SEO India image3.webp`, "Partnering with an Outsourcing SEO Company"),
+  img(`${imageDir}/Partnering with an Outsourcing SEO Company.webp`, "Partnering with an Outsourcing SEO Company"),
   h2("How to Select the Right Outsourcing Partner"),
   p("The decision to select a suitable SEO outsourcing partner greatly impacts your SEO endeavour."),
   p("First, examine the different outsourcing company options in India."),
@@ -95,7 +95,6 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("It is equally important to create natural links from trustworthy sources."),
   p("By concentrating on these white hat SEO techniques, you will be able to raise your website's visibility, get more organic traffic, and build a strong online presence, which is rewarded by search engines."),
   h2("Measuring Success with White Hat SEO"),
-  img(`${imageDir}/Outsource SEO India image5.webp`, "Measuring Success with White Hat SEO"),
   p("The success of White Hat SEO can be measured by the proper utilisation of KPIs (Key Performance Indicators), which track user engagement and organic growth."),
   p("One should keep an eye on the primary means of getting to the website (organic traffic) as well as the rates at which visitors turn into customers (conversion rates); both these metrics are meant to bring out the clearest picture of your performance."),
   p("Services are there to enhance the organic traffic, keyword ranking, conversion rates, and bounce rates, which are the metrics used to monitor these goals."),
@@ -104,6 +103,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("It's extremely important for you to be able to understand the full scope of white hat SEO effects with the help of your SEO partner's transparent and detailed reporting and thus, make informed, data-driven decisions to move towards your business goals."),
   p("Try to find the changes that result in customers from your local area coming to give you business."),
   h1("Optimizing Your SEO Project"),
+  img(`${imageDir}/Optimizing Your SEO Project.webp`, "Optimizing Your SEO Project"),
   h2("Defining Your SEO Goals and Objectives"),
   p("It is very important to have a clear idea of the goals before starting any SEO project."),
   p("To make sure that the services are designed for maximum effectiveness, these objectives should be SMART: specific, measurable, achievable, relevant and time-bound."),
@@ -122,7 +122,6 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("Web content, meta tags, and URLs are the parts of the websites where the selected keywords are cleverly and in a planned manner injected."),
   p("As a result, your site becomes friendly to search engine algorithms and can be ranked at a high level with a greater chance of getting noticed or new customers, especially local ones, as a result of targeted off-page SEO efforts."),
   h2("Monitoring and Improving Keyword Rankings"),
-  img(`${imageDir}/Outsource SEO India image6.webp`, "Monitoring and Improving Keyword Rankings"),
   p("After the keywords have been incorporated, it is very necessary to hire SEO services from outside for the best results."),
   p("Keep an eye on their work and note their ranking in search engines; these services are meant to give you clear insights you can act on."),
   p("Such work is about employing SEO instruments to follow the position of your target keywords in the pages of search engine results."),
@@ -131,6 +130,7 @@ const outsourceSEOIndiaContent: BlogContentItem[] = [
   p("Ongoing tracking and adjustment are what will keep you ahead in the game and will bring you long-term SEO results."),
   p("If the SEO project is to be successful, then it is only through consistently achieving strong rankings."),
   h1("The Future of SEO Outsourcing in India"),
+  img(`${imageDir}/The Future of SEO Outsourcing in India.webp`, "The Future of SEO Outsourcing in India"),
   h2("Trends in Digital Marketing Services"),
   p("The digital marketing services environment is changing all the time, and SEO outsourcing in India is following the trend too."),
   p("Present trends for the future are a heavy focus on mobile optimisation, voice search optimisation, and personalisation."),

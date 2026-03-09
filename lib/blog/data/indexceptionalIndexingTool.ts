@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/Indexceptional is the Best Website/Indexceptional is the Best Website.webp";
+const coverImage = "/blog image/Indexceptional is the Best Website/Why Indexceptional is the Best Website Indexing Tool for SEO.webp";
 const imageDir = "/blog image/Indexceptional is the Best Website";
 
 const indexceptionalIndexingToolContent: BlogContentItem[] = [
