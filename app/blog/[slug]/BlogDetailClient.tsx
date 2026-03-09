@@ -6,8 +6,7 @@ import Image from "next/image";
 import { BLOGS } from "@/components/Blogs/blogs";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { BlogCTAModal } from "@/components/Blogs/BlogCTAModal";
-import { getAuthorForBlog, getDateInfo } from "@/lib/blog/authorMapping";
-import { Typography } from "@/components/ui/Typography";
+import { getAuthorForBlog, getDateInfo, getAuthorSlug } from "@/lib/blog/authorMapping";
 
 const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
@@ -43,6 +42,7 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
   // Add "About the author" section as the last content item
   const blogContentWithAuthor = [...blog.sections];
   if (authorInfo && authorInfo.mainImage && authorInfo.biography) {
+    const authorSlug = getAuthorSlug(authorInfo.name);
     const authorSectionHTML = `
       <div class="bg-[#1a1a1a] border border-gray-800 rounded-lg p-6 md:p-8">
         <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
@@ -53,7 +53,7 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
             </div>
           </div>
           <div class="w-full md:w-3/4 flex flex-col">
-            <h3 class="text-[#6FAF4E] text-2xl md:text-3xl font-bold mb-2 text-center md:text-left" style="color: #6FAF4E !important;">${authorInfo.name}</h3>
+            <h3 class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left"><a href="/blog/author/${authorSlug}" class="text-[#6FAF4E] hover:underline transition-all cursor-pointer" style="color: #6FAF4E !important;">${authorInfo.name}</a></h3>
             <p class="text-white text-base md:text-lg mb-4 text-center md:text-left">${authorInfo.role}</p>
             <div class="text-[#999999] text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
           </div>
@@ -98,26 +98,6 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
 
   return (
     <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
-      {/* Breadcrumb Navigation */}
-      <div className="hidden lg:block px-4 sm:px-6 md:px-8 lg:px-12 mb-6 relative z-[100]">
-        <nav className="flex items-center gap-2">
-          <Link 
-            href="/blog"
-            className="hover:text-[#6FAF4E] transition-colors"
-          >
-            <Typography variant="base" className="text-white/60">
-              Blog
-            </Typography>
-          </Link>
-          <Typography variant="base" className="text-white/60">
-            /
-          </Typography>
-          <Typography variant="base" className="text-white/90">
-            {blog.heading}
-          </Typography>
-        </nav>
-      </div>
-
       <StickyScroll 
         content={blogContentWithAuthor} 
         authorInfo={authorInfo}

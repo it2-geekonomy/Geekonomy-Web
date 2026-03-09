@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import { StickyScrollContent, AuthorInfo } from "../types";
 import { NAV_HEIGHT, OPACITY_TRANSITION } from "../constants";
 import { getImageHeight, calculateContentPadding, stripHeadingTags } from "../utils";
 import { useSectionVisibility } from "../hooks";
+import { getAuthorSlug, AuthorName } from "@/lib/blog/authorMapping";
 
 const SECTION_TITLE_STYLE: React.CSSProperties = {
   color: "#fff",
@@ -151,16 +153,25 @@ export const MobileView = ({
                       />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
-                        <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>Author:</span>
-                        <span style={{ color: "#6FAF4E", fontWeight: 500, fontSize: "0.875rem" }}>
-                          {authorInfo.name}
-                        </span>
-                        <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>|</span>
-                        <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>
-                          {authorInfo.role}
-                        </span>
-                      </div>
+                              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
+                                <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>Author:</span>
+                                <Link
+                                  href={`/blog/author/${getAuthorSlug(authorInfo.name as AuthorName)}`}
+                                  style={{ 
+                                    color: "#6FAF4E", 
+                                    fontWeight: 500, 
+                                    fontSize: "0.875rem",
+                                    textDecoration: "none"
+                                  }}
+                                  className="hover:underline transition-all"
+                                >
+                                  {authorInfo.name}
+                                </Link>
+                                <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>|</span>
+                                <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>
+                                  {authorInfo.role}
+                                </span>
+                              </div>
                       {dateInfo && (
                         <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.75rem", marginTop: "0.25rem" }}>
                           {dateInfo.label} {dateInfo.date}

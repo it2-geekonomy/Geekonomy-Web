@@ -234,6 +234,37 @@ export function getUpdatedDateISO(slug: string): string | null {
 }
 
 /**
+ * Convert author name to URL slug
+ * Example: "Rahul Dutta" -> "rahul-dutta"
+ */
+export function getAuthorSlug(authorName: AuthorName): string {
+  return authorName.toLowerCase().replace(/\s+/g, "-");
+}
+
+/**
+ * Get author info by slug
+ */
+export function getAuthorBySlug(slug: string): AuthorInfo | null {
+  const authorName = Object.keys(AUTHOR_INFO).find(
+    (name) => getAuthorSlug(name as AuthorName) === slug
+  ) as AuthorName | undefined;
+  
+  if (authorName) {
+    return AUTHOR_INFO[authorName];
+  }
+  return null;
+}
+
+/**
+ * Get all blog slugs for an author
+ */
+export function getBlogsByAuthor(authorName: AuthorName): string[] {
+  return Object.entries(BLOG_AUTHOR_MAP)
+    .filter(([_, author]) => author === authorName)
+    .map(([slug]) => slug);
+}
+
+/**
  * Get the display date info (published or updated)
  * Returns object with date and label ("Published" or "Updated")
  */

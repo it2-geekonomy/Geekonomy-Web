@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { StickyScrollContent, AuthorInfo } from "../types";
 import { stripHeadingTags } from "../utils";
+import { getAuthorSlug } from "@/lib/blog/authorMapping";
 
 /** Section index → heading tag. Add "h3", "h4" etc. to the array only if you want those levels; last tag is used for remaining sections. */
 const SECTION_TITLE_TAGS: readonly ["h1", "h2", ...string[]] = ["h1", "h2"];
@@ -95,9 +97,12 @@ export const DesktopView = ({
                     <div className="flex flex-col">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-white/60 text-sm md:text-base">Author:</span>
-                        <span className="text-[#6FAF4E] font-medium text-sm md:text-base">
+                        <Link
+                          href={`/blog/author/${getAuthorSlug(authorInfo.name)}`}
+                          className="text-[#6FAF4E] font-medium text-sm md:text-base hover:underline transition-all cursor-pointer"
+                        >
                           {authorInfo.name}
-                        </span>
+                        </Link>
                         <span className="text-white/60 text-sm md:text-base">|</span>
                         <span className="text-white/60 text-sm md:text-base">
                           {authorInfo.role}
