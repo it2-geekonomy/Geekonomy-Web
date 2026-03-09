@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { Suspense } from "react";
 import { allBlogsData } from "@/lib/blog";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
 import BlogDetailClient from "@/app/blog/[slug]/BlogDetailClient";
+import { getAuthorForBlog, getPublishedDateISO, getUpdatedDateISO } from "@/lib/blog/authorMapping";
 
 export async function generateMetadata({
   params,
@@ -22,6 +24,15 @@ export async function generateMetadata({
   // Get SEO data from seoData.ts
   const seoKey = `blog/${slug}`;
   const seoData = await getDynamicSEODataFromHeaders(seoKey);
+  
+  // Get author and date info for structured data
+  const authorInfo = getAuthorForBlog(slug);
+  const publishedDateISO = getPublishedDateISO(slug);
+  const updatedDateISO = getUpdatedDateISO(slug);
+  
+  // Use updated date if available, otherwise published date
+  const articlePublishedTime = publishedDateISO || (updatedDateISO ? null : new Date("2026-03-03").toISOString());
+  const articleModifiedTime = updatedDateISO || publishedDateISO || new Date("2026-03-03").toISOString();
 
   return {
     title: seoData.title,
@@ -40,6 +51,9 @@ export async function generateMetadata({
       siteName: "Geekonomy Technology",
       type: "article",
       images: seoData.image ? [{ url: seoData.image }] : [],
+      publishedTime: articlePublishedTime || undefined,
+      modifiedTime: articleModifiedTime || undefined,
+      authors: authorInfo ? [authorInfo.name] : undefined,
     },
     twitter: {
       card: "summary_large_image",
@@ -86,5 +100,60 @@ export default async function BlogDetailPage({
     );
   }
 
-  return <BlogDetailClient blogSlug={slug} />;
+  // Get SEO data and dates for structured data
+  const seoKey = `blog/${slug}`;
+  const seoData = await getDynamicSEODataFromHeaders(seoKey);
+  const authorInfo = getAuthorForBlog(slug);
+  const publishedDateISO = getPublishedDateISO(slug);
+  const updatedDateISO = getUpdatedDateISO(slug);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thegeekonomy.com";
+  const blogUrl = `${baseUrl}/blog/${slug}`;
+  
+  // Article structured data for Google
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.heading,
+    description: seoData.description,
+    image: seoData.image ? [seoData.image] : [],
+    datePublished: publishedDateISO || (updatedDateISO ? null : new Date("2026-03-03").toISOString()),
+    dateModified: updatedDateISO || publishedDateISO || new Date("2026-03-03").toISOString(),
+    author: {
+      "@type": "Person",
+      name: authorInfo.name,
+      jobTitle: authorInfo.role,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Geekonomy Technology",
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/Logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": blogUrl,
+    },
+    url: blogUrl,
+  };
+
+  return (
+    <>
+      {/* Article Structured Data for Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+      <Suspense fallback={
+        <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center">
+          <p className="text-white text-xl">Loading...</p>
+        </main>
+      }>
+        <BlogDetailClient blogSlug={slug} />
+      </Suspense>
+    </>
+  );
 }
