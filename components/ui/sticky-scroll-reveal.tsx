@@ -8,7 +8,7 @@ import { MobileView } from "./sticky-scroll-reveal/components/MobileView";
 import { DesktopView } from "./sticky-scroll-reveal/components/DesktopView";
 import { BREAKPOINTS } from "./sticky-scroll-reveal/constants";
 
-export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) => {
+export const StickyScroll = ({ content, contentClassName, authorInfo, dateInfo }: StickyScrollProps) => {
   const pageRef = useRef<HTMLDivElement | null>(null);
   const desktopRef = useRef<HTMLDivElement | null>(null);
   const sectionsWrapperRef = useRef<HTMLDivElement | null>(null);
@@ -39,6 +39,8 @@ export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) =
             desktopRef={desktopRef}
             contentClassName={contentClassName}
             useSemanticHeadings={true}
+            authorInfo={authorInfo}
+            dateInfo={dateInfo}
           />
           {/* Placeholder so mobileContentRef is always hydrated for useScroll when desktop is active */}
           <div ref={mobileContentRef} aria-hidden style={{ position: "absolute", left: -9999, width: 1, height: 1, overflow: "auto" }} />
@@ -53,6 +55,8 @@ export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) =
             imageRef={mobileImgRef}
             contentRef={mobileContentRef}
             useSemanticHeadings={true}
+            authorInfo={authorInfo}
+            dateInfo={dateInfo}
           />
           {/* Placeholder so desktopRef is always hydrated for useScroll when mobile is active */}
           <div ref={desktopRef} aria-hidden style={{ position: "absolute", left: -9999, width: 1, height: 1, overflow: "auto" }} />

@@ -8,7 +8,7 @@ import { MobileView } from "./components/MobileView";
 import { DesktopView } from "./components/DesktopView";
 import { BREAKPOINTS } from "./constants";
 
-export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) => {
+export const StickyScroll = ({ content, contentClassName, authorInfo, dateInfo }: StickyScrollProps) => {
   const pageRef = useRef<HTMLDivElement | null>(null);
   const desktopRef = useRef<HTMLDivElement | null>(null);
   const sectionsWrapperRef = useRef<HTMLDivElement | null>(null);
@@ -38,6 +38,8 @@ export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) =
           desktopRef={desktopRef}
           contentClassName={contentClassName}
           useSemanticHeadings={true}
+          authorInfo={authorInfo}
+          dateInfo={dateInfo}
         />
       ) : (
         <MobileView
@@ -48,6 +50,8 @@ export const StickyScroll = ({ content, contentClassName }: StickyScrollProps) =
           imageRef={mobileImgRef}
           contentRef={mobileContentRef}
           useSemanticHeadings={true}
+          authorInfo={authorInfo}
+          dateInfo={dateInfo}
         />
       )}
     </section>

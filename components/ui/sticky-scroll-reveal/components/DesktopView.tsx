@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { StickyScrollContent } from "../types";
+import { StickyScrollContent, AuthorInfo } from "../types";
 import { stripHeadingTags } from "../utils";
 
 /** Section index → heading tag. Add "h3", "h4" etc. to the array only if you want those levels; last tag is used for remaining sections. */
@@ -16,6 +17,8 @@ interface DesktopViewProps {
   desktopRef: React.RefObject<HTMLDivElement | null>;
   contentClassName?: string;
   useSemanticHeadings?: boolean;
+  authorInfo?: AuthorInfo;
+  dateInfo?: { date: string; label: "Published" | "Updated" } | null;
 }
 
 export const DesktopView = ({
@@ -25,6 +28,8 @@ export const DesktopView = ({
   desktopRef,
   contentClassName,
   useSemanticHeadings = true,
+  authorInfo,
+  dateInfo,
 }: DesktopViewProps) => {
   useEffect(() => {
     const container = desktopRef.current;
@@ -39,6 +44,7 @@ export const DesktopView = ({
     ensureSmooth();
     return () => observer.disconnect();
   }, [desktopRef]);
+
 
   return (
     <div
@@ -57,20 +63,55 @@ export const DesktopView = ({
         <div ref={sectionsWrapperRef} className="space-y-8 md:pb-0">
           {content.map((item, i) => (
             <div key={`${item.title}-${i}`}>
-              <motion.div>
-                {(() => {
-                  const tagName = SECTION_TITLE_TAGS[Math.min(i, SECTION_TITLE_TAGS.length - 1)];
-                  const Tag = tagName as "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-                  return (
-                    <Tag
-                      className={SECTION_TITLE_CLASS}
-                      aria-hidden={!useSemanticHeadings || undefined}
-                    >
-                      {item.title}
-                    </Tag>
-                  );
-                })()}
-              </motion.div>
+              {item.title && (
+                <motion.div>
+                  {(() => {
+                    const tagName = SECTION_TITLE_TAGS[Math.min(i, SECTION_TITLE_TAGS.length - 1)];
+                    const Tag = tagName as "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+                    return (
+                      <Tag
+                        className={SECTION_TITLE_CLASS}
+                        aria-hidden={!useSemanticHeadings || undefined}
+                      >
+                        {item.title}
+                      </Tag>
+                    );
+                  })()}
+                </motion.div>
+              )}
+              {/* Author Section - Show after first section title */}
+              {i === 0 && authorInfo?.name && (
+                <div className="mb-6 mt-6">
+                  <div className="flex items-center gap-4">
+                    <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden shrink-0 bg-gray-800">
+                      <Image
+                        src={authorInfo.image || "/author/Rahul author.webp"}
+                        alt={authorInfo.name}
+                        fill
+                        className="object-cover"
+                        priority
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-white/60 text-sm md:text-base">Author:</span>
+                        <span className="text-[#6FAF4E] font-medium text-sm md:text-base">
+                          {authorInfo.name}
+                        </span>
+                        <span className="text-white/60 text-sm md:text-base">|</span>
+                        <span className="text-white/60 text-sm md:text-base">
+                          {authorInfo.role}
+                        </span>
+                      </div>
+                      {dateInfo && (
+                        <span className="text-white/60 text-xs md:text-sm mt-1">
+                          {dateInfo.label} {dateInfo.date}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
               <motion.div>
                 <div
                   className="mt-6 text-[#FFFFFF] text-lg leading-relaxed space-y-4

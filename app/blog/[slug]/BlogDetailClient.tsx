@@ -2,9 +2,14 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { BLOGS } from "@/components/Blogs/blogs";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { BlogCTAModal } from "@/components/Blogs/BlogCTAModal";
+import { getAuthorForBlog, getDateInfo } from "@/lib/blog/authorMapping";
+import { Typography } from "@/components/ui/Typography";
+
+const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
 interface BlogDetailClientProps {
   blogSlug: string;
@@ -13,9 +18,52 @@ interface BlogDetailClientProps {
 export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
   const blog = BLOGS.find((b) => b.slug === blogSlug);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [returnPage, setReturnPage] = useState<number | null>(null);
+
+  // Get the saved page from sessionStorage on mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedPage = sessionStorage.getItem(BLOG_PAGE_STORAGE_KEY);
+      if (storedPage) {
+        const page = parseInt(storedPage, 10);
+        if (page >= 1) {
+          setReturnPage(page);
+        }
+      }
+    }
+  }, []);
 
   if (!blog) {
     return null; // Error case handled in parent
+  }
+
+  const authorInfo = getAuthorForBlog(blogSlug);
+  const dateInfo = getDateInfo(blogSlug);
+
+  // Add "About the author" section as the last content item
+  const blogContentWithAuthor = [...blog.sections];
+  if (authorInfo && authorInfo.mainImage && authorInfo.biography) {
+    const authorSectionHTML = `
+      <div class="bg-[#1a1a1a] border border-gray-800 rounded-lg p-6 md:p-8">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+          <div class="w-full md:w-[20%] flex flex-col items-center md:items-start justify-center md:justify-start">
+            <p class="text-white text-xl mb-2 text-center md:text-left">About the Author :</p>
+            <div class="relative w-48 h-48 md:w-full md:h-full rounded-lg overflow-hidden">
+              <img src="${authorInfo.mainImage}" alt="${authorInfo.name}" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="w-full md:w-3/4 flex flex-col">
+            <h3 class="text-[#6FAF4E] text-2xl md:text-3xl font-bold mb-2 text-center md:text-left" style="color: #6FAF4E !important;">${authorInfo.name}</h3>
+            <p class="text-white text-base md:text-lg mb-4 text-center md:text-left">${authorInfo.role}</p>
+            <div class="text-[#999999] text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
+          </div>
+        </div>
+      </div>
+    `;
+    blogContentWithAuthor.push({
+      title: "",
+      description: authorSectionHTML,
+    });
   }
 
   // Handle in-blog CTA button clicks only (navbar Contact goes to /contact-us)
@@ -50,7 +98,32 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
 
   return (
     <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
-      <StickyScroll content={blog.sections} />
+      {/* Breadcrumb Navigation */}
+      <div className="hidden lg:block px-4 sm:px-6 md:px-8 lg:px-12 mb-6 relative z-[100]">
+        <nav className="flex items-center gap-2">
+          <Link 
+            href="/blog"
+            className="hover:text-[#6FAF4E] transition-colors"
+          >
+            <Typography variant="base" className="text-white/60">
+              Blog
+            </Typography>
+          </Link>
+          <Typography variant="base" className="text-white/60">
+            /
+          </Typography>
+          <Typography variant="base" className="text-white/90">
+            {blog.heading}
+          </Typography>
+        </nav>
+      </div>
+
+      <StickyScroll 
+        content={blogContentWithAuthor} 
+        authorInfo={authorInfo}
+        dateInfo={dateInfo}
+      />
+      
       
       {/* CTA Modal */}
       <BlogCTAModal
@@ -58,7 +131,7 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
         onClose={() => setIsModalOpen(false)}
         blogName={blog.heading}
       />
-      
+
       {/* Previous and Next Blog Buttons */}
       {showNavigation && (
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mt-16 mb-8">

@@ -8,10 +8,42 @@ import { Typography } from "@/components/ui/Typography";
 
 const BLOGS_PER_PAGE = 6;
 const NARROW_PAGINATION_WIDTH = 420;
+const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
 export default function BlogsPageClient() {
-  const [currentPage, setCurrentPage] = useState(1);
   const [isNarrow, setIsNarrow] = useState(false);
+
+  // Initialize page from sessionStorage or default to 1
+  const getInitialPage = () => {
+    if (typeof window !== "undefined") {
+      const storedPage = sessionStorage.getItem(BLOG_PAGE_STORAGE_KEY);
+      if (storedPage) {
+        const page = parseInt(storedPage, 10);
+        const totalPages = Math.ceil(BLOGS.length / BLOGS_PER_PAGE);
+        if (page >= 1 && page <= totalPages) {
+          return page;
+        }
+      }
+    }
+    return 1;
+  };
+
+  const [currentPage, setCurrentPage] = useState(getInitialPage);
+
+  // Load page from sessionStorage on mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedPage = sessionStorage.getItem(BLOG_PAGE_STORAGE_KEY);
+      if (storedPage) {
+        const page = parseInt(storedPage, 10);
+        const totalPages = Math.ceil(BLOGS.length / BLOGS_PER_PAGE);
+        if (page >= 1 && page <= totalPages && page !== currentPage) {
+          setCurrentPage(page);
+        }
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     const check = () => setIsNarrow(typeof window !== "undefined" && window.innerWidth <= NARROW_PAGINATION_WIDTH);
@@ -28,6 +60,12 @@ export default function BlogsPageClient() {
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
+      
+      // Save to sessionStorage for back navigation
+      if (typeof window !== "undefined") {
+        sessionStorage.setItem(BLOG_PAGE_STORAGE_KEY, page.toString());
+      }
+      
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
@@ -109,6 +147,12 @@ export default function BlogsPageClient() {
             <Link
               key={blog.slug}
               href={`/blog/${blog.slug}`}
+              onClick={() => {
+                // Save current page to sessionStorage before navigating
+                if (typeof window !== "undefined") {
+                  sessionStorage.setItem(BLOG_PAGE_STORAGE_KEY, currentPage.toString());
+                }
+              }}
               className="group block"
             >
               <article className="bg-[#0f0f0f] rounded-xl overflow-hidden hover:bg-[#1a1a1a] transition-all duration-300 h-full flex flex-col">
