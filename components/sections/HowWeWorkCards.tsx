@@ -85,7 +85,7 @@ export default function HowWeWorkCards() {
               <Typography
                 as="p"
                 variant="lg"
-                className="relative text-white/80 overflow-hidden pointer-events-none"
+                className="relative text-white overflow-hidden pointer-events-none"
               >
                 <span
                   className="relative z-10 inline-block opacity-0 translate-y-3 scale-95 blur-[1px]
