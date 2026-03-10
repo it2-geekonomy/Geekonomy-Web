@@ -108,11 +108,13 @@ import { websiteCostUK } from "@/lib/blog/data/websiteCostUK";
 import { whiteLabelPPCUSA } from "@/lib/blog/data/whiteLabelPPCUSA";
 import { brandingCostUK } from "@/lib/blog/data/brandingCostUK";
 import { seoCostUK } from "@/lib/blog/data/seoCostUK";
+import { howMuchDoesSEOCostInLeeds } from "@/lib/blog/data/HowMuchDoesSEOCostinLeeds";
 import { omnichannelMarketing } from "@/lib/blog/data/omnichannelMarketing";
 import { nursingHomesSEOCompany } from "@/lib/blog/data/nursingHomesSEOCompany";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  howMuchDoesSEOCostInLeeds,
   bestSeoServicesForStartupsInBangalore,
   seoForStartups,
   howMuchDoesSEOCostInManchester,
@@ -220,6 +222,7 @@ export const allBlogsData: BlogData[] = [
   seoCostUK,
   omnichannelMarketing,
   nursingHomesSEOCompany,
+  
 ];
 
 /** Section shape expected by StickyScroll (with React nodes) */
