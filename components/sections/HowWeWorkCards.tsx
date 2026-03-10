@@ -9,21 +9,25 @@ const CARDS = [
     id: 0,
     title: "Scope Boundaries",
     image: "/ourapproach/Scope_Boundaries.png",
+    description: "Clear limits",
   },
   {
     id: 1,
     title: "Priorities",
     image: "/ourapproach/Priotities.png",
+    description: "What matters most",
   },
   {
     id: 2,
     title: "Expected Timelines",
     image: "/ourapproach/Expected_Timelines.png",
+    description: "Realistic schedules",
   },
   {
     id: 3,
     title: "Realistic Outcomes",
     image: "/ourapproach/Realistic_Outcomes.png",
+    description: "Achievable results",
   },
 ];
 
@@ -57,43 +61,41 @@ export default function HowWeWorkCards() {
               <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6eaf4c]/60" />
               <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6eaf4c]/60" />
 
-
               <Typography
-                as="p"
-                variant="lg"
-                className={`relative text-white overflow-hidden transition-colors duration-300 mb-6 ${
-                  activeCard === card.id ? "text-white/70" : "group-hover:text-white/70"
-                }`}
-              >
-                <span
-                  className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
-                    activeCard === card.id ? "w-full" : "w-0 group-hover:w-full"
+                as="h3"
+                variant="xl"
+                className={` transition-all duration-300 mb-6 ${activeCard === card.id ? "font-bold" : "group-hover:font-bold"
                   }`}
-                />
+              >
+                {card.title}
               </Typography>
+             
 
               <Image
                 src={card.image}
                 alt={card.title}
                 width={1000}
                 height={90}
-                className={`mb-6 transition-all duration-300 object-contain ${
-                  activeCard === card.id
+                className={`mb-6 transition-all duration-300 object-contain ${activeCard === card.id
                     ? "scale-[1.18] drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
                     : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
-                }`}
+                  }`}
                 style={{ width: 'auto', height: 'auto', maxWidth: '100px', maxHeight: '90px' }}
               />
-
-<Typography
-                as="h3"
-                variant="xl"
-                className={` transition-all duration-300 ${
-                  activeCard === card.id ? "font-bold" : "group-hover:font-bold"
-                }`}
+              <Typography
+                as="p"
+                variant="lg"
+                className="relative text-white/80 overflow-hidden pointer-events-none"
               >
-                {card.title}
+                <span
+                  className="relative z-10 inline-block opacity-0 translate-y-3 scale-95 blur-[1px]
+                             transition-all duration-500 ease-out
+                             group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 group-hover:blur-0 group-hover:text-white group-hover:pointer-events-auto"
+                >
+                  {card.description}
+                </span>
               </Typography>
+              
 
             </div>
           ))}
