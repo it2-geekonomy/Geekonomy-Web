@@ -55,13 +55,18 @@ export default function OurApproach() {
             <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
             <Typography
-              as="h3"
-              variant="xl"
-              className={`mb-6 transition-all duration-300 ${
-                activeCard === 0 ? "font-bold" : "group-hover:font-bold"
+              as="p"
+              variant="lg"
+              className={`relative text-white overflow-hidden transition-colors duration-300 mb-6 ${
+                activeCard === 0 ? "text-white/70" : "group-hover:text-white/70"
               }`}
             >
-              Structured
+              <span className="relative z-10">Not scattered</span>
+              <span
+                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
+                  activeCard === 0 ? "w-full" : "w-0 group-hover:w-full"
+                }`}
+              />
             </Typography>
 
             <Image
@@ -75,21 +80,16 @@ export default function OurApproach() {
                   : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
               }`}
             />
-
-            <Typography
-              as="p"
-              variant="lg"
-              className={`relative text-white overflow-hidden transition-colors duration-300 ${
-                activeCard === 0 ? "text-white/70" : "group-hover:text-white/70"
+ <Typography
+              as="h3"
+              variant="xl"
+              className={`transition-all duration-300 ${
+                activeCard === 0 ? "font-bold" : "group-hover:font-bold"
               }`}
             >
-              <span className="relative z-10">Not scattered</span>
-              <span
-                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
-                  activeCard === 0 ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              />
+              Structured
             </Typography>
+            
           </div>
 
           {/* Practical */}
@@ -101,13 +101,18 @@ export default function OurApproach() {
             <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
             <Typography
-              as="h3"
-              variant="xl"
-              className={`mb-6 transition-all duration-300 ${
-                activeCard === 1 ? "font-bold" : "group-hover:font-bold"
+              as="p"
+              variant="lg"
+              className={`relative text-white overflow-hidden transition-colors duration-300 mb-6 ${
+                activeCard === 1 ? "text-white/70" : "group-hover:text-white/70"
               }`}
             >
-              Practical
+              <span className="relative z-10">Not theoretical</span>
+              <span
+                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
+                  activeCard === 1 ? "w-full" : "w-0 group-hover:w-full"
+                }`}
+              />
             </Typography>
 
             <Image
@@ -121,21 +126,16 @@ export default function OurApproach() {
                   : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
               }`}
             />
-
-            <Typography
-              as="p"
-              variant="lg"
-              className={`relative text-white overflow-hidden transition-colors duration-300 ${
-                activeCard === 1 ? "text-white/70" : "group-hover:text-white/70"
+<Typography
+              as="h3"
+              variant="xl"
+              className={`transition-all duration-300 ${
+                activeCard === 1 ? "font-bold" : "group-hover:font-bold"
               }`}
             >
-              <span className="relative z-10">Not theoretical</span>
-              <span
-                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
-                  activeCard === 1 ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              />
+              Practical
             </Typography>
+            
           </div>
 
           {/* Scalable */}
@@ -147,13 +147,18 @@ export default function OurApproach() {
             <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#69AE44]" />
 
             <Typography
-              as="h3"
-              variant="xl"
-              className={`mb-6 transition-all duration-300 ${
-                activeCard === 2 ? "font-bold" : "group-hover:font-bold"
+              as="p"
+              variant="lg"
+              className={`relative text-white overflow-hidden transition-colors duration-300 mb-6 ${
+                activeCard === 2 ? "text-white/70" : "group-hover:text-white/70"
               }`}
             >
-              Scalable
+              <span className="relative z-10">Not short-term</span>
+              <span
+                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
+                  activeCard === 2 ? "w-full" : "w-0 group-hover:w-full"
+                }`}
+              />
             </Typography>
 
             <Image
@@ -167,21 +172,16 @@ export default function OurApproach() {
                   : "group-hover:scale-[1.18] group-hover:drop-shadow-[0_0_32px_rgba(110,175,76,0.95)]"
               }`}
             />
-
-            <Typography
-              as="p"
-              variant="lg"
-              className={`relative text-white overflow-hidden transition-colors duration-300 ${
-                activeCard === 2 ? "text-white/70" : "group-hover:text-white/70"
+<Typography
+              as="h3"
+              variant="xl"
+              className={` transition-all duration-300 ${
+                activeCard === 2 ? "font-bold" : "group-hover:font-bold"
               }`}
             >
-              <span className="relative z-10">Not short-term</span>
-              <span
-                className={`absolute left-0 top-1/2 h-[4px] bg-[#69AE44] transition-all duration-300 ${
-                  activeCard === 2 ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              />
+              Scalable
             </Typography>
+           
           </div>
         </div>
       </div>
