@@ -61,14 +61,20 @@ export default function HowWeWorkCards() {
               <div className="absolute top-0 left-0 w-5 h-5 border-t border-l border-[#6eaf4c]/60" />
               <div className="absolute bottom-0 right-0 w-5 h-5 border-b border-r border-[#6eaf4c]/60" />
 
+
               <Typography
-                as="h3"
-                variant="xl"
-                className={`mb-6 transition-all duration-300 ${
-                  activeCard === card.id ? "font-bold" : "group-hover:font-bold"
+                as="p"
+                variant="lg"
+                className={`relative text-white overflow-hidden transition-colors duration-300 mb-6 ${
+                  activeCard === card.id ? "text-white/70" : "group-hover:text-white/70"
                 }`}
               >
-                {card.title}
+                <span className="relative z-10">{card.description}</span>
+                <span
+                  className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
+                    activeCard === card.id ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
               </Typography>
 
               <Image
@@ -84,20 +90,16 @@ export default function HowWeWorkCards() {
                 style={{ width: 'auto', height: 'auto', maxWidth: '100px', maxHeight: '90px' }}
               />
 
-              <Typography
-                as="p"
-                variant="lg"
-                className={`relative text-white overflow-hidden transition-colors duration-300 ${
-                  activeCard === card.id ? "text-white/70" : "group-hover:text-white/70"
+<Typography
+                as="h3"
+                variant="xl"
+                className={` transition-all duration-300 ${
+                  activeCard === card.id ? "font-bold" : "group-hover:font-bold"
                 }`}
               >
-                <span className="relative z-10">{card.description}</span>
-                <span
-                  className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
-                    activeCard === card.id ? "w-full" : "w-0 group-hover:w-full"
-                  }`}
-                />
+                {card.title}
               </Typography>
+
             </div>
           ))}
         </div>
