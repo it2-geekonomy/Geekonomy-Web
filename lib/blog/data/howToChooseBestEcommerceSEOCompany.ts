@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Ecommerce SEO/Ecommerce SEO main image .webp";
+const coverImage = "/blog image/Ecommerce SEO/How to Choose the Best Ecommerce SEO Company.webp";
 const imageDir = "/blog image/Ecommerce SEO";
 
 const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
@@ -53,6 +53,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   list('<ul><li>Creating a list of potential agencies that offer solutions for e-commerce SEO.</li><li>Checking the reviews and testimonials to evaluate a company\'s reputation and how happy its clients are.</li><li>Studying their SEO case studies to understand the success stories.</li><li>Finally, scheduling consultations to share your specific needs and goals, ask about their e-commerce SEO solutions approach, and what SEO tools they use.</li></ul>'),
 
   h1("Evaluating SEO Campaigns and Strategies"),
+  img(`${imageDir}/Evaluating SEO Campaigns and Strategies.webp`, "Evaluating SEO Campaigns and Strategies"),
   h2("What Makes an Effective SEO Campaign?"),
   p("An e-commerce SEO campaign that yields results depends on constant factors, foremost of which is a clearly outlined SEO strategy."),
   p("In the first place, a successful campaign starts with a comprehensive SEO audit."),
@@ -79,6 +80,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   p("Hence, the study of these case studies on e-commerce SEO allows you to develop a better strategy for e-commerce SEO and shows you how the successful implementation of SEO leads to measurable outcomes."),
 
   h1("Working with Ecommerce SEO Experts"),
+  img(`${imageDir}/Working with Ecommerce SEO Experts.webp`, "Working with Ecommerce SEO Experts"),
   h2("Benefits of Hiring SEO Experts"),
   p("There are numerous advantages to your e-commerce business when you hire e-commerce SEO experts."),
   p("SEO experts have specialised knowledge and are experienced in the optimisation of e-commerce platforms such as Shopify by the use of various aspects of SEO to attract visitors."),
@@ -100,6 +102,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   p("The best SEO results are thus guaranteed for your e-commerce business through the help of a top e-commerce SEO agency."),
 
   h1("Local SEO Services for Ecommerce Businesses"),
+  img(`${imageDir}/Local SEO Services for Ecommerce Businesses.webp`, "Local SEO Services for Ecommerce Businesses"),
   h2("Why Local SEO Matters for Ecommerce"),
   p("Local SEO is essential for online store businesses that want to attract local customers and increase sales in their area, particularly if they collaborate with the best e-commerce SEO agency."),
   p("Local SEO is the one that makes your e-commerce site come up in search results when new customers are seeking products or services locally."),
@@ -120,6 +123,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   p("A leading ecommerce SEO company knows the ways of integrating local SEO tactics with general ecommerce SEO strategies to achieve the greatest results."),
 
   h1("Technical SEO for Ecommerce Websites"),
+  img(`${imageDir}/Technical SEO for Ecommerce Websites.webp`, "Technical SEO for Ecommerce Websites"),
   h2("Defining Technical SEO in Ecommerce"),
   p("Technical SEO in e-commerce is all about tuning the technical parts of an online store to make it more visible and rank higher in the search results, a process done by an SEO agency."),
   p("Technical SEO is the aspect of SEO that deals with the site's infrastructure, which is the part of the website that has to be crawled, indexed, and understood by the search engines."),
@@ -145,6 +149,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   p("The right e-commerce SEO agency can pinpoint your issues and give you a list of solutions and the next steps for your e-commerce SEO campaigns."),
 
   h1("Best Practices for Ecommerce SEO"),
+  img(`${imageDir}/Best Practices for Ecommerce SEO.webp`, "Best Practices for Ecommerce SEO"),
   h2("SEO Best Practices for Ecommerce Platforms"),
   p("Knowing the pros and cons of the different platforms is a must when you are applying SEO best practices for online shops operated through platforms like Shopify."),
   p("The first step is to perform a comprehensive SEO audit to locate platform-related technical SEO problems that your online store is not performing well due to, as these issues are the most important ones for every online business."),
@@ -165,6 +170,7 @@ const howToChooseBestEcommerceSEOCompanyContent: BlogContentItem[] = [
   p("The main focus on long-term SEO tactics will help you achieve sustainable growth for your online store."),
 
   h1("Conclusion: Choosing the Right Ecommerce SEO Company"),
+  img(`${imageDir}/Conclusion.webp`, "Conclusion"),
   h2("Final Thoughts on Selecting an SEO Partner"),
   p("Choosing an appropriate e-commerce SEO agency is a major decision that can alter the e-commerce business's success."),
   p("Assessing SEO agencies rigorously that are based on their team of SEO will let you decide the most suitable one for your requirements."),

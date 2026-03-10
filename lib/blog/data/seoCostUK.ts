@@ -42,7 +42,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("Knowing these factors helps you set a realistic expectation and budget, the kind of budget that will not only enable you to chase up the rankings but also help you achieve measurable and sustainable growth."),
 
   h1("Average SEO Costs in the UK (2026 Overview)"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image2.webp`, "Average SEO Costs in the UK (2026 Overview)"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image2.webp`, "Average SEO Costs in the UK (2026 Overview)"),
   p("SEO pricing requires customized solutions because different service providers charge different monthly fees based on the service level and their required professional expertise."),
   p("The following data presents actual business expenses while showing the best tier option for different customer types."),
   list('<div class="my-6 w-full table-container table-uk-seo-providers"><table class="w-full border-collapse border border-gray-600"><thead><tr class="bg-black"><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Provider Type</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Monthly Cost</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Ideal For</th></tr></thead><tbody><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Independent Freelancer</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£300–£1,000</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Solo founders, early-stage start-ups, and very small businesses needing foundational SEO</td></tr><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Small SEO Agency</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£1,000–£2,500</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Local service businesses and small eCommerce stores are looking to grow visibility.</td></tr><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Mid-Sized SEO Agency</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£2,500–£6,000</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Established SMEs running national or competitive SEO campaigns</td></tr><tr class="bg-black"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Enterprise-Level SEO Team</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£6,000+</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Large organisations with complex sites, multiple markets, or international reach.</td></tr></tbody></table></div>'),
@@ -118,7 +118,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("When organic traffic is more significant to your business, then the advertising budget is not as important to your business since you are able to utilize paid advertisements more productively."),
 
   h1("Types of SEO Services and Their Costs"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image3.webp`, "Types of SEO Services and Their Costs"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image3.webp`, "Types of SEO Services and Their Costs"),
   p("It may be confusing to deal with an SEO expert. Each SEO service focuses differently on various aspects of your website, along with the user's journey to that website."),
   p("Knowledge of these categories will then enlighten you on the monetary distribution of your investments and on which services may be most effective in achieving your goals."),
   h3("1. Technical SEO (£300–£1,500+)"),
@@ -152,7 +152,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("With usual e-commerce SEO strategies chosen to maximize online sales, keyword clustering, site speed optimization, and CRO (conversion rate optimization) can be used to advance the sales and traffic front."),
 
   h1("SEO Pricing Models in the UK"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image4.webp`, "SEO Pricing Models in the UK"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image4.webp`, "SEO Pricing Models in the UK"),
   p("The extent of the cost of SEO in Great Britain, however, is also dictated by the perspective you have on the payment: parameterization."),
   p("Various SEO agencies have pricing models that are oriented to the needs and goals of specific businesses. If you're aware of these structures, you will be in a good position to make a deal, and you will not end up paying excessive amounts for services that are not suited to you."),
   p("Here, we want to break down and discuss the principal models of SEO pricing being applied in the UK market today."),
@@ -197,7 +197,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("In that sense, there are indeed many models applicable to a business model. Each of them brings different advantages."),
 
   h1("Small Business SEO Costs (UK Market Focus)"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image5.webp`, "Small Business SEO Costs (UK Market Focus)"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image5.webp`, "Small Business SEO Costs (UK Market Focus)"),
   p("SEO can be most effective for small businesses in the UK: local cafes and plumbers, or e-business start-ups, and requires the least expenditure when strategically approached."),
   p("What would the actual costs of SEO to small businesses be in 2026?"),
   p("Let's break it down for the UK market."),
@@ -222,7 +222,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("The short-term gain is always someone else's long-term pain, as the techniques in question may help slightly increase rankings in the short term, only to incur Google penalties or traffic loss in the longer term."),
   p("Definitely prefer to work with vendors who offer pen testing, deliverables, and white-hat methodology."),
   h3("Small Business SEO Packages in the UK"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image6.webp`, "Small Business SEO Packages in the UK"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image6.webp`, "Small Business SEO Packages in the UK"),
   p("The Small and Medium-scale Enterprises will have to commit to a minimum of 3 to 6 months in order to obtain some measurable results. SEO takes its own time; nevertheless, as soon as it begins to impact rankings, the returns on investments begin to grow exponentially."),
   h3("ROI Example for Small Businesses"),
   p("Say a cleaning company based in Leeds dedicated 600 GBP to SEO each month. After about 6 months, it climbed to the first page for the keyword \"office cleaning Leeds.\""),
@@ -233,7 +233,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("SEO is an online word-of-mouth advertisement for the small-business owner. Every month, as you keep that in mind, it gives some momentum toward your intended goal. Before long, everyone will rely on you the most, Google and customers alike."),
 
   h1("How to Select the Right Provider of SEO"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image7.webp`, "How to Select the Right Provider of SEO"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image7.webp`, "How to Select the Right Provider of SEO"),
   p("Whenever you hunt for the best SEO provider in the UK, you may get lost among the numerous freelancers and agencies that claim they can take you to page one. The trick is then to compare not just the cost, but its value, experience, and transparency."),
   p("The factors become:"),
   h3("Proven Track Record"),
@@ -263,7 +263,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p("Because the growth is maintained for several months, organic authority is being established continuously, and thus, the compounding value will be impossible to achieve for competitors using cheaper methods for building authority and visibility."),
 
   h1("How to Budget for SEO in the UK"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image8.webp`, "How to Budget for SEO in the UK"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image8.webp`, "How to Budget for SEO in the UK"),
   p("SEO cannot be entirely about budgeting; it has extended beyond an active marketing strategy. It must relate to set marketing objectives and forecast profitability."),
   p("I'd be keen about the different costs it might take to get an SEO campaign begun. Once you build a budget, monitoring whether SEO costs are being well spent becomes sensible."),
   h3("Recommended Budget"),
@@ -284,7 +284,7 @@ const seoCostUKContent: BlogContentItem[] = [
   p('<strong>Pro Tip:</strong> <a href="/blog/seo-strategy-funnel" class="underline text-[#6FAF4E]">Make SEO a Long-Term Strategy</a>. Even the tiniest of budgets accumulate over time and can, in the long run, provide leads and traffic that paid ads never replicate over long periods of time.'),
 
   h1("Conclusion"),
-  img(`${imageDir}/How Much Does SEO Cost in the UK image9.webp`, "Conclusion"),
+  img(`${imageDir}/How Much Does SEO Cost in the  UK image9.webp`, "Conclusion"),
   p("How much SEO costs in the UK is a very important question to answer in planning a marketing strategy and gaining maximum return on investment. The cost depends on many variables - size of business, competition, type of SEO provider, and breadth of services."),
   p("From freelancer-level pricing (300-1,000 GBP/month) to enterprise agency-level pricing (£5,000–£20,000+), there is a package to almost any business objective."),
   p("Cost-effective packages for local SEO catering to small businesses (300-1,200 GBP/month), while larger brands may opt for full-service campaigns encompassing technical, on-page, and off-page strategies."),

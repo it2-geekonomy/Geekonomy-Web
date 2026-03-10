@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Right Custom Software Development Company/Right Custom Software Development Company main image.webp";
+const coverImage = "/blog image/Right Custom Software Development Company/How to Choose the Right Custom Software Development Company.webp";
 const imageDir = "/blog image/Right Custom Software Development Company";
 
 const customSoftwareDevelopmentCompanyContent: BlogContentItem[] = [
@@ -33,7 +33,7 @@ const customSoftwareDevelopmentCompanyContent: BlogContentItem[] = [
   p("When selecting a custom software company, first of all, look at those that have a history of success, a team of skilled developers, and a strong commitment to delivering high-quality, tailor-made solutions that address your business needs and are in line with the right custom software for your project."),
 
   h1("Choosing a Custom Software Development Company"),
-  img(`${imageDir}/Right Custom Software Development Company image1.webp`, "Choosing a custom software development company"),
+  img(`${imageDir}/Choosing a Custom Software Development Company.webp`, "Choosing a Custom Software Development Company"),
   h2("Assessing Your Business Needs"),
   p("Prior to selecting a software development company, you must have a profound understanding of your own business requirements."),
   p("What exact issues do you want to resolve through a software solution?"),
@@ -59,7 +59,7 @@ const customSoftwareDevelopmentCompanyContent: BlogContentItem[] = [
   p("These responses are the clues in your hands that will help you find the most suitable software development company that can meet your business needs and the requirements of your software application development."),
 
   h1("Key Considerations When Choosing"),
-  img(`${imageDir}/Right Custom Software Development Company image2.webp`, "Key considerations when choosing a software development company"),
+  img(`${imageDir}/Key Considerations When Choosing.webp`, "Key Considerations When Choosing"),
   h2("Reviewing Portfolios and Case Studies"),
   p("Before you make a decision to hire a software development company, it is very important that you thoroughly check their portfolio in order to be assured that they can provide you with the best software."),
   p("The portfolio of a custom software development company is like a powerful weapon in the hands of a client to verify the company's capabilities and achievements."),
@@ -88,7 +88,7 @@ const customSoftwareDevelopmentCompanyContent: BlogContentItem[] = [
   p("Through the entire development cycle, the software development company that is right for you will be proactive and transparent in their project management approach, thus making sure that you are updated and involved, and therefore, you will be able to decide which company can deliver."),
 
   h1("Outsourcing vs. In-House Development"),
-  img(`${imageDir}/Right Custom Software Development Company image2.webp`, "Outsourcing vs in-house development"),
+  img(`${imageDir}/Outsourcing vs. In-House Development.webp`, "Outsourcing vs. In-House Development"),
   h2("Pros and Cons of Outsourcing Software Development"),
   p("When figuring out a software project, companies decide whether it is better to hire a software developer from outside the company or develop the software within the company."),
   p("By outsourcing custom software development services, one can tap into a larger talent pool, which can lead to lower production costs and a quicker software development process."),
