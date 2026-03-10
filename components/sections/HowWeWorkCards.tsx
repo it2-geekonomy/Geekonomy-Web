@@ -9,25 +9,21 @@ const CARDS = [
     id: 0,
     title: "Scope Boundaries",
     image: "/ourapproach/Scope_Boundaries.png",
-    description: "Clear limits",
   },
   {
     id: 1,
     title: "Priorities",
     image: "/ourapproach/Priotities.png",
-    description: "What matters most",
   },
   {
     id: 2,
     title: "Expected Timelines",
     image: "/ourapproach/Expected_Timelines.png",
-    description: "Realistic schedules",
   },
   {
     id: 3,
     title: "Realistic Outcomes",
     image: "/ourapproach/Realistic_Outcomes.png",
-    description: "Achievable results",
   },
 ];
 
@@ -69,7 +65,6 @@ export default function HowWeWorkCards() {
                   activeCard === card.id ? "text-white/70" : "group-hover:text-white/70"
                 }`}
               >
-                <span className="relative z-10">{card.description}</span>
                 <span
                   className={`absolute left-0 top-1/2 h-[4px] bg-[#6eaf4c] transition-all duration-300 ${
                     activeCard === card.id ? "w-full" : "w-0 group-hover:w-full"
