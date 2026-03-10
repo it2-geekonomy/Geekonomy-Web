@@ -1,20 +1,64 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typography } from "@/components/ui/Typography";
 
+const HOVER_LEAVE_DELAY_MS = 300;
+const HOVER_EDGE_BUFFER_PX = 8;
+
 export default function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
-  const [animationKey, setAnimationKey] = useState(0);
+  const [hasMounted, setHasMounted] = useState(false);
+  const leaveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const chaosRef = useRef<HTMLDivElement>(null);
+
+  const clearLeaveTimeout = () => {
+    if (leaveTimeoutRef.current) {
+      clearTimeout(leaveTimeoutRef.current);
+      leaveTimeoutRef.current = null;
+    }
+  };
+
+  const scheduleLeave = () => {
+    clearLeaveTimeout();
+    leaveTimeoutRef.current = setTimeout(() => {
+      leaveTimeoutRef.current = null;
+      setIsHovered(false);
+    }, HOVER_LEAVE_DELAY_MS);
+  };
+
+  const isPointInChaosBox = (clientX: number, clientY: number) => {
+    const el = chaosRef.current;
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    const b = HOVER_EDGE_BUFFER_PX;
+    return (
+      clientX >= rect.left - b &&
+      clientX <= rect.right + b &&
+      clientY >= rect.top - b &&
+      clientY <= rect.bottom + b
+    );
+  };
+
+  const handleRowMouseMove = (e: React.MouseEvent) => {
+    if (isPointInChaosBox(e.clientX, e.clientY)) {
+      clearLeaveTimeout();
+      setIsHovered(true);
+    } else {
+      scheduleLeave();
+    }
+  };
+
+  const handleRowMouseLeave = () => {
+    scheduleLeave();
+  };
 
   useEffect(() => {
-    if (!isHovered) {
-      // Reset animation key when leaving hover to restart chaotic animation
-      setAnimationKey((prev) => prev + 1);
-    }
-  }, [isHovered]);
+    setHasMounted(true);
+    return () => clearLeaveTimeout();
+  }, []);
   
   return (
     <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
@@ -98,9 +142,14 @@ export default function HeroSection() {
             </div>
             {/* Gray horizontal line */}
             <div className="h-px w-84 sm:w-95 md:w-120 lg:w-130 xl:w-140 bg-[#414340] mb-3 mx-auto lg:mx-0" />
-            <div className="flex items-baseline gap-10 justify-center lg:justify-start">
+            {/* Single hover zone for entire row so gap between OVER and CHAOS doesn’t trigger chaos */}
+            <div
+              className="flex flex-nowrap items-baseline gap-10 max-sm:gap-4 w-full min-w-0 justify-center lg:justify-start"
+              onMouseMove={handleRowMouseMove}
+              onMouseLeave={handleRowMouseLeave}
+            >
               <motion.h2
-                className="font-bold text-white leading-[1.1]"
+                className="font-bold text-white leading-[1.1] shrink-0 pl-5 sm:pl-0"
                 style={{
                   fontSize: "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
                   fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
@@ -115,123 +164,82 @@ export default function HeroSection() {
               >
                 OVER
               </motion.h2>
-              <motion.div
-                className="inline-block"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                animate={{
-                  letterSpacing: isHovered ? "0em" : "-0.125em",
-                }}
-                transition={{
-                  duration: 0.6,
-                  ease: "easeOut",
-                }}
+              {/* CHAOS area: ref used for stable coordinate-based hover (no enter/leave glitch) */}
+              <div
+                ref={chaosRef}
+                className="py-4 px-4 max-sm:min-w-[180px] max-sm:flex-1 sm:shrink-0 sm:w-[240px] sm:min-w-[240px] md:w-[280px] box-border cursor-default"
               >
+                <motion.div
+                  className="inline-block min-w-[180px]  sm:min-w-[180px] md:min-w-[220px] whitespace-nowrap"
+                  animate={{
+                    letterSpacing: isHovered ? "0em" : "-0.125em",
+                  }}
+                  transition={{
+                    duration: 0.4,
+                    ease: "easeOut",
+                  }}
+                >
                 {["C", "H", "A", "O", "S"].map((letter, index) => {
-                  // Generate unique chaotic patterns for each letter
                   const seed = index * 13;
-                  const getChaoticX = (offset: number) => {
-                    return Math.sin(seed * 0.5 + offset * 0.7) * 18 + Math.cos(seed * 0.3 + offset * 1.2) * 12;
-                  };
-                  const getChaoticY = (offset: number) => {
-                    return Math.cos(seed * 0.4 + offset * 0.9) * 15 + Math.sin(seed * 0.6 + offset * 1.1) * 10;
-                  };
-                  const getChaoticRotate = (offset: number) => {
-                    return (Math.sin(seed * 0.8 + offset * 0.5) * 25 + Math.cos(seed * 0.7 + offset * 0.8) * 15);
-                  };
-                  
-                  // Different duration for each letter to create more chaos
+                  const getChaoticX = (offset: number) =>
+                    Math.sin(seed * 0.5 + offset * 0.7) * 18 + Math.cos(seed * 0.3 + offset * 1.2) * 12;
+                  const getChaoticY = (offset: number) =>
+                    Math.cos(seed * 0.4 + offset * 0.9) * 15 + Math.sin(seed * 0.6 + offset * 1.1) * 10;
+                  const getChaoticRotate = (offset: number) =>
+                    Math.sin(seed * 0.8 + offset * 0.5) * 25 + Math.cos(seed * 0.7 + offset * 0.8) * 15;
+
                   const duration = 1.8 + index * 0.4;
                   const baseDelay = index * 0.2;
-                  
+
+                  const calmState = {
+                    x: 0,
+                    y: 0,
+                    rotate: 0,
+                    scale: 1,
+                    letterSpacing: "0em",
+                  };
+                  const chaosKeyframes = hasMounted
+                    ? {
+                        x: [0, getChaoticX(0), getChaoticX(1), getChaoticX(2), getChaoticX(3), getChaoticX(4), getChaoticX(5), getChaoticX(6), 0],
+                        y: [0, getChaoticY(0), getChaoticY(1), getChaoticY(2), getChaoticY(3), getChaoticY(4), getChaoticY(5), getChaoticY(6), 0],
+                        rotate: [0, getChaoticRotate(0), getChaoticRotate(1), getChaoticRotate(2), getChaoticRotate(3), getChaoticRotate(4), getChaoticRotate(5), getChaoticRotate(6), 0],
+                        scale: [1, 1.15, 0.85, 1.2, 0.8, 1.1, 0.9, 1.05, 1],
+                        letterSpacing: "-0.125em",
+                      }
+                    : calmState;
+
                   return (
                     <motion.span
-                      key={`${index}-${animationKey}`}
+                      key={`${index}-${isHovered}`}
                       className="inline-block font-bold text-white"
                       style={{
                         fontSize: "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
                         lineHeight: "1.1",
                         fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
                       }}
-                      initial={false}
-                      animate={
-                        isHovered
-                          ? {
-                              x: 0,
-                              y: 0,
-                              rotate: 0,
-                              scale: 1,
-                              letterSpacing: "0em",
-                            }
-                          : {
-                              x: [
-                                0,
-                                getChaoticX(0),
-                                getChaoticX(1),
-                                getChaoticX(2),
-                                getChaoticX(3),
-                                getChaoticX(4),
-                                getChaoticX(5),
-                                getChaoticX(6),
-                                0,
-                              ],
-                              y: [
-                                0,
-                                getChaoticY(0),
-                                getChaoticY(1),
-                                getChaoticY(2),
-                                getChaoticY(3),
-                                getChaoticY(4),
-                                getChaoticY(5),
-                                getChaoticY(6),
-                                0,
-                              ],
-                              rotate: [
-                                0,
-                                getChaoticRotate(0),
-                                getChaoticRotate(1),
-                                getChaoticRotate(2),
-                                getChaoticRotate(3),
-                                getChaoticRotate(4),
-                                getChaoticRotate(5),
-                                getChaoticRotate(6),
-                                0,
-                              ],
-                              scale: [
-                                1,
-                                1.15,
-                                0.85,
-                                1.2,
-                                0.8,
-                                1.1,
-                                0.9,
-                                1.05,
-                                1,
-                              ],
-                              letterSpacing: "-0.125em",
-                            }
-                      }
+                      initial={calmState}
+                      animate={isHovered ? calmState : chaosKeyframes}
                       transition={
                         isHovered
-                          ? {
-                              duration: 0.6,
-                              ease: "easeOut",
-                            }
-                          : {
-                              duration: duration,
-                              repeat: Infinity,
-                              ease: "linear",
-                              repeatType: "loop",
-                              delay: baseDelay,
-                              repeatDelay: 0,
-                            }
+                          ? { duration: 0.35, ease: "easeOut" }
+                          : hasMounted
+                            ? {
+                                duration: duration,
+                                repeat: Infinity,
+                                ease: "linear",
+                                repeatType: "loop",
+                                delay: baseDelay,
+                                repeatDelay: 0,
+                              }
+                            : { duration: 0 }
                       }
                     >
                       {letter}
                     </motion.span>
                   );
                 })}
-              </motion.div>
+                </motion.div>
+              </div>
             </div>
           </div>
 
