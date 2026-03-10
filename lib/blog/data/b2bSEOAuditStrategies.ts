@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/B2B SEO Audit Strategies to Improve SEO Performance/B2B SEO Audit Strategies to Improve SEO Performance.webp";
+const coverImage = "/blog image/B2B SEO Audit Strategies to Improve SEO Performance/B2B SEO Audit Strategies to Improve SEO Performance new.webp";
 const imageDir = "/blog image/B2B SEO Audit Strategies to Improve SEO Performance";
 
 const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
@@ -29,12 +29,12 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("B2C SEO, by contrast, usually targets broader, higher-volume keywords and is more focused on quick engagement and immediate sales."),
   p("Understanding these differences is essential when shaping your SEO strategy and content plan, whether your audience is B2B or B2C."),
   h1("Conducting a B2B SEO Audit"),
+  img(`${imageDir}/Conducting a B2B SEO Audit.webp`, "Conducting a B2B SEO Audit"),
   h2("What is a B2B SEO Audit?"),
   p("A B2B SEO audit is an in-depth examination of how well a B2B website is optimised for search. It helps pinpoint where performance can be improved and where new growth opportunities lie."),
   p("A B2B SEO audit reviews key areas of your site—on-page SEO, technical SEO, content strategy, and backlink profile—to see how well the site is optimised for search engines."),
   p("By conducting a B2B SEO audit, B2B companies can better understand their current rankings, spot optimisation opportunities, and refine their SEO work to attract more organic traffic and conversions."),
   h2("Steps to Perform a Comprehensive SEO Audit"),
-  img(`${imageDir}/Steps to Perform a Comprehensive SEO Audit.webp`, "Steps to Perform a Comprehensive SEO Audit"),
   p("Conducting a full SEO audit involves a series of essential steps."),
   p('To get an accurate picture, focus on the aspects that distinguish B2B SEO from <a href="/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">regular SEO strategies</a>:'),
   list("<ul><li>Use keyword research to identify the most relevant B2B keywords.</li><li>Check your on-page SEO so that each page is properly optimised with target keywords, meta descriptions, and header tags.</li><li>Carry out a technical SEO audit to find and fix crawl errors, site speed issues, and mobile-friendliness problems.</li><li>Review your content strategy to ensure it matches B2B buyer intent and educates buyers—B2B SEO relies on quality content.</li><li>Evaluate your backlink profile for quality and opportunities to improve it.</li></ul>"),
@@ -44,6 +44,7 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("Monitor organic traffic, keyword positions, conversion rates, backlink quality, site speed, and mobile-friendliness on a regular basis."),
   p("Ongoing tracking of these metrics helps B2B companies improve their SEO and achieve their quantifiable SEO goals."),
   h1("Technical SEO Considerations"),
+  img(`${imageDir}/Technical SEO Considerations.webp`, "Technical SEO Considerations"),
   h2("Optimizing Site Speed and Performance"),
   p("Optimising site speed and performance is a crucial part of technical SEO for B2B sites."),
   p("Fast-loading sites that offer a smooth user experience tend to rank higher in search. B2B companies should improve speed through image optimisation, browser caching, and reducing HTTP requests—all of which support both user experience and SEO."),
@@ -65,8 +66,8 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("Use Google's Structured Data Markup Helper to create the right code and verify that it is implemented correctly."),
   p("By using structured data and schema markup, B2B firms align their content with what search engine algorithms expect."),
   h1("On-Page SEO Strategies"),
+  img(`${imageDir}/On-Page SEO Strategies.webp`, "On-Page SEO Strategies"),
   h2("Keyword Research for B2B Websites"),
-  img(`${imageDir}/Keyword Research for B2B Websites.webp`, "Keyword Research for B2B Websites"),
   p("Effective B2B SEO begins with thorough and insightful keyword research."),
   list("<ul><li>Effective B2B SEO should start with deep and detailed keyword research that genuinely understands user intent and behaviour.</li><li>If you want to get your site noticed in the sea of search results, then it is essential that you first work out how the B2B SEO algorithm functions and what factors it takes into account.</li><li>B2B keywords: Find out which words and phrases the target audience of a business is going to use when they are looking for products or services, as B2B SEO is grounded on this information to bring in the traffic.</li><li>By using tools like SEMrush and Ahrefs, you can uncover B2B keywords that are both valuable and have a moderate number of searches.</li><li>In local SEO, focus on long-tail keywords that describe the specific needs and issues of the target audience.</li><li>A well-thought-out keyword plan is the tool that makes your B2B website effective for attracting the right B2B buyers.</li></ul>"),
   p("By implementing sound SEO strategies, the right B2B clients will find and visit your B2B website."),
@@ -119,6 +120,7 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
   p("It is also important to adjust your strategies based on the data you collect, so you can get the most from your SEO and achieve measurable results in search—which in turn drives organic traffic to your B2B website."),
   p("The importance of a well-optimised B2B website to the entire B2B SEO process cannot be overstated."),
   h1("Consulting and Services"),
+  img(`${imageDir}/Consulting and Services.webp`, "Consulting and Services"),
   h2("Benefits of B2B SEO Consulting"),
   p("Working with a B2B SEO consultant or agency can give you the industry knowledge and SEO skills needed to design and run SEO that makes your B2B campaign successful."),
   p("Through effective B2B SEO consulting, you can make your content more relevant to what people search for and get found by the right users."),

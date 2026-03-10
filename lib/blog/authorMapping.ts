@@ -10,6 +10,10 @@ export interface AuthorInfo {
   role: string;
   image: string;
   mainImage?: string;
+  /**
+   * Short SEO-friendly description (used for meta description)
+   */
+  metaDescription?: string;
   biography?: string;
 }
 
@@ -19,6 +23,8 @@ export const AUTHOR_INFO: Record<AuthorName, AuthorInfo> = {
     role: "SEO STRATEGIST",
     image: "/author/Rahul author.webp",
     mainImage: "/author/Rahul main.webp",
+    metaDescription:
+      "Rahul Dutta is an SEO Strategist at Geekonomy specializing in semantic SEO, technical audits, and strategies that grow organic traffic and qualified leads.",
     biography: "An SEO Strategist At Geekonomy Specializing In Semantic SEO, Technical Audits, And Search-Focused Content Strategy. He Helps Businesses Across The USA, UK, And India Improve Search Rankings, Grow Organic Traffic, And Generate Qualified Leads Through Structured, Data-Driven SEO Frameworks.<br/><br/>His Strategies Have Helped Brands Achieve Up To 3X Organic Traffic Growth And Secure Top-Page Rankings For Competitive Keywords. At Geekonomy, Rahul Shares Actionable Insights On SEO Trends, Search Algorithms, And Performance-Driven Digital Marketing Strategies Designed For Global Markets.",
   },
   "Aaron Roshan": {
@@ -26,6 +32,8 @@ export const AUTHOR_INFO: Record<AuthorName, AuthorInfo> = {
     role: "CONTENT WRITER",
     image: "/author/Aaron author.webp",
     mainImage: "/author/Aaron main.webp",
+    metaDescription:
+      "Aaron Roshan is a content writer at Geekonomy who creates clear, research-driven articles on branding, digital marketing, web development, and growth.",
     biography: "A Content Writer At Geekonomy Who Focuses On Creating Clear, Practical, And Research-Driven Articles About Branding, Digital Marketing, Web Development, And Business Growth. His Work Helps Startups And Businesses Understand Complex Digital Concepts In Simple Terms And Apply Them To Improve Their Online Presence. Aaron Regularly Contributes To Geekonomy's Blog With Guides, Industry Insights, And Actionable Strategies For Modern Businesses.",
   },
 };

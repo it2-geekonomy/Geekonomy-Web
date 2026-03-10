@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/Indexceptional is the Best Website/Indexceptional is the Best Website.webp";
+const coverImage = "/blog image/Indexceptional is the Best Website/Why Indexceptional is the Best Website Indexing Tool for SEO.webp";
 const imageDir = "/blog image/Indexceptional is the Best Website";
 
 const indexceptionalIndexingToolContent: BlogContentItem[] = [
@@ -34,8 +34,10 @@ const indexceptionalIndexingToolContent: BlogContentItem[] = [
   p("By means of its fast indexing and effective indexing features, Indexceptional is able to help SEO experts get the best results possible."),
 
   h1("Indexceptional: The Best Google Indexing Tool"),
+  img(`${imageDir}/Why Indexceptional is the Best Google Indexing Tool.webp`, "Why Indexceptional is the Best Google Indexing Tool"),
   img(`${imageDir}/Role of Google Indexing.webp`, "Indexceptional: The Best Google Indexing Tool"),
   h2("Features of Indexceptional"),
+  img(`${imageDir}/Key Features of Indexceptional.webp`, "Key Features of Indexceptional"),
   p("Indexceptional is truly a standout product due to its array of features that are specifically tailored to make the indexing process efficient."),
   p("Being the top index tool, it has the facility of instant indexing through which your web pages and backlinks can be quickly found by Google."),
   p("Indexceptional implements cutting-edge indexing features to shorten the time for the indexing status of your website content, thus giving you a clear lead in SEO performance."),
@@ -118,6 +120,7 @@ const indexceptionalIndexingToolContent: BlogContentItem[] = [
   h1("Implementing Indexceptional in Your SEO Strategy"),
   img(`${imageDir}/Role of Google Indexing.webp`, "Implementing Indexceptional in your SEO strategy"),
   h2("How to Get Started with Indexceptional"),
+  img(`${imageDir}/How to Use Indexceptional Effectively.webp`, "How to Use Indexceptional Effectively"),
   p("If you are planning to employ Indexceptional in your SEO strategies, the first step would be to establish an account and familiarize yourself with the platform's interface."),
   p("Indexceptional has a very simple method for you to present your web pages and backlinks for indexing."),
   p("To get the most out of the quicker indexing, make sure that your site is well SEO-optimized before you submit it to Indexceptional."),

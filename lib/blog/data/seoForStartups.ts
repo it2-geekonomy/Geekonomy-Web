@@ -216,7 +216,7 @@ export const seoForStartups: BlogData = {
 export const seoForStartupsSEO = {
   title: "SEO for Startups: A Step-by-Step Growth Strategy",
   description:
-    "Learn how to implement effective SEO strategies for your startup. Discover actionable tips, technical SEO, keyword research, and growth tactics to boost your online presence.",
+    "Learn effective SEO strategies for startups, including keyword research, technical SEO, and growth tactics to boost online visibility.",
   url: "https://thegeekonomy.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
   canonical: "https://thegeekonomy.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
   image: "https://thegeekonomy.com/SEO%20for%20Startups/SEO%20for%20Startups%20main%20image.webp",

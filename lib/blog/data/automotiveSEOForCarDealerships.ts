@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/SEO for Car Dealerships/SEO for Car Dealerships.main image.webp";
+const coverImage = "/blog image/SEO for Car Dealerships/SEO for Car Dealerships.webp";
 const imageDir = "/blog image/SEO for Car Dealerships";
 
 
@@ -28,7 +28,7 @@ const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
   p("What is more, issues related to the user experience on the landing page, quality content creation, and the presence of the technical SEO factors in the website are some of the ways that can lead to better ranking positions in the search results of a car dealership or auto dealer."),
   p("Advertising through car dealer SEO should be a comprehensive approach that takes into consideration everything from the dealership website and the local community to the online presence of other dealerships in the automotive industry."),
   h1("Local SEO Strategies for Car Dealerships"),
-  img(`${imageDir}/SEO for Car Dealerships.image1.webp`, "Local SEO Strategies for Car Dealerships"),
+  img(`${imageDir}/Local SEO Strategies for Car Dealerships.webp`, "Local SEO Strategies for Car Dealerships"),
   h2("Defining Local SEO and Its Benefits"),
   p("Local SEO is a targeted SEO approach that zeroes in on a car dealership website to get it ranked higher in local search results, thus enhancing car-buying experiences."),
   p("For car dealerships, it means making sure that a customer who is looking for \"used car\" or \"car dealer near me\" comes across your dealership website as the first result on the search engine results pages, like Google."),
@@ -70,7 +70,7 @@ const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
   p("Use structured data markup so that robots understand even better that you are an automotive business with a specific location, working hours, and customer reviews."),
   p("By placing meta tags on time, car dealerships will be able to upgrade their local SEO business listings and gain more foot traffic from the area."),
   h1("Technical SEO for Automotive Websites"),
-  img(`${imageDir}/SEO for Car Dealerships.image2.webp`, "Technical SEO for Automotive Websites"),
+  img(`${imageDir}/Technical SEO for Automotive Websites.webp`, "Technical SEO for Automotive Websites"),
   h2("Understanding Technical SEO"),
   p("It is necessary to know technical SEO if you want a car dealership website to be easily crawled and indexed by search engines, which can be the difference between the success and failure of your business."),
   p("Technical SEO is about changing and improving the parts of the website that the users do not see in order to make the site more efficient and to attract more local customers by increasing visibility."),
@@ -116,6 +116,7 @@ const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
   p("Keep on checking the insights of your Google Business Profile to know the different ways customers use to find your business online and how SEO can help you extend your reach."),
   p("If you keep on tracking and analysing your SEO performance, then you are able to make data-driven decisions that will lead to your visibility improvement and the attraction of new local customers through the right automotive SEO services."),
   h1("Investing in SEO for Car Dealerships"),
+  img(`${imageDir}/Investing in SEO for Car Dealerships.webp`, "Investing in SEO for Car Dealerships"),
   h2("Why Investing in SEO is Crucial"),
   p("It is necessary to invest in SEO for car dealerships as it is a major factor in your online visibility and the attraction of new local customers who are searching for vehicles or services in the competitive automotive market."),
   p("The internet is increasingly becoming the initial point of purchase by car buyers, and therefore, a high position in the search results is crucial."),

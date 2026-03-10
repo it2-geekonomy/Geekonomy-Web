@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/Local SEO Agencies Use Rapid URL Indexer/Rapid URL Indexer main image.webp";
+const coverImage = "/blog image/Local SEO Agencies Use Rapid URL Indexer/Rapid URL Indexer main image new.webp";
 const imageDir = "/blog image/Local SEO Agencies Use Rapid URL Indexer";
 
 const howDoLocalSEOAgenciesUseRapidURLIndexerContent: BlogContentItem[] = [

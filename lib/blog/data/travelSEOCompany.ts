@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/How a Travel SEO Company Helps You Rank Higher/Travel SEO main image.webp";
+const coverImage = "/blog image/How a Travel SEO Company Helps You Rank Higher/How a Travel SEO Company Helps You Rank Higher.webp";
 const imageDir = "/blog image/How a Travel SEO Company Helps You Rank Higher";
 
 const travelSEOCompanyContent: BlogContentItem[] = [
@@ -107,6 +107,7 @@ const travelSEOCompanyContent: BlogContentItem[] = [
   p("Backlinks of high quality from the most relevant sources can make a big difference in your website's position in the search engine result pages, and consequently, your site will receive more organic traffic."),
   p("Successful link building—linking to the correct people, i.e., gaining backlinks from websites with a high domain authority and relevant to your travel business—is the essence of effective SEO."),
   h1("Contact Us for Top-Rated Travel SEO Services"),
+  img(`${imageDir}/Contact Us for Top-Rated Travel SEO Services.webp`, "Contact Us for Top-Rated Travel SEO Services"),
   h2("Getting Started with Your Travel SEO"),
   p("How you begin your travel SEO journey is by assessing the overall state of your online presence and SEO performance."),
   p("A travel SEO agency performing a website audit in-depth will look at your keyword rankings, backlinks, and technical SEO to figure out where there is room for improvement."),
@@ -182,7 +183,7 @@ export const travelSEOCompanySEO = {
   description: "Learn how a travel SEO company boosts rankings, improves visibility, attracts more travelers, and helps your travel business grow with SEO strategies.",
   url: "https://geekonomytech.com/blog/how-a-travel-seo-company-helps-you-rank-higher",
   canonical: "https://geekonomytech.com/blog/how-a-travel-seo-company-helps-you-rank-higher",
-  image: "https://geekonomytech.com/How a Travel SEO Company Helps You Rank Higher/Travel SEO main image.webp",
+  image: "https://geekonomytech.com/blog image/How a Travel SEO Company Helps You Rank Higher/How a Travel SEO Company Helps You Rank Higher.webp",
   twitterHandle: "@GeekonomyTech",
 };
 

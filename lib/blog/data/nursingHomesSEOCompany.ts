@@ -13,7 +13,6 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("Digital marketing strategies' success can be greatly influenced by the increase in visibility in search engine results. Lead generation becomes more and more important for healthcare providers if they want to stay competitive in the market."),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Want More Inquiries for Your Nursing Home?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get SEO built for senior living and care. Rank for local and family searches and fill more beds.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO Services for Nursing Homes"),
-  img(`${imageDir}/Nursing Homes SEO Company image1.webp`, "Understanding SEO Services for Nursing Homes"),
   h3("What is SEO?"),
   p("Digital marketing for nursing homes is a must-have to be able to get new residents and their families. SEO, which stands for search engine optimisation, is the process of optimising your website and your content to be more marketing-effective."),
   p("By writing better content with relevant keywords, one can rank higher in search engine results pages (SERPs)."),
@@ -70,6 +69,7 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("By delivering valuable and optimised content, you'll be able to draw more qualified leads and keep your positions high in search engine results."),
 
   h1("Choosing the Right SEO Company"),
+  img(`${imageDir}/Choosing the Right SEO Company.webp`, "Choosing the Right SEO Company"),
   h3("What to Look for in a Nursing Homes SEO Company"),
   p("Thinking about a reliable and trustworthy elder care service platform, it would be quite reasonable for such a company to figure out not only the issues but also the benefits of the elder care industry."),
   p("As main features of winning promotional campaigns, these key problems might be listed, along with other things, habitual reporting and a strong standing."),
@@ -90,7 +90,6 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("Nursing homes' digital marketing efforts can also be greatly enhanced by proper optimization through strategies. Inquire about their local SEO experience and what steps they will take to increase your visibility in local search engine results."),
   p("An excellent digital marketing agency should be able to explain its methods of engaging with senior residents clearly and provide realistic expectations for long-term care solutions. Are they proficient in seo for nursing homes?"),
   h3("Comparing Marketing Agencies for Care Facilities"),
-  img(`${imageDir}/Nursing Homes SEO Company image3.webp`, "Comparing Marketing Agencies for Care Facilities"),
   p("Comparing marketing agencies for care facilities should mainly revolve around their proficiency in different marketing services."),
   p("A well-rounded marketing campaign must include SEO, social media marketing, and email marketing, and at the same time be geared towards senior demographics."),
   p("To get the most out of your efforts when dealing with senior clients. Presence online."),
@@ -99,6 +98,7 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("Lastly, think about their pricing plan and make sure it is in line with your budget and anticipated return on investment."),
 
   h1("Measuring Success in SEO for Senior Living"),
+  img(`${imageDir}/Measuring Success in SEO for Senior Living.webp`, "Measuring Success in SEO for Senior Living"),
   h3("Key Metrics for Ranking Improvement"),
   p("You should monitor the outcomes of your SEO efforts in case you wish to grow all the time. SEO plans of the elderly living facilities must be supported with proficient tracking of the performance indicators (KPI)."),
   p("The ranking of the targeted keywords concerning the marketing techniques within the care industry, assisted living, nursing homes care, and independent living options is one of the most vital aspects."),
@@ -107,7 +107,6 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("The number of inquiries or the number of times of the tours made on your website conversion rate analysis are good indicators of how effective your online presence is in translating to better search results and exposure of your services."),
   p("These indicators can be tracked on a regular basis to determine whether the senior living providers have been successful in their SEO for senior living."),
   h3("Tools for Tracking SEO Performance"),
-  img(`${imageDir}/Nursing Homes SEO Company image4.webp`, "Tools for Tracking SEO Performance"),
   p("Various tools that can be used to measure the success of your SEO campaign exist."),
   p("Google Analytics is one of them, which is irreplaceable by a marketer; it is highly versatile and offers all vital information: traffic on the site, user behaviour, and conversion rates."),
   p("Using Google Search Console, you will be able to check the ranking of your site in search engines and know whether there are any abnormal problems that are hindering the optimization efforts."),
@@ -126,7 +125,7 @@ const howNursingHomesSEOCompanyHelpsYouRankContent: BlogContentItem[] = [
   p("Your presence and the generation of leads are two of the areas that you will be able to strengthen in the competitive senior living landscape."),
 
   h1("The Future of Digital Marketing in Senior Living"),
-  img(`${imageDir}/Nursing Homes SEO Company image5.webp`, "The Future of Digital Marketing in Senior Living"),
+  img(`${imageDir}/The Future of Digital Marketing in Senior Living.webp`, "The Future of Digital Marketing in Senior Living"),
   h3("Emerging Trends in SEO for Nursing Homes"),
   p("The healthcare industry is being influenced by several trend combinations which the senior care SEO is a part."),
   p("Voice search optimisation is getting more and more significant as more users utilise voice assistants to locate senior care options."),

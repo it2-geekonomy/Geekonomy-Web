@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img } from "../utils";
 
-const coverImage = "/blog image/seo with AI/seo with AI main image.webp";
+const coverImage = "/blog image/seo with AI/What elements are foundational for seo with AI.webp";
 const imageDir = "/blog image/seo with AI";
 
 const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
@@ -13,7 +13,6 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Want Foundational SEO That Works With AI?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a strategy that combines core SEO and AI-ready optimisation. We help you rank today and adapt for tomorrow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Understanding SEO Fundamentals"),
   h2("What is SEO?"),
-  img(`${imageDir}/seo with AI image1.webp`, "What is SEO"),
   p("Search engine optimisation (SEO) is the process of making a website more visible to search engines such as Google."),
   p("Essentially, the goal of SEO is to attract more visitors to the website, as well as better quality ones, through unpaid search engine listings."),
   p("To achieve this goal, a company has to resort to a variety of strategies, such as including the most relevant keywords in the text and redesigning the website so that it is easy for the search engine software to navigate."),
@@ -34,8 +33,8 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("In addition, the use of AI by Google to give overviews in the search results is getting more and more common; thus, companies need to adjust their content so that they can be the ones featured in these leading places."),
   p("The influence of AI on SEO has completely transformed the SEO landscape."),
   h1("SEO Strategies in the AI Era"),
+  img(`${imageDir}/SEO Strategies in the AI Era.webp`, "SEO Strategies in the AI Era"),
   h2("New SEO Techniques with AI"),
-  img(`${imageDir}/seo with AI image2.webp`, "New SEO Techniques with AI"),
   p("The SEO landscape has changed dramatically, which requires new SEO techniques. AI technologies play a leading role in figuring out new keywords and adjusting content strategies."),
   p("Companies may utilise AI functions to be successful. To examine large datasets, discover user behaviour, and search patterns that were not accessible before, thus helping AI to become more efficient."),
   p("AI algorithms are capable of determining which content will most likely attract the audience, thus resulting in a higher position in SEO success."),
@@ -57,8 +56,8 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("In order to be optimised for AI summaries in the search results, one needs to have a thorough understanding of how search engines interpret and present the information."),
   p("AI tools get the job done by going through a large volume of data to keep websites and their content optimised."),
   h1("Technical SEO and AI"),
+  img(`${imageDir}/Technical SEO and AI.webp`, "Technical SEO and AI"),
   h2("Optimizing Technical SEO for AI Search Engines"),
-  img(`${imageDir}/seo with AI image3.webp`, "Optimizing Technical SEO for AI Search Engines"),
   p("First of all, it is important to note that if you want to optimise the technical SEO of an AI search engine, you need to have a strong foundation of the core SEO principles."),
   p("In essence, you need to have a solid grasp of the basics of SEO."),
   p("The next step certainly is to make your website in a way that AI algorithms will easily crawl and index it."),
@@ -80,7 +79,6 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("Keeping an eye on competitive SEO is very important if you want to be a step ahead."),
   p("It is equally important to follow AI search trends and adjust your SEO strategies accordingly to be able to keep up with the game."),
   h2("Future of Technical SEO with AI"),
-  img(`${imageDir}/seo with AI image4.webp`, "Future of Technical SEO with AI"),
   p("The future of SEO is being reshaped by AI technologies."),
   p("AI is deeply intertwined with the future of SEO, so marketers need to continuously adapt their SEO strategies to technological changes, as AI is not a one-time solution."),
   p("AI will handle the automation of many technical SEO tasks, which include locating broken links and optimising page speed, which are still very important for efficient SEO activities."),
@@ -90,6 +88,7 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("Future SEO strategies would heavily depend on AI to personalise ultimate searches and make content relevant and attractive to readers as well as AI."),
   p("The key to success in the AI era is to embrace AI and integrate it into your SEO workflow."),
   h1("Content Optimization using AI"),
+  img(`${imageDir}/Content Optimization using AI.webp`, "Content Optimization using AI"),
   h2("Generative AI for Content Creation"),
   p("Generative AI is changing the way new content is made by giving AI tools and models a natural language that can be used to produce articles, blog posts, and website copy of high quality."),
   p("In a very short time, AI can come up with a large variety of content, thus saving both time and money."),
@@ -98,7 +97,6 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("Knowing the ways in which AI can be a source of creativity and help in getting more work done is a very important skill that modern marketers have to possess."),
   p("Companies can use the power of AI to achieve their content marketing goals at a much faster pace while still being able to keep the level of quality high."),
   h2("Keyword Research in the Age of AI"),
-  img(`${imageDir}/seo with AI image5.webp`, "Keyword Research in the Age of AI"),
   p('Keyword research elements are still the main pillars of <a href="/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic" class="underline text-[#6FAF4E]">successful SEO strategies</a>.'),
   p("The process is more advanced in the AI era, where AI is used to discover niche keywords and also to identify trends."),
   p("AI SEO tools take a huge amount of data to find valuable keywords that have a high number of searches and a low level of competition."),
@@ -115,6 +113,7 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("Such a high degree of personalisation not only elevates the user experience but also leads to higher conversion rates."),
   p("The users will most probably be customers who return if you use AI to enhance the elements, like SEO strategies and the user experience."),
   h1("Visibility and AI in the SEO Landscape"),
+  img(`${imageDir}/Visibility and AI in the SEO Landscape.webp`, "Visibility and AI in the SEO Landscape"),
   h2("AI Tools for Enhancing Visibility"),
   p("The tools powered by AI, such as Surfer, are the top-tier AI solutions among which one can find to optimise content."),
   p("SEO is a means to improve AI-driven SEO tactics in the best way possible by helping with content and keyword research."),
@@ -125,7 +124,6 @@ const whatElementsFoundationalSEOWithAIContent: BlogContentItem[] = [
   p("AI platforms employ machine learning to scrutinise huge volumes of data, thus giving content and website structure optimisation recommendations."),
   p("Without AI SEO tools, it would be difficult to sustain a competitive level in the ever-changing SEO environment."),
   h2("Measuring Success in AI-Driven SEO"),
-  img(`${imageDir}/seo with AI image6.webp`, "Measuring Success in AI-Driven SEO"),
   p("One of the main tools in measuring the success of an AI-powered search engine optimisation is the set of appropriate metrics, along with a full understanding of AI-powered SEO."),
   p("AI-driven SEO demands a radical change of methods. It calls for a switch from traditional methods to advanced AI techniques, which in turn calls for a change in traditional SEO metrics to more comprehensive indicators."),
   p("With AI optimisation, there will be a consideration of factors such as engagement, conversion rates, and customer satisfaction."),

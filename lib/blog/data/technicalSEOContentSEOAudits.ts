@@ -88,7 +88,7 @@ const technicalSEOContentSEOAuditsContent: BlogContentItem[] = [
   p("An agency specialised in marketing can deliver not only thorough audits but also the technical work needed to resolve the issues and enhance on-page SEO, which is the way to make sure that SEO standards that provide for content accessibility are followed."),
 
   h1("Conducting an SEO Audit"),
-  img(`${imageDir}/Conducting an SEO Audit.webp`, "Conducting an SEO Audit"),
+  img(`${imageDir}/Conducting an SEO Audit new.webp`, "Conducting an SEO Audit"),
   h2("Steps in Performing a Technical SEO Audit"),
   p("A technical SEO audit is the process of examining different factors that are necessary for the search engines to recognise a site as fully optimised."),
   p("One of the initial steps is determining the website's crawlability."),
