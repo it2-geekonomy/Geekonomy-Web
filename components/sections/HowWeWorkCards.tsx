@@ -88,7 +88,7 @@ export default function HowWeWorkCards() {
                 className="relative text-white overflow-hidden pointer-events-none"
               >
                 <span
-                  className="relative z-10 inline-block opacity-0 translate-y-3 scale-95 blur-[1px]
+                  className="relative z-10 inline-block opacity-0 translate-y-3
                              transition-all duration-500 ease-out
                              group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 group-hover:blur-0 group-hover:text-white group-hover:pointer-events-auto"
                 >
