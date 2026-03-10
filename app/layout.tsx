@@ -99,15 +99,6 @@ fbq('track', 'PageView');`,
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=803972362726573&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
         <DisableRightClick />
         <NavbarHeightProvider>
           <MouseLight />
