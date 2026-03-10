@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/B2B eCommerce Website/B2B eCommerce Website.webp";
+const coverImage = "/blog image/B2B eCommerce Website/B2B eCommerce Website Development Strategies.webp";
 const imageDir = "/blog image/B2B eCommerce Website";
 
 const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
@@ -56,7 +56,7 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
   p("By focusing on the user experience, B2B eCommerce companies will be able to increase the loyalty of their customers and the number of conversions on their online store."),
 
   h1("Choosing the Right eCommerce Platform"),
-  img(`${imageDir}/B2B eCommerce Website.webp`, "Choosing the right eCommerce platform"),
+  img(`${imageDir}/Choosing the Right eCommerce Platform.webp`, "Choosing the Right eCommerce Platform"),
   h2("Features of a Robust B2B eCommerce Platform"),
   p("Choosing the right eCommerce platform is such an essential move for any B2B eCommerce company that is eyeing to create a successful online store."),
   p("A powerful B2B eCommerce platform must be capable of providing a variety of features that are specifically designed for the differently structured B2B purchasing processes, which in turn ensures that your website is able to support the different requirements."),
@@ -76,7 +76,7 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
   p("By selecting a skilled eCommerce web development services partner, the businesses can achieve the implementation and optimization of Adobe Commerce according to their specific needs and for the smooth integration with different systems."),
 
   h1("Best Practices for B2B eCommerce Website Development"),
-  img(`${imageDir}/B2B eCommerce Website.webp`, "Best practices for B2B eCommerce website development"),
+  img(`${imageDir}/Best Practices for B2B eCommerce Website Development.webp`, "Best Practices for B2B eCommerce Website Development"),
   h2("Integrating User-Friendly Navigation"),
   p("In order to provide a smooth shopping experience to B2B buyers, it is extremely important to have a B2B eCommerce website that is user-friendly in terms of navigation and responsive in design, especially when it comes to B2B and DTC interactions."),
   p("The Website design should be centered around features like intuitive menus, neatly organized category structures, and powerful search functionality, which would both delight the users and increase conversion rates in a thorough eCommerce framework."),
@@ -96,7 +96,7 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
   p("The security of an e-commerce store needs to be at the forefront so that customers can shop with confidence."),
 
   h1("Strategies for B2B Companies in eCommerce"),
-  img(`${imageDir}/B2B eCommerce Website.webp`, "Strategies for B2B companies in eCommerce"),
+  img(`${imageDir}/Strategies for B2B Companies in eCommerce.webp`, "Strategies for B2B Companies in eCommerce"),
   h2("Understanding B2B Sales Dynamics"),
   p("Getting to know the fine points of B2B sales dynamics is the groundwork. B2B companies, which are the primary beneficiaries of this understanding, should be particularly cautious in this respect, as B2B eCommerce usually has specific kinds of difficulties."),
   p("B2B sales, unlike B2C, generally have longer sales cycles, larger order volumes, and more complicated decision-making processes, i.e., features that B2B eCommerce mostly points out."),
@@ -116,7 +116,7 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
   p("The usage of analytics tools guarantees that the performance of the B2B eCommerce site is at all times recorded."),
 
   h1("Case Studies of Successful B2B eCommerce Businesses"),
-  img(`${imageDir}/B2B eCommerce Website.webp`, "Case studies of successful B2B eCommerce businesses"),
+  img(`${imageDir}/Case Studies of Successful B2B eCommerce Businesses.webp`, "Case Studies of Successful B2B eCommerce Businesses"),
   h2("Innovative Approaches in B2B eCommerce"),
   p("Looking into the case studies of eCommerce businesses that sell B2B and are successful, one can find out the different and new ways that these companies have used to lead their industries."),
   p("Such B2B companies usually bring into play the most advanced technologies and the most ingenious strategies in order to make the buying process more convenient for their B2B customers."),
@@ -133,7 +133,7 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
   p("Moreover, the implementation of augmented reality and virtual reality technologies is being seen as a way to completely change the B2B eCommerce web platform to attract and involve more customers through excellent product visualization."),
 
   h1("Conclusion: The Future of B2B eCommerce Website Development"),
-  img(`${imageDir}/B2B eCommerce Website.webp`, "Conclusion: The future of B2B eCommerce website development"),
+  img(`${imageDir}/Conclusion.webp`, "Conclusion"),
   h2("Summarizing Key Points"),
   p("Overall, the creation of a B2B eCommerce site is a very significant milestone that changes the whole vibe of business processes, especially if we are talking about the shift of B2B sales from the offline to the online channel."),
   p("It is a vital move for businesses that want to run successfully in today's market."),

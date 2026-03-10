@@ -21,7 +21,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("Everything from mobile responsiveness and visual design through to compliance with UK laws."),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need a Business Website That Works?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a UK business website built for search and conversion. Mobile-first, fast, and compliant.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
   h1("Mobile-First Design is Non-Negotiable"),
-  img(`${imageDir}/business website in UK image1.webp`, "Mobile-First Design"),
+  img(`${imageDir}/Mobile-First Design is Non-Negotiable.webp`, "Mobile-First Design is Non-Negotiable"),
   p("More than 60% of all web traffic in the UK is from people visiting sites using their mobile devices."),
   p("This is no longer a growing trend, but the new way that the UK consumer accesses the internet, shops, browses, and makes decisions."),
   p("If your website is not working perfectly across mobile devices, you are failing to reach and possibly losing out to the competition for over half of the audience before they even have a chance to view your content."),
@@ -45,7 +45,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("These small factors can be the difference between a conversion and a user gone forever."),
 
   h1("Clear Brand Identity and Professional Design"),
-  img(`${imageDir}/business website in UK image2.webp`, "Clear Brand Identity and Professional Design"),
+  img(`${imageDir}/Clear Brand Identity and Professional Design.webp`, "Clear Brand Identity and Professional Design"),
   h2("Optimising for Professions"),
   p("Time is of the essence. You have roughly 50 milliseconds to make a positive first impression online."),
   p("That's all the time a user has to form an opinion about your website, and by extension, your business."),
@@ -69,7 +69,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("Text size should be large enough to be easily read on all devices, and there should be enough line spacing to facilitate scanning."),
 
   h1("User Experience (UX) at the Core"),
-  img(`${imageDir}/business website in UK image3.webp`, "User experience and website usability"),
+  img(`${imageDir}/User Experience (UX) at the Core.webp`, "User Experience (UX) at the Core"),
   p("UX is the difference between a so-so website and a great one."),
   p("It's how a visitor experiences your website from landing on it, to finding what they're looking for, to completing a goal (buying your product or service, requesting a quote, etc.)."),
   h2("Ensure Intuitive and Easy-to-Use Navigation"),
@@ -106,7 +106,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("They take your hidden contact details as a sign that you don't want to be reached, which is never good for business."),
 
   h1("Compelling, UK-Focused Content"),
-  img(`${imageDir}/business website in UK image1.webp`, "Compelling UK-Focused Content"),
+  img(`${imageDir}/UK-Focused Content.webp`, "UK-Focused Content"),
   p("The very first point is that content is king, but only if that content is relevant to your target audience."),
   p("Generic, corporate-speak will put off UK consumers who want clarity and transparency."),
   p("To connect with your British audience, your content must directly address their needs, interests, pain points, and, at the same time, demonstrate your knowledge and expertise."),
@@ -207,7 +207,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("You may also want to consider embedding your Google Map on the contact page of your site."),
 
   h1("Legal Compliance for UK Businesses"),
-  img(`${imageDir}/business website in UK image3.webp`, "Legal Compliance for UK Businesses"),
+  img(`${imageDir}/Legal Compliance for UK Businesses.webp`, "Legal Compliance for UK Businesses"),
   p("Operating a website in the UK is not without its legal requirements."),
   p("You must follow these laws and regulations if you wish to remain in business, avoid huge fines, and negative PR."),
   p("You can meet your legal obligations on your website without losing sight of your user experience."),
@@ -424,7 +424,7 @@ const goodBusinessWebsiteUKContent: BlogContentItem[] = [
   p("Get in touch to talk about how we can help you build a website that works for your UK business."),
 
   h1("FAQs:"),
-  img(`${imageDir}/business website in UK image2.webp`, "FAQs"),
+  img(`${imageDir}/faqs.webp`, "FAQs"),
   h2("1. What are the key features of a good business website in the UK?"),
   p("A fast and secure site that's mobile-friendly and legally compliant, with clear calls-to-action that drive conversions."),
   h2("2. Why is mobile responsiveness important for UK websites?"),

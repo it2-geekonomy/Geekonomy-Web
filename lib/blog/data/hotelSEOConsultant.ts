@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Hotel SEO Consultant/Hotel SEO Consultant .webp";
+const coverImage = "/blog image/Hotel SEO Consultant/How a Hotel SEO Consultant Helps You Rank.webp";
 const imageDir = "/blog image/Hotel SEO Consultant";
 
 const hotelSEOConsultantContent: BlogContentItem[] = [
@@ -37,7 +37,7 @@ const hotelSEOConsultantContent: BlogContentItem[] = [
   p("Link building, i.e., getting backlinks from trustworthy websites, is a way to increase your site's authority. Content marketing, which may consist of blog posts and the creation of engaging descriptions, is a way of attracting and keeping potential guests. A professional SEO company can come up with individual SEO strategies that will not only bring about direct bookings but also increase the traffic on your website."),
 
   h1("Choosing the Right SEO Agency for Your Hotel"),
-  img(`${imageDir}/Right SEO Agency .webp`, "Choosing the Right SEO Agency for Your Hotel"),
+  img(`${imageDir}/Choosing the Right SEO Agency for Your Hotel.webp`, "Choosing the Right SEO Agency for Your Hotel"),
   h2("How to Identify a Hotel SEO Agency"),
   p("Finding the right hotel SEO agency is a must if you want to improve your SEO strategy hotel and thus get direct bookings."),
   p("First of all, a hotel SEO agency specialised in the hospitality industry knows the difficulties and the advantages of the hotel industry well."),
@@ -64,7 +64,7 @@ const hotelSEOConsultantContent: BlogContentItem[] = [
   p("Having good SEO practice is essential for hotels if they are to maintain their competitiveness in the digital world."),
 
   h1("Optimising Your Hotel's Online Presence"),
-  img(`${imageDir}/Hotel SEO Consultant .webp`, "Optimising your hotel's online presence"),
+  img(`${imageDir}/Optimising Your Hotel's Online Presence.webp`, "Optimising Your Hotel's Online Presence"),
   h2("The Role of Keyword Research in Hotel SEO"),
   p("Keyword research is essential to hotel SEO and a must if you want to rank in the top positions on search engines."),
   p("It is about uncovering the words users type when looking for accommodation and making sure your hotel website is following these terms."),
@@ -92,7 +92,7 @@ const hotelSEOConsultantContent: BlogContentItem[] = [
   p("An SEO agency might be very useful to your hotel in preparing a marketing strategy that will attract the right kind of visitors to your website."),
 
   h1("Measuring the Success of Your SEO Campaigns"),
-  img(`${imageDir}/SEO Campaigns.webp`, "Measuring the Success of Your SEO Campaigns"),
+  img(`${imageDir}/Measuring the Success of Your SEO Campaigns.webp`, "Measuring the Success of Your SEO Campaigns"),
   h2("Tracking Search Rankings and Visibility"),
   p("To really find out how well your hotel SEO efforts are working, you need to be very exact in the manner that you follow up on your general presence and rankings."),
   p("Regularly use different SEO tools to check how your keyword ranking is for the search terms you are targeting, to keep your hotel website SEO effective and able to grow your hotel business. Make sure that your hotel is the best place on the search results pages for the right queries."),
@@ -109,7 +109,7 @@ const hotelSEOConsultantContent: BlogContentItem[] = [
   p("The skill of adapting guarantees that your SEO approach will still work in the ever-challenging world of search engines, which is very important for hotel industry professionals. Be sure that you are not accepting free SEO services."),
 
   h1("FAQs: Hotel SEO Consultant"),
-  img(`${imageDir}/Hotel SEO Consultant .webp`, "FAQs Hotel SEO Consultant"),
+  img(`${imageDir}/FAQs.webp`, "FAQs"),
   h2("1. What does a hotel SEO consultant do?"),
   p("A hotel SEO consultant is an expert who makes your website more visible in search engines, hence increasing organic traffic and bringing you more guests directly."),
   p("They work on content, keywords, and user experience optimization as well as local SEO improvement so that your hotel can get reservations without the need for paid ads or online travel agencies."),

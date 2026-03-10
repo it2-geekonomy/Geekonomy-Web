@@ -47,6 +47,8 @@ export const MobileView = ({
     [imageHeight, screenWidth]
   );
 
+  const showImage = isSectionVisible;
+
   return (
     <div className="lg:hidden">
       <style>{`
@@ -63,11 +65,11 @@ export const MobileView = ({
       <div
         ref={imageRef}
         style={{
-          position: isSectionVisible ? "fixed" : "absolute",
-          top: isSectionVisible ? `${NAV_HEIGHT}px` : "auto",
+          position: showImage ? "fixed" : "absolute",
+          top: showImage ? `${NAV_HEIGHT}px` : "auto",
           left: 0,
           right: 0,
-          zIndex: isSectionVisible ? 30 : -1,
+          zIndex: showImage ? 30 : -1,
           height: imgH,
           overflow: "hidden",
           backgroundColor: "#000",
@@ -75,8 +77,8 @@ export const MobileView = ({
           alignItems: "center",
           justifyContent: "center",
           paddingBottom: "0.5rem",
-          opacity: isSectionVisible ? 1 : 0,
-          pointerEvents: isSectionVisible ? "auto" : "none",
+          opacity: showImage ? 1 : 0,
+          pointerEvents: showImage ? "auto" : "none",
           transition: OPACITY_TRANSITION,
         }}
       >
@@ -91,7 +93,9 @@ export const MobileView = ({
           }}
         >
           <div className="mob-img-box" style={{ width: "100%", height: "100%" }}>
-            {content[activeCard]?.image}
+            {content[activeCard]?.image ??
+              content[Math.max(0, activeCard - 1)]?.image ??
+              content.find((item) => item.image)?.image}
           </div>
         </motion.div>
       </div>
@@ -99,7 +103,7 @@ export const MobileView = ({
         ref={contentRef}
         style={{
           backgroundColor: "#000",
-          paddingTop: isSectionVisible ? padding : "0px",
+          paddingTop: showImage ? padding : "0px",
         }}
       >
         {content.map((item, i) => (

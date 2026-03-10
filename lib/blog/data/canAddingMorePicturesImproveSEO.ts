@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/Adding More Pictures Improve SEO/Adding More Pictures Improve SEO main image.webp";
+const coverImage = "/blog image/Adding More Pictures Improve SEO/Can Adding More Pictures Improve SEO.webp";
 const imageDir = "/blog image/Adding More Pictures Improve SEO";
 
 const canAddingMorePicturesImproveSEOContent: BlogContentItem[] = [
@@ -64,7 +64,7 @@ const canAddingMorePicturesImproveSEOContent: BlogContentItem[] = [
   p("The use of optimized images not only attracts users but also makes it easier for search engines to understand the given context, which, in turn, results in higher visibility of searches."),
 
   h1("Best Practices for Optimizing Images"),
-  img(`${imageDir}/Adding More Pictures Improve SEO image1.webp`, "Best practices for optimizing images"),
+  img(`${imageDir}/Best Practices for Optimizing Images.webp`, "Best Practices for Optimizing Images"),
   h2("How to Optimize Images for SEO"),
   p("Several measures ought to be put in place if one wants to optimize images for SEO in an effective manner."),
   p("We can enumerate a few of the most important factors to indicate the extent to which images influence SEO."),

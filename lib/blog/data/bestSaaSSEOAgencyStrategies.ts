@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img } from "../utils";
 
-const coverImage = "/blog image/SaaS SEO Agency/SaaS SEO Agency.webp";
+const coverImage = "/blog image/SaaS SEO Agency/SaaS SEO Agency new.webp";
 const imageDir = "/blog image/SaaS SEO Agency";
 
 const bestSaaSSEOAgencyStrategiesContent: BlogContentItem[] = [
@@ -98,7 +98,7 @@ const bestSaaSSEOAgencyStrategiesContent: BlogContentItem[] = [
   p("In many cases, a SaaS SEO consultant may turn out to be the SEO expert that you are looking for."),
 
   h1("About B2B SaaS SEO"),
-  img(`${imageDir}/SaaS SEO Agency.webp`, "About B2B SaaS SEO"),
+  img(`${imageDir}/About B2B SaaS SEO.webp`, "About B2B SaaS SEO"),
   h2("Common Questions About SaaS SEO Services"),
   p("Many SaaS companies are curious about the exact advantages that SaaS SEO services bring. One of the most typical questions asked about SEO is that which concerns the difference between regular SEO services and those specially designed SEO for B2B SaaS."),
   p("The main reason why SaaS SEO agencies are worth hiring is their expertise, as they comprehend the exact difficulties and benefits that the SaaS business model presents."),
@@ -119,7 +119,7 @@ const bestSaaSSEOAgencyStrategiesContent: BlogContentItem[] = [
   p("To comprehend these myths and truths is of great importance when it comes to devising efficient SaaS SEO strategies as well as getting assistance from the appropriate SaaS SEO agencies."),
 
   h1("Choosing the Right SaaS SEO Partner"),
-  img(`${imageDir}/SaaS SEO Agency.webp`, "Choosing the Right SaaS SEO Partner"),
+  img(`${imageDir}/Choosing the Right SaaS SEO Partner.webp`, "Choosing the Right SaaS SEO Partner"),
   h2("What to Look for in a SaaS SEO Agency"),
   p("Choosing the right agency for B2B SaaS needs you to weigh up many factors carefully."),
   p("First off, a top B2B SaaS SEO agency should have a long history of working with SaaS companies and should demonstrate a deep understanding of the technical SEO factors involved and the SaaS business model."),

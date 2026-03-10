@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Multilingual PPC Services/Multilingual PPC Services main image.webp";
+const coverImage = "/blog image/Multilingual PPC Services/Multilingual PPC Services.webp";
 const imageDir = "/blog image/Multilingual PPC Services";
 
 const multilingualPPCServicesContent: BlogContentItem[] = [
@@ -31,6 +31,7 @@ const multilingualPPCServicesContent: BlogContentItem[] = [
   p("These elements, when carried out successfully, are the factors behind the accomplishment of multilingual PPC campaigns that result in global expansion by a specialist PPC management agency."),
 
   h1("Choosing the Right Multilingual PPC Agency"),
+  img(`${imageDir}/Choosing the Right Multilingual PPC Agency.webp`, "Choosing the Right Multilingual PPC Agency"),
   h2("Evaluating PPC Experts for Global Campaigns"),
   p("A well-rounded multilingual PPC consultancy is definitely the next point on your list of priorities if you want to take your business to the international market."),
   p("It is a crucial moment when you decide to select the right multilingual PPC agency that can significantly alter your ROI."),
@@ -75,7 +76,7 @@ const multilingualPPCServicesContent: BlogContentItem[] = [
   p("The implementation of multilingual campaigns in your communication with the audience can be great leverage for your reach."),
 
   h1("Global Reach Through Multilingual Paid Search"),
-  img(`${imageDir}/Multilingual PPC Services image2.webp`, "Global reach through international PPC"),
+  img(`${imageDir}/Global Reach Through Multilingual Paid Search.webp`, "Global Reach Through Multilingual Paid Search"),
   h2("Expanding Your Market with International PPC"),
   p("One of the main things in digital marketing is the use of a plan which will bring better results from the existing campaigns."),
   p("Therefore, a well-executed multilingual PPC campaign is able to do a great job not only in significantly broadening the recognition of your brand but also in generating worldwide PPC success."),

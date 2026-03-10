@@ -108,7 +108,7 @@ export const useSectionVisibility = (
       if (!contentRef.current) return;
       const rect = contentRef.current.getBoundingClientRect();
       const contentBottom = rect.bottom;
-      const threshold = window.innerHeight * 0.1;
+      const threshold = 0;
       const newValue = contentBottom > threshold;
       if (newValue !== lastValue) {
         lastValue = newValue;

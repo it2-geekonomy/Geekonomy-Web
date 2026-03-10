@@ -32,7 +32,7 @@ const ppcForHomeServicesContent: BlogContentItem[] = [
   p('To give you an example, an HVAC company can target homeowners who type in the local search for "HVAC repair" or "new AC installation", making PPC a must-have tool for growth and the right agency for efficient strategies.'),
 
   h1("Creating Effective PPC Campaigns"),
-  img(`${imageDir}/PPC for Home Services  image1.webp`, "Creating effective PPC campaigns"),
+  img(`${imageDir}/Creating Effective PPC Campaigns.webp`, "Creating Effective PPC Campaigns"),
   h2("Steps to Develop a Successful PPC Campaign"),
   p("It takes a lot of work, from start to finish, to create a winning PPC campaign for home services, especially when it comes to digital marketing."),
   p("After that, find out which keywords people use when looking for a service to hire."),
@@ -41,7 +41,7 @@ const ppcForHomeServicesContent: BlogContentItem[] = [
   p("Decide on a realistic PPC budget and keep track of your ad expenses regularly so that you can make your campaign as efficient as possible."),
   p("Implementing a strategy for a home service company will be the key to unlocking partnerships with great digital marketing agencies that will help you achieve growth in your business."),
   h2("Choosing the Right PPC Agency for Your Home Services"),
-  img(`${imageDir}/PPC for Home Services  image2.webp`, "Choosing the right PPC agency for home services"),
+  img(`${imageDir}/Choosing the Right PPC Agency for Your Home Services.webp`, "Choosing the Right PPC Agency for Your Home Services"),
   p("Choosing the right PPC agency for your home services is vital if you want to get maximum results from your home service ads investment."),
   p("Select a PPC agency that has proven experience and success in the home services industry."),
   p("A great agency should not only be familiar with the marketing of home services but also should be aware of the specific challenges that a home service company is facing."),
@@ -82,7 +82,7 @@ const ppcForHomeServicesContent: BlogContentItem[] = [
   p("Efficient use of ad spend through a well-planned CPC strategy is what brings the right kind of traffic to your website or landing page, especially from mobile devices."),
 
   h1("Optimizing Your PPC Ads"),
-  img(`${imageDir}/PPC for Home Services  image3.webp`, "Optimizing your PPC ads"),
+  img(`${imageDir}/Optimizing Your PPC Ads.webp`, "Optimizing Your PPC Ads"),
   h2("Creating Compelling Ads for Home Services"),
   p("It is a must to advertise your home services in such a way that it will be able to attract more people through targeting the audience correctly."),
   p("Your ad copy should be customer-friendly, brief, and indicate the exact requirements of the homeowners who are looking for your services, which is the customer journey."),

@@ -1,8 +1,8 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h1, h2, list } from "../utils";
+import { contentToSections, p, h1, h2, img, list } from "../utils";
 
-const coverImage = "/blog image/Local SEO for Estate Agents/Local SEO for Estate Agents main image.webp";
+const coverImage = "/blog image/Local SEO for Estate Agents/Local SEO for Estate Agents.webp";
 const imageDir = "/blog image/Local SEO for Estate Agents";
 
 const localSEOForEstateAgentsContent: BlogContentItem[] = [
@@ -35,6 +35,7 @@ const localSEOForEstateAgentsContent: BlogContentItem[] = [
   p("This can be done by optimising your website's content, so it includes relevant local keywords and phrases that are commonly used when people are searching online for 'estate agent near'."),
 
   h1("Optimising Your Online Presence"),
+  img(`${imageDir}/Optimising Your Online Presence.webp`, "Optimising Your Online Presence"),
   h2("Creating a Google Business Profile"),
   p("To optimise your online presence and improve your Google ranking, one of the best ways is by creating a Google Business Profile, which can be optimised through strategic content marketing for real estate agent businesses."),
   p("A Google Business Profile is a free listing on Google Maps that helps customers find your business when they search online."),
@@ -56,6 +57,7 @@ const localSEOForEstateAgentsContent: BlogContentItem[] = [
   p("A good example of this would be if someone searches 'estate agents near', then they will see a page title such as \"Estate Agents Near Me\" followed by \"Find out more about our professional services\"."),
 
   h1("Keyword Research and Implementation"),
+  img(`${imageDir}/Keyword Research and Implementation.webp`, "Keyword Research and Implementation"),
   h2("Identifying Effective SEO Keywords"),
   p("Keyword research is an important part of the SEO process for real estate agents looking to improve their local SEO."),
   p("It involves researching and identifying relevant keywords that will help you improve your visibility in search results and, ultimately, generate more leads."),
@@ -76,6 +78,7 @@ const localSEOForEstateAgentsContent: BlogContentItem[] = [
   p("A good example of this would be if someone searches 'estate agents near me', then they will see a page title such as \"Estate Agents Near Me\" followed by \"Find out more about our professional services.\""),
 
   h1("SEO Services Tailored for Estate Agents"),
+  img(`${imageDir}/SEO Services Tailored for Estate Agents.webp`, "SEO Services Tailored for Estate Agents"),
   h2("Choosing the Right SEO Services for Your Agency"),
   p("SEO services for estate agents can be a powerful tool in helping you to boost your online presence and attract more clients."),
   p("However, you must choose the right SEO services for your property business, as it will help you improve the local visibility of your estate agent website."),
@@ -96,6 +99,7 @@ const localSEOForEstateAgentsContent: BlogContentItem[] = [
   p("A good example of how to use effective keywords in a title would be if someone searches 'estate agents near', then they will see a page title such as \"Estate Agents Near Me\" followed by \"Find out more about our professional service.\""),
 
   h1("Essential Tips for Optimising for Local Search"),
+  img(`${imageDir}/Essential Tips for Optimising for Local Search.webp`, "Essential Tips for Optimising for Local Search"),
   h2("Five SEO Tips for Estate Agents"),
   p("SEO tips for estate agents are the things that you need to do to improve your search engine rankings and get more traffic to your website."),
   p("Estate agents can implement SEO for property agents on their website, as it is one of the best estate agents in the property business, and an essential digital marketing for real estate."),
