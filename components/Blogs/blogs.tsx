@@ -114,9 +114,13 @@ import { omnichannelMarketing } from "@/lib/blog/data/omnichannelMarketing";
 import { nursingHomesSEOCompany } from "@/lib/blog/data/nursingHomesSEOCompany";
 import { technicalSEOMistakesThatKillGoogleRankings } from "@/lib/blog/data/technicalSEOMistakesThatKillGoogleRankings";
 import { onPageSEOChecklistForServiceBasedWebsites } from "@/lib/blog/data/onPageSEOChecklistForServiceBasedWebsites";
+import { whyYourWebsiteIsNotRankingOnGoogle } from "@/lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle";
+import { logoDesignersInBangaloreHowToChooseTheBest } from "@/lib/blog/data/logoDesignersInBangaloreHowToChooseTheBest";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  logoDesignersInBangaloreHowToChooseTheBest,
+  whyYourWebsiteIsNotRankingOnGoogle,
   onPageSEOChecklistForServiceBasedWebsites,
   technicalSEOMistakesThatKillGoogleRankings,
   howMuchDoesSEOCostInBristol,

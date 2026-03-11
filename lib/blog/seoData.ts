@@ -109,6 +109,8 @@ import { howMuchDoesSEOCostInLeedsSEO } from "./data/HowMuchDoesSEOCostinLeeds";
 import { howMuchDoesSEOCostInBristolSEO } from "./data/howMuchDoesSEOCostInBristol";
 import { technicalSEOMistakesThatKillGoogleRankingsSEO } from "./data/technicalSEOMistakesThatKillGoogleRankings";
 import { onPageSEOChecklistForServiceBasedWebsitesSEO } from "./data/onPageSEOChecklistForServiceBasedWebsites";
+import { whyYourWebsiteIsNotRankingOnGoogleSEO } from "./data/whyYourWebsiteIsNotRankingOnGoogle";
+import { logoDesignersInBangaloreHowToChooseTheBestSEO } from "./data/logoDesignersInBangaloreHowToChooseTheBest";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -223,4 +225,7 @@ export const blogSEOData = {
   "blog/seo-cost-in-bristol": howMuchDoesSEOCostInBristolSEO,
   "blog/technical-seo-mistakes-that-kill-google-rankings": technicalSEOMistakesThatKillGoogleRankingsSEO,
   "blog/on-page-seo-checklist-for-service-based-websites": onPageSEOChecklistForServiceBasedWebsitesSEO,
+  "blog/why-your-website-is-not-ranking-on-google": whyYourWebsiteIsNotRankingOnGoogleSEO,
+  "blog/logo-designers-in-bangalore-how-to-choose-the-best":
+    logoDesignersInBangaloreHowToChooseTheBestSEO,
 };
