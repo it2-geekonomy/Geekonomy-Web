@@ -53,7 +53,7 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
             </div>
           </div>
           <div class="w-full md:w-3/4 flex flex-col">
-            <h3 class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left"><a href="/blog/author/${authorSlug}" class="text-[#6FAF4E] hover:underline transition-all cursor-pointer" style="color: #6FAF4E !important;">${authorInfo.name}</a></h3>
+            <p class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left"><a href="/blog/author/${authorSlug}" class="text-[#6FAF4E] hover:underline transition-all cursor-pointer" style="color: #6FAF4E !important;">${authorInfo.name}</a></p>
             <p class="text-white text-base md:text-lg mb-4 text-center md:text-left">${authorInfo.role}</p>
             <div class="text-[#999999] text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
           </div>
