@@ -256,22 +256,17 @@ const TABLE_COMPONENTS: Record<BlogTableComponentKey, React.ReactNode> = {
   BangaloreSEOPackagesTable: <BangaloreSEOPackagesTable />
 };
 
-/** Encode image path for production (spaces/special chars in paths can break on deploy). */
-function encodedImageSrc(path: string): string {
-  return encodeURI(path);
-}
-
 function hydrateBlog(data: BlogData): Blog {
   return {
     slug: data.slug,
     heading: data.heading,
-    coverImage: encodedImageSrc(data.coverImage),
+    coverImage: data.coverImage,
     sections: data.sections.map((section, index) => ({
       title: index === 0 ? `${data.heading} | Geekonomy` : section.title,
       description: section.description,
       image: (
         <Image
-          src={encodedImageSrc(section.image.src)}
+          src={section.image.src}
           alt={section.image.alt}
           fill
           className="object-cover rounded-xl"
