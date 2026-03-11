@@ -106,6 +106,7 @@ import { howMuchDoesSEOCostInDelhiNCRSEO } from "./data/HowMuchDoesSEOCostinDelh
 import { howMuchDoesSEOCostInHyderabadSEO } from "./data/HowMuchDoesSEOCostinHyderabad";
 import { howMuchDoesSEOCostInBangaloreSEO } from "./data/HowMuchDoesSEOCostinBangalore";
 import { howMuchDoesSEOCostInLeedsSEO } from "./data/HowMuchDoesSEOCostinLeeds";
+import { howMuchDoesSEOCostInBristolSEO } from "./data/howMuchDoesSEOCostInBristol";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -217,4 +218,5 @@ export const blogSEOData = {
   "blog/how-much-does-seo-cost-in-hyderabad": howMuchDoesSEOCostInHyderabadSEO,
   "blog/how-much-does-seo-cost-in-bangalore": howMuchDoesSEOCostInBangaloreSEO,
   "blog/seo-cost-in-leeds": howMuchDoesSEOCostInLeedsSEO,
+  "blog/seo-cost-in-bristol": howMuchDoesSEOCostInBristolSEO,
 };
