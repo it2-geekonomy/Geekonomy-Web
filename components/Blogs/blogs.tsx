@@ -256,26 +256,27 @@ const TABLE_COMPONENTS: Record<BlogTableComponentKey, React.ReactNode> = {
   BangaloreSEOPackagesTable: <BangaloreSEOPackagesTable />
 };
 
-/** Encode local image paths (e.g. spaces → %20) so Next.js Image works in production. */
-function imageSrc(path: string): string {
-  return path.startsWith("/") ? encodeURI(path) : path;
+/** Use unoptimized for local paths so images with spaces in paths work in production. */
+function isLocalPath(path: string): boolean {
+  return path.startsWith("/") && !path.startsWith("//");
 }
 
 function hydrateBlog(data: BlogData): Blog {
   return {
     slug: data.slug,
     heading: data.heading,
-    coverImage: imageSrc(data.coverImage),
+    coverImage: data.coverImage,
     sections: data.sections.map((section, index) => ({
       title: index === 0 ? `${data.heading} | Geekonomy` : section.title,
       description: section.description,
       image: (
         <Image
-          src={imageSrc(section.image.src)}
+          src={section.image.src}
           alt={section.image.alt}
           fill
           className="object-cover rounded-xl"
           priority={index === 0}
+          unoptimized={isLocalPath(section.image.src)}
         />
       ),
       ...(section.tableComponent && {
