@@ -68,7 +68,7 @@ export default function CoreCapabilitiesSection() {
           <CapabilitiesLeftSection />
 
           {/* RIGHT SIDE */}
-          <div className="lg:col-span-3 flex gap-6 items-stretch h-[400px]">
+          <div className="lg:col-span-3 flex gap-6 lg:gap-12 items-stretch h-[400px]">
             {/* Vertical Indicator */}
             <div className="flex flex-col items-center w-3 flex-shrink-0">
               <div className="w-3 h-3 rounded-full bg-[#6FAF4E]" />
@@ -86,17 +86,17 @@ export default function CoreCapabilitiesSection() {
 
               {CORE_CAPABILITIES.map((capability) => (
                 <div key={capability.number} className="flex flex-col justify-center h-[380px] snap-start">
-                  <Typography as="p" variant="sm" className="text-white/90 mb-1">
+                  <Typography as="p" variant="body-xl" className="text-white/90 mb-1">
                     {capability.number}
                   </Typography>
-                  <Typography as="h3" variant="2xl" className="text-[#6FAF4E] mb-4 font-normal">
+                  <Typography as="h3" variant="h2" className="text-[#6FAF4E] mb-4 font-normal">
                     {capability.title}
                   </Typography>
                   <div className="flex items-start gap-3 mb-4">
                     <div className="w-5 h-5 rounded-full border-2 border-[#6FAF4E] flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-[#6FAF4E] stroke-4" />
                     </div>
-                    <Typography as="p" variant="base" className="text-[#A0A0A0] leading-relaxed">
+                    <Typography as="p" variant="body-xl" className="text-[#A0A0A0] leading-relaxed">
                       {capability.description}
                     </Typography>
                   </div>
@@ -106,7 +106,7 @@ export default function CoreCapabilitiesSection() {
                       {capability.includes.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <span className="text-[#A0A0A0] mt-1.5 shrink-0">•</span>
-                          <Typography as="span" variant="base" className="text-[#A0A0A0]">{item}</Typography>
+                          <Typography as="span" variant="body-xl" className="text-[#A0A0A0]">{item}</Typography>
                         </li>
                       ))}
                     </ul>

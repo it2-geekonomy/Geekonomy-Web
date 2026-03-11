@@ -18,7 +18,7 @@ export function CapabilitiesLeftSection() {
       >
         <Typography
           as="h2"
-          variant="2xl"
+          variant="h1"
           className="text-white font-normal leading-tight mb-4"
         >
           Our Core Capabilities
