@@ -108,6 +108,7 @@ import { howMuchDoesSEOCostInBangaloreSEO } from "./data/HowMuchDoesSEOCostinBan
 import { howMuchDoesSEOCostInLeedsSEO } from "./data/HowMuchDoesSEOCostinLeeds";
 import { howMuchDoesSEOCostInBristolSEO } from "./data/howMuchDoesSEOCostInBristol";
 import { technicalSEOMistakesThatKillGoogleRankingsSEO } from "./data/technicalSEOMistakesThatKillGoogleRankings";
+import { onPageSEOChecklistForServiceBasedWebsitesSEO } from "./data/onPageSEOChecklistForServiceBasedWebsites";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -221,4 +222,5 @@ export const blogSEOData = {
   "blog/seo-cost-in-leeds": howMuchDoesSEOCostInLeedsSEO,
   "blog/seo-cost-in-bristol": howMuchDoesSEOCostInBristolSEO,
   "blog/technical-seo-mistakes-that-kill-google-rankings": technicalSEOMistakesThatKillGoogleRankingsSEO,
+  "blog/on-page-seo-checklist-for-service-based-websites": onPageSEOChecklistForServiceBasedWebsitesSEO,
 };

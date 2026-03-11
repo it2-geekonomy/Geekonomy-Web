@@ -12,10 +12,10 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("So, whether you are working on your very first business website or redesigning it, there are always ways to save some money on website building anywhere in the UK, and this is a process that ought to run throughout the entire project, from design and build to web hosting and ongoing maintenance."),
   p("With that in mind, this guide will outline 10 actionable tips that will help you cut costs on the building of your website and turn you into a financially savvy site owner."),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Want to Reduce Your Website Costs?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a transparent quote and a plan that keeps costs under control. We build for performance and value.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
-  h1("Understanding What Drives Website Costs in the UK"),
+  h2("Understanding What Drives Website Costs in the UK"),
   p("Even before one thinks of reducing website costs, one would have to know the various factors responsible for these costs."),
   p("Web development pricing in the UK depends on the targets and the complexity of the project, and then on the agency one chooses to work with. Most of all, the main components of website costs can allow you to see costs that could be cut, and those that cannot."),
-  h2("Key Factors That Influence Website Costs"),
+  h3("Key Factors That Influence Website Costs"),
   h3("Design & User Experience (UX)"),
   p("Custom web designs, animations, and UX testing can also push costs up. Pre-built themes or template-based designs, on the other hand, can cut hundreds of pounds off a site while still looking professional."),
   h3("Development & Functionality"),
@@ -31,15 +31,15 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("Even after the website is launched, clients usually need regular updating, plugin management, and backup restoration."),
   p("General ongoing maintenance plans are priced between £30 and £150 per month, but skimping on this point usually ends up costing a lot more down the line."),
 
-  h1("Average Website Cost in the UK (2026)"),
+  h2("Average Website Cost in the UK (2026)"),
   img(`${imageDir}/How to Reduce Website Cost in the UK image2.webp`, "Average Website Cost in the UK (2026)"),
   list('<div class="my-6 w-full table-container table-website-cost-uk"><table class="w-full border-collapse border border-gray-600"><thead><tr class="bg-black"><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Type of website</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Cost estimate</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Remarks</th></tr></thead><tbody><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Basic business site</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£800 – £2,000</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">This could work for a small business.</td></tr><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Custom design or branding site</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£2,000 – £5,000</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Includes strategy, UX design</td></tr><tr class="bg-black border-b border-gray-600"><td class="border border-gray-600 px-4 py-3 text-white text-sm"><a href="/blog/ecommerce-website-development-services-help-you-grow" class="underline text-[#6FAF4E]">eCommerce website</a></td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£3,000 – £10,000+</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Will vary according to products & integrations</td></tr><tr class="bg-black"><td class="border border-gray-600 px-4 py-3 text-white text-sm">Corporate, large, or custom-built</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">£8,000 – £20,000+</td><td class="border border-gray-600 px-4 py-3 text-white text-sm">Tailored design & development</td></tr></tbody></table></div>'),
-  h2("One-Time vs. Ongoing Costs"),
+  h3("One-Time vs. Ongoing Costs"),
   p("Many things are easily forgotten by businesses while budgeting. For example, one-off costs (design and development) are not often separated from ongoing costs (hosting, content, marketing, and maintenance)."),
   p("These preparations will save a lot of ugly surprises later."),
   p("There is another aspect that many businesses overlook while budgeting: differentiating the one-time build costs (design and development) from the ongoing costs (hosting, content, marketing, and maintenance). Preparing for both will save a lot of bad surprises as time goes on."),
 
-  h1("Plan Your Website Smartly Before Development"),
+  h2("Plan Your Website Smartly Before Development"),
   img(`${imageDir}/How to Reduce Website Cost in the UK image3.webp`, "Plan Your Website Smartly Before Development"),
   p("Careful consideration at the very early stage would save costs on the website. A proper plan avoids unnecessary changes, hours of work, and costly redesigns in the long run."),
   h3("1. Define Clear Goals and Requirements"),
@@ -57,7 +57,7 @@ const websiteCostUKContent: BlogContentItem[] = [
   h3("5. Avoid Last-Minute Changes"),
   p("It costs time and money for even the smallest changes, once development has started. To avoid costing your project needless funds, it is best to settle all the major decisions before the project begins: color scheme, features, and functionality."),
 
-  h1("Choose the Right Platform and Tools"),
+  h2("Choose the Right Platform and Tools"),
   img(`${imageDir}/How to Reduce Website Cost in the UK image4.webp`, "Choose the Right Platform and Tools"),
   p("The platform and tools you choose for your website will significantly determine development and maintenance costs."),
   p("A wrong combination of technology could lead to maintenance costs down the road, plugin compatibility headaches, or even a need to migrate at some stage."),
@@ -77,7 +77,7 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("User behavior and conversion tracking using Google Analytics 4."),
   p("Google Search Console - to maintain a watch on both the visibility of the keywords and the technical search optimization."),
 
-  h1("Use Templates or Theme-Based Designs Wisely"),
+  h2("Use Templates or Theme-Based Designs Wisely"),
   p("The layout is paramount to the user experience and what visitors feel about your brand, but it is a big budget item among all website creation tasks. A fully custom design can indeed be an expense, but quite a range of templates or pre-made themes can also be cheap if you apply your mind."),
   h3("1. When to Use a Template or Pre-Built Theme"),
   p("A pre-designed theme is a great option for a start-up or small company that really needs a professional online presence on a limited budget. Consider that platforms such as WordPress, Shopify, and Squarespace feature thousands of responsive and SEO-friendly themes that go for as little as £30-£100."),
@@ -94,7 +94,7 @@ const websiteCostUKContent: BlogContentItem[] = [
   h3("4. Tips for Customising Templates"),
   list('<ul><li>Replace all stock images with original visuals for authenticity.</li><li>Adjust layout and typography to maintain brand consistency.</li><li>Remove unnecessary features that slow down your website.</li><li>Always test your site on different devices and browsers before launch.</li></ul>'),
 
-  h1("Outsource Strategically"),
+  h2("Outsource Strategically"),
   img(`${imageDir}/How to Reduce Website Cost in the UK image5.webp`, "Outsource Strategically"),
   p("Cutting costs on your website via outsourcing opportunities is considered to be an effective way, but it only works strategically."),
   p("UK businesses have been reported to save thousands by engaging freelancers or agencies that do good work at attractive price points."),
@@ -117,7 +117,7 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("Collaborating with seasoned and skilled software development teams in a place such as India, the Philippines, or Eastern Europe would reduce your cost of building a site by 40-70% without compromising quality, as long as you select a reputable partner with an excellent reputation."),
   p("Outsourcing is not only about the lowest cost, but rather about value, trust, and communication to deliver good results within a budget and timelines."),
 
-  h1("Focus on Essential Features First"),
+  h2("Focus on Essential Features First"),
   p("Scope Creep: Trying to do everything at once is a frequent cause of website projects going over budget."),
   p("If you want to lower your website costs, one important thing to focus on in phase 1 is prioritization, specifically, the features most directly related to your objectives and user needs."),
   h3("1. Start with an MVP (Minimum Viable Product)"),
@@ -134,7 +134,7 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("Ship first, take into consideration user feedback, and repeat. This implies that you are not making investments in features that your users actually desire - impractical assumptions that do not pay off."),
   p("By focusing on the central aspects that most importantly matter, the expenses involved in the creation of the websites are also cut down by 30-50 percent, which means that a site can be launched in less time and performance can be achieved in an easier way. Also, it is possible to add new features later. Just start lean and mean."),
 
-  h1("Use Efficient Project Management and Communication"),
+  h2("Use Efficient Project Management and Communication"),
   p("Even if you have an awesome plan and a killer team, communication problems can lead to missed timelines and higher costs."),
   p("With good project management, everyone stays on the same page — from your designers to developers, which means fewer unnecessary revisions and less delay."),
   h3("1. Establish a Clear Workflow"),
@@ -156,7 +156,7 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("Definitely saves tons of confusion later, and saves much hassle on budget management when dealing with freelancers and offshore teams."),
   p("To summarize, efficient project management and clear communication can save both time and cost in the execution of a website project."),
 
-  h1("Maintenance and Long-Term Savings"),
+  h2("Maintenance and Long-Term Savings"),
   p("Maintenance works like a continuum. Regular take-offs, together with long-term scheduling, are some ways of making the website costs lower in the long run."),
   p("Preventive maintenance keeps a site out of costly repairs, improves performance, and returns on investment (ROI)."),
   h3("1. Schedule Regular Maintenance"),
@@ -178,26 +178,26 @@ const websiteCostUKContent: BlogContentItem[] = [
   p("Thus, with a proactive maintenance strategy, your website will become a long-term asset and not a repeated expense."),
   p("It takes spending little time and money on regular upkeep, and you'll never face the high cost of rebuilding your site, downtime for the site, or even security issues ever again, saving you much more in the long run."),
 
-  h1("Final Thoughts"),
+  h2("Final Thoughts"),
   p("You don't really need to break the bank while building a website. Well planned, armed with the right tools and a good strategy in place, will reduce the costs associated with having a website and yet give a professional outcome."),
   p("Know these major factors where costs erupt - design, development, hosting, and maintenance - and then make educated and intelligent decisions at every step."),
   p("Get open-source platforms such as WordPress, use of design themes, and transparency in project management to keep an eye on costs that won't affect the quality performance of a site or dilute the brand."),
   p("Remember, cost efficiency is not cheap. It is strategic. You can have a high-performing website that scales with your business, not your budget, by doing only the essential things, outsourcing where appropriate, and maintaining your site regularly."),
   p("A result-driven, 100% transparent web design agency does more than help UK businesses to develop or redesign websites; it gets you an ideal balance between quality, performance, and value for the money."),
 
-  h1("FAQs:"),
+  h2("FAQs:"),
   img(`${imageDir}/How to Reduce Website Cost in the UK image6.webp`, "FAQs"),
-  h2("1. How much does a website cost in the UK?"),
+  h3("1. How much does a website cost in the UK?"),
   p("Small businesses should expect an average cost of £800-£2,000 for a small business website in the UK, while eCommerce websites can cost anywhere from £3,000 to £10,000+, depending on features, design, and functionality."),
-  h2("2. What is the cheapest way to build a website in the UK?"),
+  h3("2. What is the cheapest way to build a website in the UK?"),
   p("Using WordPress combined with a ready template, in combination with reasonable shared hosting and a minimum number of plug-ins: the least expensive way. A pro charges about £300-£800 generally, but it could be done much cheaper."),
-  h2("3. How can I reduce my website design cost?"),
+  h3("3. How can I reduce my website design cost?"),
   p("Templates, theme-based designs, simplifying your layout, and tackling the core functionality first. No reason whatsoever to touch up your design until the actual need arises. Don't waste precious budgets on animations, micro-interactions, and design features that do not affect performance or conversion."),
-  h2("4. Is it cheaper to hire a freelancer or an agency in the UK?"),
+  h3("4. Is it cheaper to hire a freelancer or an agency in the UK?"),
   p("The hourly rate charged by freelancers will typically be less than what an agency would charge for a similar work task, meaning that a freelancer would probably be a better option for smaller projects. The agency would typically be a more expensive option. However, they may offer more of a complete solution, and this can be a more consistent choice. The best option will often depend on the size and complexity of a project."),
-  h2("5. Do I need to pay for website maintenance?"),
+  h3("5. Do I need to pay for website maintenance?"),
   p("Yes — Regular maintenance is key to updates, backups, and security. A traditional maintenance plan in the UK ranges from £30 to £100 per month and prevents expensive future repairs."),
-  h2("6. Can I reduce website costs without losing quality?"),
+  h3("6. Can I reduce website costs without losing quality?"),
   p("Planned thus, maximizing the use of everything open-source and outsourcing parts of the project rather than the whole. Quality is not always put on the back burner because of reduced cost, but rather the right qualifications should be made."),
   p("Do you want to decrease your website expenses for the year 2026?"),
   p('Connect with <a href="/contact-us" class="underline text-[#6FAF4E]">Geekonomy Technology</a> here and let our experts optimise your website for performance, scalability, and lower long-term costs.'),
@@ -223,5 +223,7 @@ export const websiteCostUKSEO = {
   image: "https://geekonomytech.com/how%20to%20reduce%20cost%20in%20the%20uk/how%20to%20reduce%20cost%20in%20the%20uk%20main%20image.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
 
 
