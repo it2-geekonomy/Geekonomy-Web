@@ -83,7 +83,7 @@ export function ContactFormLeftPanel() {
         </Link>
 
         <Link
-          href="https://www.instagram.com/geekonomy_?igsh=MTlpdTMzaG83ZmJ5MA=="
+          href="https://www.instagram.com/thegeekonomy?igsh=ejl5aDFpejl0Y2ht"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Geekonomy on Instagram"
