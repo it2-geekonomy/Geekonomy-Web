@@ -5,7 +5,7 @@ import type { BlogSectionData } from "./types";
  * Images are never rendered inline—only used as section side images in the layout.
  */
 export interface BlogContentItem {
-  type: "paragraph" | "heading" | "h1" | "h3" | "image" | "list";
+  type: "paragraph" | "heading" | "h1" | "h2" | "h3" | "image" | "list";
   text: string;
   className?: string;
 }
@@ -43,11 +43,12 @@ export function contentToHTML(items: BlogContentItem[]): string {
     .map((item) => {
       switch (item.type) {
         case "h1":
-          return `<h2 class="text-[clamp(1.5rem,2vw,2.5rem)] font-bold mt-6 mb-3 ${item.className || ""}">${item.text}</h2>`;
         case "heading":
-          return `<h3 class="text-[clamp(1.3rem,1.5vw,2rem)] font-medium mt-6 mb-3 ${item.className || ""}">${item.text}</h3>`;
+          return `<h1 class="text-[clamp(1.5rem,2vw,2.6rem)] font-bold mt-6 mb-3 ${item.className || ""}">${item.text}</h1>`;
+        case "h2":
+          return `<h2 class="text-[clamp(1.3rem,1.5vw,2rem)] font-medium mt-6 mb-3 ${item.className || ""}">${item.text}</h2>`;
         case "h3":
-          return `<h4 class="text-xl font-semibold mt-4 mb-2 ${item.className || ""}">${item.text}</h4>`;
+          return `<h3 class="text-[clamp(1.25rem,1.4vw,1.8rem)] font-semibold mt-4 mb-2 ${item.className || ""}">${item.text}</h3>`;
         case "paragraph":
           return `<p class="leading-relaxed text-[#FFFFFFB2] text-[clamp(1rem,1vw,1.5rem)] mb-4">${item.text}</p>`;
         case "list":
@@ -82,8 +83,9 @@ export function contentToSections(
   const sections: BlogSectionData[] = [];
   const { introTitle } = options;
 
-  // Only split by H1 (main sections), H2 stays as content within sections
-  const firstHeadingIndex = content.findIndex((item) => item.type === "h1");
+  // Only split by H1/heading (main sections), H2 stays as content within sections
+  const isMainHeading = (item: BlogContentItem) => item.type === "h1" || item.type === "heading";
+  const firstHeadingIndex = content.findIndex(isMainHeading);
   const introItems = firstHeadingIndex === -1 ? content : content.slice(0, firstHeadingIndex);
 
   if (introItems.length > 0 && introTitle) {
@@ -103,8 +105,8 @@ export function contentToSections(
   let i = firstHeadingIndex;
   while (i < content.length) {
     const item = content[i];
-    // Only H1 creates new sections, H2 stays as content
-    if (item.type !== "h1") {
+    // Only H1/heading creates new sections, H2 stays as content
+    if (!isMainHeading(item)) {
       i++;
       continue;
     }
@@ -112,8 +114,8 @@ export function contentToSections(
     const chunk: BlogContentItem[] = [];
     let firstImageInSection: { src: string; alt: string } | null = null;
     i++;
-    // Include H2 ("heading") as content, only stop at next H1
-    while (i < content.length && content[i].type !== "h1") {
+    // Include H2 as content, only stop at next H1/heading
+    while (i < content.length && !isMainHeading(content[i])) {
       const el = content[i];
       chunk.push(el);
       if (el.type === "image" && !firstImageInSection) {
