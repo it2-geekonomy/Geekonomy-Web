@@ -29,20 +29,20 @@ export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative w-full bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
+    <section className="relative w-full bg-black pb-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full px-4 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-[clamp(80%,1200px+5vw,1500px)]">
+        <div className="lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
           {/* Header Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-16 lg:mb-20">
             {/* Left - Main Heading */}
             <div>
               <Typography
                 as="h2"
-                variant="3xl"
+                variant="display-xl"
                 className="text-white font-normal leading-tight"
               >
                 We don't just sell services. We engineer{" "}
-                <span className="text-[#69AE44]">growth systems</span>.
+                <span className="text-[#69AE44]">growth systems.</span>  
               </Typography>
             </div>
 
@@ -50,7 +50,7 @@ export default function ServicesSection() {
             <div className="flex items-center">
               <Typography
                 as="p"
-                variant="base"
+                variant="body-xl"
                 className="text-white/90 font-normal max-w-md xl:translate-x-[30%]"
               >
                 Silos kill speed. We align your brand, technology and marketing
@@ -87,7 +87,7 @@ export default function ServicesSection() {
                   <div className="w-10 h-10 rounded-full flex items-center justify-center">
                     <Typography
                       as="span"
-                      variant="sm"
+                      variant="body-lg"
                       className="text-white border border-[#69AE44] rounded-full w-8 h-8 font-normal flex items-center justify-center"
                     >
                       {service.number}
@@ -105,7 +105,7 @@ export default function ServicesSection() {
                 {/* Service Name */}
                 <Typography
                   as="h3"
-                  variant="2xl"
+                  variant="h1"
                   className="text-[#69AE44] font-bold mb-4"
                 >
                   {service.name.split(" ").map((word, index) => (
@@ -118,7 +118,7 @@ export default function ServicesSection() {
                 {/* Service Description */}
                 <Typography
                   as="p"
-                  variant="base"
+                  variant="body-lg"
                   className="text-white/90 font-normal"
                 >
                   {service.description}

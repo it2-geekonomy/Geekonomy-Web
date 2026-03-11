@@ -83,16 +83,16 @@ export default function ProcessSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-black py-18 mb-14"
+      className="relative w-full bg-black pb-18"
     >
       <div className="w-full px-4 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 2xl:max-w-7xl 2xl:mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 lg:mx-14 xl:mx-[clamp(0.5rem,0.5rem+10vw,10rem)] 2xl:mx-[clamp(1rem,1rem+15vw,22rem)] items-start">
 
           {/* LEFT SIDE */}
           <ProcessLeftSection />
 
           {/* RIGHT SIDE */}
-          <div className="lg:col-span-3 flex gap-6 items-stretch h-[280px]">
+          <div className="lg:col-span-3 flex gap-6 lg:gap-12 items-stretch h-[280px]">
 
             {/* Vertical Dots */}
             <div className="flex flex-col items-center w-3 flex-shrink-0">
@@ -126,15 +126,15 @@ export default function ProcessSection() {
                 >
                   <Typography
                     as="p"
-                    variant="sm"
-                    className="text-white/90 mb-1"
+                      variant="body-xl"
+                    className="text-white mb-1"
                   >
                     PHASE {phase.number}
                   </Typography>
 
                   <Typography
                     as="h3"
-                    variant="2xl"
+                    variant="body-xl"
                     className="text-[#69AE44] mb-4 font-normal"
                   >
                     {phase.name}
@@ -157,15 +157,17 @@ export default function ProcessSection() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span className="text-white/50 text-xs uppercase tracking-widest">
+                    <span className="text-white text-xs uppercase tracking-widest">
+                      <Typography as="span" variant="body-xl" className="text-white text-xs uppercase tracking-widest">
                       KEY QUESTION
+                      </Typography>
                     </span>
                   </div>
 
                   <Typography
                     as="p"
-                    variant="base"
-                    className="text-white/40 leading-relaxed max-w-lg"
+                    variant="body-xl"
+                    className="text-white leading-relaxed max-w-lg"
                   >
                     {phase.keyQuestion}
                   </Typography>

@@ -7,7 +7,7 @@ export default function DisconnectSection() {
   return (
     <section className="relative w-full bg-black py-10 lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full px-4 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 xl:gap-16 lg:mx-8 xl:mx-[clamp(0.5rem,0.5rem+6vw,10rem)] 2xl:mx-[clamp(1rem,1rem+10vw,20rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 xl:gap-16 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
           {/* Left Section - Main Content */}
           <div>
             {/* Introductory Text */}
@@ -23,7 +23,7 @@ export default function DisconnectSection() {
             <div className="mb-10">
               <Typography
                 as="h2"
-                variant="display-2xl"
+                variant="display-xl"
                 className="text-white font-normal leading-tight mb-2 lg:max-w-lg"
               >
                 Brand, technology and marketing are pulling in
@@ -39,21 +39,21 @@ export default function DisconnectSection() {
 
             {/* Bullet Points */}
             <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="h-px w-8 bg-[#69AE44] shrink-0 mt-2" />
-                <Typography as="p" variant="body-lg" className="text-white flex-1">
+              <div className="flex items-center gap-4">
+                <div className="h-px w-8 bg-[#69AE44] shrink-0" />
+                <Typography as="p" variant="body-xl" className="text-white flex-1">
                   That's where things slow down.
                 </Typography>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="h-px w-8 bg-[#69AE44] shrink-0 mt-2" />
-                <Typography as="p" variant="body-lg" className="text-white flex-1">
+              <div className="flex items-center gap-4">
+                <div className="h-px w-8 bg-[#69AE44] shrink-0" />
+                <Typography as="p" variant="body-xl" className="text-white flex-1">
                   That's where money leaks.
                 </Typography>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="h-px w-8 bg-[#69AE44] shrink-0 mt-2" />
-                <Typography as="p" variant="body-lg" className="text-white flex-1">
+              <div className="flex items-center gap-4">
+                <div className="h-px w-8 bg-[#69AE44] shrink-0" />
+                <Typography as="p" variant="body-xl" className="text-white flex-1">
                   That's where growth becomes unpredictable.
                 </Typography>
               </div>
@@ -71,7 +71,7 @@ export default function DisconnectSection() {
               {/* Heading */}
               <Typography
                 as="p"
-                variant="body-lg"
+                variant="body-xl"
                 className="text-white font-semibold mb-6"
               >
                 The Geekonomy Approach
@@ -80,7 +80,7 @@ export default function DisconnectSection() {
               {/* Descriptive Text */}
               <Typography
                 as="p"
-                variant="body-lg"
+                variant="body-xl"
                 className="text-white mb-10 text-justify"
               >
                 We exist to bring structure, alignment and direction to that chaos. We don't just patch holes; we rebuild the foundation so you can move forward with confidence.
@@ -91,7 +91,7 @@ export default function DisconnectSection() {
                 href="/how-we-work"
                 className="font-semibold text-[#69AE44] transition-colors duration-200 inline-flex items-center gap-2"
               >
-                <Typography as="span" variant="body-lg" className="font-semibold">
+                <Typography as="span" variant="body-xl" className="font-semibold">
                   SEE OUR PROCESS →
                 </Typography>
               </Link>

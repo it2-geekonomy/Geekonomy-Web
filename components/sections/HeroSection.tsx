@@ -63,12 +63,12 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
       
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-8 lg:py-30">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-8 lg:py-20">
         <div className="lg:pl-[clamp(1rem,1rem+8vw,10rem)] xl:pl-[clamp(1rem,1rem+12vw,16rem)]">
           {/* Introductory text with green line */}
           <div className="flex flex-col lg:flex-row items-center lg:items-center gap-4 mb-6 xl:mb-10">
             <div className="h-8 w-1 lg:h-1 lg:w-12 bg-[#69AE44]" />
-            <Typography as="p" variant="2xl" className="text-white font-normal text-center lg:text-left">
+            <Typography as="p" variant="h1" className="text-white font-normal text-center lg:text-left">
               We help businesses grow with
             </Typography>
           </div>
@@ -141,7 +141,7 @@ export default function HeroSection() {
               </motion.div>
             </div>
             {/* Gray horizontal line */}
-            <div className="h-px w-84 sm:w-95 md:w-120 lg:w-130 xl:w-140 bg-[#414340] mb-3 mx-auto lg:mx-0" />
+            <div className="h-px w-84 sm:w-95 md:w-110 lg:w-120 xl:w-130 bg-[#414340] mb-3 mx-auto lg:mx-0" />
             {/* Single hover zone for entire row so gap between OVER and CHAOS doesn’t trigger chaos */}
             <div
               className="flex flex-nowrap items-baseline gap-10 max-sm:gap-4 w-full min-w-0 justify-center lg:justify-start"
@@ -151,7 +151,7 @@ export default function HeroSection() {
               <motion.h2
                 className="font-bold text-white leading-[1.1] shrink-0 pl-5 sm:pl-0"
                 style={{
-                  fontSize: "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
+                  fontSize: "clamp(3rem, 2.25rem + 3vw, 5rem)",
                   fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
                 }}
                 animate={{
@@ -213,7 +213,7 @@ export default function HeroSection() {
                       key={`${index}-${isHovered}`}
                       className="inline-block font-bold text-white"
                       style={{
-                        fontSize: "clamp(3rem, 2.25rem + 3vw, 5.5rem)",
+                        fontSize: "clamp(3rem, 2.25rem + 3vw, 5rem)",
                         lineHeight: "1.1",
                         fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif",
                       }}
@@ -245,10 +245,10 @@ export default function HeroSection() {
 
           {/* Descriptive Text */}
           <div className="mb-10 space-y-5 text-center lg:text-left">
-            <Typography as="p" variant="base" className="text-white font-light leading-relaxed max-w-3xl mx-auto lg:mx-0 text-justify">
+            <Typography as="p" variant="body-xl" className="text-white font-light leading-relaxed max-w-3xl mx-auto lg:mx-0 text-justify">
               Geekonomy partners with founders and leadership teams to build brands, digital systems and marketing that are designed to last, not just launch.
             </Typography>
-            <Typography as="p" variant="base" className="text-white font-light">
+            <Typography as="p" variant="body-xl" className="text-white font-light">
               Strategy-led. Thoughtfully built. Carefully executed.
             </Typography>
           </div>
@@ -257,9 +257,9 @@ export default function HeroSection() {
           <div className="relative lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 w-full lg:w-auto text-center lg:text-left">
             <Link
               href="/contact-us#form"
-              className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
+              className="group inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:scale-105"
             >
-              <Typography as="span" variant="sm" className="font-normal">
+              <Typography as="span" variant="body-lg" className="font-normal text-white group-hover:text-[#69AE44] transition-colors duration-200">
                 START A CONVERSATION
               </Typography>
             </Link>
