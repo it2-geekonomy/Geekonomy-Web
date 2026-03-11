@@ -28,7 +28,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${authorInfo.name} - ${authorInfo.role} | Geekonomy Blog`,
+    title: `${authorInfo.name} - ${authorInfo.role} | Author Geekonomy`,
     description:
       authorInfo.metaDescription ||
       authorInfo.biography ||

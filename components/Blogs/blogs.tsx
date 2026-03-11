@@ -112,9 +112,11 @@ import { howMuchDoesSEOCostInLeeds } from "@/lib/blog/data/HowMuchDoesSEOCostinL
 import { howMuchDoesSEOCostInBristol } from "@/lib/blog/data/howMuchDoesSEOCostInBristol";
 import { omnichannelMarketing } from "@/lib/blog/data/omnichannelMarketing";
 import { nursingHomesSEOCompany } from "@/lib/blog/data/nursingHomesSEOCompany";
+import { technicalSEOMistakesThatKillGoogleRankings } from "@/lib/blog/data/technicalSEOMistakesThatKillGoogleRankings";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  technicalSEOMistakesThatKillGoogleRankings,
   howMuchDoesSEOCostInBristol,
   howMuchDoesSEOCostInLeeds,
   bestSeoServicesForStartupsInBangalore,
