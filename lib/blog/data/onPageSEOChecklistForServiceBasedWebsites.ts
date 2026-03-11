@@ -255,7 +255,7 @@ export const onPageSEOChecklistForServiceBasedWebsites: BlogData = {
 export const onPageSEOChecklistForServiceBasedWebsitesSEO = {
   title: "On-Page SEO Checklist for Service-Based Websites",
   description:
-    "A complete on-page SEO checklist for service-based websites. Optimise keywords, meta descriptions, headers, images, internal links, URLs, and schema for better rankings.",
+    " Complete on-page SEO checklist for service-based websites to improve rankings, boost visibility, and attract more qualified leads from search engines.",
   url: "https://geekonomytech.com/blog/on-page-seo-checklist-for-service-based-websites",
   canonical: "https://geekonomytech.com/blog/on-page-seo-checklist-for-service-based-websites",
   image: "https://geekonomytech.com/blog image/On-Page SEO Checklist for Service-Based Websites/On-Page SEO Checklist for Service-Based Websites.webp",
