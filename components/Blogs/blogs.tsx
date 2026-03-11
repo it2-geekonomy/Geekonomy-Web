@@ -109,11 +109,13 @@ import { whiteLabelPPCUSA } from "@/lib/blog/data/whiteLabelPPCUSA";
 import { brandingCostUK } from "@/lib/blog/data/brandingCostUK";
 import { seoCostUK } from "@/lib/blog/data/seoCostUK";
 import { howMuchDoesSEOCostInLeeds } from "@/lib/blog/data/HowMuchDoesSEOCostinLeeds";
+import { howMuchDoesSEOCostInBristol } from "@/lib/blog/data/howMuchDoesSEOCostInBristol";
 import { omnichannelMarketing } from "@/lib/blog/data/omnichannelMarketing";
 import { nursingHomesSEOCompany } from "@/lib/blog/data/nursingHomesSEOCompany";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  howMuchDoesSEOCostInBristol,
   howMuchDoesSEOCostInLeeds,
   bestSeoServicesForStartupsInBangalore,
   seoForStartups,
