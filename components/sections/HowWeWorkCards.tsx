@@ -63,7 +63,7 @@ export default function HowWeWorkCards() {
 
               <Typography
                 as="h3"
-                variant="xl"
+                variant="h3"
                 className={` transition-all duration-300 mb-6 ${activeCard === card.id ? "font-bold" : "group-hover:font-bold"
                   }`}
               >
@@ -84,7 +84,7 @@ export default function HowWeWorkCards() {
               />
               <Typography
                 as="p"
-                variant="lg"
+                variant="body-xl"
                 className="relative text-white overflow-hidden pointer-events-none"
               >
                 <span
