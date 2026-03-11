@@ -256,17 +256,22 @@ const TABLE_COMPONENTS: Record<BlogTableComponentKey, React.ReactNode> = {
   BangaloreSEOPackagesTable: <BangaloreSEOPackagesTable />
 };
 
+/** Encode local image paths (e.g. spaces → %20) so Next.js Image works in production. */
+function imageSrc(path: string): string {
+  return path.startsWith("/") ? encodeURI(path) : path;
+}
+
 function hydrateBlog(data: BlogData): Blog {
   return {
     slug: data.slug,
     heading: data.heading,
-    coverImage: data.coverImage,
+    coverImage: imageSrc(data.coverImage),
     sections: data.sections.map((section, index) => ({
       title: index === 0 ? `${data.heading} | Geekonomy` : section.title,
       description: section.description,
       image: (
         <Image
-          src={section.image.src}
+          src={imageSrc(section.image.src)}
           alt={section.image.alt}
           fill
           className="object-cover rounded-xl"
