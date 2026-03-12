@@ -118,7 +118,7 @@ export default function ServicesSection() {
                 {/* Service Description */}
                 <Typography
                   as="p"
-                  variant="body-lg"
+                  variant="body-xl"
                   className="text-white/90 font-normal"
                 >
                   {service.description}
