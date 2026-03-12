@@ -18,7 +18,7 @@ export function ProcessLeftSection() {
       >
         <Typography
           as="h2"
-          variant="2xl"
+          variant="h4"
           className="text-white font-normal leading-tight mb-4 max-w-sm"
         >
           What We Mean by{" "}
@@ -46,8 +46,8 @@ export function ProcessLeftSection() {
       >
         <Typography
           as="p"
-          variant="base"
-          className="text-[#A0A0A0] leading-relaxed"
+          variant="body-xl"
+          className="text-white leading-relaxed"
         >
           A growth system is not a single website, campaign or app. It’s a connected
           ecosystem where branding, tech and marketing works together with purpose.

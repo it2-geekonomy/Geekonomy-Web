@@ -83,10 +83,10 @@ export default function GrowthSystemSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-black py-2 xl:py-8 sm:pt-12 md:pt-4 xl:pt-12"
+      className="relative bg-black py-10 lg:py-20 mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]"
     >
       <div className="w-full px-4 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 2xl:max-w-7xl 2xl:mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
 
           {/* LEFT SIDE */}
           <ProcessLeftSection />
@@ -126,7 +126,7 @@ export default function GrowthSystemSection() {
                 >
                   <Typography
                      as="p"
-                    variant="sm"
+                    variant="body-xl"
                     className="text-white leading-relaxed max-w-lg"
                   >
                     {phase.number}
@@ -134,7 +134,7 @@ export default function GrowthSystemSection() {
 
                   <Typography
                     as="h3"
-                    variant="2xl"
+                    variant="body-xl"
                     className="text-[#69AE44] mb-4 font-normal"
                   >
                     {phase.name}
