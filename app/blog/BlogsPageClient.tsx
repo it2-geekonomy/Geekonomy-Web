@@ -163,6 +163,7 @@ export default function BlogsPageClient() {
                     alt={blog.heading}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    unoptimized={blog.coverImage.startsWith("/") && !blog.coverImage.startsWith("//")}
                   />
                 </div>
 

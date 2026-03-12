@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, h1, h2, img, list, p } from "../utils";
+import { contentToSections, h1, h2, h3, img, list, p } from "../utils";
 
 const coverImage = "/blog image/Common SEO Mistakes Small Businesses/Common SEO Mistakes Small Businesses new.webp";
 const imageDir = "/blog image/Common SEO Mistakes Small Businesses";
@@ -12,9 +12,9 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
 
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Making Common SEO Mistakes?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get an audit that finds the errors holding your small business back. Fix them and start growing organically.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free SEO Audit</a></div>'),
 
-  h1("Understanding Common SEO Mistakes"),
+  h2("Understanding Common SEO Mistakes"),
   img(coverImage, "Common SEO Mistakes Small Businesses"),
-  h2("Identifying Common SEO Mistakes Small Businesses Make"),
+  h3("Identifying Common SEO Mistakes Small Businesses Make"),
   p("Small businesses often harm their search engine optimisation goals (SEO) by making drastic errors, especially when they do not optimise their websites for search engines such as Google."),
   p("Neglecting keyword research is just one of the many kinds of SEO mistakes that businesses may commit."),
   p("Without performing keyword research correctly, small businesses might opt for wrong terms to target, which are either too competitive or completely irrelevant, thereby reducing their chances of getting ranked on the first pages of search results."),
@@ -23,14 +23,14 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p('Besides that, not paying <a href="/blog/best-local-seo-strategies-for-general-contractors" class="underline text-[#6FAF4E]">attention to local SEO</a> can be said to have caused a great neglect of local businesses.'),
   p("By not focusing on Google Business Profile optimisation and local keyword targeting, it is almost impossible for potential customers in your local area to find you."),
   p("These SEO errors, which small businesses commit, are quite straightforward to avoid through some education and proper planning, especially when it comes to the most common mistakes."),
-  h2("Impact of SEO Mistakes on Small Business Growth"),
+  h3("Impact of SEO Mistakes on Small Business Growth"),
   p("SEO mistakes have a huge negative influence on the development of a small business, to the point where these errors discourage potential customers from using your services online."),
   p("Such mistakes are capable of diminishing online presence, thus turning the search for a business into a real challenge for new customers who rely on search engines to find you and don't have a proper understanding of your content."),
   p("Lowered visibility is inevitably followed by a decrease in web traffic, which in turn has a negative impact on the process of lead creation and, ultimately, on the generation of revenue."),
   p("Poor user experience, which is usually the consequence of ignoring the necessity of mobile-friendly design and page speed optimisation, can cause higher bounce rates and lower conversion rates."),
   p("If there is no proper monitoring and analytics through the usage of tools like Google Analytics and Google Search Console, then it is not possible to gauge the effectiveness of SEO efforts or pinpoint the areas that need improvement, which in turn are very important factors for the business website to get a higher ranking.</a>."),
   p("All these factors together limit small businesses' growth and thus lead to the loss of opportunities."),
-  h2("Common Mistakes Business Owners Make in SEO"),
+  h3("Common Mistakes Business Owners Make in SEO"),
   p("Several mistake scenarios that businesses make regarding SEO can severely harm their online success."),
   p("Keyword stuffing is a situation where businesses saturate the content with keywords to trick search rankings, thereby worsening the user experience."),
   p("Another mistake that is frequently made is the neglect of off-page SEO, like acquiring quality backlinks, which are vital for the establishment of authority and trust by search engines."),
@@ -40,9 +40,9 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Not giving due importance to the creation of content is yet another mistake that can lead to the loss of opportunities for ranking in numerous keywords that meet search intent effectively."),
   p("Regular and quality content is the main attraction and engagement tool for visitors, and it is also a signal to search engines that the website is alive and relevant."),
 
-  h1("Keyword Research and Optimization"),
+  h2("Keyword Research and Optimization"),
   img(`${imageDir}/Keyword Research and Optimization.webp`, "Keyword Research and Optimization"),
-  h2("Importance of Keyword Research for Small Businesses"),
+  h3("Importance of Keyword Research for Small Businesses"),
   p("Keyword research is a must-have skill for small businesses."),
   p("Small businesses often make the mistake of totally ignoring keyword research, which is a common SEO mistake."),
   p("Basically, the whole SEO strategy depends on knowing the keywords that potential customers use when they are looking for products or services."),
@@ -51,7 +51,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("If you do not carry out this basic action, your attempts to optimise your content and to increase your SEO may be wrong, and you might even lower your ranking factor for Google and other search engines."),
   p("Correct keyword research means that one should use SEO tools to understand the volumes of searches, the level of competition, and the terms that are related."),
   p("This will enable small businesses to make the right decisions about their SEO campaign."),
-  h2("Avoiding Keyword Stuffing: Best Practices"),
+  h3("Avoiding Keyword Stuffing: Best Practices"),
   p("Keyword stuffing is one of the most frequent SEO errors."),
   p("It is a method that you should never resort to in any way, because, on the one hand, it may lower your ranking factor, and on the other hand, it is something that Google penalises."),
   p("A search engine will give your site a lower ranking if you use keyword stuffing, as this practice makes the user experience worse."),
@@ -60,7 +60,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("One of the main keys to SEO is to create a website with quality content that is clear, interesting, and informative, and that meets the needs of the target audience."),
   p("By concentrating on the user experience and giving them useful content, small businesses will be able to raise their position in the search results and attract more traffic that comes naturally."),
   p("It is very important to always be on the lookout for the existence of keyword stuffing in your content if you want to have a strong online presence and be sure that your website copy is working."),
-  h2("Using the Right Keywords to Grow Your Business"),
+  h3("Using the Right Keywords to Grow Your Business"),
   p("Small business growth depends greatly on the correct use of keywords."),
   p("First of all, a business owner must wisely employ relevant keywords in order to optimise not only their website but also the content."),
   p("By focusing on particular, high-value keywords, a small business can rank higher in the search results and thereby attract more of the right leads."),
@@ -68,9 +68,9 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("If a business owner ensures that they constantly review their SEO efforts and adjust their keyword strategy, then they are able to elevate their SEO and thus achieve growth that is sustainable."),
   p("It is quite common to make a mistake of neglecting this point, which will, however, gradually slow down the overall SEO success, especially in the case of local SEO and Google My Business, which most businesses seem to ignore in their strategies related to their business."),
 
-  h1("Local SEO Strategies for Small Businesses"),
+  h2("Local SEO Strategies for Small Businesses"),
   img(`${imageDir}/Local SEO Strategies for Small Businesses.webp`, "Local SEO Strategies for Small Businesses"),
-  h2("Common Local SEO Mistakes to Avoid"),
+  h3("Common Local SEO Mistakes to Avoid"),
   p("One of the many SEO errors that small businesses make is the failure to optimise their website for search engines like Google."),
   p("In the case of local businesses, if you do not update your website with local-specific keywords, it can result in the loss of new customers."),
   p("Failure to optimize the Google Business Profile is a big mistake."),
@@ -81,7 +81,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("For small businesses, not paying attention to local citations and backlinks from other local websites is also a great mistake."),
   p("These elements have a significant impact on your SEO ranking for local search results."),
   p("Not having a well-rounded SEO plan that is specifically designed for your local market can seriously be the reason for the business going down instead of growing."),
-  h2("Optimizing for Local Search: Key Techniques"),
+  h3("Optimizing for Local Search: Key Techniques"),
   p("Local SEO optimisation consists of several essential techniques that are directly related to the nature of your business and the audience you want to reach."),
   p("One method emphasises the management of the Google Business Profile, which includes activities such as:"),
   p("Making sure your Google Business Profile is perfectly optimised with correct and detailed information comprising your business name, address, phone number, website, hours of operation, and a well-written business description."),
@@ -93,9 +93,9 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Also, clear and straightforward information describing your products or services, the place of business, and contact details should be present."),
   p("The use of high-quality photos and videos is a great way to introduce your business and the products/services that you provide to your customers."),
 
-  h1("Utilizing Analytics to Improve SEO"),
+  h2("Utilizing Analytics to Improve SEO"),
   img(`${imageDir}/Utilizing Analytics to Improve SEO.webp`, "Utilizing Analytics to Improve SEO"),
-  h2("Analyzing SEO Performance for Small Businesses"),
+  h3("Analyzing SEO Performance for Small Businesses"),
   p("A small business needs to analyse SEO performance as one of the factors contributing to its success."),
   p("This is because it lets you know your content and also helps you to be more visible."),
   p("Google Analytics and Google Search Console give you a lot of very useful information, which you can use to keep track of your SEO efforts and find out how your website is performing in the search engine results pages (SERPs)."),
@@ -105,14 +105,14 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Neglecting these insights is among the most common SEO mistakes, which is the case with small businesses."),
   p("Small businesses can also benefit from user experience data provided by Google Analytics to make their websites more engaging."),
   p("Being on the lookout for SEO performance and deciding based on data is what will ultimately lead to a better online presence and the growth of the business."),
-  h2("How to Use Analytics to Identify Mistakes"),
+  h3("How to Use Analytics to Identify Mistakes"),
   p("Google Analytics and Google Search Console are powerful instruments in finding out and resolving mistakes businesses commonly make in SEO, in particular, those mistakes that are highly related to business objectives."),
   p("First of all, you have to monitor your website and check the main metrics like:"),
   list('<ul><li>Observing the organic traffic of your website to know whether it is increasing, staying at the same level, or going down in the search engine results page (SERP) rankings.</li><li>Looking at your bounce rate, page speed, and time on page to get an insight into user experience.</li><li>Analyse the search queries leading traffic to your site to recognise keyword ranking and potential keyword stuffing issues.</li></ul>'),
   p('Falling off in organic traffic can be a signal of issues like keyword stuffing, low-quality content, or <a href="/blog/difference-between-technical-seo-and-content-seo-audits" class="underline text-[#6FAF4E]">technical SEO that have to be fixed</a> before you can raise your website.'),
   p("High bounce rates and slow loading times are signs that your website needs to be optimised, which is one of the 5 mistakes I commonly encounter in business SEO."),
   p("These SEO devices are your ticket to data-driven insights that will help you generate content, modify your SEO strategy, and achieve SEO success."),
-  h2("Adjusting Your SEO Strategy Based on Analytics"),
+  h3("Adjusting Your SEO Strategy Based on Analytics"),
   p("It is absolutely necessary to change your SEO plan depending on the SEO analytics, simply to keep on improving."),
   p('Data and being sure that your <a href="/blog/how-long-does-it-take-for-medical-seo-to-work" class="underline text-[#6FAF4E]">SEO work is yielding good results</a>.'),
   p("Always check the data from Google Analytics and Google Search Console to spot the trends, opportunities, and places that need your attention."),
@@ -120,9 +120,9 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("In case the bounce rate is high for certain pages, scrutinise the user experience and pledge to upgrade the content, design, and mobile-friendliness of those pages."),
   p("Keeping an eye on your SEO performance and changing your SEO tactics according to these findings will elevate your SEO and make you reap better results."),
 
-  h1("SEO Services for Small Business Owners"),
+  h2("SEO Services for Small Business Owners"),
   img(`${imageDir}/SEO Services for Small Business Owners.webp`, "SEO Services for Small Business Owners"),
-  h2("Choosing the Right SEO Services for Your Business"),
+  h3("Choosing the Right SEO Services for Your Business"),
   p("Small business owners must take great care when selecting the right SEO services, as it is a pivotal step in enhancing their e-business presence and business expansion."),
   p("Determine the SEO goals and the budget first."),
   p("With this, you can limit your choices to only those providers whose services meet your needs and who will make your business SEO efficient."),
@@ -130,7 +130,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Evaluate their performance and get case studies or small business testimonials to understand how they have enhanced your website copy."),
   p("An honest SEO solutions provider ought to maintain openness about their methods and be ready to clarify their SEO strategy to you in detail."),
   p("Also, they should be able to carry out a detailed SEO audit of your site and pinpoint any SEO errors that are common and need to be fixed."),
-  h2("Common Mistakes in Hiring SEO Services"),
+  h3("Common Mistakes in Hiring SEO Services"),
   p("Small business owners make a mistake of such magnitude that one wonders how it is still possible: they decide to hire SEO services strictly based on price."),
   p("Focusing only on price is one of the biggest mistakes businesses make, as it can detract from the overall value proposition of SEO."),
   p("While it is true that we should not spend unwisely, the decision to buy the cheapest offer often leads to dissatisfactory results, which is the mistake I encounter most often in the business of SEO."),
@@ -139,7 +139,7 @@ const commonSEOMistakesSmallBusinessesContent: BlogContentItem[] = [
   p("Avoid those who promise ranking guarantees or use black-hat SEO techniques because, in the long run, they might damage your website's ranking."),
   p("Make sure that the SEO agency you contract is honest with its methods and always provides reports about your SEO performance."),
   p("A good SEO services provider should cooperate with you in formulating a cohesive SEO plan that meets the requirements of your business."),
-  h2("Long-term Benefits of Professional SEO Services"),
+  h3("Long-term Benefits of Professional SEO Services"),
   p("Hiring professional SEO services is a great investment that will bring lasting benefits to small businesses."),
   p("An SEO campaign that is planned and carried out properly raises the ranking of your website in search results; hence, more organic traffic will be driven to your site, and you will be able to see the growth of the businesses that you have been looking for."),
   p("Simply put, the increased web traffic will bring you leads and conversions in large numbers, which will, finally, lead to your business expansion."),
@@ -169,5 +169,7 @@ export const commonSEOMistakesSmallBusinessesSEO = {
   image: "https://geekonomytech.com/Common%20SEO%20Mistakes%20Small%20Businesses/Common%20SEO%20Mistakes%20Small%20Businesses.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
 
 

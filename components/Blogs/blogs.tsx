@@ -109,11 +109,21 @@ import { whiteLabelPPCUSA } from "@/lib/blog/data/whiteLabelPPCUSA";
 import { brandingCostUK } from "@/lib/blog/data/brandingCostUK";
 import { seoCostUK } from "@/lib/blog/data/seoCostUK";
 import { howMuchDoesSEOCostInLeeds } from "@/lib/blog/data/HowMuchDoesSEOCostinLeeds";
+import { howMuchDoesSEOCostInBristol } from "@/lib/blog/data/howMuchDoesSEOCostInBristol";
 import { omnichannelMarketing } from "@/lib/blog/data/omnichannelMarketing";
 import { nursingHomesSEOCompany } from "@/lib/blog/data/nursingHomesSEOCompany";
+import { technicalSEOMistakesThatKillGoogleRankings } from "@/lib/blog/data/technicalSEOMistakesThatKillGoogleRankings";
+import { onPageSEOChecklistForServiceBasedWebsites } from "@/lib/blog/data/onPageSEOChecklistForServiceBasedWebsites";
+import { whyYourWebsiteIsNotRankingOnGoogle } from "@/lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle";
+import { logoDesignersInBangaloreHowToChooseTheBest } from "@/lib/blog/data/logoDesignersInBangaloreHowToChooseTheBest";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  logoDesignersInBangaloreHowToChooseTheBest,
+  whyYourWebsiteIsNotRankingOnGoogle,
+  onPageSEOChecklistForServiceBasedWebsites,
+  technicalSEOMistakesThatKillGoogleRankings,
+  howMuchDoesSEOCostInBristol,
   howMuchDoesSEOCostInLeeds,
   bestSeoServicesForStartupsInBangalore,
   seoForStartups,
@@ -246,6 +256,11 @@ const TABLE_COMPONENTS: Record<BlogTableComponentKey, React.ReactNode> = {
   BangaloreSEOPackagesTable: <BangaloreSEOPackagesTable />
 };
 
+/** Use unoptimized for local paths so images with spaces in paths work in production. */
+function isLocalPath(path: string): boolean {
+  return path.startsWith("/") && !path.startsWith("//");
+}
+
 function hydrateBlog(data: BlogData): Blog {
   return {
     slug: data.slug,
@@ -261,6 +276,7 @@ function hydrateBlog(data: BlogData): Blog {
           fill
           className="object-cover rounded-xl"
           priority={index === 0}
+          unoptimized={isLocalPath(section.image.src)}
         />
       ),
       ...(section.tableComponent && {

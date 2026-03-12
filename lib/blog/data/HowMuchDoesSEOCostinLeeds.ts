@@ -13,7 +13,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   p("The article presents a complete guide to SEO expenses in Leeds, which includes different pricing methods and SEO package options, along with strategic advice to help businesses select the most appropriate SEO solution."),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need Transparent SEO Pricing for Leeds?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a custom SEO quote for your business. We offer clear pricing and packages that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
-  h1("Overview of SEO in Leeds"),
+  h2("Overview of SEO in Leeds"),
   img(`${imageDir}/Overview of SEO in Leeds.webp`, "Overview of SEO in Leeds"),
   h3("What is SEO?"),
   p("Search engine optimisation functions as the foundational method that SEO experts use to boost website visibility on search engine results pages."),
@@ -42,7 +42,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   p("E-commerce SEO has reached a new level of competition because businesses need to implement sophisticated tactics in order to differentiate themselves from their online competitors."),
   p("The growing impact of artificial intelligence (AI) on SEO will change both ranking algorithms and content optimisation methods used in search engine optimization."),
 
-  h1("Understanding SEO Costs in Leeds"),
+  h2("Understanding SEO Costs in Leeds"),
   img(`${imageDir}/Understanding SEO Costs.webp`, "Understanding SEO Costs in Leeds"),
   h3("How Much Does SEO Cost in Leeds?"),
   p("The process of establishing SEO expenses for Leeds requires multiple elements because these elements create difficulties in producing standard pricing solutions."),
@@ -78,7 +78,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   p("<strong>Note:</strong> The estimated package costs and pricing information will vary according to the specific combination of your project's complexity and scope requirements."),
   p("Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements."),
 
-  h1("Choosing the Right SEO Company in Leeds"),
+  h2("Choosing the Right SEO Company in Leeds"),
   img(`${imageDir}/Choosing the Right SEO Company.webp`, "Choosing the Right SEO Company in Leeds"),
   h3("Top SEO Companies in Leeds"),
   p("The leading SEO firms in Leeds require evaluation through three specific criteria, which include their historical performance record, their verified client testimonials, and their demonstrated ability to deliver <a href=\"https://geekonomytech.com/blog/how-to-check-if-your-seo-is-working\" class=\"underline text-[#6FAF4E]\">successful SEO solutions</a>."),
@@ -107,7 +107,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   p("The initial SEO audit of your website will help you assess its strengths and weaknesses so you can select the most beneficial SEO services for your business."),
   p("The UK agency needs you to assess the pricing model, which shows whether it operates on an hourly, project, or monthly basis for your financial management of SEO services."),
 
-  h1("SEO Services and Their Impact"),
+  h2("SEO Services and Their Impact"),
   img(`${imageDir}/SEO Services and Their Impact.webp`, "SEO Services and Their Impact"),
   h3("SEO Audit and Its Importance"),
   p("An SEO audit provides an extensive examination of a website's current SEO performance to determine its existing strengths and weaknesses."),
@@ -144,7 +144,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   p("The digital marketing services that you purchase must include an all-encompassing SEO plan, which defines your objectives and budget and provides an assessment of your website."),
   p("The SEO process requires knowledge of your current keyword rankings and your website's total traffic from both Leeds and other locations."),
 
-  h1("Free and Basic SEO Options"),
+  h2("Free and Basic SEO Options"),
   img(`${imageDir}/Free and Basic SEO Options.webp`, "Free and Basic SEO Options"),
   h3("Are Free SEO Services Worth It?"),
   p("The appeal of free SEO services attracts startups and small businesses with limited financial resources to try these services, even though investing in a reliable SEO company will bring your business more advantages over the years."),
@@ -187,9 +187,10 @@ const seoCostLeedsContent: BlogContentItem[] = [
   h2("SEO Services Cost in UK – Major Cities"),
   p(`
   <div class="grid gap-0 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 justify-items-left">
-    <a href="/blog/how-much-does-seo-cost-in-london" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Pricing in London</a>
-    <a href="/blog/how-much-does-seo-cost-in-manchester" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Pricing in Manchester</a>
-    <a href="/blog/how-much-does-seo-cost-in-birmingham" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Pricing in Birmingham</a>
+    <a href="/blog/how-much-does-seo-cost-in-london" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Service Charges in London</a>
+    <a href="/blog/how-much-does-seo-cost-in-manchester" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Service Charges in Manchester</a>
+    <a href="/blog/how-much-does-seo-cost-in-birmingham" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Service Charges in Birmingham</a>
+    <a href="/blog/seo-cost-in-bristol" class="text-[#6FAF4E] underline hover:text-[#86d65c] cursor-pointer pointer-events-auto inline-block">SEO Service Charges in Bristol</a>
   </div>
 `),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Ready to Invest in SEO in Leeds?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a tailored SEO package and transparent pricing. We help Leeds businesses rank higher and grow.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
@@ -216,4 +217,6 @@ export const howMuchDoesSEOCostInLeedsSEO = {
     "https://geekonomytech.com/blog image/How Much Does SEO Cost in Leeds/How Much Does SEO Cost in Leeds.webp",
   twitterHandle: "@GeekonomyTech",
 };
+
+
 
