@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { GROWTH_SYSTEM_PHASES } from "@/lib/constants";
 import { ProcessLeftSection } from "@/components/Aboutpage/leftsection";
 import { Typography } from "@/components/ui/Typography";
@@ -8,6 +8,8 @@ import { Typography } from "@/components/ui/Typography";
 export default function GrowthSystemSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [progress, setProgress] = useState(0);
+  const [showScrollHint, setShowScrollHint] = useState(true);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -80,6 +82,32 @@ export default function GrowthSystemSection() {
     };
   }, []);
 
+  // Track scroll position for dots animation
+  useEffect(() => {
+    const scrollBox = scrollRef.current;
+    if (!scrollBox) return;
+
+    const updateProgress = () => {
+      const scrollTop = scrollBox.scrollTop;
+      const scrollHeight = scrollBox.scrollHeight - scrollBox.clientHeight;
+      const progressPercent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      
+      setProgress(progressPercent);
+      
+      // Hide scroll hint after first scroll
+      if (scrollTop > 10) {
+        setShowScrollHint(false);
+      }
+    };
+
+    scrollBox.addEventListener("scroll", updateProgress);
+    updateProgress(); // Initial update
+
+    return () => {
+      scrollBox.removeEventListener("scroll", updateProgress);
+    };
+  }, []);
+
   return (
     <section
       ref={sectionRef}
@@ -92,13 +120,93 @@ export default function GrowthSystemSection() {
           <ProcessLeftSection />
 
           {/* RIGHT SIDE */}
-          <div className="lg:col-span-3 flex gap-6 items-stretch h-[300px]">
+          <div className="lg:col-span-3 flex gap-6 items-stretch h-[300px] relative">
 
-            {/* Vertical Indicator */}
-            <div className="flex flex-col items-center w-3 flex-shrink-0">
-              <div className="w-3 h-3 rounded-full bg-[#69AE44]" />
-              <div className="flex-1 w-px bg-[#69AE44]/40 my-[3px]" />
-              <div className="w-3 h-3 rounded-full bg-[#69AE44]" />
+            {/* Scroll to Explore Hint */}
+            {showScrollHint && (
+              <div className="absolute top-4 right-0 z-30 animate-fade-in-out">
+                <div className="flex items-center gap-2 bg-black/80 backdrop-blur-sm border border-[#69AE44]/30 px-4 py-2 rounded-full">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    className="text-[#69AE44] animate-bounce-vertical"
+                  >
+                    <path
+                      d="M8 2v12M8 12l4-4M8 12l-4-4"
+                      stroke="#69AE44"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <Typography
+                    as="span"
+                    variant="body-sm"
+                    className="text-[#69AE44]"
+                  >
+                    Scroll to explore
+                  </Typography>
+                </div>
+              </div>
+            )}
+
+            {/* Scrollbar-like Progress Indicator with Animated Dots */}
+            <div className="flex flex-col items-center w-1 shrink-0 relative">
+              <div className="flex-1 w-1 relative">
+                {/* Track - Background */}
+                <div className="absolute inset-0 bg-[#69AE44]/20 rounded-full" />
+                
+                {/* Thumb - Progress Fill */}
+                <div
+                  className="absolute top-0 left-0 w-full bg-[#69AE44] rounded-full transition-all duration-700 ease-out overflow-hidden"
+                  style={{
+                    height: `${progress}%`,
+                  }}
+                />
+                
+                {/* Animated Dots - Original behavior with bidirectional animation */}
+                {GROWTH_SYSTEM_PHASES.map((phase, index) => {
+                  const isFirst = index === 0;
+                  const isLast = index === GROWTH_SYSTEM_PHASES.length - 1;
+                  const dotPosition = (index / (GROWTH_SYSTEM_PHASES.length - 1)) * 100;
+                  
+                  let targetPosition: number;
+                  
+                  if (isFirst) {
+                    // First dot always at top (0%)
+                    targetPosition = 0;
+                  } else if (isLast) {
+                    // Last dot always at bottom (100%)
+                    targetPosition = 100;
+                  } else {
+                    // Middle dots: animate based on current progress
+                    // When scrolling down: move from top (progress) to position
+                    // When scrolling up: move back up from position
+                    if (progress >= dotPosition) {
+                      // Reached or passed position - stay at final position
+                      targetPosition = dotPosition;
+                    } else {
+                      // Not reached yet - follow progress from top
+                      targetPosition = progress;
+                    }
+                  }
+                  
+                  return (
+                    <div
+                      key={phase.number}
+                      className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 transition-all duration-700 ease-out"
+                      style={{ 
+                        top: `${targetPosition}%`,
+                        opacity: 1,
+                      }}
+                    >
+                      <div className="w-2 h-2 rounded-full bg-[#69AE44] transition-all duration-500 -translate-x-1" />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Scroll Container */}
@@ -146,6 +254,31 @@ export default function GrowthSystemSection() {
           </div>
         </div>
       </div>
+      
+      <style jsx>{`
+        @keyframes fade-in-out {
+          0%, 100% {
+            opacity: 0.7;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+        @keyframes bounce-vertical {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(4px);
+          }
+        }
+        .animate-fade-in-out {
+          animation: fade-in-out 2s ease-in-out infinite;
+        }
+        .animate-bounce-vertical {
+          animation: bounce-vertical 1.5s ease-in-out infinite;
+        }
+      `}</style>
     </section>
   );
 }
