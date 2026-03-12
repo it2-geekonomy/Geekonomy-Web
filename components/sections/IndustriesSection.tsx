@@ -109,8 +109,8 @@ export default function IndustriesSection() {
       </div>
 
       {/* Grid */}
-      <div className="lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 md:gap-6 lg:gap-1 w-full">
+      <div className="mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 md:gap-6 lg:gap-1 mx-4 sm:mx-6 lg:mx-0">
           {CLIENTS.map((item, i) => {
             const isActive = activeIndex === i;
             const caseStudyLink = getCaseStudyLink(item.name);

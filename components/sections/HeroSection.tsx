@@ -245,7 +245,7 @@ export default function HeroSection() {
 
           {/* Descriptive Text */}
           <div className="mb-10 space-y-5 text-center lg:text-left">
-            <Typography as="p" variant="body-xl" className="text-white font-light leading-relaxed max-w-3xl mx-auto lg:mx-0 text-justify">
+            <Typography as="p" variant="body-xl" className="text-white font-light leading-relaxed max-w-3xl mx-auto lg:mx-0">
               Geekonomy partners with founders and leadership teams to build brands, digital systems and marketing that are designed to last, not just launch.
             </Typography>
             <Typography as="p" variant="body-xl" className="text-white font-light">
