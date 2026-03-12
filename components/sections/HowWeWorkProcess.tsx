@@ -10,8 +10,8 @@ function HowWeWorkLeftSection() {
     <div className="lg:col-span-2 2xl:-translate-x-12">
       <Typography
         as="p"
-        variant="base"
-        className="text-[#A0A0A0] leading-relaxed max-w-lg"
+        variant="body-xl"
+        className="text-white leading-relaxed max-w-lg"
       >
         We favour measured progress over rushed delivery. Quality holds longer than speed.
       </Typography>
@@ -76,7 +76,7 @@ export default function HowWeWorkProcess() {
   return (
     <section ref={sectionRef} className="relative w-full bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full px-4 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 2xl:max-w-7xl 2xl:mx-auto items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)] items-start">
 
           {/* LEFT SIDE */}
           <HowWeWorkLeftSection />
@@ -101,11 +101,11 @@ export default function HowWeWorkProcess() {
 
               {HOW_WE_WORK_PHASES.map((phase) => (
                 <div key={phase.number} className="flex flex-col justify-center h-[380px] snap-start">
-                  <Typography as="p" variant="sm" className="text-white/90 mb-1">
+                  <Typography as="p" variant="body-xl" className="text-white/90 mb-1">
                     {phase.number}
                   </Typography>
 
-                  <Typography as="h3" variant="2xl" className="text-[#6FAF4E] mb-4 font-normal">
+                  <Typography as="h3" variant="h4" className="text-[#6FAF4E] mb-4 font-normal">
                     {phase.name}
                   </Typography>
 
@@ -113,7 +113,7 @@ export default function HowWeWorkProcess() {
                     <div className="w-5 h-5 rounded-full border-2 border-[#6FAF4E] flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3 h-3 text-[#6FAF4E] stroke-4" />
                     </div>
-                    <Typography as="p" variant="base" className="text-[#A0A0A0] leading-relaxed">
+                    <Typography as="p" variant="body-xl" className="text-[#A0A0A0] leading-relaxed">
                       {phase.description}
                     </Typography>
                   </div>
@@ -121,16 +121,16 @@ export default function HowWeWorkProcess() {
                   {phase.bullets && (
                     <ul className="space-y-2 mb-4">
                       {phase.bullets.map((bullet, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <span className="text-[#A0A0A0] mt-1.5 shrink-0">•</span>
-                          <Typography as="span" variant="base" className="text-[#A0A0A0]">{bullet}</Typography>
+                        <li key={idx} className="flex items-center gap-3">
+                          <span className="text-[#A0A0A0] shrink-0">•</span>
+                          <Typography as="span" variant="body-xl" className="text-[#A0A0A0]">{bullet}</Typography>
                         </li>
                       ))}
                     </ul>
                   )}
 
                   {phase.conclusion && (
-                    <Typography as="p" variant="base" className="text-[#A0A0A0] leading-relaxed">
+                    <Typography as="p" variant="body-xl" className="text-[#A0A0A0] leading-relaxed">
                       {phase.conclusion}
                     </Typography>
                   )}
