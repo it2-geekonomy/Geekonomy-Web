@@ -5,7 +5,7 @@ import { Typography } from "@/components/ui/Typography";
 export function ContactFormLeftPanel() {
   return (
     <div className="space-y-12">
-      <Typography as="p" variant="xl" className="text-white">
+      <Typography as="p" variant="h4" className="text-white">
         Let's Get Your Portfolio Strategy
       </Typography>
 
@@ -16,9 +16,9 @@ export function ContactFormLeftPanel() {
             alt="phone"
             width={34}
             height={34}
-            className="w-6 h-6 sm:w-[34px] sm:h-[34px]"
+            className="w-6 h-6 sm:w-[28px] sm:h-[28px]"
           />
-          <Typography as="p" variant="base" className="text-white">
+          <Typography as="p" variant="body-xl" className="text-white">
             +91 99000 05968
           </Typography>
         </div>
@@ -29,9 +29,9 @@ export function ContactFormLeftPanel() {
             alt="email"
             width={34}
             height={34}
-            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
+            className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
-          <Typography as="p" variant="base" className="text-white">
+          <Typography as="p" variant="body-xl" className="text-white">
             connect@geekonomy.in
           </Typography>
         </div>
@@ -42,9 +42,9 @@ export function ContactFormLeftPanel() {
             alt="location"
             width={34}
             height={34}
-            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
+            className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
-          <Typography as="p" variant="base" className="text-white leading-relaxed">
+          <Typography as="p" variant="body-xl" className="text-white leading-relaxed">
             No. 1357, Ground Floor, 9th Cross, ITI Layout, JP Nagar 1st Phase,
             Bengaluru, Karnataka - 560 078.
           </Typography>
@@ -63,7 +63,7 @@ export function ContactFormLeftPanel() {
             alt="twitter"
             width={38}
             height={38}
-            className="w-6 h-6 sm:w-[34px] sm:h-[34px]"
+            className="w-6 h-6 sm:w-[28px] sm:h-[28px]"
           />
         </Link>
 
@@ -78,7 +78,7 @@ export function ContactFormLeftPanel() {
             alt="facebook"
             width={38}
             height={38}
-            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
+            className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
         </Link>
 
@@ -93,7 +93,7 @@ export function ContactFormLeftPanel() {
             alt="instagram"
             width={38}
             height={38}
-            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
+            className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
         </Link>
 
@@ -108,7 +108,7 @@ export function ContactFormLeftPanel() {
             alt="linkedin"
             width={38}
             height={38}
-            className="w-7 h-7 sm:w-[34px] sm:h-[34px]"
+            className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
         </Link>
       </div>

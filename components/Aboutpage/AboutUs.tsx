@@ -33,7 +33,7 @@ export default function AboutUs() {
                 </Typography>
 
                 {/* About Paragraphs */}
-                <div className="space-y-6 mt-6 w-full lg:w-4/5 w-full px-4 sm:px-6 lg:px-10">
+                <div className="space-y-6 mt-6 w-full xl:w-4/5 px-4 sm:px-6 lg:px-10">
                     <Typography
                         as="p"
                         variant="body-xl"

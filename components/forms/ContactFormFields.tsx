@@ -22,7 +22,7 @@ export function ContactFormFields({
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
         <div>
-          <Typography as="label" variant="base" className="text-white block mb-2">
+          <Typography as="label" variant="body-xl" className="text-white block mb-2">
             Name
           </Typography>
           <input
@@ -33,7 +33,7 @@ export function ContactFormFields({
           />
         </div>
         <div>
-          <Typography as="label" variant="base" className="text-white block mb-2">
+          <Typography as="label" variant="body-xl" className="text-white block mb-2">
             Organization
           </Typography>
           <input
@@ -47,7 +47,7 @@ export function ContactFormFields({
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-22">
         <div>
-          <Typography as="label" variant="base" className="text-white block mb-2">
+          <Typography as="label" variant="body-xl" className="text-white block mb-2">
             Email
           </Typography>
           <input
@@ -58,7 +58,7 @@ export function ContactFormFields({
           />
         </div>
         <div>
-          <Typography as="label" variant="base" className="text-white block mb-2">
+          <Typography as="label" variant="body-xl" className="text-white block mb-2">
             Contact Number
           </Typography>
           <input
@@ -71,7 +71,7 @@ export function ContactFormFields({
       </div>
 
       <div>
-        <Typography as="p" variant="base" className="text-[#69AE44] py-6">
+        <Typography as="p" variant="body-xl" className="text-[#69AE44] py-6">
           How can we be your Growth Partners
         </Typography>
         <div className="grid grid-cols-1 gap-y-8 gap-x-12 sm:grid-cols-2">
@@ -94,7 +94,7 @@ export function ContactFormFields({
                 )}
               </span>
               <div className="flex flex-col leading-tight">
-                <Typography as="span" variant="base" className="text-white">
+                <Typography as="span" variant="body-xl" className="text-white">
                   {item.title}
                 </Typography>
 
@@ -115,7 +115,7 @@ export function ContactFormFields({
      <div>
   <Typography
     as="label"
-    variant="base"
+    variant="body-xl"
     className="text-white block mb-1 lg:mb-2"
   >
     Message
