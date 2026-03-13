@@ -139,7 +139,7 @@ export async function POST(request: NextRequest) {
     // Send email
     const { data, error } = await resend.emails.send({
       from: "Geekonomy Blog <noreply@thegeekonomy.com>",
-      to: ["sachin@geekonomy.in"],
+      to: ["connect@geekonomy.in"],
       subject: uniqueSubject,
       html: emailHtml,
       replyTo: email,
