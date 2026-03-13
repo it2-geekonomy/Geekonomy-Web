@@ -177,7 +177,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
           )}
           {/*overview content */}
           {overviewContent?.content && (
-            <div className="">
+            <div className="py-[clamp(1rem,1rem+1vw,2rem)]">
               <div className="relative rounded-lg bg-[#18181B] bg-opacity-80 border border-gray-700 p-6 md:p-8">
                 <Typography
                   as="div"
