@@ -3,7 +3,9 @@ import type { BlogData, BlogTableComponentKey } from "@/lib/blog";
 import { BangaloreSEOPackagesTable, MumbaiSEOPackagesTable, SmallPackageSEOTable } from "./Table";
 
 // Import all individual blog data files
-import { howMuchDoesSEOCostInBangalore } from "@/lib/blog/data/HowMuchDoesSEOCostinBangalore";// Centralized blog data aggregation - all blogs are registered here
+import { howMuchDoesSEOCostInBangalore } from "@/lib/blog/data/HowMuchDoesSEOCostinBangalore";
+import { howMuchDoesDigitalMarketingCostInBangalore } from "@/lib/blog/data/howMuchDoesDigitalMarketingCostInBangalore";
+// Centralized blog data aggregation - all blogs are registered here
 import { howToCreateWhiteLabelSEOReportsAndAutomateThem } from "@/lib/blog/data/howToCreateWhiteLabelSEOReportsAndAutomateThem";
 import { sosoactiveSeoNews } from "@/lib/blog/data/sosoactiveSeoNews";
 import { howImportantIsBrandingForSEO } from "@/lib/blog/data/howImportantIsBrandingForSEO";
@@ -105,6 +107,8 @@ import { localSEOForEstateAgents } from "@/lib/blog/data/localSEOForEstateAgents
 import { uxUIDesign } from "@/lib/blog/data/uxUIDesign";
 import { goodBusinessWebsiteUK } from "@/lib/blog/data/goodBusinessWebsiteUK";
 import { websiteCostUK } from "@/lib/blog/data/websiteCostUK";
+import { webDevelopmentCostInBangaloreForSmallBusinesses } from "@/lib/blog/data/webDevelopmentCostInBangaloreForSmallBusinesses";
+import { localSEOForBangaloreBusinesses } from "@/lib/blog/data/localSEOForBangaloreBusinesses";
 import { whiteLabelPPCUSA } from "@/lib/blog/data/whiteLabelPPCUSA";
 import { brandingCostUK } from "@/lib/blog/data/brandingCostUK";
 import { seoCostUK } from "@/lib/blog/data/seoCostUK";
@@ -117,8 +121,12 @@ import { onPageSEOChecklistForServiceBasedWebsites } from "@/lib/blog/data/onPag
 import { whyYourWebsiteIsNotRankingOnGoogle } from "@/lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle";
 import { logoDesignersInBangaloreHowToChooseTheBest } from "@/lib/blog/data/logoDesignersInBangaloreHowToChooseTheBest";
 
+
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  localSEOForBangaloreBusinesses,
+  webDevelopmentCostInBangaloreForSmallBusinesses,
+  howMuchDoesDigitalMarketingCostInBangalore,
   logoDesignersInBangaloreHowToChooseTheBest,
   whyYourWebsiteIsNotRankingOnGoogle,
   onPageSEOChecklistForServiceBasedWebsites,
@@ -136,6 +144,7 @@ export const allBlogsData: BlogData[] = [
   howMuchDoesSEOCostInBoston,
   howMuchDoesSEOCostInSanFrancisco,
   howMuchDoesSEOCostInBangalore,
+  
   howToCreateWhiteLabelSEOReportsAndAutomateThem,
   sosoactiveSeoNews,
   howImportantIsBrandingForSEO,

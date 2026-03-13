@@ -9,8 +9,10 @@ export const NAVIGATION_ITEMS = [
 
 export const FOOTER_NAV_ITEMS = [
   // { label: "INDUSTRIES", href: "/industries" },
-  { label: "OUR WORK", href: "/our-work" },
-  { label: "ABOUT GEEKONOMY", href: "/about" },
+  { label: "WHAT WE DO", href: "/what-we-do" },
+  { label: "HOW WE WORK", href: "/how-we-work" },
+  { label: "SUCCESS LAB", href: "/success-lab" },
+  { label: "ABOUT", href: "/about" },
   { label: "CAREER", href: "/career" },
   { label: "BLOGS", href: "/blog" },
   { label: "CONTACT US", href: "/contact-us" },

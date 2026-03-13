@@ -39,7 +39,7 @@ export default function ContactUsForm() {
 
         {submitStatus === "success" && (
           <div className="pt-4">
-            <Typography as="p" variant="base" className="text-[#69AE44]">
+            <Typography as="p" variant="body-xl" className="text-[#69AE44]">
               ✓ Message sent successfully! We'll get back to you soon.
             </Typography>
           </div>
@@ -47,7 +47,7 @@ export default function ContactUsForm() {
 
         {submitStatus === "error" && (
           <div className="pt-4">
-            <Typography as="p" variant="base" className="text-red-500">
+            <Typography as="p" variant="body-xl" className="text-red-500">
               ✗ Failed to send message. Please try again or contact us directly.
             </Typography>
           </div>
@@ -62,7 +62,7 @@ export default function ContactUsForm() {
               isSubmitting && "opacity-50 cursor-not-allowed hover:scale-100"
             )}
           >
-            <Typography as="span" variant="base" className="font-normal">
+            <Typography as="span" variant="body-xl" className="text-white font-normal">
               {isSubmitting ? "Sending..." : "Send Message"}
             </Typography>
           </button>

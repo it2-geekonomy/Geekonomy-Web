@@ -73,7 +73,7 @@ export function PhaseItem({ phase, index, totalPhases, scrollProgress }: PhaseIt
           style={{ opacity: labelOp, y: labelY }}
           initial={{ opacity: 0, y: 10 }}
         >
-          <Typography as="p" variant="sm" className="text-white/90 mb-1">
+          <Typography as="p" variant="body-xl" className="text-white/90 mb-1">
             {phase.number}
           </Typography>
         </motion.div>
@@ -89,7 +89,7 @@ export function PhaseItem({ phase, index, totalPhases, scrollProgress }: PhaseIt
           >
             <Typography
               as="h3"
-              variant="xl"
+              variant="h3"
               className="text-[#6FAF4E] mb-4 font-normal"
             >
               {phase.name}

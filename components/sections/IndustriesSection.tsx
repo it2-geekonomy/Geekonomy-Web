@@ -96,7 +96,7 @@ export default function IndustriesSection() {
       <div className="px-8 sm:px-4 lg:px-24 mb-10 sm:mb-12 lg:mb-16 flex justify-center w-full">
         <Typography
           as="p"
-          variant="lg"
+          variant="h1"
           className="text-white font-light leading-relaxed text-center lg:[text-wrap:balance]"
         >
           <span className="hidden lg:inline">
@@ -109,8 +109,8 @@ export default function IndustriesSection() {
       </div>
 
       {/* Grid */}
-      <div className="px-12 sm:px-12 md:px-22 lg:px-2 xl:px-6 2xl:px-20 w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 md:gap-6 lg:gap-1 w-full">
+      <div className="mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 md:gap-6 lg:gap-1 mx-4 sm:mx-6 lg:mx-0">
           {CLIENTS.map((item, i) => {
             const isActive = activeIndex === i;
             const caseStudyLink = getCaseStudyLink(item.name);
@@ -203,12 +203,6 @@ export default function IndustriesSection() {
             );
           })}
         </div>
-      </div>
-
-      {/* Arrows */}
-      <div className="hidden lg:flex absolute top-1/6 2xl:top-1/8 right-8 gap-6 xl:right-18 2xl:right-32">
-        <button className="text-white text-xl hover:opacity-70 transition">←</button>
-        <button className="text-white text-xl hover:opacity-70 transition">→</button>
       </div>
     </section>
   );

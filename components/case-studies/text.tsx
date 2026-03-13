@@ -20,7 +20,7 @@ const TextSection: React.FC<TextSectionProps> = ({ contentSections }) => {
           className={`grid grid-cols-1 gap-1 text-[clamp(1rem,1vw,1.6rem)] leading-[2.5] ${
             section.id === 1
               ? "bg-[#18181B] bg-opacity-80 p-4 md:p-8 rounded-lg text-white border border-gray-700"
-              : "text-[#C5C4C3]"
+              : "text-white"
           }`}
           dangerouslySetInnerHTML={{ __html: section.content }}
         />

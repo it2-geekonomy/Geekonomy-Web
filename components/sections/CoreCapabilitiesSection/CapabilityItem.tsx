@@ -91,7 +91,7 @@ export function CapabilityItem({
           style={{ opacity: numberOp, y: numberY }}
           initial={{ opacity: 0, y: 10 }}
         >
-          <Typography as="p" variant="base" className="text-white/90 mb-2">
+          <Typography as="p" variant="body-xl" className="text-white/90 mb-2">
             {capability.number}
           </Typography>
         </motion.div>
@@ -108,7 +108,7 @@ export function CapabilityItem({
           >
             <Typography
               as="h3"
-              variant="2xl"
+              variant="h3"
               className="text-[#69AE44] mb-4 font-normal"
             >
               {capability.title}
@@ -129,7 +129,7 @@ export function CapabilityItem({
           >
             <Check className="w-3 h-3 text-[#69AE44] stroke-4" />
           </motion.div>
-          <Typography as="p" variant="base" className="text-[#A0A0A0]">
+          <Typography as="p" variant="body-xl" className="text-[#A0A0A0]">
             {capability.description}
           </Typography>
         </motion.div>
@@ -140,14 +140,14 @@ export function CapabilityItem({
           style={{ opacity: includesOp, y: includesY }}
           initial={{ opacity: 0, y: 12 }}
         >
-          <Typography as="p" variant="base" className="text-white mb-2 font-normal">
+          <Typography as="p" variant="body-xl" className="text-white mb-2 font-normal">
             This includes:
           </Typography>
           <ul className="space-y-1">
             {capability.includes.map((item, itemIndex) => (
               <li key={itemIndex} className="flex items-start gap-2">
                 <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
-                <Typography as="span" variant="base" className="text-white">
+                <Typography as="span" variant="body-xl" className="text-white">
                   {item}
                 </Typography>
               </li>

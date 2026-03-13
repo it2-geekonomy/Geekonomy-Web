@@ -99,7 +99,7 @@ fbq('track', 'PageView');`,
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <DisableRightClick />
+        {/* <DisableRightClick /> */}
         <NavbarHeightProvider>
           <MouseLight />
           <Navbar />

@@ -151,10 +151,10 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
 
               {/* Blog Name */}
               <div className="mb-6">
-                <Typography as="h2" variant="base" className="text-[#69AE44] text-xl font-bold mb-2">
+                <Typography as="h2" variant="h3" className="text-[#69AE44] text-xl font-bold mb-2">
                   Blog: {blogName}
                 </Typography>
-                <Typography as="p" variant="base" className="text-white/70 text-sm">
+                <Typography as="p" variant="body-xl" className="text-white/70 text-sm">
                   Fill out the form below and we'll get back to you soon.
                 </Typography>
               </div>
@@ -163,7 +163,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <Typography as="label" variant="base" className="text-white block mb-2">
+                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
                       Name <span className="text-[#69AE44]">*</span>
                     </Typography>
                     <input
@@ -177,14 +177,14 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       )}
                     />
                     {errors.name && (
-                      <Typography as="p" variant="base" className="text-red-500 text-sm mt-1">
+                      <Typography as="p" variant="body-xl" className="text-red-500 text-sm mt-1">
                         {errors.name}
                       </Typography>
                     )}
                   </div>
 
                   <div>
-                    <Typography as="label" variant="base" className="text-white block mb-2">
+                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
                       Organization
                     </Typography>
                     <input
@@ -199,7 +199,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <Typography as="label" variant="base" className="text-white block mb-2">
+                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
                       Email <span className="text-[#69AE44]">*</span>
                     </Typography>
                     <input
@@ -213,14 +213,14 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       )}
                     />
                     {errors.email && (
-                      <Typography as="p" variant="base" className="text-red-500 text-sm mt-1">
+                      <Typography as="p" variant="body-xl" className="text-red-500 text-sm mt-1">
                         {errors.email}
                       </Typography>
                     )}
                   </div>
 
                   <div>
-                    <Typography as="label" variant="base" className="text-white block mb-2">
+                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
                       Contact <span className="text-[#69AE44]">*</span>
                     </Typography>
                     <input
@@ -234,7 +234,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       )}
                     />
                     {errors.contact && (
-                      <Typography as="p" variant="base" className="text-red-500 text-sm mt-1">
+                      <Typography as="p" variant="body-xl" className="text-red-500 text-sm mt-1">
                         {errors.contact}
                       </Typography>
                     )}
@@ -242,7 +242,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                 </div>
 
                 <div>
-                  <Typography as="label" variant="base" className="text-white block mb-2">
+                  <Typography as="label" variant="body-xl" className="text-white block mb-2">
                     Message <span className="text-[#69AE44]">*</span>
                   </Typography>
                   <textarea
@@ -261,15 +261,15 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                     )}
                   />
                   {errors.message && (
-                    <Typography as="p" variant="base" className="text-red-500 text-sm mt-1">
-                      {errors.message}
-                    </Typography>
+                      <Typography as="p" variant="body-xl" className="text-red-500 text-sm mt-1">
+                        {errors.message}
+                      </Typography>
                   )}
                 </div>
 
                 {submitStatus === "success" && (
                   <div className="p-4 bg-[#69AE44]/20 border border-[#69AE44] rounded-lg">
-                    <Typography as="p" variant="base" className="text-[#69AE44]">
+                    <Typography as="p" variant="body-xl" className="text-[#69AE44]">
                       ✓ Message sent successfully! We'll get back to you soon.
                     </Typography>
                   </div>
@@ -277,7 +277,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
 
                 {submitStatus === "error" && (
                   <div className="p-4 bg-red-500/20 border border-red-500 rounded-lg">
-                    <Typography as="p" variant="base" className="text-red-500">
+                    <Typography as="p" variant="body-xl" className="text-red-500">
                       ✗ Failed to send message. Please try again.
                     </Typography>
                   </div>

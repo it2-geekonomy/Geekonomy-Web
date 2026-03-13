@@ -18,7 +18,7 @@ export const contentToHTML = (contentArray: ContentItem[]): string => {
           `;
         case "paragraph":
           return `
-            <p class="leading-[1.3] text-justify text-[#FFFFFFB2] text-opacity-70 text-[clamp(1rem,1vw,1.5rem)] ${item.className || ""}">
+            <p class="leading-[1.3] text-white ${item.className || ""}">
               ${item.text}
             </p>
           `;
