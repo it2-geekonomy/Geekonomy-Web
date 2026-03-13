@@ -10,7 +10,7 @@ export default function WhatWeDoPage() {
       <ScrollRevealSection index={0}>
         <section className="relative w-full flex flex-col justify-center lg:pt-[clamp(2.5rem,2.5rem+2vw,8rem)]">
           <div className="mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
-            <div className="">
+            <div className="w-full px-4 sm:px-6 lg:px-10">
               {/* Main Title - Centered */}
               <div className="text-center mb-12 lg:mb-16">
                 <Typography
@@ -53,7 +53,7 @@ export default function WhatWeDoPage() {
       <ScrollRevealSection index={1}>
         <section className="relative w-full bg-black">
           <div className="w-full px-4 sm:px-6 lg:px-10">
-            <div className="lg:mx-14 xl:mx-[clamp(0.5rem,0.5rem+10vw,10rem)] 2xl:mx-[clamp(1rem,1rem+15vw,22rem)]">
+            <div className="px-4 sm:px-6 lg:px-10 lg:mx-14 xl:mx-[clamp(0.5rem,0.5rem+10vw,10rem)] 2xl:mx-[clamp(1rem,1rem+15vw,22rem)]">
               <CoreCapabilitiesSection />
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function WhatWeDoPage() {
 
       {/* How It Comes Together & Our Role Section */}
       <ScrollRevealSection index={2}>
-        <section className="relative w-full bg-black pb-[clamp(2.5rem,2.5rem+2vw,8rem)] sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
+        <section className="relative bg-black pb-[clamp(2.5rem,2.5rem+2vw,8rem)] mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
         <div className="w-full px-4 lg:pl-[clamp(3rem,3rem+3vw,8rem)]">
           <div className="max-w-4xl space-y-16 lg:space-y-20">
             {/* How It Comes Together */}
