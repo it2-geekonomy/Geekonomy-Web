@@ -49,7 +49,7 @@ const Typography: React.FC<TypographyProps> = ({
   className,
   style,
 }) => {
-  const baseStyles = "text-black";
+  const baseStyles = "text-white";
   const variantClass = variantStyles[variant];
   
   // Check if className contains a font weight override

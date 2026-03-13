@@ -5,23 +5,31 @@ import { Typography } from "../ui/Typography";
 const LastSection: React.FC = () => {
   return (
     <>
-<div className="flex flex-col items-center text-center">
-    <Typography
+      <div className="flex flex-col items-center text-center">
+        <Typography
           as="p"
-          variant="h3"
-          className="text-[clamp(1.15rem,2.5vw,2.5rem)] text-white font-semibold mt-3"
+          variant="display-xl"
+          className="text-white font-semibold mt-3"
         >
-          <span>Inspired by our work? Lets build your</span>
-          <br />
-          <span>brand legacy together.</span>
+          {/* Desktop (lg and up): keep explicit line break */}
+          <span className="hidden lg:inline">
+            Inspired by our work? Lets build your
+            <br />
+            brand legacy together.
+          </span>
+
+          {/* Below lg: single sentence, natural wrapping into ~two lines */}
+          <span className="block lg:hidden">
+            Inspired by our work? Lets build your brand legacy together.
+          </span>
         </Typography>
 
-<Button href="/contact-us" variant="primary" 
- className="mt-4 md:mt-8 mx-auto block text-[clamp(0.7rem,1.5vw,1.1rem)] normal-case mb-4">
-  Contact Us
-</Button>
-</div>
-</>
+        <Button href="/contact-us" variant="primary"
+          className="mt-4 md:mt-8 normal-case mb-4">
+          Contact Us
+        </Button>
+      </div>
+    </>
   );
 };
 

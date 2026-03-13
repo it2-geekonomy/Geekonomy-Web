@@ -191,7 +191,7 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
     };
 
     return (
-        <div className="max-w-[85%] md:max-w-[70%] mx-auto mt-4 md:mt-8 mb-20">
+        <div className=" mt-4 md:mt-8">
             <div className="flex flex-col gap-4 bg-[#18181B] bg-opacity-80 border border-gray-700 rounded-2xl p-6 md:p-10">
                 <Typography
                     as="h2"
