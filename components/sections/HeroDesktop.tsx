@@ -20,7 +20,7 @@ export default function HeroDesktop() {
         {/* Introductory text with green line */}
         <div className="flex flex-col lg:flex-row items-center lg:items-center gap-4 mb-6 xl:mb-10">
           <div className="h-8 w-1 lg:h-1 lg:w-12 bg-[#6FAF4E]" />
-          <Typography as="p" variant="2xl" className="text-white font-normal text-center lg:text-left">
+          <Typography as="p" variant="body-xl" className="text-white font-normal text-center lg:text-left">
             We help businesses grow with
           </Typography>
         </div>
@@ -50,9 +50,9 @@ export default function HeroDesktop() {
           <div className="flex items-baseline gap-18 justify-center lg:justify-start">
             <Typography
               as="h2"
-              variant="5xl"
+              variant="display-xl"
               className="font-bold text-white leading-[1.1]"
-              letterSpacing="-0.125em"
+              style={{ letterSpacing: "-0.125em" }}
             >
               OVER
             </Typography>
@@ -66,10 +66,10 @@ export default function HeroDesktop() {
 
         {/* Descriptive Text */}
         <div className="mb-10 space-y-5 text-center lg:text-left">
-          <Typography as="p" variant="base" className="text-white font-light leading-relaxed lg:max-w-xl xl:max-w-3xl mx-auto lg:mx-0 text-justify">
+          <Typography as="p" variant="body-xl" className="text-white font-light leading-relaxed lg:max-w-xl xl:max-w-3xl mx-auto lg:mx-0 text-justify">
             Geekonomy partners with founders and leadership teams to build brands, digital systems and marketing that are designed to last, not just launch.
           </Typography>
-          <Typography as="p" variant="base" className="text-white font-light">
+          <Typography as="p" variant="body-xl" className="text-white font-light">
             Strategy-led. Thoughtfully built. Carefully executed.
           </Typography>
         </div>
@@ -80,7 +80,7 @@ export default function HeroDesktop() {
             href="/contact-us#form"
             className="inline-block bg-[#6eaf4c] text-white px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-[#6eaf4c]/90 hover:scale-105"
           >
-            <Typography as="span" variant="sm" className="font-normal">
+            <Typography as="span" variant="body-xl" className="font-normal">
               START A CONVERSATION
             </Typography>
           </Link>

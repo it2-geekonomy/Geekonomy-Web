@@ -37,7 +37,7 @@ export default function ClarityHeading({
     >
       <Typography
         as="h1"
-        variant="3xl"
+        variant="display-xl"
         className="text-[#6FAF4E] mb-6 leading-[1.1] relative"
         letterSpacing="1em"
         fontWeight={275}
