@@ -4,7 +4,8 @@ import { Suspense } from "react";
 import { allBlogsData } from "@/lib/blog";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
 import BlogDetailClient from "@/app/blog/[slug]/BlogDetailClient";
-import { getAuthorForBlog, getPublishedDateISO, getUpdatedDateISO } from "@/lib/blog/authorMapping";
+import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
+import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
 
 export async function generateMetadata({
   params,
@@ -21,18 +22,14 @@ export async function generateMetadata({
     };
   }
 
-  // Get SEO data from seoData.ts
   const seoKey = `blog/${slug}`;
   const seoData = await getDynamicSEODataFromHeaders(seoKey);
-  
-  // Get author and date info for structured data
   const authorInfo = getAuthorForBlog(slug);
-  const publishedDateISO = getPublishedDateISO(slug);
-  const updatedDateISO = getUpdatedDateISO(slug);
-  
-  // Use updated date if available, otherwise published date
-  const articlePublishedTime = publishedDateISO || (updatedDateISO ? null : new Date("2026-03-03").toISOString());
-  const articleModifiedTime = updatedDateISO || publishedDateISO || new Date("2026-03-03").toISOString();
+  const dateInfo = getDateInfoServer(slug);
+  const articlePublishedTime = dateToISO(dateInfo.publishedDate);
+  const articleModifiedTime = dateInfo.updatedDate
+    ? dateToISO(dateInfo.updatedDate)
+    : articlePublishedTime;
 
   return {
     title: seoData.title,
@@ -100,24 +97,23 @@ export default async function BlogDetailPage({
     );
   }
 
-  // Get SEO data and dates for structured data
   const seoKey = `blog/${slug}`;
   const seoData = await getDynamicSEODataFromHeaders(seoKey);
   const authorInfo = getAuthorForBlog(slug);
-  const publishedDateISO = getPublishedDateISO(slug);
-  const updatedDateISO = getUpdatedDateISO(slug);
+  const dateInfo = getDateInfoServer(slug);
+  const publishedDateISO = dateToISO(dateInfo.publishedDate);
+  const updatedDateISO = dateInfo.updatedDate ? dateToISO(dateInfo.updatedDate) : publishedDateISO;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thegeekonomy.com";
   const blogUrl = `${baseUrl}/blog/${slug}`;
-  
-  // Article structured data for Google
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: blog.heading,
     description: seoData.description,
     image: seoData.image ? [seoData.image] : [],
-    datePublished: publishedDateISO || (updatedDateISO ? null : new Date("2026-03-03").toISOString()),
-    dateModified: updatedDateISO || publishedDateISO || new Date("2026-03-03").toISOString(),
+    datePublished: publishedDateISO,
+    dateModified: updatedDateISO,
     author: {
       "@type": "Person",
       name: authorInfo.name,
@@ -152,7 +148,7 @@ export default async function BlogDetailPage({
           <p className="text-white text-xl">Loading...</p>
         </main>
       }>
-        <BlogDetailClient blogSlug={slug} />
+        <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
       </Suspense>
     </>
   );

@@ -111,6 +111,9 @@ import { technicalSEOMistakesThatKillGoogleRankingsSEO } from "./data/technicalS
 import { onPageSEOChecklistForServiceBasedWebsitesSEO } from "./data/onPageSEOChecklistForServiceBasedWebsites";
 import { whyYourWebsiteIsNotRankingOnGoogleSEO } from "./data/whyYourWebsiteIsNotRankingOnGoogle";
 import { logoDesignersInBangaloreHowToChooseTheBestSEO } from "./data/logoDesignersInBangaloreHowToChooseTheBest";
+import { howMuchDoesDigitalMarketingCostInBangaloreSEO } from "./data/howMuchDoesDigitalMarketingCostInBangalore";
+import { webDevelopmentCostInBangaloreForSmallBusinessesSEO } from "./data/webDevelopmentCostInBangaloreForSmallBusinesses";
+import { localSEOForBangaloreBusinessesSEO } from "./data/localSEOForBangaloreBusinesses";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -221,11 +224,13 @@ export const blogSEOData = {
   "blog/how-much-does-seo-cost-in-delhi-ncr": howMuchDoesSEOCostInDelhiNCRSEO,
   "blog/how-much-does-seo-cost-in-hyderabad": howMuchDoesSEOCostInHyderabadSEO,
   "blog/how-much-does-seo-cost-in-bangalore": howMuchDoesSEOCostInBangaloreSEO,
+  "blog/how-much-does-digital-marketing-cost-in-bangalore": howMuchDoesDigitalMarketingCostInBangaloreSEO,
+  "blog/local-seo-for-bangalore-businesses": localSEOForBangaloreBusinessesSEO,
   "blog/seo-cost-in-leeds": howMuchDoesSEOCostInLeedsSEO,
   "blog/seo-cost-in-bristol": howMuchDoesSEOCostInBristolSEO,
   "blog/technical-seo-mistakes-that-kill-google-rankings": technicalSEOMistakesThatKillGoogleRankingsSEO,
   "blog/on-page-seo-checklist-for-service-based-websites": onPageSEOChecklistForServiceBasedWebsitesSEO,
   "blog/why-your-website-is-not-ranking-on-google": whyYourWebsiteIsNotRankingOnGoogleSEO,
-  "blog/logo-designers-in-bangalore-how-to-choose-the-best":
-    logoDesignersInBangaloreHowToChooseTheBestSEO,
+  "blog/web-development-cost-in-bangalore-for-small-businesses": webDevelopmentCostInBangaloreForSmallBusinessesSEO,
+  "blog/logo-designers-in-bangalore-how-to-choose-the-best": logoDesignersInBangaloreHowToChooseTheBestSEO,
 };

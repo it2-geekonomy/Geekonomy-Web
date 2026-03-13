@@ -10,16 +10,19 @@ import { getAuthorForBlog, getDateInfo, getAuthorSlug } from "@/lib/blog/authorM
 
 const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
+export type DateInfoProp = { date: string; label: "Published" | "Updated" };
+
 interface BlogDetailClientProps {
   blogSlug: string;
+  dateInfo?: DateInfoProp;
 }
 
-export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
+export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: BlogDetailClientProps) {
   const blog = BLOGS.find((b) => b.slug === blogSlug);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [returnPage, setReturnPage] = useState<number | null>(null);
+  const [showNavButtons, setShowNavButtons] = useState(false);
 
-  // Get the saved page from sessionStorage on mount
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedPage = sessionStorage.getItem(BLOG_PAGE_STORAGE_KEY);
@@ -32,12 +35,18 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
     }
   }, []);
 
+  // Defer showing Prev/Next so they don’t appear during loading/refresh
+  useEffect(() => {
+    const id = setTimeout(() => setShowNavButtons(true), 150);
+    return () => clearTimeout(id);
+  }, []);
+
   if (!blog) {
-    return null; // Error case handled in parent
+    return null;
   }
 
   const authorInfo = getAuthorForBlog(blogSlug);
-  const dateInfo = getDateInfo(blogSlug);
+  const dateInfo = dateInfoProp ?? getDateInfo(blogSlug);
 
   // Add "About the author" section as the last content item
   const blogContentWithAuthor = [...blog.sections];
@@ -112,8 +121,8 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
         blogName={blog.heading}
       />
 
-      {/* Previous and Next Blog Buttons */}
-      {showNavigation && (
+      {/* Previous and Next Blog Buttons (shown after mount to avoid showing during loading) */}
+      {showNavButtons && showNavigation && (
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mt-16 mb-8">
           <div className="flex justify-center items-center gap-2 md:gap-4">
             {previousBlog ? (
