@@ -13,12 +13,15 @@ export async function POST(request: NextRequest) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thegeekonomy.com";
     const logoUrl = `${baseUrl}/Logo.png`;
 
-    // Generate unique subject line with 12-hour time format to prevent Gmail threading
+    // Generate unique subject line with 12-hour time in a fixed timezone so it matches
+    // what recipients see (server is often UTC; use Asia/Kolkata for Geekonomy)
+    const timeZone = process.env.BLOG_EMAIL_TIMEZONE || "Asia/Kolkata";
     const now = new Date();
-    const time12hr = now.toLocaleTimeString('en-US', { 
-      hour: '2-digit', 
-      minute: '2-digit',
-      hour12: true 
+    const time12hr = now.toLocaleTimeString("en-US", {
+      timeZone,
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
     });
     const uniqueSubject = `New Blog Inquiry: ${blogName} [${time12hr}]`;
 
