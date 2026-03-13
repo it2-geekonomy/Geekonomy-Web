@@ -88,7 +88,7 @@ function MetricItem({ item, index }: MetricItemProps) {
 
         <Typography
           as="h3"
-          variant="lg"
+          variant="h3"
           className="font-normal mb-1 text-white"
         >
           {item.title}
@@ -96,7 +96,7 @@ function MetricItem({ item, index }: MetricItemProps) {
 
         <Typography
           as="p"
-          variant="base"
+          variant="body-xl"
           className="text-[#FFFFFF99] text-opacity-60 mb-8 px-3"
         >
           {item.text}
@@ -130,7 +130,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
       {post.internalTitle && (
         <Typography
           as="h1"
-          variant="2xl"
+          variant="display-xl"
           className="text-[clamp(1.1rem,1vw,2rem)] md:text-[clamp(1.35rem,3vw,2.5rem)] xl:text-[clamp(1.25rem,4vw,2.5rem)] drop-shadow-lg text-center capitalize mb-6 lg:mb-24"
         >
           {post.internalTitle}
@@ -141,7 +141,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
         <div className="my-12">
           <Typography
             as="h2"
-            variant="2xl"
+            variant="h3"
             className="font-medium max-w-[85%] md:max-w-[70%] mx-auto  
               mb-4 lg:mb-8"
           >
@@ -164,7 +164,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
             <div className="max-w-[85%] md:max-w-[70%] mx-auto mt-8">
               <Typography
                 as="div"
-                variant="base"
+                variant="body-xl"
                 className="text-[#FFFFFF99] leading-relaxed [&_p]:mb-4"
               >
                 <div dangerouslySetInnerHTML={{ __html: improvedContent.content }} />
@@ -180,7 +180,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
           <div className="relative rounded-lg bg-[#18181B] bg-opacity-80 border border-gray-700 p-6 md:p-8">
             <Typography
               as="div"
-              variant="lg"
+              variant="body-xl"
               className="text-[#FFFFFF99] leading-relaxed [&_p]:mb-4"
             >
               <div dangerouslySetInnerHTML={{ __html: overviewContent.content }} />
@@ -198,7 +198,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
         <div className="max-w-[85%] md:max-w-[70%] mx-auto mb-24">
           <Typography
             as="div"
-            variant="lg"
+            variant="body-xl"
             className="text-[#FFFFFF99] leading-relaxed [&_p]:mb-4"
           >
             <div dangerouslySetInnerHTML={{ __html: solutionContent.content }} />

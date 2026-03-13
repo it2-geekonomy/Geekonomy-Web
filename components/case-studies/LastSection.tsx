@@ -8,7 +8,7 @@ const LastSection: React.FC = () => {
 <div className="flex flex-col items-center text-center">
     <Typography
           as="p"
-          variant="2xl"
+          variant="h3"
           className="text-[clamp(1.15rem,2.5vw,2.5rem)] text-white font-semibold mt-3"
         >
           <span>Inspired by our work? Lets build your</span>
