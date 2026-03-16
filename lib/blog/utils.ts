@@ -30,9 +30,24 @@ export const h3 = (text: string, className?: string): BlogContentItem => ({
   text,
   className: className || "mt-4 mb-2",
 });
+const BLOG_IMAGE_PREFIX = "/blog image/";
+const R2_BASE =
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/";
+
+function normalizeBlogImageSrc(src: string): string {
+  if (!src.startsWith(BLOG_IMAGE_PREFIX)) return src;
+  // src example: /blog image/Folder Name/File Name.webp
+  const withoutPrefix = src.slice(BLOG_IMAGE_PREFIX.length); // Folder Name/File Name.webp
+  const [folder, ...rest] = withoutPrefix.split("/");
+  if (!folder || rest.length === 0) return src;
+  const file = rest.join("/");
+  const folderSlug = folder.replace(/\s+/g, "-");
+  return `${R2_BASE}${folderSlug}/${file.replace(/\s+/g, "-")}`;
+}
+
 export const img = (src: string, alt: string): BlogContentItem => ({
   type: "image",
-  text: src,
+  text: normalizeBlogImageSrc(src),
   className: alt,
 });
 export const list = (html: string): BlogContentItem => ({ type: "list", text: html });
