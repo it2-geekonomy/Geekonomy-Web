@@ -15,9 +15,12 @@ export function getSwaggerSpec() {
               "multipart/form-data": {
                 schema: {
                   type: "object",
+                  required: ["files"],
                   properties: {
                     files: {
                       type: "array",
+                      description:
+                        "Upload in bulk: click 'Add string item' to add one box per image, choose one file for each box. All files are sent in a single request.",
                       items: { type: "string", format: "binary" },
                     },
                   },
