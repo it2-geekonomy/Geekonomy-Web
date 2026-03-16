@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/Why Does SEO For Personal Injury Lawyers Matter/Why Does SEO For Personal Injury Lawyers Matter main image.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Why-Does-SEO-For-Personal-Injury-Lawyers-Matter/Why-Does-SEO-For-Personal-Injury-Lawyers-Matter-main-image.webp";
 const imageDir = "/blog image/Why Does SEO For Personal Injury Lawyers Matter";
 
 const whySEOForPersonalInjuryLawyersMattersContent: BlogContentItem[] = [

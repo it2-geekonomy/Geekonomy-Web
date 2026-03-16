@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
 const coverImage =
-    "/blog image/How Much Does SEO Cost in Bristol/How Much Does SEO Cost in Bristol.webp";
+    "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Bristol/How-Much-Does-SEO-Cost-in-Bristol.webp";
 
 const imageDir = "/blog image/How Much Does SEO Cost in Bristol";
 
@@ -172,7 +172,7 @@ export const howMuchDoesSEOCostInBristolSEO = {
         "Learn how much SEO costs in Bristol. Discover average pricing, factors affecting SEO costs, and what Bristol businesses should expect to pay.",
     url: "https://geekonomytech.com/blog/seo-cost-in-bristol",
     canonical: "https://geekonomytech.com/blog/seo-cost-in-bristol",
-    image: "https://geekonomytech.com/blog image/How Much Does SEO Cost in Bristol/How Much Does SEO Cost in Bristol.webp",
+    image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Bristol/How-Much-Does-SEO-Cost-in-Bristol.webp",
     twitterHandle: "@GeekonomyTech",
 };
 

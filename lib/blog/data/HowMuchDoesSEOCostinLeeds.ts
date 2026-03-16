@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
 const coverImage =
-  "/blog image/How Much Does SEO Cost in Leeds/How Much Does SEO Cost in Leeds.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Leeds/How-Much-Does-SEO-Cost-in-Leeds.webp";
 
 const imageDir = "/blog image/How Much Does SEO Cost in Leeds";
 
@@ -214,7 +214,7 @@ export const howMuchDoesSEOCostInLeedsSEO = {
   url: "https://geekonomytech.com/blog/seo-cost-in-leeds",
   canonical: "https://geekonomytech.com/blog/seo-cost-in-leeds",
   image:
-    "https://geekonomytech.com/blog image/How Much Does SEO Cost in Leeds/How Much Does SEO Cost in Leeds.webp",
+    "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Leeds/How-Much-Does-SEO-Cost-in-Leeds.webp",
   twitterHandle: "@GeekonomyTech",
 };
 
