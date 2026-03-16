@@ -160,13 +160,20 @@ export default function BlogsPageClient() {
               <article className="bg-[#0f0f0f] rounded-xl overflow-hidden hover:bg-[#1a1a1a] transition-all duration-300 h-full flex flex-col">
                 {/* Blog Image */}
                 <div className="relative w-full h-48 md:h-56 overflow-hidden">
-                  <Image
-                    src={blog.coverImage}
-                    alt={blog.heading}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    unoptimized={blog.coverImage.startsWith("/") && !blog.coverImage.startsWith("//")}
-                  />
+                  {blog.coverImage.startsWith("http://") || blog.coverImage.startsWith("https://") ? (
+                    <img
+                      src={blog.coverImage}
+                      alt={blog.heading}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <Image
+                      src={blog.coverImage}
+                      alt={blog.heading}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                 </div>
 
                 {/* Blog Content */}

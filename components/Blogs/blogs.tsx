@@ -278,14 +278,19 @@ function hydrateBlog(data: BlogData): Blog {
     sections: data.sections.map((section, index) => ({
       title: index === 0 ? `${data.heading} | Geekonomy` : section.title,
       description: section.description,
-      image: (
+      image: isLocalPath(section.image.src) ? (
         <Image
           src={section.image.src}
           alt={section.image.alt}
           fill
           className="object-cover rounded-xl"
           priority={index === 0}
-          unoptimized={isLocalPath(section.image.src)}
+        />
+      ) : (
+        <img
+          src={section.image.src}
+          alt={section.image.alt}
+          className="w-full h-full object-cover rounded-xl"
         />
       ),
       ...(section.tableComponent && {
