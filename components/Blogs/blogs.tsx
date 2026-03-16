@@ -54,5 +54,6 @@ function hydrateBlog(data: BlogData): Blog {
   };
 }
 
+
 /** All blogs with hydrated sections (Image + Table components). Used by /blog and /blog/[slug]. */
 export const BLOGS: Blog[] = allBlogsData.map(hydrateBlog);
