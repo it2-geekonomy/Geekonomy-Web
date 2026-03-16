@@ -141,7 +141,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
+                className="absolute top-4 right-4 text-white hover:text-white transition-colors"
                 aria-label="Close modal"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,7 +154,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                 <Typography as="h2" variant="h3" className="text-[#69AE44] text-xl font-bold mb-2">
                   Blog: {blogName}
                 </Typography>
-                <Typography as="p" variant="body-xl" className="text-white/70 text-sm">
+                <Typography as="p" variant="body-xl" className="text-white text-sm">
                   Fill out the form below and we'll get back to you soon.
                 </Typography>
               </div>

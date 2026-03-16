@@ -158,7 +158,7 @@ export const MobileView = ({
                     </div>
                     <div style={{ display: "flex", flexDirection: "column" }}>
                               <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
-                                <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>Author:</span>
+                                <span style={{ color: "white", fontSize: "0.875rem" }}>Author:</span>
                                 <Link
                                   href={`/blog/author/${getAuthorSlug(authorInfo.name as AuthorName)}`}
                                   style={{ 
@@ -171,13 +171,13 @@ export const MobileView = ({
                                 >
                                   {authorInfo.name}
                                 </Link>
-                                <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>|</span>
-                                <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.875rem" }}>
+                                <span style={{ color: "white", fontSize: "0.875rem" }}>|</span>
+                                <span style={{ color: "white", fontSize: "0.875rem" }}>
                                   {authorInfo.role}
                                 </span>
                               </div>
                       {dateInfo && (
-                        <span style={{ color: "rgba(255, 255, 255, 0.6)", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+                        <span style={{ color: "white", fontSize: "0.75rem", marginTop: "0.25rem" }}>
                           {dateInfo.label} {dateInfo.date}
                         </span>
                       )}

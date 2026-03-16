@@ -96,20 +96,20 @@ export const DesktopView = ({
                     </div>
                     <div className="flex flex-col">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-white/60 text-sm md:text-base">Author:</span>
+                        <span className="text-white text-sm md:text-base">Author :</span>
                         <Link
                           href={`/blog/author/${getAuthorSlug(authorInfo.name)}`}
                           className="text-[#6FAF4E] font-medium text-sm md:text-base hover:underline transition-all cursor-pointer"
                         >
                           {authorInfo.name}
                         </Link>
-                        <span className="text-white/60 text-sm md:text-base">|</span>
-                        <span className="text-white/60 text-sm md:text-base">
+                        <span className="text-white text-sm md:text-base">|</span>
+                        <span className="text-white text-sm md:text-base">
                           {authorInfo.role}
                         </span>
                       </div>
                       {dateInfo && (
-                        <span className="text-white/60 text-xs md:text-sm mt-1">
+                        <span className="text-white text-xs md:text-sm mt-1">
                           {dateInfo.label} {dateInfo.date}
                         </span>
                       )}
@@ -119,7 +119,7 @@ export const DesktopView = ({
               )}
               <motion.div>
                 <div
-                  className="mt-6 text-[#FFFFFF] text-lg leading-relaxed space-y-4
+                  className="mt-6 text-white text-lg leading-relaxed space-y-4
                     [&>p]:mb-4
                     [&>ul]:list-disc [&>ul]:ml-6 [&>ul]:space-y-2
                     [&>ol]:list-decimal [&>ol]:ml-6 [&>ol]:space-y-2
