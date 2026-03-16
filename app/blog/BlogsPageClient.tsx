@@ -121,19 +121,21 @@ export default function BlogsPageClient() {
   if (!BLOGS || BLOGS.length === 0) {
     return (
       <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center">
-        <p className="text-white text-xl">No blogs available</p>
+        <Typography as="p" variant="body-xl" className="text-white">
+          No blogs available
+        </Typography>
       </main>
     );
   }
 
   return (
-    <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+    <main className="bg-black min-h-screen py-[clamp(1.5rem,1.5rem+1vw,4rem)]">
+      <div className="mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
         {/* Page Header */}
-        <div className="mb-12 md:mb-16 text-center">
+        <div className="mb-12 md:mb-16 text-center w-full px-4 sm:px-6 lg:px-10">
           <Typography
             as="h1"
-            variant="3xl"
+            variant="display-xl"
             className="text-white font-bold mb-4"
           >
           Blog
@@ -158,29 +160,40 @@ export default function BlogsPageClient() {
               <article className="bg-[#0f0f0f] rounded-xl overflow-hidden hover:bg-[#1a1a1a] transition-all duration-300 h-full flex flex-col">
                 {/* Blog Image */}
                 <div className="relative w-full h-48 md:h-56 overflow-hidden">
-                  <Image
-                    src={blog.coverImage}
-                    alt={blog.heading}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    unoptimized={blog.coverImage.startsWith("/") && !blog.coverImage.startsWith("//")}
-                  />
+                  {blog.coverImage.startsWith("http://") || blog.coverImage.startsWith("https://") ? (
+                    <img
+                      src={blog.coverImage}
+                      alt={blog.heading}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <Image
+                      src={blog.coverImage}
+                      alt={blog.heading}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                 </div>
 
                 {/* Blog Content */}
                 <div className="p-6 flex-1 flex flex-col">
                   <Typography
                     as="h2"
-                    variant="xl"
+                    variant="h2"
                     className="text-white font-bold mb-3 group-hover:text-[#6FAF4E] transition-colors duration-300 line-clamp-2"
                   >
                     {blog.heading}
                   </Typography>
 
                   <div className="mt-auto pt-4">
-                    <span className="text-[#6FAF4E] text-sm font-medium group-hover:underline">
+                    <Typography
+                      as="span"
+                      variant="body-lg"
+                      className="text-[#6FAF4E] font-medium group-hover:underline"
+                    >
                       Read More →
-                    </span>
+                    </Typography>
                   </div>
                 </div>
               </article>
@@ -194,8 +207,8 @@ export default function BlogsPageClient() {
             {/* Page Info */}
             <Typography
               as="p"
-              variant="sm"
-              className="text-white/60"
+              variant="body-lg"
+              className="text-white"
             >
               Showing {startIndex + 1}-{Math.min(endIndex, BLOGS.length)} of{" "}
               {BLOGS.length} blogs
@@ -222,7 +235,7 @@ export default function BlogsPageClient() {
                       return (
                         <span
                           key={`ellipsis-${index}`}
-                          className={`text-white/40 ${isNarrow ? "px-0.5 text-xs" : "px-1 sm:px-2 text-sm sm:text-base"}`}
+                          className={`text-white ${isNarrow ? "px-0.5 text-xs" : "px-1 sm:px-2 text-sm sm:text-base"}`}
                         >
                           ...
                         </span>

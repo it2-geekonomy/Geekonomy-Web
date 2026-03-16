@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/10 Best SEO Friendly CMS/10 Best SEO Friendly .webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/10-Best-SEO-Friendly-CMS/10-Best-SEO-Friendly-.webp";
 const imageDir = "/blog image/10 Best SEO Friendly CMS";
 
 const seoFriendlyCMSContent: BlogContentItem[] = [

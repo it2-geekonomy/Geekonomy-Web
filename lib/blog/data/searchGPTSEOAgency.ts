@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img } from "../utils";
 
-const coverImage = "/blog image/Why Choose the Best SearchGPT SEO Agency in 2026/Why Choose the Best SearchGPT SEO Agency in 2026.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Why-Choose-the-Best-SearchGPT-SEO-Agency-in-2026/Why-Choose-the-Best-SearchGPT-SEO-Agency-in-2026.webp";
 const imageDir = "/blog image/Why Choose the Best SearchGPT SEO Agency in 2026";
 
 const searchGPTSEOAgencyContent: BlogContentItem[] = [

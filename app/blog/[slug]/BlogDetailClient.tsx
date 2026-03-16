@@ -64,7 +64,7 @@ export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: B
           <div class="w-full md:w-3/4 flex flex-col">
             <p class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left"><a href="/blog/author/${authorSlug}" class="text-[#6FAF4E] hover:underline transition-all cursor-pointer" style="color: #6FAF4E !important;">${authorInfo.name}</a></p>
             <p class="text-white text-base md:text-lg mb-4 text-center md:text-left">${authorInfo.role}</p>
-            <div class="text-[#999999] text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
+            <div class="text-white text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 const coverImage =
-  "/blog image/Web Development Cost in Bangalore for Small Businesses/Web Development Cost in Bangalore for Small Businesses.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Web-Development-Cost-in-Bangalore-for-Small-Businesses/Web-Development-Cost-in-Bangalore-for-Small-Businesses.webp";
 const imageDir = "/blog image/Web Development Cost in Bangalore for Small Businesses";
 
 const webDevelopmentCostInBangaloreForSmallBusinessesContent: BlogContentItem[] = [

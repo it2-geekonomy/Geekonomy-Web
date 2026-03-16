@@ -18,7 +18,7 @@ export function ProcessLeftSection() {
       >
         <Typography
           as="h2"
-          variant="3xl"
+          variant="h1"
           className="text-white font-normal leading-tight mb-4 max-w-sm"
         >
           Slow down to{" "}
@@ -45,8 +45,8 @@ export function ProcessLeftSection() {
       >
         <Typography
           as="p"
-          variant="base"
-          className="text-[#A0A0A0] leading-relaxed"
+          variant="body-xl"
+          className="text-white leading-relaxed"
         >
           We don't rush into execution. Every engagement starts with a deep dive
           into the reality of your business, ensuring we solve the right

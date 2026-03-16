@@ -13,7 +13,7 @@ export default function ComingSoon({ title }: ComingSoonProps) {
       <div className="text-center max-w-2xl mx-auto">
         <Typography
           as="h1"
-          variant="4xl"
+          variant="display-2xl"
           className="text-white font-semibold uppercase tracking-tight mb-6"
         >
           {title}
@@ -21,7 +21,7 @@ export default function ComingSoon({ title }: ComingSoonProps) {
         
         <Typography
           as="p"
-          variant="2xl"
+          variant="display-2xl"
           className="text-[#69AE44] font-normal mb-8"
         >
           Coming Soon
@@ -29,8 +29,8 @@ export default function ComingSoon({ title }: ComingSoonProps) {
         
         <Typography
           as="p"
-          variant="lg"
-          className="text-[#A0A0A0] font-normal leading-relaxed mb-12"
+          variant="body-xl"
+          className="text-white font-normal leading-relaxed mb-12"
         >
           We're working on something amazing. Check back soon!
         </Typography>
@@ -39,9 +39,7 @@ export default function ComingSoon({ title }: ComingSoonProps) {
           href="/"
           className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
         >
-          <Typography as="span" variant="sm" className="font-normal">
-            Back to Home
-          </Typography>
+          Back to Home
         </Link>
       </div>
     </main>

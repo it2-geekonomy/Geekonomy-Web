@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
 const coverImage =
-  "/blog image/Technical SEO Mistakes That Kill Google Rankings/Technical SEO Mistakes That Kill Google Rankings.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Technical-SEO-Mistakes-That-Kill-Google-Rankings/Technical-SEO-Mistakes-That-Kill-Google-Rankings.webp";
 
 const imageDir =
   "/blog image/Technical SEO Mistakes That Kill Google Rankings";
@@ -192,7 +192,7 @@ export const technicalSEOMistakesThatKillGoogleRankingsSEO = {
     "Learn the most common technical SEO mistakes that hurt Google rankings. Fix indexing, speed, crawl errors, and site structure to improve visibility.",
   url: "https://geekonomytech.com/blog/technical-seo-mistakes-that-kill-google-rankings",
   canonical: "https://geekonomytech.com/blog/technical-seo-mistakes-that-kill-google-rankings",
-  image: "https://geekonomytech.com/blog image/Technical SEO Mistakes That Kill Google Rankings/Technical SEO Mistakes That Kill Google Rankings.webp",
+  image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Technical-SEO-Mistakes-That-Kill-Google-Rankings/Technical-SEO-Mistakes-That-Kill-Google-Rankings.webp",
   twitterHandle: "@GeekonomyTech",
 };
 

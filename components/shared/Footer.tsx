@@ -1,89 +1,166 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { Typography } from "@/components/ui/Typography";
 import { ADDRESS } from "@/lib/constants/company";
-import { FOOTER_NAV_ITEMS } from "@/lib/constants/navigation";
+import { FooterLogo } from "./Footer/FooterLogo";
+import { FooterNavigation } from "./Footer/FooterNavigation";
+import { FooterAddress } from "./Footer/FooterAddress";
+import { FooterDivider } from "./Footer/FooterDivider";
+import { FooterBottom } from "./Footer/FooterBottom";
 
 export default function Footer() {
   return (
     <footer className="bg-black w-full border-t-2 border-gray-600">
-      <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-22">
+      <div className="px-4 sm:px-6 lg:px-8 py-2 lg:py-3">
+        {/* Mobile Layout (below sm) */}
+        <div className="flex flex-col gap-4 sm:hidden">
+          {/* Logo & Social Media */}
+          <FooterLogo logoScale="scale-70" iconSize="w-5 h-5" logoHeight="h-[100px]" socialJustify="justify-center" />
 
-          {/* Logo */}
-          <div className="flex flex-col items-center justify-center sm:col-span-2 lg:col-span-1 text-center md:text-left relative pl-4 lg:pr-8">
-            <div className="hidden lg:block absolute -right-6 top-0 bottom-0 w-[2px] bg-gray-700" />
-            <div className="mb-0 sm:mb-2 lg:mb-8">
-              <Link href="/" className="inline-flex items-center justify-center w-full">
-                <Image
-                  src="/Geekonomy Logo.webp"
-                  alt="GEEKONOMY Logo"
-                  width={1200}
-                  height={336}
-                  className="object-contain mx-auto w-full h-auto scale-95 sm:scale-100 lg:scale-145 xl:scale-145"
-                  priority
-                />
-              </Link>
+          {/* Navigation */}
+          <div className="relative pt-3">
+            <FooterDivider orientation="horizontal" position="top-0" showAccent={true} />
+            <FooterNavigation layout="grid" textAlign="text-left" />
+          </div>
+
+          {/* Address & Map */}
+          <div className="flex flex-col items-center gap-2 relative pt-3">
+            <FooterDivider orientation="horizontal" position="top-0" showAccent={true} />
+            <Typography
+              variant="body-xl"
+              className="uppercase mb-0.5 inline-block text-center relative
+                after:block after:h-[2px] after:w-full after:bg-white after:mt-1.5 text-white"
+            >
+              ADDRESS
+            </Typography>
+
+            <div className="mb-1.5 w-full flex flex-col items-center gap-0.5">
+              {ADDRESS.lines.map((line, index) => (
+                <Typography
+                  key={index}
+                  as="p"
+                  variant="body-xl"
+                  className="w-full text-white mb-0.5 text-center break-words max-w-[310px]"
+                >
+                  {line}
+                </Typography>
+              ))}
+            </div>
+
+            {/* Map */}
+            <div className="rounded-lg overflow-hidden border border-gray-800 w-full max-w-[250px] h-[160px]">
+              <iframe
+                src={ADDRESS.mapUrl}
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
-          {/* WHAT WE DO */}
-          <div
-            className="flex flex-col relative items-center sm:items-start text-center sm:text-left sm:border-r sm:border-gray-700 lg:border-none sm:px-6 lg:px-12 lg:translate-x-8 mt-0 lg:mt-0 lg:-ml-6 xl:ml-0"
-          >
-            {/* Divider for desktop */}
-            <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[2px] bg-gray-700" />
+        </div>
 
-            {/* Header */}
-            <Link href="/what-we-do">
-              <Typography
-                variant="base"
-                className="uppercase mb-4 text-white relative
-        font-light hover:text-[#69AE44] transition-colors duration-200 cursor-pointer mt-0 lg:mt-16 "
-              >
-                WHAT WE DO
-              </Typography>
-            </Link>
+        {/* Tablet Layout (sm to lg) */}
+        <div className="hidden sm:flex lg:hidden flex-col gap-6">
+          {/* Logo & Social Media */}
+          <FooterLogo logoScale="scale-50" iconSize="w-5 h-5 md:w-[24px] md:h-[24px]" logoHeight="h-[100px]" socialJustify="justify-center" />
+
+          {/* Navigation & Address Grid */}
+          <div className="grid grid-cols-2 gap-6 relative pt-3">
+            {/* Divider line */}
+            <FooterDivider orientation="horizontal" position="top-0" showAccent={true} />
+            
+            {/* Navigation - Left */}
+            <div className="flex flex-col relative h-full">
+              {/* Divider for tablet */}
+              <FooterDivider orientation="vertical" position="right-5" showAccent={true} />
+              <FooterNavigation layout="list" textAlign="text-left" className="flex-1" navClassName="items-center" />
+            </div>
+
+            {/* Address - Right */}
+            <div className="flex flex-col items-start text-left translate-y-5">
+              <div className="w-full">
+                <Typography
+                  variant="body-xl"
+                  className="uppercase mb-0.5 inline-block text-left relative
+                    after:block after:h-[2px] after:w-full after:bg-white after:mt-1.5 text-white"
+                >
+                  ADDRESS
+                </Typography>
+              </div>
+
+              <div className="mb-1.5 w-full flex flex-col items-start gap-0.5">
+                {ADDRESS.lines.map((line, index) => (
+                  <Typography
+                    key={index}
+                    as="p"
+                    variant="body-lg"
+                    className="w-full text-white mb-0.5 text-left break-words max-w-[450px]"
+                  >
+                    {line}
+                  </Typography>
+                ))}
+              </div>
+
+              {/* Map */}
+              <div className="rounded-lg overflow-hidden border border-gray-800 w-full max-w-[250px] h-[150px]">
+                <iframe
+                  src={ADDRESS.mapUrl}
+                  className="w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout (lg and above) */}
+        <div className="hidden lg:grid grid-cols-3 gap-8">
+          {/* Logo */}
+          <div className="flex flex-col items-center justify-center text-center md:text-left relative">
+            <FooterDivider orientation="vertical" position="-right-6" showAccent={true} className="hidden lg:block" />
+            <div className="mb-2">
+              <FooterLogo
+                logoScale="scale-70 sm:scale-90 lg:scale-95 xl:scale-100"
+                iconSize="w-5 h-5 md:w-[24px] md:h-[24px]"
+                logoHeight=""
+                socialJustify="justify-center lg:justify-start"
+              />
+            </div>
+          </div>
+          
+          {/* WHAT WE DO */}
+          <div className="flex flex-col relative items-center justify-center text-center sm:border-r sm:border-gray-700 lg:border-none sm:px-6 xl:px-12">
+            {/* Divider for desktop */}
+            <FooterDivider orientation="vertical" position="right-5" showAccent={true} className="hidden lg:block" />
 
             {/* Nav items */}
-            <nav>
-              <ul className="flex flex-col gap-5 items-start translate-x-8 sm:-translate-x-0">
-                {FOOTER_NAV_ITEMS.map((item) => (
-                  <li key={item.href}>
-                    <Link href={item.href} className="uppercase">
-                      <Typography
-                        variant="base"
-                        className="font-light text-white hover:text-[#69AE44] transition-colors duration-200"
-                      >
-                        {item.label}
-                      </Typography>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <FooterNavigation layout="list" textAlign="text-left" navClassName="items-start translate-y-5" />
           </div>
 
           {/* ADDRESS */}
-          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-            <div className="w-full mx-auto sm:mx-0 items-start">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left translate-y-5">
+            <div className="w-full mx-auto sm:mx-0">
               <Typography
-                variant="base"
-                className="uppercase mb-3 sm:mb-6 inline-block text-left relative
-                  after:block after:h-[2px] after:w-full after:bg-white after:mt-2 sm:after:hidden text-white -translate-x-5 sm:-translate-x-0"
+                variant="body-xl"
+                className="uppercase mb-0.5 sm:mb-1 inline-block text-center sm:text-left relative
+                  after:block after:h-[2px] after:w-full after:bg-white after:mt-1.5 sm:after:hidden text-white"
               >
                 ADDRESS
               </Typography>
             </div>
 
-            <div className="mb-6 w-full flex flex-col items-center sm:items-start gap-1">
+            <div className="mb-1.5 w-full flex flex-col items-center sm:items-start gap-0.5">
               {ADDRESS.lines.map((line, index) => (
                 <Typography
                   key={index}
                   as="p"
-                  variant="base"
-                  className="w-full text-white mb-1 text-center sm:text-left break-words"
+                  variant="body-lg"
+                  className="w-full text-white mb-0.5 text-center sm:text-left break-words max-w-[450px]"
                 >
                   {line}
                 </Typography>
@@ -92,7 +169,7 @@ export default function Footer() {
 
 
             {/* Map */}
-            <div className="rounded-lg overflow-hidden border border-gray-800 w-full max-w-[463px] aspect-[463/276] h-auto sm:h-[276px] lg:h-[276px]">
+            <div className="rounded-lg overflow-hidden border border-gray-800 w-full max-w-[250px] sm:max-w-[300px] lg:max-w-[250px]  h-[160px] lg:h-[150px]">
               <iframe
                 src={ADDRESS.mapUrl}
                 className="w-full h-full"
@@ -104,36 +181,11 @@ export default function Footer() {
             </div>
 
           </div>
-
         </div>
       </div>
 
       {/* Bottom Footer */}
-      <div className="px-4 sm:px-6 lg:px-10 py-0">
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4">
-          <a
-            href="//www.dmca.com/Protection/Status.aspx?ID=eea71184-71ee-4c73-a959-5852051246f6"
-            title="DMCA.com Protection Status"
-            className="dmca-badge inline-block mb-4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=eea71184-71ee-4c73-a959-5852051246f6"
-              alt="DMCA.com Protection Status"
-              className="h-auto"
-            />
-          </a>
-
-          <Typography
-            as="p"
-            variant="sm"
-            className="text-gray-300 text-center sm:text-right mb-4"
-          >
-            © {new Date().getFullYear()} Geekonomy. All rights reserved
-          </Typography>
-        </div>
-      </div>
+      <FooterBottom />
     </footer>
   );
 }

@@ -191,11 +191,11 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
     };
 
     return (
-        <div className="max-w-[85%] md:max-w-[70%] mx-auto mt-4 md:mt-8 mb-20">
+        <div className=" mt-4 md:mt-8">
             <div className="flex flex-col gap-4 bg-[#18181B] bg-opacity-80 border border-gray-700 rounded-2xl p-6 md:p-10">
                 <Typography
                     as="h2"
-                    variant="lg"
+                    variant="h3"
                     className="font-medium text-white mb-4"
                 >
                     Please fill the details to view the project insights
@@ -276,14 +276,14 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
                 {/* Status Messages */}
                 {submitStatus === "success" && (
                     <div className="mt-4">
-                        <Typography as="p" variant="base" className="text-[#6FAF4E] text-center">
+                        <Typography as="p" variant="body-xl" className="text-[#6FAF4E] text-center">
                             ✓ Form submitted successfully! Downloading PDF...
                         </Typography>
                     </div>
                 )}
                 {submitStatus === "error" && (
                     <div className="mt-4">
-                        <Typography as="p" variant="base" className="text-red-500 text-center">
+                        <Typography as="p" variant="body-xl" className="text-red-500 text-center">
                             ✗ Failed to submit form. Please try again.
                         </Typography>
                     </div>

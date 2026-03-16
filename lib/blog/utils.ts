@@ -50,9 +50,9 @@ export function contentToHTML(items: BlogContentItem[]): string {
         case "h3":
           return `<h3 class="text-[clamp(1.25rem,1.4vw,1.8rem)] font-semibold mt-4 mb-2 ${item.className || ""}">${item.text}</h3>`;
         case "paragraph":
-          return `<p class="leading-relaxed text-[#FFFFFFB2] text-[clamp(1rem,1vw,1.5rem)] mb-4">${item.text}</p>`;
+          return `<p class="leading-relaxed text-white text-[clamp(1rem,1vw,1.5rem)] mb-4">${item.text}</p>`;
         case "list":
-          return `<div class="[&_ul]:list-disc [&_ul]:ml-6 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:ml-6 mb-4 text-[#FFFFFFB2] text-[clamp(1rem,1vw,1.5rem)]">${item.text}</div>`;
+          return `<div class="[&_ul]:list-disc [&_ul]:ml-6 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:ml-6 mb-4 text-white text-[clamp(1rem,1vw,1.5rem)]">${item.text}</div>`;
         case "image":
           return ""; // Images only on the side, never inline
         default:

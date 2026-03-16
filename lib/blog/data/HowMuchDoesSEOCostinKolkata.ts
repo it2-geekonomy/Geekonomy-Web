@@ -4,7 +4,7 @@ import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
 
 const coverImage =
-    "/blog image/How Much Does SEO Cost in Kolkata/How Much Does SEO Cost in Kolkata main image.webp";
+    "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Kolkata/How-Much-Does-SEO-Cost-in-Kolkata-main-image.webp";
 
 const imageDir = "/blog image/How Much Does SEO Cost in Kolkata";
 

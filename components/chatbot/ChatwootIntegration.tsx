@@ -139,5 +139,85 @@ export default function ChatwootIntegration() {
     });
   }, [pathname]);
 
+  // Hide "Powered by Chatwoot" branding: viewport-positioned overlay over chat iframe bottom
+  useEffect(() => {
+    const COVER_ID = 'geekonomy-chatwoot-branding-cover';
+    const BRANDING_STRIP_HEIGHT = 26;
+
+    const hideInDocumentBranding = () => {
+      document.querySelectorAll('[class*="branding"]').forEach((el) => {
+        if (el instanceof HTMLElement) el.style.display = 'none';
+      });
+    };
+
+    const getChatPanelElement = (): Element | null => {
+      const holder = document.querySelector('#woot-widget-holder, .woot-widget-holder, [id*="woot-widget"]');
+      const iframe = holder?.querySelector('iframe') ?? document.querySelector('.woot-widget-holder iframe');
+      if (iframe) return iframe;
+      const iframes = Array.from(document.querySelectorAll('iframe'));
+      const chatIframe = iframes.find((f) => {
+        const src = (f as HTMLIFrameElement).src || '';
+        const r = f.getBoundingClientRect();
+        return src.includes('chatwoot') || (r.width >= 280 && r.height >= 400 && r.top >= 0);
+      });
+      if (chatIframe) return chatIframe;
+      return holder?.querySelector('[class*="bubble"]:not(.woot--bubble-holder)') ?? holder?.querySelector('[class*="widget-bubble"]') ?? null;
+    };
+
+    const updateCoverPosition = () => {
+      const panel = getChatPanelElement();
+      let cover = document.getElementById(COVER_ID);
+      if (!panel) {
+        cover?.remove();
+        return;
+      }
+      const rect = panel.getBoundingClientRect();
+      if (rect.width < 50 || rect.height < 100) {
+        cover?.remove();
+        return;
+      }
+      if (!cover) {
+        cover = document.createElement('div');
+        cover.id = COVER_ID;
+        cover.setAttribute('aria-hidden', 'true');
+        cover.style.cssText = [
+          'position:fixed',
+          'z-index:2147483647',
+          'background:#f9f9fb',
+          'pointer-events:none',
+          'border-radius:0 0 12px 12px',
+        ].join(';');
+      }
+      const top = rect.bottom - BRANDING_STRIP_HEIGHT;
+      cover.style.top = `${top}px`;
+      cover.style.left = `${rect.left}px`;
+      cover.style.width = `${rect.width}px`;
+      cover.style.height = `${BRANDING_STRIP_HEIGHT}px`;
+      const el = cover;
+      requestAnimationFrame(() => {
+        if (el && document.body) document.body.appendChild(el);
+      });
+    };
+
+    const run = () => {
+      hideInDocumentBranding();
+      updateCoverPosition();
+    };
+
+    run();
+    const interval = setInterval(run, 300);
+    const observer = new MutationObserver(run);
+    observer.observe(document.body, { childList: true, subtree: true });
+    window.addEventListener('resize', run);
+    window.addEventListener('scroll', run, true);
+    return () => {
+      clearInterval(interval);
+      observer.disconnect();
+      window.removeEventListener('resize', run);
+      window.removeEventListener('scroll', run, true);
+      document.getElementById(COVER_ID)?.remove();
+    };
+  }, []);
+
   return null;
 }

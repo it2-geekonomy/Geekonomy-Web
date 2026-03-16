@@ -4,24 +4,24 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function AboutUs() {
     return (
-        <section className="w-full bg-black text-white py-10 lg:py-20 px-6 sm:px-8 md:px-12 lg:px-16">
+        <section className="bg-black text-white py-10 lg:py-20 mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
             {/* Heading */}
             <div className="text-center mb-12">
                 <Typography
                     as="h1"
-                    variant="4xl"
-                    className="font-semibold"
+                    variant="display-2xl"
+                    className="text-white font-semibold"
                 >
                     ABOUT US
                 </Typography>
             </div>
 
-            <div className="px-0 sm:px-2 md:px-4 lg:px-0 xl:px-12 2xl:px-38">
+            <div className="">
                 {/* Subtitle */}
                 <Typography
                     as="p"
-                    variant="2xl"
-                    className="text-white font-light"
+                    variant="h4"
+                    className="text-white font-light w-full px-4 sm:px-6 lg:px-10"
                 >
                     {/* Wrap in a span and force break at lg */}
                     <span className="lg:block">
@@ -33,11 +33,11 @@ export default function AboutUs() {
                 </Typography>
 
                 {/* About Paragraphs */}
-                <div className="space-y-6 mt-6 w-full lg:w-4/5">
+                <div className="space-y-6 mt-6 w-full xl:w-4/5 px-4 sm:px-6 lg:px-10">
                     <Typography
                         as="p"
-                        variant="base"
-                        className="text-[#A0A0A0] font-light">
+                        variant="body-xl"
+                        className="text-white font-light">
                         <span className="text-[#69AE44] font-semibold">Geekonomy</span> is a growth systems company
                         that partners with businesses to create structure, clarity and momentum in how they grow.
                         We believe growth is not achieved through isolated efforts, but through well-built systems

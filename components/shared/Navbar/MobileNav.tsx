@@ -24,15 +24,6 @@ export function MobileNav({
   return (
     <>
       <div className="lg:hidden flex items-center gap-2 sm:gap-3 shrink-0">
-        <Link
-          href="/contact-us#form"
-          className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-4 sm:px-10 py-1 sm:py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105 whitespace-nowrap"
-        >
-          <Typography as="span" variant="sm" className="font-normal ">
-            GET IN TOUCH
-          </Typography>
-        </Link>
-
         <button
           onClick={onToggleMenu}
           className="z-50 p-1.5 sm:p-2 transition-all duration-300 shrink-0 translate-y-2 sm:mx-5 md:mx-10"
@@ -94,7 +85,11 @@ export function MobileNav({
                       : "text-white hover:text-[#69AE44] hover:bg-gray-900"
                   }`}
                 >
-                  <Typography as="span" variant="lg">
+                  <Typography 
+                    as="span" 
+                    variant="body-xl"
+                    className={isActive ? "text-[#69AE44]" : "text-white"}
+                  >
                     {item.label}
                   </Typography>
                 </Link>
