@@ -5,7 +5,7 @@ import Typography from "../ui/Typography";
 
 export default function DisconnectSection() {
   return (
-    <section className="relative w-full bg-black py-10 lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
+    <section className="relative w-full py-10 lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 xl:gap-16 mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
           {/* Left Section - Main Content */}

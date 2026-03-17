@@ -146,7 +146,7 @@ export default function ProcessSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-black pb-18">
+    <section ref={sectionRef} className="relative w-full  pb-18">
       <div className="w-full px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 mx-4 sm:mx-6 lg:mx-14 xl:mx-[clamp(0.5rem,0.5rem+10vw,10rem)] 2xl:mx-[clamp(1rem,1rem+15vw,22rem)] items-start">
 

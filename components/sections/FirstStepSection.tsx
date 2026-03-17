@@ -5,7 +5,7 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function FirstStepSection() {
   return (
-    <section className="relative w-full flex items-center justify-center bg-black py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
+    <section className="relative w-full flex items-center justify-center py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
       <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col items-center text-center">
           {/* Vertical green line with gradient */}
