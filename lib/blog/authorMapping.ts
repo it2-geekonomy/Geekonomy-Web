@@ -55,6 +55,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-much-does-seo-cost-in-boston": "Rahul Dutta",
   "how-much-does-seo-cost-in-san-francisco": "Rahul Dutta",
   "how-much-does-seo-cost-in-bangalore": "Rahul Dutta",
+  "how-much-does-digital-marketing-cost-in-bangalore": "Rahul Dutta",
   "how-to-create-white-label-seo-reports-and-automate-them": "Rahul Dutta",
   "sosoactive-seo-news-digital-marketing-trends-future-lifestyle": "Rahul Dutta",
   "how-important-is-branding-for-seo": "Rahul Dutta",
@@ -130,6 +131,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "seo-for-legal-firms-complete-guide": "Rahul Dutta",
   "how-to-choose-the-best-ecommerce-seo-company": "Rahul Dutta",
   "local-seo-service-Explained": "Rahul Dutta",
+  "local-seo-for-bangalore-businesses": "Rahul Dutta",
   "automotive-seo-for-car-dealerships": "Rahul Dutta",
   "how-seo-audit-services-improve-seo": "Rahul Dutta",
   "local-seo-for-estate-agents": "Rahul Dutta",
@@ -151,9 +153,12 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "ux-ui-design-explained-for-uk-business-owners": "Aaron Roshan",
   "what-makes-a-good-business-website-in-the-uk": "Aaron Roshan",
   "how-to-reduce-website-cost-uk": "Aaron Roshan",
+  "web-development-cost-in-bangalore-for-small-businesses": "Aaron Roshan",
   "white-label-ppc-services-usa": "Aaron Roshan",
   "how-much-does-branding-cost-in-the-uk": "Aaron Roshan",
   "omnichannel-marketing": "Aaron Roshan",
+  "rebranding-services-in-bangalore-when-and-why-you-need": "Aaron Roshan",
+  "build-strong-brand-for-startup-in-bangalore": "Aaron Roshan",
 };
 
 /**
@@ -165,35 +170,141 @@ export function getAuthorForBlog(slug: string): AuthorInfo {
 }
 
 /**
- * Mapping of blog slugs to published dates
- * Add published dates here when blogs are first published
+ * Publish date per blog (from file mtime as of last run). When you edit a blog file and save, it will show "Updated" with the new date.
  */
-const BLOG_PUBLISHED_DATES: Record<string, string> = {
-  // Add published dates here as blogs are published
-  // Example: "best-seo-services-for-startups-in-bangalore": "March 3, 2026",
+export const BLOG_PUBLISHED_DATES: Record<string, string> = {
+  "10-proven-seo-strategies-to-boost-seo-organic-traffic": "March 12, 2026",
+  "360-international-seo-service-complete-guide": "March 11, 2026",
+  "7-reasons-why-your-business-should-invest-in-seo": "March 11, 2026",
+  "automotive-seo-for-car-dealerships": "March 11, 2026",
+  "b2b-ecommerce-website-development-strategies": "March 12, 2026",
+  "b2b-seo-audit-strategies": "March 12, 2026",
+  "benefits-of-bespoke-website-development": "March 11, 2026",
+  "best-cleaning-service-seo-strategies": "March 12, 2026",
+  "best-foundation-repair-seo-strategies": "March 12, 2026",
+  "best-funeral-home-seo-company-for-growth": "March 11, 2026",
+  "best-b2b-saas-seo-agency-strategies": "March 12, 2026",
+  "best-seo-services-for-startups-in-bangalore": "March 12, 2026",
+  "best-tools-for-seo-topical-map-boost-your-seo": "March 11, 2026",
+  "best-local-seo-strategies-for-general-contractors": "March 12, 2026",
+  "best-practices-for-seo-enhancing-ai-visibility": "March 11, 2026",
+  "how-the-best-fintech-seo-agency-help-you-rank": "March 11, 2026",
+  "how-much-does-branding-cost-in-the-uk": "March 11, 2026",
+  "can-adding-more-pictures-improve-seo": "March 11, 2026",
+  "can-international-seo-efforts-be-enhanced-with-rapid-url-indexer": "March 11, 2026",
+  "carpet-cleaning-seo-services-complete-guide": "March 12, 2026",
+  "choose-the-best-searchgpt-seo-agency": "March 12, 2026",
+  "choose-the-right-custom-software-development-company": "March 12, 2026",
+  "common-seo-mistakes-small-businesses-make": "March 11, 2026",
+  "difference-between-technical-seo-and-content-seo-audits": "March 12, 2026",
+  "ecommerce-website-development-services-help-you-grow": "March 11, 2026",
+  "enterprise-seo-audits-complete-guide-for-large-websites": "March 11, 2026",
+  "fashion-seo-agency-seo-strategies-to-grow": "March 11, 2026",
+  "how-a-hotel-seo-consultant-helps-you-rank": "March 11, 2026",
+  "how-a-travel-seo-company-helps-you-rank-higher": "March 12, 2026",
+  "how-ai-seo-tools-help-scale-agile-solutions-faster": "March 11, 2026",
+  "how-celebrity-seo-servies-build-online-authority": "March 11, 2026",
+  "how-does-ben-stace-do-semantic-seo": "March 11, 2026",
+  "how-do-local-seo-agencies-use-rapid-url-indexer": "March 12, 2026",
+  "how-important-is-branding-for-seo": "March 11, 2026",
+  "how-long-does-it-take-for-medical-seo-to-work": "March 11, 2026",
+  "how-much-does-seo-cost-in-ahmedabad": "March 12, 2026",
+  "how-much-does-seo-cost-in-australia": "March 11, 2026",
+  "how-much-does-seo-cost-in-bangalore": "March 11, 2026",
+  "how-much-does-digital-marketing-cost-in-bangalore": "March 12, 2026",
+  "how-much-does-seo-cost-in-birmingham": "March 12, 2026",
+  "how-much-does-seo-cost-in-boston": "March 12, 2026",
+  "how-much-does-seo-cost-in-chennai": "March 12, 2026",
+  "how-much-does-seo-cost-in-chicago": "March 12, 2026",
+  "how-much-does-seo-cost-in-delhi-ncr": "March 11, 2026",
+  "how-much-does-seo-cost-in-hyderabad": "March 11, 2026",
+  "how-much-does-seo-cost-in-kolkata": "March 12, 2026",
+  "how-much-does-seo-cost-in-london": "March 12, 2026",
+  "how-much-does-seo-cost-in-los-angeles": "March 12, 2026",
+  "how-much-does-seo-cost-in-manchester": "March 12, 2026",
+  "how-much-does-seo-cost-in-mumbai": "March 11, 2026",
+  "how-much-does-seo-cost-in-new-york": "March 11, 2026",
+  "how-much-does-seo-cost-in-pune": "March 12, 2026",
+  "how-much-does-seo-cost-in-san-francisco": "March 11, 2026",
+  "how-much-does-seo-cost-in-seattle": "March 11, 2026",
+  "how-much-does-seo-cost-in-uk": "March 11, 2026",
+  "how-much-do-seo-services-cost-in-houston": "March 11, 2026",
+  "how-to-check-if-your-seo-is-working": "March 11, 2026",
+  "how-to-choose-the-best-ecommerce-seo-company": "March 11, 2026",
+  "how-to-create-white-label-seo-reports-and-automate-them": "March 11, 2026",
+  "how-to-improve-wordpress-seo-for-oxfordshire-sites": "March 11, 2026",
+  "how-to-rank-nationally-in-seo": "March 11, 2026",
+  "how-to-reduce-website-cost-uk": "March 11, 2026",
+  "how-to-use-python-for-nlp-and-semantic-seo": "March 12, 2026",
+  "how-to-use-screaming-frog-to-improve-on-page-seo": "March 11, 2026",
+  "how-wordpress-seo-services-improve-traffic": "March 12, 2026",
+  "local-seo-for-carpenters-complete-guide": "March 12, 2026",
+  "local-seo-for-estate-agents": "March 11, 2026",
+  "local-seo-for-hotels-boost-visibility": "March 11, 2026",
+  "local-seo-for-orthodontists-best-strategies": "March 12, 2026",
+  "local-seo-for-roadside-assistance-providers-best-strategies": "March 11, 2026",
+  "local-seo-for-tradies-get-more-trade-business-with-seo": "March 11, 2026",
+  "local-seo-service-Explained": "March 12, 2026",
+  "local-seo-for-bangalore-businesses": "March 13, 2026",
+  "logo-designers-in-bangalore-how-to-choose-the-best": "March 12, 2026",
+  "multilingual-ppc-services-reach-global-customers-faster": "March 11, 2026",
+  "nursing-homes-seo-company-help-you-rank": "March 11, 2026",
+  "omnichannel-marketing": "March 11, 2026",
+  "on-page-seo-checklist-for-service-based-websites": "March 12, 2026",
+  "outsource-seo-india-smart-choice-for-companies": "March 12, 2026",
+  "ppc-home-services-complete-guide": "March 11, 2026",
+  "rebranding-services-in-bangalore-when-and-why-you-need": "March 13, 2026",
+  "build-strong-brand-for-startup-in-bangalore": "March 13, 2026",
+  "seo-cost-in-bristol": "March 11, 2026",
+  "seo-cost-in-leeds": "March 12, 2026",
+  "seo-for-addiction-treatment-centers-complete-guide": "March 11, 2026",
+  "seo-for-architects-best-strategies": "March 12, 2026",
+  "seo-for-auto-body-shops-strategies-to-boost-local-seo": "March 12, 2026",
+  "seo-for-banks-proven-tactics": "March 12, 2026",
+  "seo-for-beauty-industry-brands-complete-guide": "March 12, 2026",
+  "seo-for-dentists-local-seo-to-get-more-patients": "March 12, 2026",
+  "seo-for-estate-planning-lawyers-complete-guide": "March 11, 2026",
+  "seo-for-financial-services-strategies": "March 11, 2026",
+  "seo-for-home-inspectors-business-best-seo-strategies": "March 11, 2026",
+  "seo-for-immigration-attorneys-get-more-clients": "March 11, 2026",
+  "seo-for-legal-firms-complete-guide": "March 11, 2026",
+  "seo-for-msps-best-practices-and-local-seo": "March 11, 2026",
+  "seo-for-physiotherapists-rank-higher": "March 12, 2026",
+  "seo-for-plumbers-proven-techniques-to-rank": "March 11, 2026",
+  "seo-for-startups-a-step-by-step-growth-strategy": "March 11, 2026",
+  "seo-friendly-cms-find-the-best": "March 11, 2026",
+  "seo-platform-for-b2b-companies": "March 12, 2026",
+  "seo-strategy-funnel": "March 11, 2026",
+  "how-seo-audit-services-improve-seo": "March 11, 2026",
+  "sosoactive-seo-news-digital-marketing-trends-future-lifestyle": "March 11, 2026",
+  "technical-seo-mistakes-that-kill-google-rankings": "March 12, 2026",
+  "ux-ui-design-explained-for-uk-business-owners": "March 11, 2026",
+  "web-development-cost-in-bangalore-for-small-businesses": "March 12, 2026",
+  "what-do-you-need-to-balance-when-doing-seo": "March 11, 2026",
+  "what-elements-are-foundational-for-seo-with-ai": "March 12, 2026",
+  "what-makes-a-good-business-website-in-the-uk": "March 11, 2026",
+  "what-triggers-an-ai-overview-seo": "March 11, 2026",
+  "which-ecommerce-platform-is-best-for-seo": "March 11, 2026",
+  "white-label-ppc-services-usa": "March 12, 2026",
+  "why-indexceptional-is-the-best-website-indexing-tool-for-seo": "March 11, 2026",
+  "why-seo-for-personal-injury-lawyers-matters": "March 11, 2026",
+  "why-seo-is-important-for-businesses-in-nyc": "March 12, 2026",
+  "why-white-label-seo-reporting-is-important-for-agencies": "March 11, 2026",
+  "why-your-website-is-not-ranking-on-google": "March 12, 2026",
 };
 
 /**
- * Mapping of blog slugs to updated dates
- * Add updated dates here when blogs are edited/updated after publishing
- */
-const BLOG_UPDATED_DATES: Record<string, string> = {
-  // Add updated dates here when blogs are updated
-  // Example: "best-seo-services-for-startups-in-bangalore": "March 15, 2026",
-};
-
-/**
- * Get published date for a blog slug
+ * Get published date for a blog slug (manual only; server uses file mtime when needed).
  */
 export function getPublishedDate(slug: string): string | null {
   return BLOG_PUBLISHED_DATES[slug] || null;
 }
 
 /**
- * Get updated date for a blog slug
+ * Get updated date for a blog slug. Manual updates removed; server uses file mtime.
  */
 export function getUpdatedDate(slug: string): string | null {
-  return BLOG_UPDATED_DATES[slug] || null;
+  return null;
 }
 
 /**

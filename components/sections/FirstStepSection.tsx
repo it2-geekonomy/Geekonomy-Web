@@ -12,7 +12,7 @@ export default function FirstStepSection() {
           <div className="w-1 h-12 mb-4 bg-[linear-gradient(to_bottom,transparent,#69AE44)]" />
           <Typography
             as="p"
-            variant="base"
+            variant="h1"
             className="text-[#69AE44] uppercase font-normal tracking-wider"
           >
             THE FIRST STEP
@@ -21,7 +21,7 @@ export default function FirstStepSection() {
           {/* Main Heading - "No pressure." */}
           <Typography
             as="h2"
-            variant="4xl"
+            variant="display-2xl"
             className="text-white font-normal leading-tight"
           >
             No pressure.
@@ -30,7 +30,7 @@ export default function FirstStepSection() {
           {/* Main Heading - "No assumptions." */}
           <Typography
             as="h2"
-            variant="4xl"
+            variant="display-2xl"
             className="font-normal text-[#69AE44] mb-8 leading-tight"
           >
             No assumptions.
@@ -39,8 +39,8 @@ export default function FirstStepSection() {
           {/* Descriptive Paragraph */}
           <Typography
             as="p"
-            variant="base"
-            className="text-gray-400 max-w-xl mb-12 leading-relaxed"
+            variant="body-xl"
+            className="text-white max-w-xl mb-12 leading-relaxed w-full px-4 sm:px-6 lg:px-10"
           >
             Just a clear discussion on where you are, where you want to go, and what actually needs to be built to get there.
           </Typography>
@@ -48,9 +48,13 @@ export default function FirstStepSection() {
           {/* Call-to-Action Button */}
           <Link
             href="/contact-us#form"
-            className="inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:text-[#69AE44] hover:scale-105"
+            className="group inline-block bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full font-semibold uppercase transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:scale-105"
           >
-            <Typography as="span" variant="sm" className="font-normal">
+            <Typography
+              as="span"
+              variant="body-lg"
+              className="font-normal text-white group-hover:text-[#69AE44] transition-colors duration-200"
+            >
               START A CONVERSATION
             </Typography>
           </Link>

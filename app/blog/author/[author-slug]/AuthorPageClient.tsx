@@ -79,14 +79,14 @@ export default function AuthorPageClient({ authorInfo, blogs }: AuthorPageClient
               <div className="text-center md:text-left">
                 <Typography
                   as="h1"
-                  variant="3xl"
+                  variant="h2"
                   className="text-[#6FAF4E] font-bold mb-2"
                 >
                   {authorInfo.name}
                 </Typography>
                 <Typography
                   as="p"
-                  variant="lg"
+                  variant="body-xl"
                   className="text-white mb-4"
                 >
                   {authorInfo.role}
@@ -95,7 +95,7 @@ export default function AuthorPageClient({ authorInfo, blogs }: AuthorPageClient
               {authorInfo.biography && (
                 <div className="text-white/80 text-lg leading-relaxed space-y-4">
                   {authorInfo.biography.split('<br/><br/>').map((para, i) => (
-                    <Typography key={i} variant="base" className="text-white/80">
+                    <Typography key={i} variant="body-xl" className="text-white/80">
                       {para}
                     </Typography>
                   ))}
@@ -110,7 +110,7 @@ export default function AuthorPageClient({ authorInfo, blogs }: AuthorPageClient
           <div className="mt-12">
             <Typography
               as="h2"
-              variant="2xl"
+              variant="h3"
               className="text-white font-bold mb-8"
             >
               Blogs by {authorInfo.name}
@@ -192,7 +192,7 @@ export default function AuthorPageClient({ authorInfo, blogs }: AuthorPageClient
                         <div className="p-6 flex-1 flex flex-col">
                           <Typography
                             as="h3"
-                            variant="xl"
+                            variant="body-xl"
                             className="text-white font-bold mb-3 group-hover:text-[#6FAF4E] transition-colors duration-300 line-clamp-2"
                           >
                             {blog.heading}

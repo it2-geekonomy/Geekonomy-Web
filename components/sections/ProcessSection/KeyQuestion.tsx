@@ -64,7 +64,7 @@ export function KeyQuestion({
         >
           <Check className="w-3 h-3 text-[#6FAF4E] stroke-4" />
         </motion.div>
-        <Typography as="span" variant="sm" className="text-[#6FAF4E] font-thin">
+        <Typography as="span" variant="body-xl" className="text-[#6FAF4E] font-thin">
           KEY QUESTION
         </Typography>
       </motion.div>
@@ -74,7 +74,7 @@ export function KeyQuestion({
         style={{ opacity: textOp, y: textY }}
         initial={{ opacity: 0, y: 12 }}
       >
-        <Typography as="p" variant="base" className="text-[#A0A0A0]">
+        <Typography as="p" variant="body-xl" className="text-[#A0A0A0]">
           {question}
         </Typography>
       </motion.div>

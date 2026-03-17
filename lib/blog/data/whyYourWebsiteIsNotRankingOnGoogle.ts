@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h2, h3, img } from "../utils";
 
 const coverImage =
-  "/blog image/10 Reasons Why Your Website is Not Ranking on Google/10 Reasons Why Your Website is Not Ranking on Google.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google.webp";
 
 const imageDir =
   "/blog image/10 Reasons Why Your Website is Not Ranking on Google";
@@ -156,7 +156,7 @@ export const whyYourWebsiteIsNotRankingOnGoogleSEO = {
   canonical:
     "https://geekonomytech.com/blog/why-your-website-is-not-ranking-on-google",
   image:
-    "https://geekonomytech.com/blog image/10 Reasons Why Your Website is Not Ranking on Google/10 Reasons Why Your Website is Not Ranking on Google.webp",
+    "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google.webp",
   twitterHandle: "@GeekonomyTech",
 };
 

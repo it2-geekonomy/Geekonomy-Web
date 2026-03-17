@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { allBlogsData } from '@/components/Blogs/blogs'
+import { allBlogsData } from '@/lib/blog'
 import { caseStudies } from '@/lib/case-studies/data'
 
 function slugify(value: string): string {

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { allBlogsData } from '@/components/Blogs/blogs'
+import { allBlogsData } from '@/lib/blog'
 import { caseStudies } from '@/lib/case-studies/data'
 import { blogSEOData } from '@/lib/blog/seoData'
 import { getStaticSEOData } from '@/seoData'

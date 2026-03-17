@@ -9,14 +9,14 @@ export default function HowWeWorkPage() {
   return (
     <main className="min-h-screen bg-black relative overflow-hidden">
       <ScrollRevealSection index={0}>
-        <section className="relative w-full flex flex-col justify-center lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
-          <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
+        <section className="relative flex flex-col justify-center mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)] py-[clamp(2.5rem,2.5rem+2vw,8rem)] lg:py-[clamp(2.5rem,2.5rem+2vw,8rem)]">
+          <div className="w-full px-4 sm:px-6 lg:px-10">
             <div className="">
               {/* Main Title - Centered */}
               <div className="text-center mb-12 lg:mb-16">
                 <Typography
                   as="h1"
-                  variant="4xl"
+                  variant="display-xl"
                   className="text-white font-semibold uppercase tracking-tight"
                 >
                   HOW WE WORK?
@@ -24,12 +24,12 @@ export default function HowWeWorkPage() {
               </div>
 
               {/* Content - Left Aligned */}
-              <div className="space-y-12 lg:space-y-16 lg:pl-[clamp(3rem,3rem+3vw,8rem)]">
+              <div className="space-y-12 lg:space-y-16">
                 {/* First Section */}
                 <div className="space-y-6">
                   <Typography
                     as="h2"
-                    variant="2xl"
+                    variant="h2"
                     className="text-white font-normal leading-tight"
                   >
                     Strong work doesn't begin with execution.
@@ -37,8 +37,8 @@ export default function HowWeWorkPage() {
 
                   <Typography
                     as="p"
-                    variant="lg"
-                    className="text-[#A0A0A0] font-normal leading-relaxed max-w-7xl"
+                    variant="body-xl"
+                    className="text-white font-normal leading-relaxed max-w-7xl"
                   >
                     Every engagement at{" "}
                     <span className="text-[#69AE44]">Geekonomy</span>
@@ -46,27 +46,27 @@ export default function HowWeWorkPage() {
                   </Typography>
 
                   <ul className="space-y-3 max-w-3xl">
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
-                      <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
+                    <li className="flex items-center gap-3">
+                      <span className="text-[#69AE44] shrink-0 leading-none text-[22px]">•</span>
+                      <Typography as="span" variant="body-xl" className="text-white font-normal leading-relaxed">
                         where your business stands today
                       </Typography>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
-                      <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
+                    <li className="flex items-center gap-3">
+                      <span className="text-[#69AE44] shrink-0 leading-none text-[22px]">•</span>
+                      <Typography as="span" variant="body-xl" className="text-white font-normal leading-relaxed">
                         what it's truly trying to achieve
                       </Typography>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
-                      <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
+                    <li className="flex items-center gap-3">
+                      <span className="text-[#69AE44] shrink-0 leading-none text-[22px]">•</span>
+                      <Typography as="span" variant="body-xl" className="text-white font-normal leading-relaxed">
                         what constraints exist
                       </Typography>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-[#69AE44] mt-1.5 shrink-0">•</span>
-                      <Typography as="span" variant="lg" className="text-[#A0A0A0] font-normal">
+                    <li className="flex items-center gap-3">
+                      <span className="text-[#69AE44] shrink-0 leading-none text-[22px]">•</span>
+                      <Typography as="span" variant="body-xl" className="text-white font-normal leading-relaxed">
                         what success to you actually looks like
                       </Typography>
                     </li>
@@ -74,7 +74,7 @@ export default function HowWeWorkPage() {
 
                   <Typography
                     as="p"
-                    variant="lg"
+                    variant="body-xl"
                     className="text-[#69AE44] font-normal leading-relaxed max-w-3xl"
                   >
                     This ensures that what gets built has purpose, not just momentum.
@@ -85,7 +85,7 @@ export default function HowWeWorkPage() {
                 <div className="space-y-6">
                   <Typography
                     as="h2"
-                    variant="2xl"
+                    variant="h2"
                     className="text-white font-normal leading-tight"
                   >
                     We believe direction should come before activity.
@@ -93,8 +93,8 @@ export default function HowWeWorkPage() {
 
                   <Typography
                     as="p"
-                    variant="lg"
-                    className="text-[#A0A0A0] font-normal leading-relaxed max-w-3xl"
+                    variant="body-xl"
+                    className="text-white font-normal leading-relaxed max-w-3xl"
                   >
                     That's why early conversations focus on defining:
                   </Typography>
@@ -110,12 +110,12 @@ export default function HowWeWorkPage() {
       </ScrollRevealSection>
 
       <ScrollRevealSection index={2}>
-        <section className="relative w-full flex flex-col justify-center pt-[clamp(2.5rem,2.5rem+2vw,8rem)]">
-          <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-24">
-            <div className="space-y-6 lg:pl-[clamp(3rem,3rem+3vw,8rem)] ">
+        <section className="relative flex flex-col justify-center pt-[clamp(2.5rem,2.5rem+2vw,8rem)] mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]">
+          <div className="w-full px-4 sm:px-6 lg:px-10">
+            <div className="space-y-6">
               <Typography
                 as="h2"
-                variant="xl"
+                variant="h2"
                 className="text-white font-normal leading-tight"
               >
                 This clarity allows both sides to move forward confidently and prevents unnecessary course correction later.
@@ -123,7 +123,7 @@ export default function HowWeWorkPage() {
 
               <Typography
                 as="p"
-                variant="xl"
+                variant="body-xl"
                 className="text-white font-normal leading-relaxed"
               >
                 Once alignment is established,{" "}
@@ -145,14 +145,14 @@ export default function HowWeWorkPage() {
             <div className="space-y-6 text-center mx-auto">
               <Typography
                 as="p"
-                variant="lg"
+                variant="h4"
                 className="text-white font-normal leading-relaxed"
               >
                 Strong outcomes come from shared clarity, steady execution and mutual trust.
               </Typography>
               <Typography
                 as="p"
-                variant="2xl"
+                variant="h4"
                 className="text-[#69AE44] font-normal leading-relaxed"
               >
                 That is how Geekonomy works.

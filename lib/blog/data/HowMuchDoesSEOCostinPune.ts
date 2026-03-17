@@ -4,7 +4,7 @@ import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
 
 const coverImage =
-    "/blog image/How Much Does SEO Cost in Pune/How Much Does SEO Cost in Pune main image.webp";
+    "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Pune/How-Much-Does-SEO-Cost-in-Pune-main-image.webp";
 
 const imageDir = "/blog image/How Much Does SEO Cost in Pune";
 
@@ -191,7 +191,7 @@ export const howMuchDoesSEOCostInPuneSEO = {
         "Discover premium SEO services in Pune. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-pune",
     canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-pune",
-    image: "https://geekonomytech.com/blog image/How Much Does SEO Cost in Pune/How Much Does SEO Cost in Pune main image.webp",
+    image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Pune/How-Much-Does-SEO-Cost-in-Pune-main-image.webp",
     twitterHandle: "@GeekonomyTech",
 };
 

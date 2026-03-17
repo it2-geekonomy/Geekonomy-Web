@@ -7,11 +7,11 @@ interface OptionalGridProps {
 const OptionalGrid: React.FC<OptionalGridProps> = ({ images }) => {
   return (
     <>
-   <h2 className="max-w-[85%] md:max-w-[70%] mx-auto text-[clamp(1.5rem,2vw,3rem)] mt-18">
+   <h2 className="max-w-[85%] md:max-w-[70%] mx-auto text-[clamp(1.5rem,2vw,3rem)] py-[clamp(1rem,2vw,2rem)]">
   Visual Identity System
 </h2>
 
-<div className="grid grid-cols-3 gap-2 lg:gap-4 mt-8 max-w-[85%] md:max-w-[70%] mx-auto">
+<div className="grid grid-cols-3 gap-2 lg:gap-4 max-w-[85%] md:max-w-[70%] mx-auto">
   {/* First column: 2 images stacked */}
   <div className="flex flex-col gap-4">
     {images[0] && (

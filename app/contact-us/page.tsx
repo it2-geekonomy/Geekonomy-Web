@@ -31,11 +31,11 @@ export default function ContactPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center px-2 lg:px-4 py-4 lg:py-[clamp(1.5rem,1.5rem+1.5vw,8rem)]">
-      <div className="w-full max-w-7xl" id="contact-form">
+    <main className="min-h-screen bg-black text-white flex items-center justify-center w-full px-4 sm:px-6 lg:px-10 py-4 lg:pb-[clamp(1.5rem,1.5rem+1.5vw,8rem)]">
+      <div className="mx-4 sm:mx-6 lg:mx-12 xl:mx-[clamp(0.5rem,0.5rem+8vw,10rem)] 2xl:mx-[clamp(1rem,1rem+12vw,22rem)]" id="contact-form">
         {/* Heading */}
         <h1 className="text-center font-semibold mb-6">
-          <Typography as="p" variant="3xl" className="text-white pb-10">
+          <Typography as="p" variant="display-xl" className="text-white pb-5">
             Your Growth with Clarity <br className="hidden sm:block" />
             is just a call away!
           </Typography>

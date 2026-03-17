@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/How Long Does It Take for Medical SEO to Work/How Long Does It Take for Medical SEO to Work.WEBP";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Long-Does-It-Take-for-Medical-SEO-to-Work/How-Long-Does-It-Take-for-Medical-SEO-to-Work.WEBP";
 const imageDir = "/blog image/How Long Does It Take for Medical SEO to Work";
 
 const howLongDoesMedicalSEOWorkContent: BlogContentItem[] = [

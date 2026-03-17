@@ -10,16 +10,19 @@ import { getAuthorForBlog, getDateInfo, getAuthorSlug } from "@/lib/blog/authorM
 
 const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
+export type DateInfoProp = { date: string; label: "Published" | "Updated" };
+
 interface BlogDetailClientProps {
   blogSlug: string;
+  dateInfo?: DateInfoProp;
 }
 
-export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
+export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: BlogDetailClientProps) {
   const blog = BLOGS.find((b) => b.slug === blogSlug);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [returnPage, setReturnPage] = useState<number | null>(null);
+  const [showNavButtons, setShowNavButtons] = useState(false);
 
-  // Get the saved page from sessionStorage on mount
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedPage = sessionStorage.getItem(BLOG_PAGE_STORAGE_KEY);
@@ -32,12 +35,18 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
     }
   }, []);
 
+  // Defer showing Prev/Next so they don’t appear during loading/refresh
+  useEffect(() => {
+    const id = setTimeout(() => setShowNavButtons(true), 150);
+    return () => clearTimeout(id);
+  }, []);
+
   if (!blog) {
-    return null; // Error case handled in parent
+    return null;
   }
 
   const authorInfo = getAuthorForBlog(blogSlug);
-  const dateInfo = getDateInfo(blogSlug);
+  const dateInfo = dateInfoProp ?? getDateInfo(blogSlug);
 
   // Add "About the author" section as the last content item
   const blogContentWithAuthor = [...blog.sections];
@@ -55,7 +64,7 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
           <div class="w-full md:w-3/4 flex flex-col">
             <p class="text-2xl md:text-3xl font-bold mb-2 text-center md:text-left"><a href="/blog/author/${authorSlug}" class="text-[#6FAF4E] hover:underline transition-all cursor-pointer" style="color: #6FAF4E !important;">${authorInfo.name}</a></p>
             <p class="text-white text-base md:text-lg mb-4 text-center md:text-left">${authorInfo.role}</p>
-            <div class="text-[#999999] text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
+            <div class="text-white text-sm md:text-base leading-relaxed space-y-4">${authorInfo.biography.split('<br/><br/>').map(para => `<p>${para}</p>`).join('')}</div>
           </div>
         </div>
       </div>
@@ -112,8 +121,8 @@ export default function BlogDetailClient({ blogSlug }: BlogDetailClientProps) {
         blogName={blog.heading}
       />
 
-      {/* Previous and Next Blog Buttons */}
-      {showNavigation && (
+      {/* Previous and Next Blog Buttons (shown after mount to avoid showing during loading) */}
+      {showNavButtons && showNavigation && (
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mt-16 mb-8">
           <div className="flex justify-center items-center gap-2 md:gap-4">
             {previousBlog ? (
