@@ -12,6 +12,7 @@ declare global {
       }) => void;
       setCustomAttributes: (attributes: Record<string, string>) => void;
     };
+    $chatwoot?: { toggle: (state?: 'open' | 'close') => void };
   }
 }
 
@@ -21,6 +22,11 @@ const CHATWOOT_CONFIG = {
   baseUrl: process.env.NEXT_PUBLIC_CHATWOOT_BASE_URL || 'https://app.chatwoot.com',
   sdkPath: '/packs/js/sdk.js',
 } as const;
+
+// Geekonomy avatar used as chatbot launcher (no X when open, only avatar visible)
+const CHATWOOT_AVATAR_SRC = '/geekonomy-avatar-branded%20(1).svg';
+const GEEKONOMY_CHATWOOT_STYLES_ID = 'geekonomy-chatwoot-avatar-styles';
+const GEEKONOMY_AVATAR_OVERLAY_ID = 'geekonomy-chatwoot-avatar-overlay';
 
 // Page type mapping for custom attributes
 const PAGE_TYPE_MAP: Record<string, string> = {
@@ -216,6 +222,182 @@ export default function ChatwootIntegration() {
       window.removeEventListener('resize', run);
       window.removeEventListener('scroll', run, true);
       document.getElementById(COVER_ID)?.remove();
+    };
+  }, []);
+
+  // Geekonomy avatar as launcher; when open hide X and keep only avatar visible
+  useEffect(() => {
+    const injectAvatarStyles = () => {
+      if (document.getElementById(GEEKONOMY_CHATWOOT_STYLES_ID)) return;
+      const style = document.createElement('style');
+      style.id = GEEKONOMY_CHATWOOT_STYLES_ID;
+      style.textContent = `
+        /* Keep bubble holder visible even when chat is open (Chatwoot often hides it) */
+        #woot-widget-holder .woot--bubble-holder,
+        .woot--bubble-holder,
+        #woot-widget-holder.is-open .woot--bubble-holder,
+        #woot-widget-holder[class*="open"] .woot--bubble-holder {
+          display: flex !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+        }
+        /* Hide default Chatwoot bubble icon and close (X) so only avatar shows */
+        #woot-widget-holder [id*="bubble-icon"],
+        #woot-widget-holder .woot-widget-bubble img:not(.geekonomy-chat-avatar),
+        .woot--bubble-holder [id*="bubble-icon"],
+        .woot--bubble-holder .woot-widget-bubble > img:not(.geekonomy-chat-avatar),
+        .woot--bubble-holder .woot-widget-bubble > span { display: none !important; }
+        /* When open: hide only the X icon inside close button, keep button visible for avatar */
+        #woot-widget-holder .woot--close > *:not(.geekonomy-chat-avatar),
+        #woot-widget-holder [class*="close"] > *:not(.geekonomy-chat-avatar),
+        .woot--bubble-holder .woot--close > *:not(.geekonomy-chat-avatar),
+        .woot--bubble-holder [class*="close"] > *:not(.geekonomy-chat-avatar) { display: none !important; }
+        /* Bubble shows avatar only; size the custom avatar */
+        .woot--bubble-holder .woot-widget-bubble,
+        #woot-widget-holder .woot-widget-bubble {
+          background: transparent !important;
+          padding: 0 !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+        .woot--bubble-holder .geekonomy-chat-avatar,
+        #woot-widget-holder .geekonomy-chat-avatar {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: contain !important;
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+        }
+        /* When open: close button shows avatar only, same size as bubble */
+        #woot-widget-holder .woot--close,
+        #woot-widget-holder [class*="close"] {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+        }
+        /* Hide native close (X) when our overlay is shown - overlay shows avatar and handles close */
+        #woot-widget-holder.is-open .woot--close,
+        #woot-widget-holder.is-open [class*="close"],
+        #woot-widget-holder[class*="open"] .woot--close,
+        #woot-widget-holder[class*="open"] [class*="close"] {
+          visibility: hidden !important;
+          pointer-events: none !important;
+        }
+      `;
+      document.head.appendChild(style);
+    };
+
+    const applyAvatarToBubble = () => {
+      const holders = document.querySelectorAll('.woot--bubble-holder, #woot-widget-holder');
+      holders.forEach((holder) => {
+        const bubble = holder.querySelector('.woot-widget-bubble, [class*="bubble"]');
+        if (!bubble) return;
+        if (bubble.querySelector('.geekonomy-chat-avatar')) return;
+        const img = document.createElement('img');
+        img.src = CHATWOOT_AVATAR_SRC;
+        img.alt = 'Chat';
+        img.className = 'geekonomy-chat-avatar';
+        img.setAttribute('aria-hidden', 'true');
+        bubble.appendChild(img);
+      });
+      /* When open, Chatwoot may show a separate close/toggle element; keep avatar there too */
+      const closeButtons = document.querySelectorAll(
+        '#woot-widget-holder .woot--close, #woot-widget-holder [class*="close"]'
+      );
+      closeButtons.forEach((el) => {
+        const btn = el as HTMLElement;
+        if (btn.querySelector('.geekonomy-chat-avatar')) return;
+        const img = document.createElement('img');
+        img.src = CHATWOOT_AVATAR_SRC;
+        img.alt = 'Close chat';
+        img.className = 'geekonomy-chat-avatar';
+        img.setAttribute('aria-hidden', 'true');
+        btn.style.background = 'transparent';
+        btn.style.display = 'flex';
+        btn.style.alignItems = 'center';
+        btn.style.justifyContent = 'center';
+        Array.from(btn.children).forEach((c) => ((c as HTMLElement).style.display = 'none'));
+        btn.appendChild(img);
+      });
+    };
+
+    const isWidgetOpen = (): boolean => {
+      const holder = document.getElementById('woot-widget-holder');
+      if (!holder) return false;
+      const c = holder.className || '';
+      return /is-open|open|expanded|active/.test(c);
+    };
+
+    const updateAvatarOverlay = () => {
+      const open = isWidgetOpen();
+      let overlay = document.getElementById(GEEKONOMY_AVATAR_OVERLAY_ID) as HTMLElement | null;
+      const bubbleHolder = document.querySelector('.woot--bubble-holder') as HTMLElement | null;
+      if (open && bubbleHolder) {
+        if (!overlay) {
+          overlay = document.createElement('div');
+          overlay.id = GEEKONOMY_AVATAR_OVERLAY_ID;
+          overlay.setAttribute('aria-label', 'Close chat');
+          overlay.role = 'button';
+          overlay.tabIndex = 0;
+          overlay.style.cssText = [
+            'position:fixed',
+            'z-index:2147483647',
+            'cursor:pointer',
+            'display:flex',
+            'align-items:center',
+            'justify-content:center',
+            'background:transparent',
+            'border:none',
+            'padding:0',
+            'border-radius:50%',
+            'overflow:hidden',
+          ].join(';');
+          const img = document.createElement('img');
+          img.src = CHATWOOT_AVATAR_SRC;
+          img.alt = 'Close chat';
+          img.style.cssText = 'width:100%;height:100%;object-fit:contain;pointer-events:none;';
+          overlay.appendChild(img);
+          overlay.onclick = () => {
+            if (typeof window.$chatwoot?.toggle === 'function') {
+              window.$chatwoot.toggle('close');
+            }
+          };
+          document.body.appendChild(overlay);
+        }
+        const rect = bubbleHolder.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height, 56);
+        overlay.style.width = `${size}px`;
+        overlay.style.height = `${size}px`;
+        overlay.style.left = `${rect.left}px`;
+        overlay.style.top = `${rect.top}px`;
+        overlay.style.display = 'flex';
+      } else if (overlay) {
+        overlay.style.display = 'none';
+      }
+    };
+
+    injectAvatarStyles();
+    const t = setTimeout(applyAvatarToBubble, 500);
+    const interval = setInterval(() => {
+      applyAvatarToBubble();
+      updateAvatarOverlay();
+    }, 300);
+    const mo = new MutationObserver(() => {
+      applyAvatarToBubble();
+      updateAvatarOverlay();
+    });
+    mo.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
+    updateAvatarOverlay();
+    return () => {
+      clearTimeout(t);
+      clearInterval(interval);
+      mo.disconnect();
+      document.getElementById(GEEKONOMY_CHATWOOT_STYLES_ID)?.remove();
+      document.getElementById(GEEKONOMY_AVATAR_OVERLAY_ID)?.remove();
     };
   }, []);
 
