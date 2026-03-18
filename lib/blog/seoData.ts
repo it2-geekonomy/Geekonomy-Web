@@ -235,6 +235,9 @@ export const blogSEOData = {
   "blog/why-your-website-is-not-ranking-on-google": whyYourWebsiteIsNotRankingOnGoogleSEO,
   "blog/web-development-cost-in-bangalore-for-small-businesses": webDevelopmentCostInBangaloreForSmallBusinessesSEO,
   "blog/logo-designers-in-bangalore-how-to-choose-the-best": logoDesignersInBangaloreHowToChooseTheBestSEO,
+<<<<<<< HEAD
+=======
   "blog/rebranding-services-in-bangalore-when-and-why-you-need": rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO,
   "blog/build-strong-brand-for-startup-in-bangalore": buildStrongBrandForStartupInBangaloreSEO,
+>>>>>>> 043a978f58979b0988a0c45e2869b82138517676
 };

@@ -89,7 +89,7 @@ export default function IndustriesSection() {
   return (
     <section
       ref={sectionRef}
-      className="bg-black relative w-full"
+      className=" relative w-full"
       style={{ overflow: "hidden" }}
     >
       {/* Heading */}

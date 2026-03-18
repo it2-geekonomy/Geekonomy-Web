@@ -56,7 +56,11 @@ export default function ServicesSection() {
                 className="text-white font-normal leading-tight"
               >
                 We don't just sell services. We engineer{" "}
+<<<<<<< HEAD
+                <span className="text-[#69AE44]">growth systems.</span>  
+=======
                 <span className="text-[#69AE44]">growth systems.</span>
+>>>>>>> 043a978f58979b0988a0c45e2869b82138517676
               </Typography>
             </div>
 
@@ -103,6 +107,16 @@ export default function ServicesSection() {
                   transform: isFlipped(index) ? "scale(1.05)" : "scale(1)",
                 }}
               >
+<<<<<<< HEAD
+                {/* Top Section - Number and Arrow */}
+                <div className="flex items-start justify-between mb-6">
+                  {/* Number Circle */}
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                    <Typography
+                      as="span"
+                      variant="body-lg"
+                      className="text-white border border-[#69AE44] rounded-full w-8 h-8 font-normal flex items-center justify-center"
+=======
                 <div
                   className="relative w-full min-h-[280px] md:min-h-[320px]"
                   style={{
@@ -129,6 +143,7 @@ export default function ServicesSection() {
                         visibility: isFlipped(index) ? "hidden" : "visible",
                         opacity: isFlipped(index) ? 0 : 1,
                       }}
+>>>>>>> 043a978f58979b0988a0c45e2869b82138517676
                     >
                       <div className="w-40 h-40 sm:w-44 sm:h-44 md:w-60 flex items-center justify-center shrink-0">
                         <img
@@ -197,6 +212,31 @@ export default function ServicesSection() {
                     </div>
                   </div>
                 </div>
+<<<<<<< HEAD
+
+                {/* Service Name */}
+                <Typography
+                  as="h3"
+                  variant="h1"
+                  className="text-[#69AE44] font-bold mb-4"
+                >
+                  {service.name.split(" ").map((word, index) => (
+                    <span key={index} className="block leading-[1.1]">
+                      {word}
+                    </span>
+                  ))}
+                </Typography>
+
+                {/* Service Description */}
+                <Typography
+                  as="p"
+                  variant="body-xl"
+                  className="text-white/90 font-normal"
+                >
+                  {service.description}
+                </Typography>
+=======
+>>>>>>> 043a978f58979b0988a0c45e2869b82138517676
               </div>
             ))}
           </div>

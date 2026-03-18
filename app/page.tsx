@@ -7,11 +7,14 @@ import ProcessSection from "@/components/sections/ProcessSection";
 import FirstStepSection from "@/components/sections/FirstStepSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
 import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
+import BrickWall from "@/components/sections/BrickWall";
 
 export default function Home() {
   return (
-    
-    <main className="min-h-screen bg-black">
+    <>
+    {/* Fixed background brick wall */}
+    <BrickWall />
+    <main className="relative z-10 min-h-screen">
       <HeroSection />
       <ScrollRevealSection index={0}>
         <DisconnectSection />
@@ -25,5 +28,6 @@ export default function Home() {
         <FirstStepSection />
       </ScrollRevealSection>
     </main>
+    </>
   );
 }
