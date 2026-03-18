@@ -61,8 +61,8 @@ export default function HeroSection() {
   }, []);
   
   return (
-    <section className="relative w-full h-full flex items-center overflow-hidden">
-
+    <section className="relative w-full h-full flex items-center bg-black overflow-hidden">
+      
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 py-8 lg:py-20">
         <div className="lg:pl-[clamp(1rem,1rem+8vw,10rem)] xl:pl-[clamp(1rem,1rem+12vw,16rem)]">
           {/* Introductory text with green line */}
@@ -142,7 +142,11 @@ export default function HeroSection() {
             </div>
             {/* Gray horizontal line */}
             <div className="h-px w-84 sm:w-95 md:w-110 lg:w-120 xl:w-130 bg-[#414340] mb-3 mx-auto lg:mx-0" />
+<<<<<<< HEAD
             {/* Single hover zone for entire row so gap between OVER and CHAOS doesn't trigger chaos */}
+=======
+            {/* Single hover zone for entire row so gap between OVER and CHAOS doesn’t trigger chaos */}
+>>>>>>> 043a978f58979b0988a0c45e2869b82138517676
             <div
               className="flex flex-nowrap items-baseline gap-10 max-sm:gap-4 w-full min-w-0 justify-center lg:justify-start"
               onMouseMove={handleRowMouseMove}

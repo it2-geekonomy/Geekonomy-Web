@@ -40,7 +40,7 @@ export default function FirstStepSection() {
           <Typography
             as="p"
             variant="body-xl"
-            className="text-white max-w-xl mb-12 leading-relaxed"
+            className="text-white max-w-xl mb-12 leading-relaxed w-full px-4 sm:px-6 lg:px-10"
           >
             Just a clear discussion on where you are, where you want to go, and what actually needs to be built to get there.
           </Typography>

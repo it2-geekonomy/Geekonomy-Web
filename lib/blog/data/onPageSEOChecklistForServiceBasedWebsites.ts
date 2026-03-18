@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 const coverImage =
-  "/blog image/On-Page SEO Checklist for Service-Based Websites/On-Page SEO Checklist for Service-Based Websites.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/On-Page-SEO-Checklist-for-Service-Based-Websites/On-Page-SEO-Checklist-for-Service-Based-Websites.webp";
 
 const imageDir = "/blog image/On-Page SEO Checklist for Service-Based Websites";
 
@@ -258,6 +258,6 @@ export const onPageSEOChecklistForServiceBasedWebsitesSEO = {
     " Complete on-page SEO checklist for service-based websites to improve rankings, boost visibility, and attract more qualified leads from search engines.",
   url: "https://geekonomytech.com/blog/on-page-seo-checklist-for-service-based-websites",
   canonical: "https://geekonomytech.com/blog/on-page-seo-checklist-for-service-based-websites",
-  image: "https://geekonomytech.com/blog image/On-Page SEO Checklist for Service-Based Websites/On-Page SEO Checklist for Service-Based Websites.webp",
+  image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/On-Page-SEO-Checklist-for-Service-Based-Websites/On-Page-SEO-Checklist-for-Service-Based-Websites.webp",
   twitterHandle: "@GeekonomyTech",
 };

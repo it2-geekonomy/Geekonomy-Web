@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/How Does Ben Stace Do Semantic SEO/How Does Ben Stace Do Semantic SEO.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Does-Ben-Stace-Do-Semantic-SEO/How-Does-Ben-Stace-Do-Semantic-SEO.webp";
 const imageDir = "/blog image/How Does Ben Stace Do Semantic SEO";
 
 const howDoesBenStaceDoSemanticSEOContent: BlogContentItem[] = [
@@ -87,7 +87,7 @@ const howDoesBenStaceDoSemanticSEOContent: BlogContentItem[] = [
   p("The approach of the semantic SEO of Ben Stace often includes the application of a combination of these tools to create content with some semantic depth and receive better ranks in search engines."),
   p("The use of semantic SEO tools is crucial in the implementation of semantic SEO in today's digital world."),
   h2("Experts Like Ben Stace"),
-  img(`${imageDir}/Experts Like Ben Stace.webp`, "Experts Like Ben Stace"),
+  img("https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Does-Ben-Stace-Do-Semantic-SEO/[…]Follows-This-to-Deliver-Results-to-Clients.webp", "Experts Like Ben Stace"),
   h3("Influential Figures in Semantic SEO"),
   p("People include Ben Stace, whose life's work is semantic SEO, through which the changes to the semantic SEO have been possible."),
   p("They exemplify that it is not only by the traditional SEO way but through semantic relationships and user intent that one should move."),

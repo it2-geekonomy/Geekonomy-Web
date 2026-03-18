@@ -100,7 +100,7 @@ export function ContactFormFields({
 
                 {item.sub && (
                   <span className="text-white text-lg lg:text-[14px] xl:text-lg">
-                    ({item.sub})
+                    <Typography as="span" variant="body-xl" className="text-white">({item.sub})</Typography>
                   </span>
                 )}
 

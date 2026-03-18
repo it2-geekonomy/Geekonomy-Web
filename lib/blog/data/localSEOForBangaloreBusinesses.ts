@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h2, h3, img } from "../utils";
 
 const coverImage =
-  "/blog image/Local SEO for Bangalore Businesses/Local SEO for Bangalore Businesses.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Local-SEO-for-Bangalore-Businesses/Local-SEO-for-Bangalore-Businesses.webp";
 const imageDir = "/blog image/Local SEO for Bangalore Businesses";
 
 const localSEOForBangaloreBusinessesContent: BlogContentItem[] = [

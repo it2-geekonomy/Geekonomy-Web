@@ -3,7 +3,7 @@ import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 const coverImage =
-  "/blog image/Logo Designers in Bangalore/Logo Designers in Bangalore.webp";
+  "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Logo-Designers-in-Bangalore/Logo-Designers-in-Bangalore.webp";
 
 const imageDir = "/blog image/Logo Designers in Bangalore";
 
@@ -231,6 +231,6 @@ export const logoDesignersInBangaloreHowToChooseTheBestSEO = {
   canonical:
     "https://geekonomytech.com/blog/logo-designers-in-bangalore-how-to-choose-the-best",
   image:
-    "https://geekonomytech.com/blog image/Logo Designers in Bangalore/Logo Designers in Bangalore.webp",
+    "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Logo-Designers-in-Bangalore/Logo-Designers-in-Bangalore.webp",
   twitterHandle: "@GeekonomyTech",
 };

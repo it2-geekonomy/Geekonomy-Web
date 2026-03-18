@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img } from "../utils";
 
-const coverImage = "/blog image/SEO Platform for B2B Companies/SEO Platform for B2B Companies main image.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/SEO-Platform-for-B2B-Companies/SEO-Platform-for-B2B-Companies-main-image.webp";
 const imageDir = "/blog image/SEO Platform for B2B Companies";
 
 const seoPlatformB2BContent: BlogContentItem[] = [

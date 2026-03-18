@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/Best Funeral Home SEO Company for Growth/Best Funeral Home SEO Company for Growth.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Best-Funeral-Home-SEO-Company-for-Growth/Best-Funeral-Home-SEO-Company-for-Growth.webp";
 const imageDir = "/blog image/Best Funeral Home SEO Company for Growth";
 
 const bestFuneralHomeSEOCompanyContent: BlogContentItem[] = [
@@ -68,7 +68,6 @@ const bestFuneralHomeSEOCompanyContent: BlogContentItem[] = [
   p("The marketing services of your business can highly benefit from an SEO audit, which will also help you keep on track with your SEO campaign."),
   p("Getting SEO results can be significantly enhanced by free SEO tools and strategies."),
   h2("Choosing the Right Funeral Home SEO Agency"),
-  img(`${imageDir}/Choosing the Right Funeral Home SEO Agency.webp`, "Choosing the Right Funeral Home SEO Agency"),
   h3("Qualities to Look for in a Funeral Home SEO Company"),
   p("When choosing a funeral home SEO company, you need to find the qualities of the company that stand out."),
   p("A funeral home SEO agency that can be trusted and relied on, one that understands and uses the power of SEO effectively."),
@@ -123,7 +122,6 @@ const bestFuneralHomeSEOCompanyContent: BlogContentItem[] = [
   p("Your costs are determined by the amount of optimisation that is required, how competitive your local market is, and how much content creation and on-page SEO there will be."),
   p("If money is an issue, you should still pay attention to the value and the level of expertise because an expertly done SEO plan will be the reason that there will be more people visiting your funeral home's website."),
   h2("Launching a Successful SEO Campaign for Funeral Homes"),
-  img(`${imageDir}/Launching a Successful SEO Campaign for Funeral Homes.webp`, "Launching a Successful SEO Campaign for Funeral Homes"),
   h3("Steps to Get Started with Funeral Home SEO"),
   p("In order to carry out a successful funeral home and cremation SEO campaign, you need to have a clear understanding of the target audience."),
   p("SEO campaign for your funeral home business, start with a detailed SEO strategy, which can include free SEO resources."),

@@ -2,7 +2,7 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
 
-const coverImage = "/blog image/Difference Between Technical SEO And Content SEO Audits/Difference Between Technical SEO And Content SEO Audits.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Difference-Between-Technical-SEO-And-Content-SEO-Audits/Difference-Between-Technical-SEO-And-Content-SEO-Audits.webp";
 const imageDir = "/blog image/Difference Between Technical SEO And Content SEO Audits";
 
 const technicalSEOContentSEOAuditsContent: BlogContentItem[] = [
