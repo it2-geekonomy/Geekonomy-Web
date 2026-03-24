@@ -129,6 +129,9 @@ import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogl
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
 import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 // Centralized blog data aggregation - all blogs are registered here
+
+ 
+// Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
   StartupBrandingStrategyforBangaloreEntrepreneurs,
   bestBrandingAgencyinBangaloreforStartups,
