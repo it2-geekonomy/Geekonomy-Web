@@ -49,6 +49,8 @@ function hydrateBlog(data: BlogData): Blog {
         <img
           src={section.image.src}
           alt={section.image.alt}
+          loading={index === 0 ? "eager" : "lazy"}
+          decoding="async"
           className="w-full h-full object-cover rounded-xl"
         />
       ),

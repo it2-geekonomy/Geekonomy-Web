@@ -49,7 +49,7 @@ export async function getDynamicSEODataFromHeaders(key: string): Promise<SEOData
 // Static SEO data (non-blog pages)
 const seoData: Record<string, SEOData> = {
   home: {
-    title: "Geekonomy Technology | Branding, Marketing & Development",
+    title: "Geekonomy | Branding, Marketing & Development",
     description:
       "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
     url: "https://thegeekonomy.com",

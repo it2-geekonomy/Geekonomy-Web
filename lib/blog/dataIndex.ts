@@ -122,8 +122,13 @@ import { buildStrongBrandForStartupInBangalore } from "@/lib/blog/data/buildStro
 import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingIsImportantforBangaloreBusinesses";
 import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
+import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  HowMuchDoesBrandingCostinBangalore,
+  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
+  BestDigitalMarketingStrategiesforBangaloreBusinesses,
+  WhyBrandingIsImportantforBangaloreBusinesses,
   buildStrongBrandForStartupInBangalore,
   rebrandingServicesInBangaloreWhenAndWhyYouNeed,
   howMuchDoesDigitalMarketingCostInBangalore,
@@ -242,8 +247,6 @@ export const allBlogsData: BlogData[] = [
   seoCostUK,
   omnichannelMarketing,
   nursingHomesSEOCompany,
-  WhyBrandingIsImportantforBangaloreBusinesses,
-  BestDigitalMarketingStrategiesforBangaloreBusinesses,
-  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
+ 
 ];
 
