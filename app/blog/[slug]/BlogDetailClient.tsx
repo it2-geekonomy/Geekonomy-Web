@@ -58,7 +58,7 @@ export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: B
           <div class="w-full md:w-[20%] flex flex-col items-center md:items-start justify-center md:justify-start">
             <p class="text-white text-xl mb-2 text-center md:text-left">About the Author :</p>
             <div class="relative w-48 h-48 md:w-full md:h-full rounded-lg overflow-hidden">
-              <img src="${authorInfo.mainImage}" alt="${authorInfo.name}" class="w-full h-full object-cover" />
+              <img src="${authorInfo.mainImage}" alt="${authorInfo.name}" loading="lazy" decoding="async" class="w-full h-full object-cover" />
             </div>
           </div>
           <div class="w-full md:w-3/4 flex flex-col">
