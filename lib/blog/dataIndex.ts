@@ -247,6 +247,8 @@ export const allBlogsData: BlogData[] = [
   seoCostUK,
   omnichannelMarketing,
   nursingHomesSEOCompany,
- 
+  WhyBrandingIsImportantforBangaloreBusinesses,
+  BestDigitalMarketingStrategiesforBangaloreBusinesses,
+  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
 ];
 
