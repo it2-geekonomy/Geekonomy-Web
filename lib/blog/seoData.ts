@@ -114,6 +114,8 @@ import { logoDesignersInBangaloreHowToChooseTheBestSEO } from "./data/logoDesign
 import { howMuchDoesDigitalMarketingCostInBangaloreSEO } from "./data/howMuchDoesDigitalMarketingCostInBangalore";
 import { webDevelopmentCostInBangaloreForSmallBusinessesSEO } from "./data/webDevelopmentCostInBangaloreForSmallBusinesses";
 import { localSEOForBangaloreBusinessesSEO } from "./data/localSEOForBangaloreBusinesses";
+import { rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO } from "./data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
+import { buildStrongBrandForStartupInBangaloreSEO } from "./data/buildStrongBrandForStartupInBangalore";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -233,4 +235,6 @@ export const blogSEOData = {
   "blog/why-your-website-is-not-ranking-on-google": whyYourWebsiteIsNotRankingOnGoogleSEO,
   "blog/web-development-cost-in-bangalore-for-small-businesses": webDevelopmentCostInBangaloreForSmallBusinessesSEO,
   "blog/logo-designers-in-bangalore-how-to-choose-the-best": logoDesignersInBangaloreHowToChooseTheBestSEO,
+  "blog/rebranding-services-in-bangalore-when-and-why-you-need": rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO,
+  "blog/build-strong-brand-for-startup-in-bangalore": buildStrongBrandForStartupInBangaloreSEO,
 };

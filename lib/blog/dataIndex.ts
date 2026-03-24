@@ -114,9 +114,19 @@ import { technicalSEOMistakesThatKillGoogleRankings } from "@/lib/blog/data/tech
 import { onPageSEOChecklistForServiceBasedWebsites } from "@/lib/blog/data/onPageSEOChecklistForServiceBasedWebsites";
 import { whyYourWebsiteIsNotRankingOnGoogle } from "@/lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle";
 import { logoDesignersInBangaloreHowToChooseTheBest } from "@/lib/blog/data/logoDesignersInBangaloreHowToChooseTheBest";
+import { howMuchDoesDigitalMarketingCostInBangalore } from "@/lib/blog/data/howMuchDoesDigitalMarketingCostInBangalore";
+import { webDevelopmentCostInBangaloreForSmallBusinesses } from "@/lib/blog/data/webDevelopmentCostInBangaloreForSmallBusinesses";
+import { localSEOForBangaloreBusinesses } from "@/lib/blog/data/localSEOForBangaloreBusinesses";
+import { rebrandingServicesInBangaloreWhenAndWhyYouNeed } from "@/lib/blog/data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
+import { buildStrongBrandForStartupInBangalore } from "@/lib/blog/data/buildStrongBrandForStartupInBangalore";
 
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  buildStrongBrandForStartupInBangalore,
+  rebrandingServicesInBangaloreWhenAndWhyYouNeed,
+  howMuchDoesDigitalMarketingCostInBangalore,
+  webDevelopmentCostInBangaloreForSmallBusinesses,
+  localSEOForBangaloreBusinesses,
   logoDesignersInBangaloreHowToChooseTheBest,
   whyYourWebsiteIsNotRankingOnGoogle,
   onPageSEOChecklistForServiceBasedWebsites,

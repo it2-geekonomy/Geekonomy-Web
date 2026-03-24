@@ -157,6 +157,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "white-label-ppc-services-usa": "Aaron Roshan",
   "how-much-does-branding-cost-in-the-uk": "Aaron Roshan",
   "omnichannel-marketing": "Aaron Roshan",
+  "rebranding-services-in-bangalore-when-and-why-you-need": "Aaron Roshan",
+  "build-strong-brand-for-startup-in-bangalore": "Aaron Roshan",
 };
 
 /**
@@ -251,6 +253,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "on-page-seo-checklist-for-service-based-websites": "March 12, 2026",
   "outsource-seo-india-smart-choice-for-companies": "March 12, 2026",
   "ppc-home-services-complete-guide": "March 11, 2026",
+  "rebranding-services-in-bangalore-when-and-why-you-need": "March 13, 2026",
+  "build-strong-brand-for-startup-in-bangalore": "March 13, 2026",
   "seo-cost-in-bristol": "March 11, 2026",
   "seo-cost-in-leeds": "March 12, 2026",
   "seo-for-addiction-treatment-centers-complete-guide": "March 11, 2026",
