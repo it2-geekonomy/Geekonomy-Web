@@ -119,12 +119,18 @@ import { webDevelopmentCostInBangaloreForSmallBusinesses } from "@/lib/blog/data
 import { localSEOForBangaloreBusinesses } from "@/lib/blog/data/localSEOForBangaloreBusinesses";
 import { rebrandingServicesInBangaloreWhenAndWhyYouNeed } from "@/lib/blog/data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
 import { buildStrongBrandForStartupInBangalore } from "@/lib/blog/data/buildStrongBrandForStartupInBangalore";
+import { bestBrandingAgencyinBangaloreforStartups } from "./data/bestBrandingAgencyinBangaloreforStartups";
+import { personalBrandingforFoundersinBangaloreGuide2026 } from "@/lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026";
+// Centralized blog data aggregation - all blogs are registered here
+
 import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingIsImportantforBangaloreBusinesses";
 import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  bestBrandingAgencyinBangaloreforStartups,
+personalBrandingforFoundersinBangaloreGuide2026,
   HowMuchDoesBrandingCostinBangalore,
   SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
   BestDigitalMarketingStrategiesforBangaloreBusinesses,
@@ -247,6 +253,7 @@ export const allBlogsData: BlogData[] = [
   seoCostUK,
   omnichannelMarketing,
   nursingHomesSEOCompany,
+  bestBrandingAgencyinBangaloreforStartups,
   WhyBrandingIsImportantforBangaloreBusinesses,
   BestDigitalMarketingStrategiesforBangaloreBusinesses,
   SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
