@@ -9,7 +9,7 @@ export const divyasreeCaseStudy: CaseStudy = {
   subtitle: "DivyaSree Developers is one of India's most trusted real estate brands, known for landmark commercial and residential projects across Bangalore, Hyderabad, and Chennai.",
   image: "/case-studies/image2.webp",
   slug: "divyasree-builders",
-  pdfUrl: "/case-studies/DivyaSree.pdf",
+  pdfUrl: "/case-studies/DivyaShree.pdf",
   banner: "/case-studies/image2.webp",
   imageGrid2: [
     {

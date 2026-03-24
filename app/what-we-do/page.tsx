@@ -50,7 +50,7 @@ export default function WhatWeDoPage() {
       </ScrollRevealSection>
 
       {/* Core Capabilities Section */}
-      <ScrollRevealSection index={1}>
+      <ScrollRevealSection index={1} mode="simple">
         <section className="relative w-full bg-black">
           <div className="w-full px-4 sm:px-6 lg:px-10">
             <div className="px-4 sm:px-6 lg:px-10 lg:mx-14 xl:mx-[clamp(0.5rem,0.5rem+10vw,10rem)] 2xl:mx-[clamp(1rem,1rem+15vw,22rem)]">

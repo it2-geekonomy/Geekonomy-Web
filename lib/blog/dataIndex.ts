@@ -122,9 +122,19 @@ import { buildStrongBrandForStartupInBangalore } from "@/lib/blog/data/buildStro
 import { bestBrandingAgencyinBangaloreforStartups } from "./data/bestBrandingAgencyinBangaloreforStartups";
 import { personalBrandingforFoundersinBangaloreGuide2026 } from "@/lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026";
 // Centralized blog data aggregation - all blogs are registered here
+
+import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingIsImportantforBangaloreBusinesses";
+import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
+import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
+import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
+// Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
   bestBrandingAgencyinBangaloreforStartups,
 personalBrandingforFoundersinBangaloreGuide2026,
+  HowMuchDoesBrandingCostinBangalore,
+  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
+  BestDigitalMarketingStrategiesforBangaloreBusinesses,
+  WhyBrandingIsImportantforBangaloreBusinesses,
   buildStrongBrandForStartupInBangalore,
   rebrandingServicesInBangaloreWhenAndWhyYouNeed,
   howMuchDoesDigitalMarketingCostInBangalore,
@@ -244,6 +254,8 @@ personalBrandingforFoundersinBangaloreGuide2026,
   omnichannelMarketing,
   nursingHomesSEOCompany,
   bestBrandingAgencyinBangaloreforStartups,
-
+  WhyBrandingIsImportantforBangaloreBusinesses,
+  BestDigitalMarketingStrategiesforBangaloreBusinesses,
+  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
 ];
 
