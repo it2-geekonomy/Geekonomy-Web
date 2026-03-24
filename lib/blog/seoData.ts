@@ -120,9 +120,11 @@ import { WhyBrandingIsImportantforBangaloreBusinessesSEO } from "./data/whyBrand
 import { BestDigitalMarketingStrategiesforBangaloreBusinessesSEO } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import {SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO} from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingCostinBangalore";
+import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/startup-branding-strategy-bangalore-entrepreneurs":StartupBrandingStrategyforBangaloreEntrepreneursContentSEO,
   "blog/branding-cost-in-bangalore":HowMuchDoesBrandingCostinBangaloreSEO,
   "blog/seo-vs-google-ads-for-bangalore-businesses":SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO,
   "blog/best-digital-marketing-strategies-for-bangalore-businesses": BestDigitalMarketingStrategiesforBangaloreBusinessesSEO,

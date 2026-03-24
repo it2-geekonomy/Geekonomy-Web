@@ -123,8 +123,10 @@ import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingI
 import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
+import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 // Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
+  StartupBrandingStrategyforBangaloreEntrepreneurs,
   HowMuchDoesBrandingCostinBangalore,
   SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
   BestDigitalMarketingStrategiesforBangaloreBusinesses,
