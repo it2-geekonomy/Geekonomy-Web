@@ -147,7 +147,7 @@ export const WhyBrandingIsImportantforBangaloreBusinesses: BlogData = {
 export const WhyBrandingIsImportantforBangaloreBusinessesSEO = {
   title: "Why Branding Is Important for Bangalore Businesses",
   description:
-    " Learn why branding is important for Bangalore businesses to build trust, stand out from competitors, and attract more customers.",
+    "Learn why branding is important for Bangalore businesses to build trust, stand out from competitors, and attract more customers.",
   url: "https://thegeekonomy.com/blog/why-branding-is-important-for-bangalore-businesses",
   canonical: "https://thegeekonomy.com/blog/why-branding-is-important-for-bangalore-businesses",
   image: coverImage,
