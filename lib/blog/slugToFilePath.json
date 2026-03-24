@@ -116,5 +116,9 @@
   "why-seo-is-important-for-businesses-in-nyc": "lib/blog/data/whySEOImportantForBusinessesInNYC.ts",
   "why-white-label-seo-reporting-is-important-for-agencies": "lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies.ts",
   "why-your-website-is-not-ranking-on-google": "lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle.ts",
-  "how-to-improve-wordpress-seo-for-oxfordshire-sites": "lib/blog/data/wordPressSEOOxfordshire.ts"
+  "how-to-improve-wordpress-seo-for-oxfordshire-sites": "lib/blog/data/wordPressSEOOxfordshire.ts",
+  "personal-branding-for-founders-in-bangalore-guide":"lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026.ts",
+  " best-branding-agency-in-bangalore-for-startups":"lib/blog/data/bestBrandingAgencyinBangaloreforStartups.ts"
+
+
 }
