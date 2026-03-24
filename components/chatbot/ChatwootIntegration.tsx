@@ -149,6 +149,7 @@ export default function ChatwootIntegration() {
   useEffect(() => {
     const COVER_ID = 'geekonomy-chatwoot-branding-cover';
     const BRANDING_STRIP_HEIGHT = 26;
+    let rafId: number | null = null;
 
     const hideInDocumentBranding = () => {
       document.querySelectorAll('[class*="branding"]').forEach((el) => {
@@ -210,17 +211,24 @@ export default function ChatwootIntegration() {
       updateCoverPosition();
     };
 
+    const scheduleRun = () => {
+      if (rafId !== null) return;
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        run();
+      });
+    };
+
     run();
-    const interval = setInterval(run, 300);
-    const observer = new MutationObserver(run);
+    const observer = new MutationObserver(scheduleRun);
     observer.observe(document.body, { childList: true, subtree: true });
-    window.addEventListener('resize', run);
-    window.addEventListener('scroll', run, true);
+    window.addEventListener('resize', scheduleRun, { passive: true });
+    window.addEventListener('scroll', scheduleRun, true);
     return () => {
-      clearInterval(interval);
+      if (rafId !== null) window.cancelAnimationFrame(rafId);
       observer.disconnect();
-      window.removeEventListener('resize', run);
-      window.removeEventListener('scroll', run, true);
+      window.removeEventListener('resize', scheduleRun);
+      window.removeEventListener('scroll', scheduleRun, true);
       document.getElementById(COVER_ID)?.remove();
     };
   }, []);
@@ -380,22 +388,37 @@ export default function ChatwootIntegration() {
       }
     };
 
+    let rafId: number | null = null;
+    const run = () => {
+      applyAvatarToBubble();
+      updateAvatarOverlay();
+    };
+    const scheduleRun = () => {
+      if (rafId !== null) return;
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        run();
+      });
+    };
+
     injectAvatarStyles();
-    const t = setTimeout(applyAvatarToBubble, 500);
-    const interval = setInterval(() => {
-      applyAvatarToBubble();
-      updateAvatarOverlay();
-    }, 300);
-    const mo = new MutationObserver(() => {
-      applyAvatarToBubble();
-      updateAvatarOverlay();
+    const t = setTimeout(scheduleRun, 500);
+    const mo = new MutationObserver(scheduleRun);
+    window.addEventListener('resize', scheduleRun, { passive: true });
+    window.addEventListener('scroll', scheduleRun, true);
+    run();
+    mo.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['class'],
     });
-    mo.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
-    updateAvatarOverlay();
     return () => {
       clearTimeout(t);
-      clearInterval(interval);
+      if (rafId !== null) window.cancelAnimationFrame(rafId);
       mo.disconnect();
+      window.removeEventListener('resize', scheduleRun);
+      window.removeEventListener('scroll', scheduleRun, true);
       document.getElementById(GEEKONOMY_CHATWOOT_STYLES_ID)?.remove();
       document.getElementById(GEEKONOMY_AVATAR_OVERLAY_ID)?.remove();
     };
