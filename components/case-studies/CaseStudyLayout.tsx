@@ -21,6 +21,10 @@ interface MetricItemProps {
   index: number;
 }
 
+function isLocalAsset(path?: string): boolean {
+  return !!path && path.startsWith("/") && !path.startsWith("//");
+}
+
 function MetricItem({ item, index }: MetricItemProps) {
   const [mousePosition, setMousePosition] = useState({ x: 50 });
   const [isHovered, setIsHovered] = useState(false);
@@ -82,6 +86,7 @@ function MetricItem({ item, index }: MetricItemProps) {
               alt={`icon-${index}`}
               fill
               className="object-contain"
+              unoptimized={isLocalAsset(item.icon)}
             />
           </div>
         )}
@@ -122,6 +127,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
           fill
           className="object-cover"
           priority
+          unoptimized={isLocalAsset(post.banner || post.image)}
         />
         <div className="absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-black/80 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent" />
