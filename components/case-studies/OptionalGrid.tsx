@@ -22,6 +22,7 @@ const OptionalGrid: React.FC<OptionalGridProps> = ({ images }) => {
           width={600}
           height={400}
           className="rounded-lg object-contain w-full h-auto"
+          unoptimized
         />
       </div>
     )}
@@ -33,6 +34,7 @@ const OptionalGrid: React.FC<OptionalGridProps> = ({ images }) => {
           width={600}
           height={400}
           className="rounded-lg object-contain w-full h-auto"
+          unoptimized
         />
       </div>
     )}
@@ -47,6 +49,7 @@ const OptionalGrid: React.FC<OptionalGridProps> = ({ images }) => {
         width={600}
         height={800}
         className="rounded-lg object-contain w-full h-auto"
+        unoptimized
       />
     </div>
   )}
@@ -60,6 +63,7 @@ const OptionalGrid: React.FC<OptionalGridProps> = ({ images }) => {
         width={600}
         height={800}
         className="rounded-lg object-contain w-full h-auto"
+        unoptimized
       />
     </div>
   )}
