@@ -161,7 +161,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "omnichannel-marketing": "Aaron Roshan",
   "rebranding-services-in-bangalore-when-and-why-you-need": "Aaron Roshan",
   "build-strong-brand-for-startup-in-bangalore": "Aaron Roshan",
-  "best-digital-marketing-strategies-for-bangalore-businesses": "Aaron Roshan"
+  "best-digital-marketing-strategies-for-bangalore-businesses": "Aaron Roshan",
+  "branding-cost-in-bangalore":"Aaron Roshan",
 };
 
 /**
@@ -297,6 +298,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-branding-is-important-for-bangalore-businesses" : "March 23, 2026",
   "best-digital-marketing-strategies-for-bangalore-businesses": "March 23,2026",
   "seo-vs-google-ads-for-bangalore-businesses":"March 24, 2026",
+  "branding-cost-in-bangalore":"March 24, 2026",
 };
 
 /**

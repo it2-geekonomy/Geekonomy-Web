@@ -116,9 +116,17 @@ import { webDevelopmentCostInBangaloreForSmallBusinessesSEO } from "./data/webDe
 import { localSEOForBangaloreBusinessesSEO } from "./data/localSEOForBangaloreBusinesses";
 import { rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO } from "./data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
 import { buildStrongBrandForStartupInBangaloreSEO } from "./data/buildStrongBrandForStartupInBangalore";
+import { WhyBrandingIsImportantforBangaloreBusinessesSEO } from "./data/whyBrandingIsImportantforBangaloreBusinesses";
+import { BestDigitalMarketingStrategiesforBangaloreBusinessesSEO } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
+import {SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO} from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
+import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingCostinBangalore";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/branding-cost-in-bangalore":HowMuchDoesBrandingCostinBangaloreSEO,
+  "blog/seo-vs-google-ads-for-bangalore-businesses":SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO,
+  "blog/best-digital-marketing-strategies-for-bangalore-businesses": BestDigitalMarketingStrategiesforBangaloreBusinessesSEO,
+  "blog/why-branding-is-important-for-bangalore-businesses": WhyBrandingIsImportantforBangaloreBusinessesSEO,
   "blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle": sosoactiveSeoNewsSEO,
   "blog/how-to-create-white-label-seo-reports-and-automate-them": howToCreateWhiteLabelSEOReportsAndAutomateThemSEO,
   "blog/how-important-is-branding-for-seo": howImportantIsBrandingForSEOSEO,
