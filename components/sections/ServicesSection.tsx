@@ -55,7 +55,7 @@ export default function ServicesSection() {
                 variant="display-xl"
                 className="text-white font-normal leading-tight"
               >
-                We don't just sell services. We engineer{" "}
+                We don&apos;t just sell services. We engineer{" "}
                 <span className="text-[#69AE44]">growth systems.</span>
               </Typography>
             </div>
@@ -134,6 +134,8 @@ export default function ServicesSection() {
                         <img
                           src={SERVICES_SECTION_LOGOS[index] ?? SERVICES_SECTION_LOGOS[0]}
                           alt={service.name}
+                          loading="lazy"
+                          decoding="async"
                           className="w-full h-full object-contain"
                         />
                       </div>
