@@ -95,16 +95,9 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
         return !hasError;
     };
 
-    // Helper function to get PDF path based on case study slug
-    const getPdfPath = (slug: string): string => {
-        const pdfMap: Record<string, string> = {
-            "divyasree-builders": "/case-studies/DivyaShree.pdf",
-            "hindustan-power": "/case-studies/Hindustan.pdf",
-            "vst-group": "/case-studies/VST.pdf",
-            "mushashi-delta": "/case-studies/Musashi.pdf",
-            "kinfolk-montessori": "/case-studies/Kinfolk.pdf",
-        };
-        return pdfMap[slug] || post.pdfUrl || "/case-studies/default.pdf";
+    // Use normalized PDF URL from case study data (R2 in production).
+    const getPdfPath = (): string => {
+        return post.pdfUrl || "";
     };
 
     // Function to download PDF
@@ -160,10 +153,12 @@ export default function CaseStudyForm({ post }: { post: CaseStudy }) {
             setSubmitStatus("success");
 
             // Download PDF after successful email submission
-            const pdfPath = getPdfPath(post.slug);
-            setTimeout(() => {
-                downloadPDF(pdfPath);
-            }, 500);
+            const pdfPath = getPdfPath();
+            if (pdfPath) {
+                setTimeout(() => {
+                    downloadPDF(pdfPath);
+                }, 500);
+            }
 
             // Clear form data from localStorage after successful submission
             localStorage.removeItem("projectInsightsForm");
