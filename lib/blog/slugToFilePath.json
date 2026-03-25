@@ -125,5 +125,6 @@
   "branding-cost-in-bangalore": "lib/blog/data/howMuchDoesBrandingCostinBangalore.ts",
   "startup-branding-strategy-bangalore-entrepreneurs": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
   "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
-  "simplify-brand-message-effective-branding": "howToSimplifyYourBrandMessageforEffectiveBranding.ts"
+  "simplify-brand-message-effective-branding": "howToSimplifyYourBrandMessageforEffectiveBranding.ts",
+   "corporate-branding-services-bangalore-guide":"lib/blog/data/corporateBrandingServicesinBangaloreGuide.ts"
 }

@@ -127,6 +127,7 @@ import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingI
 import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
+import { corporatebrandingservicesingangaloreguide } from "@/lib/blog/data/corporateBrandingServicesinBangaloreGuide2026";
 import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarenessB2B";
 import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
@@ -135,6 +136,7 @@ import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToS
  
 export const allBlogsData: BlogData[] = [
   howToSimplifyYourBrandMessageforEffectiveBranding,
+  corporatebrandingservicesingangaloreguide,
   howToIncreaseBrandAwarenessB2B,
   StartupBrandingStrategyforBangaloreEntrepreneurs,
   bestBrandingAgencyinBangaloreforStartups,
