@@ -131,7 +131,6 @@ import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startup
 // Centralized blog data aggregation - all blogs are registered here
 
  
-// Centralized blog data aggregation - all blogs are registered here
 export const allBlogsData: BlogData[] = [
   StartupBrandingStrategyforBangaloreEntrepreneurs,
   bestBrandingAgencyinBangaloreforStartups,
