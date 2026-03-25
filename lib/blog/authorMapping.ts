@@ -165,7 +165,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "best-branding-agency-in-bangalore-for-startups": "Aaron Roshan",
   "best-digital-marketing-strategies-for-bangalore-businesses": "Aaron Roshan",
   "branding-cost-in-bangalore":"Aaron Roshan",
+  "corporate-branding-services-bangalore-guide":"Aaron Roshan",
   "startup-branding-strategy-bangalore-entrepreneurs":"Aaron Roshan",
+  "how-to-increase-brand-awareness-in-b2b":"Aaron Roshan",
 };
 
 /**
@@ -304,7 +306,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "best-digital-marketing-strategies-for-bangalore-businesses": "March 23,2026",
   "seo-vs-google-ads-for-bangalore-businesses":"March 24, 2026",
   "branding-cost-in-bangalore":"March 24, 2026",
+  "corporate-branding-services-bangalore-guide":"March 25, 2026",
   "startup-branding-strategy-bangalore-entrepreneurs":" March 24, 2026",
+  "how-to-increase-brand-awareness-in-b2b":"March 25, 2026",
 };
 
 /**

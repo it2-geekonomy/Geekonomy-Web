@@ -122,10 +122,13 @@ import { WhyBrandingIsImportantforBangaloreBusinessesSEO } from "./data/whyBrand
 import { BestDigitalMarketingStrategiesforBangaloreBusinessesSEO } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import {SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO} from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingCostinBangalore";
+import {corporatebrandingservicesinbangaloreguideSEO} from "./data/corporateBrandingServicesinBangaloreGuide2026";
 import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
+import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/how-to-increase-brand-awareness-in-b2b": howToIncreaseBrandAwarenessB2BSEO,
   "blog/startup-branding-strategy-bangalore-entrepreneurs":StartupBrandingStrategyforBangaloreEntrepreneursContentSEO,
   "blog/branding-cost-in-bangalore":HowMuchDoesBrandingCostinBangaloreSEO,
   "blog/seo-vs-google-ads-for-bangalore-businesses":SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO,
@@ -250,5 +253,6 @@ export const blogSEOData = {
   "blog/rebranding-services-in-bangalore-when-and-why-you-need": rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO,
   "blog/build-strong-brand-for-startup-in-bangalore": buildStrongBrandForStartupInBangaloreSEO,
   "blog/personal-branding-for-founders-in-bangalore-guide": personalBrandingforFoundersinBangaloreGuide2026SEO,
-  "blog/best-branding-agency-in-bangalore-for-startups": bestBrandingAgencyinBangaloreforStartupsSEO, 
+  "blog/best-branding-agency-in-bangalore-for-startups": bestBrandingAgencyinBangaloreforStartupsSEO,
+  "blog/corporate-branding-services-bangalore-guide": corporatebrandingservicesinbangaloreguideSEO,
 };
