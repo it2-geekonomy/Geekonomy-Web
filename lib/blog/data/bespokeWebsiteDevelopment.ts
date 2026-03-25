@@ -121,17 +121,17 @@ const bespokeWebsiteDevelopmentContent: BlogContentItem[] = [
 
 export const bespokeWebsiteDevelopment: BlogData = {
   slug: "benefits-of-bespoke-website-development",
-  heading: "Benefits of Bespoke Website Development",
+  heading: "Benefits of Bespoke Website Development Guide 2026",
   coverImage,
   sections: contentToSections(
     bespokeWebsiteDevelopmentContent,
-    { src: coverImage, alt: "Benefits of Bespoke Website Development" },
-    { introTitle: "Benefits of Bespoke Website Development" }
+    { src: coverImage, alt: "Benefits of Bespoke Website Development Guide 2026" },
+    { introTitle: "Benefits of Bespoke Website Development Guide 2026" }
   ),
 };
 
 export const bespokeWebsiteDevelopmentSEO = {
-  title: "Benefits of Bespoke Website Development",
+  title: "Benefits of Bespoke Website Development Guide 2026",
   description: "Discover the benefits of bespoke website development, including better performance, tailored features, improved UX, and scalable growth for your business.",
   url: "https://geekonomytech.com/blog/benefits-of-bespoke-website-development",
   canonical: "https://geekonomytech.com/blog/benefits-of-bespoke-website-development",
