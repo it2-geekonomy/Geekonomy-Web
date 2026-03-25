@@ -171,9 +171,9 @@ export const howToIncreaseBrandAwarenessB2B: BlogData = {
 
 
 export const howToIncreaseBrandAwarenessB2BSEO = {
-  title: "How to Increase Brand Awareness in B2B",
+  title: "How to Increase Brand Awareness in B2B (Guide 2026)",
   description:
-    "SEO vs Gogle Ads fo Learn how to increase B2B brand awareness with proven strategies like content marketing, SEO, and thought leadership to attract quality leads.",
+    "Learn how to increase B2B brand awareness with proven strategies like content marketing, SEO, and thought leadership to attract quality leads.",
   url: "https://thegeekonomy.com/blog/how-to-increase-brand-awareness-in-b2b",
   canonical: "https://thegeekonomy.com/blog/how-to-increase-brand-awareness-in-b2b",
   image: coverImage,
