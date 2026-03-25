@@ -124,9 +124,11 @@ import {SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO} from "./data/seovsgoog
 import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingCostinBangalore";
 import {corporatebrandingservicesinbangaloreguideSEO} from "./data/corporateBrandingServicesinBangaloreGuide2026";
 import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
+import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/how-to-increase-brand-awareness-in-b2b": howToIncreaseBrandAwarenessB2BSEO,
   "blog/startup-branding-strategy-bangalore-entrepreneurs":StartupBrandingStrategyforBangaloreEntrepreneursContentSEO,
   "blog/branding-cost-in-bangalore":HowMuchDoesBrandingCostinBangaloreSEO,
   "blog/seo-vs-google-ads-for-bangalore-businesses":SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO,
