@@ -128,10 +128,12 @@ import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bes
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
 import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
+import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarenessB2B";
 // Centralized blog data aggregation - all blogs are registered here
 
  
 export const allBlogsData: BlogData[] = [
+  howToIncreaseBrandAwarenessB2B,
   StartupBrandingStrategyforBangaloreEntrepreneurs,
   bestBrandingAgencyinBangaloreforStartups,
 personalBrandingforFoundersinBangaloreGuide2026,
