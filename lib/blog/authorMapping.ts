@@ -168,7 +168,10 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "corporate-branding-services-bangalore-guide":"Aaron Roshan",
   "startup-branding-strategy-bangalore-entrepreneurs":"Aaron Roshan",
   "how-to-increase-brand-awareness-in-b2b":"Aaron Roshan",
+<<<<<<< HEAD
   "simplify-brand-message-effective-branding":"Aaron Roshan"
+=======
+>>>>>>> a6635f39811962249692790ac33e3620af2b7177
 };
 
 /**
