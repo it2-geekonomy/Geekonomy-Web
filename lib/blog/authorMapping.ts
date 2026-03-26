@@ -173,6 +173,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan"
+   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
 };
 
 /**
@@ -318,7 +319,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "find-a-partner-for-brand-visibility-audit": "March 26, 2026",
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
   "measure-brand-visibility-in-chatgpt": "March 26, 2026",
-  "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026"
+  "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
+   "how-branding-increases-customer-trust-and-conversions": "March 26,2026"
 };
 
 /**
