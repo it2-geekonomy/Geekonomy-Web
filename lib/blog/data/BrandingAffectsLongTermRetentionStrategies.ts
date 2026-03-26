@@ -13,7 +13,7 @@ const image3 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/db6a0b36-1b3
 const image4 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/047d5fca-48eb-4a27-8977-4fd465012bf1-d4.webp";
 
 
-const BrandingAffectsLongTermRetentionStrategiesContent: BlogContentItem[] = [
+const brandingAffectsLongTermRetentionStrategiesContent: BlogContentItem[] = [
 
 p("In the current market today, companies work hard to build long-term relationships with their customers."),
 p("Keeping them coming back by giving them a sense of community and a high customer service experience."),
@@ -173,19 +173,19 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 ];
 
 
-export const BrandingAffectsLongTermRetentionStrategies: BlogData = {
+export const brandingAffectsLongTermRetentionStrategies: BlogData = {
   slug: "how-branding-affects-long-term-retention-strategies",
   heading: "How Branding Affects Long-Term Retention Strategies",
   coverImage,
   sections: contentToSections(
-    BrandingAffectsLongTermRetentionStrategiesContent,
+    brandingAffectsLongTermRetentionStrategiesContent,
     { src: coverImage, alt: "How Branding Affects Long-Term Retention Strategies" },
     { introTitle: "How Branding Affects Long-Term Retention Strategies" }
   ),
 };
 
 
-export const BrandingAffectsLongTermRetentionStrategiesSEO = {
+export const brandingAffectsLongTermRetentionStrategiesSEO = {
   title: "How Branding Affects Long-Term Retention Strategies",
   description:
     "Learn how branding impacts long-term customer retention by building trust, loyalty, and consistent experiences that keep customers coming back.",

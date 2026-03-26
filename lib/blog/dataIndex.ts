@@ -133,13 +133,16 @@ import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarene
 import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrandVisibilityAudit";
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
-import { BrandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
+import { brandingAffectsLongTermRetentionStrategies } from "./data/brandingAffectsLongTermRetentionStrategies";  
+import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
+
 
 // Centralized blog data aggregation - all blogs are registered here
 
  
 export const allBlogsData: BlogData[] = [
-  BrandingAffectsLongTermRetentionStrategies,
+  measureBrandVisibilityInChatGPT,
+  brandingAffectsLongTermRetentionStrategies,
   whatToLookForInBrandStrategyAgencies,
   findAPartnerForBrandVisibilityAudit,
   howToSimplifyYourBrandMessageforEffectiveBranding,
