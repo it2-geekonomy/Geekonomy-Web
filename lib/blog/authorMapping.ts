@@ -143,7 +143,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-indexceptional-is-the-best-website-indexing-tool-for-seo": "Rahul Dutta",
   "seo-friendly-cms-find-the-best": "Rahul Dutta",
   "why-branding-is-important-for-bangalore-businesses": "Rahul Dutta",
-  "seo-vs-google-ads-for-bangalore-businesses":"Rahul Dutta",
+  "seo-vs-google-ads-for-bangalore-businesses": "Rahul Dutta",
 
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -164,6 +164,17 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "personal-branding-for-founders-in-bangalore-guide": "Aaron Roshan",
   "best-branding-agency-in-bangalore-for-startups": "Aaron Roshan",
   "best-digital-marketing-strategies-for-bangalore-businesses": "Aaron Roshan",
+<<<<<<< HEAD
+  "branding-cost-in-bangalore": "Aaron Roshan",
+  "corporate-branding-services-bangalore-guide": "Aaron Roshan",
+  "startup-branding-strategy-bangalore-entrepreneurs": "Aaron Roshan",
+  "how-to-increase-brand-awareness-in-b2b": "Aaron Roshan",
+  "simplify-brand-message-effective-branding": "Aaron Roshan",
+  "find-a-partner-for-brand-visibility-audit": "Aaron Roshan",
+  "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
+  "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
+  "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
+=======
   "branding-cost-in-bangalore":"Aaron Roshan",
   "corporate-branding-services-bangalore-guide":"Aaron Roshan",
   "startup-branding-strategy-bangalore-entrepreneurs":"Aaron Roshan",
@@ -172,6 +183,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "find-a-partner-for-brand-visibility-audit":"Aaron Roshan",
   "how-branding-affects-long-term-retention-strategies":"Aaron Roshan"
   "what-to-look-for-in-brand-strategy-agencies":"Aaron Roshan"
+>>>>>>> 1802605010e3013cc19b4ad20b157586f8c4d36f
 };
 
 /**
@@ -304,10 +316,22 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-seo-is-important-for-businesses-in-nyc": "March 12, 2026",
   "why-white-label-seo-reporting-is-important-for-agencies": "March 11, 2026",
   "why-your-website-is-not-ranking-on-google": "March 12, 2026",
-  "personal-branding-for-founders-in-bangalore-guide" : "March 23,2026",
-  "best-branding-agency-in-bangalore-for-startups":"March 23,2026",
-  "why-branding-is-important-for-bangalore-businesses" : "March 23, 2026",
+  "personal-branding-for-founders-in-bangalore-guide": "March 23,2026",
+  "best-branding-agency-in-bangalore-for-startups": "March 23,2026",
+  "why-branding-is-important-for-bangalore-businesses": "March 23, 2026",
   "best-digital-marketing-strategies-for-bangalore-businesses": "March 23,2026",
+<<<<<<< HEAD
+  "seo-vs-google-ads-for-bangalore-businesses": "March 24, 2026",
+  "branding-cost-in-bangalore": "March 24, 2026",
+  "corporate-branding-services-bangalore-guide": "March 25, 2026",
+  "startup-branding-strategy-bangalore-entrepreneurs": " March 24, 2026",
+  "how-to-increase-brand-awareness-in-b2b": "March 25, 2026",
+  "simplify-brand-message-effective-branding": "March 25, 2026",
+  "find-a-partner-for-brand-visibility-audit": "March 26, 2026",
+  "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
+  "measure-brand-visibility-in-chatgpt": "March 26, 2026",
+  "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
+=======
   "seo-vs-google-ads-for-bangalore-businesses":"March 24, 2026",
   "branding-cost-in-bangalore":"March 24, 2026",
   "corporate-branding-services-bangalore-guide":"March 25, 2026",
@@ -317,6 +341,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "find-a-partner-for-brand-visibility-audit":"March 26, 2026",
   "how-branding-affects-long-term-retention-strategies":"March 26, 2026",
   "what-to-look-for-in-brand-strategy-agencies":"March 26, 2026"
+>>>>>>> 1802605010e3013cc19b4ad20b157586f8c4d36f
 };
 
 /**
@@ -393,7 +418,7 @@ export function getAuthorBySlug(slug: string): AuthorInfo | null {
   const authorName = Object.keys(AUTHOR_INFO).find(
     (name) => getAuthorSlug(name as AuthorName) === slug
   ) as AuthorName | undefined;
-  
+
   if (authorName) {
     return AUTHOR_INFO[authorName];
   }
@@ -416,17 +441,17 @@ export function getBlogsByAuthor(authorName: AuthorName): string[] {
 export function getDateInfo(slug: string): { date: string; label: "Published" | "Updated" } | null {
   const updatedDate = getUpdatedDate(slug);
   const publishedDate = getPublishedDate(slug);
-  
+
   // If there's an updated date, show that with "Updated" label
   if (updatedDate) {
     return { date: updatedDate, label: "Updated" };
   }
-  
+
   // Otherwise, show published date with "Published" label
   if (publishedDate) {
     return { date: publishedDate, label: "Published" };
   }
-  
+
   // Default fallback
   return { date: "March 3, 2026", label: "Published" };
 }

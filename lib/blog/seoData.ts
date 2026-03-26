@@ -128,7 +128,8 @@ import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwar
 import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
 import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
-import { BrandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
+import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/brandingAffectsLongTermRetentionStrategies";
+import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
