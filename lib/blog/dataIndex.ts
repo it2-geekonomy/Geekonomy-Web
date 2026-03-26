@@ -123,7 +123,7 @@ import { bestBrandingAgencyinBangaloreforStartups } from "./data/bestBrandingAge
 import { personalBrandingforFoundersinBangaloreGuide2026 } from "@/lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026";
 // Centralized blog data aggregation - all blogs are registered here
 
-import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingIsImportantforBangaloreBusinesses";
+import { WhyBrandingIsImportantforBangaloreBusinesses } from "./data/whyBrandingIsImportantforBangaloreBusinesses";
 import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
@@ -133,24 +133,12 @@ import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarene
 import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrandVisibilityAudit";
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
-<<<<<<< HEAD
-import { brandingAffectsLongTermRetentionStrategies } from "./data/brandingAffectsLongTermRetentionStrategies";  
+import { brandingAffectsLongTermRetentionStrategies } from "./data/brandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
 
-=======
-import { BrandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
->>>>>>> 1802605010e3013cc19b4ad20b157586f8c4d36f
-
-// Centralized blog data aggregation - all blogs are registered here
-
- 
 export const allBlogsData: BlogData[] = [
-<<<<<<< HEAD
   measureBrandVisibilityInChatGPT,
   brandingAffectsLongTermRetentionStrategies,
-=======
-  BrandingAffectsLongTermRetentionStrategies,
->>>>>>> 1802605010e3013cc19b4ad20b157586f8c4d36f
   whatToLookForInBrandStrategyAgencies,
   findAPartnerForBrandVisibilityAudit,
   howToSimplifyYourBrandMessageforEffectiveBranding,
@@ -158,7 +146,7 @@ export const allBlogsData: BlogData[] = [
   howToIncreaseBrandAwarenessB2B,
   StartupBrandingStrategyforBangaloreEntrepreneurs,
   bestBrandingAgencyinBangaloreforStartups,
-personalBrandingforFoundersinBangaloreGuide2026,
+  personalBrandingforFoundersinBangaloreGuide2026,
   HowMuchDoesBrandingCostinBangalore,
   SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
   BestDigitalMarketingStrategiesforBangaloreBusinesses,

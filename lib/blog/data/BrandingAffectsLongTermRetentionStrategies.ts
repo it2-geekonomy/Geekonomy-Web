@@ -25,7 +25,7 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 h2("Understanding Customer Retention"),
 
-h3("Definition of Customer Retention"),
+h3("Definition of Customer Retention"),    
 p("Customer retention relates to how well a business can continue to retain its customers for a period of time, and is important if you want to enhance customer retention."),
 p("This isn‘t just about getting new customers, but rather building long-lasting relationships that incentivise purchasing in the long term."),
 p("It is an important metric that can assess how successful your customer retention strategies are at engaging with and keeping customer loyalty in mind."),
