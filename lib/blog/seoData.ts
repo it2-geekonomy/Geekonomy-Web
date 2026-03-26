@@ -128,21 +128,12 @@ import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwar
 import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
 import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
-<<<<<<< HEAD
 import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/brandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
-  "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
-  "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,
-=======
-import { BrandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
-
-/** All blog SEO data aggregated by slug key (blog/{slug}) */
-export const blogSEOData = {
   "blog/how-branding-affects-long-term-retention-strategies": BrandingAffectsLongTermRetentionStrategiesSEO,
->>>>>>> 1802605010e3013cc19b4ad20b157586f8c4d36f
   "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,
   "blog/find-a-partner-for-brand-visibility-audit": findAPartnerForBrandVisibilityAuditSEO,
   "blog/simplify-brand-message-effective-branding": howToSimplifyYourBrandMessageforEffectiveBrandingSEO,
