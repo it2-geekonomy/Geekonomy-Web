@@ -135,9 +135,11 @@ import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrand
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
+import{howBrandingIncreasesCustomerTrustandConversions} from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 
  
 export const allBlogsData: BlogData[] = [
+   howBrandingIncreasesCustomerTrustandConversions,
   measureBrandVisibilityInChatGPT,
   brandingAffectsLongTermRetentionStrategies,
   whatToLookForInBrandStrategyAgencies,
