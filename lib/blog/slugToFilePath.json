@@ -126,5 +126,6 @@
   "startup-branding-strategy-bangalore-entrepreneurs": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
   "simplify-brand-message-effective-branding": "howToSimplifyYourBrandMessageforEffectiveBranding.ts",
   "corporate-branding-services-bangalore-guide":"lib/blog/data/corporateBrandingServicesinBangaloreGuide",
-   "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts"
+  "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
+  "find-a-partner-for-brand-visibility-audit": "ib/blog/data/indAPartnerForBrandVisibilityAudit.ts"
 }
