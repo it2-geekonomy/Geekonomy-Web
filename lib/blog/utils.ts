@@ -1,4 +1,5 @@
 import type { BlogSectionData } from "./types";
+import blogImageMapping from "../../scripts/migrateImagesToR2.mapping.json";
 
 /**
  * Content item for blog posts (paragraph, heading, h1, h3, image).
@@ -34,8 +35,15 @@ const BLOG_IMAGE_PREFIX = "/blog image/";
 const R2_BASE =
   "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/";
 
+type MappingEntry = { localPath: string; url: string };
+const urlByLocalPath = new Map<string, string>(
+  (blogImageMapping as MappingEntry[]).map((entry) => [entry.localPath, entry.url])
+);
+
 function normalizeBlogImageSrc(src: string): string {
   if (!src.startsWith(BLOG_IMAGE_PREFIX)) return src;
+  const mapped = urlByLocalPath.get(src);
+  if (mapped) return mapped;
   // src example: /blog image/Folder Name/File Name.webp
   const withoutPrefix = src.slice(BLOG_IMAGE_PREFIX.length); // Folder Name/File Name.webp
   const [folder, ...rest] = withoutPrefix.split("/");
@@ -45,9 +53,18 @@ function normalizeBlogImageSrc(src: string): string {
   return `${R2_BASE}${folderSlug}/${file.replace(/\s+/g, "-")}`;
 }
 
+export function sanitizeImageSrc(src: string): string {
+  if (!src) return "";
+  const firstQuote = src.indexOf('"');
+  if (firstQuote !== -1) return src.slice(0, firstQuote).trim();
+  const firstComma = src.indexOf(",");
+  if (firstComma !== -1) return src.slice(0, firstComma).trim();
+  return src.trim();
+}
+
 export const img = (src: string, alt: string): BlogContentItem => ({
   type: "image",
-  text: normalizeBlogImageSrc(src),
+  text: sanitizeImageSrc(normalizeBlogImageSrc(src)),
   className: alt,
 });
 export const list = (html: string): BlogContentItem => ({ type: "list", text: html });
@@ -110,7 +127,7 @@ export function contentToSections(
       title: introTitle,
       description: contentToHTML(introTextOnly),
       image: firstImage
-        ? { src: firstImage.text, alt: firstImage.className || introTitle }
+        ? { src: sanitizeImageSrc(firstImage.text), alt: firstImage.className || introTitle }
         : defaultImage,
     });
   }
@@ -134,7 +151,7 @@ export function contentToSections(
       const el = content[i];
       chunk.push(el);
       if (el.type === "image" && !firstImageInSection) {
-        firstImageInSection = { src: el.text, alt: el.className || title };
+        firstImageInSection = { src: sanitizeImageSrc(el.text), alt: el.className || title };
       }
       i++;
     }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
-import { BREAKPOINTS, MEASUREMENT_DELAYS, SCROLL_UPDATE_INTERVAL } from "./constants";
+import { BREAKPOINTS, MEASUREMENT_DELAYS } from "./constants";
 
 export const useScreenWidth = () => {
   const [w, setW] = useState(0);
@@ -80,17 +80,19 @@ export const useActiveCard = (
   });
   useEffect(() => {
     if (window.innerWidth < BREAKPOINTS.LG || len === 0) return;
-    updateViewport();
+    const initRaf = requestAnimationFrame(updateViewport);
     const el = desktopRef.current;
-    if (!el) return;
+    if (!el) {
+      cancelAnimationFrame(initRaf);
+      return;
+    }
     el.style.scrollBehavior = "smooth";
     const onScroll = () => requestAnimationFrame(updateViewport);
     el.addEventListener("scroll", onScroll, { passive: true });
-    const t = setInterval(updateViewport, SCROLL_UPDATE_INTERVAL);
     return () => {
+      cancelAnimationFrame(initRaf);
       el.removeEventListener("scroll", onScroll);
       el.style.scrollBehavior = "";
-      clearInterval(t);
     };
   }, [len, updateViewport, desktopRef]);
   return active;

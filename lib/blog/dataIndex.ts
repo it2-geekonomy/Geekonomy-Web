@@ -119,9 +119,32 @@ import { webDevelopmentCostInBangaloreForSmallBusinesses } from "@/lib/blog/data
 import { localSEOForBangaloreBusinesses } from "@/lib/blog/data/localSEOForBangaloreBusinesses";
 import { rebrandingServicesInBangaloreWhenAndWhyYouNeed } from "@/lib/blog/data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
 import { buildStrongBrandForStartupInBangalore } from "@/lib/blog/data/buildStrongBrandForStartupInBangalore";
-
+import { bestBrandingAgencyinBangaloreforStartups } from "./data/bestBrandingAgencyinBangaloreforStartups";
+import { personalBrandingforFoundersinBangaloreGuide2026 } from "@/lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026";
 // Centralized blog data aggregation - all blogs are registered here
+
+import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingIsImportantforBangaloreBusinesses";
+import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
+import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
+import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
+import { corporatebrandingservicesingangaloreguide } from "@/lib/blog/data/corporateBrandingServicesinBangaloreGuide2026";
+import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
+import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarenessB2B";
+import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
+// Centralized blog data aggregation - all blogs are registered here
+
+ 
 export const allBlogsData: BlogData[] = [
+  howToSimplifyYourBrandMessageforEffectiveBranding,
+  corporatebrandingservicesingangaloreguide,
+  howToIncreaseBrandAwarenessB2B,
+  StartupBrandingStrategyforBangaloreEntrepreneurs,
+  bestBrandingAgencyinBangaloreforStartups,
+personalBrandingforFoundersinBangaloreGuide2026,
+  HowMuchDoesBrandingCostinBangalore,
+  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
+  BestDigitalMarketingStrategiesforBangaloreBusinesses,
+  WhyBrandingIsImportantforBangaloreBusinesses,
   buildStrongBrandForStartupInBangalore,
   rebrandingServicesInBangaloreWhenAndWhyYouNeed,
   howMuchDoesDigitalMarketingCostInBangalore,

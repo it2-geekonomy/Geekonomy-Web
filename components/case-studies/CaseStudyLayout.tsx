@@ -82,6 +82,7 @@ function MetricItem({ item, index }: MetricItemProps) {
               alt={`icon-${index}`}
               fill
               className="object-contain"
+              unoptimized
             />
           </div>
         )}
@@ -122,6 +123,7 @@ export default function CaseStudyLayout({ post }: CaseStudyLayoutProps) {
           fill
           className="object-cover"
           priority
+          unoptimized
         />
         <div className="absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-black/80 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent" />

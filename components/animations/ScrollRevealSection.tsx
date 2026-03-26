@@ -6,24 +6,28 @@ import { gsap } from "gsap";
 interface ScrollRevealSectionProps {
   children: ReactNode;
   index: number;
+  mode?: "slide" | "simple";
 }
 
 export default function ScrollRevealSection({ 
   children, 
-  index
+  index,
+  mode = "slide",
 }: ScrollRevealSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const scrollTriggerInstances = useRef<any[]>([]);
 
   useEffect(() => {
     if (!sectionRef.current || !wrapperRef.current) return;
+    let disposed = false;
+    let ctx: gsap.Context | null = null;
 
     const initAnimation = async () => {
       if (typeof window === "undefined") return;
 
       const { ScrollTrigger } = await import("gsap/ScrollTrigger");
       gsap.registerPlugin(ScrollTrigger);
+      if (disposed) return;
 
       const wrapper = wrapperRef.current;
       if (!wrapper) return;
@@ -50,62 +54,70 @@ export default function ScrollRevealSection({
       const elements = getAnimatableElements();
       if (elements.length === 0) return;
 
-      elements.forEach((el, i) => {
-        const isEven = i % 2 === 0;
-        const direction = isEven ? -1 : 1; // -1 = left, 1 = right
-        
-        gsap.set(el, {
-          x: direction * 100,
-          opacity: 0,
-          scale: 0.98,
-          force3D: true,
-          willChange: "transform, opacity",
+      ctx = gsap.context(() => {
+        if (mode === "simple") {
+          gsap.set(wrapper, {
+            y: 20,
+            opacity: 0,
+            force3D: true,
+            willChange: "transform, opacity",
+          });
+          gsap.to(wrapper, {
+            y: 0,
+            opacity: 1,
+            duration: 0.65,
+            ease: "power2.out",
+            force3D: true,
+            clearProps: "transform,willChange",
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top 92%",
+              toggleActions: "play none none none",
+              once: true,
+              invalidateOnRefresh: true,
+            },
+          });
+          return;
+        }
+
+        elements.forEach((el, i) => {
+          const direction = i % 2 === 0 ? -1 : 1;
+          gsap.set(el, {
+            y: 0,
+            x: direction * 60,
+            opacity: 0,
+            force3D: true,
+            willChange: "transform, opacity",
+          });
         });
-      });
 
-      // Create animation - VERY tightly coupled to mouse scroll movement
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 85%",
-          end: "top 50%",
-          scrub: 0.15, // Ultra-tight scrub - perfectly follows mouse scroll
-          invalidateOnRefresh: true,
-          anticipatePin: 1,
-        },
-      });
-
-      // Animate each element - directly tied to mouse scroll position
-      elements.forEach((el, i) => {
-        // Animation progresses exactly with mouse scroll - smooth and responsive
-        tl.to(el, {
+        gsap.to(elements, {
           x: 0,
+          y: 0,
           opacity: 1,
-          scale: 1,
-          duration: 2.8, // Longer duration for smoother scroll progression
-          ease: "none", // Linear - directly matches scroll position, no easing delay
+          duration: 0.9,
+          ease: "power2.out",
+          stagger: 0.08,
           force3D: true,
-        }, i * 0.1); // Optimized stagger timing
-      });
-
-      // Store ScrollTrigger instance for cleanup
-      const st = tl.scrollTrigger;
-      if (st) {
-        scrollTriggerInstances.current.push(st);
-      }
+          clearProps: "transform,willChange",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 92%",
+            toggleActions: "play none none none",
+            once: true,
+            invalidateOnRefresh: true,
+          },
+        });
+      }, wrapper);
     };
 
     initAnimation();
 
     return () => {
-      scrollTriggerInstances.current.forEach((instance) => {
-        if (instance && typeof instance.kill === "function") {
-          instance.kill();
-        }
-      });
-      scrollTriggerInstances.current = [];
+      disposed = true;
+      ctx?.revert();
     };
-  }, [index, children]);
+  }, [index]);
 
   return (
     <div ref={sectionRef} className="relative w-full overflow-hidden">
