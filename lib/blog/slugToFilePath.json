@@ -127,5 +127,6 @@
   "simplify-brand-message-effective-branding": "howToSimplifyYourBrandMessageforEffectiveBranding.ts",
   "corporate-branding-services-bangalore-guide":"lib/blog/data/corporateBrandingServicesinBangaloreGuide",
   "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
-  "find-a-partner-for-brand-visibility-audit": "ib/blog/data/indAPartnerForBrandVisibilityAudit.ts"
+  "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
+  "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts"
 }

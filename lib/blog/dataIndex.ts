@@ -132,10 +132,12 @@ import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startup
 import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarenessB2B";
 import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrandVisibilityAudit";
+import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 // Centralized blog data aggregation - all blogs are registered here
 
  
 export const allBlogsData: BlogData[] = [
+  whatToLookForInBrandStrategyAgencies,
   findAPartnerForBrandVisibilityAudit,
   howToSimplifyYourBrandMessageforEffectiveBranding,
   corporatebrandingservicesingangaloreguide,
