@@ -168,7 +168,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "corporate-branding-services-bangalore-guide":"Aaron Roshan",
   "startup-branding-strategy-bangalore-entrepreneurs":"Aaron Roshan",
   "how-to-increase-brand-awareness-in-b2b":"Aaron Roshan",
-  "simplify-brand-message-effective-branding":"Aaron Roshan"
+  "simplify-brand-message-effective-branding":"Aaron Roshan",
+  "find-a-partner-for-brand-visibility-audit":"Aaron Roshan",
+  "what-to-look-for-in-brand-strategy-agencies":"Aaron Roshan"
 };
 
 /**
@@ -310,7 +312,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "corporate-branding-services-bangalore-guide":"March 25, 2026",
   "startup-branding-strategy-bangalore-entrepreneurs":" March 24, 2026",
   "how-to-increase-brand-awareness-in-b2b":"March 25, 2026",
-  "simplify-brand-message-effective-branding":"March 25, 2026"
+  "simplify-brand-message-effective-branding":"March 25, 2026",
+  "find-a-partner-for-brand-visibility-audit":"March 26, 2026",
+  "what-to-look-for-in-brand-strategy-agencies":"March 26, 2026"
 };
 
 /**

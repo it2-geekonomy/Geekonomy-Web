@@ -126,10 +126,12 @@ import {corporatebrandingservicesinbangaloreguideSEO} from "./data/corporateBran
 import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
 import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
-
-
+import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
+import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,
+  "blog/find-a-partner-for-brand-visibility-audit": findAPartnerForBrandVisibilityAuditSEO,
   "blog/simplify-brand-message-effective-branding": howToSimplifyYourBrandMessageforEffectiveBrandingSEO,
   "blog/how-to-increase-brand-awareness-in-b2b": howToIncreaseBrandAwarenessB2BSEO,
   "blog/startup-branding-strategy-bangalore-entrepreneurs":StartupBrandingStrategyforBangaloreEntrepreneursContentSEO,
