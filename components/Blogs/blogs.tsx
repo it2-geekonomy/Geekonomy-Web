@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { BlogData, BlogTableComponentKey } from "@/lib/blog";
 import { allBlogsData } from "@/lib/blog/dataIndex";
+import { sanitizeImageSrc } from "@/lib/blog/utils";
 import { BangaloreSEOPackagesTable, MumbaiSEOPackagesTable, SmallPackageSEOTable } from "./Table";
 
 /** Section shape expected by StickyScroll (with React nodes) */
@@ -37,23 +38,26 @@ function hydrateBlog(data: BlogData): Blog {
     sections: data.sections.map((section, index) => ({
       title: index === 0 ? `${data.heading} | Geekonomy` : section.title,
       description: section.description,
-      image: isLocalPath(section.image.src) ? (
-        <Image
-          src={section.image.src}
-          alt={section.image.alt}
-          fill
-          className="object-cover rounded-xl"
-          priority={index === 0}
-        />
-      ) : (
-        <img
-          src={section.image.src}
-          alt={section.image.alt}
-          loading={index === 0 ? "eager" : "lazy"}
-          decoding="async"
-          className="w-full h-full object-cover rounded-xl"
-        />
-      ),
+      image: (() => {
+        const src = sanitizeImageSrc(section.image.src);
+        return isLocalPath(src) ? (
+          <Image
+            src={src}
+            alt={section.image.alt}
+            fill
+            className="object-cover rounded-xl"
+            priority={index === 0}
+          />
+        ) : (
+          <img
+            src={src}
+            alt={section.image.alt}
+            loading={index === 0 ? "eager" : "lazy"}
+            decoding="async"
+            className="w-full h-full object-cover rounded-xl"
+          />
+        );
+      })(),
       ...(section.tableComponent && {
         table: TABLE_COMPONENTS[section.tableComponent],
       }),

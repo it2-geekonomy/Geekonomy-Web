@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,6 +33,14 @@ export const DesktopView = ({
   authorInfo,
   dateInfo,
 }: DesktopViewProps) => {
+  const [desktopActiveCard, setDesktopActiveCard] = useState(0);
+  const displayCard = Math.min(desktopActiveCard, Math.max(content.length - 1, 0));
+
+  const activeImage =
+    content[displayCard]?.image ??
+    content[Math.max(0, displayCard - 1)]?.image ??
+    content.find((item) => item.image)?.image;
+
   useEffect(() => {
     const container = desktopRef.current;
     if (!container) return;
@@ -46,6 +54,43 @@ export const DesktopView = ({
     ensureSmooth();
     return () => observer.disconnect();
   }, [desktopRef]);
+
+  useEffect(() => {
+    const root = desktopRef.current;
+    const wrapper = sectionsWrapperRef.current;
+    if (!root || !wrapper || content.length === 0) return;
+
+    const sections = Array.from(wrapper.children) as HTMLElement[];
+    if (sections.length === 0) return;
+
+    const visibleRatios = new Map<number, number>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const idx = sections.indexOf(entry.target as HTMLElement);
+          if (idx === -1) return;
+          visibleRatios.set(idx, entry.intersectionRatio);
+        });
+
+        let bestIdx = 0;
+        let bestRatio = -1;
+        visibleRatios.forEach((ratio, idx) => {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestIdx = idx;
+          }
+        });
+        setDesktopActiveCard(bestIdx);
+      },
+      {
+        root,
+        threshold: [0.1, 0.25, 0.5, 0.75, 0.9],
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [content.length, desktopRef, sectionsWrapperRef]);
 
 
   return (
@@ -147,7 +192,9 @@ export const DesktopView = ({
           alignSelf: "flex-start",
         }}
       >
-        {content[activeCard]?.image}
+        <div key={`desktop-image-${displayCard}`} className="w-full h-full">
+          {activeImage}
+        </div>
       </div>
     </div>
   );
