@@ -129,5 +129,9 @@
   "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
   "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
   "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
+<<<<<<< HEAD
   "how-branding-affects-long-term-retention-strategies": "lib/blog/data/brandingAffectsLongTermRetentionStrategies.ts"
+=======
+  "how-branding-affects-long-term-retention-strategies": "lib/blog/data/BrandingAffectsLongTermRetentionStrategies.ts"
+>>>>>>> 1802605010e3013cc19b4ad20b157586f8c4d36f
 }
