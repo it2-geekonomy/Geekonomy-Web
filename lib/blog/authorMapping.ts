@@ -168,6 +168,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "corporate-branding-services-bangalore-guide":"Aaron Roshan",
   "startup-branding-strategy-bangalore-entrepreneurs":"Aaron Roshan",
   "how-to-increase-brand-awareness-in-b2b":"Aaron Roshan",
+   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
 };
 
 /**
@@ -309,6 +310,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "corporate-branding-services-bangalore-guide":"March 25, 2026",
   "startup-branding-strategy-bangalore-entrepreneurs":" March 24, 2026",
   "how-to-increase-brand-awareness-in-b2b":"March 25, 2026",
+  "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
 };
 
 /**
