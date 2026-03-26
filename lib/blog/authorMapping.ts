@@ -172,7 +172,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "find-a-partner-for-brand-visibility-audit": "Aaron Roshan",
   "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
-  "measure-brand-visibility-in-chatgpt": "Aaron Roshan"
+  "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
    "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
 };
 
