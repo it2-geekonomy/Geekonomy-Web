@@ -128,8 +128,11 @@ import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwar
 import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
 import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
+import { BrandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
+
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/how-branding-affects-long-term-retention-strategies": BrandingAffectsLongTermRetentionStrategiesSEO,
   "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,
   "blog/find-a-partner-for-brand-visibility-audit": findAPartnerForBrandVisibilityAuditSEO,
   "blog/simplify-brand-message-effective-branding": howToSimplifyYourBrandMessageforEffectiveBrandingSEO,
