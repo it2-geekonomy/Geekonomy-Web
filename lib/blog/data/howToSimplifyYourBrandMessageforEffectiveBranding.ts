@@ -1,4 +1,3 @@
-import { List } from "lucide-react";
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h1, h2, h3, img, list } from "../utils";
