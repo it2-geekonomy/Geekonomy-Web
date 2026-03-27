@@ -126,5 +126,6 @@
   "startup-branding-strategy-bangalore-entrepreneurs": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
   "corporate-branding-services-bangalore-guide":"lib/blog/data/corporateBrandingServicesinBangaloreGuide",
    "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
-  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions"
+  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
+  "ensure-brand-tone-multilingual-marketing":"lib/blog/data/ howDoIEnsureBrandToneinMultilingualMarketing"
 }

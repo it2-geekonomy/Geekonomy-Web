@@ -144,6 +144,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "seo-friendly-cms-find-the-best": "Rahul Dutta",
   "why-branding-is-important-for-bangalore-businesses": "Rahul Dutta",
   "seo-vs-google-ads-for-bangalore-businesses":"Rahul Dutta",
+  "ensure-brand-tone-multilingual-marketing":"Rahul Dutta",
 
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -311,6 +312,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "startup-branding-strategy-bangalore-entrepreneurs":" March 24, 2026",
   "how-to-increase-brand-awareness-in-b2b":"March 25, 2026",
   "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
+   "ensure-brand-tone-multilingual-marketing": "March 26,2026"
 };
 
 /**

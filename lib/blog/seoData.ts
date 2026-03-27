@@ -125,8 +125,8 @@ import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingC
 import {corporatebrandingservicesinbangaloreguideSEO} from "./data/corporateBrandingServicesinBangaloreGuide2026";
 import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
-
-import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { howDoIEnsureBrandToneinMultilingualMarketingSEO } from "./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "./data/howBrandingIncreasesCustomerTrustandConversions";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/how-to-increase-brand-awareness-in-b2b": howToIncreaseBrandAwarenessB2BSEO,
@@ -257,4 +257,5 @@ export const blogSEOData = {
   "blog/best-branding-agency-in-bangalore-for-startups": bestBrandingAgencyinBangaloreforStartupsSEO,
   "blog/corporate-branding-services-bangalore-guide": corporatebrandingservicesinbangaloreguideSEO,
   "blog/how-branding-increases-customer-trust-and-conversions": howBrandingIncreasesCustomerTrustandConversionsContentSEO,
+  "blog/ensure-brand-tone-multilingual-marketing": howDoIEnsureBrandToneinMultilingualMarketingSEO,
 };
