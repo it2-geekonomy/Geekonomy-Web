@@ -137,9 +137,15 @@ import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffec
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
 import { howBrandingIncreasesCustomerTrustandConversions} from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { howDoIEnsureBrandToneinMultilingualMarketing} from"./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import {WhyBrandingisImportantBeforeRunningAds} from"./data/whyBrandingisImportantBeforeRunningAds";
+import { howVerifyingOriginProtectsBrandReputation} from"./data/howVerifyingOriginProtectsBrandReputation";
+import { commonBrandingMistakesSmallBusinessesMake} from "./data/commonBrandingMistakesSmallBusinessesMake";
 // Centralized blog data aggregation - all blogs are registered here
 
 export const allBlogsData: BlogData[] = [
+  commonBrandingMistakesSmallBusinessesMake,
+  howVerifyingOriginProtectsBrandReputation,
+  WhyBrandingisImportantBeforeRunningAds,
   howDoIEnsureBrandToneinMultilingualMarketing,
   howBrandingIncreasesCustomerTrustandConversions,
   measureBrandVisibilityInChatGPT,

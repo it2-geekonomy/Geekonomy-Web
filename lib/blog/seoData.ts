@@ -132,7 +132,9 @@ import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBr
 import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
-
+import {WhyBrandingisImportantBeforeRunningAdsSEO} from"./data/whyBrandingisImportantBeforeRunningAds";
+import {howVerifyingOriginProtectsBrandReputationSEO}from "./data/howVerifyingOriginProtectsBrandReputation";
+import {commonBrandingMistakesSmallBusinessesMakeSEO}from"./data/commonBrandingMistakesSmallBusinessesMake"
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
@@ -270,4 +272,7 @@ export const blogSEOData = {
   "blog/corporate-branding-services-bangalore-guide": corporatebrandingservicesinbangaloreguideSEO,
   "blog/how-branding-increases-customer-trust-and-conversions": howBrandingIncreasesCustomerTrustandConversionsContentSEO,
   "blog/ensure-brand-tone-multilingual-marketing": howDoIEnsureBrandToneinMultilingualMarketingSEO,
+  "blog/why-branding-is-important-before-running-ads":WhyBrandingisImportantBeforeRunningAdsSEO,
+  "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
+  "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO
 };

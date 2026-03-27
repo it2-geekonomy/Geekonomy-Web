@@ -174,7 +174,10 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
-   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
+   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
+   "why-branding-is-important-before-running-ads":"Aaron Roshan",
+   "verifying-origin-protects-brand-reputation":"Aaron Roshan",
+   "common-branding-mistakes-small-businesses-make":"Aaron Roshan"
 };
 
 /**
@@ -323,6 +326,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
   "measure-brand-visibility-in-chatgpt": "March 26, 2026",
   "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
+  "why-branding-is-important-before-running-ads": "March 26,2026",
+  "common-branding-mistakes-small-businesses-make": "March 27,2026",
+  "verifying-origin-protects-brand-reputation":"March 27,2026",
   
 };
 
