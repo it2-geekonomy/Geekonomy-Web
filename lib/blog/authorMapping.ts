@@ -145,6 +145,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-branding-is-important-for-bangalore-businesses": "Rahul Dutta",
   "seo-vs-google-ads-for-bangalore-businesses": "Rahul Dutta",
   "create-internal-links-for-semantic-relevance": "Rahul Dutta",
+  "semantic-seo-agency-how-to-choose-the-best-agency":"Rahul Dutta",
 
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
@@ -327,7 +328,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
   "create-internal-links-for-semantic-relevance":  "March 27, 2026",
   "how-rebranding-can-revive-a-struggling-business":"March 27, 2026",
-  "how-to-build-brand-authority-online": "March 27, 2026"
+  "how-to-build-brand-authority-online": "March 27, 2026",
+  "semantic-seo-agency-how-to-choose-the-best-agency": "March 26, 2026"
 };
 
 /**

@@ -139,8 +139,10 @@ import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/
 import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
 
 export const allBlogsData: BlogData[] = [
+  semanticSEOAgencyHowToChooseTheBest,
   buildBrandAuthorityOnline,
   rebrandingCanReviveAStrugglingBusiness,
   CreateInternalLinksForSemanticRelevance,
