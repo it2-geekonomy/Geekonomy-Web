@@ -141,8 +141,11 @@ import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanRevi
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
+
 
 export const allBlogsData: BlogData[] = [
+  semanticContentNetworksByBenStace,
   brandingIncreasesBusinessValuation,
   semanticSEOAgencyHowToChooseTheBest,
   buildBrandAuthorityOnline,

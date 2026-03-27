@@ -135,5 +135,7 @@
   "how-rebranding-can-revive-a-struggling-business": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts",
   "how-to-build-brand-authority-online":"lib/blog/data/buildBrandAuthorityOnline.ts",
   "semantic-seo-agency-how-to-choose-the-best-agency": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
-  "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts"
+  "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
+  "semantic-content-networks-by-ben-stace": "lib/blog/data/semanticContentNetworksByBenStace.ts"
+
 }
