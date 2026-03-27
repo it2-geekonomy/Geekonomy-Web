@@ -127,8 +127,20 @@ import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./da
 import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
 import { howDoIEnsureBrandToneinMultilingualMarketingSEO } from "./data/howDoIEnsureBrandToneinMultilingualMarketing";
 import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "./data/howBrandingIncreasesCustomerTrustandConversions";
+import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
+import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
+import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
+import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
+import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
+
+
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
+  "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,
+  "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,
+  "blog/find-a-partner-for-brand-visibility-audit": findAPartnerForBrandVisibilityAuditSEO,
+  "blog/simplify-brand-message-effective-branding": howToSimplifyYourBrandMessageforEffectiveBrandingSEO,
   "blog/how-to-increase-brand-awareness-in-b2b": howToIncreaseBrandAwarenessB2BSEO,
   "blog/startup-branding-strategy-bangalore-entrepreneurs":StartupBrandingStrategyforBangaloreEntrepreneursContentSEO,
   "blog/branding-cost-in-bangalore":HowMuchDoesBrandingCostinBangaloreSEO,

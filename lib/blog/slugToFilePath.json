@@ -124,8 +124,13 @@
   "seo-vs-google-ads-for-bangalore-businesses": "lib/blog/data/seovsgoogleAdsFoeBengaloreBusiness2026Guide.ts",
   "branding-cost-in-bangalore": "lib/blog/data/howMuchDoesBrandingCostinBangalore.ts",
   "startup-branding-strategy-bangalore-entrepreneurs": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
+  "simplify-brand-message-effective-branding": "howToSimplifyYourBrandMessageforEffectiveBranding.ts",
   "corporate-branding-services-bangalore-guide":"lib/blog/data/corporateBrandingServicesinBangaloreGuide",
    "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
   "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
-  "ensure-brand-tone-multilingual-marketing":"lib/blog/data/ howDoIEnsureBrandToneinMultilingualMarketing"
+  "ensure-brand-tone-multilingual-marketing":"lib/blog/data/ howDoIEnsureBrandToneinMultilingualMarketing",
+ "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
+  "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
+  "how-branding-affects-long-term-retention-strategies": "lib/blog/data/brandingAffectsLongTermRetentionStrategies.ts"
+ 
 }
