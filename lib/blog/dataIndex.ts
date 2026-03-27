@@ -138,9 +138,10 @@ import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityIn
 import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
-
+import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 
 export const allBlogsData: BlogData[] = [
+  buildBrandAuthorityOnline,
   rebrandingCanReviveAStrugglingBusiness,
   CreateInternalLinksForSemanticRelevance,
   howBrandingIncreasesCustomerTrustandConversions,

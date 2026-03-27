@@ -133,10 +133,11 @@ import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilit
 import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
 import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
-
+import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/how-to-build-brand-authority-online": buildBrandAuthorityOnlineSEO,
   "blog/how-rebranding-can-revive-a-struggling-business": rebrandingCanReviveAStrugglingBusinessSEO,
   "blog/create-internal-links-for-semantic-relevance": CreateInternalLinksForSemanticRelevanceSEO,
   "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,

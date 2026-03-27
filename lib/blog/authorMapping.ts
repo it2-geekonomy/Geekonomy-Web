@@ -176,7 +176,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
-  "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan"
+  "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
+  "how-to-build-brand-authority-online": "Aaron Roshan"
 };
 
 /**
@@ -325,7 +326,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
   "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
   "create-internal-links-for-semantic-relevance":  "March 27, 2026",
-  "how-rebranding-can-revive-a-struggling-business":"March 27, 2026"
+  "how-rebranding-can-revive-a-struggling-business":"March 27, 2026",
+  "how-to-build-brand-authority-online": "March 27, 2026"
 };
 
 /**
