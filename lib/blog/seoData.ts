@@ -132,9 +132,12 @@ import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAf
 import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
 import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
+import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
+
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/how-rebranding-can-revive-a-struggling-business": rebrandingCanReviveAStrugglingBusinessSEO,
   "blog/create-internal-links-for-semantic-relevance": CreateInternalLinksForSemanticRelevanceSEO,
   "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
   "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,

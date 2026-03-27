@@ -137,8 +137,11 @@ import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffec
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
 import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
+import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
+
 
 export const allBlogsData: BlogData[] = [
+  rebrandingCanReviveAStrugglingBusiness,
   CreateInternalLinksForSemanticRelevance,
   howBrandingIncreasesCustomerTrustandConversions,
   measureBrandVisibilityInChatGPT,

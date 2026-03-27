@@ -131,5 +131,7 @@
   "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
   "how-branding-affects-long-term-retention-strategies": "lib/blog/data/brandingAffectsLongTermRetentionStrategies.ts",
   "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
-  "create-internal-links-for-semantic-relevance": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts"
+  "create-internal-links-for-semantic-relevance": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts",
+  "how-rebranding-can-revive-a-struggling-business": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts"
+
 }
