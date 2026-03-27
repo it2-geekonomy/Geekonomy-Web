@@ -140,8 +140,10 @@ import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLi
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 
 export const allBlogsData: BlogData[] = [
+  brandingIncreasesBusinessValuation,
   semanticSEOAgencyHowToChooseTheBest,
   buildBrandAuthorityOnline,
   rebrandingCanReviveAStrugglingBusiness,

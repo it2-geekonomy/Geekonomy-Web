@@ -135,9 +135,11 @@ import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInterna
 import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
 import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBestSEO } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesBusinessValuation";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "how-branding-increases-business-valuation": brandingIncreasesBusinessValuationSEO,
   "blog/semantic-seo-agency-how-to-choose-the-best-agency": semanticSEOAgencyHowToChooseTheBestSEO,
   "blog/how-to-build-brand-authority-online": buildBrandAuthorityOnlineSEO,
   "blog/how-rebranding-can-revive-a-struggling-business": rebrandingCanReviveAStrugglingBusinessSEO,
