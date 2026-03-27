@@ -135,10 +135,12 @@ import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrand
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
-import{howBrandingIncreasesCustomerTrustandConversions} from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
 
 export const allBlogsData: BlogData[] = [
-   howBrandingIncreasesCustomerTrustandConversions,
+  CreateInternalLinksForSemanticRelevance,
+  howBrandingIncreasesCustomerTrustandConversions,
   measureBrandVisibilityInChatGPT,
   brandingAffectsLongTermRetentionStrategies,
   whatToLookForInBrandStrategyAgencies,

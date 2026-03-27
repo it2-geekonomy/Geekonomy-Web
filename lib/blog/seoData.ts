@@ -130,10 +130,12 @@ import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBr
 import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
-
 import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
+
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/create-internal-links-for-semantic-relevance": CreateInternalLinksForSemanticRelevanceSEO,
   "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
   "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,
   "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,

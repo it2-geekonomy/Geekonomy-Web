@@ -144,8 +144,10 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "seo-friendly-cms-find-the-best": "Rahul Dutta",
   "why-branding-is-important-for-bangalore-businesses": "Rahul Dutta",
   "seo-vs-google-ads-for-bangalore-businesses": "Rahul Dutta",
+  "create-internal-links-for-semantic-relevance": "Rahul Dutta",
 
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
+
   "benefits-of-bespoke-website-development": "Aaron Roshan",
   "ecommerce-website-development-services-help-you-grow": "Aaron Roshan",
   "choose-the-right-custom-software-development-company": "Aaron Roshan",
@@ -173,7 +175,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
-   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
+  "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
 };
 
 /**
@@ -320,7 +322,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
   "measure-brand-visibility-in-chatgpt": "March 26, 2026",
   "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
-   "how-branding-increases-customer-trust-and-conversions": "March 26,2026"
+  "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
+  "create-internal-links-for-semantic-relevance":  "March 27, 2026"
 };
 
 /**
