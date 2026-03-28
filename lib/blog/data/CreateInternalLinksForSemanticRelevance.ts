@@ -2,7 +2,6 @@ import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
 import { contentToSections, p, h2, h3, img, list } from "../utils";
 
-
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/0cdeca43-03ab-4415-b614-7b85f273850a-a.webp";
 
 const image1 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/2261cb8b-0bab-4f3f-9197-5e4e5163e5ea-a1.webp";
