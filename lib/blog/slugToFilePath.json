@@ -130,5 +130,12 @@
   "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
   "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
   "how-branding-affects-long-term-retention-strategies": "lib/blog/data/brandingAffectsLongTermRetentionStrategies.ts",
-  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions"
+  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
+  "create-internal-links-for-semantic-relevance": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts",
+  "how-rebranding-can-revive-a-struggling-business": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts",
+  "how-to-build-brand-authority-online":"lib/blog/data/buildBrandAuthorityOnline.ts",
+  "semantic-seo-agency-how-to-choose-the-best-agency": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
+  "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
+  "semantic-content-networks-by-ben-stace": "lib/blog/data/semanticContentNetworksByBenStace.ts"
+
 }
