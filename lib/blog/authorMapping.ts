@@ -148,7 +148,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "create-internal-links-for-semantic-relevance": "Rahul Dutta",
   "semantic-seo-agency-how-to-choose-the-best-agency":"Rahul Dutta",
   "semantic-content-networks-by-ben-stace": "Rahul Dutta",
-
+  "best-semantic-seo-consultants-how-to-choose":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -180,7 +180,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
    "why-branding-is-important-before-running-ads":"Aaron Roshan",
    "verifying-origin-protects-brand-reputation":"Aaron Roshan",
-   "common-branding-mistakes-small-businesses-make":"Aaron Roshan"
+   "common-branding-mistakes-small-businesses-make":"Aaron Roshan",
   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
   "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
   "how-to-build-brand-authority-online": "Aaron Roshan",
@@ -337,14 +337,13 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-branding-is-important-before-running-ads": "March 26,2026",
   "common-branding-mistakes-small-businesses-make": "March 27,2026",
   "verifying-origin-protects-brand-reputation":"March 27,2026",
-  
-  "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
   "create-internal-links-for-semantic-relevance":  "March 27, 2026",
   "how-rebranding-can-revive-a-struggling-business":"March 27, 2026",
   "how-to-build-brand-authority-online": "March 27, 2026",
   "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
   "how-branding-increases-business-valuation":"March 27, 2026",
-  "semantic-content-networks-by-ben-stace": "March 27, 2026"
+  "semantic-content-networks-by-ben-stace": "March 27, 2026",
+  " best-semantic-seo-consultants-how-to-choose" :"March 27,2026"
 };
 
 /**
