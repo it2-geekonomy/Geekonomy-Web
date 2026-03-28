@@ -137,9 +137,13 @@ import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBestSEO } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetworksByBenStace";
+import { EcommerceDevelopmentCostInBangaloreSEO } from "./data/EcommerceDevelopmentCostInBangalore";
+import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
+  "blog/ecommerce-development-cost-in-bangalore": EcommerceDevelopmentCostInBangaloreSEO,
   "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
   "blog/how-branding-increases-business-valuation": brandingIncreasesBusinessValuationSEO,
   "blog/semantic-seo-agency-how-to-choose-the-best-agency": semanticSEOAgencyHowToChooseTheBestSEO,
