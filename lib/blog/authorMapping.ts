@@ -343,7 +343,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
   "how-branding-increases-business-valuation":"March 27, 2026",
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
-  " best-semantic-seo-consultants-how-to-choose" :"March 27,2026"
+  "best-semantic-seo-consultants-how-to-choose": "March 27, 2026"
 };
 
 /**
