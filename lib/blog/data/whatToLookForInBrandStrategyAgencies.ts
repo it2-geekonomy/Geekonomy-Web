@@ -32,14 +32,16 @@ p("As such, selecting a good branding agency is crucial, and it‘s worth invest
 h3("Types of Branding Services Offered"),
 p("The top branding agencies will provide a variety of branding services that aid businesses in creating brand authority."),
 p("Usually, this includes various branding facets, like:"),
-p("\u2022 Brand strategy development is essential, as brand purpose, values, and positioning are critical to elevating your brand."),
-p("\u2022 This is a very important stage in brand development."),
-p("\u2022 It‘s about designing the logo, the color palette, and typography that the company uses to illustrate its brand identity."),
-p("\u2022 Brand messaging is a key part of making sure your branding project connects with your audience, and if you‘re working with a branding agency, they‘ll make sure that happens."),
-p("\u2022 The message must connect with the audience."),
-p("\u2022 Your brand experience design is what will keep customers hooked on your brand long after the initial experience."),
-p("\u2022 It takes your brand a step beyond and helps you design positive interactions with how your brand looks and feels at each touchpoint."),
-p("\u2022 And the truth is that when looking for an agency with the branding services you require, you‘ll also have to look for a partner with the right kind of mentality."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Brand strategy development is essential, as brand purpose, values, and positioning are critical to elevating your brand.</li>
+  <li>This is a very important stage in brand development.</li>
+  <li>It‘s about designing the logo, the color palette, and typography that the company uses to illustrate its brand identity.</li>
+  <li>Brand messaging is a key part of making sure your branding project connects with your audience, and if you‘re working with a branding agency, they‘ll make sure that happens.</li>
+  <li>The message must connect with the audience.</li>
+  <li>Your brand experience design is what will keep customers hooked on your brand long after the initial experience.</li>
+  <li>It takes your brand a step beyond and helps you design positive interactions with how your brand looks and feels at each touchpoint.</li>
+  <li>And the truth is that when looking for an agency with the branding services you require, you‘ll also have to look for a partner with the right kind of mentality.</li>
+</ul>`),
 
 h3("Importance of Branding for Businesses"),
 p("Businesses of all kinds need to have branding."),
@@ -91,11 +93,13 @@ img(image2, "Evaluating Brand Strategy"),
 
 h3("Elements of a Successful Brand Strategy"),
 p("There are several things included in a brand strategy:"),
-p("\u2022 The target audience."),
-p("\u2022 Brand guidelines and a brand expert can help you fine-tune this."),
-p("\u2022 A branding company will ask who you‘re targeting first."),
-p("\u2022 The message should be targeted to the audience in order to maintain a good brand message because brand identity is so important in today‘s economy."),
-p("\u2022 A good brand story."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>The target audience.</li>
+  <li>Brand guidelines and a brand expert can help you fine-tune this.</li>
+  <li>A branding company will ask who you‘re targeting first.</li>
+  <li>The message should be targeted to the audience in order to maintain a good brand message because brand identity is so important in today‘s economy.</li>
+  <li>A good brand story.</li>
+</ul>`),
 p("A good story expresses your brand‘s values and mission, as well as your unique selling proposition."),
 p(`<div class="my-6 w-full overflow-x-auto">
 <table class="w-full border-collapse border border-gray-600 text-sm">

@@ -255,8 +255,8 @@ export const semanticSEOAgencyHowToChooseTheBestSEO = {
   title: "Semantic SEO Agency: How To Choose the Best Agency",
   description:
     "Learn how to choose the best semantic SEO agency to improve search visibility, content relevance, and long-term organic growth for your business.",
-  url: "https://geekonomytech.com/blog/semantic-seo-agency-how-to-choose-the-best-agency",
-  canonical: "https://geekonomytech.com/blog/semantic-seo-agency-how-to-choose-the-best-agency",
+  url: "https://thegeekonomy.com/blog/semantic-seo-agency-how-to-choose-the-best-agency",
+  canonical: "https://thegeekonomy.com/blog/semantic-seo-agency-how-to-choose-the-best-agency",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };

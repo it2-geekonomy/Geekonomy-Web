@@ -291,8 +291,8 @@ export const semanticContentNetworksByBenStaceSEO = {
   title: "Semantic Content Networks by Ben Stace (2026 Guide)",
   description:
     "Learn about semantic content networks by Ben Stace and how they improve topical authority, rankings, and search visibility.",
-  url: "https://geekonomytech.com/blog/semantic-content-networks-by-ben-stace",
-  canonical: "https://geekonomytech.com/blog/semantic-content-networks-by-ben-stace",
+  url: "https://thegeekonomy.com/blog/semantic-content-networks-by-ben-stace",
+  canonical: "https://thegeekonomy.com/blog/semantic-content-networks-by-ben-stace",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };

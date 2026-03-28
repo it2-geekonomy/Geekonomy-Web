@@ -39,8 +39,10 @@ p("Monitoring the visibility of your brand in ChatGPT will enable you to gauge t
 h3("Key Metrics for Measuring Brand Visibility"),
 p("Now, here are a few of the metrics you can use to track brand visibility on ChatGPT."),
 p("If you want to see your brand on ChatGPT, these are the metrics to pay attention to:"),
-p("\u2022 Mentions of our brand"),
-p("\u2022 Monitoring AI responses to measure sentiment toward your brand relative to your actual brand."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Mentions of our brand</li>
+  <li>Monitoring AI responses to measure sentiment toward your brand relative to your actual brand.</li>
+</ul>`),
 p("You can also use traditional SEO tools to check for mentions of your brand on ChatGPT, see how it‘s performing there, and gain more control over what AI sees."),
 p("You can also use an AI SEO strategy to get your brand appearing in AI answers."),
 p("Monitoring your competitors’ visibility in AI results is important so you can benchmark where you are against them and know what you need to work on."),
