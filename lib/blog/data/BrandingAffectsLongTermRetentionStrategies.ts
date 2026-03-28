@@ -58,8 +58,10 @@ p("Creating a brand that is memorable to customers and building strong customer 
 
 h3("Strategies to Build Brand Loyalty"),
 p("Loyalty can be fostered using various retention methods that are all geared towards providing customers with excellent customer service, personalized experiences, as well as brand building, and recruitment and retention methods like amazing customer service and community building."),
-p("\u2022 Consistent messaging across all consumer touch points helps build brand trust and reinforce values, offering a brand experience that is the same every time a customer interacts with your brand."),
-p("\u2022 A good branding strategy helps to build a great brand and to set your product/service apart from the competition by providing a cohesive and differentiated experience."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Consistent messaging across all consumer touch points helps build brand trust and reinforce values, offering a brand experience that is the same every time a customer interacts with your brand.</li>
+  <li>A good branding strategy helps to build a great brand and to set your product/service apart from the competition by providing a cohesive and differentiated experience.</li>
+</ul>`),
 p("Besides branding, other ways to keep customers engaged and retain loyalty are building customer loyalty programs, personalization, customer support, and creating a sense of community."),
 
 h3("Measuring Brand Loyalty Over Time"),
@@ -78,8 +80,10 @@ img(image2, "Retention Strategies"),
 h3("Effective Customer Retention Strategies"),
 p("Having great customer retention strategies is vital for long-term business growth and helps to retain customers with training and development, keeping them coming back and earning points for every purchase."),
 p("Here are the key things you should be aiming for:"),
-p("\u2022 Make the customer experience exceptional at each stage of their journey."),
-p("\u2022 Customer retention through loyalty programs is important, where you can reward loyal customers by giving them points for every transaction they make."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Make the customer experience exceptional at each stage of their journey.</li>
+  <li>Customer retention through loyalty programs is important, where you can reward loyal customers by giving them points for every transaction they make.</li>
+</ul>`),
 p("Segmentation helps you personalize customer retention marketing efforts and make sure that the brand message connects with the customer."),
 p("A powerful brand image and consistent messaging ensure the brand‘s value is communicated and the brand image is established, both crucial in terms of acquiring customer loyalty."),
 p("Once the customer retention drivers are known, they can be leveraged to create effective customer retention plans, leading to better talent acquisition and retention, which is vital in scaling your business."),
