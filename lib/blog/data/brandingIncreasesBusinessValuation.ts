@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h2, h3, img } from "../utils";
+import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/8b8cc5a1-543c-4cc8-9776-af1ef69658a0-e.webp";
@@ -61,8 +61,10 @@ p("In this way, branding helps businesses achieve sustainable growth and long-te
 h3("How a Strong Brand Increases Valuation"),
 p("So how do we value that strong brand? A brand increases our valuation for a few important reasons that intertwine."),
 p("Those reasons include:"),
-p("\u2022 Drawing leads of potential investors and buyers is a sign of credibility and trustworthiness, a measurable value that strong branding brings."),
-p("\u2022 They can help your business command a higher acquisition price because they have a market footprint and customers that are yours to acquire."),
+p(`<ul class="list-disc ml-6 space-y-1">
+  <li>Drawing leads of potential investors and buyers is a sign of credibility and trustworthiness, a measurable value that strong branding brings.</li>
+  <li>They can help your business command a higher acquisition price because they have a market footprint and customers that are yours to acquire.</li>
+</ul>`),
 p("With a powerful brand, companies gain pricing power and are able to put a higher price on their product or service."),
 p("Additionally, with branding, we create brand awareness, a step required to attract new clients and gain increased market share."),
 p("Other benefits that a great brand brings us are increased repeat business, customer loyalty, and a higher brand equity, which in turn makes your business more desirable."),
@@ -76,9 +78,11 @@ img(image1, "Building a Strong Brand"),
 h3("Key Elements of Branding"),
 p("The building blocks of your branding are the fundamental elements that will ultimately create a strong brand that has business value."),
 p("Therefore, your brand strategy needs to align with:"),
-p("\u2022 Brand Identity: The visual and non-visual elements that create a brand, logo, color palette, font, and overall look."),
-p("\u2022 Brand Voice: It is the personality and tone of voice that a brand uses in communications with its customers."),
-p("\u2022 Brand Values: It is the values and beliefs a company adheres to."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Brand Identity: The visual and non-visual elements that create a brand, including logo, color palette, font, and overall look.</li>
+  <li>Brand Voice: The personality and tone of voice that a brand uses in communications with its customers.</li>
+  <li>Brand Values: The values and beliefs a company adheres to.</li>
+</ul>`),
 p("As well as a well-formed brand, branding necessitates a clear brand positioning statement; what message the brand sends out to the public on how the brand compares with its rivals, reinforcing brand loyalty."),
 p("Business branding increases company value by establishing brand equity and brand loyalty because branding doesn‘t just create visibility, it creates advocates for the brand."),
 p("All these things must align in order to form a branded presence, a strong branded presence, and a good branded experience."),
@@ -177,8 +181,8 @@ export const brandingIncreasesBusinessValuationSEO = {
   title: "How Branding Increases Business Valuation (2026 Guide)",
   description:
     "Learn how branding increases business valuation by building trust, market position, and customer loyalty that attracts investors and drives growth.",
-  url: "https://geekonomytech.com/blog/how-branding-increases-business-valuation",
-  canonical: "https://geekonomytech.com/blog/how-branding-increases-business-valuation",
+  url: "https://thegeekonomy.com/blog/how-branding-increases-business-valuation",
+  canonical: "https://thegeekonomy.com/blog/how-branding-increases-business-valuation",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };

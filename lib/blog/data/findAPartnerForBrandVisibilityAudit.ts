@@ -61,10 +61,12 @@ p("The way your brand is being visualized on these AI platforms also has an effe
 p("How your brand shows up on an AI search is assessed on the search positions and AI citations for each AI search engine."),
 p("Brand Authority Score is a measure of your brand‘s credibility, and assessing it is an integral part of boosting your general visibility."),
 p("AI Mentions assesses both context and sentiment of brand mentions within the answers of AI and in the replies of AI Assistants like ChatGPT."),
-p("\u2022 Brand visibility metrics are essential to know how your brand is reflected in the industry."),
-p("\u2022 Evaluation of AI brand presence vs. your competitors to see whether your brand shines."),
-p("\u2022 Spots that we can improve on."),
-p("\u2022 Audit brand visibility on LLMs and make a plan to improve brand visibility on LLMs across ChatGPT."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Brand visibility metrics are essential to know how your brand is reflected in the industry.</li>
+  <li>Evaluation of AI brand presence vs. your competitors to see whether your brand shines.</li>
+  <li>Spots that we can improve on.</li>
+  <li>Audit brand visibility on LLMs and make a plan to improve brand visibility on LLMs across ChatGPT.</li>
+</ul>`),
 p("Lastly, “Here‘s how to audit your brand‘s visibility in the audit report,” will help you discover insights to improve your brand‘s AI presence."),
 
 h3("Benefits of Conducting a Visibility Audit"),
@@ -169,10 +171,12 @@ p("When you know how you are performing in AI search against competitors, both h
 h3("Creating an Actionable Plan for Improvement"),
 p("When you have a set action plan to improve, and your tactics have been optimized to determine how your brand is reflected on the Internet, your brand visibility audit should deliver results."),
 p("According to your brand visibility audit report, there should be a defined list of high-priority items you need to tackle next, which may include:"),
-p("\u2022 AI SEO & better understanding of AI."),
-p("\u2022 Optimizing content for AI Search."),
-p("\u2022 Strengthening your brand authority will help you to grow and be more seen."),
-p("\u2022 Brand's AI presence on the main AI platforms."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>AI SEO & better understanding of AI.</li>
+  <li>Optimizing content for AI Search.</li>
+  <li>Strengthening your brand authority will help you to grow and be more seen.</li>
+  <li>Brand's AI presence on the main AI platforms.</li>
+</ul>`),
 
 p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Get a Clear Picture of Your Brand’s Online Visibility</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Identify gaps, improve perception, and ensure your brand shows up where your audience is searching.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free Brand Visibility Audit</a></div>'),
 ];

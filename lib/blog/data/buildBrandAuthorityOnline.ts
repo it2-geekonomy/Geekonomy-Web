@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h2, h3, img } from "../utils";
+import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/d1f75646-ad5a-4471-ad8d-79ab64c8d40b-c.webp";
@@ -41,11 +41,13 @@ p("An 80 domain authority score can be gained if had high authoritative website 
 
 h3("Factors Influencing Brand Authority"),
 p("A few considerations can be made: there are some factors affecting the authority of a brand, such as customers’ attachment to it and their connection with the influencers. First of all, some elements can be identified as:"),
-p("\u2022 Good content because it showcases your skills and educates your readers."),
-p("\u2022 SEO Optimizing your content using important keywords is important, as this can help improve your exposure in the search engine listings and can assist your brand authority, which we should acknowledge."),
-p("\u2022 Links from strong domain authority sites."),
-p("\u2022 Content marketing strategies that play an important part in building brand authority should be at the top of your agenda."),
-p("\u2022 Followed by positive brand mentions, consumer reviews, and social media engagement will strengthen your brand authoritativeness."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Good content because it showcases your skills and educates your readers.</li>
+  <li>SEO Optimizing your content using important keywords is important, as this can help improve your exposure in the search engine listings and can assist your brand authority, which we should acknowledge.</li>
+  <li>Links from strong domain authority sites.</li>
+  <li>Content marketing strategies that play an important part in building brand authority should be at the top of your agenda.</li>
+  <li>Followed by positive brand mentions, consumer reviews, and social media engagement will strengthen your brand authoritativeness.</li>
+</ul>`),
 p("Monitoring all of these continuously and making changes in your marketing efforts accordingly is the key to reinforcing your brand authoritativeness."),
 
 h2("Ways to Build Brand Authority"),
@@ -177,8 +179,8 @@ export const buildBrandAuthorityOnlineSEO = {
   title: "How to Build Brand Authority Online (2026 Guide)",
   description:
     "Learn how to build brand authority online through consistent content, thought leadership, social proof, and strategic digital presence.",
-  url: "https://geekonomytech.com/blog/how-to-build-brand-authority-online",
-  canonical: "https://geekonomytech.com/blog/how-to-build-brand-authority-online",
+  url: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",
+  canonical: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };
