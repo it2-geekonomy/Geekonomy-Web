@@ -119,21 +119,62 @@ Lastly, concentrating on user intent ensures that the Content Network will provi
 </div>`),
 
 h3("Steps to Build a Semantic Content Network"),
-p("Phase"),
-p("Description"),
-p("Strategic Principles"),
-p("To steer a semantic content network of this kind successfully, some strategic principles can be summed up as follows:"),
-p("Examination Phase"),
-p("The first phase of our project will be dedicated to a comprehensive examination of the usage of semantics."),
-p("Action"),
-p("Action is about applying semantic techniques for successful results."),
-p("Planning & Creation"),
-p("Carry out thorough Keyword research, short-list the right topics, build a topical map, and generate content that engages users avoiding shallow content and addressing their needs."),
-p("Implementation & Optimization"),
-p("Implement semantic linking, add semantic structure to all your content, and never stop testing and optimizing your content network."),
-p("Through performance metrics and the feedback of semantic analysis, search engines in improving their content around user needs will have a more engaged audience and less shallow content."),
-p("Outcome"),
-p("These steps guarantee that your content network is successful in defining well content management practices under the semantic context."),
+p(`<div class="my-6 w-full overflow-x-auto">
+<table class="w-full border-collapse border border-gray-600 text-sm">
+<thead>
+<tr class="bg-black text-white">
+<th class="border border-gray-600 px-2 py-2 text-left">Phase</th>
+<th class="border border-gray-600 px-2 py-2 text-left">Description</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="bg-black border-b border-gray-600">
+<td class="border-r border-gray-600 px-2 py-2 text-white">Strategic Principles</td>
+<td class="border-r border-gray-600 px-2 py-2 text-white">
+To steer a semantic content network of this kind successfully, some strategic principles can be summed up as follows:
+</td>
+</tr>
+
+<tr class="bg-black border-b border-gray-600">
+<td class="border-r border-gray-600 px-2 py-2 text-white">Examination Phase</td>
+<td class="border-r border-gray-600 px-2 py-2 text-white">
+The first phase of our project will be dedicated to a comprehensive examination of the usage of semantics.
+</td>
+</tr>
+
+<tr class="bg-black border-b border-gray-600">
+<td class="border-r border-gray-600 px-2 py-2 text-white">Action</td>
+<td class="border-r border-gray-600 px-2 py-2 text-white">
+Action is about applying semantic techniques for successful results.
+</td>
+</tr>
+
+<tr class="bg-black border-b border-gray-600">
+<td class="border-r border-gray-600 px-2 py-2 text-white">Planning & Creation</td>
+<td class="border-r border-gray-600 px-2 py-2 text-white">
+Carry out thorough keyword research, shortlist the right topics, build a topical map, and generate content that engages users while avoiding shallow content and addressing their needs.
+</td>
+</tr>
+
+<tr class="bg-black border-b border-gray-600">
+<td class="border-r border-gray-600 px-2 py-2 text-white">Implementation & Optimization</td>
+<td class="border-r border-gray-600 px-2 py-2 text-white">
+Implement semantic linking, add semantic structure to all your content, and continuously test and optimize your content network.<br><br>
+Through performance metrics and feedback of semantic analysis, search engines can better align content with user needs, leading to a more engaged audience and less shallow content.
+</td>
+</tr>
+
+<tr class="bg-black border-b border-gray-600">
+<td class="border-r border-gray-600 px-2 py-2 text-white">Outcome</td>
+<td class="border-r border-gray-600 px-2 py-2 text-white">
+These steps guarantee that your content network is successful in defining well content management practices under the semantic context.
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>`),
 
 h3("Understanding Topical Authority"),
 p("Topical authority is a key term in the world of semantic SEO."),
