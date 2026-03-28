@@ -136,4 +136,12 @@
   "verifying-origin-protects-brand-reputation": "lib/blog/data/howVerifyingOriginProtectsBrandReputation",
   "common-branding-mistakes-small-businesses-make" :"lib/blog/common-branding-mistakes-small-businesses-make"
   
+  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
+  "create-internal-links-for-semantic-relevance": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts",
+  "how-rebranding-can-revive-a-struggling-business": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts",
+  "how-to-build-brand-authority-online":"lib/blog/data/buildBrandAuthorityOnline.ts",
+  "semantic-seo-agency-how-to-choose-the-best-agency": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
+  "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
+  "semantic-content-networks-by-ben-stace": "lib/blog/data/semanticContentNetworksByBenStace.ts"
+
 }

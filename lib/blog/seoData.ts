@@ -135,9 +135,22 @@ import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilit
 import {WhyBrandingisImportantBeforeRunningAdsSEO} from"./data/whyBrandingisImportantBeforeRunningAds";
 import {howVerifyingOriginProtectsBrandReputationSEO}from "./data/howVerifyingOriginProtectsBrandReputation";
 import {commonBrandingMistakesSmallBusinessesMakeSEO}from"./data/commonBrandingMistakesSmallBusinessesMake"
+import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
+import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
+import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBestSEO } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetworksByBenStace";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
+  "blog/how-branding-increases-business-valuation": brandingIncreasesBusinessValuationSEO,
+  "blog/semantic-seo-agency-how-to-choose-the-best-agency": semanticSEOAgencyHowToChooseTheBestSEO,
+  "blog/how-to-build-brand-authority-online": buildBrandAuthorityOnlineSEO,
+  "blog/how-rebranding-can-revive-a-struggling-business": rebrandingCanReviveAStrugglingBusinessSEO,
+  "blog/create-internal-links-for-semantic-relevance": CreateInternalLinksForSemanticRelevanceSEO,
   "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
   "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,
   "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,

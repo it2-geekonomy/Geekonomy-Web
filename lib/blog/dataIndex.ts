@@ -135,18 +135,32 @@ import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrand
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
-import { howBrandingIncreasesCustomerTrustandConversions} from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { howDoIEnsureBrandToneinMultilingualMarketing} from"./data/howDoIEnsureBrandToneinMultilingualMarketing";
 import {WhyBrandingisImportantBeforeRunningAds} from"./data/whyBrandingisImportantBeforeRunningAds";
 import { howVerifyingOriginProtectsBrandReputation} from"./data/howVerifyingOriginProtectsBrandReputation";
 import { commonBrandingMistakesSmallBusinessesMake} from "./data/commonBrandingMistakesSmallBusinessesMake";
 // Centralized blog data aggregation - all blogs are registered here
+import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
+import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
+import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
 
+
+ 
 export const allBlogsData: BlogData[] = [
   commonBrandingMistakesSmallBusinessesMake,
   howVerifyingOriginProtectsBrandReputation,
   WhyBrandingisImportantBeforeRunningAds,
   howDoIEnsureBrandToneinMultilingualMarketing,
+  semanticContentNetworksByBenStace,
+  brandingIncreasesBusinessValuation,
+  semanticSEOAgencyHowToChooseTheBest,
+  buildBrandAuthorityOnline,
+  rebrandingCanReviveAStrugglingBusiness,
+  CreateInternalLinksForSemanticRelevance,
   howBrandingIncreasesCustomerTrustandConversions,
   measureBrandVisibilityInChatGPT,
   brandingAffectsLongTermRetentionStrategies,
