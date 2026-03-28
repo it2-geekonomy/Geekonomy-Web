@@ -34,8 +34,10 @@ p("When your message is simple to communicate, your customer will be able to und
 h3("Elements of a Strong Brand Message"),
 p("A good brand message consists of the elements that build it into a powerful instrument for creating a memorable brand."),
 p("The message should have the following properties: a fair and efficient tagline summarizing your brand's key points."),
-p("\u2022 Authenticity is powerful. Consistent with your brand's grain."),
-p("\u2022 Effectively Voice Your Value Proposition (let the customers know the benefits of the incredible tool it is) to make it more customised."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Authenticity is powerful. Consistent with your brand's grain.</li>
+  <li>Effectively Voice Your Value Proposition (let the customers know the benefits of the incredible tool it is) to make it more customised.</li>
+</ul>`),
 p("The message also needs to be memorable and to the point so that it can be easy for your marketing teams and decision makers to use this message in their messaging efforts or to craft it into a catchy brand tagline for continuity."),
 p("The brand message should also be in line with the brand voice, such as every communication at every touch point will be heard by your target audience clearly."),
 p("These factors are powerful tools for building a strong brand and brand awareness."),
@@ -57,8 +59,10 @@ p("Identify your key messages for each social media channel."),
 p("What are the main points you want your target audience to keep in mind from each social media channel?"),
 p("Use key documents to determine those key points, and then communicate them to your internal and external team."),
 p("Use these strong tools to deliver the messages of your brand across all channels:"),
-p("\u2022 Your existing branding strategy is very important to ensure consistency in your messages,"),
-p("\u2022 Your marketing strategy must take into account customers’ opinions."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Your existing branding strategy is very important to ensure consistency in your messages,</li>
+  <li>Your marketing strategy must take into account customers’ opinions.</li>
+</ul>`),
 p("Distil these into a few short sentences that provide concrete guidance for your marketing."),
 p("Think about what your company offers that others don‘t and why you will be valuable to your customers."),
 p("There is a desire by most marketers that your company is distinctive and compelling enough to be important to your consumers."),
@@ -116,9 +120,11 @@ h3("Feedback and Customer Insights"),
 p("In order to effectively track how your brand message is resonating with your target audience, it is important that the performance data can be viewed across all media, and the right tools are used to facilitate this activity."),
 p("Feedback from your customers will also be essential in helping a small business improve its service delivery in order to increase penetration in the marketplace."),
 p("Package surveys and questionnaires to find out how well your core message is being received by your target market, and use automation tools to streamline conversations with your customers."),
-p("\u2022 Questionnaires are an effective method for gaining insights into what your target audience wants, enabling you to convey those insights and put your products in the best light."),
-p("\u2022 Focus groups can have a practical impact on improving your market position as they identify areas where you can improve your marketing and help you target your business more effectively."),
-p("\u2022 Listening on social media provides a treasure trove of insights about your audience and your messaging communications efforts."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Questionnaires are an effective method for gaining insights into what your target audience wants, enabling you to convey those insights and put your products in the best light.</li>
+  <li>Focus groups can have a practical impact on improving your market position as they identify areas where you can improve your marketing and help you target your business more effectively.</li>
+  <li>Listening on social media provides a treasure trove of insights about your audience and your messaging communications efforts.</li>
+</ul>`),
 p("Utilize customer feedback and customer interaction to collect data on customer perceptions and preferences."),
 p("Using their feedback to find opportunities where your brand message is clear and confident while noting possible areas of enhancement, actionable insights can help optimize your communication approach."),
 p("This iterative process guarantees that your brand voice aligns with consumer expectations, can drive brand awareness, and establish credibility using repeating marketing tools to help you streamline."),
