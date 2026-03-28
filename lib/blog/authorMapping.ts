@@ -180,7 +180,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
    "why-branding-is-important-before-running-ads":"Aaron Roshan",
    "verifying-origin-protects-brand-reputation":"Aaron Roshan",
-   "common-branding-mistakes-small-businesses-make":"Aaron Roshan"
+   "common-branding-mistakes-small-businesses-make":"Aaron Roshan",
   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
   "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
   "how-to-build-brand-authority-online": "Aaron Roshan",
