@@ -149,6 +149,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "semantic-seo-agency-how-to-choose-the-best-agency":"Rahul Dutta",
   "semantic-content-networks-by-ben-stace": "Rahul Dutta",
   "best-semantic-seo-consultants-how-to-choose":"Rahul Dutta",
+  "why-you-need-a-free-seo-audit":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -343,7 +344,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
   "how-branding-increases-business-valuation":"March 27, 2026",
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
-  "best-semantic-seo-consultants-how-to-choose": "March 27, 2026"
+  "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
+  "why-you-need-a-free-seo-audit":"March 28,2026",
 };
 
 /**
