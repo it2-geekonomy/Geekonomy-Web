@@ -125,15 +125,32 @@ import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingC
 import {corporatebrandingservicesinbangaloreguideSEO} from "./data/corporateBrandingServicesinBangaloreGuide2026";
 import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
 import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
+import { howDoIEnsureBrandToneinMultilingualMarketingSEO } from "./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "./data/howBrandingIncreasesCustomerTrustandConversions";
 import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
 import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
 import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
-
+import {WhyBrandingisImportantBeforeRunningAdsSEO} from"./data/whyBrandingisImportantBeforeRunningAds";
+import {howVerifyingOriginProtectsBrandReputationSEO}from "./data/howVerifyingOriginProtectsBrandReputation";
+import {commonBrandingMistakesSmallBusinessesMakeSEO}from"./data/commonBrandingMistakesSmallBusinessesMake"
 import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
+import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
+import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBestSEO } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetworksByBenStace";
+
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
+  "blog/how-branding-increases-business-valuation": brandingIncreasesBusinessValuationSEO,
+  "blog/semantic-seo-agency-how-to-choose-the-best-agency": semanticSEOAgencyHowToChooseTheBestSEO,
+  "blog/how-to-build-brand-authority-online": buildBrandAuthorityOnlineSEO,
+  "blog/how-rebranding-can-revive-a-struggling-business": rebrandingCanReviveAStrugglingBusinessSEO,
+  "blog/create-internal-links-for-semantic-relevance": CreateInternalLinksForSemanticRelevanceSEO,
   "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
   "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,
   "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,
@@ -267,4 +284,8 @@ export const blogSEOData = {
   "blog/best-branding-agency-in-bangalore-for-startups": bestBrandingAgencyinBangaloreforStartupsSEO,
   "blog/corporate-branding-services-bangalore-guide": corporatebrandingservicesinbangaloreguideSEO,
   "blog/how-branding-increases-customer-trust-and-conversions": howBrandingIncreasesCustomerTrustandConversionsContentSEO,
+  "blog/ensure-brand-tone-multilingual-marketing": howDoIEnsureBrandToneinMultilingualMarketingSEO,
+  "blog/why-branding-is-important-before-running-ads":WhyBrandingisImportantBeforeRunningAdsSEO,
+  "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
+  "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO
 };

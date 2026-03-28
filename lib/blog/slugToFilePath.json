@@ -126,9 +126,22 @@
   "startup-branding-strategy-bangalore-entrepreneurs": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
   "simplify-brand-message-effective-branding": "howToSimplifyYourBrandMessageforEffectiveBranding.ts",
   "corporate-branding-services-bangalore-guide":"lib/blog/data/corporateBrandingServicesinBangaloreGuide",
-  "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
-  "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
+   "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
+  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
+  "ensure-brand-tone-multilingual-marketing":"lib/blog/data/ howDoIEnsureBrandToneinMultilingualMarketing",
+ "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
   "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
   "how-branding-affects-long-term-retention-strategies": "lib/blog/data/brandingAffectsLongTermRetentionStrategies.ts",
-  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions"
+  "why-branding-is-important-before-running-ads":"lib/blog/data/WhyBrandingisImportantBeforeRunningAds",
+  "verifying-origin-protects-brand-reputation": "lib/blog/data/howVerifyingOriginProtectsBrandReputation",
+  "common-branding-mistakes-small-businesses-make" :"lib/blog/common-branding-mistakes-small-businesses-make"
+  
+  "how-branding-increases-customer-trust-and-conversions":"lib/blog/data/howBrandingIncreasesCustomerTrustandConversions",
+  "create-internal-links-for-semantic-relevance": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts",
+  "how-rebranding-can-revive-a-struggling-business": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts",
+  "how-to-build-brand-authority-online":"lib/blog/data/buildBrandAuthorityOnline.ts",
+  "semantic-seo-agency-how-to-choose-the-best-agency": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
+  "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
+  "semantic-content-networks-by-ben-stace": "lib/blog/data/semanticContentNetworksByBenStace.ts"
+
 }

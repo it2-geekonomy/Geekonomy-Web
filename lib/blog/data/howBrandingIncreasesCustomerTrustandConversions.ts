@@ -173,8 +173,8 @@ export const  howBrandingIncreasesCustomerTrustandConversions: BlogData = {
 export const  howBrandingIncreasesCustomerTrustandConversionsContentSEO = {
   title: "How Branding Increases Customer Trust and Conversions",
   description: "Discover how branding builds customer trust, improves credibility, and increases conversions by creating a consistent and memorable experience.",
-  url: "https://geekonomytech.com/blog/how-branding-increases-customer-trust-and-conversions",
-  canonical: "https://geekonomytech.com/blog/how-branding-increases-customer-trust-and-conversions",
+  url: "https://thegeekonomy.com/blog/how-branding-increases-customer-trust-and-conversions",
+  canonical: "https://thegeekonomy.com/blog/how-branding-increases-customer-trust-and-conversions",
   image :coverImage ,
   twitterHandle: "@GeekonomyTech",
 };
