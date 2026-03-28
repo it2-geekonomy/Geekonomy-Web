@@ -135,6 +135,11 @@ import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrand
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
+import { howDoIEnsureBrandToneinMultilingualMarketing} from"./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import {WhyBrandingisImportantBeforeRunningAds} from"./data/whyBrandingisImportantBeforeRunningAds";
+import { howVerifyingOriginProtectsBrandReputation} from"./data/howVerifyingOriginProtectsBrandReputation";
+import { commonBrandingMistakesSmallBusinessesMake} from "./data/commonBrandingMistakesSmallBusinessesMake";
+// Centralized blog data aggregation - all blogs are registered here
 import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
@@ -146,6 +151,10 @@ import { semanticContentNetworksByBenStace } from "./data/semanticContentNetwork
 
  
 export const allBlogsData: BlogData[] = [
+  commonBrandingMistakesSmallBusinessesMake,
+  howVerifyingOriginProtectsBrandReputation,
+  WhyBrandingisImportantBeforeRunningAds,
+  howDoIEnsureBrandToneinMultilingualMarketing,
   semanticContentNetworksByBenStace,
   brandingIncreasesBusinessValuation,
   semanticSEOAgencyHowToChooseTheBest,
