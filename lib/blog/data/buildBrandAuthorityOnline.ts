@@ -41,11 +41,13 @@ p("An 80 domain authority score can be gained if had high authoritative website 
 
 h3("Factors Influencing Brand Authority"),
 p("A few considerations can be made: there are some factors affecting the authority of a brand, such as customers’ attachment to it and their connection with the influencers. First of all, some elements can be identified as:"),
-p("\u2022 Good content because it showcases your skills and educates your readers."),
-p("\u2022 SEO Optimizing your content using important keywords is important, as this can help improve your exposure in the search engine listings and can assist your brand authority, which we should acknowledge."),
-p("\u2022 Links from strong domain authority sites."),
-p("\u2022 Content marketing strategies that play an important part in building brand authority should be at the top of your agenda."),
-p("\u2022 Followed by positive brand mentions, consumer reviews, and social media engagement will strengthen your brand authoritativeness."),
+p(`<ul class="list-disc ml-6 space-y-1">
+  <li>Good content because it showcases your skills and educates your readers.</li>
+  <li>SEO Optimizing your content using important keywords is important, as this can help improve your exposure in the search engine listings and can assist your brand authority, which we should acknowledge.</li>
+  <li>Links from strong domain authority sites.</li>
+  <li>Content marketing strategies that play an important part in building brand authority should be at the top of your agenda.</li>
+  <li>Followed by positive brand mentions, consumer reviews, and social media engagement will strengthen your brand authoritativeness.</li>
+</ul>`),
 p("Monitoring all of these continuously and making changes in your marketing efforts accordingly is the key to reinforcing your brand authoritativeness."),
 
 h2("Ways to Build Brand Authority"),
