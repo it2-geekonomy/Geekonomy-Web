@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h2, h3, img } from "../utils";
+import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/973272aa-522f-466c-8311-c2e0dd91292c-b.webp";
@@ -31,9 +31,10 @@ p("Knowing how to build brand value really means knowing how to translate extens
 h3("Indicators of a Lagging Brand"),
 p("Below are certain tell-tale signs that your brand might need a freshen or even a total rebrand."),
 p("These common warning signs are signs of problem areas that need some new strategies to avoid the problem becoming overwhelming, especially recent changes in customer attitudes that may influence loyalty."),
-p(`<ul class="list-disc ml-6 space-y-1">
-<li>When sales or customer numbers are falling.</li> 
-<li>Negative customer reviews.</li> <li>A mismatch between the existing branding and what the customer expects.</li> 
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>When sales or customer numbers are falling.</li>
+  <li>Negative customer reviews.</li>
+  <li>A mismatch between the existing branding and what the customer expects.</li>
 </ul>`),
 p("Like a product, a business may discover its logo or visual identity is playing catch-up with the market."),
 p("In the harsher environment of the 21 st century, it is more difficult for a company to be differentiated."),
@@ -64,9 +65,9 @@ p("A full rebrand is required in instances where the brand has missed a vital fo
 h3("Elements of a Successful Rebranding"),
 p("Rebranding successfully requires a strategic and consistent approach to certain components."),
 p("Firstly, you need a brand audit, which includes:"),
-p(`<ul class="list-disc ml-6 space-y-1">
-<li>What are the current brand‘s strengths and weaknesses?</li> 
-<li>Collecting qualitative feedback through customer comments and quantitative analysis can be crucial for business renewal and closing a sale at a premium price.</li> 
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>What are the current brand‘s strengths and weaknesses?</li>
+  <li>Collecting qualitative feedback through customer comments and quantitative analysis can be crucial for business renewal and closing a sale at a premium price.</li>
 </ul>`),
 p("The new corporate identity will need toreflect and communicate a strategic direction that appeals to the identification and target audience."),
 p("A great themed corporate story should be created to set the brand apart from the competitors."),
@@ -100,9 +101,9 @@ h3("Lessons Learned from Rebranding Efforts"),
 p("From the examination of successful rebranding, the following key lessons learned may give business owners the right insights about how to make customers pay more."),
 p("Some of these lessons are especially relevant to this issue,"),
 p("such as:"),
-p(`<ul class="list-disc ml-6 space-y-1">
-<li>A deep understanding of the target audience, so that the refreshed brand is supported by qualitative insight from customer comments.</li> 
-<li>Brand strategy needs to be closely aligned with the direction of the company; it should be well defined and all over communicated within and outside the company.</li> 
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>A deep understanding of the target audience, so that the refreshed brand is supported by qualitative insight from customer comments.</li>
+  <li>Brand strategy needs to be closely aligned with the direction of the company; it should be well defined and all over communicated within and outside the company.</li>
 </ul>`),
 p("Other principles include considering not only the modernisation, but also allowing your consumers to keep their heritage by keeping loyal customers who value the business to take the world of their products."),
 p("Also, the rebranding needs to be supported with monitoring and analytics to track the effect."),
@@ -178,8 +179,8 @@ export const rebrandingCanReviveAStrugglingBusinessSEO = {
   title: "How Rebranding Can Revive a Struggling Business",
   description:
     "Discover how rebranding can revive a struggling business by improving perception, attracting new customers, and repositioning for growth.",
-  url: "https://geekonomytech.com/blog/how-rebranding-can-revive-a-struggling-business",
-  canonical: "https://geekonomytech.com/blog/how-rebranding-can-revive-a-struggling-business",
+  url: "https://thegeekonomy.com/blog/how-rebranding-can-revive-a-struggling-business",
+  canonical: "https://thegeekonomy.com/blog/how-rebranding-can-revive-a-struggling-business",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };

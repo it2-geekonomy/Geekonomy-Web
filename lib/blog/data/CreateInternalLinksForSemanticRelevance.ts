@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h2, h3, img } from "../utils";
+import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/0cdeca43-03ab-4415-b614-7b85f273850a-a.webp";
@@ -73,8 +73,10 @@ h3("Steps to Add New Internal Links"),
 p("Must-have internal links and where to start adding internal links."),
 p("This is for building internal links, so initially, you should focus on some fundamental internal links to have in place."),
 p("For example, you need to think about what kind of internal links are associated with your content and benefit your SEO:"),
-p("\u2022 Point out cornerstone content or important pages to emphasize while internally linking to find more relevant content connections."),
-p("\u2022 Perform an extensive internal link audit to determine if the highly relevant and powerful pages have many internal links pointed toward them."),
+list(`<ul class="list-disc ml-6 space-y-1">
+  <li>Point out cornerstone content or important pages to emphasize while internally linking to find more relevant content connections.</li>
+  <li>Perform an extensive internal link audit to determine if the highly relevant and powerful pages have many internal links pointed toward them.</li>
+</ul>`),
 p("In addition, look at your current content for places where you can naturally add internal links and make sure they add value to the user and include links to HTTP pages."),
 p("Select relevant anchor texts that integrate with the context of the content and anchor to the highly relevant pages."),
 p("Use descriptive phrases related to the semantic relation of the content, and also include links to related content for more opportunities for internal link anchors."),
@@ -146,8 +148,8 @@ export const CreateInternalLinksForSemanticRelevanceSEO = {
   title: "How to Create Internal Links for Semantic Relevance",
   description:
     "Learn how to create internal links for semantic relevance to improve SEO, boost rankings, and help search engines understand your content structure.",
-  url: "https://geekonomytech.com/blog/create-internal-links-for-semantic-relevance",
-  canonical: "https://geekonomytech.com/blog/create-internal-links-for-semantic-relevance",
+  url: "https://thegeekonomy.com/blog/create-internal-links-for-semantic-relevance",
+  canonical: "https://thegeekonomy.com/blog/create-internal-links-for-semantic-relevance",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };

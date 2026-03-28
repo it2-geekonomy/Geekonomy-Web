@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h2, h3, img } from "../utils";
+import { contentToSections, p, h2, h3, img, list } from "../utils";
 
 
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/d1f75646-ad5a-4471-ad8d-79ab64c8d40b-c.webp";
@@ -41,7 +41,7 @@ p("An 80 domain authority score can be gained if had high authoritative website 
 
 h3("Factors Influencing Brand Authority"),
 p("A few considerations can be made: there are some factors affecting the authority of a brand, such as customers’ attachment to it and their connection with the influencers. First of all, some elements can be identified as:"),
-p(`<ul class="list-disc ml-6 space-y-1">
+list(`<ul class="list-disc ml-6 space-y-1">
   <li>Good content because it showcases your skills and educates your readers.</li>
   <li>SEO Optimizing your content using important keywords is important, as this can help improve your exposure in the search engine listings and can assist your brand authority, which we should acknowledge.</li>
   <li>Links from strong domain authority sites.</li>
@@ -179,8 +179,8 @@ export const buildBrandAuthorityOnlineSEO = {
   title: "How to Build Brand Authority Online (2026 Guide)",
   description:
     "Learn how to build brand authority online through consistent content, thought leadership, social proof, and strategic digital presence.",
-  url: "https://geekonomytech.com/blog/how-to-build-brand-authority-online",
-  canonical: "https://geekonomytech.com/blog/how-to-build-brand-authority-online",
+  url: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",
+  canonical: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };
