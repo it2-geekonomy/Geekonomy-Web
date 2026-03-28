@@ -157,8 +157,8 @@ export const howDoIEnsureBrandToneinMultilingualMarketingSEO = {
   title: "How Do I Ensure Brand Tone in Multilingual Marketing",
   description:
     " Learn how to maintain consistent brand tone in multilingual marketing by aligning messaging, localization, and cultural nuances effectively.",
-  url: "https://geekonomytech.com/blog/ensure-brand-tone-multilingual-marketing",
-  canonical: "https://geekonomytech.com/blog/ensure-brand-tone-multilingual-marketing",
+  url: "https://thegeekonomy.com/blog/ensure-brand-tone-multilingual-marketing",
+  canonical: "https://thegeekonomy.com//blog/ensure-brand-tone-multilingual-marketing",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };
