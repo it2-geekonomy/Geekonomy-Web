@@ -135,11 +135,24 @@ import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrand
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
-import{howBrandingIncreasesCustomerTrustandConversions} from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
+import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
+import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
+
 
  
 export const allBlogsData: BlogData[] = [
-   howBrandingIncreasesCustomerTrustandConversions,
+  semanticContentNetworksByBenStace,
+  brandingIncreasesBusinessValuation,
+  semanticSEOAgencyHowToChooseTheBest,
+  buildBrandAuthorityOnline,
+  rebrandingCanReviveAStrugglingBusiness,
+  CreateInternalLinksForSemanticRelevance,
+  howBrandingIncreasesCustomerTrustandConversions,
   measureBrandVisibilityInChatGPT,
   brandingAffectsLongTermRetentionStrategies,
   whatToLookForInBrandStrategyAgencies,
