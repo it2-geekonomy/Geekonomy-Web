@@ -140,17 +140,18 @@ import {WhyBrandingisImportantBeforeRunningAds} from"./data/whyBrandingisImporta
 import { howVerifyingOriginProtectsBrandReputation} from"./data/howVerifyingOriginProtectsBrandReputation";
 import { commonBrandingMistakesSmallBusinessesMake} from "./data/commonBrandingMistakesSmallBusinessesMake";
 // Centralized blog data aggregation - all blogs are registered here
-import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { howBrandingIncreasesCustomerTrustandConversions } from"./data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
-
+import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 
  
 export const allBlogsData: BlogData[] = [
+  bestSemanticSEOConsultantsHowtoChoosetheRight,
   commonBrandingMistakesSmallBusinessesMake,
   howVerifyingOriginProtectsBrandReputation,
   WhyBrandingisImportantBeforeRunningAds,

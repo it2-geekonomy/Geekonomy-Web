@@ -135,14 +135,13 @@ import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilit
 import {WhyBrandingisImportantBeforeRunningAdsSEO} from"./data/whyBrandingisImportantBeforeRunningAds";
 import {howVerifyingOriginProtectsBrandReputationSEO}from "./data/howVerifyingOriginProtectsBrandReputation";
 import {commonBrandingMistakesSmallBusinessesMakeSEO}from"./data/commonBrandingMistakesSmallBusinessesMake"
-import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
 import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
 import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBestSEO } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetworksByBenStace";
-
+import { bestSemanticSEOConsultantsHowtoChoosetheRightSEO } from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
@@ -287,5 +286,6 @@ export const blogSEOData = {
   "blog/ensure-brand-tone-multilingual-marketing": howDoIEnsureBrandToneinMultilingualMarketingSEO,
   "blog/why-branding-is-important-before-running-ads":WhyBrandingisImportantBeforeRunningAdsSEO,
   "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
-  "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO
+  "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO,
+  "blog/best-semantic-seo-consultants-how-to-choose":  bestSemanticSEOConsultantsHowtoChoosetheRightSEO
 };
