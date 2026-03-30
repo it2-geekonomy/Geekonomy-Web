@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { StickyScrollContent, AuthorInfo } from "../types";
+import { StickyScrollContent, AuthorInfo, DateInfo } from "../types";
 import { NAV_HEIGHT, OPACITY_TRANSITION } from "../constants";
 import { getImageHeight, calculateContentPadding, stripHeadingTags } from "../utils";
 import { useSectionVisibility } from "../hooks";
@@ -26,7 +26,7 @@ interface MobileViewProps {
   contentRef: React.RefObject<HTMLDivElement | null>;
   useSemanticHeadings?: boolean;
   authorInfo?: AuthorInfo;
-  dateInfo?: { date: string; label: "Published" | "Updated" } | null;
+  dateInfo?: DateInfo | null;
 }
 
 export const MobileView = ({
