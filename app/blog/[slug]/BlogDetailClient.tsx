@@ -6,11 +6,16 @@ import Image from "next/image";
 import { BLOGS } from "@/components/Blogs/blogs";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { BlogCTAModal } from "@/components/Blogs/BlogCTAModal";
-import { getAuthorForBlog, getDateInfo, getAuthorSlug } from "@/lib/blog/authorMapping";
+import {
+  getAuthorForBlog,
+  getDateInfo,
+  getAuthorSlug,
+  type BlogDateDisplayLabel,
+} from "@/lib/blog/authorMapping";
 
 const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
-export type DateInfoProp = { date: string; label: "Published" | "Updated" };
+export type DateInfoProp = { date: string; label: BlogDateDisplayLabel };
 
 interface BlogDetailClientProps {
   blogSlug: string;

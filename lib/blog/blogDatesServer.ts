@@ -1,14 +1,14 @@
 /**
  * Server-only: uses fs to get blog file mtime. Import only from server components.
- * Shows "Updated {date}" when file was modified after published date; otherwise "Published {date}".
+ * Shows "Updated On : " when file was modified after published date; otherwise "Published On : ".
  */
 import fs from "fs";
 import path from "path";
-import { BLOG_PUBLISHED_DATES } from "./authorMapping";
+import { BLOG_PUBLISHED_DATES, type BlogDateDisplayLabel } from "./authorMapping";
 
 export type DateInfo = {
   date: string;
-  label: "Published" | "Updated";
+  label: BlogDateDisplayLabel;
   publishedDate: string;
   updatedDate: string | null;
 };
@@ -56,8 +56,8 @@ function getSlugToFilePath(): Record<string, string> {
 
 /**
  * Returns date info using file mtime. Call from server only.
- * - Show "Updated" only when you set a publish date in BLOG_PUBLISHED_DATES and the file was edited after that.
- * - Otherwise show "Published" (file mtime or manual publish date).
+ * - Show "Updated On : " only when you set a publish date in BLOG_PUBLISHED_DATES and the file was edited after that.
+ * - Otherwise show "Published On : " (file mtime or manual publish date).
  */
 export function getDateInfoServer(slug: string): DateInfo {
   const map = getSlugToFilePath();
@@ -87,7 +87,7 @@ export function getDateInfoServer(slug: string): DateInfo {
   if (showUpdated && formattedMtime) {
     return {
       date: formattedMtime,
-      label: "Updated",
+      label: "Updated On : ",
       publishedDate: publishedOverride!,
       updatedDate: formattedMtime,
     };
@@ -95,7 +95,7 @@ export function getDateInfoServer(slug: string): DateInfo {
 
   return {
     date: publishedDate,
-    label: "Published",
+    label: "Published On : ",
     publishedDate,
     updatedDate: null,
   };
