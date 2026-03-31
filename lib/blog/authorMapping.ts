@@ -187,7 +187,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
   "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
   "how-to-build-brand-authority-online": "Aaron Roshan",
-  "how-branding-increases-business-valuation":"Aaron Roshan"
+  "how-branding-increases-business-valuation":"Aaron Roshan",
+  "hire-brand-ambassadors-for-your-business":"Aaron Roshan"
 
 };
 
