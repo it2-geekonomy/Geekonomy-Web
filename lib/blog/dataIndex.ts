@@ -147,9 +147,15 @@ import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
+import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
+import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
+
+
 export const allBlogsData: BlogData[] = [
+   benStaceSemanticSEOWritingToolBoostYourRanking,
+  EcommerceDevelopmentCostInBangalore,
   whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,
   commonBrandingMistakesSmallBusinessesMake,
