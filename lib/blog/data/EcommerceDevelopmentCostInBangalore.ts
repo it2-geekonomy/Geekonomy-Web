@@ -1,6 +1,6 @@
 import type { BlogData } from "../types";
 import type { BlogContentItem } from "../utils";
-import { contentToSections, p, h2, h3, img } from "../utils";
+import { contentToSections, p, h2, h3, img, list, } from "../utils";
 
 
 const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/f088283e-00a0-4073-a3e1-80f7fa9bfd9f-a.webp";
@@ -46,16 +46,16 @@ p(`<div class="my-6 w-full overflow-x-auto">
 <table class="w-full border-collapse border border-gray-600 text-sm">
 <thead>
 <tr class="bg-black text-white">
-<th class="border border-gray-600 px-2 py-2 text-left">E-commerce Solution Type</th>
-<th class="border border-gray-600 px-2 py-2 text-left">Estimated Cost (INR)</th>
-<th class="border border-gray-600 px-2 py-2 text-left">Notes</th>
+<th class="border border-gray-600 px-2 py-2 text-left"><strong>E-commerce Solution Type</strong></th>
+<th class="border border-gray-600 px-2 py-2 text-left"><strong>Estimated Cost (INR)</strong></th>
+<th class="border border-gray-600 px-2 py-2 text-left"><strong>Notes</strong></th>
 </tr>
 </thead>
 <tbody>
 
 <tr class="bg-black border-b border-gray-600">
 <td class="border-r border-gray-600 px-2 py-2 text-white">
-Basic E-commerce Website
+<strong>Basic E-commerce Website</strong>
 </td>
 <td class="border-r border-gray-600 px-2 py-2 text-white">
 ₹50,000 – ₹60,000
@@ -67,7 +67,7 @@ Focus on overall user experience; includes standard items hand-crafted by the de
 
 <tr class="bg-black border-b border-gray-600">
 <td class="border-r border-gray-600 px-2 py-2 text-white">
-Complex E-commerce Website
+<strong>Complex E-commerce Website</strong>
 </td>
 <td class="border-r border-gray-600 px-2 py-2 text-white">
 ₹70,000 – ₹80,000
@@ -79,7 +79,7 @@ Requires attention to creative website components and user-friendly interfaces; 
 
 <tr class="bg-black border-b border-gray-600">
 <td class="border-r border-gray-600 px-2 py-2 text-white">
-E-commerce App
+<strong>E-commerce App</strong>
 </td>
 <td class="border-r border-gray-600 px-2 py-2 text-white">
 ₹2,00,000 – ₹6,00,000
@@ -98,7 +98,7 @@ p("Need to get a detailed quotation from a few website development companies."),
 h3("Comparison of Costs: Bangalore vs. Other Indian Cities"),
 p("In comparing Bangalore’s cost of website development to other large Indian cities, we gain an interesting insight into each city‘s development value and can ask how much it costs in each location."),
 p("Given the high-end design and development work, Bangalore is generally more expensive than cities like Jaipur or Ahmedabad, and is more comparable to Mumbai or Delhi."),
-p("This contributes to the overall cost of a complex app development and is a common question consumers ask: how much does it cost in these cities?"),
+p("This contributes to the overall cost of a complex app development and is a common question consumers ask: <strong>how much does it cost in these cities?</strong>"),
 p("The higher website cost in Bangalore is due to the large number of talented e-commerce website development professionals and the associated market demand for quality design and development work."),
 p("Additionally, the competitive landscape, combined with the emphasis on high-end user experience and design in Bangalore, naturally results in a more expensive cost to build an e-commerce platform."),
 p("Therefore, the question of how much e-commerce website development costs in India should be evaluated by considering India’s holistic market dynamics, talent availability, and city-specific demand for quality web development services."),
@@ -136,7 +136,7 @@ img(image2, "Cost to Develop an Ecommerce App"),
 h3("Evaluating Ecommerce App Development Costs in Bangalore"),
 p("E-commerce businesses in Bangalore planning to start with e-commerce mobile app development should be in for a reality check on the cost part."),
 p("The cost of developing an e-commerce app in Bangalore depends on the app‘s sophistication, customization,  design value, and development value."),
-p("Cost: The exact cost depends on the desired functionality and features, and also the experience of the e-commerce developer (in case of an enterprise-level application)"),
+p("<strong>Cost:</strong> The exact cost depends on the desired functionality and features, and also the experience of the e-commerce developer (in case of an enterprise-level application)"),
 p("If your app only has basic functionalities and a few features, the cost of development will be significantly lower than an app with so many features like virtual try-on,  personal recommendations, integrations, etc."),
 p("Once you have a well-defined scope for your e-commerce app development, get quotes on an hourly and project basis from a variety of web development companies in Bangalore."),
 p("With this process, we can get a realistic sense of what you need to invest in your e-commerce application."),
@@ -145,17 +145,22 @@ h3("Essential Features of an Ecommerce App"),
 p("There are some features that affect the cost of e-commerce app development the most."),
 p("Some of these functions are necessary to make a good application."),
 p("Developers build these to please the user."),
-p("Payment Gateway integration: It is the most significant feature of any e-commerce application."),
+p("<strong>Payment Gateway Integration:</strong> It is the most significant feature of any e-commerce application."),
 p("It is the key to securing monetary transactions."),
 p("Adding a payment system that is safe and secure is part of the development."),
-p("Navigation & Search Features:  Navigation should be easy-to-use."),
+
+p("<strong>Navigation & Search Features:</strong> Navigation should be easy-to-use."),
 p("Searches also need to be streamlined and efficient. Designers focus on making the experience easy to understand."),
-p("And of course,  the most common questions that arise from companies are: “How much is this to set up?”"),
-p("Engagement: Push notifications, customer reviews, social media integration, and other social features make your app highly engaging and sticky for users."),
-p("Security Practices:  The use of robust security measures to safeguard the user information."),
+p("And of course, the most common questions that arise from companies are: “How much is this to set up?”"),
+
+p("<strong>Engagement:</strong> Push notifications, customer reviews, social media integration, and other social features make your app highly engaging and sticky for users."),
+
+p("<strong>Security Practices:</strong> The use of robust security measures to safeguard the user information."),
 p("They have to embed these features with utmost care to maintain the balance between safety and usability."),
-p("Advanced Capabilities: AI-based recommendations and augmented reality (AR) features for product visualization would add to the cost."),
+
+p("<strong>Advanced Capabilities:</strong> AI-based recommendations and augmented reality (AR) features for product visualization would add to the cost."),
 p("The more complex and comprehensive your e-commerce app is, the more expensive it will be to build."),
+
 p("Planning the right set of features in the beginning phase can help you invest wisely and develop a scalable and strong e-commerce solution in Bangalore."),
 
 h3("Benefits of Having an Ecommerce App in Bangalore"),
@@ -174,7 +179,7 @@ h3("Understanding Ongoing Website Maintenance Costs"),
 p("When it comes to e-commerce and responsive designs, website maintenance isn‘t always taken into account, but it should be a vital part."),
 p("The website maintenance costs can vary depending on the intricacy of your e-commerce site and how much support needed for custom website development."),
 p("These costs must be considered as part of the overall development pricing."),
-p("Maintaining your WordPress site, including security patches, plugin updates, and performance optimizations, is vital to ensure a secure and properly functioning e-commerce website."),
+p("Maintaining your <strong>WordPress site</strong>, including security patches, plugin updates, and performance optimizations, is vital to ensure a secure and properly functioning e-commerce website."),
 p("Proper maintenance protects the user browsing experience, reduces website building costs over time, and addresses the question: What is the cost to maintain security?"),
 p("Planning for website maintenance in advance allows you to avoid expensive errors down the road and ensures a scalable platform for your e-commerce development."),
 p("This naturally raises another important question: what is the cost to maintain such a platform?"),
@@ -185,10 +190,10 @@ h3("SEO Considerations for Ecommerce Websites"),
 p("SEO is the engine for all the organic traffic your e-commerce website will receive."),
 p("SEO service will be of great need if you have a website for your e-commerce business, as you want your products to rank on search engines and on top of the web directory."),
 p("SEO for an e-commerce website involves several critical processes, including:"),
-p("On-page SEO: Making your on-page content, meta titles,  meta descriptions,  product descriptions, and images search engine friendly."),
-p("Keyword Research: Target the search terms you can expect your customers to use."),
-p("Link building:  Getting high authority links to improve domain authority and increase search ranking."),
-p("Content Marketing:  Marketing products with blog posts, articles, and content to generate free traffic."),
+p("<strong>On-page SEO:</strong> Making your on-page content, meta titles, meta descriptions, product descriptions, and images search engine friendly."),
+p("<strong>Keyword Research:</strong> Target the search terms you can expect your customers to use."),
+p("<strong>Link Building:</strong> Getting high authority links to improve domain authority and increase search ranking."),
+p("<strong>Content Marketing:</strong> Marketing products with blog posts, articles, and content to generate free traffic."),
 p("If you are a website development company in Bangalore, you must ensure that you have a group of SEO professionals working as part of your web design team."),
 p("This guarantees you put your e-commerce SEO efforts to good use in achieving more visibility for your platform, thus attracting more relevant traffic."),
 
@@ -196,10 +201,10 @@ h3("Digital Marketing Costs for Ecommerce Businesses"),
 p("Digital marketing can be a powerful tool to drive traffic, get sales on your e-commerce site, and help you reduce your website and app development costs."),
 p("Your digital marketing cost depends on the approach or strategies that your designers or marketers plan out for you."),
 p("Common digital marketing strategies include:"),
-p("Search Engine Marketing (SEM): Paying search engines for advertising placements in search results to achieve greater search visibility."),
-p("Social Media Marketing (SMO): using social media to engage with users and advertise products."),
-p("Email Marketing:  Run campaigns aimed at generating and retaining customers."),
-p("Content Marketing: Developing blogs, guides, and so forth, to gain the attention and then convert visitors to clients."),
+p("<strong>Search Engine Marketing (SEM):</strong> Paying search engines for advertising placements in search results to achieve greater search visibility."),
+p("<strong>Social Media Marketing (SMO):</strong> Using social media to engage with users and advertise products."),
+p("<strong>Email Marketing:</strong> Run campaigns aimed at generating and retaining customers."),
+p("<strong>Content Marketing:</strong> Developing blogs, guides, and so forth, to gain the attention and then convert visitors to clients."),
 p("However, not all channels have to be utilized at one time."),
 p("An effective marketing campaign will judiciously implement a variety of channels that would include email marketing and social media."),
 p("Though these services can increase the cost of your e-commerce website, they are essential to a thriving online store."),
@@ -216,10 +221,10 @@ p("It‘s the tool that supports the transactions of your e-commerce store"),
 p("This increases the security,  speed, and smoothness of your transactions."),
 p("This directly benefits customer satisfaction and confidence."),
 p("When selecting a payment gateway for your e-commerce store, consider the following factors:"),
-p("Payment Types:  Does the gateway accept the payment methods that your customers want to use, like Credit/Debit cards, UPI,  Wallets,  International payments, etc?"),
-p("Fees: Understand all of your transaction, setup, and monthly fees so you know how they‘ll affect your website costs."),
-p("Security: A gateway must adhere to security protocols like PCI DSS for securing sensitive customer information and preventing fraud."),
-p("Speed & Reliability: The payment gateway should be fast and reliable enough so that there are minimal failed transactions."),
+p("<strong>Payment Types:</strong> Does the gateway accept the payment methods that your customers want to use, like Credit/Debit cards, UPI, Wallets, International payments, etc?"),
+p("<strong>Fees:</strong> Understand all of your transaction, setup, and monthly fees so you know how they’ll affect your website costs."),
+p("<strong>Security:</strong> A gateway must adhere to security protocols like PCI DSS for securing sensitive customer information and preventing fraud."),
+p("<strong>Speed & Reliability:</strong> The payment gateway should be fast and reliable enough so that there are minimal failed transactions."),
 p("Reliable and effective payment gateways can make your e-commerce website safe and trustworthy."),
 p("A payment gateway is a must-have, so you should definitely add its integration and the cost to your website application development estimate if you plan to build a reliable and sustainable online business."),
 
@@ -228,10 +233,10 @@ p("It is important to note, however, that there are certain costs involved with 
 p("Sometimes this can be incorporated into the designer's overall calculation of how much your e-commerce website would cost."),
 p("Various payment gateways propagate various sorts of fees, which can come into full play when a professional e-commerce website with a fully responsive design is being built."),
 p("Key cost considerations include:"),
-p("Payment gateways: Your income is chipped away by payment gateway fees on every purchase you make."),
-p("Setup fees: You might be charged a one-time setup fee with some providers."),
-p("Monthly Fees:  recurring monthly subscription payment for the application."),
-p("Value-added services:  The price will increase if additional services like fraud protection, recurring billing, or complex analytics are included."),
+p("<strong>Payment Gateways:</strong> Your income is chipped away by payment gateway fees on every purchase you make."),
+p("<strong>Setup Fees:</strong> You might be charged a one-time setup fee with some providers."),
+p("<strong>Monthly Fees:</strong> Recurring monthly subscription payment for the application."),
+p("<strong>Value-Added Services:</strong> The price will increase if additional services like fraud protection, recurring billing, or complex analytics are included."),
 p("All these costs will be taken into account when developing an online store; they will even possibly affect the cost of the app development and its design."),
 p("There is also the pricing level that the providers may offer, which can be the best for your e-business."),
 p("Also,  look at the user experience, choose a gateway that is easy and quick to use for your customer to purchase."),
@@ -241,11 +246,11 @@ p("So you can obtain a healthy profit margin on the products you are selling."),
 h3("Security Considerations for Payment Processing"),
 p("Security is a key component of payment processing for your online store."),
 p("Apart from the best practice of developing your website profile for the industry, you should systematically implement security functions in order to avoid fraud and protect customers’ money on your online-shopping website."),
-p("PCI DSS Compliant: Payment data should be secured by a compliant payment gateway."),
-p("SSL Security: Secure Sockets Layer (SSL) Certificates encrypt all data streams sent from and to your website to ensure maximum security."),
-p("Encryption and Tokenization:  All sensitive customer information must be encrypted, and a token must be used to replace card information through tokenization."),
-p("Fraud Detection Systems:  sophisticated fraud detection software to work in prohibiting unauthorized transactions is also used to increase visitor confidence."),
-p("These security measures will be guaranteed by the professional web designers I will subcontract to work on your online shop design project (E-commerce sites design specialized)."),
+p("<strong>PCI DSS Compliant:</strong> Payment data should be secured by a compliant payment gateway."),
+p("<strong>SSL Security:</strong> Secure Sockets Layer (SSL) certificates encrypt all data streams sent from and to your website to ensure maximum security."),
+p("<strong>Encryption and Tokenization:</strong> All sensitive customer information must be encrypted, and a token must be used to replace card information through tokenization."),
+p("<strong>Fraud Detection Systems:</strong> Sophisticated fraud detection software is used to prohibit unauthorized transactions and increase visitor confidence."),
+p("These security measures will be guaranteed by the professional web designers I will subcontract to work on your online shop design project (e-commerce site design specialization)."),
 p("They will professionally develop your e-commerce website."),
 p("Having a properly secured payment system in place will protect not only your customers but also your reputation and your entire e-commerce website."),
 
