@@ -146,11 +146,11 @@ import { EcommerceDevelopmentCostInBangaloreSEO } from "./data/EcommerceDevelopm
 import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 import { howMuchDoesWebDesignCostInMiamiSEO } from "./data/howMuchDoesWebDesignCostInMiami";
 import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
-import { howMuchDoesSeoCostInfloridSEO } from "./data/howMuchDoesSeoCostInflorida"; 
+import { howMuchDoesSeoCostInflorida } from "./data/howMuchDoesSeoCostInflorida";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
-  "blog/seo-cost-in-florida": howMuchDoesSeoCostInfloridSEO,
+  "blog/seo-cost-in-florida": howMuchDoesSeoCostInflorida,
   "blog/web-design-cost-in-miami": howMuchDoesWebDesignCostInMiamiSEO,
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
   "blog/ecommerce-development-cost-in-bangalore": EcommerceDevelopmentCostInBangaloreSEO,
