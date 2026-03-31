@@ -152,7 +152,7 @@ import { semanticContentNetworksByBenStace } from "./data/semanticContentNetwork
 import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 import { howMuchDoesWebDesignCostInMiami } from "./data/howMuchDoesWebDesignCostInMiami";
-import { howMuchDoesSeoCostInflorida } from "./data/howMuchDoesSeoCostInflorida";
+import { howMuchDoesSeoCostInflorida } from "./data/howMuchDoesSeoCostInflorida"; 
 
 export const allBlogsData: BlogData[] = [
   howMuchDoesSeoCostInflorida,
