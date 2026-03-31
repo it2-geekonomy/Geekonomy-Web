@@ -153,9 +153,11 @@ import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanti
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
 import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
+import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
 
 
 export const allBlogsData: BlogData[] = [
+  howtoHireBrandAmbassadorsforYourBusiness,
   BestLLMSEOToolsforAgenciesin2026,
   HowtoImproveLocalSEOCTR2026Guide,
   benStaceSemanticSEOWritingToolBoostYourRanking,
