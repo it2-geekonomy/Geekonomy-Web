@@ -149,7 +149,9 @@ import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusi
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
+import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
 export const allBlogsData: BlogData[] = [
+  HowtoImproveLocalSEOCTR2026Guide,
   whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,
   commonBrandingMistakesSmallBusinessesMake,

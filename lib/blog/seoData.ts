@@ -143,6 +143,7 @@ import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesB
 import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetworksByBenStace";
 import { bestSemanticSEOConsultantsHowtoChoosetheRightSEO } from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
+import { HowtoImproveLocalSEOCTR2026GuideSEO} from "./data/howtoImproveLocalSEOCTR2026Guide";      
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
@@ -289,5 +290,6 @@ export const blogSEOData = {
   "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
   "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO,
   "blog/best-semantic-seo-consultants-how-to-choose":  bestSemanticSEOConsultantsHowtoChoosetheRightSEO,
-   "why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO
+  "blog/why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO,
+  "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
 };
