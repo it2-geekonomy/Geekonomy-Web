@@ -154,7 +154,7 @@ import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit
 
 
 export const allBlogsData: BlogData[] = [
-   benStaceSemanticSEOWritingToolBoostYourRanking,
+  benStaceSemanticSEOWritingToolBoostYourRanking,
   EcommerceDevelopmentCostInBangalore,
   whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,

@@ -144,7 +144,6 @@ import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetw
 import { bestSemanticSEOConsultantsHowtoChoosetheRightSEO } from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { EcommerceDevelopmentCostInBangaloreSEO } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
-
 import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
