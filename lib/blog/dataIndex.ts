@@ -149,12 +149,27 @@ import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusi
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
 import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
+<<<<<<< HEAD
 import { howMuchDoesWebDesignCostInMiami } from "./data/howMuchDoesWebDesignCostInMiami";
 
 export const allBlogsData: BlogData[] = [
   howMuchDoesWebDesignCostInMiami,
   benStaceSemanticSEOWritingToolBoostYourRanking,
+=======
+import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
+
+
+export const allBlogsData: BlogData[] = [
+   benStaceSemanticSEOWritingToolBoostYourRanking,
+>>>>>>> e0e1876d2869e89c4bde54ff0ddfca76cd35ef7b
   EcommerceDevelopmentCostInBangalore,
+  whyYouNeedaFreeSEOAudit2026Guide,
+  bestSemanticSEOConsultantsHowtoChoosetheRight,
+  commonBrandingMistakesSmallBusinessesMake,
+  howVerifyingOriginProtectsBrandReputation,
+  WhyBrandingisImportantBeforeRunningAds,
+  howDoIEnsureBrandToneinMultilingualMarketing,
   semanticContentNetworksByBenStace,
   brandingIncreasesBusinessValuation,
   semanticSEOAgencyHowToChooseTheBest,
