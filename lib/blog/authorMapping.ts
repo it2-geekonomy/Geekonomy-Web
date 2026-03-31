@@ -151,7 +151,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "ben-stace-semantic-seo-writing-tool": "Rahul Dutta",
   "best-semantic-seo-consultants-how-to-choose":"Rahul Dutta",
   "why-you-need-a-free-seo-audit":"Rahul Dutta",
-  "seo-cost-in-florida": "Rahul Dutta",
+  
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -353,8 +353,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
   "why-you-need-a-free-seo-audit":"March 28,2026",
   "web-design-cost-in-miami": "March 31, 2026",
-  "seo-cost-in-florida": "March 31, 2026",
-  
+ 
 };
 
 /**
