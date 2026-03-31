@@ -205,7 +205,7 @@ p("Small business owners have plenty of cheap options to establish a professiona
 
 h3("Website Development Costs for Small Businesses"),
 p("The website development costs for small businesses in Miami can range depending on the specific criteria and the approach taken to smaller business website pricing."),
-p("For small businesses, a professional website designed by a Miami web design company typically costs $6,000–$20,000 for a simple site."),
+p("For small businesses, a professional website designed by a Miami web design company typically costs <strong>$6,000–$20,000</strong> for a simple site."),
 p("Using a website builder like Wix or Squarespace may be cheaper, ranging from $500–$2,000, but it won’t provide the same level of customization or professional design services,” based on the website's price structure."),
 p("Implementation of e-commerce functionalities, search engine optimization, and content writing will play a significant role in the website cost, especially on web design packages."),
 p("Small businesses should evaluate their website requirements and budget to find suitable and cost-effective small business website design services."),

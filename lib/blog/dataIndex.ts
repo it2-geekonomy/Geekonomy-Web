@@ -145,24 +145,20 @@ import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLi
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
 import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
-<<<<<<< HEAD
 import { howMuchDoesWebDesignCostInMiami } from "./data/howMuchDoesWebDesignCostInMiami";
+import { howMuchDoesSEOCostInflorida } from "./data/howMuchDoesSEOCostInflorida";
 
 export const allBlogsData: BlogData[] = [
+  howMuchDoesSEOCostInflorida,
   howMuchDoesWebDesignCostInMiami,
   benStaceSemanticSEOWritingToolBoostYourRanking,
-=======
-import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
-import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
-
-
-export const allBlogsData: BlogData[] = [
-   benStaceSemanticSEOWritingToolBoostYourRanking,
->>>>>>> e0e1876d2869e89c4bde54ff0ddfca76cd35ef7b
+  benStaceSemanticSEOWritingToolBoostYourRanking,
   EcommerceDevelopmentCostInBangalore,
   whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,
