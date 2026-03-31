@@ -183,7 +183,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
   "how-to-build-brand-authority-online": "Aaron Roshan",
   "how-branding-increases-business-valuation":"Aaron Roshan",
-  "ecommerce-development-cost-in-bangalore": "Aaron Roshan"
+  "ecommerce-development-cost-in-bangalore": "Aaron Roshan",
+  "web-design-cost-in-miami": "Aaron Roshan"
 
 };
 
@@ -341,7 +342,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-increases-business-valuation":"March 27, 2026",
   "semantic-content-networks-by-ben-stace": "March 28, 2026",
   "ecommerce-development-cost-in-bangalore": "March 28, 2026",
-  "ben-stace-semantic-seo-writing-tool": "March 28, 2026"
+  "ben-stace-semantic-seo-writing-tool": "March 28, 2026",
+  "web-design-cost-in-miami": "March 31, 2026"
 
 };
 

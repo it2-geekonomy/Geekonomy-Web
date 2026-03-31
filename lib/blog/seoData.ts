@@ -144,9 +144,11 @@ import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetw
 import { bestSemanticSEOConsultantsHowtoChoosetheRightSEO } from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { EcommerceDevelopmentCostInBangaloreSEO } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
+import { howMuchDoesWebDesignCostInMiamiSEO } from "./data/howMuchDoesWebDesignCostInMiami";
 
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/web-design-cost-in-miami": howMuchDoesWebDesignCostInMiamiSEO,
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
   "blog/ecommerce-development-cost-in-bangalore": EcommerceDevelopmentCostInBangaloreSEO,
   "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
