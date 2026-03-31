@@ -20,7 +20,7 @@ const image6 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/69a322c1-369
 const image7 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/69a322c1-369e-402e-9f24-5a62a7d3578d-a6.webp";
 
 
-const howMuchDoesSEOCostInfloridaContent: BlogContentItem[] = [
+const howMuchDoesSeoCostInfloridaContent: BlogContentItem[] = [
 
 p("Entering and taking on the world of search engine optimization can be overwhelming and confusing when it comes to costs."),
 p("If you are a business in Florida searching for a way to attract more customers and grow your business, you need to be aware of how much SEO costs in Florida so you can budget accordingly."),
@@ -206,18 +206,18 @@ p("And as local SEOs will be increasingly focused on local businesses, SEO strat
 p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Plan Smarter, Build Better</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Avoid overpaying and invest wisely with expert insights on pricing, performance, and scalable web design solutions.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Claim Your Free Consultation</a></div>')
 ];
 
-export const howMuchDoesSEOCostInflorida: BlogData = {
+export const howMuchDoesSeoCostInflorida: BlogData = {
   slug: "seo-cost-in-florida",
   heading: "How Much Does Web Design Cost in Miami (2026 Guide)",
   coverImage,
   sections: contentToSections(
-    howMuchDoesSEOCostInfloridaContent,
+    howMuchDoesSeoCostInfloridaContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Florida" },
     { introTitle: "How Much Does SEO Cost in Florida (2026 Guide)" }
   ),
 };
 
-export const howMuchDoesSEOCostInfloridSEO = {
+export const howMuchDoesSeoCostInfloridSEO = {
   title: "How Much Does SEO Cost in Florida (2026 Guide)",
   description:
     "Discover how much SEO costs in Florida, from basic local SEO to full-service strategies, with pricing ranges and key factors explained.",

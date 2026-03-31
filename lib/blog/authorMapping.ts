@@ -349,11 +349,12 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-increases-business-valuation":"March 27, 2026",
   "ecommerce-development-cost-in-bangalore": "March 28, 2026",
   "ben-stace-semantic-seo-writing-tool": "March 28, 2026",
-  "web-design-cost-in-miami": "March 31, 2026",
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
   "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
   "why-you-need-a-free-seo-audit":"March 28,2026",
+  "web-design-cost-in-miami": "March 31, 2026",
   "seo-cost-in-florida": "March 31, 2026",
+  
 };
 
 /**
