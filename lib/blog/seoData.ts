@@ -145,6 +145,8 @@ import { bestSemanticSEOConsultantsHowtoChoosetheRightSEO } from "./data/bestSem
 import { EcommerceDevelopmentCostInBangaloreSEO } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
+import { HowtoImproveLocalSEOCTR2026GuideSEO} from "./data/howtoImproveLocalSEOCTR2026Guide"; 
+import {BestLLMSEOToolsforAgenciesin2026SEO} from "./data/bestLLMSEOToolsforAgenciesin2026";   
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -293,5 +295,7 @@ export const blogSEOData = {
   "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
   "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO,
   "blog/best-semantic-seo-consultants-how-to-choose":  bestSemanticSEOConsultantsHowtoChoosetheRightSEO,
-   "why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO
+  "blog/why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO,
+  "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
+  "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
 };
