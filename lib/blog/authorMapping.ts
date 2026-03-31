@@ -145,6 +145,10 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-branding-is-important-for-bangalore-businesses": "Rahul Dutta",
   "ensure-brand-tone-multilingual-marketing":"Rahul Dutta",
   "seo-vs-google-ads-for-bangalore-businesses": "Rahul Dutta",
+  "create-internal-links-for-semantic-relevance": "Rahul Dutta",
+  "semantic-seo-agency-how-to-choose-the-best-agency":"Rahul Dutta",
+  "semantic-content-networks-by-ben-stace": "Rahul Dutta",
+  "ben-stace-semantic-seo-writing-tool": "Rahul Dutta",
 
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
@@ -175,7 +179,12 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
-   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
+  "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
+  "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
+  "how-to-build-brand-authority-online": "Aaron Roshan",
+  "how-branding-increases-business-valuation":"Aaron Roshan",
+  "ecommerce-development-cost-in-bangalore": "Aaron Roshan"
+
 };
 
 /**
@@ -324,7 +333,16 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
   "measure-brand-visibility-in-chatgpt": "March 26, 2026",
   "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
-   "how-branding-increases-customer-trust-and-conversions": "March 26,2026"
+  "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
+  "create-internal-links-for-semantic-relevance":  "March 27, 2026",
+  "how-rebranding-can-revive-a-struggling-business":"March 27, 2026",
+  "how-to-build-brand-authority-online": "March 27, 2026",
+  "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
+  "how-branding-increases-business-valuation":"March 27, 2026",
+  "semantic-content-networks-by-ben-stace": "March 28, 2026",
+  "ecommerce-development-cost-in-bangalore": "March 28, 2026",
+  "ben-stace-semantic-seo-writing-tool": "March 28, 2026"
+
 };
 
 /**

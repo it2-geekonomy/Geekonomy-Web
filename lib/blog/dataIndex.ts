@@ -147,15 +147,12 @@ import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
-import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
+import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 
- 
 export const allBlogsData: BlogData[] = [
-  bestSemanticSEOConsultantsHowtoChoosetheRight,
-  commonBrandingMistakesSmallBusinessesMake,
-  howVerifyingOriginProtectsBrandReputation,
-  WhyBrandingisImportantBeforeRunningAds,
-  howDoIEnsureBrandToneinMultilingualMarketing,
+  benStaceSemanticSEOWritingToolBoostYourRanking,
+  EcommerceDevelopmentCostInBangalore,
   semanticContentNetworksByBenStace,
   brandingIncreasesBusinessValuation,
   semanticSEOAgencyHowToChooseTheBest,

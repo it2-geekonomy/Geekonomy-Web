@@ -141,5 +141,7 @@
   "semantic-seo-agency-how-to-choose-the-best-agency": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
   "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
   "semantic-content-networks-by-ben-stace": "lib/blog/data/semanticContentNetworksByBenStace.ts",
-   "best-semantic-seo-consultants-how-to-choose":"lib/blog/data/bestSemanticSEOConsultantsHowtoChoosetheRight.ts"
+  "ecommerce-development-cost-in-bangalore": "lib/blog/data/EcommerceDevelopmentCostInBangalore.ts",
+  "ben-stace-semantic-seo-writing-tool": "lib/blog/data/benStaceSemanticSEOWritingToolBoostYourRanking.ts"
+
 }
