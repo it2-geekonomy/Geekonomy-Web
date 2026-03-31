@@ -143,10 +143,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-indexceptional-is-the-best-website-indexing-tool-for-seo": "Rahul Dutta",
   "seo-friendly-cms-find-the-best": "Rahul Dutta",
   "why-branding-is-important-for-bangalore-businesses": "Rahul Dutta",
+  "ensure-brand-tone-multilingual-marketing":"Rahul Dutta",
   "seo-vs-google-ads-for-bangalore-businesses": "Rahul Dutta",
-  "create-internal-links-for-semantic-relevance": "Rahul Dutta",
-  "semantic-seo-agency-how-to-choose-the-best-agency":"Rahul Dutta",
-  "semantic-content-networks-by-ben-stace": "Rahul Dutta",
 
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
@@ -177,11 +175,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-affects-long-term-retention-strategies": "Aaron Roshan",
   "what-to-look-for-in-brand-strategy-agencies": "Aaron Roshan",
   "measure-brand-visibility-in-chatgpt": "Aaron Roshan",
-  "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan",
-  "how-rebranding-can-revive-a-struggling-business":"Aaron Roshan",
-  "how-to-build-brand-authority-online": "Aaron Roshan",
-  "how-branding-increases-business-valuation":"Aaron Roshan"
-
+   "how-branding-increases-customer-trust-and-conversions":"Aaron Roshan"
 };
 
 /**
@@ -314,27 +308,23 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-seo-is-important-for-businesses-in-nyc": "March 12, 2026",
   "why-white-label-seo-reporting-is-important-for-agencies": "March 11, 2026",
   "why-your-website-is-not-ranking-on-google": "March 12, 2026",
-  "personal-branding-for-founders-in-bangalore-guide": "March 23,2026",
-  "best-branding-agency-in-bangalore-for-startups": "March 23,2026",
+  "personal-branding-for-founders-in-bangalore-guide": "March 23, 2026",
+  "best-branding-agency-in-bangalore-for-startups": "March 23, 2026",
   "why-branding-is-important-for-bangalore-businesses": "March 23, 2026",
   "best-digital-marketing-strategies-for-bangalore-businesses": "March 23,2026",
-"seo-vs-google-ads-for-bangalore-businesses": "March 24, 2026",
-  "branding-cost-in-bangalore": "March 24, 2026",
-  "corporate-branding-services-bangalore-guide": "March 25, 2026",
-  "startup-branding-strategy-bangalore-entrepreneurs": " March 24, 2026",
-  "how-to-increase-brand-awareness-in-b2b": "March 25, 2026",
+  "seo-vs-google-ads-for-bangalore-businesses":"March 24, 2026",
+  "branding-cost-in-bangalore":"March 24, 2026",
+  "corporate-branding-services-bangalore-guide":"March 25, 2026",
+  "startup-branding-strategy-bangalore-entrepreneurs":" March 24, 2026",
+  "how-to-increase-brand-awareness-in-b2b":"March 25, 2026",
+  "how-branding-increases-customer-trust-and-conversions": "March 26, 2026",
+   "ensure-brand-tone-multilingual-marketing": "March 26, 2026",
   "simplify-brand-message-effective-branding": "March 25, 2026",
   "find-a-partner-for-brand-visibility-audit": "March 26, 2026",
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
   "measure-brand-visibility-in-chatgpt": "March 26, 2026",
   "what-to-look-for-in-brand-strategy-agencies": "March 26, 2026",
-  "how-branding-increases-customer-trust-and-conversions": "March 26,2026",
-  "create-internal-links-for-semantic-relevance":  "March 27, 2026",
-  "how-rebranding-can-revive-a-struggling-business":"March 27, 2026",
-  "how-to-build-brand-authority-online": "March 27, 2026",
-  "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
-  "how-branding-increases-business-valuation":"March 27, 2026",
-  "semantic-content-networks-by-ben-stace": "March 28, 2026"
+   "how-branding-increases-customer-trust-and-conversions": "March 26,2026"
 };
 
 /**
@@ -427,24 +417,23 @@ export function getBlogsByAuthor(authorName: AuthorName): string[] {
     .map(([slug]) => slug);
 }
 
+/** UI label shown next to the blog date in sticky header */
+export type BlogDateDisplayLabel = "Published On : " | "Updated On : ";
+
 /**
  * Get the display date info (published or updated)
- * Returns object with date and label ("Published" or "Updated")
  */
-export function getDateInfo(slug: string): { date: string; label: "Published" | "Updated" } | null {
+export function getDateInfo(slug: string): { date: string; label: BlogDateDisplayLabel } | null {
   const updatedDate = getUpdatedDate(slug);
   const publishedDate = getPublishedDate(slug);
 
-  // If there's an updated date, show that with "Updated" label
   if (updatedDate) {
-    return { date: updatedDate, label: "Updated" };
+    return { date: updatedDate, label: "Updated On : " };
   }
 
-  // Otherwise, show published date with "Published" label
   if (publishedDate) {
-    return { date: publishedDate, label: "Published" };
+    return { date: publishedDate, label: "Published On : " };
   }
 
-  // Default fallback
-  return { date: "March 3, 2026", label: "Published" };
+  return { date: "March 3, 2026", label: "Published On : " };
 }
