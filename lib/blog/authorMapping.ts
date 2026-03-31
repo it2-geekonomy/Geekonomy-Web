@@ -151,6 +151,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "best-semantic-seo-consultants-how-to-choose":"Rahul Dutta",
   "why-you-need-a-free-seo-audit":"Rahul Dutta",
   "how-to-improve-local-seo-ctr":"Rahul Dutta",
+  "best-llM-seo-tools-for-agencies":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",

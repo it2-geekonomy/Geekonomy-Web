@@ -150,7 +150,9 @@ import { semanticContentNetworksByBenStace } from "./data/semanticContentNetwork
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
+import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 export const allBlogsData: BlogData[] = [
+  BestLLMSEOToolsforAgenciesin2026,
   HowtoImproveLocalSEOCTR2026Guide,
   whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,
