@@ -147,15 +147,20 @@ import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
+import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
+import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
 import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+
 export const allBlogsData: BlogData[] = [
   howtoHireBrandAmbassadorsforYourBusiness,
   BestLLMSEOToolsforAgenciesin2026,
   HowtoImproveLocalSEOCTR2026Guide,
+  benStaceSemanticSEOWritingToolBoostYourRanking,
+  EcommerceDevelopmentCostInBangalore,
   whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,
   commonBrandingMistakesSmallBusinessesMake,
