@@ -154,6 +154,7 @@ import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
 import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 
+
 export const allBlogsData: BlogData[] = [
   BestLLMSEOToolsforAgenciesin2026,
   HowtoImproveLocalSEOCTR2026Guide,
