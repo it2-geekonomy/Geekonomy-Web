@@ -154,6 +154,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-you-need-a-free-seo-audit":"Rahul Dutta",
   "how-to-improve-local-seo-ctr":"Rahul Dutta",
   "best-llM-seo-tools-for-agencies":"Rahul Dutta",
+  "google-display-ads-grow-marketing-results-for-advertisers":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -355,6 +356,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
   "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
   "why-you-need-a-free-seo-audit":"March 28,2026",
+  "google-display-ads-grow-marketing-results-for-advertisers":"March 31, 2026",
 };
 
 /**
