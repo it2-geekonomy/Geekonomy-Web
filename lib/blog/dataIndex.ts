@@ -135,7 +135,12 @@ import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrand
 import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
 import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
 import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
-import { howBrandingIncreasesCustomerTrustandConversions } from"@/lib/blog/data/howBrandingIncreasesCustomerTrustandConversions";
+import { howDoIEnsureBrandToneinMultilingualMarketing} from"./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import {WhyBrandingisImportantBeforeRunningAds} from"./data/whyBrandingisImportantBeforeRunningAds";
+import { howVerifyingOriginProtectsBrandReputation} from"./data/howVerifyingOriginProtectsBrandReputation";
+import { commonBrandingMistakesSmallBusinessesMake} from "./data/commonBrandingMistakesSmallBusinessesMake";
+// Centralized blog data aggregation - all blogs are registered here
+import { howBrandingIncreasesCustomerTrustandConversions } from"./data/howBrandingIncreasesCustomerTrustandConversions";
 import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
