@@ -148,9 +148,9 @@ import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHow
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
-
- 
+import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 export const allBlogsData: BlogData[] = [
+  whyYouNeedaFreeSEOAudit2026Guide,
   bestSemanticSEOConsultantsHowtoChoosetheRight,
   commonBrandingMistakesSmallBusinessesMake,
   howVerifyingOriginProtectsBrandReputation,
