@@ -180,7 +180,7 @@ export const howtoUseOnlineReviewsforRealEstateAppraiserMarketing: BlogData = {
 
 // SEO data for this blog
 export const howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO = {
-  title: " How to Use Online Reviews for Real Estate Appraiser Marketing",
+  title: "How to Use Online Reviews for Real Estate Appraiser Marketing",
   description:
     "Learn how to use online reviews to boost real estate appraiser marketing, build trust, improve local SEO, and attract more clients.",
   url: "https://thegeekonomy.com/blog/use-online-reviews-real-estate-appraiser-marketing",

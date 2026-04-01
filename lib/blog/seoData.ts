@@ -150,6 +150,7 @@ import {BestLLMSEOToolsforAgenciesin2026SEO} from "./data/bestLLMSEOToolsforAgen
 import { howtoHireBrandAmbassadorsforYourBusinessSEO } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
 import {HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 import { howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
+import { howtoUseSocialListeningforInfluencerMarketingSEO } from "./data/howtoUseSocialListeningforInfluencerMarketing";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -302,7 +303,9 @@ export const blogSEOData = {
   "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
   "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
   "blog/hire-brand-ambassadors-for-your-business":howtoHireBrandAmbassadorsforYourBusinessSEO,
-  "blog/google-display-ads-grow-marketing-results-for-advertisers": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
-  "blog/use-online-reviews-for-real-estate-appraiser-marketing": howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO,
+  "blog/google-display-ads-grow-marketing-results": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
+  "blog/use-online-reviews-real-estate-appraiser-marketing": howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO,
+  "blog/use-social-listening-influencer-marketing": howtoUseSocialListeningforInfluencerMarketingSEO,
+
 
 };

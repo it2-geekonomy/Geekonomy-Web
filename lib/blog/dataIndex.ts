@@ -152,16 +152,18 @@ import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceS
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
-import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 import { HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 import { howtoUseOnlineReviewsforRealEstateAppraiserMarketing } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
+import { howtoUseSocialListeningforInfluencerMarketing } from "./data/howtoUseSocialListeningforInfluencerMarketing";
 
 export const allBlogsData: BlogData[] = [
+  howtoUseSocialListeningforInfluencerMarketing,
   howtoUseOnlineReviewsforRealEstateAppraiserMarketing,
   HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers,
-  howtoHireBrandAmbassadorsforYourBusiness,
   BestLLMSEOToolsforAgenciesin2026,
+  howtoHireBrandAmbassadorsforYourBusiness,
   HowtoImproveLocalSEOCTR2026Guide,
   benStaceSemanticSEOWritingToolBoostYourRanking,
   EcommerceDevelopmentCostInBangalore,
