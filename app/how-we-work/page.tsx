@@ -135,9 +135,7 @@ export default function HowWeWorkPage() {
         </section>
       </ScrollRevealSection>
 
-      <ScrollRevealSection index={3}>
         <HowWeWorkProcess />
-      </ScrollRevealSection>
 
       <ScrollRevealSection index={4}>
         <section className="relative w-full flex flex-col justify-center pb-[clamp(2.5rem,2.5rem+2vw,8rem)]">

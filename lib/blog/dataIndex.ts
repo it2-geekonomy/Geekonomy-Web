@@ -119,12 +119,72 @@ import { webDevelopmentCostInBangaloreForSmallBusinesses } from "@/lib/blog/data
 import { localSEOForBangaloreBusinesses } from "@/lib/blog/data/localSEOForBangaloreBusinesses";
 import { rebrandingServicesInBangaloreWhenAndWhyYouNeed } from "@/lib/blog/data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
 import { buildStrongBrandForStartupInBangalore } from "@/lib/blog/data/buildStrongBrandForStartupInBangalore";
-import { WhyBrandingIsImportantforBangaloreBusinesses} from "./data/whyBrandingIsImportantforBangaloreBusinesses";
+import { bestBrandingAgencyinBangaloreforStartups } from "./data/bestBrandingAgencyinBangaloreforStartups";
+import { personalBrandingforFoundersinBangaloreGuide2026 } from "@/lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026";
+// Centralized blog data aggregation - all blogs are registered here
+
+import { WhyBrandingIsImportantforBangaloreBusinesses } from "./data/whyBrandingIsImportantforBangaloreBusinesses";
 import { BestDigitalMarketingStrategiesforBangaloreBusinesses } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import { SEOvsGoogleAdsforBangaloreBusinessesGuide2026 } from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import { HowMuchDoesBrandingCostinBangalore } from "./data/howMuchDoesBrandingCostinBangalore";
+import { corporatebrandingservicesingangaloreguide } from "@/lib/blog/data/corporateBrandingServicesinBangaloreGuide2026";
+import { StartupBrandingStrategyforBangaloreEntrepreneurs } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
+import { howToIncreaseBrandAwarenessB2B } from "./data/howToIncreaseBrandAwarenessB2B";
+import { howToSimplifyYourBrandMessageforEffectiveBranding } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
+import { findAPartnerForBrandVisibilityAudit } from "./data/findAPartnerForBrandVisibilityAudit";
+import { whatToLookForInBrandStrategyAgencies } from "./data/whatToLookForInBrandStrategyAgencies";
+import { brandingAffectsLongTermRetentionStrategies } from "./data/BrandingAffectsLongTermRetentionStrategies";
+import { measureBrandVisibilityInChatGPT } from "./data/measureBrandVisibilityInChatGPT";
+import { howDoIEnsureBrandToneinMultilingualMarketing} from"./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import {WhyBrandingisImportantBeforeRunningAds} from"./data/whyBrandingisImportantBeforeRunningAds";
+import { howVerifyingOriginProtectsBrandReputation} from"./data/howVerifyingOriginProtectsBrandReputation";
+import { commonBrandingMistakesSmallBusinessesMake} from "./data/commonBrandingMistakesSmallBusinessesMake";
 // Centralized blog data aggregation - all blogs are registered here
+import { howBrandingIncreasesCustomerTrustandConversions } from"./data/howBrandingIncreasesCustomerTrustandConversions";
+import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLinksForSemanticRelevance";
+import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
+import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
+import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
+import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
+import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
+import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
+import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
+import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+
+
 export const allBlogsData: BlogData[] = [
+  howtoHireBrandAmbassadorsforYourBusiness,
+  BestLLMSEOToolsforAgenciesin2026,
+  HowtoImproveLocalSEOCTR2026Guide,
+  benStaceSemanticSEOWritingToolBoostYourRanking,
+  EcommerceDevelopmentCostInBangalore,
+  whyYouNeedaFreeSEOAudit2026Guide,
+  bestSemanticSEOConsultantsHowtoChoosetheRight,
+  commonBrandingMistakesSmallBusinessesMake,
+  howVerifyingOriginProtectsBrandReputation,
+  WhyBrandingisImportantBeforeRunningAds,
+  howDoIEnsureBrandToneinMultilingualMarketing,
+  semanticContentNetworksByBenStace,
+  brandingIncreasesBusinessValuation,
+  semanticSEOAgencyHowToChooseTheBest,
+  buildBrandAuthorityOnline,
+  rebrandingCanReviveAStrugglingBusiness,
+  CreateInternalLinksForSemanticRelevance,
+  howBrandingIncreasesCustomerTrustandConversions,
+  measureBrandVisibilityInChatGPT,
+  brandingAffectsLongTermRetentionStrategies,
+  whatToLookForInBrandStrategyAgencies,
+  findAPartnerForBrandVisibilityAudit,
+  howToSimplifyYourBrandMessageforEffectiveBranding,
+  corporatebrandingservicesingangaloreguide,
+  howToIncreaseBrandAwarenessB2B,
+  StartupBrandingStrategyforBangaloreEntrepreneurs,
+  bestBrandingAgencyinBangaloreforStartups,
+  personalBrandingforFoundersinBangaloreGuide2026,
   HowMuchDoesBrandingCostinBangalore,
   SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
   BestDigitalMarketingStrategiesforBangaloreBusinesses,
@@ -247,8 +307,5 @@ export const allBlogsData: BlogData[] = [
   seoCostUK,
   omnichannelMarketing,
   nursingHomesSEOCompany,
-  WhyBrandingIsImportantforBangaloreBusinesses,
-  BestDigitalMarketingStrategiesforBangaloreBusinesses,
-  SEOvsGoogleAdsforBangaloreBusinessesGuide2026,
 ];
 

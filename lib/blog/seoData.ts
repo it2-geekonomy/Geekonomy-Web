@@ -116,13 +116,55 @@ import { webDevelopmentCostInBangaloreForSmallBusinessesSEO } from "./data/webDe
 import { localSEOForBangaloreBusinessesSEO } from "./data/localSEOForBangaloreBusinesses";
 import { rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO } from "./data/rebrandingServicesInBangaloreWhenAndWhyYouNeed";
 import { buildStrongBrandForStartupInBangaloreSEO } from "./data/buildStrongBrandForStartupInBangalore";
+import  {personalBrandingforFoundersinBangaloreGuide2026SEO} from "./data/personalBrandingforFoundersinBangaloreGuide2026";
+import { bestBrandingAgencyinBangaloreforStartupsSEO } from "./data/bestBrandingAgencyinBangaloreforStartups";
 import { WhyBrandingIsImportantforBangaloreBusinessesSEO } from "./data/whyBrandingIsImportantforBangaloreBusinesses";
 import { BestDigitalMarketingStrategiesforBangaloreBusinessesSEO } from "./data/bestDigitalMarketingStrategiesforBangaloreBusinesses";
 import {SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO} from "./data/seovsgoogleAdsFoeBengaloreBusiness2026Guide";
 import {HowMuchDoesBrandingCostinBangaloreSEO} from "./data/howMuchDoesBrandingCostinBangalore";
-
+import {corporatebrandingservicesinbangaloreguideSEO} from "./data/corporateBrandingServicesinBangaloreGuide2026";
+import { StartupBrandingStrategyforBangaloreEntrepreneursContentSEO } from "./data/startupBrandingStrategyforBangaloreEntrepreneurs";
+import { howToIncreaseBrandAwarenessB2BSEO } from "./data/howToIncreaseBrandAwarenessB2B";
+import { howDoIEnsureBrandToneinMultilingualMarketingSEO } from "./data/howDoIEnsureBrandToneinMultilingualMarketing";
+import { howBrandingIncreasesCustomerTrustandConversionsContentSEO } from "./data/howBrandingIncreasesCustomerTrustandConversions";
+import { howToSimplifyYourBrandMessageforEffectiveBrandingSEO } from "./data/howToSimplifyYourBrandMessageforEffectiveBranding";
+import { findAPartnerForBrandVisibilityAuditSEO } from "./data/findAPartnerForBrandVisibilityAudit";
+import { whatToLookForInBrandStrategyAgenciesSEO } from "./data/whatToLookForInBrandStrategyAgencies";
+import { brandingAffectsLongTermRetentionStrategiesSEO } from "./data/BrandingAffectsLongTermRetentionStrategies";
+import { measureBrandVisibilityInChatGPTSEO } from "./data/measureBrandVisibilityInChatGPT";
+import {WhyBrandingisImportantBeforeRunningAdsSEO} from"./data/whyBrandingisImportantBeforeRunningAds";
+import {howVerifyingOriginProtectsBrandReputationSEO}from "./data/howVerifyingOriginProtectsBrandReputation";
+import {commonBrandingMistakesSmallBusinessesMakeSEO}from"./data/commonBrandingMistakesSmallBusinessesMake"
+import { CreateInternalLinksForSemanticRelevanceSEO } from "./data/CreateInternalLinksForSemanticRelevance"
+import { rebrandingCanReviveAStrugglingBusinessSEO } from "./data/rebrandingCanReviveAStrugglingBusiness";
+import { buildBrandAuthorityOnlineSEO } from "./data/buildBrandAuthorityOnline";
+import { semanticSEOAgencyHowToChooseTheBestSEO } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { brandingIncreasesBusinessValuationSEO } from "./data/brandingIncreasesBusinessValuation";
+import { semanticContentNetworksByBenStaceSEO } from "./data/semanticContentNetworksByBenStace";
+import { bestSemanticSEOConsultantsHowtoChoosetheRightSEO } from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { EcommerceDevelopmentCostInBangaloreSEO } from "./data/EcommerceDevelopmentCostInBangalore";
+import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
+import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
+import { HowtoImproveLocalSEOCTR2026GuideSEO} from "./data/howtoImproveLocalSEOCTR2026Guide"; 
+import {BestLLMSEOToolsforAgenciesin2026SEO} from "./data/bestLLMSEOToolsforAgenciesin2026";   
+import { howtoHireBrandAmbassadorsforYourBusinessSEO } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
+  "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
+  "blog/ecommerce-development-cost-in-bangalore": EcommerceDevelopmentCostInBangaloreSEO,
+  "blog/semantic-content-networks-by-ben-stace": semanticContentNetworksByBenStaceSEO,
+  "blog/how-branding-increases-business-valuation": brandingIncreasesBusinessValuationSEO,
+  "blog/semantic-seo-agency-how-to-choose-the-best-agency": semanticSEOAgencyHowToChooseTheBestSEO,
+  "blog/how-to-build-brand-authority-online": buildBrandAuthorityOnlineSEO,
+  "blog/how-rebranding-can-revive-a-struggling-business": rebrandingCanReviveAStrugglingBusinessSEO,
+  "blog/create-internal-links-for-semantic-relevance": CreateInternalLinksForSemanticRelevanceSEO,
+  "blog/measure-brand-visibility-in-chatgpt":measureBrandVisibilityInChatGPTSEO,
+  "blog/how-branding-affects-long-term-retention-strategies": brandingAffectsLongTermRetentionStrategiesSEO,
+  "blog/what-to-look-for-in-brand-strategy-agencies": whatToLookForInBrandStrategyAgenciesSEO,
+  "blog/find-a-partner-for-brand-visibility-audit": findAPartnerForBrandVisibilityAuditSEO,
+  "blog/simplify-brand-message-effective-branding": howToSimplifyYourBrandMessageforEffectiveBrandingSEO,
+  "blog/how-to-increase-brand-awareness-in-b2b": howToIncreaseBrandAwarenessB2BSEO,
+  "blog/startup-branding-strategy-bangalore-entrepreneurs":StartupBrandingStrategyforBangaloreEntrepreneursContentSEO,
   "blog/branding-cost-in-bangalore":HowMuchDoesBrandingCostinBangaloreSEO,
   "blog/seo-vs-google-ads-for-bangalore-businesses":SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO,
   "blog/best-digital-marketing-strategies-for-bangalore-businesses": BestDigitalMarketingStrategiesforBangaloreBusinessesSEO,
@@ -245,4 +287,17 @@ export const blogSEOData = {
   "blog/logo-designers-in-bangalore-how-to-choose-the-best": logoDesignersInBangaloreHowToChooseTheBestSEO,
   "blog/rebranding-services-in-bangalore-when-and-why-you-need": rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO,
   "blog/build-strong-brand-for-startup-in-bangalore": buildStrongBrandForStartupInBangaloreSEO,
+  "blog/personal-branding-for-founders-in-bangalore-guide": personalBrandingforFoundersinBangaloreGuide2026SEO,
+  "blog/best-branding-agency-in-bangalore-for-startups": bestBrandingAgencyinBangaloreforStartupsSEO,
+  "blog/corporate-branding-services-bangalore-guide": corporatebrandingservicesinbangaloreguideSEO,
+  "blog/how-branding-increases-customer-trust-and-conversions": howBrandingIncreasesCustomerTrustandConversionsContentSEO,
+  "blog/ensure-brand-tone-multilingual-marketing": howDoIEnsureBrandToneinMultilingualMarketingSEO,
+  "blog/why-branding-is-important-before-running-ads":WhyBrandingisImportantBeforeRunningAdsSEO,
+  "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
+  "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO,
+  "blog/best-semantic-seo-consultants-how-to-choose":  bestSemanticSEOConsultantsHowtoChoosetheRightSEO,
+  "blog/why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO,
+  "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
+  "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
+  "blog/hire-brand-ambassadors-for-your-business":howtoHireBrandAmbassadorsforYourBusinessSEO,
 };

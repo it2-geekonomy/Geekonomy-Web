@@ -1,4 +1,4 @@
-import type { AuthorInfo } from "@/lib/blog/authorMapping";
+import type { AuthorInfo, BlogDateDisplayLabel } from "@/lib/blog/authorMapping";
 
 export interface StickyScrollContent {
   title: string;
@@ -9,7 +9,7 @@ export interface StickyScrollContent {
 
 export interface DateInfo {
   date: string;
-  label: "Published" | "Updated";
+  label: BlogDateDisplayLabel;
 }
 
 export interface StickyScrollProps {

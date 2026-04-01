@@ -55,11 +55,11 @@ function normalizeBlogImageSrc(src: string): string {
 
 export function sanitizeImageSrc(src: string): string {
   if (!src) return "";
-  const firstQuote = src.indexOf('"');
-  if (firstQuote !== -1) return src.slice(0, firstQuote).trim();
-  const firstComma = src.indexOf(",");
-  if (firstComma !== -1) return src.slice(0, firstComma).trim();
-  return src.trim();
+  // Only cut off trailing quotes or commas, not ones in the middle
+  const trimmed = src.trim();
+  if (trimmed.endsWith('"')) return trimmed.slice(0, -1);
+  if (trimmed.endsWith(',')) return trimmed.slice(0, -1);
+  return trimmed;
 }
 
 export const img = (src: string, alt: string): BlogContentItem => ({
@@ -134,7 +134,10 @@ export function contentToSections(
 
   if (firstHeadingIndex === -1) return sections;
 
+  // First pass: collect all sections and their associated images
+  const sectionsWithImages: Array<{title: string, content: BlogContentItem[], imageIndex: number}> = [];
   let i = firstHeadingIndex;
+
   while (i < content.length) {
     const item = content[i];
     // Only H1/heading creates new sections, H2 stays as content
@@ -142,37 +145,66 @@ export function contentToSections(
       i++;
       continue;
     }
+
     const title = item.text;
     const chunk: BlogContentItem[] = [];
-    let firstImageInSection: { src: string; alt: string } | null = null;
+    let imageIndex = -1;
     i++;
-    // Include H2 as content, only stop at next H1/heading
+
+    // Collect content until next heading
     while (i < content.length && !isMainHeading(content[i])) {
       const el = content[i];
       chunk.push(el);
-      if (el.type === "image" && !firstImageInSection) {
-        firstImageInSection = { src: sanitizeImageSrc(el.text), alt: el.className || title };
+      if (el.type === "image" && imageIndex === -1) {
+        imageIndex = i; // Store the index where image appears
       }
       i++;
     }
-    const chunkTextOnly = chunk.filter((c) => c.type !== "image");
-    sections.push({
+
+    sectionsWithImages.push({
       title,
-      description: contentToHTML(chunkTextOnly),
-      image: firstImageInSection || defaultImage,
+      content: chunk.filter((c) => c.type !== "image"),
+      imageIndex
     });
   }
 
-  // So the cover image only shows for the first section: later sections without their own
-  // image use the next section's image (no cover image "in between").
-  for (let j = sections.length - 1; j >= 1; j--) {
-    if (sections[j].image.src !== defaultImage.src) continue;
-    if (j + 1 < sections.length) {
-      sections[j].image = { ...sections[j + 1].image };
-    } else {
-      sections[j].image = { ...sections[j - 1].image };
+  // Second pass: assign images to sections based on when headings are reached
+  const originalContent = [...content]; // Keep reference to original content array
+  sectionsWithImages.forEach((sectionData, sectionIndex) => {
+    const { title, content, imageIndex } = sectionData;
+
+    let imageToUse = defaultImage;
+
+    if (imageIndex !== -1 && originalContent[imageIndex]) {
+      // Use the image that appears after this heading
+      imageToUse = {
+        src: sanitizeImageSrc(originalContent[imageIndex].text),
+        alt: originalContent[imageIndex].className || title
+      };
+    } else if (sectionIndex > 0) {
+      // No image after this heading, use next available image
+      let nextImageIndex = -1;
+      for (let j = sectionIndex + 1; j < sectionsWithImages.length; j++) {
+        if (sectionsWithImages[j].imageIndex !== -1) {
+          nextImageIndex = sectionsWithImages[j].imageIndex;
+          break;
+        }
+      }
+
+      if (nextImageIndex !== -1) {
+        imageToUse = {
+          src: sanitizeImageSrc(originalContent[nextImageIndex].text),
+          alt: originalContent[nextImageIndex].className || title
+        };
+      }
     }
-  }
+
+    sections.push({
+      title,
+      description: contentToHTML(content),
+      image: imageToUse
+    });
+  });
 
   return sections;
 }
