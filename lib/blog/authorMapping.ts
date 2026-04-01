@@ -154,7 +154,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-you-need-a-free-seo-audit":"Rahul Dutta",
   "how-to-improve-local-seo-ctr":"Rahul Dutta",
   "best-llM-seo-tools-for-agencies":"Rahul Dutta",
-  "google-display-ads-grow-marketing-results-for-advertisers":"Rahul Dutta",
+  "google-display-ads-grow-marketing-results":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -193,7 +193,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-increases-business-valuation":"Aaron Roshan",
   "hire-brand-ambassadors-for-your-business":"Aaron Roshan",
   "ecommerce-development-cost-in-bangalore": "Aaron Roshan",
-  "use-online-reviews-real-estate-appraiser-marketing":"Aaron Roshan"
+  "use-online-reviews-real-estate-appraiser-marketing":"Aaron Roshan",
+  "use-social-listening-influencer-marketing":"Aaron Roshan",
 
 };
 
@@ -362,6 +363,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "best-llM-seo-tools-for-agencies":"March 31, 2026",
   "hire-brand-ambassadors-for-your-business":"March 31, 2026",
   "use-online-reviews-real-estate-appraiser-marketing":"April 1, 2026",
+  "use-social-listening-influencer-marketing":"April 1, 2026",
 };
 
 /**
