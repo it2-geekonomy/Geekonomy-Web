@@ -149,6 +149,7 @@ import { HowtoImproveLocalSEOCTR2026GuideSEO} from "./data/howtoImproveLocalSEOC
 import {BestLLMSEOToolsforAgenciesin2026SEO} from "./data/bestLLMSEOToolsforAgenciesin2026";   
 import { howtoHireBrandAmbassadorsforYourBusinessSEO } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
 import {HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
+import { howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -302,5 +303,6 @@ export const blogSEOData = {
   "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
   "blog/hire-brand-ambassadors-for-your-business":howtoHireBrandAmbassadorsforYourBusinessSEO,
   "blog/google-display-ads-grow-marketing-results-for-advertisers": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
+  "blog/use-online-reviews-for-real-estate-appraiser-marketing": howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO,
 
 };
