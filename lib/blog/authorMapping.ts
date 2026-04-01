@@ -192,7 +192,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-to-build-brand-authority-online": "Aaron Roshan",
   "how-branding-increases-business-valuation":"Aaron Roshan",
   "hire-brand-ambassadors-for-your-business":"Aaron Roshan",
-  "ecommerce-development-cost-in-bangalore": "Aaron Roshan"
+  "ecommerce-development-cost-in-bangalore": "Aaron Roshan",
+  "use-online-reviews-real-estate-appraiser-marketing":"Aaron Roshan"
 
 };
 
@@ -359,7 +360,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "google-display-ads-grow-marketing-results":"March 31, 2026",
   "how-to-improve-local-seo-ctr":"March 31, 2026",
   "best-llM-seo-tools-for-agencies":"March 31, 2026",
-  "hire-brand-ambassadors-for-your-business":"March 31, 2026"
+  "hire-brand-ambassadors-for-your-business":"March 31, 2026",
+  "use-online-reviews-real-estate-appraiser-marketing":"April 1, 2026",
 };
 
 /**
