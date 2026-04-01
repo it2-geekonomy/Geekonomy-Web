@@ -143,7 +143,7 @@ p("Never forget to optimize your campaigns according to the analytics based on t
 p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Turn Views into Conversions with Display Advertising</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Engage potential customers across the web and grow your business faster.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Launch Your Campaign Now</a></div>'),
 ];
 export const HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers: BlogData = {
-  slug: "google-display-ads-grow-marketing-results-for-advertisers",
+  slug: "google-display-ads-grow-marketing-results",
   heading: "How Google Display Ads Grow Marketing Results for Advertisers",
   coverImage,
   sections: contentToSections(
@@ -157,9 +157,9 @@ export const HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers: BlogData = {
 export const HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO = {
   title: "How Google Display Ads Grow Marketing Results for Advertisers",
   description:
-    "Boost marketing results with Google Display Ads by reaching targeted audiences, increasing brand awareness, and driving conversions through smart strategies",
-  url: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results-for-advertisers",
-  canonical: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results-for-advertisers",
+    "Learn how Google Display Ads help advertisers boost brand awareness, reach targeted audiences, and drive measurable marketing results.",
+  url: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results",
+  canonical: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results",
   image: coverImage,
   twitterHandle: "@GeekonomyTech",
 };
