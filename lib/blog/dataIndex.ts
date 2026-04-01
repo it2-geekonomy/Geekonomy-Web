@@ -157,8 +157,10 @@ import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenc
 import { HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 import { howtoUseOnlineReviewsforRealEstateAppraiserMarketing } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
 import { howtoUseSocialListeningforInfluencerMarketing } from "./data/howtoUseSocialListeningforInfluencerMarketing";
+import { heavyvehicletrainingbusinessmarketingstrategies } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
 
 export const allBlogsData: BlogData[] = [
+  heavyvehicletrainingbusinessmarketingstrategies,
   howtoUseSocialListeningforInfluencerMarketing,
   howtoUseOnlineReviewsforRealEstateAppraiserMarketing,
   HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers,
