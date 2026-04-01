@@ -355,8 +355,11 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
 
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
   "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
-  "why-you-need-a-free-seo-audit":"March 28,2026",
+  "why-you-need-a-free-seo-audit":"March 28, 2026",
   "google-display-ads-grow-marketing-results":"March 31, 2026",
+  "how-to-improve-local-seo-ctr":"March 31, 2026",
+  "best-llM-seo-tools-for-agencies":"March 31, 2026",
+  "hire-brand-ambassadors-for-your-business":"March 31, 2026"
 };
 
 /**
