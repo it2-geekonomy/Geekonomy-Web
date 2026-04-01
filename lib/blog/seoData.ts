@@ -151,10 +151,7 @@ import { howtoHireBrandAmbassadorsforYourBusinessSEO } from "./data/howtoHireBra
 import {HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 import { howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
 import { howtoUseSocialListeningforInfluencerMarketingSEO } from "./data/howtoUseSocialListeningforInfluencerMarketing";
-<<<<<<< HEAD
-=======
 import { heavyvehicletrainingbusinessmarketingstrategiesSEO } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
->>>>>>> 7b97e76a81dd498d5147da37609367b442742b3c
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
