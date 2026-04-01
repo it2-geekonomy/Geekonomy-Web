@@ -154,9 +154,11 @@ import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
 import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+import { HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 
 
 export const allBlogsData: BlogData[] = [
+  HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers,
   howtoHireBrandAmbassadorsforYourBusiness,
   BestLLMSEOToolsforAgenciesin2026,
   HowtoImproveLocalSEOCTR2026Guide,

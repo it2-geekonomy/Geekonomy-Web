@@ -148,6 +148,7 @@ import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudi
 import { HowtoImproveLocalSEOCTR2026GuideSEO} from "./data/howtoImproveLocalSEOCTR2026Guide"; 
 import {BestLLMSEOToolsforAgenciesin2026SEO} from "./data/bestLLMSEOToolsforAgenciesin2026";   
 import { howtoHireBrandAmbassadorsforYourBusinessSEO } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+import {HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -300,4 +301,6 @@ export const blogSEOData = {
   "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
   "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
   "blog/hire-brand-ambassadors-for-your-business":howtoHireBrandAmbassadorsforYourBusinessSEO,
+  "blog/google-display-ads-grow-marketing-results-for-advertisers": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
+
 };
