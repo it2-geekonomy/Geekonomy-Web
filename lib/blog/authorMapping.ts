@@ -195,6 +195,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "ecommerce-development-cost-in-bangalore": "Aaron Roshan",
   "use-online-reviews-real-estate-appraiser-marketing":"Aaron Roshan",
   "use-social-listening-influencer-marketing":"Aaron Roshan",
+  "heavy-vehicle-training-business-marketing-strategies":"Aaron Roshan"
 
 };
 
@@ -364,6 +365,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "hire-brand-ambassadors-for-your-business":"March 31, 2026",
   "use-online-reviews-real-estate-appraiser-marketing":"April 1, 2026",
   "use-social-listening-influencer-marketing":"April 1, 2026",
+  "heavy-vehicle-training-business-marketing-strategies":"April 1, 2026"
 };
 
 /**
