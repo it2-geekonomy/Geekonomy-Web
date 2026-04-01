@@ -147,7 +147,11 @@ import { benStaceSemanticSEOWritingToolBoostYourRankingSEO } from "./data/benSta
 import { howMuchDoesWebDesignCostInMiamiSEO } from "./data/howMuchDoesWebDesignCostInMiami";
 import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
 import { seoCostInFloridaSEO } from "./data/seoCostInFlorida";
-
+import { whyYouNeedaFreeSEOAudit2026GuideSEO} from"./data/whyYouNeedaFreeSEOAudit2026Guide";
+import { HowtoImproveLocalSEOCTR2026GuideSEO} from "./data/howtoImproveLocalSEOCTR2026Guide"; 
+import {BestLLMSEOToolsforAgenciesin2026SEO} from "./data/bestLLMSEOToolsforAgenciesin2026";   
+import { howtoHireBrandAmbassadorsforYourBusinessSEO } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+import {HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/seo-cost-in-florida": seoCostInFloridaSEO,
@@ -298,5 +302,10 @@ export const blogSEOData = {
   "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
   "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO,
   "blog/best-semantic-seo-consultants-how-to-choose":  bestSemanticSEOConsultantsHowtoChoosetheRightSEO,
-   "why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO
+  "blog/why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO,
+  "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
+  "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
+  "blog/hire-brand-ambassadors-for-your-business":howtoHireBrandAmbassadorsforYourBusinessSEO,
+  "blog/google-display-ads-grow-marketing-results-for-advertisers": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
+
 };

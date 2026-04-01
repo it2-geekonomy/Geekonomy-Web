@@ -153,11 +153,21 @@ import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopment
 import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
 import { howMuchDoesWebDesignCostInMiami } from "./data/howMuchDoesWebDesignCostInMiami";
 import { seoCostInFlorida } from "./data/seoCostInFlorida";
+import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
+import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
+import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
+import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
+import { HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 
 export const allBlogsData: BlogData[] = [
   seoCostInFlorida,
   howMuchDoesWebDesignCostInMiami,
   benStaceSemanticSEOWritingToolBoostYourRanking,
+  HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers,
+  howtoHireBrandAmbassadorsforYourBusiness,
+  BestLLMSEOToolsforAgenciesin2026,
+  HowtoImproveLocalSEOCTR2026Guide,
   benStaceSemanticSEOWritingToolBoostYourRanking,
   EcommerceDevelopmentCostInBangalore,
   whyYouNeedaFreeSEOAudit2026Guide,

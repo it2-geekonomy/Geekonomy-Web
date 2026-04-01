@@ -149,10 +149,12 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "semantic-seo-agency-how-to-choose-the-best-agency":"Rahul Dutta",
   "semantic-content-networks-by-ben-stace": "Rahul Dutta",
   "ben-stace-semantic-seo-writing-tool": "Rahul Dutta",
+  "seo-cost-in-florida": "Rahul Dutta",
   "best-semantic-seo-consultants-how-to-choose":"Rahul Dutta",
   "why-you-need-a-free-seo-audit":"Rahul Dutta",
-  "seo-cost-in-florida": "Rahul Dutta",
-  
+  "how-to-improve-local-seo-ctr":"Rahul Dutta",
+  "best-llM-seo-tools-for-agencies":"Rahul Dutta",
+  "google-display-ads-grow-marketing-results-for-advertisers":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -191,6 +193,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-increases-business-valuation":"Aaron Roshan",
   "ecommerce-development-cost-in-bangalore": "Aaron Roshan",
   "web-design-cost-in-miami": "Aaron Roshan"
+  "hire-brand-ambassadors-for-your-business":"Aaron Roshan",
 
 };
 
@@ -327,7 +330,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "personal-branding-for-founders-in-bangalore-guide": "March 23, 2026",
   "best-branding-agency-in-bangalore-for-startups": "March 23, 2026",
   "why-branding-is-important-for-bangalore-businesses": "March 23, 2026",
-  "best-digital-marketing-strategies-for-bangalore-businesses": "March 23,2026",
+  "best-digital-marketing-strategies-for-bangalore-businesses": "March 23, 2026",
   "seo-vs-google-ads-for-bangalore-businesses":"March 24, 2026",
   "branding-cost-in-bangalore":"March 24, 2026",
   "corporate-branding-services-bangalore-guide":"March 25, 2026",
@@ -350,12 +353,15 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-increases-business-valuation":"March 27, 2026",
   "ecommerce-development-cost-in-bangalore": "March 28, 2026",
   "ben-stace-semantic-seo-writing-tool": "March 28, 2026",
-  "semantic-content-networks-by-ben-stace": "March 27, 2026",
-  "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
-  "why-you-need-a-free-seo-audit":"March 28,2026",
   "web-design-cost-in-miami": "March 31, 2026",
   "seo-cost-in-florida": "March 31, 2026",
- 
+  "semantic-content-networks-by-ben-stace": "March 27, 2026",
+  "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
+  "why-you-need-a-free-seo-audit":"March 28, 2026",
+  "google-display-ads-grow-marketing-results":"March 31, 2026",
+  "how-to-improve-local-seo-ctr":"March 31, 2026",
+  "best-llM-seo-tools-for-agencies":"March 31, 2026",
+  "hire-brand-ambassadors-for-your-business":"March 31, 2026"
 };
 
 /**
