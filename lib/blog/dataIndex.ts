@@ -145,10 +145,14 @@ import { CreateInternalLinksForSemanticRelevance } from "./data/CreateInternalLi
 import { rebrandingCanReviveAStrugglingBusiness } from "./data/rebrandingCanReviveAStrugglingBusiness";  
 import { buildBrandAuthorityOnline } from "./data/buildBrandAuthorityOnline";
 import { semanticSEOAgencyHowToChooseTheBest } from "./data/semanticSEOAgencyHowToChooseTheBest";
+import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
+import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { brandingIncreasesBusinessValuation } from "./data/brandingIncreasesBusinessValuation";
 import { semanticContentNetworksByBenStace } from "./data/semanticContentNetworksByBenStace";
 import { EcommerceDevelopmentCostInBangalore } from "./data/EcommerceDevelopmentCostInBangalore";
 import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceSemanticSEOWritingToolBoostYourRanking";
+import { howMuchDoesWebDesignCostInMiami } from "./data/howMuchDoesWebDesignCostInMiami";
+import { seoCostInFlorida } from "./data/seoCostInFlorida";
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
@@ -157,6 +161,9 @@ import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandA
 import { HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
 
 export const allBlogsData: BlogData[] = [
+  seoCostInFlorida,
+  howMuchDoesWebDesignCostInMiami,
+  benStaceSemanticSEOWritingToolBoostYourRanking,
   HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers,
   howtoHireBrandAmbassadorsforYourBusiness,
   BestLLMSEOToolsforAgenciesin2026,
