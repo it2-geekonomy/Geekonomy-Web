@@ -306,7 +306,7 @@ const seoCostUKContent: BlogContentItem[] = [
   h3("Are cheaper SEO services a good idea?"),
   p("Cheap SEO commonly proves to be a wrong decision over time. Cheap suppliers often apply black-hat tactics or deliver poor-quality content, which will negatively impact your ranking. Look for value over low price."),
   p("Ready to invest in effective SEO services that will assure returns on investments?"),
-  p('Get personal pricing information on SEO services from <a href="/contact-us" class="underline text-[#6FAF4E]">Geekonomy Technology</a> that follows a strategy based on your business goals instead of pure guesswork.'),
+  p('Get personal pricing information on SEO services from <a href="/contact-us" class="underline text-[#6FAF4E]">Geekonomy</a> that follows a strategy based on your business goals instead of pure guesswork.'),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Ready to Invest in SEO in the UK?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">We help UK businesses rank and grow. Get a tailored quote and a strategy that fits your budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Book Your Free SEO Quote</a></div>'),
 ];
 
