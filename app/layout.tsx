@@ -45,7 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: seoData.title,
       description: seoData.description,
       url: seoData.url,
-      siteName: "Geekonomy",
+      siteName: "Geekonomy Technology",
       type: "website",
       images: seoData.image ? [{ url: seoData.image }] : [],
     },
