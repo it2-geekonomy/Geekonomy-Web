@@ -159,10 +159,8 @@ import { howtoUseOnlineReviewsforRealEstateAppraiserMarketing } from "./data/how
 import { howtoUseSocialListeningforInfluencerMarketing } from "./data/howtoUseSocialListeningforInfluencerMarketing";
 import { heavyvehicletrainingbusinessmarketingstrategies } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
 import { BestAIAvatarServicesforMultilingualMarketingCampaignsin2026 } from "./data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026";
-import { SafeLinkBuildingTechniquestoAvoidGooglePenalties } from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
 
 export const allBlogsData: BlogData[] = [
-  SafeLinkBuildingTechniquestoAvoidGooglePenalties,
   BestAIAvatarServicesforMultilingualMarketingCampaignsin2026,
   heavyvehicletrainingbusinessmarketingstrategies,
   howtoUseSocialListeningforInfluencerMarketing,
