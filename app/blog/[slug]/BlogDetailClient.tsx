@@ -47,22 +47,7 @@ export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: B
   }, []);
 
   if (!blog) {
-    return (
-      <main className="bg-black min-h-dvh py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center px-6">
-        <div className="text-center max-w-md">
-          <p className="text-white font-semibold text-lg mb-2">This article could not be loaded.</p>
-          <p className="text-white/60 text-sm mb-6">
-            It may be missing from the blog list. Try returning to the blog index.
-          </p>
-          <Link
-            href="/blog"
-            className="text-[#6FAF4E] hover:underline font-medium"
-          >
-            ← Back to Blog
-          </Link>
-        </div>
-      </main>
-    );
+    return null;
   }
 
   const authorInfo = getAuthorForBlog(blogSlug);
