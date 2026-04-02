@@ -152,6 +152,8 @@ import {HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO} from "./data/h
 import { howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
 import { howtoUseSocialListeningforInfluencerMarketingSEO } from "./data/howtoUseSocialListeningforInfluencerMarketing";
 import { heavyvehicletrainingbusinessmarketingstrategiesSEO } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
+import {BestAIAvatarServicesforMultilingualMarketingCampaignsin2026SEO} from "./data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026";
+import { SafeLinkBuildingTechniquestoAvoidGooglePenaltiesSEO} from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -307,7 +309,9 @@ export const blogSEOData = {
   "blog/google-display-ads-grow-marketing-results": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
   "blog/use-online-reviews-real-estate-appraiser-marketing": howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO,
   "blog/use-social-listening-influencer-marketing": howtoUseSocialListeningforInfluencerMarketingSEO,
-  "blog/heavy-vehicle-training-business-marketing-strategies": heavyvehicletrainingbusinessmarketingstrategiesSEO
+  "blog/heavy-vehicle-training-business-marketing-strategies": heavyvehicletrainingbusinessmarketingstrategiesSEO,
+  "blog/best-ai-avatar-services-multilingual-marketing-campaigns": BestAIAvatarServicesforMultilingualMarketingCampaignsin2026SEO,
+  "blog/safe-link-building-techniques-avoid-google-penalties": SafeLinkBuildingTechniquestoAvoidGooglePenaltiesSEO,
 
 
 };
