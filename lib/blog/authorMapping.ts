@@ -155,7 +155,6 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-to-improve-local-seo-ctr":"Rahul Dutta",
   "best-llM-seo-tools-for-agencies":"Rahul Dutta",
   "google-display-ads-grow-marketing-results":"Rahul Dutta",
-  "safe-link-building-techniques-avoid-google-penalties":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -209,7 +208,9 @@ export function getAuthorForBlog(slug: string): AuthorInfo {
   return AUTHOR_INFO[authorName];
 }
 
-/** Publish date per blog (shown as "Published On" unless BLOG_UPDATED_DATES has this slug). */
+/**
+ * Publish date per blog (from file mtime as of last run). When you edit a blog file and save, it will show "Updated" with the new date.
+ */
 export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "10-proven-seo-strategies-to-boost-seo-organic-traffic": "March 12, 2026",
   "360-international-seo-service-complete-guide": "March 11, 2026",
@@ -370,12 +371,6 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
 };
 
 /**
- * Optional "last updated" display date per slug. Only these posts show "Updated On : ".
- * File mtime is not used — it changes from saves, git, CI, and reloads without real edits.
- */
-export const BLOG_UPDATED_DATES: Record<string, string> = {};
-
-/**
  * Get published date for a blog slug (manual only; server uses file mtime when needed).
  */
 export function getPublishedDate(slug: string): string | null {
@@ -383,10 +378,10 @@ export function getPublishedDate(slug: string): string | null {
 }
 
 /**
- * Get updated date for a blog slug (manual only; must be listed in BLOG_UPDATED_DATES).
+ * Get updated date for a blog slug. Manual updates removed; server uses file mtime.
  */
 export function getUpdatedDate(slug: string): string | null {
-  return BLOG_UPDATED_DATES[slug] ?? null;
+  return null;
 }
 
 /**
