@@ -1,11 +1,16 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Metadata } from "next";
-import { Suspense } from "react";
 import { allBlogsData } from "@/lib/blog";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
-import BlogDetailClient from "@/app/blog/[slug]/BlogDetailClient";
+import BlogsPageLoading from "@/app/blog/BlogsPageLoading";
 import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
 import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
+
+const BlogDetailClient = dynamic(
+  () => import("@/app/blog/[slug]/BlogDetailClient"),
+  { loading: () => <BlogsPageLoading /> }
+);
 
 export async function generateMetadata({
   params,
@@ -45,7 +50,7 @@ export async function generateMetadata({
       title: seoData.title,
       description: seoData.description,
       url: seoData.url,
-      siteName: "Geekonomy Technology",
+      siteName: "Geekonomy",
       type: "article",
       images: seoData.image ? [{ url: seoData.image }] : [],
       publishedTime: articlePublishedTime || undefined,
@@ -121,7 +126,7 @@ export default async function BlogDetailPage({
     },
     publisher: {
       "@type": "Organization",
-      name: "Geekonomy Technology",
+      name: "Geekonomy",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/Logo.png`,
@@ -143,13 +148,7 @@ export default async function BlogDetailPage({
           __html: JSON.stringify(articleSchema),
         }}
       />
-      <Suspense fallback={
-        <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center">
-          <p className="text-white text-xl">Loading...</p>
-        </main>
-      }>
-        <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
-      </Suspense>
+      <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
     </>
   );
 }
