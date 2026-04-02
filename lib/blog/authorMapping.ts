@@ -193,9 +193,10 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-branding-increases-business-valuation": "Aaron Roshan",
   "hire-brand-ambassadors-for-your-business": "Aaron Roshan",
   "ecommerce-development-cost-in-bangalore": "Aaron Roshan",
-  "use-online-reviews-real-estate-appraiser-marketing": "Aaron Roshan",
-  "use-social-listening-influencer-marketing": "Aaron Roshan",
-  "heavy-vehicle-training-business-marketing-strategies": "Aaron Roshan"
+  "use-online-reviews-real-estate-appraiser-marketing":"Aaron Roshan",
+  "use-social-listening-influencer-marketing":"Aaron Roshan",
+  "heavy-vehicle-training-business-marketing-strategies":"Aaron Roshan",
+  "best-ai-avatar-services-multilingual-marketing-campaigns":"Aaron Roshan",
 
 };
 
@@ -356,14 +357,15 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
 
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
   "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
-  "why-you-need-a-free-seo-audit": "March 28, 2026",
-  "google-display-ads-grow-marketing-results": "March 31, 2026",
-  "how-to-improve-local-seo-ctr": "March 31, 2026",
-  "best-llM-seo-tools-for-agencies": "March 31, 2026",
-  "hire-brand-ambassadors-for-your-business": "March 31, 2026",
-  "use-online-reviews-real-estate-appraiser-marketing": "April 1, 2026",
-  "use-social-listening-influencer-marketing": "April 1, 2026",
-  "heavy-vehicle-training-business-marketing-strategies": "April 1, 2026"
+  "why-you-need-a-free-seo-audit":"March 28, 2026",
+  "google-display-ads-grow-marketing-results":"March 31, 2026",
+  "how-to-improve-local-seo-ctr":"March 31, 2026",
+  "best-llM-seo-tools-for-agencies":"March 31, 2026",
+  "hire-brand-ambassadors-for-your-business":"March 31, 2026",
+  "use-online-reviews-real-estate-appraiser-marketing":"April 1, 2026",
+  "use-social-listening-influencer-marketing":"April 1, 2026",
+  "heavy-vehicle-training-business-marketing-strategies":"April 1, 2026",
+  "best-ai-avatar-services-multilingual-marketing-campaigns":"April 2, 2026",
 };
 
 /**
