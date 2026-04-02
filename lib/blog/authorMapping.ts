@@ -155,6 +155,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-to-improve-local-seo-ctr":"Rahul Dutta",
   "best-llM-seo-tools-for-agencies":"Rahul Dutta",
   "google-display-ads-grow-marketing-results":"Rahul Dutta",
+  "safe-link-building-techniques-avoid-google-penalties":"Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -368,6 +369,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "use-social-listening-influencer-marketing":"April 1, 2026",
   "heavy-vehicle-training-business-marketing-strategies":"April 1, 2026",
   "best-ai-avatar-services-multilingual-marketing-campaigns":"April 2, 2026",
+  "safe-link-building-techniques-avoid-google-penalties":"April 2, 2026",
 };
 
 /**
