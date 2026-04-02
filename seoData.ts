@@ -131,7 +131,7 @@ const seoData: Record<string, SEOData> = {
   blog: {
     title: "Geekonomy Insights | Web, SEO & Marketing Trends",
     description:
-      "Explore expert blogs on web design, SEO, and marketing by Geekonomy Technology. Learn digital strategies to grow your business smarter.",
+      "Explore expert blogs on web design, SEO, and marketing by Geekonomy. Learn digital strategies to grow your business smarter.",
     url: "https://thegeekonomy.com/blog",
     canonical: "https://thegeekonomy.com/blog",
     image: "https://thegeekonomy.com/assets/og-blog.jpg",

@@ -50,7 +50,7 @@ export async function generateMetadata({
       title: seoData.title,
       description: seoData.description,
       url: seoData.url,
-      siteName: "Geekonomy Technology",
+      siteName: "Geekonomy",
       type: "article",
       images: seoData.image ? [{ url: seoData.image }] : [],
       publishedTime: articlePublishedTime || undefined,
@@ -126,7 +126,7 @@ export default async function BlogDetailPage({
     },
     publisher: {
       "@type": "Organization",
-      name: "Geekonomy Technology",
+      name: "Geekonomy",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/Logo.png`,
