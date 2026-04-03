@@ -160,8 +160,9 @@ import { howtoUseSocialListeningforInfluencerMarketing } from "./data/howtoUseSo
 import { heavyvehicletrainingbusinessmarketingstrategies } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
 import { BestAIAvatarServicesforMultilingualMarketingCampaignsin2026 } from "./data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026";
 import { SafeLinkBuildingTechniquestoAvoidGooglePenalties } from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
-
+import { brandPositioningStrategiesforCompetitiveMarkets } from "./data/brandPositioningStrategiesforCompetitiveMarkets";
 export const allBlogsData: BlogData[] = [
+  brandPositioningStrategiesforCompetitiveMarkets,
   SafeLinkBuildingTechniquestoAvoidGooglePenalties,
   BestAIAvatarServicesforMultilingualMarketingCampaignsin2026,
   heavyvehicletrainingbusinessmarketingstrategies,
