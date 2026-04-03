@@ -200,6 +200,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "best-ai-avatar-services-multilingual-marketing-campaigns":"Aaron Roshan",
   "brand-positioning-strategies-competitive-markets":"Aaron Roshan",
   "branding-for-startups-bangalore-strategies":"Aaron Roshan",
+  "web-design-cost-india": "Aaron Roshan",
 
 };
 
@@ -372,6 +373,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "safe-link-building-techniques-avoid-google-penalties":"April 2, 2026",
   "brand-positioning-strategies-competitive-markets":"April 3, 2026",
   "branding-for-startups-bangalore-strategies":"April 3, 2026",
+  "web-design-cost-india": "April 3, 2026",
 
 };
 
