@@ -157,20 +157,49 @@ export function getPreferredBaseUrl(): string {
   return process.env.NEXT_PUBLIC_BASE_URL || "https://thegeekonomy.com";
 }
 
+/** Stable pathname from any absolute URL (drops duplicate slashes, bad host data in content files cannot skew canonical). */
+function pathnameFromAbsoluteUrl(absoluteUrl: string): string {
+  const pathname = new URL(absoluteUrl).pathname;
+  return "/" + pathname.split("/").filter(Boolean).join("/");
+}
+
+const BLOG_POST_SEO_PREFIX = "blog/";
+
+function slugFromBlogPostSeoKey(key: string): string | null {
+  if (!key.startsWith(BLOG_POST_SEO_PREFIX)) return null;
+  const slug = key.slice(BLOG_POST_SEO_PREFIX.length);
+  if (!slug || slug.includes("/")) return null;
+  return slug;
+}
+
+/** Canonical URL for a blog post — use anywhere you need the definitive production URL. */
+export function getBlogPostCanonicalUrl(slug: string): string {
+  const path = "/" + ["blog", slug].join("/");
+  return `${getPreferredBaseUrl()}${path}`;
+}
+
 function normalizeSeoData(key: string, baseUrl: string): SEOData {
+  const productionBaseUrl = getPreferredBaseUrl();
   const data = getAllSEOData()[key] || getAllSEOData().home;
 
+  const postSlug = slugFromBlogPostSeoKey(key);
+  if (postSlug) {
+    const path = "/" + ["blog", postSlug].join("/");
+    return {
+      ...data,
+      url: `${baseUrl}${path}`,
+      canonical: `${productionBaseUrl}${path}`,
+    };
+  }
+
   try {
-    const urlPath = new URL(data.url).pathname;
-    const canonicalPath = new URL(data.canonical).pathname;
-    
-    // Always use production URL for canonical (never localhost/staging)
-    const productionBaseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://thegeekonomy.com';
+    const urlPath = pathnameFromAbsoluteUrl(data.url);
+    const canonicalPath = pathnameFromAbsoluteUrl(data.canonical);
 
     return {
       ...data,
-      url: `${baseUrl}${urlPath}`, // Current domain (localhost in dev, production in prod)
-      canonical: `${productionBaseUrl}${canonicalPath}`, // Always production URL
+      url: `${baseUrl}${urlPath}`,
+      canonical: `${productionBaseUrl}${canonicalPath}`,
     };
   } catch (error) {
     console.warn(`Failed to normalise SEO data for "${key}", using defaults.`, error);

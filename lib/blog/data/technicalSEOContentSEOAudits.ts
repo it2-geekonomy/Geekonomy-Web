@@ -134,7 +134,7 @@ const technicalSEOContentSEOAuditsContent: BlogContentItem[] = [
   p("The adjustment of technical SEO and content SEO, i.e., through correct technical moves such as URL structure optimisation, is what will lead search engines to better understand the content and, in the end, increase your site's visibility."),
   h3("Future Trends in SEO Audits"),
   p("The future of SEO audits will depend on various trends that are coming up, one of them being how audits recognise issues in technical SEO as well as in content SEO."),
-  p('As mobile devices are becoming more and more important, <a href="/blog/why-responsive-web-design-is-essential" class="underline text-[#6FAF4E]">mobile-first indexing will definitely be a main concern</a> in the field of technical SEO vs content SEO.'),
+  p('As mobile devices are becoming more and more important, <a href="/blog/what-makes-a-good-business-website-in-the-uk" class="underline text-[#6FAF4E]">mobile-first indexing will definitely be a main concern</a> in the field of technical SEO vs content SEO.'),
   p("Optimisation for voice search will become highly important as more and more people will use voice assistants."),
   p("Therefore, it will be necessary to figure out how SEO strategies can be used to improve voice search performance."),
   p("Artificial intelligence (AI) and machine learning will be given more functions to handle data and find instances of optimisation."),
