@@ -198,6 +198,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "use-social-listening-influencer-marketing":"Aaron Roshan",
   "heavy-vehicle-training-business-marketing-strategies":"Aaron Roshan",
   "best-ai-avatar-services-multilingual-marketing-campaigns":"Aaron Roshan",
+  "brand-positioning-strategies-competitive-markets":"Aaron Roshan",
+  "branding-for-startups-bangalore-strategies":"Aaron Roshan",
 
 };
 
@@ -368,6 +370,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "heavy-vehicle-training-business-marketing-strategies":"April 1, 2026",
   "best-ai-avatar-services-multilingual-marketing-campaigns":"April 2, 2026",
   "safe-link-building-techniques-avoid-google-penalties":"April 2, 2026",
+  "brand-positioning-strategies-competitive-markets":"April 3, 2026",
+  "branding-for-startups-bangalore-strategies":"April 3, 2026",
+
 };
 
 /**
