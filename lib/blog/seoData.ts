@@ -155,6 +155,7 @@ import { heavyvehicletrainingbusinessmarketingstrategiesSEO } from "./data/heavy
 import {BestAIAvatarServicesforMultilingualMarketingCampaignsin2026SEO} from "./data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026";
 import { SafeLinkBuildingTechniquestoAvoidGooglePenaltiesSEO} from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
 import { brandPositioningStrategiesforCompetitiveMarketsSEO } from "./data/brandPositioningStrategiesforCompetitiveMarkets";
+import { brandingforStartupsinBangaloreStrategies2026SEO } from "./data/brandingforStartupsinBangaloreStrategies2026";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -314,5 +315,6 @@ export const blogSEOData = {
   "blog/best-ai-avatar-services-multilingual-marketing-campaigns": BestAIAvatarServicesforMultilingualMarketingCampaignsin2026SEO,
   "blog/safe-link-building-techniques-avoid-google-penalties": SafeLinkBuildingTechniquestoAvoidGooglePenaltiesSEO,
   "blog/brand-positioning-strategies-competitive-markets": brandPositioningStrategiesforCompetitiveMarketsSEO,
+  "blog/branding-for-startups-bangalore-strategies": brandingforStartupsinBangaloreStrategies2026SEO,
 
 };
