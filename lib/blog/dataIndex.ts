@@ -162,7 +162,9 @@ import { BestAIAvatarServicesforMultilingualMarketingCampaignsin2026 } from "./d
 import { SafeLinkBuildingTechniquestoAvoidGooglePenalties } from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
 import { brandPositioningStrategiesforCompetitiveMarkets } from "./data/brandPositioningStrategiesforCompetitiveMarkets";
 import{ brandingforStartupsinBangaloreStrategies2026} from "./data/brandingforStartupsinBangaloreStrategies2026";
+import { howMuchDoesWebDesignCostinIndia } from "./data/howMuchDoesWebDesignCostinIndia";
 export const allBlogsData: BlogData[] = [
+  howMuchDoesWebDesignCostinIndia,
   brandingforStartupsinBangaloreStrategies2026,
   brandPositioningStrategiesforCompetitiveMarkets,
   SafeLinkBuildingTechniquestoAvoidGooglePenalties,
