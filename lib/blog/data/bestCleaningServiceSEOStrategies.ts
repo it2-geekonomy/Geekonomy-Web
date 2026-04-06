@@ -142,7 +142,7 @@ export const bestCleaningServiceSEOStrategiesSEO = {
   url: "https://geekonomytech.com/blog/best-cleaning-service-seo-strategies",
   canonical: "https://geekonomytech.com/blog/best-cleaning-service-seo-strategies",
   image: "https://geekonomytech.com/Best%20Cleaning%20Service%20SEO/Best%20Cleaning%20Service%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -189,5 +189,5 @@ export const BestDigitalMarketingStrategiesforBangaloreBusinessesSEO = {
   url: "https://thegeekonomy.com/blog/best-digital-marketing-strategies-for-bangalore-businesses",
   canonical: "https://thegeekonomy.com/blog/best-digital-marketing-strategies-for-bangalore-businesses",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

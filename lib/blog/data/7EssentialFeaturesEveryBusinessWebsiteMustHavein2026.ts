@@ -140,7 +140,7 @@ export const EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO = {
   url: "https://geekonomytech.com/blog/essential-features-every-business-website-must-have",
   canonical: "https://geekonomytech.com/blog/essential-features-every-business-website-must-have",
   image:  coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

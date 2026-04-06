@@ -156,6 +156,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "best-llM-seo-tools-for-agencies":"Rahul Dutta",
   "google-display-ads-grow-marketing-results":"Rahul Dutta",
   "safe-link-building-techniques-avoid-google-penalties":"Rahul Dutta",
+  "website-design-mistakes-indian-businesses-must-avoid": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -380,6 +381,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-small-businesses-need-website-india": "April 6, 2026",
   "how-long-to-build-business-website-india": "April 6, 2026",
   "essential-features-every-business-website-must-have" : "April 6, 2026",
+  "website-design-mistakes-indian-businesses-must-avoid" : "April 6, 2026",
 
 
 };

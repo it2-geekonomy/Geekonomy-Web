@@ -166,7 +166,7 @@ export const bestSaaSSEOAgencyStrategiesSEO = {
   url: "https://geekonomytech.com/blog/best-b2b-saas-seo-agency-strategies",
   canonical: "https://geekonomytech.com/blog/best-b2b-saas-seo-agency-strategies",
   image: "https://geekonomytech.com/blog%20image/SaaS%20SEO%20Agency/SaaS%20SEO%20Agency.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

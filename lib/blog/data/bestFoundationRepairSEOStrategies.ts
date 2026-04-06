@@ -130,7 +130,7 @@ export const bestFoundationRepairSEOStrategiesSEO = {
   url: "https://geekonomytech.com/blog/best-foundation-repair-seo-strategies",
   canonical: "https://geekonomytech.com/blog/best-foundation-repair-seo-strategies",
   image: "https://geekonomytech.com/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026%20.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 
