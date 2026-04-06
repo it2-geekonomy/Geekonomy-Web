@@ -167,7 +167,7 @@ import{ whySmallBusinessesNeedaWebsiteinIndia } from "./data/whySmallBusinessesN
 import { howLongDoesItTaketoBuildaBusinessWebsiteinIndia } from "./data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia";
 import {EssentialFeaturesEveryBusinessWebsiteMustHavein2026} from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
 export const allBlogsData: BlogData[] = [
-  EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
+EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
   howLongDoesItTaketoBuildaBusinessWebsiteinIndia,
   whySmallBusinessesNeedaWebsiteinIndia,
   howMuchDoesWebDesignCostinIndia,
