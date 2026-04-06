@@ -160,8 +160,19 @@ import { howtoUseSocialListeningforInfluencerMarketing } from "./data/howtoUseSo
 import { heavyvehicletrainingbusinessmarketingstrategies } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
 import { BestAIAvatarServicesforMultilingualMarketingCampaignsin2026 } from "./data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026";
 import { SafeLinkBuildingTechniquestoAvoidGooglePenalties } from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
-
+import { brandPositioningStrategiesforCompetitiveMarkets } from "./data/brandPositioningStrategiesforCompetitiveMarkets";
+import{ brandingforStartupsinBangaloreStrategies2026} from "./data/brandingforStartupsinBangaloreStrategies2026";
+import { howMuchDoesWebDesignCostinIndia } from "./data/howMuchDoesWebDesignCostinIndia";
+import{ whySmallBusinessesNeedaWebsiteinIndia } from "./data/whySmallBusinessesNeedaWebsiteinIndia";
+import { howLongDoesItTaketoBuildaBusinessWebsiteinIndia } from "./data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia";
+import {EssentialFeaturesEveryBusinessWebsiteMustHavein2026} from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
 export const allBlogsData: BlogData[] = [
+EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
+  howLongDoesItTaketoBuildaBusinessWebsiteinIndia,
+  whySmallBusinessesNeedaWebsiteinIndia,
+  howMuchDoesWebDesignCostinIndia,
+  brandingforStartupsinBangaloreStrategies2026,
+  brandPositioningStrategiesforCompetitiveMarkets,
   SafeLinkBuildingTechniquestoAvoidGooglePenalties,
   BestAIAvatarServicesforMultilingualMarketingCampaignsin2026,
   heavyvehicletrainingbusinessmarketingstrategies,
