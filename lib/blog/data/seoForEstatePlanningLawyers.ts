@@ -186,7 +186,7 @@ export const seoForEstatePlanningLawyersSEO = {
   url: "https://thegeekonomy.com/blog/seo-for-estate-planning-lawyers-complete-guide",
   canonical: "https://thegeekonomy.com/blog/seo-for-estate-planning-lawyers-complete-guide",
   image: "https://thegeekonomy.com/blog%20image/SEO%20for%20Estate%20Planning%20Lawyers/SEO%20for%20Estate%20Planning%20Lawyers%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

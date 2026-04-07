@@ -554,10 +554,10 @@ export const uxUIDesign: BlogData = {
 export const uxUIDesignSEO = {
   title: "What Is UX/UI Design? Explained for UK Business Owners",
   description: "A simple guide explaining UX/UI design for UK business owners. Learn how good design improves user experience, conversions, and business growth.",
-  url: "https://geekonomytech.com/blog/ux-ui-design-explained-for-uk-business-owners",
-  canonical: "https://geekonomytech.com/blog/ux-ui-design-explained-for-uk-business-owners",
-  image: "https://geekonomytech.com/UXUI%20Design%20UK/UXUI%20Design%20UK%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/ux-ui-design-explained-for-uk-business-owners",
+  canonical: "https://thegeekonomy.com/blog/ux-ui-design-explained-for-uk-business-owners",
+  image: "https://thegeekonomy.com/UXUI%20Design%20UK/UXUI%20Design%20UK%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -166,10 +166,10 @@ export const technicalSEOContentSEOAudits: BlogData = {
 export const technicalSEOContentSEOAuditsSEO = {
   title: "Difference Between Technical SEO And Content SEO Audits",
   description: "Understand the difference between technical SEO and content SEO audits. Learn how each fixes issues and boosts overall search performance.",
-  url: "https://geekonomytech.com/blog/difference-between-technical-seo-and-content-seo-audits",
-  canonical: "https://geekonomytech.com/blog/difference-between-technical-seo-and-content-seo-audits",
-  image: "https://geekonomytech.com/Difference Between Technical SEO And Content SEO Audits/Difference Between Technical SEO And Content SEO Audits.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/difference-between-technical-seo-and-content-seo-audits",
+  canonical: "https://thegeekonomy.com/blog/difference-between-technical-seo-and-content-seo-audits",
+  image: "https://thegeekonomy.com/Difference Between Technical SEO And Content SEO Audits/Difference Between Technical SEO And Content SEO Audits.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

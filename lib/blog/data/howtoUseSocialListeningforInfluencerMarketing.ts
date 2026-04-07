@@ -165,7 +165,7 @@ export const howtoUseSocialListeningforInfluencerMarketingSEO = {
   url: "https://thegeekonomy.com/blog/use-social-listening-influencer-marketing",
   canonical: "https://thegeekonomy.com/blog/use-social-listening-influencer-marketing",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 
 };
 

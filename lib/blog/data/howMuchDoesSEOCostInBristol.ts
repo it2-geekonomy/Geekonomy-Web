@@ -170,10 +170,10 @@ export const howMuchDoesSEOCostInBristolSEO = {
     title: "How Much Does SEO Cost in Bristol | 2026 Guide",
     description:
         "Learn how much SEO costs in Bristol. Discover average pricing, factors affecting SEO costs, and what Bristol businesses should expect to pay.",
-    url: "https://geekonomytech.com/blog/seo-cost-in-bristol",
-    canonical: "https://geekonomytech.com/blog/seo-cost-in-bristol",
-    image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Bristol/How-Much-Does-SEO-Cost-in-Bristol.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/seo-cost-in-bristol",
+    canonical: "https://thegeekonomy.com/blog/seo-cost-in-bristol",
+    image: "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Bristol/How-Much-Does-SEO-Cost-in-Bristol.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

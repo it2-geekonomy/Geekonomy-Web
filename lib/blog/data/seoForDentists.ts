@@ -121,10 +121,10 @@ export const seoForDentistsSEO = {
   title: "SEO for Dentists: Local SEO to Get More Patients",
   description:
     "Boost your dental clinic's online presence with SEO for dentists. Rank higher, attract more patients, and grow your practice with proven strategies.",
-  url: "https://geekonomytech.com/blog/seo-for-dentists-local-seo-to-get-more-patients",
-  canonical: "https://geekonomytech.com/blog/seo-for-dentists-local-seo-to-get-more-patients",
-  image: "https://geekonomytech.com/SEO%20for%20Dentists/SEO%20for%20Dentists.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-dentists-local-seo-to-get-more-patients",
+  canonical: "https://thegeekonomy.com/blog/seo-for-dentists-local-seo-to-get-more-patients",
+  image: "https://thegeekonomy.com/SEO%20for%20Dentists/SEO%20for%20Dentists.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

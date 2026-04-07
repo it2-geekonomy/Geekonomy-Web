@@ -396,10 +396,10 @@ export const seoForLegalFirms: BlogData = {
 export const seoForLegalFirmsSEO = {
   title: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher",
   description: "SEO for legal firms helps boost rankings, attract qualified leads, and improve online visibility for lawyers and law firms. Learn proven strategies",
-  url: "https://geekonomytech.com/blog/seo-for-legal-firms-complete-guide",
-  canonical: "https://geekonomytech.com/blog/seo-for-legal-firms-complete-guide",
-  image: "https://geekonomytech.com/blog%20image/SEO%20for%20Legal%20Firms/SEO%20for%20Legal%20Firms%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-legal-firms-complete-guide",
+  canonical: "https://thegeekonomy.com/blog/seo-for-legal-firms-complete-guide",
+  image: "https://thegeekonomy.com/blog%20image/SEO%20for%20Legal%20Firms/SEO%20for%20Legal%20Firms%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

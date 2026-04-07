@@ -131,10 +131,10 @@ export const seoForFinancialServices: BlogData = {
 export const seoForFinancialServicesSEO = {
   title: "SEO for Financial Services: Strategies For Ranking",
   description: "SEO for financial services helps improve visibility, build trust, and attract qualified leads. Learn proven strategies to rank higher and grow online.",
-  url: "https://geekonomytech.com/blog/seo-for-financial-services-strategies",
-  canonical: "https://geekonomytech.com/blog/seo-for-financial-services-strategies",
-  image: "https://geekonomytech.com/SEO%20for%20Financial%20Services/SEO%20for%20Financial%20Services%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-financial-services-strategies",
+  canonical: "https://thegeekonomy.com/blog/seo-for-financial-services-strategies",
+  image: "https://thegeekonomy.com/SEO%20for%20Financial%20Services/SEO%20for%20Financial%20Services%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

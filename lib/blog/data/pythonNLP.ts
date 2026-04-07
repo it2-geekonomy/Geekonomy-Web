@@ -148,10 +148,10 @@ export const pythonNLPSEO = {
   title: "How to Use Python for NLP and Semantic SEO",
   description:
     "Learn how to use Python for NLP and semantic SEO. Automate keyword research, optimize content, improve rankings, and boost search relevance.",
-  url: "https://geekonomytech.com/blog/how-to-use-python-for-nlp-and-semantic-seo",
-  canonical: "https://geekonomytech.com/blog/how-to-use-python-for-nlp-and-semantic-seo",
-  image: "https://geekonomytech.com/How%20to%20Use%20Python%20for%20NLP%20and%20Semantic%20SEO/How%20to%20Use%20Python%20for%20NLP%20and%20Semantic%20SEO.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-to-use-python-for-nlp-and-semantic-seo",
+  canonical: "https://thegeekonomy.com/blog/how-to-use-python-for-nlp-and-semantic-seo",
+  image: "https://thegeekonomy.com/How%20to%20Use%20Python%20for%20NLP%20and%20Semantic%20SEO/How%20to%20Use%20Python%20for%20NLP%20and%20Semantic%20SEO.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

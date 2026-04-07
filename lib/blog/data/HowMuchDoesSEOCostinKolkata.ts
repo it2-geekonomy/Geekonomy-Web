@@ -221,10 +221,10 @@ export const howMuchDoesSEOCostInKolkataSEO = {
     title: "How Much Does SEO Cost in Kolkata | 2026 Guide",
     description:
         "Discover premium SEO services in Kolkata. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-kolkata",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-kolkata",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Kolkata/How Much Does SEO Cost in Kolkata main image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-kolkata",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-kolkata",
+    image: "https://thegeekonomy.com/How Much Does SEO Cost in Kolkata/How Much Does SEO Cost in Kolkata main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

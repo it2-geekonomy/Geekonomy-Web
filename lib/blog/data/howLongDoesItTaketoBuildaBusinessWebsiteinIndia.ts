@@ -205,8 +205,8 @@ export const howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO = {
   title: "How Long Does It Take to Build a Business Website in India",
   description:
     " Learn how long it takes to build a business website in India based on complexity, features, and project scope.",
-  url: "https://geekonomytech.com/blog/how-long-to-build-business-website-india",
-  canonical: "https://geekonomytech.com/blog/how-long-to-build-business-website-india",
+  url: "https://thegeekonomy.com/blog/how-long-to-build-business-website-india",
+  canonical: "https://thegeekonomy.com/blog/how-long-to-build-business-website-india",
   image:  coverImage,
   twitterHandle: "@Geekonomy",
 };

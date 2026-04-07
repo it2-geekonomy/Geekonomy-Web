@@ -226,11 +226,11 @@ export const howMuchDoesSEOCostInHyderabadSEO = {
     title: "How Much Does SEO Cost in Hyderabad | 2026 Guide",
     description:
         "Discover how much SEO costs in Hyderabad. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-hyderabad",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-hyderabad",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-hyderabad",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-hyderabad",
     image:
-        "https://geekonomytech.com/How Much Does SEO Cost in Hyderabad/How Much Does SEO Cost in Hyderabad main image.webp",
-    twitterHandle: "@GeekonomyTech",
+        "https://thegeekonomy.com/How Much Does SEO Cost in Hyderabad/How Much Does SEO Cost in Hyderabad main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

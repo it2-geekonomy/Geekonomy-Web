@@ -180,10 +180,10 @@ export const whiteLabelPPCUSA: BlogData = {
 export const whiteLabelPPCUSASEO = {
   title: "White Label PPC Services USA | Grow Your Agency",
   description: "Discover how white label PPC services help U.S. agencies scale faster, cut costs, and deliver expert ad results. Learn pricing, benefits, and more.",
-  url: "https://geekonomytech.com/blog/white-label-ppc-services-usa",
-  canonical: "https://geekonomytech.com/blog/white-label-ppc-services-usa",
-  image: "https://geekonomytech.com/images/ppc.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/white-label-ppc-services-usa",
+  canonical: "https://thegeekonomy.com/blog/white-label-ppc-services-usa",
+  image: "https://thegeekonomy.com/images/ppc.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -175,10 +175,10 @@ export const localSEORoadsideAssistance: BlogData = {
 export const localSEORoadsideAssistanceSEO = {
   title: "Local SEO for Roadside Assistance Providers: Best Strategies",
   description: "Grow your roadside assistance business with local SEO. Rank higher, get more emergency calls, and attract nearby drivers fast.",
-  url: "https://geekonomytech.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",
-  image: "https://geekonomytech.com/Local%20SEO%20for%20Roadside%20Assistance%20Providers/Local%20SEO%20for%20Roadside%20Assistance%20Providers.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",
+  image: "https://thegeekonomy.com/Local%20SEO%20for%20Roadside%20Assistance%20Providers/Local%20SEO%20for%20Roadside%20Assistance%20Providers.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

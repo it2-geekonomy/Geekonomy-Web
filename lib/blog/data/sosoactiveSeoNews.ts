@@ -185,7 +185,7 @@ export const sosoactiveSeoNewsSEO = {
   url: "https://thegeekonomy.com/blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
   canonical: "https://thegeekonomy.com/blog/sosoactive-seo-news-digital-marketing-trends-future-lifestyle",
   image: "https://thegeekonomy.com/blog%20image/Sosoactive%20SEO%20News/Sosoactive%20SEO%20News%20new.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

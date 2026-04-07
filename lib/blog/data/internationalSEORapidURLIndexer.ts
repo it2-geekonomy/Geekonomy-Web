@@ -159,10 +159,10 @@ export const internationalSEORapidURLIndexer: BlogData = {
 export const internationalSEORapidURLIndexerSEO = {
   title: "Can International Seo Efforts be enhanced with rapid url indexer",
   description: "Can international SEO efforts be enhanced with rapid URL indexer? Learn how faster indexing can improve global rankings and website visibility.",
-  url: "https://geekonomytech.com/blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer",
-  canonical: "https://geekonomytech.com/blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer",
-  image: "https://geekonomytech.com/blog%20image/International%20Seo%20Efforts/International%20Seo%20Efforts%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer",
+  canonical: "https://thegeekonomy.com/blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer",
+  image: "https://thegeekonomy.com/blog%20image/International%20Seo%20Efforts/International%20Seo%20Efforts%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

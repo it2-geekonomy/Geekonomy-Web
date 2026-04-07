@@ -182,5 +182,5 @@ export const howtoHireBrandAmbassadorsforYourBusinessSEO = {
   url: "https://thegeekonomy.com/blog/hire-brand-ambassadors-for-your-business",
   canonical: "https://thegeekonomy.com/blog/hire-brand-ambassadors-for-your-business",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

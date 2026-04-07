@@ -138,10 +138,10 @@ export const localSEOForOrthodontistsSEO = {
   title: "Local SEO for Orthodontists: Best Strategies For Ranking",
   description:
     "Increase patient bookings with local SEO for orthodontists. Rank higher on Google, target nearby patients, and grow your orthodontic practice.",
-  url: "https://geekonomytech.com/blog/local-seo-for-orthodontists-best-strategies",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-orthodontists-best-strategies",
-  image: "https://geekonomytech.com/Local%20SEO%20for%20Orthodontists/Local%20SEO%20for%20Orthodontists.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-orthodontists-best-strategies",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-orthodontists-best-strategies",
+  image: "https://thegeekonomy.com/Local%20SEO%20for%20Orthodontists/Local%20SEO%20for%20Orthodontists.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -155,10 +155,10 @@ export const seoStrategyFunnel: BlogData = {
 export const seoStrategyFunnelSEO = {
   title: "SEO Strategy Funnel: How to Turn Traffic Into Revenue",
   description: "Learn how the SEO strategy funnel turns traffic into revenue. Optimize every stage to attract visitors, convert leads, and grow your business.",
-  url: "https://geekonomytech.com/blog/seo-strategy-funnel",
-  canonical: "https://geekonomytech.com/blog/seo-strategy-funnel",
-  image: "https://geekonomytech.com/SEO%20Strategy%20Funnel/SEO%20Strategy%20Funnel%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-strategy-funnel",
+  canonical: "https://thegeekonomy.com/blog/seo-strategy-funnel",
+  image: "https://thegeekonomy.com/SEO%20Strategy%20Funnel/SEO%20Strategy%20Funnel%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

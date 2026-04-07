@@ -259,10 +259,10 @@ export const howMuchDoesSEOCostInChicagoSEO = {
     title: "How Much Does SEO Cost in Chicago | 2026 Guide",
     description:
         "Discover SEO pricing in Chicago. Learn about SEO packages, cost factors, and how to choose the right SEO services for your business in the United States.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-chicago",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-chicago",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Chicago/How Much Does SEO Cost in Chicago main image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-chicago",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-chicago",
+    image: "https://thegeekonomy.com/How Much Does SEO Cost in Chicago/How Much Does SEO Cost in Chicago main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

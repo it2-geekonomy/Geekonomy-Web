@@ -195,5 +195,5 @@ export const StartupBrandingStrategyforBangaloreEntrepreneursContentSEO = {
     url: "https://thegeekonomy.com/blog/startup-branding-strategy-bangalore-entrepreneurs",
     canonical: "https://thegeekonomy.com/blog/startup-branding-strategy-bangalore-entrepreneurs",
     image: coverImage,
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
 };

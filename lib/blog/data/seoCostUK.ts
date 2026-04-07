@@ -324,10 +324,10 @@ export const seoCostUK: BlogData = {
 export const seoCostUKSEO = {
   title: "How Much Does SEO Cost in the UK? [2026 Guide]",
   description: "Discover SEO pricing in the UK for 2026. Learn average monthly costs, what affects pricing, and how to choose the best SEO plan.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-uk",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-uk",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20the%20UK/How%20Much%20Does%20SEO%20Cost%20in%20the%20UK%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-uk",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-uk",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20the%20UK/How%20Much%20Does%20SEO%20Cost%20in%20the%20UK%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

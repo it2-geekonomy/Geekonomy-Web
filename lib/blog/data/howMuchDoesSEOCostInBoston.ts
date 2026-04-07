@@ -245,10 +245,10 @@ export const howMuchDoesSEOCostInBostonSEO = {
   title: "How Much Does SEO Cost in Boston | 2026 Guide",
   description:
     "Learn about SEO pricing and service costs for Boston businesses. Discover SEO packages and pricing models to boost your online visibility.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-boston",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-boston",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20Boston/How%20Much%20Does%20SEO%20Cost%20in%20Boston%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-boston",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-boston",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Boston/How%20Much%20Does%20SEO%20Cost%20in%20Boston%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

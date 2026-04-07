@@ -240,10 +240,10 @@ export const howMuchDoesSEOCostInNewYorkSEO = {
   title: "How Much Does SEO Cost in New York | 2026 Guide",
   description:
     "Discover SEO pricing and costs for New York businesses. Learn about packages to boost your online visibility and rankings.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-new-york",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-new-york",
-  image: "https://geekonomytech.com/How%20Much%20Does%20SEO%20Cost%20in%20New%20York/How%20Much%20Does%20SEO%20Cost%20in%20New%20York%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-new-york",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-new-york",
+  image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20New%20York/How%20Much%20Does%20SEO%20Cost%20in%20New%20York%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 
