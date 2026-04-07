@@ -207,7 +207,7 @@ export const enterpriseSEOAuditsSEO = {
   url: "https://thegeekonomy.com/blog/enterprise-seo-audits-complete-guide-for-large-websites",
   canonical: "https://thegeekonomy.com/blog/enterprise-seo-audits-complete-guide-for-large-websites",
   image: "https://thegeekonomy.com/blog%20image/Enterprise%20SEO%20Audits/Enterprise%20SEO%20Audits%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

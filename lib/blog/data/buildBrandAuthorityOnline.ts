@@ -182,5 +182,5 @@ export const buildBrandAuthorityOnlineSEO = {
   url: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",
   canonical: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

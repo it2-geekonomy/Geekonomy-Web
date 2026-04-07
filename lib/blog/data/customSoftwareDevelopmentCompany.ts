@@ -133,10 +133,10 @@ export const customSoftwareDevelopmentCompany: BlogData = {
 export const customSoftwareDevelopmentCompanySEO = {
   title: "How to Choose the Right Custom Software Development Company",
   description: "Learn how to choose the right custom software development company by evaluating expertise, cost, technology stack, and real project results.",
-  url: "https://geekonomytech.com/blog/choose-the-right-custom-software-development-company",
-  canonical: "https://geekonomytech.com/blog/choose-the-right-custom-software-development-company",
-  image: "https://geekonomytech.com/Right%20Custom%20Software%20Development%20Company/Right%20Custom%20Software%20Development%20Company%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/choose-the-right-custom-software-development-company",
+  canonical: "https://thegeekonomy.com/blog/choose-the-right-custom-software-development-company",
+  image: "https://thegeekonomy.com/Right%20Custom%20Software%20Development%20Company/Right%20Custom%20Software%20Development%20Company%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

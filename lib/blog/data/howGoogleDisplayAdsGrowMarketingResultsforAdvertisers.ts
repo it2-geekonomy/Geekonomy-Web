@@ -161,7 +161,7 @@ export const HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO = {
   url: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results",
   canonical: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -134,7 +134,7 @@ export const howDoLocalSEOAgenciesUseRapidURLIndexerSEO = {
   url: "https://geekonomytech.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer",
   canonical: "https://geekonomytech.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer",
   image: "https://geekonomytech.com/Local%20SEO%20Agencies%20Use%20Rapid%20URL%20Indexer/Rapid%20URL%20Indexer%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

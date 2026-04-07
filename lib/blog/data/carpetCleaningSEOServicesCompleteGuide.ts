@@ -146,10 +146,10 @@ export const carpetCleaningSEOServicesCompleteGuideSEO = {
   title: "Carpet Cleaning SEO Services: Complete Guide & Strategies",
   description:
     "Boost your carpet cleaning business with expert SEO services. Rank higher locally, attract more clients, and grow bookings with proven strategies.",
-  url: "https://geekonomytech.com/blog/carpet-cleaning-seo-services-complete-guide",
-  canonical: "https://geekonomytech.com/blog/carpet-cleaning-seo-services-complete-guide",
-  image: "https://geekonomytech.com/Carpet%20Cleaning%20SEO/Carpet%20Cleaning%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/carpet-cleaning-seo-services-complete-guide",
+  canonical: "https://thegeekonomy.com/blog/carpet-cleaning-seo-services-complete-guide",
+  image: "https://thegeekonomy.com/Carpet%20Cleaning%20SEO/Carpet%20Cleaning%20SEO%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -154,7 +154,7 @@ export const hotelSEOConsultantSEO = {
   url: "https://geekonomytech.com/blog/how-a-hotel-seo-consultant-helps-you-rank",
   canonical: "https://geekonomytech.com/blog/how-a-hotel-seo-consultant-helps-you-rank",
   image: "https://geekonomytech.com/blog%20image/Hotel%20SEO%20Consultant/Hotel%20SEO%20Consultant%20.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

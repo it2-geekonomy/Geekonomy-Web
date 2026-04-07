@@ -127,10 +127,10 @@ export const bestFoundationRepairSEOStrategiesSEO = {
   title: "Best Foundation Repair SEO Strategies for Growth 2026",
   description:
     "Grow your business with proven foundation repair SEO strategies. Rank higher, attract local homeowners, and generate more service calls and leads.",
-  url: "https://geekonomytech.com/blog/best-foundation-repair-seo-strategies",
-  canonical: "https://geekonomytech.com/blog/best-foundation-repair-seo-strategies",
-  image: "https://geekonomytech.com/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026%20.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/best-foundation-repair-seo-strategies",
+  canonical: "https://thegeekonomy.com/blog/best-foundation-repair-seo-strategies",
+  image: "https://thegeekonomy.com/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026/Best%20Foundation%20Repair%20SEO%20Strategies%20for%20Growth%202026%20.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

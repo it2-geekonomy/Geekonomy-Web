@@ -186,6 +186,6 @@ export const  bestSemanticSEOConsultantsHowtoChoosetheRightSEO = {
   url: "https://thegeekonomy.com/blog/best-semantic-seo-consultants-how-to-choose",
   canonical: "https://thegeekonomy.com/blog/best-semantic-seo-consultants-how-to-choose",
   image:coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 

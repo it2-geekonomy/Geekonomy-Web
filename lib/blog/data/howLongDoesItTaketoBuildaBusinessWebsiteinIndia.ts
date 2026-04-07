@@ -208,7 +208,7 @@ export const howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO = {
   url: "https://geekonomytech.com/blog/how-long-to-build-business-website-india",
   canonical: "https://geekonomytech.com/blog/how-long-to-build-business-website-india",
   image:  coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

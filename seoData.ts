@@ -55,7 +55,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com",
     canonical: "https://thegeekonomy.com",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   about: {
@@ -65,7 +65,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/about",
     canonical: "https://thegeekonomy.com/about",
     image: "https://thegeekonomy.com/assets/og-about.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   "what-we-do": {
@@ -75,7 +75,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/what-we-do",
     canonical: "https://thegeekonomy.com/what-we-do",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   "how-we-work": {
@@ -85,7 +85,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/how-we-work",
     canonical: "https://thegeekonomy.com/how-we-work",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   "success-lab": {
@@ -95,7 +95,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/success-lab",
     canonical: "https://thegeekonomy.com/success-lab",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   "contact-us": {
@@ -105,7 +105,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/contact-us",
     canonical: "https://thegeekonomy.com/contact-us",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   "our-work": {
@@ -115,7 +115,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/our-work",
     canonical: "https://thegeekonomy.com/our-work",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   career: {
@@ -125,7 +125,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/career",
     canonical: "https://thegeekonomy.com/career",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 
   blog: {
@@ -135,7 +135,7 @@ const seoData: Record<string, SEOData> = {
     url: "https://thegeekonomy.com/blog",
     canonical: "https://thegeekonomy.com/blog",
     image: "https://thegeekonomy.com/assets/og-blog.jpg",
-    twitterHandle: "@GeekonomyTech",
+    twitterHandle: "@Geekonomy",
   },
 };
 

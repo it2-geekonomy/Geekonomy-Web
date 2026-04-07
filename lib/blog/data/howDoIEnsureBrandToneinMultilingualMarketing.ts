@@ -160,5 +160,5 @@ export const howDoIEnsureBrandToneinMultilingualMarketingSEO = {
   url: "https://thegeekonomy.com/blog/ensure-brand-tone-multilingual-marketing",
   canonical: "https://thegeekonomy.com//blog/ensure-brand-tone-multilingual-marketing",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
