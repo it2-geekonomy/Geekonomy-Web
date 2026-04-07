@@ -263,10 +263,10 @@ export const howMuchDoesSEOCostInBangaloreSEO = {
   title: "How Much Does SEO Cost in Bangalore | 2026 Guide",
   description:
     "Discover premium SEO services in Bangalore. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
-  url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-bangalore",
-  canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-bangalore",
-  image: "https://geekonomytech.com/How Much Does SEO Cost in Bangalore/How Much Does SEO Cost in Bangalore main image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-bangalore",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-bangalore",
+  image: "https://thegeekonomy.com/How Much Does SEO Cost in Bangalore/How Much Does SEO Cost in Bangalore main image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

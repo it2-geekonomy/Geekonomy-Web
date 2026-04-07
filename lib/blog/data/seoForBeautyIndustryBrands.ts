@@ -178,10 +178,10 @@ export const seoForBeautyIndustryBrandsSEO = {
   title: "SEO for Beauty Industry Brands: Complete Guide 2026",
   description:
     "Boost your beauty brand's online presence with SEO for the beauty industry. Rank higher, attract more customers, and grow sales with proven strategies.",
-  url: "https://geekonomytech.com/blog/seo-for-beauty-industry-brands-complete-guide",
-  canonical: "https://geekonomytech.com/blog/seo-for-beauty-industry-brands-complete-guide",
-  image: "https://geekonomytech.com/SEO%20for%20Beauty%20Industry%20Brands/SEO%20for%20Beauty%20Industry%20Brands%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-beauty-industry-brands-complete-guide",
+  canonical: "https://thegeekonomy.com/blog/seo-for-beauty-industry-brands-complete-guide",
+  image: "https://thegeekonomy.com/SEO%20for%20Beauty%20Industry%20Brands/SEO%20for%20Beauty%20Industry%20Brands%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

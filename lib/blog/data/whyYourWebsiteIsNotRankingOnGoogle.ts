@@ -67,7 +67,7 @@ const whyYourWebsiteIsNotRankingOnGoogleContent: BlogContentItem[] = [
   p("Make sure that you optimize your site for mobile devices because Google relies on mobile-first indexing."),
   p("Google Search Console helps to track and correct possible technical issues that could be negatively impacting the crawlability and index of your site."),
   p("An organized site that has a good structure is a site that is easily crawled and indexed by Google."),
-  p('These <a href="https://geekonomytech.com/blog/difference-between-technical-seo-and-content-seo-audits" class="underline text-[#6FAF4E]">technical SEO factors</a>, including strong backlinks, are essential in improving your exposure as well as making sure that your site appears on the first page, which implies that Google will be more perceptive of the relevance of your site.'),
+  p('These <a href="https://thegeekonomy.com/blog/difference-between-technical-seo-and-content-seo-audits" class="underline text-[#6FAF4E]">technical SEO factors</a>, including strong backlinks, are essential in improving your exposure as well as making sure that your site appears on the first page, which implies that Google will be more perceptive of the relevance of your site.'),
   p("Failure to handle the technical SEO issues can be one of the 10 reasons your site isn’t."),
 
   h2("Struggling to Rank on Google?"),
@@ -152,11 +152,11 @@ export const whyYourWebsiteIsNotRankingOnGoogleSEO = {
   title: "10 Reasons Why Your Website is Not Ranking on Google",
   description:
     "Discover 10 reasons why your website is not ranking on Google and learn practical SEO fixes to improve visibility, increase traffic, and grow online.",
-  url: "https://geekonomytech.com/blog/why-your-website-is-not-ranking-on-google",
+  url: "https://thegeekonomy.com/blog/why-your-website-is-not-ranking-on-google",
   canonical:
-    "https://geekonomytech.com/blog/why-your-website-is-not-ranking-on-google",
+    "https://thegeekonomy.com/blog/why-your-website-is-not-ranking-on-google",
   image:
-    "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google.webp",
-  twitterHandle: "@GeekonomyTech",
+    "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google/10-Reasons-Why-Your-Website-is-Not-Ranking-on-Google.webp",
+  twitterHandle: "@Geekonomy",
 };
 

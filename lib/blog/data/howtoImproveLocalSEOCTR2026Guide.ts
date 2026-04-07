@@ -196,5 +196,5 @@ export const HowtoImproveLocalSEOCTR2026GuideSEO = {
   url: "https://thegeekonomy.com/blog/how-to-improve-local-seo-ctr",
   canonical: "https://thegeekonomy.com/blog/how-to-improve-local-seo-ctr",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

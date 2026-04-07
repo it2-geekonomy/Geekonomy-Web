@@ -213,5 +213,5 @@ export const measureBrandVisibilityInChatGPTSEO = {
   url: "https://thegeekonomy.com/blog/measure-brand-visibility-in-chatgpt",
   canonical: "https://thegeekonomy.com/blog/measure-brand-visibility-in-chatgpt",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

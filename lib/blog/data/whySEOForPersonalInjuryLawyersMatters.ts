@@ -151,7 +151,7 @@ export const whySEOForPersonalInjuryLawyersMattersSEO = {
   url: "https://thegeekonomy.com/blog/why-seo-for-personal-injury-lawyers-matters",
   canonical: "https://thegeekonomy.com/blog/why-seo-for-personal-injury-lawyers-matters",
   image: "https://thegeekonomy.com/blog%20image/Why%20Does%20SEO%20For%20Personal%20Injury%20Lawyers%20Matter/Why%20Does%20SEO%20For%20Personal%20Injury%20Lawyers%20Matter%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

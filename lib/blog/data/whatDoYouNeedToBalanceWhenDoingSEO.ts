@@ -143,7 +143,7 @@ export const whatDoYouNeedToBalanceWhenDoingSEOSEO = {
   url: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
   canonical: "https://thegeekonomy.com/blog/what-do-you-need-to-balance-when-doing-seo",
   image: "https://thegeekonomy.com/blog%20image/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026/What%20Do%20You%20Need%20To%20Balance%20When%20Doing%20SEO%20in%202026%20new.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

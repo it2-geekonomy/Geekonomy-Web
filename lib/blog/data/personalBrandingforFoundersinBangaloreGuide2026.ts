@@ -188,6 +188,6 @@ export const personalBrandingforFoundersinBangaloreGuide2026SEO = {
   url: "https://thegeekonomy.com/blog/personal-branding-for-founders-in-bangalore-guide",
   canonical: "https://thegeekonomy.com/blog/personal-branding-for-founders-in-bangalore-guide",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 

@@ -181,10 +181,10 @@ export const seoForAutoBodyShopsSEO = {
   title: "SEO for Auto Body Shops: Strategies to Boost Local SEO",
   description:
     "Boost your auto body shop's visibility with local SEO. Rank higher on Google, attract nearby customers, and increase repair bookings.",
-  url: "https://geekonomytech.com/blog/seo-for-auto-body-shops-strategies-to-boost-local-seo",
-  canonical: "https://geekonomytech.com/blog/seo-for-auto-body-shops-strategies-to-boost-local-seo",
-  image: "https://geekonomytech.com/SEO%20for%20Auto%20Body%20Shops/SEO%20for%20Auto%20Body%20Shops%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-auto-body-shops-strategies-to-boost-local-seo",
+  canonical: "https://thegeekonomy.com/blog/seo-for-auto-body-shops-strategies-to-boost-local-seo",
+  image: "https://thegeekonomy.com/SEO%20for%20Auto%20Body%20Shops/SEO%20for%20Auto%20Body%20Shops%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

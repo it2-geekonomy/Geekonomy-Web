@@ -154,6 +154,6 @@ export const howVerifyingOriginProtectsBrandReputationSEO = {
   url: "https://thegeekonomy.com/blog/verifying-origin-protects-brand-reputation",
   canonical: "https://thegeekonomy.com/blog/verifying-origin-protects-brand-reputation",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 
 };

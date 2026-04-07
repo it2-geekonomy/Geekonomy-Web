@@ -154,10 +154,10 @@ export const SafeLinkBuildingTechniquestoAvoidGooglePenaltiesSEO = {
   title: "Safe Link Building Techniques to Avoid Google Penalties",
   description:
      "Learn safe link building techniques to avoid Google penalties and build sustainable rankings with ethical SEO strategies.",
-  url: "https://thegeekonomytech.com/blog/safe-link-building-techniques-avoid-google-penalties",
-  canonical: "https://thegeekonomytech.com/blog/safe-link-building-techniques-avoid-google-penalties",
+  url: "https://thethegeekonomy.com/blog/safe-link-building-techniques-avoid-google-penalties",
+  canonical: "https://thethegeekonomy.com/blog/safe-link-building-techniques-avoid-google-penalties",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

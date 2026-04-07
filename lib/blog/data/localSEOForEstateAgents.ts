@@ -135,10 +135,10 @@ export const localSEOForEstateAgents: BlogData = {
 export const localSEOForEstateAgentsSEO = {
   title: "Local SEO for Estate Agents | Boost Leads Fast",
   description: "Rank higher locally and attract more clients with proven Local SEO strategies for estate agents. Get found and grow your leads today!",
-  url: "https://geekonomytech.com/blog/local-seo-for-estate-agents",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-estate-agents",
-  image: "https://geekonomytech.com/Local%20SEO%20for%20Estate%20Agents/Local%20SEO%20for%20Estate%20Agents%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-estate-agents",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-estate-agents",
+  image: "https://thegeekonomy.com/Local%20SEO%20for%20Estate%20Agents/Local%20SEO%20for%20Estate%20Agents%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

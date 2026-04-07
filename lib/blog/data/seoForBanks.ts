@@ -105,7 +105,7 @@ const seoForBanksContent: BlogContentItem[] = [
   h2("Choosing the Right SEO Services"),
   h3("Finding a Top SEO Agency for Banks"),
   p("The selection of an appropriate SEO agency is very important for banks to increase their digital presence and gain their clients' confidence."),
-  p("An <a href=\"https://geekonomytech.com/blog/best-b2b-saas-seo-agency-strategies\">SEO agency at the top of the field</a>, which mainly focuses on SEO for financial institutions and banking-related services, is thoroughly aware of the intricacies and advantages of the banking sector; in fact, the issue of how banks can become more visible online is addressed."),
+  p("An <a href=\"https://thegeekonomy.com/blog/best-b2b-saas-seo-agency-strategies\">SEO agency at the top of the field</a>, which mainly focuses on SEO for financial institutions and banking-related services, is thoroughly aware of the intricacies and advantages of the banking sector; in fact, the issue of how banks can become more visible online is addressed."),
   p("They have enough knowledge to generate bank-focused SEO plans, e.g., by handling the complicated regulations and meeting the compliance requirements, thus giving efficient marketing services."),
   p("First, look at those agencies that have a record of success in raising online visibility for banks and credit unions."),
   p("This will guarantee a great return on investment of SEO activities that enhance your online presence."),
@@ -157,10 +157,10 @@ export const seoForBanksSEO = {
   title: "SEO for Banks: Proven Tactics to Improve Ranking in 2026",
   description:
     "Improve online visibility with SEO for banks. Rank higher, build trust, attract more clients, and grow your financial institution with proven tactics.",
-  url: "https://geekonomytech.com/blog/seo-for-banks-proven-tactics",
-  canonical: "https://geekonomytech.com/blog/seo-for-banks-proven-tactics",
-  image: "https://geekonomytech.com/SEO%20for%20Banks/SeoforBanks.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-banks-proven-tactics",
+  canonical: "https://thegeekonomy.com/blog/seo-for-banks-proven-tactics",
+  image: "https://thegeekonomy.com/SEO%20for%20Banks/SeoforBanks.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -174,7 +174,7 @@ export const seoForMSPsBestPracticesSEO = {
   url: "https://thegeekonomy.com/blog/seo-for-msps-best-practices-and-local-seo",
   canonical: "https://thegeekonomy.com/blog/seo-for-msps-best-practices-and-local-seo",
   image: "https://thegeekonomy.com/blog%20image/SEO%20for%20MSPs%20Best%20Practices/SEO%20for%20MSPs%20Best%20Practices%20and%20Local%20SEO%20for%20MSPs.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

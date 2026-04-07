@@ -186,7 +186,7 @@ export const howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO = {
   url: "https://thegeekonomy.com/blog/use-online-reviews-real-estate-appraiser-marketing",
   canonical: "https://thegeekonomy.com/blog/use-online-reviews-real-estate-appraiser-marketing",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

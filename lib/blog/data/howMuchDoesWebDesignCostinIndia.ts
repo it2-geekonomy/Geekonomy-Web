@@ -177,5 +177,5 @@ export const howMuchDoesWebDesignCostinIndiaSEO = {
   url: "https://thegeekonomy.com/blog/web-design-cost-india",
   canonical: "https://thegeekonomy.com/blog/web-design-cost-india",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

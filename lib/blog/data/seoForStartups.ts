@@ -220,7 +220,7 @@ export const seoForStartupsSEO = {
   url: "https://thegeekonomy.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
   canonical: "https://thegeekonomy.com/blog/seo-for-startups-a-step-by-step-growth-strategy",
   image: "https://thegeekonomy.com/SEO%20for%20Startups/SEO%20for%20Startups%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -181,10 +181,10 @@ export const travelSEOCompany: BlogData = {
 export const travelSEOCompanySEO = {
   title: "How a Travel SEO Company Helps You Rank Higher",
   description: "Learn how a travel SEO company boosts rankings, improves visibility, attracts more travelers, and helps your travel business grow with SEO strategies.",
-  url: "https://geekonomytech.com/blog/how-a-travel-seo-company-helps-you-rank-higher",
-  canonical: "https://geekonomytech.com/blog/how-a-travel-seo-company-helps-you-rank-higher",
-  image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-a-Travel-SEO-Company-Helps-You-Rank-Higher/How-a-Travel-SEO-Company-Helps-You-Rank-Higher.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-a-travel-seo-company-helps-you-rank-higher",
+  canonical: "https://thegeekonomy.com/blog/how-a-travel-seo-company-helps-you-rank-higher",
+  image: "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-a-Travel-SEO-Company-Helps-You-Rank-Higher/How-a-Travel-SEO-Company-Helps-You-Rank-Higher.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 
