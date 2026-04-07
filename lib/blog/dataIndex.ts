@@ -166,8 +166,10 @@ import { howMuchDoesWebDesignCostinIndia } from "./data/howMuchDoesWebDesignCost
 import{ whySmallBusinessesNeedaWebsiteinIndia } from "./data/whySmallBusinessesNeedaWebsiteinIndia";
 import { howLongDoesItTaketoBuildaBusinessWebsiteinIndia } from "./data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia";
 import {EssentialFeaturesEveryBusinessWebsiteMustHavein2026} from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
+import { WebsiteDesignMistakesIndianBusinessesMustAvoid} from "./data/10WebsiteDesignMistakesIndianBusinessesMustAvoid";
 export const allBlogsData: BlogData[] = [
-EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
+  WebsiteDesignMistakesIndianBusinessesMustAvoid,
+  EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
   howLongDoesItTaketoBuildaBusinessWebsiteinIndia,
   whySmallBusinessesNeedaWebsiteinIndia,
   howMuchDoesWebDesignCostinIndia,
