@@ -160,6 +160,7 @@ import {  howMuchDoesWebDesignCostinIndiaSEO } from "./data/howMuchDoesWebDesign
 import { whySmallBusinessesNeedaWebsiteinIndiaSEO } from "./data/whySmallBusinessesNeedaWebsiteinIndia";
 import { howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO } from "./data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia";
 import { EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO } from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
+import { WebsiteDesignMistakesIndianBusinessesMustAvoidSEO} from "./data/10WebsiteDesignMistakesIndianBusinessesMustAvoid";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -304,14 +305,14 @@ export const blogSEOData = {
   "blog/corporate-branding-services-bangalore-guide": corporatebrandingservicesinbangaloreguideSEO,
   "blog/how-branding-increases-customer-trust-and-conversions": howBrandingIncreasesCustomerTrustandConversionsContentSEO,
   "blog/ensure-brand-tone-multilingual-marketing": howDoIEnsureBrandToneinMultilingualMarketingSEO,
-  "blog/why-branding-is-important-before-running-ads":WhyBrandingisImportantBeforeRunningAdsSEO,
-  "blog/common-branding-mistakes-small-businesses-make":commonBrandingMistakesSmallBusinessesMakeSEO,
-  "blog/verifying-origin-protects-brand-reputation":howVerifyingOriginProtectsBrandReputationSEO,
-  "blog/best-semantic-seo-consultants-how-to-choose":  bestSemanticSEOConsultantsHowtoChoosetheRightSEO,
-  "blog/why-you-need-a-free-seo-audit":whyYouNeedaFreeSEOAudit2026GuideSEO,
+  "blog/why-branding-is-important-before-running-ads": WhyBrandingisImportantBeforeRunningAdsSEO,
+  "blog/common-branding-mistakes-small-businesses-make": commonBrandingMistakesSmallBusinessesMakeSEO,
+  "blog/verifying-origin-protects-brand-reputation": howVerifyingOriginProtectsBrandReputationSEO,
+  "blog/best-semantic-seo-consultants-how-to-choose": bestSemanticSEOConsultantsHowtoChoosetheRightSEO,
+  "blog/why-you-need-a-free-seo-audit": whyYouNeedaFreeSEOAudit2026GuideSEO,
   "blog/how-to-improve-local-seo-ctr": HowtoImproveLocalSEOCTR2026GuideSEO,
   "blog/best-llm-seo-tools-for-agencies": BestLLMSEOToolsforAgenciesin2026SEO,
-  "blog/hire-brand-ambassadors-for-your-business":howtoHireBrandAmbassadorsforYourBusinessSEO,
+  "blog/hire-brand-ambassadors-for-your-business": howtoHireBrandAmbassadorsforYourBusinessSEO,
   "blog/google-display-ads-grow-marketing-results": HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO,
   "blog/use-online-reviews-real-estate-appraiser-marketing": howtoUseOnlineReviewsforRealEstateAppraiserMarketingSEO,
   "blog/use-social-listening-influencer-marketing": howtoUseSocialListeningforInfluencerMarketingSEO,
@@ -324,6 +325,7 @@ export const blogSEOData = {
   "blog/why-small-businesses-need-website-india": whySmallBusinessesNeedaWebsiteinIndiaSEO,
   "blog/how-long-to-build-business-website-india": howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO,
   "blog/essential-features-every-business-website-must-have": EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO,
+  "blog/website-design-mistakes-indian-businesses-must-avoid": WebsiteDesignMistakesIndianBusinessesMustAvoidSEO,
 
 
 };
