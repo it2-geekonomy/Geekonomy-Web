@@ -166,7 +166,7 @@ export const howCelebritySEOServicesBuildOnlineAuthoritySEO = {
   url: "https://geekonomytech.com/blog/how-celebrity-seo-servies-build-online-authority",
   canonical: "https://geekonomytech.com/blog/how-celebrity-seo-servies-build-online-authority",
   image: "https://geekonomytech.com/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -471,10 +471,10 @@ export const goodBusinessWebsiteUK: BlogData = {
 export const goodBusinessWebsiteUKSEO = {
   title: "What Makes a Good Business Website in the UK",
   description: "Discover the key elements every UK business website needs, from speed and security to legal compliance, UX, and conversions.",
-  url: "https://geekonomytech.com/blog/what-makes-a-good-business-website-in-the-uk",
-  canonical: "https://geekonomytech.com/blog/what-makes-a-good-business-website-in-the-uk",
-  image: "https://geekonomytech.com/business%20website%20in%20UK/business%20website%20in%20UK%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/what-makes-a-good-business-website-in-the-uk",
+  canonical: "https://thegeekonomy.com/blog/what-makes-a-good-business-website-in-the-uk",
+  image: "https://thegeekonomy.com/business%20website%20in%20UK/business%20website%20in%20UK%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

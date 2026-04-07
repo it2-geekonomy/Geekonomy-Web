@@ -153,10 +153,10 @@ export const b2bSEOAuditStrategiesSEO = {
   title: "B2B SEO Audit Strategies to Improve SEO Performance",
   description:
     "Improve rankings and conversions with a detailed B2B SEO audit. Identify issues, fix technical errors, and optimize for better traffic and leads.",
-  url: "https://geekonomytech.com/blog/b2b-seo-audit-strategies",
-  canonical: "https://geekonomytech.com/blog/b2b-seo-audit-strategies",
-  image: "https://geekonomytech.com/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/b2b-seo-audit-strategies",
+  canonical: "https://thegeekonomy.com/blog/b2b-seo-audit-strategies",
+  image: "https://thegeekonomy.com/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

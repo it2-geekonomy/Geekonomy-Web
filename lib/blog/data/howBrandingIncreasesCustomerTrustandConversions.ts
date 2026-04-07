@@ -176,5 +176,5 @@ export const  howBrandingIncreasesCustomerTrustandConversionsContentSEO = {
   url: "https://thegeekonomy.com/blog/how-branding-increases-customer-trust-and-conversions",
   canonical: "https://thegeekonomy.com/blog/how-branding-increases-customer-trust-and-conversions",
   image :coverImage ,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

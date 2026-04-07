@@ -179,7 +179,7 @@ export const wordPressSEOOxfordshireSEO = {
   url: "https://geekonomytech.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
   canonical: "https://geekonomytech.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
   image: "https://geekonomytech.com/How to Improve WordPress SEO for Oxfordshire Sites/SEO for Oxfordshire Sites main image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

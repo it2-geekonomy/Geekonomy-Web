@@ -168,7 +168,7 @@ export const bestToolsForSEOTopicalMapSEO = {
   url: "https://thegeekonomy.com/blog/best-tools-for-seo-topical-map-boost-your-seo",
   canonical: "https://thegeekonomy.com/blog/best-tools-for-seo-topical-map-boost-your-seo",
   image: "https://thegeekonomy.com/blog%20image/Best%20Tools%20for%20SEO%20Topical%20Map/Best%20Tools%20for%20SEO%20Topical%20Map%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

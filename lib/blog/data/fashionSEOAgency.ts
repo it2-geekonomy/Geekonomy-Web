@@ -159,7 +159,7 @@ export const fashionSEOAgencySEO = {
   url: "https://thegeekonomy.com/blog/fashion-seo-agency-seo-strategies-to-grow",
   canonical: "https://thegeekonomy.com/blog/fashion-seo-agency-seo-strategies-to-grow",
   image: "https://thegeekonomy.com/blog%20image/Fashion%20SEO%20Agency/Fashion%20SEO%20Agency%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

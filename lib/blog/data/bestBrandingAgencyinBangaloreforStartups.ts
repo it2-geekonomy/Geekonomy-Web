@@ -226,8 +226,8 @@ export const bestBrandingAgencyinBangaloreforStartupsSEO = {
   title: "Best Branding Agency in Bangalore for Startups",
   description:
      "Looking for the best branding agency in Bangalore for startups? Discover how the right branding partner can build a strong and memorable brand.",
-  url: "https://thegeekonomytech.com/blog/best-branding-agency-in-bangalore-for-startups",
-  canonical: "https://thegeekonomytech.com/blog/best-branding-agency-in-bangalore-for-startups",
+  url: "https://thegeekonomy.com/blog/best-branding-agency-in-bangalore-for-startups",
+  canonical: "https://thegeekonomy.com/blog/best-branding-agency-in-bangalore-for-startups",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

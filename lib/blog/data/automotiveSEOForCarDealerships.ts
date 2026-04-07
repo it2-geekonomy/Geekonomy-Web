@@ -152,10 +152,10 @@ export const automotiveSEOForCarDealerships: BlogData = {
 export const automotiveSEOForCarDealershipsSEO = {
   title: "Automotive SEO for Car Dealerships: Get More Leads",
   description: "Boost sales with Automotive SEO for car dealerships. Improve search rankings, get more leads, and turn online car shoppers into ready-to-buy customers.",
-  url: "https://geekonomytech.com/blog/automotive-seo-for-car-dealerships",
-  canonical: "https://geekonomytech.com/blog/automotive-seo-for-car-dealerships",
-  image: "https://geekonomytech.com/SEO%20for%20Car%20Dealerships/SEO%20for%20Car%20Dealerships.main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/automotive-seo-for-car-dealerships",
+  canonical: "https://thegeekonomy.com/blog/automotive-seo-for-car-dealerships",
+  image: "https://thegeekonomy.com/SEO%20for%20Car%20Dealerships/SEO%20for%20Car%20Dealerships.main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

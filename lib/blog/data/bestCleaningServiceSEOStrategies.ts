@@ -139,10 +139,10 @@ export const bestCleaningServiceSEOStrategiesSEO = {
   title: "Best Cleaning Service SEO Strategies for Booking in 2026",
   description:
     "Discover the best cleaning service SEO strategies to increase bookings, rank higher on Google, attract local customers, and grow your cleaning business.",
-  url: "https://geekonomytech.com/blog/best-cleaning-service-seo-strategies",
-  canonical: "https://geekonomytech.com/blog/best-cleaning-service-seo-strategies",
-  image: "https://geekonomytech.com/Best%20Cleaning%20Service%20SEO/Best%20Cleaning%20Service%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/best-cleaning-service-seo-strategies",
+  canonical: "https://thegeekonomy.com/blog/best-cleaning-service-seo-strategies",
+  image: "https://thegeekonomy.com/Best%20Cleaning%20Service%20SEO/Best%20Cleaning%20Service%20SEO%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

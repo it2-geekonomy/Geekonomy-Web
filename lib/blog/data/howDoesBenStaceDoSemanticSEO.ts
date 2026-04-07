@@ -169,7 +169,7 @@ export const howDoesBenStaceDoSemanticSEOSEO = {
   url: "https://thegeekonomy.com/blog/how-does-ben-stace-do-semantic-seo",
   canonical: "https://thegeekonomy.com/blog/how-does-ben-stace-do-semantic-seo",
   image: "https://thegeekonomy.com/blog%20image/How%20Does%20Ben%20Stace%20Do%20Semantic%20SEO/How%20Does%20Ben%20Stace%20Do%20Semantic%20SEO.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 
