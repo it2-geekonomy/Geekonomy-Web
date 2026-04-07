@@ -325,7 +325,7 @@ export const blogSEOData = {
   "blog/why-small-businesses-need-website-india": whySmallBusinessesNeedaWebsiteinIndiaSEO,
   "blog/how-long-to-build-business-website-india": howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO,
   "blog/essential-features-every-business-website-must-have": EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO,
-  "blog/website-design-mistakes-indian-businesses-must-avoid" :WebsiteDesignMistakesIndianBusinessesMustAvoidSEO,
+  // "blog/website-design-mistakes-indian-businesses-must-avoid" :WebsiteDesignMistakesIndianBusinessesMustAvoidSEO,
 
 
 };
