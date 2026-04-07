@@ -136,7 +136,7 @@ export const bespokeWebsiteDevelopmentSEO = {
   url: "https://geekonomytech.com/blog/benefits-of-bespoke-website-development",
   canonical: "https://geekonomytech.com/blog/benefits-of-bespoke-website-development",
   image: "https://geekonomytech.com/Bespoke%20Website%20Development/Bespoke%20Website%20Development%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

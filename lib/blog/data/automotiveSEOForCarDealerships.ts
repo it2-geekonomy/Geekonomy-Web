@@ -155,7 +155,7 @@ export const automotiveSEOForCarDealershipsSEO = {
   url: "https://geekonomytech.com/blog/automotive-seo-for-car-dealerships",
   canonical: "https://geekonomytech.com/blog/automotive-seo-for-car-dealerships",
   image: "https://geekonomytech.com/SEO%20for%20Car%20Dealerships/SEO%20for%20Car%20Dealerships.main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

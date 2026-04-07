@@ -137,7 +137,7 @@ export const bestFintechSEOAgencySEO = {
   url: "https://geekonomytech.com/blog/how-the-best-fintech-seo-agency-help-you-rank",
   canonical: "https://geekonomytech.com/blog/how-the-best-fintech-seo-agency-help-you-rank",
   image: "https://geekonomytech.com/How%20the%20Best%20Fintech%20SEO%20Agency%20Helps%20You%20Rank/Best%20Fintech%20SEO%20Agency%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -229,5 +229,5 @@ export const bestBrandingAgencyinBangaloreforStartupsSEO = {
   url: "https://thegeekonomytech.com/blog/best-branding-agency-in-bangalore-for-startups",
   canonical: "https://thegeekonomytech.com/blog/best-branding-agency-in-bangalore-for-startups",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

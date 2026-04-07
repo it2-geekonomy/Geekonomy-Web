@@ -156,7 +156,7 @@ export const b2bSEOAuditStrategiesSEO = {
   url: "https://geekonomytech.com/blog/b2b-seo-audit-strategies",
   canonical: "https://geekonomytech.com/blog/b2b-seo-audit-strategies",
   image: "https://geekonomytech.com/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance/B2B%20SEO%20Audit%20Strategies%20to%20Improve%20SEO%20Performance.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

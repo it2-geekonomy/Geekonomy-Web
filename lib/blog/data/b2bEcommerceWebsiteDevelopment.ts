@@ -170,7 +170,7 @@ export const b2bEcommerceWebsiteDevelopmentSEO = {
   url: "https://geekonomytech.com/blog/b2b-ecommerce-website-development-strategies",
   canonical: "https://geekonomytech.com/blog/b2b-ecommerce-website-development-strategies",
   image: "https://geekonomytech.com/blog%20image/B2B%20eCommerce%20Website/B2B%20eCommerce%20Website.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

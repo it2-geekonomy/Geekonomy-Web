@@ -179,7 +179,7 @@ export const bestPracticesForSEOEnhancingAIVisibilitySEO = {
   url: "https://thegeekonomy.com/blog/best-practices-for-seo-enhancing-ai-visibility",
   canonical: "https://thegeekonomy.com/blog/best-practices-for-seo-enhancing-ai-visibility",
   image: "https://thegeekonomy.com/blog%20image/Best%20Practices%20for%20SEO%20Enhancing%20AI%20Visibility/Best%20Practices%20for%20SEO%20Enhancing%20AI%20Visibility%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

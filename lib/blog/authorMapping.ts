@@ -201,6 +201,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "brand-positioning-strategies-competitive-markets":"Aaron Roshan",
   "branding-for-startups-bangalore-strategies":"Aaron Roshan",
   "web-design-cost-india": "Aaron Roshan",
+   "why-small-businesses-need-website-india": "Aaron Roshan",
+   "how-long-to-build-business-website-india": "Aaron Roshan",
+   "essential-features-every-business-website-must-have": "Aaron Roshan",
 
 };
 
@@ -374,6 +377,10 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "brand-positioning-strategies-competitive-markets":"April 3, 2026",
   "branding-for-startups-bangalore-strategies":"April 3, 2026",
   "web-design-cost-india": "April 3, 2026",
+  "why-small-businesses-need-website-india": "April 6, 2026",
+  "how-long-to-build-business-website-india": "April 6, 2026",
+  "essential-features-every-business-website-must-have" : "April 6, 2026",
+
 
 };
 

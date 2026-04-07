@@ -223,6 +223,6 @@ export const BestAIAvatarServicesforMultilingualMarketingCampaignsin2026SEO = {
   url: "https://thegeekonomytech.com/blog/best-ai-avatar-services-multilingual-marketing-campaigns",
   canonical: "https://thegeekonomytech.com/blog/best-ai-avatar-services-multilingual-marketing-campaigns",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
