@@ -159,10 +159,10 @@ export const seoForPhysiotherapistsSEO = {
   title: "SEO for Physiotherapists: Rank Higher & Get More Patients",
   description:
     "Improve your clinic's online visibility with effective SEO for physiotherapists. Rank higher, attract local patients, and grow your practice.",
-  url: "https://geekonomytech.com/blog/seo-for-physiotherapists-rank-higher",
-  canonical: "https://geekonomytech.com/blog/seo-for-physiotherapists-rank-higher",
-  image: "https://geekonomytech.com/SEO%20for%20Physiotherapists/SEO%20for%20Physiotherapists.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-physiotherapists-rank-higher",
+  canonical: "https://thegeekonomy.com/blog/seo-for-physiotherapists-rank-higher",
+  image: "https://thegeekonomy.com/SEO%20for%20Physiotherapists/SEO%20for%20Physiotherapists.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

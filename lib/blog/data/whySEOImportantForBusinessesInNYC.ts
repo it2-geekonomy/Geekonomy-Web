@@ -133,10 +133,10 @@ export const whySEOImportantForBusinessesInNYCSEO = {
   title: "Why SEO is Important for Businesses in NYC",
   description:
     "Discover why SEO is essential for NYC businesses. Improve visibility, outrank competitors, attract local customers, and drive consistent growth.",
-  url: "https://geekonomytech.com/blog/why-seo-is-important-for-businesses-in-nyc",
-  canonical: "https://geekonomytech.com/blog/why-seo-is-important-for-businesses-in-nyc",
-  image: "https://geekonomytech.com/Why%20SEO%20is%20Important%20for%20Businesses%20in%20NYC/Why%20SEO%20is%20Important%20for%20Businesses%20in%20NYC.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/why-seo-is-important-for-businesses-in-nyc",
+  canonical: "https://thegeekonomy.com/blog/why-seo-is-important-for-businesses-in-nyc",
+  image: "https://thegeekonomy.com/Why%20SEO%20is%20Important%20for%20Businesses%20in%20NYC/Why%20SEO%20is%20Important%20for%20Businesses%20in%20NYC.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

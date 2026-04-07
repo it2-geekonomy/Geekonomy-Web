@@ -196,7 +196,7 @@ export const howMuchDoesSEOCostInBirminghamSEO = {
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-birmingham",
   canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-birmingham",
   image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Birmingham/How%20Much%20Does%20SEO%20Cost%20in%20Birmingham%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

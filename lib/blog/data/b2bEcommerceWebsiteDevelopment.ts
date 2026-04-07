@@ -167,9 +167,9 @@ export const b2bEcommerceWebsiteDevelopment: BlogData = {
 export const b2bEcommerceWebsiteDevelopmentSEO = {
   title: "B2B eCommerce Website Development Strategies",
   description: "Explore effective B2B eCommerce website development strategies to improve user experience, boost conversions, and drive scalable business growth.",
-  url: "https://geekonomytech.com/blog/b2b-ecommerce-website-development-strategies",
-  canonical: "https://geekonomytech.com/blog/b2b-ecommerce-website-development-strategies",
-  image: "https://geekonomytech.com/blog%20image/B2B%20eCommerce%20Website/B2B%20eCommerce%20Website.webp",
+  url: "https://thegeekonomy.com/blog/b2b-ecommerce-website-development-strategies",
+  canonical: "https://thegeekonomy.com/blog/b2b-ecommerce-website-development-strategies",
+  image: "https://thegeekonomy.com/blog%20image/B2B%20eCommerce%20Website/B2B%20eCommerce%20Website.webp",
   twitterHandle: "@Geekonomy",
 };
 

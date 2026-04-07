@@ -184,5 +184,5 @@ export const brandingIncreasesBusinessValuationSEO = {
   url: "https://thegeekonomy.com/blog/how-branding-increases-business-valuation",
   canonical: "https://thegeekonomy.com/blog/how-branding-increases-business-valuation",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

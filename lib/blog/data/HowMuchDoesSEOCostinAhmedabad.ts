@@ -210,10 +210,10 @@ export const howMuchDoesSEOCostInAhmedabadSEO = {
     title: "How Much Does SEO Cost in Ahmedabad | 2026 Guide",
     description:
         "Discover premium SEO services in Ahmedabad. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-ahmedabad",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-ahmedabad",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Ahmedabad/How Much Does SEO Cost in Ahmedabad main image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-ahmedabad",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-ahmedabad",
+    image: "https://thegeekonomy.com/How Much Does SEO Cost in Ahmedabad/How Much Does SEO Cost in Ahmedabad main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

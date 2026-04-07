@@ -134,9 +134,9 @@ export const bestFintechSEOAgency: BlogData = {
 export const bestFintechSEOAgencySEO = {
   title: "How the Best Fintech SEO Agency Helps You Rank",
   description: "Learn how the best fintech SEO agency boosts rankings, increases visibility, drives qualified leads, and helps your fintech brand grow faster.",
-  url: "https://geekonomytech.com/blog/how-the-best-fintech-seo-agency-help-you-rank",
-  canonical: "https://geekonomytech.com/blog/how-the-best-fintech-seo-agency-help-you-rank",
-  image: "https://geekonomytech.com/How%20the%20Best%20Fintech%20SEO%20Agency%20Helps%20You%20Rank/Best%20Fintech%20SEO%20Agency%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/how-the-best-fintech-seo-agency-help-you-rank",
+  canonical: "https://thegeekonomy.com/blog/how-the-best-fintech-seo-agency-help-you-rank",
+  image: "https://thegeekonomy.com/How%20the%20Best%20Fintech%20SEO%20Agency%20Helps%20You%20Rank/Best%20Fintech%20SEO%20Agency%20main%20image.webp",
   twitterHandle: "@Geekonomy",
 };
 

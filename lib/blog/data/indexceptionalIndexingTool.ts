@@ -158,10 +158,10 @@ export const indexceptionalIndexingTool: BlogData = {
 export const indexceptionalIndexingToolSEO = {
   title: "Why Indexceptional is the Best Website Indexing Tool for SEO",
   description: "Discover why Indexceptional is the best website indexing tool for SEO. Improve crawlability, speed indexing, and boost rankings effortlessly.",
-  url: "https://geekonomytech.com/blog/why-indexceptional-is-the-best-website-indexing-tool-for-seo",
-  canonical: "https://geekonomytech.com/blog/why-indexceptional-is-the-best-website-indexing-tool-for-seo",
-  image: "https://geekonomytech.com/Indexceptional%20is%20the%20Best%20Website/Indexceptional%20is%20the%20Best%20Website.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/why-indexceptional-is-the-best-website-indexing-tool-for-seo",
+  canonical: "https://thegeekonomy.com/blog/why-indexceptional-is-the-best-website-indexing-tool-for-seo",
+  image: "https://thegeekonomy.com/Indexceptional%20is%20the%20Best%20Website/Indexceptional%20is%20the%20Best%20Website.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

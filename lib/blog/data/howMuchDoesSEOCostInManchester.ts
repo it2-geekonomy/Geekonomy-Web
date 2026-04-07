@@ -215,7 +215,7 @@ export const howMuchDoesSEOCostInManchesterSEO = {
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-manchester",
   canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-manchester",
   image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Manchester/How%20Much%20Does%20SEO%20Cost%20in%20Manchester%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

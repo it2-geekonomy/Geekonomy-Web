@@ -220,8 +220,8 @@ export const BestAIAvatarServicesforMultilingualMarketingCampaignsin2026SEO = {
   title: "Best AI Avatar Services for Multilingual Marketing Campaigns in 2026",
   description:
      "Explore the best AI avatar services for multilingual marketing campaigns to create scalable, localized videos that boost engagement and global reach.",
-  url: "https://thegeekonomytech.com/blog/best-ai-avatar-services-multilingual-marketing-campaigns",
-  canonical: "https://thegeekonomytech.com/blog/best-ai-avatar-services-multilingual-marketing-campaigns",
+  url: "https://thegeekonomy.com/blog/best-ai-avatar-services-multilingual-marketing-campaigns",
+  canonical: "https://thegeekonomy.com/blog/best-ai-avatar-services-multilingual-marketing-campaigns",
   image: coverImage,
   twitterHandle: "@Geekonomy",
 };

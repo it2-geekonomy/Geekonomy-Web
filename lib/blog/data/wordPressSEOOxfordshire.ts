@@ -176,10 +176,10 @@ export const wordPressSEOOxfordshire: BlogData = {
 export const wordPressSEOOxfordshireSEO = {
   title: "How to Improve WordPress SEO for Oxfordshire Sites",
   description: "Boost your Oxfordshire WordPress site's SEO. Improve rankings, attract local visitors, and grow traffic with proven optimization strategies.",
-  url: "https://geekonomytech.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
-  canonical: "https://geekonomytech.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
-  image: "https://geekonomytech.com/How to Improve WordPress SEO for Oxfordshire Sites/SEO for Oxfordshire Sites main image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
+  canonical: "https://thegeekonomy.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
+  image: "https://thegeekonomy.com/How to Improve WordPress SEO for Oxfordshire Sites/SEO for Oxfordshire Sites main image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

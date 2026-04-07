@@ -179,5 +179,5 @@ export const brandPositioningStrategiesforCompetitiveMarketsSEO = {
   url: "https://thegeekonomy.com/blog/brand-positioning-strategies-competitive-markets",
   canonical: "https://thegeekonomy.com/blog/brand-positioning-strategies-competitive-markets",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

@@ -173,7 +173,7 @@ export const heavyvehicletrainingbusinessmarketingstrategiesSEO = {
   url: "https://thegeekonomy.com/blog/heavy-vehicle-training-business-marketing-strategies",
   canonical: "https://thegeekonomy.com/blog/heavy-vehicle-training-business-marketing-strategies",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

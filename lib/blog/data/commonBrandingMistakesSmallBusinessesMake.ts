@@ -200,7 +200,7 @@ export const commonBrandingMistakesSmallBusinessesMakeSEO = {
   url: "https://thegeekonomy.com/blog/common-branding-mistakes-small-businesses-make",
   canonical: "https://thegeekonomy.com/blog/common-branding-mistakes-small-businesses-make",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

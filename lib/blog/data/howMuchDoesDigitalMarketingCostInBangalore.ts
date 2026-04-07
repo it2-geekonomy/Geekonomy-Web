@@ -176,8 +176,8 @@ export const howMuchDoesDigitalMarketingCostInBangaloreSEO = {
   title: "How Much Does Digital Marketing Cost in Bangalore?",
   description:
     "Understand digital marketing costs in Bangalore: SEO, PPC, social media pricing, package options, and how to choose the right agency for your budget.",
-  url: "https://geekonomytech.com/blog/how-much-does-digital-marketing-cost-in-bangalore",
-  canonical: "https://geekonomytech.com/blog/how-much-does-digital-marketing-cost-in-bangalore",
-  image: "https://geekonomytech.com/blog%20image/How%20Much%20Does%20Digital%20Marketing%20Cost%20in%20Bangalore/How%20Much%20Does%20Digital%20Marketing%20Cost%20in%20Bangalore.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-does-digital-marketing-cost-in-bangalore",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-digital-marketing-cost-in-bangalore",
+  image: "https://thegeekonomy.com/blog%20image/How%20Much%20Does%20Digital%20Marketing%20Cost%20in%20Bangalore/How%20Much%20Does%20Digital%20Marketing%20Cost%20in%20Bangalore.webp",
+  twitterHandle: "@Geekonomy",
 };

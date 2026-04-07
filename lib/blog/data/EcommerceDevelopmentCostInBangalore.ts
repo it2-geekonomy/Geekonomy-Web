@@ -275,5 +275,5 @@ export const EcommerceDevelopmentCostInBangaloreSEO = {
   url: "https://thegeekonomy.com/blog/ecommerce-development-cost-in-bangalore",
   canonical: "https://thegeekonomy.com/blog/ecommerce-development-cost-in-bangalore",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

@@ -165,10 +165,10 @@ export const seoFriendlyCMS: BlogData = {
 export const seoFriendlyCMSSEO = {
   title: "10 Best SEO Friendly CMS: Find the Best CMS As Per Needs",
   description: "Discover the 10 best SEO-friendly CMS platforms. Compare features and performance to choose the best CMS for your website needs.",
-  url: "https://geekonomytech.com/blog/seo-friendly-cms-find-the-best",
-  canonical: "https://geekonomytech.com/blog/seo-friendly-cms-find-the-best",
-  image: "https://geekonomytech.com/10%20Best%20SEO%20Friendly%20CMS/10%20Best%20SEO%20Friendly%20.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-friendly-cms-find-the-best",
+  canonical: "https://thegeekonomy.com/blog/seo-friendly-cms-find-the-best",
+  image: "https://thegeekonomy.com/10%20Best%20SEO%20Friendly%20CMS/10%20Best%20SEO%20Friendly%20.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -163,10 +163,10 @@ export const howCelebritySEOServicesBuildOnlineAuthority: BlogData = {
 export const howCelebritySEOServicesBuildOnlineAuthoritySEO = {
   title: "How Celebrity SEO Services Build Online Authority",
   description: "Discover how celebrity SEO services build online authority, boost visibility, protect reputation, and help public figures grow their digital presence.",
-  url: "https://geekonomytech.com/blog/how-celebrity-seo-servies-build-online-authority",
-  canonical: "https://geekonomytech.com/blog/how-celebrity-seo-servies-build-online-authority",
-  image: "https://geekonomytech.com/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-celebrity-seo-servies-build-online-authority",
+  canonical: "https://thegeekonomy.com/blog/how-celebrity-seo-servies-build-online-authority",
+  image: "https://thegeekonomy.com/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority/How%20Celebrity%20SEO%20Services%20Build%20Online%20Authority%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

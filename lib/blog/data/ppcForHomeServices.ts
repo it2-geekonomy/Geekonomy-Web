@@ -164,10 +164,10 @@ export const ppcForHomeServices: BlogData = {
 export const ppcForHomeServicesSEO = {
   title: "PPC for Home Services: Complete Guide to Boost Conversions",
   description: "PPC for home services helps you reach high-intent customers, increase leads, and boost conversions with targeted ads designed for local service businesses.",
-  url: "https://geekonomytech.com/blog/ppc-home-services-complete-guide",
-  canonical: "https://geekonomytech.com/blog/ppc-home-services-complete-guide",
-  image: "https://geekonomytech.com/blog%20image/PPC%20for%20Home%20Services/PPC%20for%20Home%20Services%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/ppc-home-services-complete-guide",
+  canonical: "https://thegeekonomy.com/blog/ppc-home-services-complete-guide",
+  image: "https://thegeekonomy.com/blog%20image/PPC%20for%20Home%20Services/PPC%20for%20Home%20Services%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -156,7 +156,7 @@ export const whySmallBusinessesNeedaWebsiteinIndiaSEO = {
   url: "https://thegeekonomy.com/blog/why-small-businesses-need-website-india",
   canonical: "https://thegeekonomy.com/blog/why-small-businesses-need-website-india",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

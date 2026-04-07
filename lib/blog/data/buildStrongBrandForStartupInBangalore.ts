@@ -142,8 +142,8 @@ export const buildStrongBrandForStartupInBangaloreSEO = {
   title: "How to Build a Strong Brand for Your Startup in Bangalore",
   description:
     "Learn how to build a strong brand for your startup in Bangalore with proven branding strategies, identity tips, and marketing insights.",
-  url: "https://geekonomytech.com/blog/build-strong-brand-for-startup-in-bangalore",
-  canonical: "https://geekonomytech.com/blog/build-strong-brand-for-startup-in-bangalore",
+  url: "https://thegeekonomy.com/blog/build-strong-brand-for-startup-in-bangalore",
+  canonical: "https://thegeekonomy.com/blog/build-strong-brand-for-startup-in-bangalore",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

@@ -133,9 +133,9 @@ export const bespokeWebsiteDevelopment: BlogData = {
 export const bespokeWebsiteDevelopmentSEO = {
   title: "Benefits of Bespoke Website Development Guide 2026",
   description: "Discover the benefits of bespoke website development, including better performance, tailored features, improved UX, and scalable growth for your business.",
-  url: "https://geekonomytech.com/blog/benefits-of-bespoke-website-development",
-  canonical: "https://geekonomytech.com/blog/benefits-of-bespoke-website-development",
-  image: "https://geekonomytech.com/Bespoke%20Website%20Development/Bespoke%20Website%20Development%20main%20image.webp",
+  url: "https://thegeekonomy.com/blog/benefits-of-bespoke-website-development",
+  canonical: "https://thegeekonomy.com/blog/benefits-of-bespoke-website-development",
+  image: "https://thegeekonomy.com/Bespoke%20Website%20Development/Bespoke%20Website%20Development%20main%20image.webp",
   twitterHandle: "@Geekonomy",
 };
 

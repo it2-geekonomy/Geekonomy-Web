@@ -139,10 +139,10 @@ export const seoPlatformB2BSEO = {
   title: "SEO Platform for B2B Companies: Best SEO Tool for Ranking",
   description:
     "Find the best SEO platform for B2B companies. Improve rankings, track performance, boost traffic, and drive qualified leads with powerful SEO tools.",
-  url: "https://geekonomytech.com/blog/seo-platform-for-b2b-companies",
-  canonical: "https://geekonomytech.com/blog/seo-platform-for-b2b-companies",
-  image: "https://geekonomytech.com/SEO%20Platform%20for%20B2B%20Companies/SEO%20Platform%20for%20B2B%20Companies%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-platform-for-b2b-companies",
+  canonical: "https://thegeekonomy.com/blog/seo-platform-for-b2b-companies",
+  image: "https://thegeekonomy.com/SEO%20Platform%20for%20B2B%20Companies/SEO%20Platform%20for%20B2B%20Companies%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

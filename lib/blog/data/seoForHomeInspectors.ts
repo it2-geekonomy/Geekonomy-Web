@@ -158,10 +158,10 @@ export const seoForHomeInspectors: BlogData = {
 export const seoForHomeInspectorsSEO = {
   title: "SEO for Home Inspectors Business: Best SEO Strategies",
   description: "Boost your SEO for home inspectors business with the best SEO strategies. Rank higher, attract local clients, and generate more leads.",
-  url: "https://geekonomytech.com/blog/seo-for-home-inspectors-business-best-seo-strategies",
-  canonical: "https://geekonomytech.com/blog/seo-for-home-inspectors-business-best-seo-strategies",
-  image: "https://geekonomytech.com/SEO%20for%20Home%20Inspectors%20Business/SEO%20for%20Home%20Inspectors%20Business%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-home-inspectors-business-best-seo-strategies",
+  canonical: "https://thegeekonomy.com/blog/seo-for-home-inspectors-business-best-seo-strategies",
+  image: "https://thegeekonomy.com/SEO%20for%20Home%20Inspectors%20Business/SEO%20for%20Home%20Inspectors%20Business%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

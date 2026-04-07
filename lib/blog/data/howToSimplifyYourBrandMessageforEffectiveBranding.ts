@@ -172,5 +172,5 @@ export const howToSimplifyYourBrandMessageforEffectiveBrandingSEO = {
   url: "https://thegeekonomy.com/blog/simplify-brand-message-effective-branding",
   canonical: "https://thegeekonomy.com/blog/simplify-brand-message-effective-branding",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

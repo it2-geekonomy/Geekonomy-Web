@@ -193,7 +193,7 @@ export const brandingforStartupsinBangaloreStrategies2026SEO = {
   url: "https://thegeekonomy.com/blog/branding-for-startups-bangalore-strategies",
   canonical: "https://thegeekonomy.com/blog/branding-for-startups-bangalore-strategies",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

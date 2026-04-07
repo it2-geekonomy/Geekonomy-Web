@@ -137,8 +137,8 @@ export const EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO = {
   title: "7 Essential Features Every Business Website Must Have 2026",
   description:
     "  Discover 7 essential features every business website must have to improve user experience, boost conversions, and support long-term growth.",
-  url: "https://geekonomytech.com/blog/essential-features-every-business-website-must-have",
-  canonical: "https://geekonomytech.com/blog/essential-features-every-business-website-must-have",
+  url: "https://thegeekonomy.com/blog/essential-features-every-business-website-must-have",
+  canonical: "https://thegeekonomy.com/blog/essential-features-every-business-website-must-have",
   image:  coverImage,
   twitterHandle: "@Geekonomy",
 };

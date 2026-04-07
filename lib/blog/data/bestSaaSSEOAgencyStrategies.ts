@@ -163,9 +163,9 @@ export const bestSaaSSEOAgencyStrategies: BlogData = {
 export const bestSaaSSEOAgencyStrategiesSEO = {
   title: "Best SaaS SEO Agency Strategies for Scaling & Growth",
   description: "Discover the best B2B SaaS SEO agency strategies to scale growth, increase organic traffic, and boost conversions for long-term success",
-  url: "https://geekonomytech.com/blog/best-b2b-saas-seo-agency-strategies",
-  canonical: "https://geekonomytech.com/blog/best-b2b-saas-seo-agency-strategies",
-  image: "https://geekonomytech.com/blog%20image/SaaS%20SEO%20Agency/SaaS%20SEO%20Agency.webp",
+  url: "https://thegeekonomy.com/blog/best-b2b-saas-seo-agency-strategies",
+  canonical: "https://thegeekonomy.com/blog/best-b2b-saas-seo-agency-strategies",
+  image: "https://thegeekonomy.com/blog%20image/SaaS%20SEO%20Agency/SaaS%20SEO%20Agency.webp",
   twitterHandle: "@Geekonomy",
 };
 

@@ -218,10 +218,10 @@ export const websiteCostUK: BlogData = {
 export const websiteCostUKSEO = {
   title: "How to Reduce Website Cost in the UK (2026 Guide)",
   description: "Discover smart, practical ways to reduce website costs in the UK — from planning and design to outsourcing and maintenance.",
-  url: "https://geekonomytech.com/blog/how-to-reduce-website-cost-uk",
-  canonical: "https://geekonomytech.com/blog/how-to-reduce-website-cost-uk",
-  image: "https://geekonomytech.com/how%20to%20reduce%20cost%20in%20the%20uk/how%20to%20reduce%20cost%20in%20the%20uk%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-to-reduce-website-cost-uk",
+  canonical: "https://thegeekonomy.com/blog/how-to-reduce-website-cost-uk",
+  image: "https://thegeekonomy.com/how%20to%20reduce%20cost%20in%20the%20uk/how%20to%20reduce%20cost%20in%20the%20uk%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

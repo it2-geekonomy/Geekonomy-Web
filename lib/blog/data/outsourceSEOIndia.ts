@@ -172,10 +172,10 @@ export const outsourceSEOIndiaSEO = {
   title: "Outsource SEO India: Smart Choice for Companies",
   description:
     "Outsource SEO in India to boost rankings and save costs. Get expert optimization, higher traffic, and scalable solutions for long-term growth.",
-  url: "https://geekonomytech.com/blog/outsource-seo-india-smart-choice-for-companies",
-  canonical: "https://geekonomytech.com/blog/outsource-seo-india-smart-choice-for-companies",
-  image: "https://geekonomytech.com/Outsource%20SEO%20India/Outsource%20SEO%20India%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/outsource-seo-india-smart-choice-for-companies",
+  canonical: "https://thegeekonomy.com/blog/outsource-seo-india-smart-choice-for-companies",
+  image: "https://thegeekonomy.com/Outsource%20SEO%20India/Outsource%20SEO%20India%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

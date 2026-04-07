@@ -134,10 +134,10 @@ export const sevenReasonsInvestInSEO: BlogData = {
 export const sevenReasonsInvestInSEOSEO = {
   title: "7 Reasons Why Your Business Should Invest in SEO in 2026",
   description: "Discover 7 Reasons Why Your Business Should Invest in SEO. Boost visibility, attract qualified customers, increase revenue, and grow.",
-  url: "https://geekonomytech.com/blog/7-reasons-why-your-business-should-invest-in-seo",
-  canonical: "https://geekonomytech.com/blog/7-reasons-why-your-business-should-invest-in-seo",
-  image: "https://geekonomytech.com/7%20Reasons%20Why%20Your%20Business%20Should%20Invest%20in%20SEO%20in%202026/Should%20Invest%20in%20SEO%20in%202026%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/7-reasons-why-your-business-should-invest-in-seo",
+  canonical: "https://thegeekonomy.com/blog/7-reasons-why-your-business-should-invest-in-seo",
+  image: "https://thegeekonomy.com/7%20Reasons%20Why%20Your%20Business%20Should%20Invest%20in%20SEO%20in%202026/Should%20Invest%20in%20SEO%20in%202026%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

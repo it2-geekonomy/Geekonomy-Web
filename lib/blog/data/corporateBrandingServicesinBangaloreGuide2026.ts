@@ -243,6 +243,6 @@ export const  corporatebrandingservicesinbangaloreguideSEO = {
   url: "https://thegeekonomy.com/blog/corporate-branding-services-bangalore-guide",
   canonical:"https://thegeekonomy.com/blog/corporate-branding-services-bangalore-guide",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 
 };

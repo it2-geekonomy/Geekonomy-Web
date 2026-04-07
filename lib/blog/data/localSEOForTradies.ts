@@ -149,10 +149,10 @@ export const localSEOForTradies: BlogData = {
 export const localSEOForTradiesSEO = {
   title: "Local SEO for Tradies: Get More Trade Business with SEO",
   description: "Get more trade with local SEO for tradies. Rank higher locally, attract nearby customers, and grow your trade business faster.",
-  url: "https://geekonomytech.com/blog/local-seo-for-tradies-get-more-trade-business-with-seo",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-tradies-get-more-trade-business-with-seo",
-  image: "https://geekonomytech.com/Local%20SEO%20for%20Tradies/Local%20SEO%20for%20Tradies.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-tradies-get-more-trade-business-with-seo",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-tradies-get-more-trade-business-with-seo",
+  image: "https://thegeekonomy.com/Local%20SEO%20for%20Tradies/Local%20SEO%20for%20Tradies.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 
