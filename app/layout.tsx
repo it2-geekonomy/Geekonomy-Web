@@ -23,6 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(baseUrl),
+    applicationName: "Geekonomy",
     title: seoData.title,
     description: seoData.description,
     icons: {
@@ -95,11 +96,28 @@ fbq('track', 'PageView');`,
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Geekonomy",
+              "alternateName": "The Geekonomy",
+              "url": "https://thegeekonomy.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://thegeekonomy.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          }}
+        />
       </head>
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <DisableRightClick /> 
+        <DisableRightClick />
         <NavbarHeightProvider>
           <MouseLight />
           <Navbar />
