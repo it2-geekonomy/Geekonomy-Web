@@ -101,9 +101,8 @@ fbq('track', 'PageView');`,
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebSite",
+              "@type": "Organization",
               "name": "Geekonomy",
-              "alternateName": "The Geekonomy",
               "url": "https://thegeekonomy.com",
               "potentialAction": {
                 "@type": "SearchAction",
@@ -111,6 +110,18 @@ fbq('track', 'PageView');`,
                 "query-input": "required name=search_term_string"
               }
             }),
+          }}
+        />
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H4C3XJRV9"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3H4C3XJRV9');
+            `,
           }}
         />
       </head>
