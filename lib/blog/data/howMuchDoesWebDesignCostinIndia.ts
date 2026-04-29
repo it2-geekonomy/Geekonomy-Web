@@ -59,7 +59,7 @@ p("Assessing these pricing systems makes you choose the best economic one to get
 
 h2("Website Development and Its Impact on Costs"),
 h3("Static vs. Dynamic Websites"),
-p("However, a static website versus a dynamic website has a great impact on website development cost and how much it costs to maintain it."),
+p("However, a static website versus a dynamic website has a great impact on <a href=\"/blog/web-development-cost-in-bangalore-for-small-businesses\" class=\"underline text-[#6FAF4E]\">website development cost</a> and how much it costs to maintain it."),
 p("Generally, for a static website, which is good for a small business or an individual website,  the design cost is less in most cases, as its contents are static,  so the least amount of website development is needed compared to other complex design packages within India."),
 p("Conversely, a dynamic website that is required as an e-commerce website or a business website that needs to incorporate more user interactions and stay updated on a regular basis requires more design cost and development cost as compared to other complex design packages."),
 
@@ -91,7 +91,7 @@ p("These packages can be as affordable as a template webpage designed for a smal
 p("The cost for designing webpages under such packages would depend upon the amount of customization, the number of web pages, and what is the overall price for a website, especially for a e commerce web site."),
 
 h3("Understanding Costs for E-commerce Websites"),
-p("E-commerce website requirement is little bit more complex than business website requirements, which increases website design cost."),
+p("<a href=\"/blog/ecommerce-development-cost-in-bangalore\" class=\"underline text-[#6FAF4E]\">E-commerce website requirement</a> is little bit more complex than business website requirements, which increases website design cost."),
 p("The key areas that can lead to raising the website design cost for your business include the need for secure payment gateways, inventory management and shopping cart features, and comprehensive product catalog management of an e-commerce website, and also custom design elements to improve the performance and conversion rate of an e-commerce website."),
 p("For an Indian Entrepreneur using the internet for a new e-commerce business, it is necessary to get the knowledge of these factors and the effects of these factors on the ultimate website design cost to make a wise decision and implement a budget for the website accordingly."),
 

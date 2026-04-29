@@ -39,7 +39,7 @@ p("Multilingual AI focused on global marketing.  "),
 p("Multilingual AI is a scalable and cost-effective way to generate video content in multiple languages. "),
 p("AI avatars make a great alternative that can translate and deliver marketing videos or AI video generation ads for multiple cultures. "),
 p("With an AI avatar service, creating marketing videos will be easier, allowing the marketing teams to have time and reach a successful global brand presence.  "),
-p("The services for multilingual marketing campaigns are becoming more and more common."),
+p("The services for multilingual <a href=\"/blog/how-to-increase-brand-awareness-in-b2b\" class=\"underline text-[#6FAF4E]\">marketing campaigns</a> are becoming more and more common."),
 
 h3("Overview of AI Avatar Services"),
 p("Deciding on the right AI avatar services can be daunting, especially since there are a lot of different avatar platform options that each have their own distinct capabilities, features, and avatar platform pricing strategies that AI avatar services use to improve user experience.  "),
