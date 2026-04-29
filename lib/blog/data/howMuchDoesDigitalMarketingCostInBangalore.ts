@@ -13,7 +13,7 @@ const howMuchDoesDigitalMarketingCostInBangaloreContent: BlogContentItem[] = [
   p("The digital marketing costs in Bangalore depend on various factors because companies need different services that include website development, SEO, and social media advertising on Facebook and Instagram."),
   p("The investigation requires people to examine different elements because they need to identify the required services and standard digital marketing agency pricing structures."),
   p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need a Digital Marketing Strategy for Bangalore?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get transparent pricing and a plan that fits your budget. SEO, PPC, and social media—all under one roof.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
-  h2("Understanding Digital Marketing Costs"),
+  h2("Understanding Digital Marketing Costs in Bangalore"),
   img(`${imageDir}/Understanding Digital Marketing Costs.webp`, "Understanding Digital Marketing Costs"),
   h3("Overview of Digital Marketing"),
   p("Digital marketing includes multiple online advertising techniques that businesses utilize to connect with potential customers through their digital platforms and social media advertising campaigns."),
@@ -102,7 +102,7 @@ const howMuchDoesDigitalMarketingCostInBangaloreContent: BlogContentItem[] = [
     '<div class="my-6 w-full table-container"><table class="w-full border-collapse border border-gray-600"><thead><tr class="bg-black"><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Service</th><th class="border border-gray-600 px-4 py-3 text-left font-semibold text-white text-sm">Monthly Investment</th></tr></thead><tbody><tr class="bg-black border-b border-gray-600"><td class="border-r border-gray-600 px-4 py-3 text-white text-sm">Search Engine Optimization (SEO)</td><td class="px-4 py-3 text-white text-sm">₹20,000 – ₹45,000 per month</td></tr><tr class="bg-black border-b border-gray-600"><td class="border-r border-gray-600 px-4 py-3 text-white text-sm">Pay-Per-Click Advertising (PPC)</td><td class="px-4 py-3 text-white text-sm">₹8,000 – ₹35,000 per month</td></tr><tr class="bg-black"><td class="border-r border-gray-600 px-4 py-3 text-white text-sm">Social Media Marketing (SMM)</td><td class="px-4 py-3 text-white text-sm">₹10,000 – ₹40,000 per month</td></tr></tbody></table></div>'
   ),
 
-  h2("Choosing the Right Digital Marketing Agency"),
+  h2("Choosing the Right Digital Marketing Agency in Bangalore"),
   img(`${imageDir}/Choosing the Right Digital Marketing Agency.webp`, "Choosing the Right Digital Marketing Agency"),
   h3("Best Digital Marketing Agencies in Bangalore"),
   p("The most effective way to reach your online presence objectives in Bangalore requires you to select suitable digital marketing agencies through which to carry out your online presence objectives."),
@@ -130,9 +130,9 @@ const howMuchDoesDigitalMarketingCostInBangaloreContent: BlogContentItem[] = [
   p("Your startup budget should determine which payment methods and service scope changes you should discuss with us."),
   p("The top digital marketing agency will collaborate with you to develop a personalized solution that matches your financial limits and helps your business development through their premium digital marketing services."),
 
-  h2("Conclusion on Digital Marketing Costs"),
+  h2("Conclusion on Digital Marketing Costs in Bangalore"),
   img(`${imageDir}/Conclusion on Digital Marketing Costs.webp`, "Conclusion on Digital Marketing Costs"),
-  h3("Summary of Digital Marketing Costs in India"),
+  h3("Summary of Digital Marketing Costs"),
   p("The total cost of digital marketing in India, especially in Bangalore, will impact your marketing strategy and budget allocation, which shows different results based on multiple factors."),
   p("The total marketing expenses depend on three main elements, which are the marketing campaign size and needed professional skills, and the selected digital marketing service packages."),
   p("The total marketing expenses of a business arise from its SEO expenses, its social media marketing costs, its content marketing expenses, and its email marketing costs."),

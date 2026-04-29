@@ -91,7 +91,7 @@ h2("Choosing the Right Website Builders for Small Businesses"),
 h3("Popular Website Builders for Small Businesses"),
 p("For a small business, these can be difficult to conquer, and a professional website acts as a vital tool in overcoming them."),
 p("However, luckily, there are a number of different website builders that are specifically designed to assist small businesses in establishing a web presence without the need for any advanced programming knowledge, making it easier than ever to establish a website."),
-p("Many website builders offer drag and drop interfaces,  themed customizable templates, and several SEO techniques to help small businesses improve their visibility and ensure that they have all the right features in their website to rank highly on search engines."),
+p("Many website builders offer drag and drop interfaces,  themed customizable templates, and several <a href=\"/blog/seo-for-plumbers-proven-techniques-to-rank\" class=\"underline text-[#6FAF4E]\">SEO techniques</a> to help small businesses improve their visibility and ensure that they have all the right features in their website to rank highly on search engines."),
 p("Some popular website builders include: Wix, Squarespace, and WordPress.com, each of which offers a range of features and price plans to suit various business types and ensure the local businesses thrive."),
 
 h3("Factors to Consider When Selecting a Website Builder"),
