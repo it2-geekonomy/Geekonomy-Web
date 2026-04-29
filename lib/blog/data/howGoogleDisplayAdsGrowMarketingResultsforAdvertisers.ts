@@ -35,7 +35,7 @@ p("With the right technique, display ads on the Google Display Network can incre
 h3("How Google Display Ads Work"),
 p("Google Display Ads uses a network of millions of websites and applications where the advertiser can choose to place an advert."),
 p("The Google Display Network ensures there is a range of placement options targeted at the right potential customers, increasing cost-per-click efficiency and therefore return on marketing investment."),
-p("For Google display ads, advertisers are able to specify their existing target audience in detail by demographics and interests, or try to retarget customers who have previously visited their website through Google Ads, ensuring they are receiving relevant ads to their needs."),
+p("For Google display ads, advertisers are able to specify their existing target audience in detail by demographics and interests, or try to retarget customers who have previously visited their <a href=\"https://thegeekonomy.com/blog/seo-vs-google-ads-for-bangalore-businesses\" class=\"underline text-[#6FAF4E]\">website through Google Ads</a>, ensuring they are receiving relevant ads to their needs."),
 p("The system works on a bidding system, as all advertisers that choose to use Google Display Ads are required to bid for their place on a Google Display Ads page in order to improve their ad campaign and hence improve the cost-per-click results."),
 p("Google‘s algorithms help optimize the ads to maximize conversion rate to ensure advertisers reach their goals."),
 p("By carefully managing the amount spent on ads and improving the effectiveness of campaigns, significant improvements in marketing results can be seen."),
@@ -93,7 +93,7 @@ p("To get the best result in optimization, advertisers should adopt different cr
 p("Advertisers can optimize the ad campaigns to click better among users in terms of resonating better with potential customers, marketing efficiency, and creating a way to enhance brand awareness through Google Display."),
 p("Responsive display ads adapt automatically to the dimensions of the space they are in. This can be beneficial to ensure effective ad display on websites and apps, thus attracting more website visitors, achieving the build their brand awareness."),
 p("Constantly monitoring and optimizing the means of creating ad elements can greatly enhance marketing in terms of click-through rate and conversion rate."),
-p("With the presence of a video ad, it can improve brand recall, making the conversion rate per event and CTR much higher."),
+p("With the presence of a video ad, it can <a href=\"/blog/how-to-increase-brand-awareness-in-b2b\" class=\"underline text-[#6FAF4E]\">improves brand recall</a>, making the conversion rate per event and CTR much higher."),
 p("A higher CTR means more people come to your website or the area you are interested in, which can gain you more traffic and a higher conversion rate."),
 p("This is the answer to how Google optimizes ad performance and drives traffic to your website."),
 
