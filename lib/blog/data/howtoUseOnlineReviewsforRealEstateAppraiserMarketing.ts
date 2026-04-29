@@ -99,7 +99,7 @@ p("To be successful in real estate, reputation building is essential to your con
 p("The business is to market your real estate company and online presence."),
 p("To be successful in the real estate business, reputation building is essential to your conversions."),
 p("Set up a Google Business Profile and generate reviews for your real estate with online reviews."),
-p("Actively market your real estate business online using online marketing techniques.  Set up a Google Business Profile and LinkedIn profiles on your website or attached to your email signatures."),
+p("Actively market your real estate business online using <a href=\"/blog/best-digital-marketing-strategies-for-bangalore-businesses\" class=\"underline text-[#6FAF4E]\">online marketing techniques</a>.  Set up a Google Business Profile and LinkedIn profiles on your website or attached to your email signatures."),
 p("In order to increase your online presence and exposure, ask your happy customers to leave reviews on your Google My Business page."),
 p("Your online presence and search engine rankings will benefit greatly from having your real estate firm ranked highly among general business searches."),
 p("Also, share reviews from past customers on your website and social media profiles to increase your credibility and new leads for your real estate in real estate."),
@@ -132,7 +132,7 @@ p("Trustworthy sources are swaying your online standing and customer reference r
 p("Search Engine Optimization and attracting new customers."),
 p("Examine the information provided in your reviews to determine ways to enhance the quality of your products and services and customer experience, employing marketing strategies to improve your methods."),
 p("Constant evaluation of online review Metrics will enable you to determine the success of your marketing strategy and customer engagement activities."),
-p("Mortgage appraisers enhance their online marketing techniques to draw in more clients. online marketing techniques and draw in new customers."),
+p("Mortgage appraisers enhance their <a href=\"/blog/startup-branding-strategy-bangalore-entrepreneurs\" class=\"underline text-[#6FAF4E]\">online marketing techniques</a> to draw in more clients. online marketing techniques and draw in new customers."),
 
 h2("Growing Your Real Estate Appraisal Business with Reviews"),
 img(grow, "Growing Your Real Estate Appraisal Business with Reviews"),
