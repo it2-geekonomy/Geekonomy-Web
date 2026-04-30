@@ -201,7 +201,7 @@ export const howToUseScreamingFrogToImproveOnPageSEOSEO = {
   url: "https://thegeekonomy.com/blog/how-to-use-screaming-frog-to-improve-on-page-seo",
   canonical: "https://thegeekonomy.com/blog/how-to-use-screaming-frog-to-improve-on-page-seo",
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Use%20Screaming%20Frog%20to%20Improve%20On-Page%20SEO/How%20to%20Use%20Screaming%20Frog%20to%20Improve%20On-Page%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

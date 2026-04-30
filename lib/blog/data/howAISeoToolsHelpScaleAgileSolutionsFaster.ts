@@ -130,7 +130,7 @@ export const howAISeoToolsHelpScaleAgileSolutionsFasterSEO = {
   url: "https://thegeekonomy.com/blog/how-ai-seo-tools-help-scale-agile-solutions-faster",
   canonical: "https://thegeekonomy.com/blog/how-ai-seo-tools-help-scale-agile-solutions-faster",
   image: "https://thegeekonomy.com/blog%20image/How%20AI%20SEO%20Tools%20Help%20Scale%20Agile%20Solutions%20Faster/How%20AI%20SEO%20Tools%20Help%20Scale%20Agile%20Solutions%20Faster.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

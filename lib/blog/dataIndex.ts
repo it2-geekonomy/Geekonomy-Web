@@ -152,13 +152,37 @@ import { benStaceSemanticSEOWritingToolBoostYourRanking } from "./data/benStaceS
 import { bestSemanticSEOConsultantsHowtoChoosetheRight} from "./data/bestSemanticSEOConsultantsHowtoChoosetheRight";
 import { whyYouNeedaFreeSEOAudit2026Guide } from "./data/whyYouNeedaFreeSEOAudit2026Guide" ;
 import { HowtoImproveLocalSEOCTR2026Guide } from "./data/howtoImproveLocalSEOCTR2026Guide";
-import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
 import { howtoHireBrandAmbassadorsforYourBusiness } from "./data/howtoHireBrandAmbassadorsforYourBusiness";
-
-
+import { BestLLMSEOToolsforAgenciesin2026 } from "./data/bestLLMSEOToolsforAgenciesin2026";
+import { HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers} from "./data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers";
+import { howtoUseOnlineReviewsforRealEstateAppraiserMarketing } from "./data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing";
+import { howtoUseSocialListeningforInfluencerMarketing } from "./data/howtoUseSocialListeningforInfluencerMarketing";
+import { heavyvehicletrainingbusinessmarketingstrategies } from "./data/heavyvehicletrainingbusinessmarketingstrategies";
+import { BestAIAvatarServicesforMultilingualMarketingCampaignsin2026 } from "./data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026";
+import { SafeLinkBuildingTechniquestoAvoidGooglePenalties } from "./data/safeLinkBuildingTechniquestoAvoidGooglePenalties";
+import { brandPositioningStrategiesforCompetitiveMarkets } from "./data/brandPositioningStrategiesforCompetitiveMarkets";
+import{ brandingforStartupsinBangaloreStrategies2026} from "./data/brandingforStartupsinBangaloreStrategies2026";
+import { howMuchDoesWebDesignCostinIndia } from "./data/howMuchDoesWebDesignCostinIndia";
+import{ whySmallBusinessesNeedaWebsiteinIndia } from "./data/whySmallBusinessesNeedaWebsiteinIndia";
+import { howLongDoesItTaketoBuildaBusinessWebsiteinIndia } from "./data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia";
+import {EssentialFeaturesEveryBusinessWebsiteMustHavein2026} from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
+import { WebsiteDesignMistakesIndianBusinessesMustAvoid} from "./data/10WebsiteDesignMistakesIndianBusinessesMustAvoid";
 export const allBlogsData: BlogData[] = [
-  howtoHireBrandAmbassadorsforYourBusiness,
+  WebsiteDesignMistakesIndianBusinessesMustAvoid,
+  EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
+  howLongDoesItTaketoBuildaBusinessWebsiteinIndia,
+  whySmallBusinessesNeedaWebsiteinIndia,
+  howMuchDoesWebDesignCostinIndia,
+  brandingforStartupsinBangaloreStrategies2026,
+  brandPositioningStrategiesforCompetitiveMarkets,
+  SafeLinkBuildingTechniquestoAvoidGooglePenalties,
+  BestAIAvatarServicesforMultilingualMarketingCampaignsin2026,
+  heavyvehicletrainingbusinessmarketingstrategies,
+  howtoUseSocialListeningforInfluencerMarketing,
+  howtoUseOnlineReviewsforRealEstateAppraiserMarketing,
+  HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers,
   BestLLMSEOToolsforAgenciesin2026,
+  howtoHireBrandAmbassadorsforYourBusiness,
   HowtoImproveLocalSEOCTR2026Guide,
   benStaceSemanticSEOWritingToolBoostYourRanking,
   EcommerceDevelopmentCostInBangalore,

@@ -130,10 +130,10 @@ export const localSEOServiceExplained: BlogData = {
 export const localSEOServiceExplainedSEO = {
   title: "Local SEO Service Explained: Benefits & Strategy",
   description: "This Local SEO services guide explains how to rank higher on Google, optimize listings, and generate more local leads for your business.",
-  url: "https://geekonomytech.com/blog/local-seo-service-Explained",
-  canonical: "https://geekonomytech.com/blog/local-seo-service-Explained",
-  image: "https://geekonomytech.com/Local%20SEO%20Service%20Explained/Local%20SEO%20Service%20Explained.main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-service-Explained",
+  canonical: "https://thegeekonomy.com/blog/local-seo-service-Explained",
+  image: "https://thegeekonomy.com/Local%20SEO%20Service%20Explained/Local%20SEO%20Service%20Explained.main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

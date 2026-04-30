@@ -8,7 +8,7 @@ const ACCENT = "#6FAF4E";
 export default function BlogsPageLoading() {
   return (
     <main
-      className="relative overflow-hidden bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center"
+      className="relative z-50 overflow-hidden bg-black min-h-dvh py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center"
       aria-busy="true"
       aria-label="Preparing the blog"
     >

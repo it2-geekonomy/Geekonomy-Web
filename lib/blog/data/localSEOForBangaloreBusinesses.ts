@@ -164,8 +164,8 @@ export const localSEOForBangaloreBusinessesSEO = {
   title: "Local SEO for Bangalore Businesses: Step-by-Step Guide",
   description:
     "Learn how local SEO helps Bangalore businesses improve Google rankings, attract nearby customers, and generate more local leads.",
-  url: "https://geekonomytech.com/blog/local-seo-for-bangalore-businesses",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-bangalore-businesses",
-  image: "https://geekonomytech.com/blog%20image/Local%20SEO%20for%20Bangalore%20Businesses/Local%20SEO%20for%20Bangalore%20Businesses.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-bangalore-businesses",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-bangalore-businesses",
+  image: "https://thegeekonomy.com/blog%20image/Local%20SEO%20for%20Bangalore%20Businesses/Local%20SEO%20for%20Bangalore%20Businesses.webp",
+  twitterHandle: "@Geekonomy",
 };

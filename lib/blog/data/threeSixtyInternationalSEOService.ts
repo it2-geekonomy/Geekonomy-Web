@@ -146,7 +146,7 @@ export const threeSixtyInternationalSEOServiceSEO = {
   url: "https://thegeekonomy.com/blog/360-international-seo-service-complete-guide",
   canonical: "https://thegeekonomy.com/blog/360-international-seo-service-complete-guide",
   image: "https://thegeekonomy.com/blog%20image/360%20International%20SEO%20Service/360%20International%20SEO%20Service%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

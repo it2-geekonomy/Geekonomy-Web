@@ -258,5 +258,5 @@ export const semanticSEOAgencyHowToChooseTheBestSEO = {
   url: "https://thegeekonomy.com/blog/semantic-seo-agency-how-to-choose-the-best-agency",
   canonical: "https://thegeekonomy.com/blog/semantic-seo-agency-how-to-choose-the-best-agency",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { Typography } from "@/components/ui/Typography";
 import { cn } from "@/lib/utils";
@@ -11,7 +12,24 @@ interface BlogCTAModalProps {
   blogName: string;
 }
 
+/** Above site chrome; fixed positioning must not sit inside transformed ancestors (e.g. motion/sticky). */
+const PORTAL_Z = "z-[200]";
+
 export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useLayoutEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen || !mounted) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isOpen, mounted]);
   const [formData, setFormData] = useState({
     name: "",
     organisation: "",
@@ -116,7 +134,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
     }
   };
 
-  return (
+  const modal = (
     <AnimatePresence>
       {isOpen && (
         <>
@@ -126,44 +144,56 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50"
+            className={`fixed inset-0 ${PORTAL_Z} bg-black/80 backdrop-blur-sm`}
+            aria-hidden
           />
-          
-          {/* Modal */}
+
+          {/* Modal: scrollable shell so short viewports / keyboard don’t clip content */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4"
-            onClick={(e) => e.stopPropagation()}
+            exit={{ opacity: 0, scale: 0.98 }}
+            className={`fixed inset-0 ${PORTAL_Z} flex items-center justify-center overflow-y-auto overscroll-y-contain px-3 py-4 sm:px-4 sm:py-6`}
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Get in touch about: ${blogName}`}
+            onClick={onClose}
           >
-            <div className="relative w-full max-w-2xl bg-black/95 backdrop-blur-md border-2 border-[#69AE44] rounded-xl p-6 lg:p-8 max-h-[90vh] overflow-y-auto">
-              {/* Close button */}
+            <div
+              className="relative w-full max-w-2xl min-w-0 my-auto max-h-[min(92dvh,calc(100vh-1.5rem))] sm:max-h-[min(90dvh,calc(100vh-3rem))] overflow-y-auto rounded-xl border-2 border-[#69AE44] bg-black/95 p-4 shadow-xl backdrop-blur-md sm:p-6 lg:p-8"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close button — 44px min touch target */}
               <button
+                type="button"
                 onClick={onClose}
-                className="absolute top-4 right-4 text-white hover:text-white transition-colors"
+                className="absolute right-2 top-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 sm:right-3 sm:top-3"
                 aria-label="Close modal"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
 
-              {/* Blog Name */}
-              <div className="mb-6">
-                <Typography as="h2" variant="h3" className="text-[#69AE44] text-xl font-bold mb-2">
+              {/* Blog Name — reserve space for close; break long titles */}
+              <div className="mb-5 pr-10 sm:mb-6 sm:pr-12">
+                <Typography
+                  as="h2"
+                  variant="h3"
+                  className="wrap-break-word text-lg font-bold text-[#69AE44] sm:text-xl"
+                >
                   Blog: {blogName}
                 </Typography>
-                <Typography as="p" variant="body-xl" className="text-white text-sm">
-                  Fill out the form below and we'll get back to you soon.
+                <Typography as="p" variant="body-xl" className="mt-1 text-sm text-white/90 sm:text-base">
+                  Fill out the form below and we&apos;ll get back to you soon.
                 </Typography>
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
+              <form onSubmit={handleSubmit} className="min-w-0 space-y-5 sm:space-y-6">
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+                  <div className="min-w-0">
+                    <Typography as="label" variant="body-xl" className="mb-2 block text-sm text-white sm:text-base">
                       Name <span className="text-[#69AE44]">*</span>
                     </Typography>
                     <input
@@ -171,8 +201,9 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
+                      autoComplete="name"
                       className={cn(
-                        "w-full bg-transparent border-b border-white/60 focus:border-[#69AE44] outline-none py-2 text-white",
+                        "box-border w-full min-w-0 border-b border-white/60 bg-transparent py-2.5 text-base text-white outline-none focus:border-[#69AE44] sm:text-sm",
                         errors.name && "border-red-500"
                       )}
                     />
@@ -183,8 +214,8 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                     )}
                   </div>
 
-                  <div>
-                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
+                  <div className="min-w-0">
+                    <Typography as="label" variant="body-xl" className="mb-2 block text-sm text-white sm:text-base">
                       Organization
                     </Typography>
                     <input
@@ -192,14 +223,15 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       name="organisation"
                       value={formData.organisation}
                       onChange={handleChange}
-                      className="w-full bg-transparent border-b border-white/60 focus:border-[#69AE44] outline-none py-2 text-white"
+                      autoComplete="organization"
+                      className="box-border w-full min-w-0 border-b border-white/60 bg-transparent py-2.5 text-base text-white outline-none focus:border-[#69AE44] sm:text-sm"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+                  <div className="min-w-0">
+                    <Typography as="label" variant="body-xl" className="mb-2 block text-sm text-white sm:text-base">
                       Email <span className="text-[#69AE44]">*</span>
                     </Typography>
                     <input
@@ -207,8 +239,10 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
+                      autoComplete="email"
+                      inputMode="email"
                       className={cn(
-                        "w-full bg-transparent border-b border-white/60 focus:border-[#69AE44] outline-none py-2 text-white",
+                        "box-border w-full min-w-0 border-b border-white/60 bg-transparent py-2.5 text-base text-white outline-none focus:border-[#69AE44] sm:text-sm",
                         errors.email && "border-red-500"
                       )}
                     />
@@ -219,8 +253,8 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                     )}
                   </div>
 
-                  <div>
-                    <Typography as="label" variant="body-xl" className="text-white block mb-2">
+                  <div className="min-w-0">
+                    <Typography as="label" variant="body-xl" className="mb-2 block text-sm text-white sm:text-base">
                       Contact <span className="text-[#69AE44]">*</span>
                     </Typography>
                     <input
@@ -228,8 +262,10 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                       name="contact"
                       value={formData.contact}
                       onChange={handleChange}
+                      autoComplete="tel"
+                      inputMode="tel"
                       className={cn(
-                        "w-full bg-transparent border-b border-white/60 focus:border-[#69AE44] outline-none py-2 text-white",
+                        "box-border w-full min-w-0 border-b border-white/60 bg-transparent py-2.5 text-base text-white outline-none focus:border-[#69AE44] sm:text-sm",
                         errors.contact && "border-red-500"
                       )}
                     />
@@ -241,8 +277,9 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                   </div>
                 </div>
 
-                <div>
-                  <Typography as="label" variant="body-xl" className="text-white block mb-2">
+                <div className="min-w-0">
+                  <Typography as="label" variant="body-xl" className="mb-2 block 
+                   text-white sm:text-base">
                     Message <span className="text-[#69AE44]">*</span>
                   </Typography>
                   <textarea
@@ -252,11 +289,11 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                     onChange={(e) => {
                       handleChange(e);
                       e.target.style.height = "auto";
-                      e.target.style.height = e.target.scrollHeight + "px";
+                      e.target.style.height = `${e.target.scrollHeight}px`;
                     }}
                     maxLength={500}
                     className={cn(
-                      "w-full box-border bg-transparent border border-white/60 focus:border-[#69AE44] rounded-md px-3 py-2 text-white outline-none resize-none overflow-hidden transition-colors duration-200",
+                      "box-border min-h-26 w-full min-w-0 resize-none overflow-hidden rounded-md border border-white/60 bg-transparent px-3 py-2.5 text-base text-white outline-none transition-colors duration-200 focus:border-[#69AE44] sm:min-h-22 sm:text-sm",
                       errors.message && "border-red-500"
                     )}
                   />
@@ -283,11 +320,11 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                   </div>
                 )}
 
-                <div className="flex justify-end gap-4 pt-4">
+                <div className="flex flex-col-reverse gap-3 pt-2 sm:flex-row sm:justify-end sm:gap-4 sm:pt-4">
                   <button
                     type="button"
                     onClick={onClose}
-                    className="px-6 py-2 border border-white/60 text-white rounded-full hover:border-white transition-colors"
+                    className="min-h-11 w-full rounded-full border border-white/60 px-5 py-2.5 text-center text-sm text-white transition-colors hover:border-white sm:w-auto sm:min-h-0 sm:px-6 sm:py-2"
                   >
                     Cancel
                   </button>
@@ -295,8 +332,8 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
                     type="submit"
                     disabled={isSubmitting}
                     className={cn(
-                      "px-6 py-2 bg-[#69AE44] text-white rounded-full hover:opacity-90 transition-opacity",
-                      isSubmitting && "opacity-50 cursor-not-allowed"
+                      "min-h-11 w-full rounded-full bg-[#69AE44] px-5 py-2.5 text-center text-sm font-medium text-white transition-opacity hover:opacity-90 sm:w-auto sm:min-h-0 sm:px-6 sm:py-2",
+                      isSubmitting && "cursor-not-allowed opacity-50"
                     )}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
@@ -309,4 +346,7 @@ export function BlogCTAModal({ isOpen, onClose, blogName }: BlogCTAModalProps) {
       )}
     </AnimatePresence>
   );
+
+  if (!mounted) return null;
+  return createPortal(modal, document.body);
 }

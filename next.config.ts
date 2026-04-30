@@ -4,6 +4,21 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  // Indexed / bookmarked typo URLs — keep 308s so equity consolidates on the real slug.
+  async redirects() {
+    return [
+      {
+        source: "/blog/seo-for-plumbers-proven-techniques-to-rank-on-google",
+        destination: "/blog/seo-for-plumbers-proven-techniques-to-rank",
+        permanent: true,
+      },
+      {
+        source: "/blog/why-responsive-web-design-is-essential",
+        destination: "/blog/what-makes-a-good-business-website-in-the-uk",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

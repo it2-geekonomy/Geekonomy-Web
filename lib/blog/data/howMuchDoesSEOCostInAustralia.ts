@@ -141,7 +141,7 @@ export const howMuchDoesSEOCostInAustraliaSEO = {
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-australia",
   canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-australia",
   image: "https://thegeekonomy.com/blog%20image/How%20Much%20Does%20SEO%20Cost%20in%20Australia%20for%20Businesses/How%20Much%20Does%20SEO%20Cost%20in%20Australia%20for%20Businesses.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

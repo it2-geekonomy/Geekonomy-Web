@@ -152,10 +152,10 @@ export const howLongDoesMedicalSEOWorkSEO = {
   title: "How Long Does It Take for Medical SEO to Work?",
   description:
     "Wondering how long does it take for medical SEO to work? Learn timelines, key factors, and strategies to speed up rankings and patient growth.",
-  url: "https://geekonomytech.com/blog/how-long-does-it-take-for-medical-seo-to-work",
-  canonical: "https://geekonomytech.com/blog/how-long-does-it-take-for-medical-seo-to-work",
-  image: "https://geekonomytech.com/How%20Long%20Does%20It%20Take%20for%20Medical%20SEO%20to%20Work/How%20Long%20Does%20It%20Take%20for%20Medical%20SEO%20to%20Work.WEBP",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-long-does-it-take-for-medical-seo-to-work",
+  canonical: "https://thegeekonomy.com/blog/how-long-does-it-take-for-medical-seo-to-work",
+  image: "https://thegeekonomy.com/How%20Long%20Does%20It%20Take%20for%20Medical%20SEO%20to%20Work/How%20Long%20Does%20It%20Take%20for%20Medical%20SEO%20to%20Work.WEBP",
+  twitterHandle: "@Geekonomy",
 };
 
 

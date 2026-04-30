@@ -178,7 +178,7 @@ const onPageSEOChecklistContent: BlogContentItem[] = [
   h2("Technical SEO Considerations"),
   img(`${imageDir}/Technical SEO Considerations.webp`, "Technical SEO Considerations"),
   h3("Page Loading Speed and Its Importance"),
-  p("The speed of the pages is an essential ranking factor, and by optimizing it, it is an <a href=\"https://geekonomytech.com/blog/difference-between-technical-seo-and-content-seo-audits\" class=\"underline text-[#6FAF4E]\">element of technical SEO</a>."),
+  p("The speed of the pages is an essential ranking factor, and by optimizing it, it is an <a href=\"https://thegeekonomy.com/blog/difference-between-technical-seo-and-content-seo-audits\" class=\"underline text-[#6FAF4E]\">element of technical SEO</a>."),
   p("Fast loading time should be the priority of the website owners to provide a good user experience and to raise the ranking of the websites in the search engines, after this on-page SEO checklist."),
   p("A slow page load will increase bounces and reduce the level of engagement, which is a negative effect on the performance of your website."),
   p("An all-encompassing SEO checklist must also consist of routine page-speed audit, as well as optimization procedures, such as image compression, code minification, and browser caching."),
@@ -256,8 +256,8 @@ export const onPageSEOChecklistForServiceBasedWebsitesSEO = {
   title: "On-Page SEO Checklist for Service-Based Websites",
   description:
     " Complete on-page SEO checklist for service-based websites to improve rankings, boost visibility, and attract more qualified leads from search engines.",
-  url: "https://geekonomytech.com/blog/on-page-seo-checklist-for-service-based-websites",
-  canonical: "https://geekonomytech.com/blog/on-page-seo-checklist-for-service-based-websites",
-  image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/On-Page-SEO-Checklist-for-Service-Based-Websites/On-Page-SEO-Checklist-for-Service-Based-Websites.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/on-page-seo-checklist-for-service-based-websites",
+  canonical: "https://thegeekonomy.com/blog/on-page-seo-checklist-for-service-based-websites",
+  image: "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/On-Page-SEO-Checklist-for-Service-Based-Websites/On-Page-SEO-Checklist-for-Service-Based-Websites.webp",
+  twitterHandle: "@Geekonomy",
 };

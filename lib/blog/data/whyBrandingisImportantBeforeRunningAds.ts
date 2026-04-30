@@ -155,7 +155,7 @@ export const WhyBrandingisImportantBeforeRunningAdsSEO = {
   url: "https://thegeekonomy.com/blog/why-branding-is-important-before-running-ads",
   canonical: "https://thegeekonomy.com/blog/why-branding-is-important-before-running-ads",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 
 
 };

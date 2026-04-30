@@ -120,7 +120,7 @@ export const howImportantIsBrandingForSEOSEO = {
   url: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",
   canonical: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",
   image: "https://thegeekonomy.com/blog%20image/How%20Important%20is%20Branding%20for%20SEO/How%20Important%20is%20Branding%20for%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

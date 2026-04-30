@@ -351,7 +351,7 @@ export const BestLLMSEOToolsforAgenciesin2026SEO = {
   url: "https://thegeekonomy.com/blog/best-llm-seo-tools-for-agencies",
   canonical: "https://thegeekonomy.com/blog/best-llm-seo-tools-for-agencies",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

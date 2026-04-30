@@ -159,10 +159,10 @@ export const whatElementsFoundationalSEOWithAISEO = {
   title: "What elements are foundational for seo with AI",
   description:
     "Discover the key elements needed to build strong SEO with AI. Learn how automation, data insights, and smart optimization improve rankings.",
-  url: "https://geekonomytech.com/blog/what-elements-are-foundational-for-seo-with-ai",
-  canonical: "https://geekonomytech.com/blog/what-elements-are-foundational-for-seo-with-ai",
-  image: "https://geekonomytech.com/seo%20with%20AI/seo%20with%20AI%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/what-elements-are-foundational-for-seo-with-ai",
+  canonical: "https://thegeekonomy.com/blog/what-elements-are-foundational-for-seo-with-ai",
+  image: "https://thegeekonomy.com/seo%20with%20AI/seo%20with%20AI%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

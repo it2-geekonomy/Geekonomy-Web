@@ -156,10 +156,10 @@ export const seoAuditServices: BlogData = {
 export const seoAuditServicesSEO = {
   title: "How SEO Audit Services Improve SEO | Complete Guide",
   description: "SEO audit services identify website issues, fix technical errors, improve content, and boost rankings to drive better traffic and conversions.",
-  url: "https://geekonomytech.com/blog/how-seo-audit-services-improve-seo",
-  canonical: "https://geekonomytech.com/blog/how-seo-audit-services-improve-seo",
-  image: "https://geekonomytech.com/Audit%20Services%20Improve%20SEO/Audit%20Services%20Improve%20SEO.main%20image%20new.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-seo-audit-services-improve-seo",
+  canonical: "https://thegeekonomy.com/blog/how-seo-audit-services-improve-seo",
+  image: "https://thegeekonomy.com/Audit%20Services%20Improve%20SEO/Audit%20Services%20Improve%20SEO.main%20image%20new.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

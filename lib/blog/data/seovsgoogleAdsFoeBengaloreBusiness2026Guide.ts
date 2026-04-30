@@ -195,6 +195,6 @@ export const SEOvsGoogleAdsforBangaloreBusinessesGuide2026SEO = {
   url: "https://thegeekonomy.com/blog/seo-vs-google-ads-for-bangalore-businesses",
   canonical: "https://thegeekonomy.com/blog/seo-vs-google-ads-for-bangalore-businesses",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 

@@ -15,12 +15,12 @@ const provenSEOStrategiesContent: BlogContentItem[] = [
   h3("What is Organic Traffic?"),
   p("Organic traffic is the users who find their way to your site from the non-paid search results. When a user decides to type in a query on a search engine such as Google, the latter provides a list of sites that it considers the most relevant to what the user is looking for."),
   p("Those who land on your website from the search results are the ones referred to as organic traffic."),
-  p("This term is closely associated with SEO, and hence it serves as one of the most important indicators of the <a href=\"https://geekonomytech.com/blog/how-seo-audit-services-improve-seo\" target=\"_blank\" rel=\"noopener noreferrer\">success of a website optimisation campaign</a>."),
+  p("This term is closely associated with SEO, and hence it serves as one of the most important indicators of the <a href=\"https://thegeekonomy.com/blog/how-seo-audit-services-improve-seo\" target=\"_blank\" rel=\"noopener noreferrer\">success of a website optimisation campaign</a>."),
   p("In fact, organic traffic is what makes your site visible to the rest of the web, and it is, therefore, a direct consequence of effective SEO, that is, being able to tell how your website ranks in organic search."),
   h3("Importance of Organic Traffic for Websites"),
   p("Organic traffic is the lifeblood of websites, as it is a cheap and long-lasting method of bringing more users to a site."),
   p("Unlike a paid advertising campaign, organic traffic does not need constant ad spending."),
-  p("In fact, once you are able to <a href=\"https://geekonomytech.com/blog/b2b-seo-audit-strategies\" target=\"_blank\" rel=\"noopener noreferrer\">rank high for the most important and relevant keywords</a> in your niche through SEO, you will be able to generate traffic to your website on a regular basis."),
+  p("In fact, once you are able to <a href=\"https://thegeekonomy.com/blog/b2b-seo-audit-strategies\" target=\"_blank\" rel=\"noopener noreferrer\">rank high for the most important and relevant keywords</a> in your niche through SEO, you will be able to generate traffic to your website on a regular basis."),
   p("This can be the starting point of a cycle of higher conversion rates, brand recognition, and, eventually, more money-making."),
   p("Additionally, many times, organic traffic is regarded as more reliable than paid ads by the users since they consider organic search results as the most legitimate and relevant, which makes it a priceless weapon for any company that wants to position itself strongly on the web."),
   h3("How Organic Traffic Impacts SEO"),
@@ -117,10 +117,10 @@ export const provenSEOStrategiesSEO = {
   title: "10 Proven SEO Strategies to Boost SEO & Organic Traffic",
   description:
     "Discover 10 Proven SEO Strategies to Boost SEO & Organic Traffic. Improve rankings, increase visibility, and drive consistent growth.",
-  url: "https://geekonomytech.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic",
-  canonical: "https://geekonomytech.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic",
-  image: "https://geekonomytech.com/10%20Proven%20SEO%20Strategies%20to%20Boost%20SEO/10%20Proven%20SEO%20Strategies%20to%20Boost%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic",
+  canonical: "https://thegeekonomy.com/blog/10-proven-seo-strategies-to-boost-seo-organic-traffic",
+  image: "https://thegeekonomy.com/10%20Proven%20SEO%20Strategies%20to%20Boost%20SEO/10%20Proven%20SEO%20Strategies%20to%20Boost%20SEO%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

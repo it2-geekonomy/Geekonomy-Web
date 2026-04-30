@@ -151,10 +151,10 @@ export const hotelSEOConsultant: BlogData = {
 export const hotelSEOConsultantSEO = {
   title: "How a Hotel SEO Consultant Helps You Rank #1",
   description: "A hotel SEO consultant helps improve visibility, boost bookings, and outrank competitors by optimizing local search, keywords, and website performance.",
-  url: "https://geekonomytech.com/blog/how-a-hotel-seo-consultant-helps-you-rank",
-  canonical: "https://geekonomytech.com/blog/how-a-hotel-seo-consultant-helps-you-rank",
-  image: "https://geekonomytech.com/blog%20image/Hotel%20SEO%20Consultant/Hotel%20SEO%20Consultant%20.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-a-hotel-seo-consultant-helps-you-rank",
+  canonical: "https://thegeekonomy.com/blog/how-a-hotel-seo-consultant-helps-you-rank",
+  image: "https://thegeekonomy.com/blog%20image/Hotel%20SEO%20Consultant/Hotel%20SEO%20Consultant%20.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

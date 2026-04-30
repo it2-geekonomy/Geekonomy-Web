@@ -37,10 +37,10 @@ export const omnichannelMarketing: BlogData = {
 export const omnichannelMarketingSEO = {
   title: "Omnichannel Marketing & The Future of CX 2025",
   description: "Learn how omnichannel marketing creates seamless customer experiences across channels to boost engagement, brand loyalty, and business growth.",
-  url: "https://geekonomytech.com/blog/omnichannel-marketing",
-  canonical: "https://geekonomytech.com/blog/omnichannel-marketing",
-  image: "https://geekonomytech.com/blog%20image/omni-channel-technology-online-retail-business-approach/omni-channel-technology-online-retail-business-approach.045aab5fc2e885466ac3.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/omnichannel-marketing",
+  canonical: "https://thegeekonomy.com/blog/omnichannel-marketing",
+  image: "https://thegeekonomy.com/blog%20image/omni-channel-technology-online-retail-business-approach/omni-channel-technology-online-retail-business-approach.045aab5fc2e885466ac3.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

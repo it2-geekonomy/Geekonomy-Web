@@ -19,7 +19,7 @@ const whyWhiteLabelSEOReportingIsImportantForAgenciesContent: BlogContentItem[] 
   p("These reports make visible the functioning, the non-functioning, and the potential for improvement, thus converting the complicated data collection process into a feasible plan."),
   p("Generally, an SEO report is packed with data on keyword research, competitor analysis, and technical SEO audits."),
   p("These accounts are used by agencies to inform clients about the progress of their SEO campaigns and the return on their investment made by their in-house SEO team."),
-  p("Essentially, an SEO report is a necessary communication tool, demonstrating the value of the <a href=\"https://geekonomytech.com/blog/carpet-cleaning-seo-services-complete-guide\" class=\"underline text-[#6FAF4E]\">provided SEO services</a>."),
+  p("Essentially, an SEO report is a necessary communication tool, demonstrating the value of the <a href=\"https://thegeekonomy.com/blog/carpet-cleaning-seo-services-complete-guide\" class=\"underline text-[#6FAF4E]\">provided SEO services</a>."),
   h3("Importance of SEO Reports for Agencies"),
   p("Agency SEO reports are essential to the agency and are the main points of the agency's efficient communication and client relationship management."),
   p("By using a proper white-label SEO reporting tool, agencies are able to keep brand consistency and, at the same time, deliver the needed insights."),
@@ -128,7 +128,7 @@ const whyWhiteLabelSEOReportingIsImportantForAgenciesContent: BlogContentItem[] 
   p("In this way, every client is given a report with branding that matches their specific needs and requirements."),
   p("Reporting automation is a great way to liberate an agency's resources to concentrate on providing SEO services of the highest quality and making their relationships with clients stronger, which is why seo reporting is still very necessary."),
   h3("Measuring the Effectiveness of SEO Reports"),
-  p("It is a must to measure the effectiveness of SEO reports so that they deliver value and drive results, in particular, when <a href=\"https://geekonomytech.com/blog/seo-platform-for-b2b-companies\" class=\"underline text-[#6FAF4E]\">using advanced SEO platforms</a>."),
+  p("It is a must to measure the effectiveness of SEO reports so that they deliver value and drive results, in particular, when <a href=\"https://thegeekonomy.com/blog/seo-platform-for-b2b-companies\" class=\"underline text-[#6FAF4E]\">using advanced SEO platforms</a>."),
   p("Tracking client engagement with the reports in terms of the number of times they are accessed and the time spent reviewing them is one way of measuring effectiveness."),
   p("Another way is to ask clients for their opinions on the clarity, relevance, and usefulness of the reports that can be used to improve white-label SEO services."),
   p("Moreover, client satisfaction scores may be employed as a proxy for report effectiveness in the implementation of white-label solutions and the provision of SEO insights context."),
@@ -159,7 +159,7 @@ export const whyWhiteLabelSEOReportingIsImportantForAgenciesSEO = {
   url: "https://thegeekonomy.com/blog/why-white-label-seo-reporting-is-important-for-agencies",
   canonical: "https://thegeekonomy.com/blog/why-white-label-seo-reporting-is-important-for-agencies",
   image: "https://thegeekonomy.com/blog%20image/Why%20White%20Label%20SEO%20Reporting%20is%20Important%20for%20Agencies/Why%20White%20Label%20SEO%20Reporting%20is%20Important%20for%20Agencies%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

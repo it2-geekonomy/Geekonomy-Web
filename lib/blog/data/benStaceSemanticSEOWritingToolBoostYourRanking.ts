@@ -241,5 +241,5 @@ export const benStaceSemanticSEOWritingToolBoostYourRankingSEO = {
   url: "https://thegeekonomy.com/blog/ben-stace-semantic-seo-writing-tool",
   canonical: "https://thegeekonomy.com/blog/ben-stace-semantic-seo-writing-tool",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

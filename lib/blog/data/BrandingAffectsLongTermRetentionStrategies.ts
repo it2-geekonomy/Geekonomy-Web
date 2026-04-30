@@ -196,5 +196,5 @@ export const brandingAffectsLongTermRetentionStrategiesSEO = {
   url: "https://thegeekonomy.com/blog/how-branding-affects-long-term-retention-strategies",
   canonical: "https://thegeekonomy.com/blog/how-branding-affects-long-term-retention-strategies",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

@@ -174,7 +174,7 @@ export const howToCheckIfYourSEOIsWorkingSEO = {
   url: "https://thegeekonomy.com/blog/how-to-check-if-your-seo-is-working",
   canonical: "https://thegeekonomy.com/blog/how-to-check-if-your-seo-is-working",
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Check%20If%20Your%20SEO%20Is%20Working/How%20to%20Check%20If%20Your%20SEO%20Is%20Working%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

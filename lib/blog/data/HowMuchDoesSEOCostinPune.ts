@@ -189,10 +189,10 @@ export const howMuchDoesSEOCostInPuneSEO = {
     title: "How Much Does SEO Cost in Pune | 2026 Guide",
     description:
         "Discover premium SEO services in Pune. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-pune",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-pune",
-    image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Pune/How-Much-Does-SEO-Cost-in-Pune-main-image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-pune",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-pune",
+    image: "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Pune/How-Much-Does-SEO-Cost-in-Pune-main-image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

@@ -208,5 +208,5 @@ export const whatToLookForInBrandStrategyAgenciesSEO = {
   url: "https://thegeekonomy.com/blog/what-to-look-for-in-brand-strategy-agencies",
   canonical: "https://thegeekonomy.com/blog/what-to-look-for-in-brand-strategy-agencies",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

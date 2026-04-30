@@ -294,5 +294,5 @@ export const semanticContentNetworksByBenStaceSEO = {
   url: "https://thegeekonomy.com/blog/semantic-content-networks-by-ben-stace",
   canonical: "https://thegeekonomy.com/blog/semantic-content-networks-by-ben-stace",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

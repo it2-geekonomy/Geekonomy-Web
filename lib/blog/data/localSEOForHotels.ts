@@ -136,10 +136,10 @@ export const localSEOForHotels: BlogData = {
 export const localSEOForHotelsSEO = {
   title: "Local SEO for Hotels: Boost Visibility and Hotel Bookings",
   description: "Boost your hotel's visibility with local SEO. Rank higher locally, attract more guests, and increase bookings with proven optimization strategies.",
-  url: "https://geekonomytech.com/blog/local-seo-for-hotels-boost-visibility",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-hotels-boost-visibility",
-  image: "https://geekonomytech.com/Local%20SEO%20for%20Hotels/SEO%20for%20Hotels%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-hotels-boost-visibility",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-hotels-boost-visibility",
+  image: "https://thegeekonomy.com/Local%20SEO%20for%20Hotels/SEO%20for%20Hotels%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

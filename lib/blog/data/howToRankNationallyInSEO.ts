@@ -167,7 +167,7 @@ export const howToRankNationallyInSEOSEO = {
   url: "https://thegeekonomy.com/blog/how-to-rank-nationally-in-seo",
   canonical: "https://thegeekonomy.com/blog/how-to-rank-nationally-in-seo",
   image: "https://thegeekonomy.com/blog%20image/How%20to%20Rank%20Nationally%20in%20SEO/How%20to%20Rank%20Nationally%20in%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

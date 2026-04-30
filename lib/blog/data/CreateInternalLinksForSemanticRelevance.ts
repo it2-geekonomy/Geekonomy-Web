@@ -150,5 +150,5 @@ export const CreateInternalLinksForSemanticRelevanceSEO = {
   url: "https://thegeekonomy.com/blog/create-internal-links-for-semantic-relevance",
   canonical: "https://thegeekonomy.com/blog/create-internal-links-for-semantic-relevance",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

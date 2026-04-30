@@ -114,10 +114,10 @@ export const whatTriggersAIOverviewSEO: BlogData = {
 export const whatTriggersAIOverviewSEOSEO = {
   title: "What Triggers an AI Overview SEO? Strategy for Google's AI",
   description: "Learn what triggers AI Overview SEO and how to optimize content, keywords, and user intent to stay visible and rank effectively in Google's AI results.",
-  url: "https://geekonomytech.com/blog/what-triggers-an-ai-overview-seo",
-  canonical: "https://geekonomytech.com/blog/what-triggers-an-ai-overview-seo",
-  image: "https://geekonomytech.com/blog%20image/Triggers%20an%20AI%20Overview%20SEO/Triggers%20an%20AI%20Overview%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/what-triggers-an-ai-overview-seo",
+  canonical: "https://thegeekonomy.com/blog/what-triggers-an-ai-overview-seo",
+  image: "https://thegeekonomy.com/blog%20image/Triggers%20an%20AI%20Overview%20SEO/Triggers%20an%20AI%20Overview%20SEO%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

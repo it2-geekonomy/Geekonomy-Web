@@ -72,6 +72,27 @@ export function useContactForm() {
           throw new Error("EmailJS configuration is missing. Please check your environment variables.");
         }
 
+        // Send data to external CRM API
+        try {
+          await fetch("https://crm.geekonomy.in/api/leads/external", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "x-api-key": "jhfgdsiughjkdfgh",
+            },
+            body: JSON.stringify({
+              name: values.name,
+              email: values.email,
+              phone: values.phone,
+              organization: values.organisation,
+              subject: subjectText,
+              message: values.message,
+            }),
+          });
+        } catch (apiError) {
+          console.error("CRM API Error:", apiError);
+        }
+
         await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
         setSubmitStatus("success");

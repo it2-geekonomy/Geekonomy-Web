@@ -150,10 +150,10 @@ export const localSEOForCarpentersSEO = {
   title: "Local SEO for Carpenters: Complete Guide For Ranking",
   description:
     "Boost local visibility with SEO for carpenters. Rank higher in search, attract nearby clients, and grow your carpentry business.",
-  url: "https://geekonomytech.com/blog/local-seo-for-carpenters-complete-guide",
-  canonical: "https://geekonomytech.com/blog/local-seo-for-carpenters-complete-guide",
-  image: "https://geekonomytech.com/Local%20SEO%20for%20Carpenters/Local%20SEO%20for%20Carpenters%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/local-seo-for-carpenters-complete-guide",
+  canonical: "https://thegeekonomy.com/blog/local-seo-for-carpenters-complete-guide",
+  image: "https://thegeekonomy.com/Local%20SEO%20for%20Carpenters/Local%20SEO%20for%20Carpenters%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

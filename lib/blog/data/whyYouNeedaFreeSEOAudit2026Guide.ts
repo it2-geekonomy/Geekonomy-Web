@@ -201,7 +201,7 @@ export const whyYouNeedaFreeSEOAudit2026GuideSEO = {
   url: "https://thegeekonomy.com/blog/why-you-need-a-free-seo-audit",
   canonical: "https://thegeekonomy.com/blog/why-you-need-a-free-seo-audit",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 
 };
 

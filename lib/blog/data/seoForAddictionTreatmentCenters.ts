@@ -160,7 +160,7 @@ export const seoForAddictionTreatmentCentersSEO = {
   url: "https://thegeekonomy.com/blog/seo-for-addiction-treatment-centers-complete-guide",
   canonical: "https://thegeekonomy.com/blog/seo-for-addiction-treatment-centers-complete-guide",
   image: "https://thegeekonomy.com/blog%20image/SEO%20for%20Addiction%20Treatment%20Centers/SEO%20for%20Addiction%20Treatment%20Centers%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

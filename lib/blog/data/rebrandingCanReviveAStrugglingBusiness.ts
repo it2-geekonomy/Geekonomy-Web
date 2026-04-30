@@ -182,5 +182,5 @@ export const rebrandingCanReviveAStrugglingBusinessSEO = {
   url: "https://thegeekonomy.com/blog/how-rebranding-can-revive-a-struggling-business",
   canonical: "https://thegeekonomy.com/blog/how-rebranding-can-revive-a-struggling-business",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

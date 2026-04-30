@@ -201,5 +201,5 @@ export const findAPartnerForBrandVisibilityAuditSEO = {
   url: "https://thegeekonomy.com/blog/find-a-partner-for-brand-visibility-audit",
   canonical: "https://thegeekonomy.com/blog/find-a-partner-for-brand-visibility-audit",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
