@@ -13,7 +13,7 @@ export const FOOTER_NAV_ITEMS = [
   { label: "HOW WE WORK", href: "/how-we-work" },
   { label: "SUCCESS LAB", href: "/success-lab" },
   { label: "ABOUT", href: "/about" },
-  { label: "CAREER", href: "/career" },
+  { label: "CAREERS", href: "/careers" },
   { label: "BLOGS", href: "/blog" },
   { label: "CONTACT US", href: "/contact-us" },
 ] as const;
