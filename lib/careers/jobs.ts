@@ -15,6 +15,7 @@ export interface CareerJob {
   employmentType: string;
   experience: string;
   urgent: boolean;
+  recruitmentId?: string;
   applicationUrl?: string;
 }
 
@@ -37,6 +38,7 @@ export const CAREER_JOBS: CareerJob[] = [
     experience:
       "2–4 years of graphic design experience with demonstrated UI/UX skills",
     urgent: true,
+    recruitmentId: "6",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=6",
   },
@@ -48,9 +50,24 @@ export const CAREER_JOBS: CareerJob[] = [
     employmentType: "Full-time",
     experience: "4–8 years of experience in B2B sales",
     urgent: true,
+    recruitmentId: "9",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=9",
   },
+];
+
+export const CAREER_APPLICATION_POSITIONS: {
+  value: string;
+  label: string;
+  recruitmentId?: string;
+}[] = [
+  { value: "", label: "Select a role" },
+  ...CAREER_JOBS.map((job) => ({
+    value: job.id,
+    label: job.title,
+    recruitmentId: job.recruitmentId,
+  })),
+  { value: "general", label: "General application" },
 ];
 
 export const CAREER_SECTION_ORDER: CareerTeam[] = [
