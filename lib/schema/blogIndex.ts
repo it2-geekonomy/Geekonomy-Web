@@ -1,3 +1,5 @@
+import { getSchemaBaseUrl, orgId } from "./constants";
+
 export function buildBlogIndexJsonLd() {
   const base = getSchemaBaseUrl();
 
