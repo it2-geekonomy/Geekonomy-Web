@@ -96,6 +96,23 @@ fbq('track', 'PageView');`,
             `,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Geekonomy",
+              "url": "https://thegeekonomy.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://thegeekonomy.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          }}
+        />
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H4C3XJRV9"></script>
         <script
           dangerouslySetInnerHTML={{
