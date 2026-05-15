@@ -137,8 +137,8 @@ export default function CareerApplicationSection() {
           <div className="mb-8">
             <Typography
               as="h3"
-              variant="h2"
-              className="mb-1 text-xl font-semibold text-white sm:text-2xl"
+              variant="display-xl"
+              className="mb-1 font-semibold text-white "
             >
               Your Application
             </Typography>
@@ -307,7 +307,7 @@ export default function CareerApplicationSection() {
                   PDF, DOC, DOCX — Max 5MB
                 </Typography>
                 {resume ? (
-                  <motion
+                  <div
                     role="presentation"
                     onClick={(e) => e.stopPropagation()}
                     className="mt-4 flex w-full max-w-md items-center gap-3 rounded-lg border border-[#69AE44]/40 bg-[#69AE44]/10 px-4 py-3"
@@ -330,7 +330,7 @@ export default function CareerApplicationSection() {
                     >
                       <X className="h-4 w-4" aria-hidden />
                     </button>
-                  </motion>
+                  </div>
                 ) : null}
                 <input
                   ref={fileInputRef}
