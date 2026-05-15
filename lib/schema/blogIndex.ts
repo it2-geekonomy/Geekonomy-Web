@@ -12,7 +12,7 @@ export function buildBlogIndexJsonLd() {
         url: `${base}/blog`,
         name: "Geekonomy Blog - Insights on Branding & Marketing",
         description:
-          "Read our latest articles on branding, digital marketing, web development, and business growth.",
+          "Read our latest articles on branding, digital marketing, web development, and business growth",
         publisher: { "@type": "Organization", "@id": orgId(base) },
       },
       {
@@ -20,7 +20,7 @@ export function buildBlogIndexJsonLd() {
         "@id": `${base}/blog#blog`,
         name: "Geekonomy Insights",
         description:
-          "Regular insights and guides on branding, marketing, and digital strategy.",
+          "Regular insights and guides on branding, marketing, and digital strategy",
         publisher: { "@type": "Organization", "@id": orgId(base) },
       },
     ],

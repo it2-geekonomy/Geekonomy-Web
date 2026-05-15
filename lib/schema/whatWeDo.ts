@@ -1,5 +1,4 @@
 import { getSchemaBaseUrl, orgId, websiteId } from "./constants";
-import { getPostalAddress } from "./address";
 
 const BRANDFOUNDRY_IMG =
   "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/7f8f4a5d-faee-4b4a-8ee7-cde842a8ddeb-Geekonomy%20Pillar%20Logos%20white-03.png";
@@ -49,7 +48,7 @@ export function buildWhatWeDoJsonLd() {
         url: `${base}/what-we-do`,
         name: "What We Do - Geekonomy",
         description:
-          "Explore our three core service pillars: BrandFoundry, CodeCraft, and Digi360.",
+          "Explore our three core service pillars: BrandFoundry, CodeCraft, and Digi360",
         publisher: { "@type": "Organization", "@id": orgId(base) },
         isPartOf: { "@id": web },
       },

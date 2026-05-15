@@ -30,7 +30,6 @@ export function buildCaseStudyPageJsonLd(
         author: { "@type": "Organization", name: "Geekonomy" },
         publisher: { "@type": "Organization", "@id": org },
         articleBody: post.subtitle,
-        mainEntityOfPage: { "@type": "WebPage", "@id": `${url}#webpage` },
       },
     ],
   };
