@@ -21,7 +21,7 @@ export function buildHomePageJsonLd() {
         url: base,
         logo: logoImageObject(),
         description: HOME_DESC,
-        foundingDate: "2015",
+        foundingDate: "2020",
         sameAs: [...SAME_AS],
         address: getPostalAddress(),
         contactPoint: {
