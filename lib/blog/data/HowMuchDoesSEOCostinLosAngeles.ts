@@ -257,10 +257,10 @@ export const howMuchDoesSEOCostInLosAngelesSEO = {
     title: "How Much Does SEO Cost in Los Angeles | 2026 Guide",
     description:
         "Learn about SEO pricing and service costs for Los Angeles businesses. Discover SEO packages and pricing models to boost your online visibility.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-los-angeles",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-los-angeles",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Los Angeles/How Much Does SEO Cost in Los Angeles main image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-los-angeles",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-los-angeles",
+    image: "https://thegeekonomy.com/How Much Does SEO Cost in Los Angeles/How Much Does SEO Cost in Los Angeles main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

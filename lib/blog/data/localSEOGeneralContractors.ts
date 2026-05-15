@@ -163,10 +163,10 @@ export const localSEOGeneralContractors: BlogData = {
 export const localSEOGeneralContractorsSEO = {
   title: "Best Local SEO Strategies for General Contractors 2026",
   description: "Grow your construction business with the best local SEO strategies for general contractors. Rank higher, attract local clients, and boost project leads.",
-  url: "https://geekonomytech.com/blog/best-local-seo-strategies-for-general-contractors",
-  canonical: "https://geekonomytech.com/blog/best-local-seo-strategies-for-general-contractors",
-  image: "https://geekonomytech.com/Best Local SEO Strategies for General Contractors 2026/main image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/best-local-seo-strategies-for-general-contractors",
+  canonical: "https://thegeekonomy.com/blog/best-local-seo-strategies-for-general-contractors",
+  image: "https://thegeekonomy.com/Best Local SEO Strategies for General Contractors 2026/main image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

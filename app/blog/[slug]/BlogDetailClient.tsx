@@ -6,11 +6,16 @@ import Image from "next/image";
 import { BLOGS } from "@/components/Blogs/blogs";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { BlogCTAModal } from "@/components/Blogs/BlogCTAModal";
-import { getAuthorForBlog, getDateInfo, getAuthorSlug } from "@/lib/blog/authorMapping";
+import {
+  getAuthorForBlog,
+  getDateInfo,
+  getAuthorSlug,
+  type BlogDateDisplayLabel,
+} from "@/lib/blog/authorMapping";
 
 const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
-export type DateInfoProp = { date: string; label: "Published" | "Updated" };
+export type DateInfoProp = { date: string; label: BlogDateDisplayLabel };
 
 interface BlogDetailClientProps {
   blogSlug: string;
@@ -42,7 +47,22 @@ export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: B
   }, []);
 
   if (!blog) {
-    return null;
+    return (
+      <main className="bg-black min-h-dvh py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center px-6">
+        <div className="text-center max-w-md">
+          <p className="text-white font-semibold text-lg mb-2">This article could not be loaded.</p>
+          <p className="text-white/60 text-sm mb-6">
+            It may be missing from the blog list. Try returning to the blog index.
+          </p>
+          <Link
+            href="/blog"
+            className="text-[#6FAF4E] hover:underline font-medium"
+          >
+            ← Back to Blog
+          </Link>
+        </div>
+      </main>
+    );
   }
 
   const authorInfo = getAuthorForBlog(blogSlug);

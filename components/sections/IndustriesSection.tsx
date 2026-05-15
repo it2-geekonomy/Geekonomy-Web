@@ -20,7 +20,7 @@ function slugify(value: string): string {
 
 const CLIENT_TO_SLUG: Record<string, string> = {
   "DivyaSree": "divyasree-builders",
-  "Musashi": "mushashi-delta",
+  "Musashi": "musashi-delta",
   "Hindustan Power": "hindustan-power",
   "VST Group": "vst-group",
 };

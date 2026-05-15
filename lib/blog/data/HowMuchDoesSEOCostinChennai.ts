@@ -238,10 +238,10 @@ export const howMuchDoesSEOCostInChennaiSEO = {
     title: "How Much Does SEO Cost in Chennai | 2026 Guide",
     description:
         "Discover how much SEO costs in Chennai. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-chennai",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-chennai",
-    image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Chennai/How-Much-Does-SEO-Cost-in-Chennai-main-image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-chennai",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-chennai",
+    image: "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Chennai/How-Much-Does-SEO-Cost-in-Chennai-main-image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

@@ -151,5 +151,5 @@ export const WhyBrandingIsImportantforBangaloreBusinessesSEO = {
   url: "https://thegeekonomy.com/blog/why-branding-is-important-for-bangalore-businesses",
   canonical: "https://thegeekonomy.com/blog/why-branding-is-important-for-bangalore-businesses",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

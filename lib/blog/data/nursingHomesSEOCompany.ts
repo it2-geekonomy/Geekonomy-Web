@@ -169,10 +169,10 @@ export const nursingHomesSEOCompany: BlogData = {
 export const nursingHomesSEOCompanySEO = {
   title: "How a Nursing Homes SEO Company Helps You Rank in 2026",
   description: "Boost online visibility with a trusted nursing homes SEO company. Rank higher, attract families searching for care, and grow admissions with proven SEO.",
-  url: "https://geekonomytech.com/blog/nursing-homes-seo-company-help-you-rank",
-  canonical: "https://geekonomytech.com/blog/nursing-homes-seo-company-help-you-rank",
-  image: "https://geekonomytech.com/blog%20image/Nursing%20Homes%20SEO%20Company/Nursing%20Homes%20SEO%20Company%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/nursing-homes-seo-company-help-you-rank",
+  canonical: "https://thegeekonomy.com/blog/nursing-homes-seo-company-help-you-rank",
+  image: "https://thegeekonomy.com/blog%20image/Nursing%20Homes%20SEO%20Company/Nursing%20Homes%20SEO%20Company%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -190,10 +190,10 @@ export const technicalSEOMistakesThatKillGoogleRankingsSEO = {
   title: "Technical SEO Mistakes That Kill Google Rankings",
   description:
     "Learn the most common technical SEO mistakes that hurt Google rankings. Fix indexing, speed, crawl errors, and site structure to improve visibility.",
-  url: "https://geekonomytech.com/blog/technical-seo-mistakes-that-kill-google-rankings",
-  canonical: "https://geekonomytech.com/blog/technical-seo-mistakes-that-kill-google-rankings",
-  image: "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Technical-SEO-Mistakes-That-Kill-Google-Rankings/Technical-SEO-Mistakes-That-Kill-Google-Rankings.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/technical-seo-mistakes-that-kill-google-rankings",
+  canonical: "https://thegeekonomy.com/blog/technical-seo-mistakes-that-kill-google-rankings",
+  image: "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Technical-SEO-Mistakes-That-Kill-Google-Rankings/Technical-SEO-Mistakes-That-Kill-Google-Rankings.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

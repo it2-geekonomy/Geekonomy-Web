@@ -197,5 +197,5 @@ export const HowMuchDoesBrandingCostinBangaloreSEO = {
   url: "https://thegeekonomy.com/blog/branding-cost-in-bangalore",
   canonical: "https://thegeekonomy.com/blog/branding-cost-in-bangalore",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

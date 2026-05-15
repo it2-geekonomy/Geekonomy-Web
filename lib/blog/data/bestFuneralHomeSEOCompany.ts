@@ -166,7 +166,7 @@ export const bestFuneralHomeSEOCompanySEO = {
   url: "https://thegeekonomy.com/blog/best-funeral-home-seo-company-for-growth",
   canonical: "https://thegeekonomy.com/blog/best-funeral-home-seo-company-for-growth",
   image: "https://thegeekonomy.com/blog%20image/Best%20Funeral%20Home%20SEO%20Company%20for%20Growth/Best%20Funeral%20Home%20SEO%20Company%20for%20Growth.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -183,7 +183,7 @@ export const howMuchDoesSEOCostInLondonSEO = {
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",
   canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",
   image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20London/How%20Much%20Does%20SEO%20Cost%20in%20London%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

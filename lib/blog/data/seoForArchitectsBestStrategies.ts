@@ -177,10 +177,10 @@ export const seoForArchitectsBestStrategiesSEO = {
   title: "SEO for Architects: Best Strategies Rank Higher in Google",
   description:
     "Boost your architecture firm's online visibility with SEO for architects. Rank higher, attract quality clients, and grow your business with proven tactics.",
-  url: "https://geekonomytech.com/blog/seo-for-architects-best-strategies",
-  canonical: "https://geekonomytech.com/blog/seo-for-architects-best-strategies",
-  image: "https://geekonomytech.com/SEO%20for%20Architects/SEO%20for%20Architects%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-architects-best-strategies",
+  canonical: "https://thegeekonomy.com/blog/seo-for-architects-best-strategies",
+  image: "https://thegeekonomy.com/SEO%20for%20Architects/SEO%20for%20Architects%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

@@ -227,10 +227,10 @@ export const logoDesignersInBangaloreHowToChooseTheBestSEO = {
   title: "Logo Designers in Bangalore: How to Choose the Best",
   description:
     "Looking for logo designers in Bangalore? Learn how to choose the best logo design company for your brand with expert tips and key factors to consider.",
-  url: "https://geekonomytech.com/blog/logo-designers-in-bangalore-how-to-choose-the-best",
+  url: "https://thegeekonomy.com/blog/logo-designers-in-bangalore-how-to-choose-the-best",
   canonical:
-    "https://geekonomytech.com/blog/logo-designers-in-bangalore-how-to-choose-the-best",
+    "https://thegeekonomy.com/blog/logo-designers-in-bangalore-how-to-choose-the-best",
   image:
-    "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Logo-Designers-in-Bangalore/Logo-Designers-in-Bangalore.webp",
-  twitterHandle: "@GeekonomyTech",
+    "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/Logo-Designers-in-Bangalore/Logo-Designers-in-Bangalore.webp",
+  twitterHandle: "@Geekonomy",
 };

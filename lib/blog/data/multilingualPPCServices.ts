@@ -128,10 +128,10 @@ export const multilingualPPCServices: BlogData = {
 export const multilingualPPCServicesSEO = {
   title: "Multilingual PPC Services: Reach Global Customers Faster",
   description: "Multilingual PPC services help businesses reach global audiences, increase conversions, and run targeted ads in multiple languages for maximum ROI.",
-  url: "https://geekonomytech.com/blog/multilingual-ppc-services-reach-global-customers-faster",
-  canonical: "https://geekonomytech.com/blog/multilingual-ppc-services-reach-global-customers-faster",
-  image: "https://geekonomytech.com/blog%20image/Multilingual%20PPC%20Services/Multilingual%20PPC%20Services%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/multilingual-ppc-services-reach-global-customers-faster",
+  canonical: "https://thegeekonomy.com/blog/multilingual-ppc-services-reach-global-customers-faster",
+  image: "https://thegeekonomy.com/blog%20image/Multilingual%20PPC%20Services/Multilingual%20PPC%20Services%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

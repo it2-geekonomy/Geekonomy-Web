@@ -156,10 +156,10 @@ export const canAddingMorePicturesImproveSEO: BlogData = {
 export const canAddingMorePicturesImproveSEOSEO = {
   title: "Can Adding More Pictures Improve SEO? Image SEO",
   description: "Can adding more pictures improve SEO? Yes—optimized images can boost rankings, user experience, and engagement. Learn key Image SEO strategies.",
-  url: "https://geekonomytech.com/blog/can-adding-more-pictures-improve-seo",
-  canonical: "https://geekonomytech.com/blog/can-adding-more-pictures-improve-seo",
-  image: "https://geekonomytech.com/blog%20image/Adding%20More%20Pictures%20Improve%20SEO/Adding%20More%20Pictures%20Improve%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/can-adding-more-pictures-improve-seo",
+  canonical: "https://thegeekonomy.com/blog/can-adding-more-pictures-improve-seo",
+  image: "https://thegeekonomy.com/blog%20image/Adding%20More%20Pictures%20Improve%20SEO/Adding%20More%20Pictures%20Improve%20SEO%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

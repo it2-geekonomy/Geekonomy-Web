@@ -285,11 +285,11 @@ export const howMuchDoesSEOCostInDelhiNCRSEO = {
     title: "How Much Does SEO Cost in DelhiNCR | 2026 Guide",
     description:
         "Discover how much SEO costs in Delhi NCR. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-delhi-ncr",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-delhi-ncr",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-delhi-ncr",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-delhi-ncr",
     image:
-        "https://geekonomytech.com/How Much Does SEO Cost in Delhi NCR/How Much Does SEO Cost in Delhi NCR main image.webp",
-    twitterHandle: "@GeekonomyTech",
+        "https://thegeekonomy.com/How Much Does SEO Cost in Delhi NCR/How Much Does SEO Cost in Delhi NCR main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

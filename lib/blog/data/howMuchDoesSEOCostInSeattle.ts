@@ -231,7 +231,7 @@ export const howMuchDoesSEOCostInSeattleSEO = {
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-seattle",
   canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-seattle",
   image: "https://thegeekonomy.com/How%20Much%20Does%20SEO%20Cost%20in%20Seattle/How%20Much%20Does%20SEO%20Cost%20in%20Seattle%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

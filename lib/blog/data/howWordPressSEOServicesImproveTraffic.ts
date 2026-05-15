@@ -122,10 +122,10 @@ export const howWordPressSEOServicesImproveTrafficSEO = {
   title: "How WordPress SEO Services Improve Traffic",
   description:
     "Learn how WordPress SEO services boost rankings, increase website traffic, improve visibility, and help businesses grow with targeted optimization.",
-  url: "https://geekonomytech.com/blog/how-wordpress-seo-services-improve-traffic",
-  canonical: "https://geekonomytech.com/blog/how-wordpress-seo-services-improve-traffic",
-  image: "https://geekonomytech.com/WordPress%20SEO%20Services/WordPress%20SEO%20Services%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-wordpress-seo-services-improve-traffic",
+  canonical: "https://thegeekonomy.com/blog/how-wordpress-seo-services-improve-traffic",
+  image: "https://thegeekonomy.com/WordPress%20SEO%20Services/WordPress%20SEO%20Services%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

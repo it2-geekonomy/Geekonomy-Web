@@ -241,10 +241,10 @@ export const brandingCostUK: BlogData = {
 export const brandingCostUKSEO = {
   title: "How Much Does Branding Cost in the UK? [2026 Guide]",
   description: "Discover branding costs in the UK for 2026. Learn average prices, small business packages, and how to choose the right branding agency.",
-  url: "https://geekonomytech.com/blog/how-much-does-branding-cost-in-the-uk",
-  canonical: "https://geekonomytech.com/blog/how-much-does-branding-cost-in-the-uk",
-  image: "https://geekonomytech.com/branding cost UK/main image of branding cost uk.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-does-branding-cost-in-the-uk",
+  canonical: "https://thegeekonomy.com/blog/how-much-does-branding-cost-in-the-uk",
+  image: "https://thegeekonomy.com/branding cost UK/main image of branding cost uk.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

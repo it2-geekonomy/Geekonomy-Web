@@ -6,7 +6,7 @@ const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-ima
 const imageDir = "/blog image/Local SEO Agencies Use Rapid URL Indexer";
 
 const howDoLocalSEOAgenciesUseRapidURLIndexerContent: BlogContentItem[] = [
-  p("In the fiercely competitive digital environment of today, <a href=\"https://geekonomytech.com/blog/local-seo-for-estate-agents\" target=\"_blank\" rel=\"noopener noreferrer\">local SEO agencies</a> are always on the lookout for new tools and strategies to gain a competitive edge for their clients."),
+  p("In the fiercely competitive digital environment of today, <a href=\"https://thegeekonomy.com/blog/local-seo-for-estate-agents\" target=\"_blank\" rel=\"noopener noreferrer\">local SEO agencies</a> are always on the lookout for new tools and strategies to gain a competitive edge for their clients."),
   p("Rapid URL indexer is one of the tools that has been widely adopted to enable quicker indexing of newly created pages."),
   p("These agencies, by utilising the rapid URL indexing, can facilitate the retrieval and indexing of their content in a very short time."),
   p("They can greatly enhance local search performance by employing link indexing methods and quick URL indexing."),
@@ -131,10 +131,10 @@ export const howDoLocalSEOAgenciesUseRapidURLIndexerSEO = {
   title: "How Do Local SEO Agencies Use Rapid URL Indexer",
   description:
     "Learn how local SEO agencies use Rapid URL Indexer to speed up indexing, improve rankings, boost visibility, and help businesses get found faster.",
-  url: "https://geekonomytech.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer",
-  canonical: "https://geekonomytech.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer",
-  image: "https://geekonomytech.com/Local%20SEO%20Agencies%20Use%20Rapid%20URL%20Indexer/Rapid%20URL%20Indexer%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer",
+  canonical: "https://thegeekonomy.com/blog/how-do-local-seo-agencies-use-rapid-url-indexer",
+  image: "https://thegeekonomy.com/Local%20SEO%20Agencies%20Use%20Rapid%20URL%20Indexer/Rapid%20URL%20Indexer%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

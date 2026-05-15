@@ -1,11 +1,22 @@
-import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Metadata } from "next";
-import { Suspense } from "react";
+import { notFound } from "next/navigation";
 import { allBlogsData } from "@/lib/blog";
-import { getDynamicSEODataFromHeaders } from "@/seoData";
-import BlogDetailClient from "@/app/blog/[slug]/BlogDetailClient";
+import {
+  getBlogPostCanonicalUrl,
+  getDynamicSEODataFromHeaders,
+  getPreferredBaseUrl,
+} from "@/seoData";
+import BlogsPageLoading from "@/app/blog/BlogsPageLoading";
 import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
 import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { getSchemaBaseUrl, orgId } from "@/lib/schema/constants";
+
+const BlogDetailClient = dynamic(
+  () => import("@/app/blog/[slug]/BlogDetailClient"),
+  { loading: () => <BlogsPageLoading /> }
+);
 
 export async function generateMetadata({
   params,
@@ -16,10 +27,7 @@ export async function generateMetadata({
   const blog = allBlogsData.find((b) => b.slug === slug);
 
   if (!blog) {
-    return {
-      title: "Blog Not Found - Geekonomy",
-      description: "The requested blog could not be found.",
-    };
+    notFound();
   }
 
   const seoKey = `blog/${slug}`;
@@ -45,7 +53,7 @@ export async function generateMetadata({
       title: seoData.title,
       description: seoData.description,
       url: seoData.url,
-      siteName: "Geekonomy Technology",
+      siteName: "Geekonomy",
       type: "article",
       images: seoData.image ? [{ url: seoData.image }] : [],
       publishedTime: articlePublishedTime || undefined,
@@ -77,24 +85,7 @@ export default async function BlogDetailPage({
   const blog = allBlogsData.find((b) => b.slug === slug);
 
   if (!blog) {
-    return (
-      <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-white font-bold mb-4 text-[clamp(1.5rem,2vw,2rem)]">
-            Blog Not Found
-          </h1>
-          <p className="text-white/70 mb-6 text-[clamp(1rem,1vw,1.5rem)]">
-            The blog you're looking for doesn't exist.
-          </p>
-          <Link
-            href="/blog"
-            className="text-[#6FAF4E] hover:underline font-medium"
-          >
-            ← Back to Blog
-          </Link>
-        </div>
-      </main>
-    );
+    notFound();
   }
 
   const seoKey = `blog/${slug}`;
@@ -103,17 +94,20 @@ export default async function BlogDetailPage({
   const dateInfo = getDateInfoServer(slug);
   const publishedDateISO = dateToISO(dateInfo.publishedDate);
   const updatedDateISO = dateInfo.updatedDate ? dateToISO(dateInfo.updatedDate) : publishedDateISO;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://thegeekonomy.com";
-  const blogUrl = `${baseUrl}/blog/${slug}`;
+  const blogUrl = getBlogPostCanonicalUrl(slug);
+  const siteOrigin = getPreferredBaseUrl();
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${blogUrl}#article`,
     headline: blog.heading,
     description: seoData.description,
     image: seoData.image ? [seoData.image] : [],
     datePublished: publishedDateISO,
     dateModified: updatedDateISO,
+    inLanguage: "en",
+    isPartOf: { "@id": `${getSchemaBaseUrl()}/blog#blog` },
     author: {
       "@type": "Person",
       name: authorInfo.name,
@@ -121,10 +115,11 @@ export default async function BlogDetailPage({
     },
     publisher: {
       "@type": "Organization",
-      name: "Geekonomy Technology",
+      "@id": orgId(siteOrigin),
+      name: "Geekonomy",
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}/Logo.png`,
+        url: `${siteOrigin}/Logo.png`,
       },
     },
     mainEntityOfPage: {
@@ -136,20 +131,8 @@ export default async function BlogDetailPage({
 
   return (
     <>
-      {/* Article Structured Data for Google */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleSchema),
-        }}
-      />
-      <Suspense fallback={
-        <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center">
-          <p className="text-white text-xl">Loading...</p>
-        </main>
-      }>
-        <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
-      </Suspense>
+      <JsonLd data={articleSchema} />
+      <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
     </>
   );
 }

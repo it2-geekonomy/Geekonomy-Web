@@ -154,10 +154,10 @@ export const seoForPlumbers: BlogData = {
 export const seoForPlumbersSEO = {
   title: "SEO for Plumbers: Proven Techniques to Rank on Google",
   description: "SEO for plumbers helps increase visibility, generate local leads, and rank higher on Google. Learn proven strategies to grow your plumbing business.",
-  url: "https://geekonomytech.com/blog/seo-for-plumbers-proven-techniques-to-rank",
-  canonical: "https://geekonomytech.com/blog/seo-for-plumbers-proven-techniques-to-rank",
-  image: "https://geekonomytech.com/blog%20image/SEO%20for%20Plumbers/SEO%20for%20Plumbers%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-plumbers-proven-techniques-to-rank",
+  canonical: "https://thegeekonomy.com/blog/seo-for-plumbers-proven-techniques-to-rank",
+  image: "https://thegeekonomy.com/blog%20image/SEO%20for%20Plumbers/SEO%20for%20Plumbers%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

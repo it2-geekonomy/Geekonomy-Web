@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { StickyScrollContent, AuthorInfo } from "../types";
+import { StickyScrollContent, AuthorInfo, DateInfo } from "../types";
 import { stripHeadingTags } from "../utils";
 import { getAuthorSlug } from "@/lib/blog/authorMapping";
 
@@ -20,7 +20,7 @@ interface DesktopViewProps {
   contentClassName?: string;
   useSemanticHeadings?: boolean;
   authorInfo?: AuthorInfo;
-  dateInfo?: { date: string; label: "Published" | "Updated" } | null;
+  dateInfo?: DateInfo | null;
 }
 
 export const DesktopView = ({

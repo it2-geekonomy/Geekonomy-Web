@@ -249,10 +249,10 @@ export const howMuchDoesSEOCostInHoustonSEO = {
   title: "How Much Does SEO Cost in Houston | 2026 Guide",
   description:
     "Discover SEO pricing and service costs for Houston businesses. Learn about SEO packages and pricing models to boost your online visibility.",
-  url: "https://geekonomytech.com/blog/how-much-do-seo-services-cost-in-houston",
-  canonical: "https://geekonomytech.com/blog/how-much-do-seo-services-cost-in-houston",
-  image: "https://geekonomytech.com/How%20Much%20Do%20SEO%20Services%20Cost%20In%20Houston/How%20Much%20Do%20SEO%20Services%20Cost%20In%20Houston%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-much-do-seo-services-cost-in-houston",
+  canonical: "https://thegeekonomy.com/blog/how-much-do-seo-services-cost-in-houston",
+  image: "https://thegeekonomy.com/How%20Much%20Do%20SEO%20Services%20Cost%20In%20Houston/How%20Much%20Do%20SEO%20Services%20Cost%20In%20Houston%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

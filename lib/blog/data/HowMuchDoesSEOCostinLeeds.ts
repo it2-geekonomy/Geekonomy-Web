@@ -24,7 +24,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   p("The service enables businesses throughout Leeds to establish connections with their desired customer base."),
 
   h3("Importance of SEO for Leeds Businesses"),
-  p('SEO companies in Leeds must grasp local market dynamics to create <a href="https://geekonomytech.com/blog/seo-for-home-inspectors-business-best-seo-strategies" class="underline text-[#6FAF4E]">effective SEO strategies</a>.'),
+  p('SEO companies in Leeds must grasp local market dynamics to create <a href="https://thegeekonomy.com/blog/seo-for-home-inspectors-business-best-seo-strategies" class="underline text-[#6FAF4E]">effective SEO strategies</a>.'),
   p("The digital landscape demands organisations use SEO as their primary strategy, which provides them with a competitive advantage over others in the field."),
   p("Businesses can improve their local SEO services in Leeds through a successful SEO campaign, which helps them achieve better search results among potential customers who search for Leeds-based services."),
   p("Businesses see increased revenue from online visibility, which brings more people to their website and generates leads."),
@@ -81,7 +81,7 @@ const seoCostLeedsContent: BlogContentItem[] = [
   h2("Choosing the Right SEO Company in Leeds"),
   img(`${imageDir}/Choosing the Right SEO Company.webp`, "Choosing the Right SEO Company in Leeds"),
   h3("Top SEO Companies in Leeds"),
-  p("The leading SEO firms in Leeds require evaluation through three specific criteria, which include their historical performance record, their verified client testimonials, and their demonstrated ability to deliver <a href=\"https://geekonomytech.com/blog/how-to-check-if-your-seo-is-working\" class=\"underline text-[#6FAF4E]\">successful SEO solutions</a>."),
+  p("The leading SEO firms in Leeds require evaluation through three specific criteria, which include their historical performance record, their verified client testimonials, and their demonstrated ability to deliver <a href=\"https://thegeekonomy.com/blog/how-to-check-if-your-seo-is-working\" class=\"underline text-[#6FAF4E]\">successful SEO solutions</a>."),
   p("Look for SEO agencies that have a proven history of improving ranking for Leeds businesses."),
   p("The best SEO companies provide complimentary SEO assessments, which help determine your existing online performance while they create customized SEO strategies for your business."),
   p("The SEO services include keyword research, technical SEO work, and competitor analysis to create strong SEO strategies."),
@@ -211,11 +211,11 @@ export const howMuchDoesSEOCostInLeedsSEO = {
   title: "How Much Does SEO Cost in Leeds | 2026 Guide",
   description:
     "Discover how much SEO costs in Leeds. Learn pricing, factors affecting SEO costs, and how businesses can choose the right SEO services.",
-  url: "https://geekonomytech.com/blog/seo-cost-in-leeds",
-  canonical: "https://geekonomytech.com/blog/seo-cost-in-leeds",
+  url: "https://thegeekonomy.com/blog/seo-cost-in-leeds",
+  canonical: "https://thegeekonomy.com/blog/seo-cost-in-leeds",
   image:
-    "https://geekonomytech.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Leeds/How-Much-Does-SEO-Cost-in-Leeds.webp",
-  twitterHandle: "@GeekonomyTech",
+    "https://thegeekonomy.comhttps://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/blog-image/How-Much-Does-SEO-Cost-in-Leeds/How-Much-Does-SEO-Cost-in-Leeds.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

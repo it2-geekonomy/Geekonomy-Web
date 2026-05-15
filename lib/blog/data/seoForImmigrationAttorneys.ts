@@ -147,10 +147,10 @@ export const seoForImmigrationAttorneys: BlogData = {
 export const seoForImmigrationAttorneysSEO = {
   title: "SEO for Immigration Attorneys: Get More Clients in 2026",
   description: "Boost your law firm's visibility with SEO for immigration attorneys. Rank higher, attract more clients, and grow your practice with proven strategies.",
-  url: "https://geekonomytech.com/blog/seo-for-immigration-attorneys-get-more-clients",
-  canonical: "https://geekonomytech.com/blog/seo-for-immigration-attorneys-get-more-clients",
-  image: "https://geekonomytech.com/SEO%20for%20Immigration%20Attorneys/SEO%20for%20Immigration%20Attorneys%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/seo-for-immigration-attorneys-get-more-clients",
+  canonical: "https://thegeekonomy.com/blog/seo-for-immigration-attorneys-get-more-clients",
+  image: "https://thegeekonomy.com/SEO%20for%20Immigration%20Attorneys/SEO%20for%20Immigration%20Attorneys%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

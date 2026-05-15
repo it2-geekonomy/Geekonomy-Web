@@ -164,10 +164,10 @@ export const commonSEOMistakesSmallBusinesses: BlogData = {
 export const commonSEOMistakesSmallBusinessesSEO = {
   title: "Common SEO Mistakes Small Businesses Make (and How to Fix)",
   description: "Discover common SEO mistakes small businesses make and how to fix them to improve rankings, boost traffic, and grow online visibility.",
-  url: "https://geekonomytech.com/blog/common-seo-mistakes-small-businesses-make",
-  canonical: "https://geekonomytech.com/blog/common-seo-mistakes-small-businesses-make",
-  image: "https://geekonomytech.com/Common%20SEO%20Mistakes%20Small%20Businesses/Common%20SEO%20Mistakes%20Small%20Businesses.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/common-seo-mistakes-small-businesses-make",
+  canonical: "https://thegeekonomy.com/blog/common-seo-mistakes-small-businesses-make",
+  image: "https://thegeekonomy.com/Common%20SEO%20Mistakes%20Small%20Businesses/Common%20SEO%20Mistakes%20Small%20Businesses.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

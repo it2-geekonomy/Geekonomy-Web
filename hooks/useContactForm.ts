@@ -4,6 +4,36 @@ import { CONTACT_SUBJECTS } from "@/lib/constants";
 import { ContactFormValues } from "@/types/ContactTypes";
 import { validateContactForm } from "@/lib/validations";
 
+type ContactEmailPayload = {
+  name: string;
+  email: string;
+  phone: string;
+  organisation: string;
+  subject: string;
+  message: string;
+};
+
+async function sendContactEmailFallback(payload: ContactEmailPayload) {
+  const response = await fetch("/api/send-contact-email", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    let details = "Unknown error";
+    try {
+      const data = await response.json();
+      details = data?.error || data?.details || details;
+    } catch {
+      // Ignore JSON parse failure and keep fallback details.
+    }
+    throw new Error(`Fallback email API failed: ${details}`);
+  }
+}
+
 export function useContactForm() {
   const [values, setValues] = useState<ContactFormValues>({
     name: "",
@@ -72,7 +102,40 @@ export function useContactForm() {
           throw new Error("EmailJS configuration is missing. Please check your environment variables.");
         }
 
-        await emailjs.send(serviceId, templateId, templateParams, publicKey);
+        // Send data to external CRM API
+        try {
+          await fetch("https://crm.geekonomy.in/api/leads/external", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "x-api-key": "jhfgdsiughjkdfgh",
+            },
+            body: JSON.stringify({
+              name: values.name,
+              email: values.email,
+              phone: values.phone,
+              organization: values.organisation,
+              subject: subjectText,
+              message: values.message,
+            }),
+          });
+        } catch (apiError) {
+          console.error("CRM API Error:", apiError);
+        }
+
+        try {
+          await emailjs.send(serviceId, templateId, templateParams, publicKey);
+        } catch (emailJsError) {
+          console.error("EmailJS Error, switching to fallback:", emailJsError);
+          await sendContactEmailFallback({
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            organisation: values.organisation || "Not provided",
+            subject: subjectText,
+            message: values.message,
+          });
+        }
 
         setSubmitStatus("success");
         setValues({

@@ -239,10 +239,10 @@ export const howMuchDoesSEOCostInMumbaiSEO = {
     title: "How Much Does SEO Cost in Mumbai | 2026 Guide",
     description:
         "Discover how much SEO costs in Mumbai. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
-    url: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-mumbai",
-    canonical: "https://geekonomytech.com/blog/how-much-does-seo-cost-in-mumbai",
-    image: "https://geekonomytech.com/How Much Does SEO Cost in Mumbai/How Much Does SEO Cost in Mumbai main image.webp",
-    twitterHandle: "@GeekonomyTech",
+    url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-mumbai",
+    canonical: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-mumbai",
+    image: "https://thegeekonomy.com/How Much Does SEO Cost in Mumbai/How Much Does SEO Cost in Mumbai main image.webp",
+    twitterHandle: "@Geekonomy",
 };
 
 

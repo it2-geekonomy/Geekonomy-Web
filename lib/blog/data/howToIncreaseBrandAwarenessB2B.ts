@@ -177,5 +177,5 @@ export const howToIncreaseBrandAwarenessB2BSEO = {
   url: "https://thegeekonomy.com/blog/how-to-increase-brand-awareness-in-b2b",
   canonical: "https://thegeekonomy.com/blog/how-to-increase-brand-awareness-in-b2b",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

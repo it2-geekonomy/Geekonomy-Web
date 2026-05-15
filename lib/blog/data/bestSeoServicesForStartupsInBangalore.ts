@@ -192,7 +192,7 @@ export const bestSeoServicesForStartupsInBangaloreSEO = {
   url: "https://thegeekonomy.com/blog/best-seo-services-for-startups-in-bangalore",
   canonical: "https://thegeekonomy.com/blog/best-seo-services-for-startups-in-bangalore",
   image: "https://thegeekonomy.com/Best%20SEO%20Services%20for%20Startups%20in%20Bangalore/Best%20SEO%20Services%20for%20Startups%20in%20Bangalore%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };
 
 

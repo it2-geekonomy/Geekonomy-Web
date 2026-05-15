@@ -154,10 +154,10 @@ export const ecommerceWebsiteDevelopment: BlogData = {
 export const ecommerceWebsiteDevelopmentSEO = {
   title: "How Ecommerce Website Development Services Help You Grow",
   description: "Ecommerce website development services help improve user experience, boost conversions, and support business growth with scalable online solutions.",
-  url: "https://geekonomytech.com/blog/ecommerce-website-development-services-help-you-grow",
-  canonical: "https://geekonomytech.com/blog/ecommerce-website-development-services-help-you-grow",
-  image: "https://geekonomytech.com/Ecommerce%20Website%20Development/Ecommerce%20Website%20Development%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/ecommerce-website-development-services-help-you-grow",
+  canonical: "https://thegeekonomy.com/blog/ecommerce-website-development-services-help-you-grow",
+  image: "https://thegeekonomy.com/Ecommerce%20Website%20Development/Ecommerce%20Website%20Development%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 

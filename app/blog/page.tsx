@@ -1,21 +1,44 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
+import { getDynamicSEODataFromHeaders } from "@/seoData";
 import BlogsPageClient from "./BlogsPageClient";
-import { Typography } from "@/components/ui/Typography";
+import BlogsPageLoading from "./BlogsPageLoading";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildBlogIndexJsonLd } from "@/lib/schema/blogIndex";
 
-function BlogsPageLoading() {
-  return (
-    <main className="bg-black min-h-screen py-[clamp(2.5rem,2.5rem+2vw,8rem)] flex items-center justify-center">
-      <Typography as="p" variant="body-xl" className="text-white">
-        Loading...
-      </Typography>
-    </main>
-  );
+export async function generateMetadata(): Promise<Metadata> {
+  const seoData = await getDynamicSEODataFromHeaders("blog");
+
+  return {
+    title: seoData.title,
+    description: seoData.description,
+    robots: { index: true, follow: true },
+    alternates: { canonical: seoData.canonical },
+    openGraph: {
+      title: seoData.title,
+      description: seoData.description,
+      url: seoData.url,
+      siteName: "Geekonomy",
+      type: "website",
+      images: seoData.image ? [{ url: seoData.image }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seoData.title,
+      description: seoData.description,
+      images: seoData.image ? [{ url: seoData.image }] : [],
+      creator: seoData.twitterHandle,
+    },
+  };
 }
 
 export default function BlogsPage() {
   return (
-    <Suspense fallback={<BlogsPageLoading />}>
-      <BlogsPageClient />
-    </Suspense>
+    <>
+      <JsonLd data={buildBlogIndexJsonLd()} />
+      <Suspense fallback={<BlogsPageLoading />}>
+        <BlogsPageClient />
+      </Suspense>
+    </>
   );
-}
+} 

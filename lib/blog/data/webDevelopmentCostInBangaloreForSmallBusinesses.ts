@@ -213,8 +213,8 @@ export const webDevelopmentCostInBangaloreForSmallBusinessesSEO = {
   title: "Web Development Cost in Bangalore for Small Businesses",
   description:
     " Discover web development cost in Bangalore for small businesses. Learn pricing, factors, and what to expect when building a business website.",
-  url: "https://geekonomytech.com/blog/web-development-cost-in-bangalore-for-small-businesses",
-  canonical: "https://geekonomytech.com/blog/web-development-cost-in-bangalore-for-small-businesses",
-  image: "https://geekonomytech.com/blog%20image/Web%20Development%20Cost%20in%20Bangalore%20for%20Small%20Businesses/Web%20Development%20Cost%20in%20Bangalore%20for%20Small%20Businesses.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/web-development-cost-in-bangalore-for-small-businesses",
+  canonical: "https://thegeekonomy.com/blog/web-development-cost-in-bangalore-for-small-businesses",
+  image: "https://thegeekonomy.com/blog%20image/Web%20Development%20Cost%20in%20Bangalore%20for%20Small%20Businesses/Web%20Development%20Cost%20in%20Bangalore%20for%20Small%20Businesses.webp",
+  twitterHandle: "@Geekonomy",
 };

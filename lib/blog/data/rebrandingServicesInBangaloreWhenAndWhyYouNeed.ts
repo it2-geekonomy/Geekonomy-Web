@@ -175,8 +175,8 @@ export const rebrandingServicesInBangaloreWhenAndWhyYouNeedSEO = {
   title: "Rebranding Services in Bangalore – When & Why You Need",
   description:
     "Discover when and why businesses need rebranding services in Bangalore to improve brand identity, attract customers, and stay competitive.",
-  url: "https://geekonomytech.com/blog/rebranding-services-in-bangalore-when-and-why-you-need",
-  canonical: "https://geekonomytech.com/blog/rebranding-services-in-bangalore-when-and-why-you-need",
+  url: "https://thegeekonomy.com/blog/rebranding-services-in-bangalore-when-and-why-you-need",
+  canonical: "https://thegeekonomy.com/blog/rebranding-services-in-bangalore-when-and-why-you-need",
   image: coverImage,
-  twitterHandle: "@GeekonomyTech",
+  twitterHandle: "@Geekonomy",
 };

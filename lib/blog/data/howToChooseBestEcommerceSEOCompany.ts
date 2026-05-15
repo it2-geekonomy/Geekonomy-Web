@@ -208,10 +208,10 @@ export const howToChooseBestEcommerceSEOCompany: BlogData = {
 export const howToChooseBestEcommerceSEOCompanySEO = {
   title: "How to Choose the Best Ecommerce SEO Company",
   description: "Learn how to choose the best ecommerce SEO company by comparing expertise, pricing, strategy, and results to help boost traffic, sales, and rankings.",
-  url: "https://geekonomytech.com/blog/how-to-choose-the-best-ecommerce-seo-company",
-  canonical: "https://geekonomytech.com/blog/how-to-choose-the-best-ecommerce-seo-company",
-  image: "https://geekonomytech.com/Ecommerce%20SEO/Ecommerce%20SEO%20main%20image.webp",
-  twitterHandle: "@GeekonomyTech",
+  url: "https://thegeekonomy.com/blog/how-to-choose-the-best-ecommerce-seo-company",
+  canonical: "https://thegeekonomy.com/blog/how-to-choose-the-best-ecommerce-seo-company",
+  image: "https://thegeekonomy.com/Ecommerce%20SEO/Ecommerce%20SEO%20main%20image.webp",
+  twitterHandle: "@Geekonomy",
 };
 
 
