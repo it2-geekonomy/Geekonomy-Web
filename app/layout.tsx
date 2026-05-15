@@ -112,7 +112,7 @@ fbq('track', 'PageView');`,
             }),
           }}
         />
-        
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H4C3XJRV9"></script>
         <script
           dangerouslySetInnerHTML={{
