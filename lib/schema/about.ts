@@ -12,7 +12,7 @@ export function buildAboutJsonLd() {
         url: `${base}/about`,
         name: "About Geekonomy - Our Story",
         description:
-          "Learn about Geekonomy's mission and approach to building growth systems",
+          "Learn about Geekonomy's mission and approach to building growth systems.",
         publisher: { "@type": "Organization", "@id": orgId(base) },
       },
       {
@@ -27,14 +27,7 @@ export function buildAboutJsonLd() {
           name: "Bengaluru, India",
         },
         url: base,
-        logo: `${base}/assets/geekonomy-logo.png`,
-        employees: [
-          {
-            "@type": "Person",
-            name: "Aaron",
-            jobTitle: "Content Writer",
-          },
-        ],
+        logo: `${base}/Logo.png`,
         knowsAbout: [
           "Branding Strategy",
           "Digital Marketing",
@@ -44,7 +37,7 @@ export function buildAboutJsonLd() {
         ],
         image: {
           "@type": "ImageObject",
-          url: `${base}/assets/team-photo.png`,
+          url: `${base}/assets/og-about.jpg`,
         },
       },
     ],

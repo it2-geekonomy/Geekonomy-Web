@@ -17,7 +17,7 @@ export function logoImageObject() {
   const base = getSchemaBaseUrl();
   return {
     "@type": "ImageObject",
-    url: `${base}/assets/geekonomy-logo.png`,
+    url: `${base}/Logo.png`,
     width: 300,
     height: 100,
   };

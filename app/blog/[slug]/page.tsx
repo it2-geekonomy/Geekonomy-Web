@@ -12,17 +12,6 @@ import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getSchemaBaseUrl, orgId } from "@/lib/schema/constants";
 
-function absoluteFromOrigin(origin: string, pathOrUrl: string) {
-  if (pathOrUrl.startsWith("http")) return pathOrUrl;
-  return `${origin}${pathOrUrl.startsWith("/") ? "" : "/"}${pathOrUrl}`;
-}
-
-function authorProfileUrl(base: string, authorName: string) {
-  if (authorName.includes("Aaron")) return `${base}/authors/aaron`;
-  if (authorName.includes("Rahul")) return `${base}/authors/rahul`;
-  return `${base}/authors/${authorName.toLowerCase().replace(/\s+/g, "-")}`;
-}
-
 const BlogDetailClient = dynamic(
   () => import("@/app/blog/[slug]/BlogDetailClient"),
   { loading: () => <BlogsPageLoading /> }
@@ -128,39 +117,27 @@ export default async function BlogDetailPage({
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BlogPosting",
-        "@id": `${blogUrl}#article`,
-        headline: blog.heading,
-        ...(imageUrl
-          ? {
-              image: {
-                "@type": "ImageObject",
-                url: imageUrl,
-                width: 1200,
-                height: 630,
-              },
-            }
-          : {}),
-        description: seoData.description,
-        author: {
-          "@type": "Person",
-          name: authorInfo.name,
-          url: authorProfileUrl(schemaBase, authorInfo.name),
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": orgId(schemaBase),
-        },
-        datePublished: publishedDateISO,
-        dateModified: updatedDateISO,
-        mainEntity: { "@type": "Article" },
-        articleBody,
-        articleSection: blog.sections[0]?.title ?? "Blog",
-        keywords,
-        inLanguage: "en",
-        isPartOf: { "@id": `${schemaBase}/blog#blog` },
+    "@type": "BlogPosting",
+    "@id": `${blogUrl}#article`,
+    headline: blog.heading,
+    description: seoData.description,
+    image: seoData.image ? [seoData.image] : [],
+    datePublished: publishedDateISO,
+    dateModified: updatedDateISO,
+    inLanguage: "en",
+    isPartOf: { "@id": `${getSchemaBaseUrl()}/blog#blog` },
+    author: {
+      "@type": "Person",
+      name: authorInfo.name,
+      jobTitle: authorInfo.role,
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": orgId(siteOrigin),
+      name: "Geekonomy",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteOrigin}/Logo.png`,
       },
     ],
   };
