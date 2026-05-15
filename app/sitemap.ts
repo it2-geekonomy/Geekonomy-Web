@@ -77,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const caseStudyPages: MetadataRoute.Sitemap = caseStudies
     .filter(cs => {
       // Only include the 4 case studies from the sitemap
-      const includedSlugs = ['divyasree-builders', 'mushashi-delta', 'hindustan-power', 'vst-group']
+      const includedSlugs = ['divyasree-builders', 'musashi-delta', 'hindustan-power', 'vst-group']
       return includedSlugs.includes(cs.slug)
     })
     .map(cs => {

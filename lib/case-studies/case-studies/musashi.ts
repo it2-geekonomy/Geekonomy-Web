@@ -4,11 +4,11 @@ import { MusashiContent1 } from "../content/musashi-content";
 
 export const musashiCaseStudy: CaseStudy = {
   id: 1,
-  title: "Mushashi Delta",
+  title: "Musashi Delta",
   internalTitle: "Musashi Delta ",
   subtitle: "Musashi Auto Parts India Pvt. Ltd., a subsidiary of Japan's Musashi Seimitsu Industry Co. Ltd. is known worldwide for its precision and excellence in automotive engineering.",
   image: "/case-studies/image1.webp",
-  slug: "mushashi-delta",
+  slug: "musashi-delta",
   pdfUrl: "/case-studies/Musashi.pdf",
   banner: "/case-studies/image1.webp",
   imageGrid1: [
