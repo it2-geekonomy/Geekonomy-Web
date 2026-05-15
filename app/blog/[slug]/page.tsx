@@ -10,6 +10,8 @@ import {
 import BlogsPageLoading from "@/app/blog/BlogsPageLoading";
 import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
 import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { getSchemaBaseUrl, orgId } from "@/lib/schema/constants";
 
 const BlogDetailClient = dynamic(
   () => import("@/app/blog/[slug]/BlogDetailClient"),
@@ -98,11 +100,14 @@ export default async function BlogDetailPage({
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": `${blogUrl}#article`,
     headline: blog.heading,
     description: seoData.description,
     image: seoData.image ? [seoData.image] : [],
     datePublished: publishedDateISO,
     dateModified: updatedDateISO,
+    inLanguage: "en",
+    isPartOf: { "@id": `${getSchemaBaseUrl()}/blog#blog` },
     author: {
       "@type": "Person",
       name: authorInfo.name,
@@ -110,6 +115,7 @@ export default async function BlogDetailPage({
     },
     publisher: {
       "@type": "Organization",
+      "@id": orgId(siteOrigin),
       name: "Geekonomy",
       logo: {
         "@type": "ImageObject",
@@ -125,13 +131,7 @@ export default async function BlogDetailPage({
 
   return (
     <>
-      {/* Article Structured Data for Google */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleSchema),
-        }}
-      />
+      <JsonLd data={articleSchema} />
       <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
     </>
   );
