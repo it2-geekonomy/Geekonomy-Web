@@ -3,6 +3,8 @@ import { Suspense } from "react";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
 import BlogsPageClient from "./BlogsPageClient";
 import BlogsPageLoading from "./BlogsPageLoading";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildBlogIndexJsonLd } from "@/lib/schema/blogIndex";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await getDynamicSEODataFromHeaders("blog");
@@ -32,8 +34,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function BlogsPage() {
   return (
-    <Suspense fallback={<BlogsPageLoading />}>
-      <BlogsPageClient />
-    </Suspense>
+    <>
+      <JsonLd data={buildBlogIndexJsonLd()} />
+      <Suspense fallback={<BlogsPageLoading />}>
+        <BlogsPageClient />
+      </Suspense>
+    </>
   );
 } 

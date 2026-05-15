@@ -1,41 +1,15 @@
-import { Metadata } from "next";
-import { getDynamicSEODataFromHeaders } from "@/seoData";
-
-export async function generateMetadata(): Promise<Metadata> {
-  const seoData = await getDynamicSEODataFromHeaders("how-we-work");
-
-  return {
-    title: seoData.title,
-    description: seoData.description,
-    robots: {
-      index: true,
-      follow: true,
-    },
-    alternates: {
-      canonical: seoData.canonical,
-    },
-    openGraph: {
-      title: seoData.title,
-      description: seoData.description,
-      url: seoData.url,
-      siteName: "Geekonomy",
-      type: "website",
-      images: seoData.image ? [{ url: seoData.image }] : [],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: seoData.title,
-      description: seoData.description,
-      images: seoData.image ? [seoData.image] : [],
-      creator: seoData.twitterHandle,
-    },
-  };
-}
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildHowWeWorkJsonLd } from "@/lib/schema/howWeWork";
 
 export default function HowWeWorkLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd data={buildHowWeWorkJsonLd()} />
+      {children}
+    </>
+  );
 }
