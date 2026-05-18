@@ -5,7 +5,6 @@ import { allBlogsData } from "@/lib/blog";
 import {
   getBlogPostCanonicalUrl,
   getDynamicSEODataFromHeaders,
-  getPreferredBaseUrl,
 } from "@/seoData";
 import BlogsPageLoading from "@/app/blog/BlogsPageLoading";
 import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
@@ -95,7 +94,26 @@ export default async function BlogDetailPage({
   const publishedDateISO = dateToISO(dateInfo.publishedDate);
   const updatedDateISO = dateInfo.updatedDate ? dateToISO(dateInfo.updatedDate) : publishedDateISO;
   const blogUrl = getBlogPostCanonicalUrl(slug);
-  const siteOrigin = getPreferredBaseUrl();
+  const schemaBase = getSchemaBaseUrl();
+  const originForAssets = new URL(blogUrl).origin;
+
+  const articleBody = [
+    seoData.description,
+    ...blog.sections.map((s) => s.description),
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const keywords = blog.heading
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/)
+    .filter((w) => w.length > 2)
+    .slice(0, 8);
+
+  const imageUrl = seoData.image
+    ? absoluteFromOrigin(originForAssets, seoData.image)
+    : undefined;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -121,12 +139,7 @@ export default async function BlogDetailPage({
         "@type": "ImageObject",
         url: `${siteOrigin}/Logo.png`,
       },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": blogUrl,
-    },
-    url: blogUrl,
+    ],
   };
 
   return (
