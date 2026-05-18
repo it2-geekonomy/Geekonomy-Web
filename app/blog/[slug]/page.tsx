@@ -11,6 +11,7 @@ import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
 import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getSchemaBaseUrl, orgId } from "@/lib/schema/constants";
+import { getBaseUrlFromHeaders } from "@/seoData";
 
 const BlogDetailClient = dynamic(
   () => import("@/app/blog/[slug]/BlogDetailClient"),
@@ -112,7 +113,7 @@ export default async function BlogDetailPage({
     .slice(0, 8);
 
   const imageUrl = seoData.image
-    ? absoluteFromOrigin(originForAssets, seoData.image)
+    ? `${await getBaseUrlFromHeaders()}${seoData.image}`
     : undefined;
 
   const articleSchema = {
@@ -133,13 +134,13 @@ export default async function BlogDetailPage({
     },
     publisher: {
       "@type": "Organization",
-      "@id": orgId(siteOrigin),
+      "@id": orgId(await getBaseUrlFromHeaders()),
       name: "Geekonomy",
       logo: {
         "@type": "ImageObject",
-        url: `${siteOrigin}/Logo.png`,
+        url: `${await getBaseUrlFromHeaders()}/Logo.png`,
       },
-    ],
+    },
   };
 
   return (
