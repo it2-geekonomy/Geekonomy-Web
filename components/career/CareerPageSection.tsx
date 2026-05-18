@@ -11,6 +11,7 @@ type CareerPageSectionProps = {
   className?: string;
   innerClassName?: string;
   as?: "section" | "div";
+  id?: string;
 };
 
 export function CareerPageSection({
@@ -18,9 +19,10 @@ export function CareerPageSection({
   className,
   innerClassName,
   as: Tag = "section",
+  id,
 }: CareerPageSectionProps) {
   return (
-    <Tag className={cn(careerPageMargins, className)}>
+    <Tag id={id} className={cn(careerPageMargins, className)}>
       <div className={cn(careerPagePadding, innerClassName)}>{children}</div>
     </Tag>
   );
