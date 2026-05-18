@@ -3,6 +3,8 @@ import { caseStudies } from "@/lib/caseStudies";
 import CaseStudyLayout from "@/components/case-studies/CaseStudyLayout";
 import Button from "@/components/ui/Button";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildCaseStudyPageJsonLd } from "@/lib/schema/caseStudyPage";
 
 function slugify(value: string): string {
   return value
@@ -39,9 +41,9 @@ export async function generateMetadata({
   // Always use the first category for canonical URL to avoid duplicate content issues
   const canonicalCategory = slugify(post.category[0] || "case-study");
   // Canonical URL should always point to the first category, regardless of which URL is accessed
-  const canonicalUrl = `/case-studies/${canonicalCategory}/${slug}`;
+  const canonicalUrl = `/case-studies/${canonicalCategory}/${post.slug}`;
   // Current URL for OpenGraph (can be the requested one)
-  const currentUrl = `/case-studies/${hasCategory ? requestedCategory : canonicalCategory}/${slug}`;
+  const currentUrl = `/case-studies/${hasCategory ? requestedCategory : canonicalCategory}/${post.slug}`;
 
   return {
     title: `${post.title} - Case Study | Geekonomy`,
@@ -108,8 +110,11 @@ export default async function CaseStudyPage({
     );
   }
 
+  const canonicalCategory = slugify(post.category[0] || "case-study");
+
   return (
     <main className="bg-black text-white">
+      <JsonLd data={buildCaseStudyPageJsonLd(post, canonicalCategory)} />
       <CaseStudyLayout post={post} />
     </main>
   );

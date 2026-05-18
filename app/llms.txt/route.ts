@@ -76,18 +76,18 @@ export async function GET() {
   }
   
   // Case studies (only the 4 from sitemap)
-  const includedCaseStudySlugs = ['divyasree-builders', 'mushashi-delta', 'hindustan-power', 'vst-group']
+  const includedCaseStudySlugs = ['divyasree-builders', 'musashi-delta', 'hindustan-power', 'vst-group']
   const includedCaseStudies = caseStudies
     .filter(cs => includedCaseStudySlugs.includes(cs.slug))
     .sort((a, b) => {
       // Order: musashi-delta, vst-group, divyasree-builders, hindustan-power
-      const order = ['mushashi-delta', 'vst-group', 'divyasree-builders', 'hindustan-power']
+      const order = ['musashi-delta', 'vst-group', 'divyasree-builders', 'hindustan-power']
       return order.indexOf(a.slug) - order.indexOf(b.slug)
     })
   
   // Case study descriptions matching user's format
   const caseStudyDescriptions: Record<string, string> = {
-    'mushashi-delta': 'A case study on the branding of Musashi Delta, a joint venture between Musashi Auto Parts and Delta Electronics India, focusing on electric vehicle engineering and sustainability.',
+    'musashi-delta': 'A case study on the branding of Musashi Delta, a joint venture between Musashi Auto Parts and Delta Electronics India, focusing on electric vehicle engineering and sustainability.',
     'vst-group': 'A case study of VST Group\'s website redesign and development by Geekonomy, highlighting the transformation of their digital presence.',
     'divyasree-builders': 'A case study of the website redesign and development for Divyasree Builders, a leading real estate brand in India.',
     'hindustan-power': 'A case study on the website redesign and development of Hindustan Power Projects Pvt. Ltd. by Geekonomy.',

@@ -1,14 +1,14 @@
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildAboutJsonLd } from "@/lib/schema/about";
+import { buildCareerJsonLd } from "@/lib/schema/career";
 
-export default function AboutLayout({
+export default function CareerLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <>
-      <JsonLd data={buildAboutJsonLd()} />
+      <JsonLd data={buildCareerJsonLd()} />
       {children}
     </>
   );
