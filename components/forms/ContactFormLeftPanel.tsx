@@ -6,7 +6,7 @@ export function ContactFormLeftPanel() {
   return (
     <div className="space-y-12">
       <Typography as="p" variant="h4" className="text-white">
-        Let's Get Your Portfolio Strategy
+       Let’s define the next stage of your growth.
       </Typography>
 
       <div className="space-y-12">

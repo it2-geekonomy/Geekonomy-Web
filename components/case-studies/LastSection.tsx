@@ -13,14 +13,14 @@ const LastSection: React.FC = () => {
         >
           {/* Desktop (lg and up): keep explicit line break */}
           <span className="hidden lg:inline">
-            Inspired by our work? Lets build your
+            Inspired by our work? Let’s build systems
             <br />
-            brand legacy together.
+           that support sustainable growth.
           </span>
 
           {/* Below lg: single sentence, natural wrapping into ~two lines */}
           <span className="block lg:hidden">
-            Inspired by our work? Lets build your brand legacy together.
+            Inspired by our work? Let’s build systems that support sustainable growth.
           </span>
         </Typography>
 

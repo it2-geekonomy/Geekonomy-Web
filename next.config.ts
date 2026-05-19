@@ -17,11 +17,7 @@ const nextConfig: NextConfig = {
         destination: "/blog/what-makes-a-good-business-website-in-the-uk",
         permanent: true,
       },
-      {
-        source: "/case-studies/branding/mushashi-delta",
-        destination: "/case-studies/branding/musashi-delta",
-        permanent: true,
-      },
+      
     ];
   },
   images: {
