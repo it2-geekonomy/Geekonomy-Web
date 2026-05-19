@@ -61,71 +61,15 @@ export async function POST(request: NextRequest) {
     const safePosition = escapeHtml(position);
 
     const html = `
-      <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f8f9fa; padding: 20px; color: #333;">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; max-width: 600px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-          <!-- Header -->
-          <tr>
-            <td style="padding: 30px 20px; text-align: center; background: linear-gradient(135deg, #69AE44 0%, #5a9438 100%);">
-              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 600;">Geekonomy Careers</h1>
-              <p style="color: #ffffff; margin: 8px 0 0 0; font-size: 16px; opacity: 0.9;">New Application Received</p>
-            </td>
-          </tr>
-          
-          <!-- Body -->
-          <tr>
-            <td style="padding: 30px 20px;">
-              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">Dear Hiring Team,</p>
-              <p style="font-size: 16px; line-height: 1.6; margin: 0 0 25px 0;">A new career application has been submitted through the Geekonomy website. Please review the candidate details below:</p>
-              
-              <!-- Applicant Details Card -->
-              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f8f9fa; border-radius: 6px; margin: 20px 0;">
-                <tr>
-                  <td style="padding: 20px;">
-                    <h3 style="color: #333; margin: 0 0 15px 0; font-size: 18px; border-bottom: 2px solid #69AE44; padding-bottom: 8px;">Applicant Information</h3>
-                    <table width="100%" border="0" cellspacing="0" cellpadding="8" style="font-size: 14px;">
-                      <tr style="background-color: #ffffff;">
-                        <td style="font-weight: 600; color: #555; width: 140px; vertical-align: top;">Full Name:</td>
-                        <td style="color: #333;">${safeFirst} ${safeLast}</td>
-                      </tr>
-                      <tr style="background-color: #f8f9fa;">
-                        <td style="font-weight: 600; color: #555; width: 140px; vertical-align: top;">Email Address:</td>
-                        <td style="color: #333;">${safeEmail}</td>
-                      </tr>
-                      <tr style="background-color: #ffffff;">
-                        <td style="font-weight: 600; color: #555; width: 140px; vertical-align: top;">Phone Number:</td>
-                        <td style="color: #333;">${safePhone}</td>
-                      </tr>
-                      <tr style="background-color: #f8f9fa;">
-                        <td style="font-weight: 600; color: #555; width: 140px; vertical-align: top;">Position Applied:</td>
-                        <td style="color: #333;">${safePosition}</td>
-                      </tr>
-                      <tr style="background-color: #ffffff;">
-                        <td style="font-weight: 600; color: #555; width: 140px; vertical-align: top;">LinkedIn/Portfolio:</td>
-                        <td style="color: #333;">${safeLinkedIn}</td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              
-              <!-- Call to Action -->
-              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 25px;">
-                <tr>
-                  <td style="text-align: center;">
-                    <p style="font-size: 14px; color: #666; margin: 0 0 15px 0;">Please review the attached resume and consider this candidate for the next steps.</p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          
-          <!-- Footer -->
-          <tr>
-            <td style="padding: 20px; text-align: center; background-color: #f8f9fa; border-top: 1px solid #e9ecef;">
-              <p style="font-size: 12px; color: #666; margin: 0 0 8px 0;">This email was sent from the Geekonomy Careers Portal</p>
-              <p style="font-size: 12px; color: #666; margin: 0;">© 2026 Geekonomy. All rights reserved.</p>
-            </td>
-          </tr>
+      <div style="font-family: Arial, sans-serif; line-height:1.5; color:#111;">
+        <h2 style="margin:0 0 12px;">New Career Application</h2>
+        <p style="margin:0 0 16px; color:#4b5563;">Submitted from the careers page.</p>
+        <table cellpadding="8" cellspacing="0" border="0" style="border-collapse:collapse;">
+          <tr><td><strong>Name</strong></td><td>${safeFirst} ${safeLast}</td></tr>
+          <tr><td><strong>Email</strong></td><td>${safeEmail}</td></tr>
+          <tr><td><strong>Phone</strong></td><td>${safePhone}</td></tr>
+          <tr><td><strong>Position</strong></td><td>${safePosition}</td></tr>
+          <tr><td><strong>LinkedIn / Portfolio</strong></td><td>${safeLinkedIn}</td></tr>
         </table>
       </div>
     `;
