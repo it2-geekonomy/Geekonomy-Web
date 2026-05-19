@@ -158,7 +158,7 @@ export default function CareerApplicationSection() {
                   name="firstName"
                   value={values.firstName}
                   onChange={handleChange}
-                  placeholder="Arjun"
+                  placeholder="Your First Name"
                   className={fieldClass}
                   autoComplete="given-name"
                 />
@@ -173,7 +173,7 @@ export default function CareerApplicationSection() {
                   name="lastName"
                   value={values.lastName}
                   onChange={handleChange}
-                  placeholder="Sharma"
+                  placeholder="Your Last Name"
                   className={fieldClass}
                   autoComplete="family-name"
                 />
@@ -191,7 +191,7 @@ export default function CareerApplicationSection() {
                 type="email"
                 value={values.email}
                 onChange={handleChange}
-                placeholder="arjun@yourcompany.com"
+                placeholder="yourname@yourcompany.com"
                 className={fieldClass}
                 autoComplete="email"
               />

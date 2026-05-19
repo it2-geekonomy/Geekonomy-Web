@@ -51,7 +51,7 @@ const seoData: Record<string, SEOData> = {
   home: {
     title: "Geekonomy | Branding, Marketing & Development",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.",
+      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems through strategy, branding, web development, and digital execution.",
     url: "https://thegeekonomy.com",
     canonical: "https://thegeekonomy.com",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -59,7 +59,7 @@ const seoData: Record<string, SEOData> = {
   },
 
   about: {
-    title: "Our Story | Branding | Web development | Customer Retention",
+    title: "About Geekonomy | Strategy, Branding & Growth Systems",
     description:
       "Discover Geekonomy's journey building growth systems for businesses through integrated strategy, technology, branding, and marketing solutions.",
     url: "https://thegeekonomy.com/about",
@@ -101,7 +101,7 @@ const seoData: Record<string, SEOData> = {
   "contact-us": {
     title: "Contact Us | Get in Touch with Geekonomy",
     description:
-      "Get in touch with Geekonomy for branding, digital marketing, and development services. Let's build your brand legacy together.",
+      "Get in touch with Geekonomy for branding, digital marketing, and development services. Let’s build scalable growth systems with clarity and execution.",
     url: "https://thegeekonomy.com/contact-us",
     canonical: "https://thegeekonomy.com/contact-us",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -121,7 +121,7 @@ const seoData: Record<string, SEOData> = {
   career: {
     title: "Career | Join Our Team",
     description:
-      "Join Geekonomy's team of creative professionals. Explore career opportunities in branding, marketing, and development.",
+      "Join a team focused on building scalable growth systems for ambitious businesses. Explore career opportunities in branding, marketing, and development.",
     url: "https://thegeekonomy.com/career",
     canonical: "https://thegeekonomy.com/career",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
