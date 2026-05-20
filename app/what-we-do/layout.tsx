@@ -8,7 +8,7 @@ export default function WhatWeDoLayout({
 }) {
   return (
     <>
-      <JsonLd data={buildWhatWeDoJsonLd()} />
+      {/* <JsonLd data={buildWhatWeDoJsonLd()} /> */}
       {children}
     </>
   );
