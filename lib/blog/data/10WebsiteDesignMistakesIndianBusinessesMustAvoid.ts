@@ -4,7 +4,7 @@ import { contentToSections, p, h1, h2, h3, img } from "../utils";
 
 
 
-const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/03a5e909-9475-427c-a086-5d10652cd3fd-onemore.webp";
+const coverImage = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/1b1461a8-1d44-46a1-997d-1fa453da607e-blogimage.webp";
 const SlowPage ="https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/eb3c49a7-785a-43a4-a6d3-6767583bedf2-SlowPage.webp";
 const SEO ="https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/45ddcf38-51e9-4648-8dc9-6b7ff635dc96-123.webp";
 
