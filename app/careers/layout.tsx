@@ -8,7 +8,7 @@ export default function CareerLayout({
 }) {
   return (
     <>
-      <JsonLd data={buildCareerJsonLd()} />
+      {/* <JsonLd data={buildCareerJsonLd()} /> */}
       {children}
     </>
   );
