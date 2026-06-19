@@ -35,7 +35,7 @@ export const CAREER_JOBS: CareerJob[] = [
     team: "DIGI360",
     location: "Bengaluru",
     employmentType: "Full-time",
-    experience: "Write content people actually want to read",
+    experience: "Write content people actually want to read!",
     urgent: true,
     recruitmentId: "13",
     applicationUrl:
@@ -47,7 +47,7 @@ export const CAREER_JOBS: CareerJob[] = [
     team: "DIGI360",
     location: "Bengaluru",
     employmentType: "Full-time",
-    experience: "Create scroll-stopping content and conversations",
+    experience: "Create scroll-stopping content and conversations!",
     urgent: true,
     recruitmentId: "12",
     applicationUrl:
@@ -59,7 +59,7 @@ export const CAREER_JOBS: CareerJob[] = [
     team: "DIGI360",
     location: "Bengaluru",
     employmentType: "Full-time",
-    experience: "Obsessed with ROAS? So are we",
+    experience: "Obsessed with ROAS? So are we!",
     urgent: true,
     recruitmentId: "11",
     applicationUrl:
@@ -72,7 +72,7 @@ export const CAREER_JOBS: CareerJob[] = [
     location: "Bengaluru",
     employmentType: "Full-time",
     experience:
-      "Turn conversations into partnerships and opportunities into revenue",
+      "Turn conversations into partnerships and opportunities into revenue!",
     urgent: true,
     recruitmentId: "9",
     applicationUrl:
@@ -84,7 +84,7 @@ export const CAREER_JOBS: CareerJob[] = [
     team: "SALES",
     location: "Bengaluru",
     employmentType: "Internship",
-    experience: "Learn sales by doing, not by watching",
+    experience: "Learn sales by doing, not by watching!",
     urgent: true,
     recruitmentId: "10",
     applicationUrl:
