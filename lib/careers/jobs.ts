@@ -66,6 +66,19 @@ export const CAREER_JOBS: CareerJob[] = [
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=11",
   },
   {
+    id: "seo-strategist-intern",
+    title: "SEO Strategist - Intern",
+    team: "DIGI360",
+    location: "Bengaluru",
+    employmentType: "Internship",
+    experience:
+      "Learn how brands win visibility in the age of search and AI!",
+    urgent: true,
+    recruitmentId: "14",
+    applicationUrl:
+      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=14",
+  },
+  {
     id: "sales-manager",
     title: "Sales Manager",
     team: "SALES",
