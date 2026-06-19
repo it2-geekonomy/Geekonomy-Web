@@ -30,17 +30,40 @@ export const CAREER_FILTERS: { id: CareerFilter; label: string }[] = [
 
 export const CAREER_JOBS: CareerJob[] = [
   {
-    id: "graphic-designer",
-    title: "Graphic Designer",
-    team: "BRANDFOUNDRY",
+    id: "content-writer",
+    title: "Content Writer",
+    team: "DIGI360",
     location: "Bengaluru",
     employmentType: "Full-time",
-    experience:
-      "2–4 years of graphic design experience with demonstrated UI/UX skills",
+    experience: "Write content people actually want to read",
     urgent: true,
-    recruitmentId: "6",
+    recruitmentId: "13",
     applicationUrl:
-      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=6",
+      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=13",
+  },
+  {
+    id: "social-media-manager",
+    title: "Social Media Manager",
+    team: "DIGI360",
+    location: "Bengaluru",
+    employmentType: "Full-time",
+    experience: "Create scroll-stopping content and conversations",
+    urgent: true,
+    recruitmentId: "12",
+    applicationUrl:
+      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=12",
+  },
+  {
+    id: "performance-marketer",
+    title: "Performance Marketer",
+    team: "DIGI360",
+    location: "Bengaluru",
+    employmentType: "Full-time",
+    experience: "Obsessed with ROAS? So are we",
+    urgent: true,
+    recruitmentId: "11",
+    applicationUrl:
+      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=11",
   },
   {
     id: "sales-manager",
@@ -48,11 +71,24 @@ export const CAREER_JOBS: CareerJob[] = [
     team: "SALES",
     location: "Bengaluru",
     employmentType: "Full-time",
-    experience: "4–8 years of experience in B2B sales",
+    experience:
+      "Turn conversations into partnerships and opportunities into revenue",
     urgent: true,
     recruitmentId: "9",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=9",
+  },
+  {
+    id: "bdr-intern",
+    title: "Business Development Representative Interns",
+    team: "SALES",
+    location: "Bengaluru",
+    employmentType: "Internship",
+    experience: "Learn sales by doing, not by watching",
+    urgent: true,
+    recruitmentId: "10",
+    applicationUrl:
+      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=10",
   },
 ];
 
