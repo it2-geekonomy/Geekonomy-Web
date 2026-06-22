@@ -33,12 +33,6 @@ function JobRow({ job }: { job: CareerJob }) {
           {job.location} · {job.employmentType} · {job.experience}
         </Typography>
       </div>
-
-      {job.urgent ? (
-        <span className="shrink-0 self-start rounded-full border border-amber-500/60 bg-amber-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wide text-amber-400 sm:self-center">
-          Urgent
-        </span>
-      ) : null}
     </>
   );
 
