@@ -14,7 +14,7 @@ export interface CareerJob {
   location: string;
   employmentType: string;
   experience: string;
-  urgent: boolean;
+  // urgent: boolean;
   recruitmentId?: string;
   applicationUrl?: string;
 }
@@ -36,7 +36,7 @@ export const CAREER_JOBS: CareerJob[] = [
     location: "Bengaluru",
     employmentType: "Full-time",
     experience: "Write content people actually want to read!",
-    urgent: true,
+    // urgent: true,
     recruitmentId: "13",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=13",
@@ -48,7 +48,7 @@ export const CAREER_JOBS: CareerJob[] = [
     location: "Bengaluru",
     employmentType: "Full-time",
     experience: "Create scroll-stopping content and conversations!",
-    urgent: true,
+    // urgent: true,
     recruitmentId: "12",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=12",
@@ -60,7 +60,7 @@ export const CAREER_JOBS: CareerJob[] = [
     location: "Bengaluru",
     employmentType: "Full-time",
     experience: "Obsessed with ROAS? So are we!",
-    urgent: true,
+    // urgent: true,
     recruitmentId: "11",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=11",
@@ -73,7 +73,7 @@ export const CAREER_JOBS: CareerJob[] = [
     employmentType: "Internship",
     experience:
       "Learn how brands win visibility in the age of search and AI!",
-    urgent: true,
+    // urgent: true,
     recruitmentId: "14",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=14",
@@ -86,7 +86,7 @@ export const CAREER_JOBS: CareerJob[] = [
     employmentType: "Full-time",
     experience:
       "Turn conversations into partnerships and opportunities into revenue!",
-    urgent: true,
+    // urgent: true,
     recruitmentId: "9",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=9",
@@ -98,7 +98,7 @@ export const CAREER_JOBS: CareerJob[] = [
     location: "Bengaluru",
     employmentType: "Internship",
     experience: "Learn sales by doing, not by watching!",
-    urgent: true,
+    // urgent: true,
     recruitmentId: "10",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=10",
