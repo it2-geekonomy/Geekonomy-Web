@@ -205,6 +205,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-small-businesses-need-website-india": "Aaron Roshan",
   "how-long-to-build-business-website-india": "Aaron Roshan",
   "essential-features-every-business-website-must-have": "Aaron Roshan",
+  "top-marketing-mistakes-bangalore-startups": "Aaron Roshan",
 
 };
 
@@ -382,6 +383,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-long-to-build-business-website-india": "April 6, 2026",
   "essential-features-every-business-website-must-have": "April 6, 2026",
   "website-design-mistakes-indian-businesses-must-avoid": "April 6, 2026",
+  "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
 
 
 };
