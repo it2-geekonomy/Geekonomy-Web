@@ -168,7 +168,9 @@ import { howLongDoesItTaketoBuildaBusinessWebsiteinIndia } from "./data/howLongD
 import {EssentialFeaturesEveryBusinessWebsiteMustHavein2026} from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
 import { WebsiteDesignMistakesIndianBusinessesMustAvoid} from "./data/10WebsiteDesignMistakesIndianBusinessesMustAvoid";
 import { TopMarketingMistakesBangaloreStartups } from "./data/topMarketingMistakesBangaloreStartups";
+import { WhyBangaloreBusinessesNeedGenerativeEngineOptimization } from "./data/whyBangaloreBusinessesNeedGenerativeEngineOptimization";
 export const allBlogsData: BlogData[] = [
+  WhyBangaloreBusinessesNeedGenerativeEngineOptimization,
   TopMarketingMistakesBangaloreStartups,
   WebsiteDesignMistakesIndianBusinessesMustAvoid,
   EssentialFeaturesEveryBusinessWebsiteMustHavein2026,
