@@ -387,6 +387,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
   "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
 
+  
 
 };
 
