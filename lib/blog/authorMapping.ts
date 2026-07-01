@@ -207,6 +207,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "how-long-to-build-business-website-india": "Aaron Roshan",
   "essential-features-every-business-website-must-have": "Aaron Roshan",
   "top-marketing-mistakes-bangalore-startups": "Aaron Roshan",
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "Aaron Roshan",
 
 };
 
@@ -348,7 +349,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "startup-branding-strategy-bangalore-entrepreneurs": "March 24, 2026",
   "how-to-increase-brand-awareness-in-b2b": "March 25, 2026",
   "how-branding-increases-customer-trust-and-conversions": "March 26, 2026",
-   "ensure-brand-tone-multilingual-marketing": "March 26, 2026",
+  "ensure-brand-tone-multilingual-marketing": "March 26, 2026",
   "simplify-brand-message-effective-branding": "March 25, 2026",
   "find-a-partner-for-brand-visibility-audit": "March 26, 2026",
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
@@ -357,7 +358,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-branding-is-important-before-running-ads": "March 26, 2026",
   "common-branding-mistakes-small-businesses-make": "March 27, 2026",
   "verifying-origin-protects-brand-reputation": "March 27, 2026",
-  "create-internal-links-for-semantic-relevance":  "March 27, 2026",
+  "create-internal-links-for-semantic-relevance": "March 27, 2026",
   "how-rebranding-can-revive-a-struggling-business": "March 27, 2026",
   "how-to-build-brand-authority-online": "March 27, 2026",
   "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
@@ -386,8 +387,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "website-design-mistakes-indian-businesses-must-avoid": "April 6, 2026",
   "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
   "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "July 1 , 2026",
 
-  
+
 
 };
 

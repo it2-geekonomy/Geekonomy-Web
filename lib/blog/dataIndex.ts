@@ -169,7 +169,9 @@ import {EssentialFeaturesEveryBusinessWebsiteMustHavein2026} from "./data/7Essen
 import { WebsiteDesignMistakesIndianBusinessesMustAvoid} from "./data/10WebsiteDesignMistakesIndianBusinessesMustAvoid";
 import { TopMarketingMistakesBangaloreStartups } from "./data/topMarketingMistakesBangaloreStartups";
 import { WhyBangaloreBusinessesNeedGenerativeEngineOptimization } from "./data/whyBangaloreBusinessesNeedGenerativeEngineOptimization";
+import { HowBangaloreBusinessesCanUseAIToAccelerateGrowth } from "./data/howBangaloreBusinessesCanUseAIToAccelerateGrowth";
 export const allBlogsData: BlogData[] = [
+  HowBangaloreBusinessesCanUseAIToAccelerateGrowth,
   WhyBangaloreBusinessesNeedGenerativeEngineOptimization,
   TopMarketingMistakesBangaloreStartups,
   WebsiteDesignMistakesIndianBusinessesMustAvoid,
