@@ -51,17 +51,6 @@ export const CAREER_JOBS: CareerJob[] = [
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=12",
   },
   {
-    id: "performance-marketer",
-    title: "Performance Marketer",
-    team: "DIGI360",
-    location: "Bengaluru",
-    employmentType: "Full-time",
-    experience: "Obsessed with ROAS? So are we!",
-    recruitmentId: "11",
-    applicationUrl:
-      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=11",
-  },
-  {
     id: "seo-strategist-intern",
     title: "SEO Strategist - Intern",
     team: "DIGI360",
