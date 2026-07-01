@@ -13,7 +13,7 @@ interface CareerHeroProps {
 }
 
 const DEFAULT_STATS: CareerHeroStats = {
-  openRoles: 6,
+  openRoles: 5,
   departments: "Across 2 departments",
 };
 
