@@ -157,6 +157,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "google-display-ads-grow-marketing-results": "Rahul Dutta",
   "safe-link-building-techniques-avoid-google-penalties": "Rahul Dutta",
   "website-design-mistakes-indian-businesses-must-avoid": "Rahul Dutta",
+  "why-bangalore-businesses-need-generative-engine-optimization": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -205,6 +206,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-small-businesses-need-website-india": "Aaron Roshan",
   "how-long-to-build-business-website-india": "Aaron Roshan",
   "essential-features-every-business-website-must-have": "Aaron Roshan",
+  "top-marketing-mistakes-bangalore-startups": "Aaron Roshan",
 
 };
 
@@ -382,7 +384,10 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-long-to-build-business-website-india": "April 6, 2026",
   "essential-features-every-business-website-must-have": "April 6, 2026",
   "website-design-mistakes-indian-businesses-must-avoid": "April 6, 2026",
+  "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
+  "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
 
+  
 
 };
 

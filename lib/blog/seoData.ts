@@ -161,6 +161,8 @@ import { whySmallBusinessesNeedaWebsiteinIndiaSEO } from "./data/whySmallBusines
 import { howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO } from "./data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia";
 import { EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO } from "./data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026";
 import { WebsiteDesignMistakesIndianBusinessesMustAvoidSEO} from "./data/10WebsiteDesignMistakesIndianBusinessesMustAvoid";
+import { TopMarketingMistakesBangaloreStartupsSEO } from "./data/topMarketingMistakesBangaloreStartups";
+import { WhyBangaloreBusinessesNeedGenerativeEngineOptimizationSEO } from "./data/whyBangaloreBusinessesNeedGenerativeEngineOptimization";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -326,6 +328,8 @@ export const blogSEOData = {
   "blog/how-long-to-build-business-website-india": howLongDoesItTaketoBuildaBusinessWebsiteinIndiaSEO,
   "blog/essential-features-every-business-website-must-have": EssentialFeaturesEveryBusinessWebsiteMustHavein2026SEO,
   "blog/website-design-mistakes-indian-businesses-must-avoid": WebsiteDesignMistakesIndianBusinessesMustAvoidSEO,
+  "blog/top-marketing-mistakes-bangalore-startups": TopMarketingMistakesBangaloreStartupsSEO,
+  "blog/why-bangalore-businesses-need-generative-engine-optimization": WhyBangaloreBusinessesNeedGenerativeEngineOptimizationSEO,
 
 
 };
