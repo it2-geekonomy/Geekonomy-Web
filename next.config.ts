@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
-  // Indexed / bookmarked typo URLs — keep 308s so equity consolidates on the real slug.
+
   async redirects() {
     return [
       {
@@ -17,9 +17,16 @@ const nextConfig: NextConfig = {
         destination: "/blog/what-makes-a-good-business-website-in-the-uk",
         permanent: true,
       },
-      
+
+      // Career → Careers
+      {
+        source: "/career",
+        destination: "/careers",
+        permanent: true,
+      },
     ];
   },
+
   images: {
     unoptimized: true,
     remotePatterns: [
