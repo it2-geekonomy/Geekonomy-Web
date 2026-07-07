@@ -118,12 +118,12 @@ const seoData: Record<string, SEOData> = {
     twitterHandle: "@Geekonomy",
   },
 
-  career: {
-    title: "Career | Join Our Team",
+  careers: {
+    title: "Careers | Join Our Team",
     description:
       "Join a team focused on building scalable growth systems for ambitious businesses. Explore career opportunities in branding, marketing, and development.",
-    url: "https://thegeekonomy.com/career",
-    canonical: "https://thegeekonomy.com/career",
+    url: "https://thegeekonomy.com/careers",
+    canonical: "https://thegeekonomy.com/careers",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
     twitterHandle: "@Geekonomy",
   },
