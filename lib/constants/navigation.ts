@@ -2,10 +2,9 @@ export const NAVIGATION_ITEMS = [
   { label: "HOME", href: "/", isActive: false },
   { label: "WHAT WE DO", href: "/what-we-do", isActive: false },
   { label: "HOW WE WORK", href: "/how-we-work", isActive: false },
-  // { label: "SUCCESS LAB", href: "/success-lab", isActive: false },
-  { label: "BLOGS", href: "/blog" },
+  // { label: "BLOGS", href: "/blog" },
   { label: "ABOUT", href: "/about", isActive: false },
-  { label: "CAREERS", href: "/careers" },
+  // { label: "CAREERS", href: "/careers" },
   { label: "CONTACT US", href: "/contact-us", isActive: false },
 ] as const;
 
@@ -13,7 +12,6 @@ export const FOOTER_NAV_ITEMS = [
   // { label: "INDUSTRIES", href: "/industries" },
   { label: "WHAT WE DO", href: "/what-we-do" },
   { label: "HOW WE WORK", href: "/how-we-work" },
-  // { label: "SUCCESS LAB", href: "/success-lab" },
   { label: "ABOUT", href: "/about" },
   { label: "CAREERS", href: "/careers" },
   { label: "BLOGS", href: "/blog" },
