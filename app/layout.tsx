@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import MouseLight from "@/components/shared/MouseLight";
 import PageContentWrapper from "@/components/shared/PageContentWrapper";
-import Navbar from "@/components/shared/Navbar";
+import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
 import DisableRightClick from "@/components/shared/DisableRightClick";
@@ -115,7 +115,7 @@ fbq('track', 'PageView');`,
         <DisableRightClick />
         <NavbarHeightProvider>
           <MouseLight />
-          <Navbar />
+          <Header />
           <PageContentWrapper>
             {children}
             <Footer />
