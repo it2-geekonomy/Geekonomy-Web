@@ -9,8 +9,8 @@ export function buildCareerJsonLd() {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": `${base}/career#webpage`,
-        url: `${base}/career`,
+        "@id": `${base}/careers#webpage`,
+        url: `${base}/careers`,
         name: "Careers at Geekonomy",
         description:
           "Join our team and help us build amazing brands and digital systems.",
