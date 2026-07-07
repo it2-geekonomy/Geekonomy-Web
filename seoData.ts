@@ -51,7 +51,7 @@ const seoData: Record<string, SEOData> = {
   home: {
     title: "Geekonomy | Branding, Marketing & Development",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems through strategy, branding, web development, and digital execution.",
+      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems with strategy, web development, branding, and digital execution.",
     url: "https://thegeekonomy.com",
     canonical: "https://thegeekonomy.com",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -69,9 +69,9 @@ const seoData: Record<string, SEOData> = {
   },
 
   "what-we-do": {
-    title: "What We Do | Branding, Marketing & Development Services",
+    title: "What We Do | Branding, Web & Digital Growth Experts",
     description:
-      "Geekonomy builds integrated frameworks for businesses to scale and grow through strategy, tech, branding, and marketing services.",
+      "Discover Geekonomy's branding, web development, SEO, AI, and digital marketing services designed to help businesses scale, grow, and succeed.",
     url: "https://thegeekonomy.com/what-we-do",
     canonical: "https://thegeekonomy.com/what-we-do",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -84,16 +84,6 @@ const seoData: Record<string, SEOData> = {
       "Learn about Geekonomy's approach to building brand legacies through research, design, and code, emphasizing clarity and purpose.",
     url: "https://thegeekonomy.com/how-we-work",
     canonical: "https://thegeekonomy.com/how-we-work",
-    image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@Geekonomy",
-  },
-
-  "success-lab": {
-    title: "Success Lab | Case Studies & Success Stories",
-    description:
-      "Explore Geekonomy's case studies and success stories showcasing real results in branding, digital marketing, and full-stack development.",
-    url: "https://thegeekonomy.com/success-lab",
-    canonical: "https://thegeekonomy.com/success-lab",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
     twitterHandle: "@Geekonomy",
   },
