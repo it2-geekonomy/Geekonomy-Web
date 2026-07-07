@@ -17,13 +17,6 @@ const nextConfig: NextConfig = {
         destination: "/blog/what-makes-a-good-business-website-in-the-uk",
         permanent: true,
       },
-
-      // Career → Careers
-      {
-        source: "/career",
-        destination: "/careers",
-        permanent: true,
-      },
     ];
   },
 
