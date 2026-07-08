@@ -164,6 +164,7 @@ import { WebsiteDesignMistakesIndianBusinessesMustAvoidSEO} from "./data/10Websi
 import { TopMarketingMistakesBangaloreStartupsSEO } from "./data/topMarketingMistakesBangaloreStartups";
 import { WhyBangaloreBusinessesNeedGenerativeEngineOptimizationSEO } from "./data/whyBangaloreBusinessesNeedGenerativeEngineOptimization";
 import { HowBangaloreBusinessesCanUseAIToAccelerateGrowthSEO } from "./data/howBangaloreBusinessesCanUseAIToAccelerateGrowth";
+import { WebsiteRedesignCostBangaloreSmesStartupsSEO } from "./data/websiteRedesignCostBangaloreSmesStartups";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -332,6 +333,5 @@ export const blogSEOData = {
   "blog/top-marketing-mistakes-bangalore-startups": TopMarketingMistakesBangaloreStartupsSEO,
   "blog/why-bangalore-businesses-need-generative-engine-optimization": WhyBangaloreBusinessesNeedGenerativeEngineOptimizationSEO,
   "blog/how-bangalore-businesses-can-use-ai-to-accelerate-growth": HowBangaloreBusinessesCanUseAIToAccelerateGrowthSEO,
-
-
+  "blog/website-redesign-cost-bangalore-smes-startups": WebsiteRedesignCostBangaloreSmesStartupsSEO,
 };
