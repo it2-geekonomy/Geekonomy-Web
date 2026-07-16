@@ -170,7 +170,9 @@ import { WebsiteDesignMistakesIndianBusinessesMustAvoid} from "./data/10WebsiteD
 import { TopMarketingMistakesBangaloreStartups } from "./data/topMarketingMistakesBangaloreStartups";
 import { WhyBangaloreBusinessesNeedGenerativeEngineOptimization } from "./data/whyBangaloreBusinessesNeedGenerativeEngineOptimization";
 import { HowBangaloreBusinessesCanUseAIToAccelerateGrowth } from "./data/howBangaloreBusinessesCanUseAIToAccelerateGrowth";
+import { WebsiteRedesignCostBangaloreSmesStartups } from "./data/websiteRedesignCostBangaloreSmesStartups";
 export const allBlogsData: BlogData[] = [
+  WebsiteRedesignCostBangaloreSmesStartups,
   HowBangaloreBusinessesCanUseAIToAccelerateGrowth,
   WhyBangaloreBusinessesNeedGenerativeEngineOptimization,
   TopMarketingMistakesBangaloreStartups,

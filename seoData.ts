@@ -14,7 +14,7 @@ export function getBaseUrl(): string {
   if (typeof window !== 'undefined') {
     return window.location.origin;
   }
-  
+
   return process.env.NEXT_PUBLIC_BASE_URL || 'https://thegeekonomy.com';
 }
 
@@ -26,14 +26,14 @@ export async function getBaseUrlFromHeaders(): Promise<string> {
       const headersList = await headers();
       const host = headersList.get('host');
       const protocol = headersList.get('x-forwarded-proto') || 'http';
-      
+
       if (host) {
         return `${protocol}://${host}`;
       }
     }
   } catch {
   }
-  
+
   return getBaseUrl();
 }
 
@@ -51,7 +51,7 @@ const seoData: Record<string, SEOData> = {
   home: {
     title: "Geekonomy | Branding, Marketing & Development",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems with strategy, web development, branding, and digital execution.",
+      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems with strategy, web development, and execution.",
     url: "https://thegeekonomy.com",
     canonical: "https://thegeekonomy.com",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
