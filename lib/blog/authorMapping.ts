@@ -502,11 +502,11 @@ export function getDateInfo(slug: string): { date: string; label: BlogDateDispla
   const publishedDate = getPublishedDate(slug);
 
   if (updatedDate) {
-    return { date: updatedDate, label: "Updated On : " };
+    return { date: updatedDate.replace(" UTC", ""), label: "Updated On : " };
   }
 
   if (publishedDate) {
-    return { date: publishedDate, label: "Published On : " };
+    return { date: publishedDate.replace(" UTC", ""), label: "Published On : " };
   }
 
   return { date: "March 3, 2026", label: "Published On : " };
