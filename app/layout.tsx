@@ -107,7 +107,7 @@ fbq('track', 'PageView');`,
             `,
           }}
         />
-        <meta name="msvalidate.01" content="3414642D2D97FB713AB4BD1AF6E33486" />
+        <meta name="msvalidate.01" content="2C4A40D8C27949A5C618815C1EF6B161" />
       </head>
       <body
         className={`${poppins.variable} antialiased`}
