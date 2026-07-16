@@ -397,7 +397,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
  * Optional "last updated" display date per slug. Only these posts show "Updated On : ".
  * File mtime is not used — it changes from saves, git, CI, and reloads without real edits.
  */
-export const BLOG_UPDATED_DATES: Record<string, string> = {};
+export const BLOG_UPDATED_DATES: Record<string, string> = {
+  "semantic-seo-agency-how-to-choose-the-best-agency": "July 16, 2026 UTC",
+};
 
 /**
  * Get published date for a blog slug (manual only; server uses file mtime when needed).
