@@ -46,7 +46,7 @@ export async function getDynamicSEODataFromHeaders(key: string): Promise<SEOData
   return normalizeSeoData(key, baseUrl);
 }
 
-// Static SEO data (non-blog pages)
+// Static SEO data (non-blog pages) - triggering deploy
 const seoData: Record<string, SEOData> = {
   home: {
     title: "Geekonomy | Branding, Marketing & Development",
