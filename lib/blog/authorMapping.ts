@@ -399,6 +399,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
  */
 export const BLOG_UPDATED_DATES: Record<string, string> = {
   "semantic-seo-agency-how-to-choose-the-best-agency": "July 16, 2026 UTC",
+  "how-wordpress-seo-services-improve-traffic": "July 17, 2026 UTC",
 };
 
 /**
