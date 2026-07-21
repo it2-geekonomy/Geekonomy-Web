@@ -65,7 +65,7 @@ export function getDateInfoServer(slug: string): DateInfo {
 
   if (updatedOverride) {
     return {
-      date: updatedOverride,
+      date: updatedOverride.replace(" UTC", ""),
       label: "Updated On : ",
       publishedDate,
       updatedDate: updatedOverride,

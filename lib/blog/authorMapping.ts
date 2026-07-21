@@ -397,7 +397,10 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
  * Optional "last updated" display date per slug. Only these posts show "Updated On : ".
  * File mtime is not used — it changes from saves, git, CI, and reloads without real edits.
  */
-export const BLOG_UPDATED_DATES: Record<string, string> = {};
+export const BLOG_UPDATED_DATES: Record<string, string> = {
+  "semantic-seo-agency-how-to-choose-the-best-agency": "July 16, 2026 UTC",
+  "how-wordpress-seo-services-improve-traffic": "July 17, 2026 UTC",
+};
 
 /**
  * Get published date for a blog slug (manual only; server uses file mtime when needed).
@@ -500,11 +503,11 @@ export function getDateInfo(slug: string): { date: string; label: BlogDateDispla
   const publishedDate = getPublishedDate(slug);
 
   if (updatedDate) {
-    return { date: updatedDate, label: "Updated On : " };
+    return { date: updatedDate.replace(" UTC", ""), label: "Updated On : " };
   }
 
   if (publishedDate) {
-    return { date: publishedDate, label: "Published On : " };
+    return { date: publishedDate.replace(" UTC", ""), label: "Published On : " };
   }
 
   return { date: "March 3, 2026", label: "Published On : " };
