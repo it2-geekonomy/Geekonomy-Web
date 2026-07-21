@@ -32,7 +32,7 @@ export function ContactFormLeftPanel() {
             className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
           <Typography as="p" variant="body-xl" className="text-white">
-            connect@geekonomy.in
+          connect@thegeekonomy.com
           </Typography>
         </div>
 
