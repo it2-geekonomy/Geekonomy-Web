@@ -35,6 +35,8 @@ export async function GET() {
       microsoftConnected,
       graphSubscription: Boolean(subscription?.id),
       appBaseUrl: resolveAppBaseUrl() || null,
+      teamsTeamId: config?.teamId || null,
+      teamsChannelId: config?.channelId || null,
       chatwootWebhookShouldBe: config
         ? `${config.appBaseUrl}/api/chatwoot/webhook`
         : null,
