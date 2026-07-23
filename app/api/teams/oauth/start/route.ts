@@ -12,6 +12,7 @@ export async function GET(request: NextRequest) {
 
   // ?debug=1 shows what redirect URI will be used (no secrets)
   if (request.nextUrl.searchParams.get("debug") === "1") {
+    const secret = (process.env.MICROSOFT_CLIENT_SECRET || "").trim();
     return NextResponse.json({
       appBaseUrl: resolveAppBaseUrl() || null,
       redirectUri: config
@@ -19,8 +20,14 @@ export async function GET(request: NextRequest) {
         : null,
       tenantId: process.env.MICROSOFT_TENANT_ID || null,
       clientId: process.env.MICROSOFT_CLIENT_ID || null,
+      // Safe checks only — never return the full secret
+      clientSecretLooksLikeGuid: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(
+        secret
+      ),
+      clientSecretHasTilde: secret.includes("~"),
+      clientSecretLength: secret.length,
       configured: Boolean(config),
-      hint: "redirectUri must start with https:// and match Entra Authentication → Redirect URI",
+      hint: "clientSecretLooksLikeGuid must be false; clientSecretHasTilde is usually true for Azure secret Values",
     });
   }
 
