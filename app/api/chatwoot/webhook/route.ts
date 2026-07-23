@@ -127,6 +127,7 @@ export async function GET() {
   return NextResponse.json({
     service: "chatwoot-webhook",
     configured: Boolean(getGraphBridgeConfig()),
-    next: "Connect Microsoft once at /api/teams/oauth/start, then point Chatwoot webhook here.",
+    usage:
+      "Chatwoot should POST message_created events here. Open /api/teams/status to see if the Teams bridge is ready.",
   });
 }
