@@ -23,11 +23,21 @@ async function readBody(body: unknown): Promise<string> {
   return Buffer.concat(chunks).toString("utf8");
 }
 
-export async function loadMsTokens(): Promise<MsTokenStore | null> {
-  if (memoryTokens) return memoryTokens;
+function requireBucket(): string {
+  const bucket = process.env.R2_BUCKET?.trim();
+  if (!bucket) {
+    throw new Error(
+      "R2_BUCKET is missing on Vercel. Microsoft tokens cannot persist without R2 — add R2_* env vars and redeploy."
+    );
+  }
+  return bucket;
+}
 
-  const bucket = process.env.R2_BUCKET;
-  if (!bucket) return memoryTokens;
+export async function loadMsTokens(): Promise<MsTokenStore | null> {
+  if (memoryTokens?.refreshToken) return memoryTokens;
+
+  const bucket = process.env.R2_BUCKET?.trim();
+  if (!bucket) return null;
 
   try {
     const result = await r2.send(
@@ -38,16 +48,15 @@ export async function loadMsTokens(): Promise<MsTokenStore | null> {
       memoryTokens = JSON.parse(text) as MsTokenStore;
     }
   } catch {
-    // not connected yet
+    // not connected yet / object missing
   }
 
   return memoryTokens;
 }
 
 export async function saveMsTokens(tokens: MsTokenStore): Promise<void> {
+  const bucket = requireBucket();
   memoryTokens = tokens;
-  const bucket = process.env.R2_BUCKET;
-  if (!bucket) return;
 
   await r2.send(
     new PutObjectCommand({
@@ -61,4 +70,11 @@ export async function saveMsTokens(tokens: MsTokenStore): Promise<void> {
 
 export async function clearMsTokens(): Promise<void> {
   memoryTokens = null;
+}
+
+export async function hasPersistedMsTokens(): Promise<boolean> {
+  // Force read from R2, not only memory
+  memoryTokens = null;
+  const tokens = await loadMsTokens();
+  return Boolean(tokens?.refreshToken);
 }
