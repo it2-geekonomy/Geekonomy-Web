@@ -64,6 +64,13 @@ export function getGraphBridgeConfig(): GraphBridgeConfig | null {
     (process.env.TEAMS_CHANNEL_ID || "").trim()
   );
   const appBaseUrl = resolveAppBaseUrl();
+  const r2Bucket = (process.env.R2_BUCKET || "").trim();
+  const r2Ready = Boolean(
+    r2Bucket &&
+      process.env.R2_ENDPOINT?.trim() &&
+      process.env.R2_ACCESS_KEY?.trim() &&
+      process.env.R2_SECRET_KEY?.trim()
+  );
 
   if (
     !chatwootAccountId ||
@@ -73,7 +80,8 @@ export function getGraphBridgeConfig(): GraphBridgeConfig | null {
     !clientSecret ||
     !teamId ||
     !channelId ||
-    !appBaseUrl
+    !appBaseUrl ||
+    !r2Ready
   ) {
     return null;
   }
