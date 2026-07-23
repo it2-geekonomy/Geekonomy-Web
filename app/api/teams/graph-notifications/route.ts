@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
   }
 
   const expected = expectedClientState();
-  const items = payload.value || [];
+  const items = payload.value || []; 
 
   // Acknowledge quickly; process sync inline (serverless has no background)
   for (const item of items) {
