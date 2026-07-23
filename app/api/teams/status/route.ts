@@ -8,23 +8,30 @@ import { loadSubscription } from "@/lib/chatwoot-teams/subscriptions";
  * Green only when R2 + Microsoft token are both present.
  */
 export async function GET() {
-  const r2Ready = Boolean(
-    process.env.R2_BUCKET?.trim() &&
-      process.env.R2_ENDPOINT?.trim() &&
-      process.env.R2_ACCESS_KEY?.trim() &&
-      process.env.R2_SECRET_KEY?.trim()
-  );
+  const r2 = {
+    R2_ENDPOINT: Boolean(process.env.R2_ENDPOINT?.trim()),
+    R2_ACCESS_KEY: Boolean(process.env.R2_ACCESS_KEY?.trim()),
+    R2_SECRET_KEY: Boolean(process.env.R2_SECRET_KEY?.trim()),
+    R2_BUCKET: Boolean(process.env.R2_BUCKET?.trim()),
+  };
+  const r2Ready = Object.values(r2).every(Boolean);
   const config = getGraphBridgeConfig();
   const microsoftConnected = r2Ready ? await hasPersistedMsTokens() : false;
   const subscription = r2Ready ? await loadSubscription() : null;
 
   const ready = Boolean(config && r2Ready && microsoftConnected);
 
+  const missingR2 = Object.entries(r2)
+    .filter(([, ok]) => !ok)
+    .map(([name]) => name);
+
   return NextResponse.json({
     ready,
     checks: {
       envConfigured: Boolean(config),
       r2Ready,
+      r2VarsPresent: r2,
+      r2MissingNames: missingR2,
       microsoftConnected,
       graphSubscription: Boolean(subscription?.id),
       appBaseUrl: resolveAppBaseUrl() || null,
@@ -34,8 +41,8 @@ export async function GET() {
     },
     next: ready
       ? "Bridge is live. Send a website chat and check Teams."
-      : !r2Ready
-        ? "Add R2_* env vars on Vercel Preview and redeploy."
+      : missingR2.length
+        ? `Vercel Preview is missing: ${missingR2.join(", ")}. Add those exact names, enable Preview, redeploy.`
         : !microsoftConnected
           ? "Open /api/teams/oauth/start and finish Microsoft login."
           : "Fix missing Chatwoot/Microsoft/Teams env vars.",
