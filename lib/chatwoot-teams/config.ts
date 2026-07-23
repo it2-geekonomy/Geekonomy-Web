@@ -20,10 +20,21 @@ function isHttpUrl(value: string): boolean {
  * (e.g. accidentally pasting the page title).
  */
 export function resolveAppBaseUrl(): string {
+  const withHttps = (hostOrUrl: string) => {
+    const value = hostOrUrl.trim().replace(/\/$/, "");
+    if (!value) return "";
+    if (isHttpUrl(value)) return value;
+    return `https://${value}`;
+  };
+
   const candidates = [
     process.env.APP_BASE_URL,
     process.env.NEXT_PUBLIC_APP_URL,
-    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "",
+    // Stable alias for the git branch preview (preferred over unique deploy URL)
+    process.env.VERCEL_BRANCH_URL
+      ? withHttps(process.env.VERCEL_BRANCH_URL)
+      : "",
+    process.env.VERCEL_URL ? withHttps(process.env.VERCEL_URL) : "",
   ];
 
   for (const raw of candidates) {
