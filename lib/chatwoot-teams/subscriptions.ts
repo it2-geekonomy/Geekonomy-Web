@@ -1,12 +1,18 @@
 import { GetObjectCommand, PutObjectCommand } from "@aws-sdk/client-s3";
 import { r2 } from "@/lib/r2";
 import type { GraphBridgeConfig } from "./config";
-import { createOrRenewChannelSubscription } from "./graph";
+import {
+  channelMessagesResource,
+  createOrRenewChannelSubscription,
+} from "./graph";
 
 export type SubscriptionStore = {
   id: string;
   expirationDateTime: string;
   updatedAt: string;
+  /** Graph resource path — must match current TEAMS_* ids */
+  resource?: string;
+  notificationUrl?: string;
 };
 
 const SUB_KEY = "chatwoot-teams/graph-subscription.json";
@@ -41,9 +47,12 @@ export async function loadSubscription(): Promise<SubscriptionStore | null> {
 }
 
 export async function saveSubscription(
-  sub: Omit<SubscriptionStore, "updatedAt">
+  sub: Omit<SubscriptionStore, "updatedAt"> & { updatedAt?: string }
 ): Promise<void> {
-  memorySub = { ...sub, updatedAt: new Date().toISOString() };
+  memorySub = {
+    ...sub,
+    updatedAt: sub.updatedAt || new Date().toISOString(),
+  };
   const bucket = process.env.R2_BUCKET;
   if (!bucket) return;
   await r2.send(
@@ -56,26 +65,47 @@ export async function saveSubscription(
   );
 }
 
-/** Create or renew if missing / expiring within 12 hours. */
+/** Create or renew if missing, wrong channel, or expiring within 12 hours. */
 export async function ensureChannelSubscription(
-  config: GraphBridgeConfig
+  config: GraphBridgeConfig,
+  options?: { forceRecreate?: boolean }
 ): Promise<SubscriptionStore> {
   const existing = await loadSubscription();
-  const expiresAt = existing
-    ? Date.parse(existing.expirationDateTime)
-    : 0;
+  const expectedResource = channelMessagesResource(config);
+  const expectedNotificationUrl = `${config.appBaseUrl}/api/teams/graph-notifications`;
+  const expiresAt = existing ? Date.parse(existing.expirationDateTime) : 0;
+
+  const resourceMismatch =
+    !existing?.resource || existing.resource !== expectedResource;
+  const urlMismatch =
+    !existing?.notificationUrl ||
+    existing.notificationUrl !== expectedNotificationUrl;
   const needsRenew =
     !existing?.id ||
     !Number.isFinite(expiresAt) ||
     expiresAt < Date.now() + 12 * 60 * 60 * 1000;
 
-  if (!needsRenew && existing) {
+  if (
+    !options?.forceRecreate &&
+    !resourceMismatch &&
+    !urlMismatch &&
+    !needsRenew &&
+    existing
+  ) {
     return existing;
   }
 
+  // Only PATCH expiry when team/channel/notification URL are unchanged.
+  const canPatch =
+    Boolean(existing?.id) &&
+    !options?.forceRecreate &&
+    !resourceMismatch &&
+    !urlMismatch;
+
   const renewed = await createOrRenewChannelSubscription(
     config,
-    existing?.id
+    existing?.id,
+    { forceRecreate: options?.forceRecreate, canPatch }
   );
   await saveSubscription(renewed);
   return {

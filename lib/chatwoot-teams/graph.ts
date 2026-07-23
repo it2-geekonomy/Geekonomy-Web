@@ -234,11 +234,40 @@ export async function getChannelMessage(
   }
 }
 
+export function channelMessagesResource(config: GraphBridgeConfig): string {
+  return `/teams/${config.teamId}/channels/${config.channelId}/messages`;
+}
+
+export async function deleteGraphSubscription(
+  config: GraphBridgeConfig,
+  subscriptionId: string
+): Promise<void> {
+  try {
+    await graphFetch(config, `/subscriptions/${subscriptionId}`, {
+      method: "DELETE",
+    });
+  } catch (error) {
+    console.warn("Delete Graph subscription failed:", error);
+  }
+}
+
+/**
+ * Create a channel-message subscription for the *current* team/channel.
+ * Never PATCH an old subscription when the channel changed — Graph keeps the
+ * old resource, so Teams→site replies would never arrive live.
+ */
 export async function createOrRenewChannelSubscription(
   config: GraphBridgeConfig,
-  existingSubscriptionId?: string | null
-): Promise<{ id: string; expirationDateTime: string }> {
+  existingSubscriptionId?: string | null,
+  options?: { forceRecreate?: boolean; canPatch?: boolean }
+): Promise<{
+  id: string;
+  expirationDateTime: string;
+  resource: string;
+  notificationUrl: string;
+}> {
   const notificationUrl = `${config.appBaseUrl}/api/teams/graph-notifications`;
+  const resource = channelMessagesResource(config);
   const clientState =
     process.env.GRAPH_NOTIFICATION_CLIENT_STATE || "geekonomy-teams-bridge";
   // chatMessage max ~3 days; lifecycle URL required when > 1 hour
@@ -250,12 +279,13 @@ export async function createOrRenewChannelSubscription(
     changeType: "created",
     notificationUrl,
     lifecycleNotificationUrl: notificationUrl,
-    resource: `/teams/${config.teamId}/channels/${config.channelId}/messages`,
+    resource,
     expirationDateTime,
     clientState,
   };
 
-  if (existingSubscriptionId) {
+  // PATCH only renews expiry — it cannot retarget team/channel.
+  if (existingSubscriptionId && options?.canPatch && !options.forceRecreate) {
     try {
       const updated = await graphFetch<{
         id: string;
@@ -267,10 +297,16 @@ export async function createOrRenewChannelSubscription(
       return {
         id: updated.id || existingSubscriptionId,
         expirationDateTime: updated.expirationDateTime || expirationDateTime,
+        resource,
+        notificationUrl,
       };
     } catch (error) {
       console.warn("Subscription renew failed, recreating:", error);
     }
+  }
+
+  if (existingSubscriptionId) {
+    await deleteGraphSubscription(config, existingSubscriptionId);
   }
 
   const created = await graphFetch<{
@@ -288,6 +324,8 @@ export async function createOrRenewChannelSubscription(
   return {
     id: created.id,
     expirationDateTime: created.expirationDateTime || expirationDateTime,
+    resource,
+    notificationUrl,
   };
 }
 

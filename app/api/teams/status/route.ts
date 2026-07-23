@@ -18,6 +18,14 @@ export async function GET() {
   const config = getGraphBridgeConfig();
   const microsoftConnected = r2Ready ? await hasPersistedMsTokens() : false;
   const subscription = r2Ready ? await loadSubscription() : null;
+  const expectedResource = config
+    ? `/teams/${config.teamId}/channels/${config.channelId}/messages`
+    : null;
+  const subscriptionTargetsCurrentChannel = Boolean(
+    subscription?.resource &&
+      expectedResource &&
+      subscription.resource === expectedResource
+  );
 
   const ready = Boolean(config && r2Ready && microsoftConnected);
 
@@ -34,6 +42,9 @@ export async function GET() {
       r2MissingNames: missingR2,
       microsoftConnected,
       graphSubscription: Boolean(subscription?.id),
+      subscriptionTargetsCurrentChannel,
+      subscriptionResource: subscription?.resource || null,
+      expectedResource,
       appBaseUrl: resolveAppBaseUrl() || null,
       teamsTeamId: config?.teamId || null,
       teamsChannelId: config?.channelId || null,
@@ -42,7 +53,9 @@ export async function GET() {
         : null,
     },
     next: ready
-      ? "Bridge is live. Send a website chat and check Teams."
+      ? subscriptionTargetsCurrentChannel
+        ? "Bridge is live. Reply in the Teams thread — should sync near real-time."
+        : "Open /api/teams/subscribe?force=1 so Graph watches the CURRENT channel (needed after changing TEAMS_CHANNEL_ID)."
       : missingR2.length
         ? `Vercel Preview is missing: ${missingR2.join(", ")}. Add those exact names, enable Preview, redeploy.`
         : !microsoftConnected
