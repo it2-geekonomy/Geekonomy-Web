@@ -3,7 +3,6 @@ import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 import {
   syncAllThreadReplies,
-  syncMessageFromNotification,
 } from "@/lib/chatwoot-teams/sync";
 
 type GraphNotification = {
@@ -79,24 +78,13 @@ export async function POST(request: NextRequest) {
 
     if (item.changeType !== "created") continue;
 
-    const messageId = extractMessageId(item);
     try {
-      if (messageId) {
-        const result = await syncMessageFromNotification(config, messageId);
-        // Fallback: full thread sync if single-message path missed
-        if (!result.synced && result.reason === "unmapped_thread") {
-          await syncAllThreadReplies(config);
-        }
-      } else {
-        await syncAllThreadReplies(config);
-      }
+      // Always sync all mapped threads on any channel activity.
+      // Single-message lookup is unreliable for reply IDs vs root IDs.
+      const result = await syncAllThreadReplies(config);
+      console.info("Graph notification sync:", result);
     } catch (error) {
       console.error("Graph notification sync failed:", error);
-      try {
-        await syncAllThreadReplies(config);
-      } catch (fallbackError) {
-        console.error("Fallback poll failed:", fallbackError);
-      }
     }
   }
 
