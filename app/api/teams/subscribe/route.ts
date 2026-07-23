@@ -59,3 +59,4 @@ export async function GET(request: NextRequest) {
     hint: "POST here (or GET ?force=1) to create/renew the Graph subscription for live Teams replies.",
   });
 }
+ 
