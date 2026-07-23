@@ -117,8 +117,9 @@ export async function getAccessToken(
   return refreshed.accessToken;
 }
 
-type GraphMessage = {
+export type GraphMessage = {
   id: string;
+  replyToId?: string | null;
   body?: { content?: string; contentType?: string };
   from?: {
     user?: { displayName?: string; id?: string };
@@ -216,6 +217,78 @@ export async function listMessageReplies(
     `/teams/${config.teamId}/channels/${config.channelId}/messages/${rootMessageId}/replies?$top=50`
   );
   return result?.value || [];
+}
+
+export async function getChannelMessage(
+  config: GraphBridgeConfig,
+  messageId: string
+): Promise<GraphMessage | null> {
+  try {
+    return await graphFetch<GraphMessage>(
+      config,
+      `/teams/${config.teamId}/channels/${config.channelId}/messages/${messageId}`
+    );
+  } catch (error) {
+    console.warn("getChannelMessage failed:", error);
+    return null;
+  }
+}
+
+export async function createOrRenewChannelSubscription(
+  config: GraphBridgeConfig,
+  existingSubscriptionId?: string | null
+): Promise<{ id: string; expirationDateTime: string }> {
+  const notificationUrl = `${config.appBaseUrl}/api/teams/graph-notifications`;
+  const clientState =
+    process.env.GRAPH_NOTIFICATION_CLIENT_STATE || "geekonomy-teams-bridge";
+  // chatMessage max ~3 days; lifecycle URL required when > 1 hour
+  const expirationDateTime = new Date(
+    Date.now() + 2.5 * 24 * 60 * 60 * 1000
+  ).toISOString();
+
+  const body = {
+    changeType: "created",
+    notificationUrl,
+    lifecycleNotificationUrl: notificationUrl,
+    resource: `/teams/${config.teamId}/channels/${config.channelId}/messages`,
+    expirationDateTime,
+    clientState,
+  };
+
+  if (existingSubscriptionId) {
+    try {
+      const updated = await graphFetch<{
+        id: string;
+        expirationDateTime: string;
+      }>(config, `/subscriptions/${existingSubscriptionId}`, {
+        method: "PATCH",
+        body: JSON.stringify({ expirationDateTime }),
+      });
+      return {
+        id: updated.id || existingSubscriptionId,
+        expirationDateTime: updated.expirationDateTime || expirationDateTime,
+      };
+    } catch (error) {
+      console.warn("Subscription renew failed, recreating:", error);
+    }
+  }
+
+  const created = await graphFetch<{
+    id: string;
+    expirationDateTime: string;
+  }>(config, "/subscriptions", {
+    method: "POST",
+    body: JSON.stringify(body),
+  });
+
+  if (!created?.id) {
+    throw new Error("Graph did not return subscription id");
+  }
+
+  return {
+    id: created.id,
+    expirationDateTime: created.expirationDateTime || expirationDateTime,
+  };
 }
 
 export function stripHtml(html: string): string {

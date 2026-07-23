@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { exchangeCodeForTokens } from "@/lib/chatwoot-teams/graph";
+import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 
 export async function GET(request: NextRequest) {
   const config = getGraphBridgeConfig();
@@ -26,10 +27,22 @@ export async function GET(request: NextRequest) {
 
   try {
     await exchangeCodeForTokens(config, code);
+
+    let subscriptionNote = "Subscription will be created on first chat.";
+    try {
+      const sub = await ensureChannelSubscription(config);
+      subscriptionNote = `Live Teams notifications enabled until ${sub.expirationDateTime}.`;
+    } catch (subError) {
+      console.error("Subscription setup failed:", subError);
+      subscriptionNote =
+        "Token saved, but live notifications failed — /api/teams/poll still works. Check logs.";
+    }
+
     return new NextResponse(
       `<!doctype html><html><body style="font-family:sans-serif;padding:2rem">
         <h1>Microsoft Teams connected</h1>
         <p>You can close this tab. Chatwoot messages will post to your Teams channel.</p>
+        <p>${subscriptionNote}</p>
         <p>Make sure Chatwoot webhook points to <code>/api/chatwoot/webhook</code>.</p>
       </body></html>`,
       { headers: { "Content-Type": "text/html; charset=utf-8" } }

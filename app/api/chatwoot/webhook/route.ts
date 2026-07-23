@@ -12,6 +12,7 @@ import {
   postChannelMessage,
   replyToChannelMessage,
 } from "@/lib/chatwoot-teams/graph";
+import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 
 type ChatwootWebhookBody = {
   event?: string;
@@ -86,6 +87,9 @@ export async function POST(request: NextRequest) {
         ...existing,
         syncedReplyIds: [...synced],
       });
+      void ensureChannelSubscription(config).catch((err) =>
+        console.warn("Subscription ensure failed:", err)
+      );
       return NextResponse.json({ ok: true, mode: "reply", replyId });
     }
 
@@ -105,6 +109,9 @@ export async function POST(request: NextRequest) {
       contactName,
       syncedReplyIds: [],
     });
+    void ensureChannelSubscription(config).catch((err) =>
+      console.warn("Subscription ensure failed:", err)
+    );
 
     return NextResponse.json({ ok: true, mode: "create", teamsMessageId });
   } catch (error) {
