@@ -20,16 +20,6 @@ function expectedClientState(): string {
   );
 }
 
-function extractMessageId(notification: GraphNotification): string | null {
-  if (notification.resourceData?.id) return String(notification.resourceData.id);
-  const resource = notification.resource || "";
-  // teams('x')/channels('y')/messages('z') or .../messages('z')/replies('r')
-  const replyMatch = resource.match(/messages\('([^']+)'\)\/replies\('([^']+)'\)/i);
-  if (replyMatch?.[2]) return replyMatch[2];
-  const msgMatch = resource.match(/messages\('([^']+)'\)/i);
-  return msgMatch?.[1] || null;
-}
-
 /**
  * Microsoft Graph change + lifecycle notifications.
  * Must answer validationToken within seconds as text/plain.
