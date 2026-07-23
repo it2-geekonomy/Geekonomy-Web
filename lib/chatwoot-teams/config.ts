@@ -7,9 +7,34 @@ export type GraphBridgeConfig = {
   clientSecret: string;
   teamId: string;
   channelId: string;
-  /** Public site origin, e.g. https://geekonomy.in or https://abc.ngrok.io */
+  /** Public site origin, e.g. https://thegeekonomy.com */
   appBaseUrl: string;
 };
+
+function isHttpUrl(value: string): boolean {
+  return /^https?:\/\//i.test(value);
+}
+
+/**
+ * Prefer a real https origin. Ignores invalid APP_BASE_URL values
+ * (e.g. accidentally pasting the page title).
+ */
+export function resolveAppBaseUrl(): string {
+  const candidates = [
+    process.env.APP_BASE_URL,
+    process.env.NEXT_PUBLIC_APP_URL,
+    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "",
+  ];
+
+  for (const raw of candidates) {
+    const value = (raw || "").trim().replace(/\/$/, "");
+    if (value && isHttpUrl(value)) {
+      return value;
+    }
+  }
+
+  return "";
+}
 
 export function getGraphBridgeConfig(): GraphBridgeConfig | null {
   const chatwootBaseUrl = (
@@ -20,18 +45,14 @@ export function getGraphBridgeConfig(): GraphBridgeConfig | null {
 
   const chatwootAccountId = process.env.CHATWOOT_ACCOUNT_ID || "";
   const chatwootApiToken = process.env.CHATWOOT_API_TOKEN || "";
-  const tenantId = process.env.MICROSOFT_TENANT_ID || "";
-  const clientId = process.env.MICROSOFT_CLIENT_ID || "";
-  const clientSecret = process.env.MICROSOFT_CLIENT_SECRET || "";
-  const teamId = process.env.TEAMS_TEAM_ID || "";
+  const tenantId = (process.env.MICROSOFT_TENANT_ID || "").trim();
+  const clientId = (process.env.MICROSOFT_CLIENT_ID || "").trim();
+  const clientSecret = (process.env.MICROSOFT_CLIENT_SECRET || "").trim();
+  const teamId = (process.env.TEAMS_TEAM_ID || "").trim();
   const channelId = decodeURIComponent(
-    process.env.TEAMS_CHANNEL_ID || ""
+    (process.env.TEAMS_CHANNEL_ID || "").trim()
   );
-  const appBaseUrl = (
-    process.env.APP_BASE_URL ||
-    process.env.NEXT_PUBLIC_APP_URL ||
-    ""
-  ).replace(/\/$/, "");
+  const appBaseUrl = resolveAppBaseUrl();
 
   if (
     !chatwootAccountId ||
