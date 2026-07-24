@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isChatAdminAuthenticated } from "@/lib/chat/auth";
-import { addMessage, getConversation } from "@/lib/chat/store";
+import {
+  addMessage,
+  getConversation,
+  withDedupedMessages,
+} from "@/lib/chat/store";
 import {
   pushAgentMessageToTeams,
   pushVisitorMessageToTeams,
@@ -70,7 +74,13 @@ export async function POST(request: NextRequest, context: Ctx) {
       );
     }
 
-    return NextResponse.json(result, { status: 201 });
+    return NextResponse.json(
+      {
+        ...result,
+        conversation: withDedupedMessages(result.conversation),
+      },
+      { status: 201 }
+    );
   } catch (error) {
     console.error("add message:", error);
     return NextResponse.json(

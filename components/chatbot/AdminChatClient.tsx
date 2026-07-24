@@ -96,7 +96,7 @@ export default function AdminChatClient() {
   useEffect(() => {
     if (!auth?.authenticated || !activeId) return;
     void loadActive(activeId);
-    const t = setInterval(() => void loadActive(activeId), 2500);
+    const t = setInterval(() => void loadActive(activeId), 1200);
     return () => clearInterval(t);
   }, [auth?.authenticated, activeId, loadActive]);
 

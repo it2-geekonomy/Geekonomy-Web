@@ -4,6 +4,7 @@ import {
   getConversation,
   markConversationRead,
   setConversationStatus,
+  withDedupedMessages,
 } from "@/lib/chat/store";
 import { syncTeamsRepliesForConversation } from "@/lib/chat/teams-bridge";
 
@@ -11,9 +12,9 @@ export const maxDuration = 30;
 
 type Ctx = { params: Promise<{ id: string }> };
 
-/** Avoid hammering Graph on every 2.5s widget poll */
+/** Avoid hammering Graph on every widget poll, but keep Teams→site snappy */
 const lastPullAt = new Map<string, number>();
-const PULL_EVERY_MS = 4000;
+const PULL_EVERY_MS = 1500;
 
 export async function GET(request: NextRequest, context: Ctx) {
   const { id } = await context.params;
@@ -32,7 +33,8 @@ export async function GET(request: NextRequest, context: Ctx) {
       }
     }
 
-    // Localhost never receives Graph webhooks — pull Teams replies while chatting
+    // Pull Teams replies while chatting (localhost has no Graph webhooks;
+    // production also benefits when webhook delivery lags)
     if (conversation.teamsMessageId) {
       const last = lastPullAt.get(id) || 0;
       if (Date.now() - last >= PULL_EVERY_MS) {
@@ -51,7 +53,9 @@ export async function GET(request: NextRequest, context: Ctx) {
       conversation = (await getConversation(id)) || conversation;
     }
 
-    return NextResponse.json({ conversation });
+    return NextResponse.json({
+      conversation: withDedupedMessages(conversation),
+    });
   } catch (error) {
     console.error("get conversation:", error);
     return NextResponse.json(

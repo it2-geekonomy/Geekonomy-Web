@@ -77,7 +77,16 @@ export default function GeekonomyChatWidget() {
       }
       const data = (await res.json()) as { conversation: ChatConversation };
       const next = data.conversation.messages || [];
-      setMessages(next);
+      setMessages((prev) => {
+        // Avoid flicker/re-render loops when payload is identical
+        if (
+          prev.length === next.length &&
+          prev.every((m, i) => m.id === next[i]?.id && m.content === next[i]?.content)
+        ) {
+          return prev;
+        }
+        return next;
+      });
       if (
         !open &&
         next.length > lastCountRef.current &&
@@ -94,9 +103,11 @@ export default function GeekonomyChatWidget() {
   useEffect(() => {
     if (!conversationId || !visitorId) return;
     void refresh();
-    const t = setInterval(() => void refresh(), 2500);
+    // Faster when open so Teams replies feel near real-time; slower when closed
+    const intervalMs = open ? 1200 : 3000;
+    const t = setInterval(() => void refresh(), intervalMs);
     return () => clearInterval(t);
-  }, [conversationId, visitorId, refresh]);
+  }, [conversationId, visitorId, refresh, open]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
