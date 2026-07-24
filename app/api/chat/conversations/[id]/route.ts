@@ -7,14 +7,15 @@ import {
   withDedupedMessages,
 } from "@/lib/chat/store";
 import { syncTeamsRepliesForConversation } from "@/lib/chat/teams-bridge";
+import { getConversationTyping } from "@/lib/chat/typing";
 
 export const maxDuration = 30;
 
 type Ctx = { params: Promise<{ id: string }> };
 
-/** Avoid hammering Graph on every widget poll, but keep Teams→site snappy */
+/** Keep Teams→site snappy without hammering Graph every tick */
 const lastPullAt = new Map<string, number>();
-const PULL_EVERY_MS = 1500;
+const PULL_EVERY_MS = 800;
 
 export async function GET(request: NextRequest, context: Ctx) {
   const { id } = await context.params;
@@ -55,6 +56,7 @@ export async function GET(request: NextRequest, context: Ctx) {
 
     return NextResponse.json({
       conversation: withDedupedMessages(conversation),
+      typing: getConversationTyping(id),
     });
   } catch (error) {
     console.error("get conversation:", error);

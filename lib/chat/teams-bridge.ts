@@ -27,6 +27,8 @@ function shouldSkipTeamsText(text: string): boolean {
 
 /** Serialize sync per conversation inside one server instance */
 const syncLocks = new Map<string, Promise<unknown>>();
+/** Serialize Teams pushes so first message creates the root before follow-ups reply */
+const teamsPushQueues = new Map<string, Promise<unknown>>();
 
 async function withConversationLock<T>(
   conversationId: string,
@@ -49,6 +51,43 @@ async function withConversationLock<T>(
       syncLocks.delete(conversationId);
     }
   }
+}
+
+/** Queue visitor→Teams push so API can respond instantly. */
+export function enqueueVisitorTeamsPush(
+  conversationId: string,
+  visitorText: string
+): void {
+  const previous = teamsPushQueues.get(conversationId) || Promise.resolve();
+  const next = previous
+    .then(async () => {
+      const conversation = await getConversation(conversationId);
+      if (!conversation) return;
+      await pushVisitorMessageToTeams(conversation, visitorText);
+    })
+    .catch((error) => {
+      console.error("enqueueVisitorTeamsPush failed:", error);
+    });
+  teamsPushQueues.set(conversationId, next);
+}
+
+/** Queue agent→Teams push so admin reply returns instantly. */
+export function enqueueAgentTeamsPush(
+  conversationId: string,
+  agentText: string,
+  agentName?: string
+): void {
+  const previous = teamsPushQueues.get(conversationId) || Promise.resolve();
+  const next = previous
+    .then(async () => {
+      const conversation = await getConversation(conversationId);
+      if (!conversation) return;
+      await pushAgentMessageToTeams(conversation, agentText, agentName);
+    })
+    .catch((error) => {
+      console.error("enqueueAgentTeamsPush failed:", error);
+    });
+  teamsPushQueues.set(conversationId, next);
 }
 
 /** Push a new / follow-up visitor message into the Teams channel thread. */

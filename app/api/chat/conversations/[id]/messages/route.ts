@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { after } from "next/server";
 import { isChatAdminAuthenticated } from "@/lib/chat/auth";
 import {
   addMessage,
@@ -6,8 +7,8 @@ import {
   withDedupedMessages,
 } from "@/lib/chat/store";
 import {
-  pushAgentMessageToTeams,
-  pushVisitorMessageToTeams,
+  enqueueAgentTeamsPush,
+  enqueueVisitorTeamsPush,
 } from "@/lib/chat/teams-bridge";
 
 export const maxDuration = 30;
@@ -61,17 +62,15 @@ export async function POST(request: NextRequest, context: Ctx) {
       senderName: body.senderName,
     });
 
+    // Don't block the chat UI on Microsoft Graph — push after response
     if (role === "visitor") {
-      result.conversation = await pushVisitorMessageToTeams(
-        result.conversation,
-        content
-      );
+      after(() => {
+        enqueueVisitorTeamsPush(id, content);
+      });
     } else {
-      await pushAgentMessageToTeams(
-        result.conversation,
-        content,
-        body.senderName
-      );
+      after(() => {
+        enqueueAgentTeamsPush(id, content, body.senderName);
+      });
     }
 
     return NextResponse.json(
