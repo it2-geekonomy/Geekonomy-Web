@@ -7,11 +7,12 @@ import { syncAllThreadReplies } from "@/lib/chatwoot-teams/sync";
  * Safety net: renew Graph subscription + sweep any missed Teams replies.
  * Primary delivery is /api/teams/graph-notifications (near real-time).
  *
- * Vercel Hobby: cron max once/day — keep schedule daily (vercel.json).
- * Live renewals do NOT depend on this cron:
+ * No Vercel cron (Hobby = once/day only; easy to break deploys).
+ * Subscription stays alive via:
  * - Graph lifecycle notifications → ensureChannelSubscription
  * - Each Chatwoot→Teams webhook → ensureChannelSubscription
- * - chatMessage subscriptions last up to ~3 days
+ * - Manual/ops: GET/POST this route anytime
+ * chatMessage subscriptions last up to ~3 days.
  */
 async function run() {
   const config = getGraphBridgeConfig();
