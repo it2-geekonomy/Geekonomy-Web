@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
+import { after } from "next/server";
 import { isChatAdminAuthenticated } from "@/lib/chat/auth";
 import { createConversation, listConversations } from "@/lib/chat/store";
-import { pushVisitorMessageToTeams } from "@/lib/chat/teams-bridge";
+import { enqueueVisitorTeamsPush } from "@/lib/chat/teams-bridge";
 
 export const maxDuration = 30;
 
@@ -46,14 +47,17 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    let conversation = await createConversation({
+    const conversation = await createConversation({
       visitorId,
       visitorName: body.visitorName,
       pageUrl: body.pageUrl,
       firstMessage: message,
     });
 
-    conversation = await pushVisitorMessageToTeams(conversation, message);
+    // Store first, show in UI immediately — Teams thread created in background
+    after(() => {
+      enqueueVisitorTeamsPush(conversation.id, message);
+    });
 
     return NextResponse.json({ conversation }, { status: 201 });
   } catch (error) {
