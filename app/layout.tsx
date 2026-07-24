@@ -5,7 +5,7 @@ import MouseLight from "@/components/shared/MouseLight";
 import PageContentWrapper from "@/components/shared/PageContentWrapper";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
-import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
+import GeekonomyChatWidget from "@/components/chatbot/GeekonomyChatWidget";
 import DisableRightClick from "@/components/shared/DisableRightClick";
 import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
@@ -119,8 +119,8 @@ fbq('track', 'PageView');`,
           <PageContentWrapper>
             {children}
             <Footer />
-            <ChatwootIntegration />
           </PageContentWrapper>
+          <GeekonomyChatWidget />
         </NavbarHeightProvider>
       </body>
     </html>
