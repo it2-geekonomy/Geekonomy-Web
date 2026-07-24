@@ -65,7 +65,7 @@ export async function saveSubscription(
   );
 }
 
-/** Create or renew if missing, wrong channel, or expiring within 12 hours. */
+/** Create or renew if missing, wrong channel, or expiring within 36 hours. */
 export async function ensureChannelSubscription(
   config: GraphBridgeConfig,
   options?: { forceRecreate?: boolean }
@@ -75,6 +75,9 @@ export async function ensureChannelSubscription(
   const expectedNotificationUrl = `${config.appBaseUrl}/api/teams/graph-notifications`;
   const expiresAt = existing ? Date.parse(existing.expirationDateTime) : 0;
 
+  // chatMessage max ~3 days — renew a day+ early so daily/6h cron never misses
+  const RENEW_WITHIN_MS = 36 * 60 * 60 * 1000;
+
   const resourceMismatch =
     !existing?.resource || existing.resource !== expectedResource;
   const urlMismatch =
@@ -83,7 +86,7 @@ export async function ensureChannelSubscription(
   const needsRenew =
     !existing?.id ||
     !Number.isFinite(expiresAt) ||
-    expiresAt < Date.now() + 12 * 60 * 60 * 1000;
+    expiresAt < Date.now() + RENEW_WITHIN_MS;
 
   if (
     !options?.forceRecreate &&

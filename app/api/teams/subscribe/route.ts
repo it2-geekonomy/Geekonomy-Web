@@ -20,6 +20,12 @@ export async function POST(request: NextRequest) {
     const sub = await ensureChannelSubscription(config, {
       forceRecreate: force,
     });
+    console.info("Subscription ensure:", {
+      forced: force,
+      id: sub.id,
+      expirationDateTime: sub.expirationDateTime,
+      resource: sub.resource,
+    });
     return NextResponse.json({
       ok: true,
       forced: force,
@@ -59,4 +65,3 @@ export async function GET(request: NextRequest) {
     hint: "POST here (or GET ?force=1) to create/renew the Graph subscription for live Teams replies.",
   });
 }
- 

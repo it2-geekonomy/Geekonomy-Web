@@ -234,6 +234,67 @@ export async function getChannelMessage(
   }
 }
 
+export type ParsedMessageResource = {
+  messageId: string;
+  /** Present when the notification is for a thread reply */
+  rootMessageId?: string;
+};
+
+/**
+ * Parse Graph notification `resource` paths (slash or OData style).
+ * Replies: .../messages/{root}/replies/{reply}
+ * Roots:   .../messages/{id}
+ */
+export function parseChannelMessageResource(
+  resource: string
+): ParsedMessageResource | null {
+  const raw = (resource || "").trim();
+  if (!raw) return null;
+
+  const slashReply = raw.match(/\/messages\/([^/]+)\/replies\/([^/?]+)/i);
+  if (slashReply) {
+    return { rootMessageId: slashReply[1], messageId: slashReply[2] };
+  }
+
+  const odataReply = raw.match(
+    /messages\('([^']+)'\)\/replies\('([^']+)'\)/i
+  );
+  if (odataReply) {
+    return { rootMessageId: odataReply[1], messageId: odataReply[2] };
+  }
+
+  const slashMsg = raw.match(/\/messages\/([^/?]+)/i);
+  if (slashMsg) {
+    return { messageId: slashMsg[1] };
+  }
+
+  const odataMsg = raw.match(/messages\('([^']+)'\)/i);
+  if (odataMsg) {
+    return { messageId: odataMsg[1] };
+  }
+
+  return null;
+}
+
+/** Fetch a channel message or reply using ids parsed from a notification. */
+export async function fetchChannelMessageOrReply(
+  config: GraphBridgeConfig,
+  ids: ParsedMessageResource
+): Promise<GraphMessage | null> {
+  if (ids.rootMessageId) {
+    try {
+      return await graphFetch<GraphMessage>(
+        config,
+        `/teams/${config.teamId}/channels/${config.channelId}/messages/${ids.rootMessageId}/replies/${ids.messageId}`
+      );
+    } catch (error) {
+      console.warn("fetch reply failed, trying message endpoint:", error);
+    }
+  }
+
+  return getChannelMessage(config, ids.messageId);
+}
+
 export function channelMessagesResource(config: GraphBridgeConfig): string {
   return `/teams/${config.teamId}/channels/${config.channelId}/messages`;
 }
@@ -270,9 +331,10 @@ export async function createOrRenewChannelSubscription(
   const resource = channelMessagesResource(config);
   const clientState =
     process.env.GRAPH_NOTIFICATION_CLIENT_STATE || "geekonomy-teams-bridge";
-  // chatMessage max ~3 days; lifecycle URL required when > 1 hour
+  // Teams chatMessage max = 4320 min (3 days). Stay under max; lifecycle URL
+  // is required whenever expiry is > 1 hour (we always send it).
   const expirationDateTime = new Date(
-    Date.now() + 2.5 * 24 * 60 * 60 * 1000
+    Date.now() + 4200 * 60 * 1000
   ).toISOString();
 
   const body = {
