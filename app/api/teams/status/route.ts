@@ -54,7 +54,7 @@ export async function GET() {
     },
     next: ready
       ? subscriptionTargetsCurrentChannel
-        ? "Bridge is live. Reply in the Teams thread — Graph notifications sync near real-time; /api/teams/poll is backup every 6h."
+        ? "Bridge is live. Reply in the Teams thread — Graph notifications sync near real-time; daily /api/teams/poll is backup only."
         : "Open /api/teams/subscribe?force=1 so Graph watches the CURRENT channel (needed after changing TEAMS_CHANNEL_ID)."
       : missingR2.length
         ? `Vercel Preview is missing: ${missingR2.join(", ")}. Add those exact names, enable Preview, redeploy.`
