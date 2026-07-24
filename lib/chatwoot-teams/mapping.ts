@@ -18,7 +18,9 @@ type MapFile = {
 
 const MAP_KEY = "chatwoot-teams/conversation-map.json";
 const memoryCache: MapFile = { byChatwoot: {}, byTeamsMessage: {} };
-let loaded = false;
+let loadedAt = 0;
+/** Warm serverless instances must not keep a stale map forever. */
+const CACHE_TTL_MS = 5_000;
 
 async function readBody(body: unknown): Promise<string> {
   if (!body) return "";
@@ -31,12 +33,15 @@ async function readBody(body: unknown): Promise<string> {
   return Buffer.concat(chunks).toString("utf8");
 }
 
-async function loadMap(): Promise<MapFile> {
-  if (loaded) return memoryCache;
+async function loadMap(options?: { force?: boolean }): Promise<MapFile> {
+  const fresh = Date.now() - loadedAt < CACHE_TTL_MS;
+  if (!options?.force && loadedAt && fresh) {
+    return memoryCache;
+  }
 
   const bucket = process.env.R2_BUCKET;
   if (!bucket) {
-    loaded = true;
+    loadedAt = Date.now();
     return memoryCache;
   }
 
@@ -54,7 +59,7 @@ async function loadMap(): Promise<MapFile> {
     // First run — empty map
   }
 
-  loaded = true;
+  loadedAt = Date.now();
   return memoryCache;
 }
 
@@ -70,31 +75,32 @@ async function saveMap(map: MapFile): Promise<void> {
       ContentType: "application/json",
     })
   );
+  loadedAt = Date.now();
 }
 
 export async function listThreadMaps(): Promise<ThreadMapEntry[]> {
-  const map = await loadMap();
+  const map = await loadMap({ force: true });
   return Object.values(map.byChatwoot);
 }
 
 export async function getByChatwootId(
   chatwootConversationId: string
 ): Promise<ThreadMapEntry | null> {
-  const map = await loadMap();
+  const map = await loadMap({ force: true });
   return map.byChatwoot[String(chatwootConversationId)] || null;
 }
 
 export async function getByTeamsMessageId(
   teamsMessageId: string
 ): Promise<ThreadMapEntry | null> {
-  const map = await loadMap();
+  const map = await loadMap({ force: true });
   return map.byTeamsMessage[String(teamsMessageId)] || null;
 }
 
 export async function upsertThreadMap(
   entry: Omit<ThreadMapEntry, "updatedAt"> & { updatedAt?: string }
 ): Promise<ThreadMapEntry> {
-  const map = await loadMap();
+  const map = await loadMap({ force: true });
   const saved: ThreadMapEntry = {
     ...entry,
     chatwootConversationId: String(entry.chatwootConversationId),

@@ -3,6 +3,8 @@ import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 import { syncAllThreadReplies } from "@/lib/chatwoot-teams/sync";
 
+export const maxDuration = 60;
+
 /**
  * Safety net: renew Graph subscription + sweep any missed Teams replies.
  * Primary delivery is /api/teams/graph-notifications (near real-time).

@@ -6,6 +6,9 @@ import {
   type GraphNotificationItem,
 } from "@/lib/chatwoot-teams/sync";
 
+/** Hobby default is 10s — sweep of mapped threads needs more headroom. */
+export const maxDuration = 60;
+
 function expectedClientState(): string {
   return (
     process.env.GRAPH_NOTIFICATION_CLIENT_STATE || "geekonomy-teams-bridge"
@@ -21,7 +24,9 @@ function validationResponse(token: string) {
 
 /**
  * Microsoft Graph change + lifecycle notifications.
- * Ack in <1s (202); heavy work runs via `after()` so Graph does not throttle us.
+ *
+ * Ack with 202 immediately (Graph throttles slow endpoints), then process
+ * via after() so the function stays alive until Chatwoot sync finishes.
  */
 export async function POST(request: NextRequest) {
   const validationToken = request.nextUrl.searchParams.get("validationToken");
@@ -46,15 +51,16 @@ export async function POST(request: NextRequest) {
     return new NextResponse(null, { status: 202 });
   }
 
+  // Keep a reference the runtime must await via after()/waitUntil.
+  const work = processGraphNotifications(config, items, {
+    expectedClientState: expectedClientState(),
+    renewSubscription: () => ensureChannelSubscription(config),
+  }).catch((error) => {
+    console.error("Graph notification processing failed:", error);
+  });
+
   after(async () => {
-    try {
-      await processGraphNotifications(config, items, {
-        expectedClientState: expectedClientState(),
-        renewSubscription: () => ensureChannelSubscription(config),
-      });
-    } catch (error) {
-      console.error("Graph notification after() failed:", error);
-    }
+    await work;
   });
 
   return new NextResponse(null, { status: 202 });
