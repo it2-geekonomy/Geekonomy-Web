@@ -1,10 +1,17 @@
-import { after, NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
-import {
-  processGraphNotifications,
-  type GraphNotificationItem,
-} from "@/lib/chatwoot-teams/sync";
+import { syncTeamsRepliesIntoChat } from "@/lib/chat/teams-bridge";
+
+export const maxDuration = 60;
+
+type GraphNotificationItem = {
+  subscriptionId?: string;
+  clientState?: string;
+  changeType?: string;
+  resource?: string;
+  lifecycleEvent?: string;
+};
 
 function expectedClientState(): string {
   return (
@@ -20,8 +27,7 @@ function validationResponse(token: string) {
 }
 
 /**
- * Microsoft Graph change + lifecycle notifications.
- * Ack in <1s (202); heavy work runs via `after()` so Graph does not throttle us.
+ * Graph → Geekonomy chat (custom widget), not Chatwoot.
  */
 export async function POST(request: NextRequest) {
   const validationToken = request.nextUrl.searchParams.get("validationToken");
@@ -46,16 +52,34 @@ export async function POST(request: NextRequest) {
     return new NextResponse(null, { status: 202 });
   }
 
-  after(async () => {
-    try {
-      await processGraphNotifications(config, items, {
-        expectedClientState: expectedClientState(),
-        renewSubscription: () => ensureChannelSubscription(config),
-      });
-    } catch (error) {
-      console.error("Graph notification after() failed:", error);
+  const expected = expectedClientState();
+  let sawCreate = false;
+
+  for (const item of items) {
+    if (item.clientState !== expected) {
+      console.warn("Graph notification rejected: clientState mismatch");
+      continue;
     }
-  });
+    if (item.lifecycleEvent) {
+      console.info("Graph lifecycle:", item.lifecycleEvent);
+      try {
+        await ensureChannelSubscription(config);
+      } catch (error) {
+        console.error("Lifecycle renew failed:", error);
+      }
+      continue;
+    }
+    if (item.changeType === "created") sawCreate = true;
+  }
+
+  if (sawCreate) {
+    try {
+      const result = await syncTeamsRepliesIntoChat();
+      console.info("Teams→chat sync:", result);
+    } catch (error) {
+      console.error("Teams→chat sync failed:", error);
+    }
+  }
 
   return new NextResponse(null, { status: 202 });
 }
@@ -68,6 +92,6 @@ export async function GET(request: NextRequest) {
 
   return NextResponse.json({
     service: "graph-notifications",
-    hint: "Microsoft Graph posts change notifications here.",
+    hint: "Microsoft Graph posts change notifications here → Geekonomy chat.",
   });
 }

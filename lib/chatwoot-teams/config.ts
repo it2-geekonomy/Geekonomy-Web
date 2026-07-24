@@ -48,6 +48,7 @@ export function resolveAppBaseUrl(): string {
 }
 
 export function getGraphBridgeConfig(): GraphBridgeConfig | null {
+  // Chatwoot optional — custom Geekonomy chat no longer requires it
   const chatwootBaseUrl = (
     process.env.CHATWOOT_BASE_URL ||
     process.env.NEXT_PUBLIC_CHATWOOT_BASE_URL ||
@@ -73,8 +74,6 @@ export function getGraphBridgeConfig(): GraphBridgeConfig | null {
   );
 
   if (
-    !chatwootAccountId ||
-    !chatwootApiToken ||
     !tenantId ||
     !clientId ||
     !clientSecret ||

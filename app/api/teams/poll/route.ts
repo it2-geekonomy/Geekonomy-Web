@@ -1,18 +1,12 @@
 import { NextResponse } from "next/server";
 import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
-import { syncAllThreadReplies } from "@/lib/chatwoot-teams/sync";
+import { syncTeamsRepliesIntoChat } from "@/lib/chat/teams-bridge";
+
+export const maxDuration = 60;
 
 /**
- * Safety net: renew Graph subscription + sweep any missed Teams replies.
- * Primary delivery is /api/teams/graph-notifications (near real-time).
- *
- * No Vercel cron (Hobby = once/day only; easy to break deploys).
- * Subscription stays alive via:
- * - Graph lifecycle notifications → ensureChannelSubscription
- * - Each Chatwoot→Teams webhook → ensureChannelSubscription
- * - Manual/ops: GET/POST this route anytime
- * chatMessage subscriptions last up to ~3 days.
+ * Backup: renew Graph subscription + sync Teams replies into Geekonomy chat.
  */
 async function run() {
   const config = getGraphBridgeConfig();
@@ -27,20 +21,15 @@ async function run() {
   let subscriptionError: string | null = null;
   try {
     subscription = await ensureChannelSubscription(config);
-    console.info("Subscription renew/ensure ok:", {
-      id: subscription.id,
-      expirationDateTime: subscription.expirationDateTime,
-      resource: subscription.resource,
-    });
   } catch (error) {
     subscriptionError =
       error instanceof Error ? error.message : "ensure failed";
     console.error("ensureChannelSubscription FAILED:", error);
   }
 
-  const sync = await syncAllThreadReplies(config);
+  const sync = await syncTeamsRepliesIntoChat();
   if (sync.errors.length) {
-    console.warn("Backup sync errors:", sync.errors);
+    console.warn("Teams→chat sync errors:", sync.errors);
   }
 
   return {

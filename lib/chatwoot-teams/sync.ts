@@ -12,6 +12,7 @@ import {
   getByTeamsMessageId,
   listThreadMaps,
   upsertThreadMap,
+  type ThreadMapEntry,
 } from "./mapping";
 
 function shouldSkipText(text: string): boolean {
@@ -45,24 +46,23 @@ async function pushReplyToChatwoot(
  */
 async function claimAndPushReply(
   config: GraphBridgeConfig,
-  thread: {
-    chatwootConversationId: string;
-    teamsMessageId: string;
-    contactName?: string;
-    syncedReplyIds?: string[];
-  },
+  thread: ThreadMapEntry,
   reply: GraphMessage
 ): Promise<boolean> {
   if (!reply.id) return false;
 
-  const seen = new Set(thread.syncedReplyIds || []);
+  // Re-read map so concurrent workers see each other's claimed ids
+  const fresh =
+    (await getByTeamsMessageId(thread.teamsMessageId)) || thread;
+  const seen = new Set(fresh.syncedReplyIds || []);
   if (seen.has(reply.id)) return false;
 
   seen.add(reply.id);
   const claimed = await upsertThreadMap({
-    ...thread,
+    ...fresh,
     syncedReplyIds: [...seen],
   });
+  thread.syncedReplyIds = claimed.syncedReplyIds;
 
   try {
     return await pushReplyToChatwoot(
@@ -71,16 +71,40 @@ async function claimAndPushReply(
       reply
     );
   } catch (error) {
-    seen.delete(reply.id);
+    const rollback = (claimed.syncedReplyIds || []).filter(
+      (id) => id !== reply.id
+    );
     await upsertThreadMap({
       ...claimed,
-      syncedReplyIds: [...seen],
+      syncedReplyIds: rollback,
     });
     throw error;
   }
 }
 
-/** Backup sweep: all mapped threads → Chatwoot (poll / miss recovery). */
+/** Find a reply by id across all mapped Teams threads (Graph often omits parent). */
+async function findReplyInMappedThreads(
+  config: GraphBridgeConfig,
+  replyId: string
+): Promise<{ thread: ThreadMapEntry; reply: GraphMessage } | null> {
+  const threads = await listThreadMaps();
+  for (const thread of threads) {
+    try {
+      const replies = await listMessageReplies(config, thread.teamsMessageId);
+      const reply = replies.find((r) => r.id === replyId);
+      if (reply) return { thread, reply };
+    } catch (error) {
+      console.warn(
+        "listMessageReplies failed for",
+        thread.teamsMessageId,
+        error
+      );
+    }
+  }
+  return null;
+}
+
+/** Backup / primary sweep: all mapped threads → Chatwoot. */
 export async function syncAllThreadReplies(config: GraphBridgeConfig): Promise<{
   threads: number;
   synced: number;
@@ -122,7 +146,25 @@ export async function syncMessageFromNotification(
   config: GraphBridgeConfig,
   ids: ParsedMessageResource
 ): Promise<{ synced: boolean; reason?: string }> {
-  const message = await fetchChannelMessageOrReply(config, ids);
+  let message = await fetchChannelMessageOrReply(config, ids);
+
+  // Graph often notifies with only the reply id (no /replies/ parent in resource).
+  // /messages/{replyId} may 404 or omit replyToId — search mapped threads.
+  if (!message?.id || !(message.replyToId || ids.rootMessageId)) {
+    const found = await findReplyInMappedThreads(config, ids.messageId);
+    if (found) {
+      if ((found.thread.syncedReplyIds || []).includes(found.reply.id)) {
+        return { synced: false, reason: "already_synced" };
+      }
+      const pushed = await claimAndPushReply(
+        config,
+        found.thread,
+        found.reply
+      );
+      return { synced: pushed, reason: pushed ? "ok" : "skipped_content" };
+    }
+  }
+
   if (!message?.id) {
     return { synced: false, reason: "message_not_found" };
   }
@@ -133,6 +175,7 @@ export async function syncMessageFromNotification(
 
   const rootId = message.replyToId || ids.rootMessageId;
   if (!rootId) {
+    // Root channel message (new website thread) — ignore
     return { synced: false, reason: "root_message" };
   }
 
@@ -159,7 +202,9 @@ export type GraphNotificationItem = {
 };
 
 /**
- * Process Graph change + lifecycle notifications (runs after 202 ack).
+ * Process Graph change + lifecycle notifications.
+ * Always ends with a full thread sweep so a flaky single-message fetch
+ * cannot drop agent replies (the failure mode we kept hitting).
  */
 export async function processGraphNotifications(
   config: GraphBridgeConfig,
@@ -169,11 +214,13 @@ export async function processGraphNotifications(
     renewSubscription: () => Promise<unknown>;
   }
 ): Promise<void> {
-  let needsFullSweep = false;
+  let sawMessageCreate = false;
 
   for (const item of items) {
     if (item.clientState !== options.expectedClientState) {
-      console.warn("Graph notification rejected: clientState mismatch");
+      console.warn("Graph notification rejected: clientState mismatch", {
+        got: item.clientState,
+      });
       continue;
     }
 
@@ -188,6 +235,7 @@ export async function processGraphNotifications(
     }
 
     if (item.changeType !== "created") continue;
+    sawMessageCreate = true;
 
     const parsed =
       parseChannelMessageResource(item.resource || "") ||
@@ -197,29 +245,25 @@ export async function processGraphNotifications(
 
     if (!parsed) {
       console.warn("Graph notification missing message id", item.resource);
-      needsFullSweep = true;
       continue;
     }
 
     try {
       const result = await syncMessageFromNotification(config, parsed);
       console.info("Graph notification sync:", { ...parsed, ...result });
-
-      if (result.reason === "message_not_found") {
-        needsFullSweep = true;
-      }
     } catch (error) {
       console.error("Graph notification sync failed:", error);
-      needsFullSweep = true;
     }
   }
 
-  if (needsFullSweep) {
+  // Proven path: sweep all mapped threads on any channel activity.
+  // Catches replies whose resource path/id Graph delivers oddly.
+  if (sawMessageCreate) {
     try {
       const sweep = await syncAllThreadReplies(config);
-      console.info("Graph notification fallback sweep:", sweep);
+      console.info("Graph notification sweep:", sweep);
     } catch (error) {
-      console.error("Graph notification fallback sweep failed:", error);
+      console.error("Graph notification sweep failed:", error);
     }
   }
 }

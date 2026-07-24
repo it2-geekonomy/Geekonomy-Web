@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
         ...existing,
         syncedReplyIds: [...synced],
       });
-      void ensureChannelSubscription(config).catch((err) =>
+      await ensureChannelSubscription(config).catch((err) =>
         console.warn("Subscription ensure failed:", err)
       );
       return NextResponse.json({ ok: true, mode: "reply", replyId });
@@ -109,7 +109,7 @@ export async function POST(request: NextRequest) {
       contactName,
       syncedReplyIds: [],
     });
-    void ensureChannelSubscription(config).catch((err) =>
+    await ensureChannelSubscription(config).catch((err) =>
       console.warn("Subscription ensure failed:", err)
     );
 
