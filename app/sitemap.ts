@@ -36,12 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/success-lab`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/about`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -60,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/career`,
+      url: `${baseUrl}/careers`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,

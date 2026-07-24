@@ -130,15 +130,14 @@ export default function CareerApplicationSection() {
               </li>
             ))}
           </ol>
-
         </div>
 
         <div className="rounded-2xl border border-[#27272a] bg-[#0c0c0c] p-6 sm:p-8 lg:p-10">
           <div className="mb-8">
             <Typography
               as="h3"
-              variant="display-xl"
-              className="mb-1 font-semibold text-white "
+              variant="h2"
+              className="mb-1 text-xl font-semibold text-white sm:text-2xl"
             >
               Your Application
             </Typography>
@@ -158,7 +157,7 @@ export default function CareerApplicationSection() {
                   name="firstName"
                   value={values.firstName}
                   onChange={handleChange}
-                  placeholder="Your First Name"
+                  placeholder="abc"
                   className={fieldClass}
                   autoComplete="given-name"
                 />
@@ -191,7 +190,7 @@ export default function CareerApplicationSection() {
                 type="email"
                 value={values.email}
                 onChange={handleChange}
-                placeholder="yourname@yourcompany.com"
+                placeholder="abc@yourcompany.com"
                 className={fieldClass}
                 autoComplete="email"
               />
@@ -394,7 +393,7 @@ export default function CareerApplicationSection() {
       <Typography
         as="p"
         variant="caption"
-        className="mt-10 w-full text-center leading-relaxed text-white sm:mt-12 lg:mt-14"
+        className="mt-10 w-full text-left text-xs leading-relaxed text-white sm:mt-12 lg:mt-14"
       >
         Geekonomy is an equal opportunity employer. We believe diverse teams build
         better products. All applications are reviewed without bias.

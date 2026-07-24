@@ -3,9 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import MouseLight from "@/components/shared/MouseLight";
 import PageContentWrapper from "@/components/shared/PageContentWrapper";
-import Navbar from "@/components/shared/Navbar";
+import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
-import ChatwootIntegration from "@/components/chatbot/ChatwootIntegration";
+import GeekonomyChatWidget from "@/components/chatbot/GeekonomyChatWidget";
 import DisableRightClick from "@/components/shared/DisableRightClick";
 import { NavbarHeightProvider } from "@/contexts/NavbarHeightContext";
 import { getDynamicSEODataFromHeaders } from "@/seoData";
@@ -96,23 +96,6 @@ fbq('track', 'PageView');`,
             `,
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Geekonomy",
-              "url": "https://thegeekonomy.com",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://thegeekonomy.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            }),
-          }}
-        />
-
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3H4C3XJRV9"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -124,7 +107,7 @@ fbq('track', 'PageView');`,
             `,
           }}
         />
-        <meta name="msvalidate.01" content="3414642D2D97FB713AB4BD1AF6E33486" />
+        <meta name="msvalidate.01" content="2C4A40D8C27949A5C618815C1EF6B161" />
       </head>
       <body
         className={`${poppins.variable} antialiased`}
@@ -132,12 +115,12 @@ fbq('track', 'PageView');`,
         <DisableRightClick />
         <NavbarHeightProvider>
           <MouseLight />
-          <Navbar />
+          <Header />
           <PageContentWrapper>
             {children}
             <Footer />
-            <ChatwootIntegration />
           </PageContentWrapper>
+          <GeekonomyChatWidget />
         </NavbarHeightProvider>
       </body>
     </html>

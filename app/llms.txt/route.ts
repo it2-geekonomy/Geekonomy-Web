@@ -37,11 +37,6 @@ export async function GET() {
       description: 'Geekonomy\'s approach to building brand legacies through research, design, and code, emphasizing clarity and purpose in their work process.' 
     },
     { 
-      key: 'success-lab', 
-      path: '/success-lab', 
-      description: 'A webpage showcasing case studies and success stories of Geekonomy\'s projects and achievements.' 
-    },
-    { 
       key: 'about', 
       path: '/about', 
       description: 'Geekonomy builds growth systems for businesses through integrated strategy, technology, branding, and marketing.' 
@@ -57,9 +52,9 @@ export async function GET() {
       description: 'A portfolio and case studies page showcasing Geekonomy\'s work in branding, digital marketing, and full-stack development.' 
     },
     { 
-      key: 'career', 
-      path: '/career', 
-      description: 'A webpage announcing the upcoming availability of career opportunities at Geekonomy, with a message to check back soon.' 
+      key: 'careers', 
+      path: '/careers', 
+      description: 'Explore open roles and internships at Geekonomy across marketing and sales. Apply to join a team building scalable growth systems.' 
     },
     { 
       key: 'blog', 

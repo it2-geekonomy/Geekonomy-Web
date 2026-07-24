@@ -157,6 +157,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "google-display-ads-grow-marketing-results": "Rahul Dutta",
   "safe-link-building-techniques-avoid-google-penalties": "Rahul Dutta",
   "website-design-mistakes-indian-businesses-must-avoid": "Rahul Dutta",
+  "why-bangalore-businesses-need-generative-engine-optimization": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -205,6 +206,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-small-businesses-need-website-india": "Aaron Roshan",
   "how-long-to-build-business-website-india": "Aaron Roshan",
   "essential-features-every-business-website-must-have": "Aaron Roshan",
+  "top-marketing-mistakes-bangalore-startups": "Aaron Roshan",
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "Aaron Roshan",
 
 };
 
@@ -346,7 +349,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "startup-branding-strategy-bangalore-entrepreneurs": "March 24, 2026",
   "how-to-increase-brand-awareness-in-b2b": "March 25, 2026",
   "how-branding-increases-customer-trust-and-conversions": "March 26, 2026",
-   "ensure-brand-tone-multilingual-marketing": "March 26, 2026",
+  "ensure-brand-tone-multilingual-marketing": "March 26, 2026",
   "simplify-brand-message-effective-branding": "March 25, 2026",
   "find-a-partner-for-brand-visibility-audit": "March 26, 2026",
   "how-branding-affects-long-term-retention-strategies": "March 26, 2026",
@@ -355,7 +358,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "why-branding-is-important-before-running-ads": "March 26, 2026",
   "common-branding-mistakes-small-businesses-make": "March 27, 2026",
   "verifying-origin-protects-brand-reputation": "March 27, 2026",
-  "create-internal-links-for-semantic-relevance":  "March 27, 2026",
+  "create-internal-links-for-semantic-relevance": "March 27, 2026",
   "how-rebranding-can-revive-a-struggling-business": "March 27, 2026",
   "how-to-build-brand-authority-online": "March 27, 2026",
   "semantic-seo-agency-how-to-choose-the-best-agency": "March 27, 2026",
@@ -382,6 +385,10 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-long-to-build-business-website-india": "April 6, 2026",
   "essential-features-every-business-website-must-have": "April 6, 2026",
   "website-design-mistakes-indian-businesses-must-avoid": "April 6, 2026",
+  "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
+  "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "July 1 , 2026",
+
 
 
 };
@@ -390,7 +397,10 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
  * Optional "last updated" display date per slug. Only these posts show "Updated On : ".
  * File mtime is not used — it changes from saves, git, CI, and reloads without real edits.
  */
-export const BLOG_UPDATED_DATES: Record<string, string> = {};
+export const BLOG_UPDATED_DATES: Record<string, string> = {
+  "semantic-seo-agency-how-to-choose-the-best-agency": "July 16, 2026 UTC",
+  "how-wordpress-seo-services-improve-traffic": "July 17, 2026 UTC",
+};
 
 /**
  * Get published date for a blog slug (manual only; server uses file mtime when needed).
@@ -493,11 +503,11 @@ export function getDateInfo(slug: string): { date: string; label: BlogDateDispla
   const publishedDate = getPublishedDate(slug);
 
   if (updatedDate) {
-    return { date: updatedDate, label: "Updated On : " };
+    return { date: updatedDate.replace(" UTC", ""), label: "Updated On : " };
   }
 
   if (publishedDate) {
-    return { date: publishedDate, label: "Published On : " };
+    return { date: publishedDate.replace(" UTC", ""), label: "Published On : " };
   }
 
   return { date: "March 3, 2026", label: "Published On : " };

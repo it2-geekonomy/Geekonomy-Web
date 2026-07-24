@@ -14,7 +14,7 @@ export function getBaseUrl(): string {
   if (typeof window !== 'undefined') {
     return window.location.origin;
   }
-  
+
   return process.env.NEXT_PUBLIC_BASE_URL || 'https://thegeekonomy.com';
 }
 
@@ -26,14 +26,14 @@ export async function getBaseUrlFromHeaders(): Promise<string> {
       const headersList = await headers();
       const host = headersList.get('host');
       const protocol = headersList.get('x-forwarded-proto') || 'http';
-      
+
       if (host) {
         return `${protocol}://${host}`;
       }
     }
   } catch {
   }
-  
+
   return getBaseUrl();
 }
 
@@ -46,12 +46,12 @@ export async function getDynamicSEODataFromHeaders(key: string): Promise<SEOData
   return normalizeSeoData(key, baseUrl);
 }
 
-// Static SEO data (non-blog pages)
+// Static SEO data (non-blog pages) - triggering deploy
 const seoData: Record<string, SEOData> = {
   home: {
     title: "Geekonomy | Branding, Marketing & Development",
     description:
-      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems through strategy, branding, web development, and digital execution.",
+      "From branding and digital marketing to full-stack development, Geekonomy builds scalable growth systems with strategy, web development, and execution.",
     url: "https://thegeekonomy.com",
     canonical: "https://thegeekonomy.com",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -69,9 +69,9 @@ const seoData: Record<string, SEOData> = {
   },
 
   "what-we-do": {
-    title: "What We Do | Branding, Marketing & Development Services",
+    title: "What We Do | Branding, Web & Digital Growth Experts",
     description:
-      "Geekonomy builds integrated frameworks for businesses to scale and grow through strategy, tech, branding, and marketing services.",
+      "Discover Geekonomy's branding, web development, SEO, AI, and digital marketing services designed to help businesses scale, grow, and succeed.",
     url: "https://thegeekonomy.com/what-we-do",
     canonical: "https://thegeekonomy.com/what-we-do",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
@@ -84,16 +84,6 @@ const seoData: Record<string, SEOData> = {
       "Learn about Geekonomy's approach to building brand legacies through research, design, and code, emphasizing clarity and purpose.",
     url: "https://thegeekonomy.com/how-we-work",
     canonical: "https://thegeekonomy.com/how-we-work",
-    image: "https://thegeekonomy.com/assets/og-home.jpg",
-    twitterHandle: "@Geekonomy",
-  },
-
-  "success-lab": {
-    title: "Success Lab | Case Studies & Success Stories",
-    description:
-      "Explore Geekonomy's case studies and success stories showcasing real results in branding, digital marketing, and full-stack development.",
-    url: "https://thegeekonomy.com/success-lab",
-    canonical: "https://thegeekonomy.com/success-lab",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
     twitterHandle: "@Geekonomy",
   },
@@ -118,12 +108,12 @@ const seoData: Record<string, SEOData> = {
     twitterHandle: "@Geekonomy",
   },
 
-  career: {
-    title: "Career | Join Our Team",
+  careers: {
+    title: "Careers | Join Our Team",
     description:
       "Join a team focused on building scalable growth systems for ambitious businesses. Explore career opportunities in branding, marketing, and development.",
-    url: "https://thegeekonomy.com/career",
-    canonical: "https://thegeekonomy.com/career",
+    url: "https://thegeekonomy.com/careers",
+    canonical: "https://thegeekonomy.com/careers",
     image: "https://thegeekonomy.com/assets/og-home.jpg",
     twitterHandle: "@Geekonomy",
   },

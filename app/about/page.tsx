@@ -1,30 +1,31 @@
-"use client";
+import type { Metadata } from "next";
+import { getDynamicSEODataFromHeaders } from "@/seoData";
+import AboutPageContent from "@/app/about/AboutPageContent";
 
-import AboutUs from "@/components/Aboutpage/AboutUs";
-import FoundersNote from "@/components/Aboutpage/Foundersnote";
-import OurApproach from "@/components/Aboutpage/OurApproach";
-import GrowthSystems from "@/components/Aboutpage/GrowthSystems";
-import Whatwedo from "@/components/Aboutpage/Whatwedo";
-import ScrollRevealSection from "@/components/animations/ScrollRevealSection";
+export async function generateMetadata(): Promise<Metadata> {
+  const seo = await getDynamicSEODataFromHeaders("about");
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    alternates: {
+      canonical: seo.canonical,
+    },
+    openGraph: {
+      title: seo.title,
+      description: seo.description,
+      url: seo.url,
+      images: seo.image ? [{ url: seo.image }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seo.title,
+      description: seo.description,
+      images: seo.image ? [seo.image] : [],
+    },
+  };
+}
 
 export default function AboutPage() {
-  return (
-    <main className="min-h-screen bg-black overflow-hidden">
-      <ScrollRevealSection index={0}>
-        <AboutUs />
-      </ScrollRevealSection>
-      <ScrollRevealSection index={1}>
-        <FoundersNote />
-      </ScrollRevealSection>
-      <ScrollRevealSection index={2}>
-        <OurApproach />
-      </ScrollRevealSection>
-      <ScrollRevealSection index={3}>
-        <GrowthSystems />
-      </ScrollRevealSection>
-      <ScrollRevealSection index={4}>
-        <Whatwedo />
-      </ScrollRevealSection>
-    </main>
-  );
+  return <AboutPageContent />;
 }
