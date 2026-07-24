@@ -51,14 +51,18 @@ async function claimAndPushReply(
 ): Promise<boolean> {
   if (!reply.id) return false;
 
-  const seen = new Set(thread.syncedReplyIds || []);
+  // Re-read map so concurrent workers see each other's claimed ids
+  const fresh =
+    (await getByTeamsMessageId(thread.teamsMessageId)) || thread;
+  const seen = new Set(fresh.syncedReplyIds || []);
   if (seen.has(reply.id)) return false;
 
   seen.add(reply.id);
   const claimed = await upsertThreadMap({
-    ...thread,
+    ...fresh,
     syncedReplyIds: [...seen],
   });
+  thread.syncedReplyIds = claimed.syncedReplyIds;
 
   try {
     return await pushReplyToChatwoot(
@@ -67,10 +71,12 @@ async function claimAndPushReply(
       reply
     );
   } catch (error) {
-    seen.delete(reply.id);
+    const rollback = (claimed.syncedReplyIds || []).filter(
+      (id) => id !== reply.id
+    );
     await upsertThreadMap({
       ...claimed,
-      syncedReplyIds: [...seen],
+      syncedReplyIds: rollback,
     });
     throw error;
   }

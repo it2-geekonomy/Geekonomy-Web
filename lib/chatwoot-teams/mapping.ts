@@ -101,13 +101,30 @@ export async function upsertThreadMap(
   entry: Omit<ThreadMapEntry, "updatedAt"> & { updatedAt?: string }
 ): Promise<ThreadMapEntry> {
   const map = await loadMap({ force: true });
+  const key = String(entry.chatwootConversationId);
+  const existing = map.byChatwoot[key];
+
+  // MERGE reply ids — concurrent poll/notification workers must not clobber each other
+  const mergedIds = [
+    ...new Set([
+      ...(existing?.syncedReplyIds || []),
+      ...(entry.syncedReplyIds || []),
+    ]),
+  ];
+
   const saved: ThreadMapEntry = {
+    ...existing,
     ...entry,
-    chatwootConversationId: String(entry.chatwootConversationId),
-    teamsMessageId: String(entry.teamsMessageId),
-    syncedReplyIds: entry.syncedReplyIds || [],
+    chatwootConversationId: key,
+    teamsMessageId: String(entry.teamsMessageId || existing?.teamsMessageId || ""),
+    contactName: entry.contactName || existing?.contactName,
+    syncedReplyIds: mergedIds,
     updatedAt: new Date().toISOString(),
   };
+
+  if (!saved.teamsMessageId) {
+    throw new Error("upsertThreadMap: teamsMessageId required");
+  }
 
   map.byChatwoot[saved.chatwootConversationId] = saved;
   map.byTeamsMessage[saved.teamsMessageId] = saved;

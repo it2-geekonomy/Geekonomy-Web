@@ -1,4 +1,4 @@
-import { after, NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 import {
@@ -6,7 +6,7 @@ import {
   type GraphNotificationItem,
 } from "@/lib/chatwoot-teams/sync";
 
-/** Hobby default is 10s — sweep of mapped threads needs more headroom. */
+/** Allow full thread sweep after Graph notifies us. */
 export const maxDuration = 60;
 
 function expectedClientState(): string {
@@ -25,8 +25,9 @@ function validationResponse(token: string) {
 /**
  * Microsoft Graph change + lifecycle notifications.
  *
- * Ack with 202 immediately (Graph throttles slow endpoints), then process
- * via after() so the function stays alive until Chatwoot sync finishes.
+ * Process INLINE (await) so work always finishes on Hobby/serverless.
+ * Graph prefers a fast ack; a single-channel sweep is typically fine under 60s.
+ * Returning 202 only after work was killing sync via after()/timeouts.
  */
 export async function POST(request: NextRequest) {
   const validationToken = request.nextUrl.searchParams.get("validationToken");
@@ -51,17 +52,14 @@ export async function POST(request: NextRequest) {
     return new NextResponse(null, { status: 202 });
   }
 
-  // Keep a reference the runtime must await via after()/waitUntil.
-  const work = processGraphNotifications(config, items, {
-    expectedClientState: expectedClientState(),
-    renewSubscription: () => ensureChannelSubscription(config),
-  }).catch((error) => {
+  try {
+    await processGraphNotifications(config, items, {
+      expectedClientState: expectedClientState(),
+      renewSubscription: () => ensureChannelSubscription(config),
+    });
+  } catch (error) {
     console.error("Graph notification processing failed:", error);
-  });
-
-  after(async () => {
-    await work;
-  });
+  }
 
   return new NextResponse(null, { status: 202 });
 }
