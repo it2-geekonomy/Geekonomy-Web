@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
+import { parseChannelMessageResource } from "@/lib/chatwoot-teams/graph";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
-import { syncTeamsRepliesIntoChat } from "@/lib/chat/teams-bridge";
+import {
+  syncTeamsRepliesByRootMessageId,
+  syncTeamsRepliesIntoChat,
+} from "@/lib/chat/teams-bridge";
 
 export const maxDuration = 60;
 
@@ -11,6 +15,7 @@ type GraphNotificationItem = {
   changeType?: string;
   resource?: string;
   lifecycleEvent?: string;
+  resourceData?: { id?: string };
 };
 
 function expectedClientState(): string {
@@ -54,6 +59,7 @@ export async function POST(request: NextRequest) {
 
   const expected = expectedClientState();
   let sawCreate = false;
+  const targetedRoots = new Set<string>();
 
   for (const item of items) {
     if (item.clientState !== expected) {
@@ -69,13 +75,44 @@ export async function POST(request: NextRequest) {
       }
       continue;
     }
-    if (item.changeType === "created") sawCreate = true;
+    if (item.changeType === "created") {
+      sawCreate = true;
+      const parsed =
+        parseChannelMessageResource(item.resource || "") ||
+        (item.resourceData?.id
+          ? { messageId: item.resourceData.id }
+          : null);
+      if (parsed?.rootMessageId) {
+        targetedRoots.add(parsed.rootMessageId);
+      } else if (parsed?.messageId) {
+        // Might be a root message id or a bare reply id — try as root first
+        targetedRoots.add(parsed.messageId);
+      }
+    }
   }
 
   if (sawCreate) {
     try {
-      const result = await syncTeamsRepliesIntoChat();
-      console.info("Teams→chat sync:", result);
+      if (targetedRoots.size > 0) {
+        let synced = 0;
+        let anyMapped = false;
+        for (const rootId of targetedRoots) {
+          const result = await syncTeamsRepliesByRootMessageId(rootId);
+          if (result.error !== "thread_not_mapped") anyMapped = true;
+          synced += result.synced;
+          console.info("Teams→chat targeted sync:", { rootId, ...result });
+        }
+        // Fallback sweep only when we couldn't map the notified thread
+        if (!anyMapped) {
+          const result = await syncTeamsRepliesIntoChat();
+          console.info("Teams→chat full sync fallback:", result);
+        } else {
+          console.info("Teams→chat targeted total synced:", synced);
+        }
+      } else {
+        const result = await syncTeamsRepliesIntoChat();
+        console.info("Teams→chat sync:", result);
+      }
     } catch (error) {
       console.error("Teams→chat sync failed:", error);
     }

@@ -53,7 +53,10 @@ export default function AdminChatClient() {
   const [active, setActive] = useState<ChatConversation | null>(null);
   const [draft, setDraft] = useState("");
   const [sending, setSending] = useState(false);
+  const [visitorTyping, setVisitorTyping] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const lastTypingSentRef = useRef(0);
+  const typingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const loadAuth = useCallback(async () => {
     const res = await fetch("/api/chat/admin/login");
@@ -80,7 +83,22 @@ export default function AdminChatClient() {
     if (!res.ok) return;
     const data = await res.json();
     setActive(data.conversation);
+    setVisitorTyping(Boolean(data.typing?.visitorTyping));
   }, []);
+
+  const pingAgentTyping = useCallback(
+    (id: string) => {
+      const now = Date.now();
+      if (now - lastTypingSentRef.current < 1200) return;
+      lastTypingSentRef.current = now;
+      void fetch(`/api/chat/conversations/${id}/typing`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ role: "agent" }),
+      }).catch(() => undefined);
+    },
+    []
+  );
 
   useEffect(() => {
     void loadAuth();
@@ -96,13 +114,13 @@ export default function AdminChatClient() {
   useEffect(() => {
     if (!auth?.authenticated || !activeId) return;
     void loadActive(activeId);
-    const t = setInterval(() => void loadActive(activeId), 2500);
+    const t = setInterval(() => void loadActive(activeId), 800);
     return () => clearInterval(t);
   }, [auth?.authenticated, activeId, loadActive]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [active?.messages]);
+  }, [active?.messages, visitorTyping]);
 
   const unreadTotal = useMemo(
     () => conversations.reduce((n, c) => n + (c.unreadForAgent || 0), 0),
@@ -138,7 +156,25 @@ export default function AdminChatClient() {
     if (!activeId || !draft.trim() || sending) return;
     setSending(true);
     const content = draft.trim();
+    const tempId = `temp_${Date.now()}`;
     setDraft("");
+    setActive((prev) =>
+      prev
+        ? {
+            ...prev,
+            messages: [
+              ...prev.messages,
+              {
+                id: tempId,
+                role: "agent",
+                content,
+                createdAt: new Date().toISOString(),
+                senderName: "Geekonomy",
+              },
+            ],
+          }
+        : prev
+    );
     try {
       const res = await fetch(`/api/chat/conversations/${activeId}/messages`, {
         method: "POST",
@@ -154,6 +190,14 @@ export default function AdminChatClient() {
       setActive(data.conversation);
       void loadList();
     } catch (err) {
+      setActive((prev) =>
+        prev
+          ? {
+              ...prev,
+              messages: prev.messages.filter((m) => m.id !== tempId),
+            }
+          : prev
+      );
       setDraft(content);
       alert(err instanceof Error ? err.message : "Send failed");
     } finally {
@@ -320,7 +364,7 @@ export default function AdminChatClient() {
                         agent
                           ? "rounded-br-md bg-[#6FAF4E] text-black"
                           : "rounded-bl-md bg-white/10 text-white"
-                      }`}
+                      } ${m.id.startsWith("temp_") ? "opacity-70" : ""}`}
                     >
                       <p className="mb-0.5 text-[10px] uppercase tracking-wide opacity-60">
                         {m.senderName || (agent ? "You" : "Visitor")}
@@ -333,6 +377,20 @@ export default function AdminChatClient() {
                   </div>
                 );
               })}
+              {visitorTyping && (
+                <div className="flex justify-start">
+                  <div className="rounded-2xl rounded-bl-md bg-white/10 px-3 py-2 text-sm text-white/70">
+                    <p className="mb-1 text-[10px] uppercase tracking-wide opacity-60">
+                      {active.visitorName}
+                    </p>
+                    <span className="inline-flex gap-1">
+                      <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white/70" />
+                      <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white/70 [animation-delay:150ms]" />
+                      <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white/70 [animation-delay:300ms]" />
+                    </span>
+                  </div>
+                </div>
+              )}
               <div ref={bottomRef} />
             </div>
 
@@ -342,7 +400,15 @@ export default function AdminChatClient() {
             >
               <textarea
                 value={draft}
-                onChange={(e) => setDraft(e.target.value)}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setDraft(value);
+                  if (!activeId || !value.trim()) return;
+                  if (typingTimerRef.current) clearTimeout(typingTimerRef.current);
+                  typingTimerRef.current = setTimeout(() => {
+                    pingAgentTyping(activeId);
+                  }, 250);
+                }}
                 rows={2}
                 placeholder="Reply to visitor…"
                 className="min-h-[48px] flex-1 resize-none rounded-xl border border-white/10 bg-black/40 px-3 py-2 text-sm outline-none focus:border-[#6FAF4E]/60"

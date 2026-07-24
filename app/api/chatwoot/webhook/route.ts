@@ -93,13 +93,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true, mode: "reply", replyId });
     }
 
+    const emailLine =
+      contactEmail && contactEmail !== "n/a" ? `\n${contactEmail}` : "";
     const teamsText = [
-      `New website chat #${conversationId}`,
-      `From: ${contactName} · ${contactEmail}`,
+      `New chat from ${contactName}${emailLine}`,
       "",
       text,
       "",
-      `Reply in this thread to answer on the website. Conversation ID: ${conversationId}`,
+      "Reply in this thread to answer them.",
     ].join("\n");
 
     const teamsMessageId = await postChannelMessage(config, teamsText);

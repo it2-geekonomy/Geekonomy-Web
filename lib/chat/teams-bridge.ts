@@ -8,7 +8,7 @@ import {
 } from "@/lib/chatwoot-teams/graph";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 import {
-  addMessage,
+  addAgentMessageFromTeams,
   getConversation,
   listConversations,
   updateConversationTeamsLink,
@@ -21,8 +21,74 @@ export function getTeamsConfig(): GraphBridgeConfig | null {
 
 function shouldSkipTeamsText(text: string): boolean {
   return (
-    text.includes("Conversation ID:") && text.includes("New website chat")
+    text.includes("New chat from") &&
+    text.includes("Reply in this thread to answer them.")
   );
+}
+
+/** Serialize sync per conversation inside one server instance */
+const syncLocks = new Map<string, Promise<unknown>>();
+/** Serialize Teams pushes so first message creates the root before follow-ups reply */
+const teamsPushQueues = new Map<string, Promise<unknown>>();
+
+async function withConversationLock<T>(
+  conversationId: string,
+  fn: () => Promise<T>
+): Promise<T> {
+  const previous = syncLocks.get(conversationId) || Promise.resolve();
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  const next = previous.then(() => gate);
+  syncLocks.set(conversationId, next);
+
+  await previous;
+  try {
+    return await fn();
+  } finally {
+    release();
+    if (syncLocks.get(conversationId) === next) {
+      syncLocks.delete(conversationId);
+    }
+  }
+}
+
+/** Queue visitor→Teams push so API can respond instantly. */
+export function enqueueVisitorTeamsPush(
+  conversationId: string,
+  visitorText: string
+): void {
+  const previous = teamsPushQueues.get(conversationId) || Promise.resolve();
+  const next = previous
+    .then(async () => {
+      const conversation = await getConversation(conversationId);
+      if (!conversation) return;
+      await pushVisitorMessageToTeams(conversation, visitorText);
+    })
+    .catch((error) => {
+      console.error("enqueueVisitorTeamsPush failed:", error);
+    });
+  teamsPushQueues.set(conversationId, next);
+}
+
+/** Queue agent→Teams push so admin reply returns instantly. */
+export function enqueueAgentTeamsPush(
+  conversationId: string,
+  agentText: string,
+  agentName?: string
+): void {
+  const previous = teamsPushQueues.get(conversationId) || Promise.resolve();
+  const next = previous
+    .then(async () => {
+      const conversation = await getConversation(conversationId);
+      if (!conversation) return;
+      await pushAgentMessageToTeams(conversation, agentText, agentName);
+    })
+    .catch((error) => {
+      console.error("enqueueAgentTeamsPush failed:", error);
+    });
+  teamsPushQueues.set(conversationId, next);
 }
 
 /** Push a new / follow-up visitor message into the Teams channel thread. */
@@ -39,14 +105,12 @@ export async function pushVisitorMessageToTeams(
   try {
     if (!conversation.teamsMessageId) {
       const teamsText = [
-        `New website chat #${conversation.id.slice(0, 8)}`,
-        `From: ${conversation.visitorName}`,
+        `New chat from ${conversation.visitorName}`,
         conversation.pageUrl ? `Page: ${conversation.pageUrl}` : "",
         "",
         visitorText,
         "",
-        `Reply in this thread to answer on the website.`,
-        `Conversation ID: ${conversation.id}`,
+        "Reply in this thread to answer them.",
       ]
         .filter(Boolean)
         .join("\n");
@@ -123,69 +187,69 @@ export async function syncTeamsRepliesForConversation(
   const config = getTeamsConfig();
   if (!config) return { synced: 0, error: "Teams not configured" };
 
-  const conversation = await getConversation(conversationId);
-  if (!conversation?.teamsMessageId) return { synced: 0 };
+  return withConversationLock(conversationId, async () => {
+    const conversation = await getConversation(conversationId);
+    if (!conversation?.teamsMessageId) return { synced: 0 };
 
-  try {
-    const replies = await listMessageReplies(
-      config,
-      conversation.teamsMessageId
-    );
-    const seen = new Set(conversation.syncedTeamsReplyIds || []);
-    let synced = 0;
+    try {
+      const replies = await listMessageReplies(
+        config,
+        conversation.teamsMessageId
+      );
+      // Fresh read inside lock — concurrent workers may have claimed ids already
+      const fresh = (await getConversation(conversationId)) || conversation;
+      const seen = new Set(fresh.syncedTeamsReplyIds || []);
+      let synced = 0;
 
-    for (const reply of replies) {
-      if (!reply.id || seen.has(reply.id)) continue;
+      for (const reply of replies) {
+        if (!reply.id || seen.has(reply.id)) continue;
 
-      const text = stripHtml(reply.body?.content || "");
-      if (!text || shouldSkipTeamsText(text)) {
+        const text = stripHtml(reply.body?.content || "");
+        if (!text || shouldSkipTeamsText(text)) {
+          seen.add(reply.id);
+          await updateConversationTeamsLink(conversation.id, {
+            teamsMessageId: conversation.teamsMessageId,
+            syncedTeamsReplyIds: [...seen],
+          });
+          continue;
+        }
+
+        // Skip our mirrored visitor posts
+        if (
+          text.includes(`**${conversation.visitorName}:**`) ||
+          text.startsWith(`${conversation.visitorName}:`)
+        ) {
+          seen.add(reply.id);
+          await updateConversationTeamsLink(conversation.id, {
+            teamsMessageId: conversation.teamsMessageId,
+            syncedTeamsReplyIds: [...seen],
+          });
+          continue;
+        }
+
+        const fromName = reply.from?.user?.displayName || "Agent";
+        const content =
+          text.replace(/^\*\*[^*]+\*\*:\s*/m, "").trim() || text;
+
+        const result = await addAgentMessageFromTeams({
+          conversationId: conversation.id,
+          teamsReplyId: reply.id,
+          content,
+          senderName: fromName,
+        });
+
         seen.add(reply.id);
-        continue;
+        if (!result.skipped) synced += 1;
       }
 
-      // Skip our mirrored visitor posts
-      if (
-        text.includes(`**${conversation.visitorName}:**`) ||
-        text.startsWith(`${conversation.visitorName}:`)
-      ) {
-        seen.add(reply.id);
-        continue;
-      }
-
-      const fromName = reply.from?.user?.displayName || "Agent";
-      const content =
-        text.replace(/^\*\*[^*]+\*\*:\s*/m, "").trim() || text;
-
-      seen.add(reply.id);
-      await updateConversationTeamsLink(conversation.id, {
-        teamsMessageId: conversation.teamsMessageId,
-        syncedTeamsReplyIds: [...seen],
-      });
-
-      await addMessage({
-        conversationId: conversation.id,
-        role: "agent",
-        content,
-        senderName: fromName,
-        fromTeams: true,
-      });
-      synced += 1;
+      return { synced };
+    } catch (error) {
+      return {
+        synced: 0,
+        error: error instanceof Error ? error.message : "sync failed",
+      };
     }
-
-    if (seen.size !== (conversation.syncedTeamsReplyIds || []).length) {
-      await updateConversationTeamsLink(conversation.id, {
-        teamsMessageId: conversation.teamsMessageId,
-        syncedTeamsReplyIds: [...seen],
-      });
-    }
-
-    return { synced };
-  } catch (error) {
-    return {
-      synced: 0,
-      error: error instanceof Error ? error.message : "sync failed",
-    };
-  }
+  });
 }
 
 /**
@@ -216,4 +280,20 @@ export async function syncTeamsRepliesIntoChat(): Promise<{
   }
 
   return { threads, synced, errors };
+}
+
+/** Fast path: sync only the conversation whose Teams root message matches. */
+export async function syncTeamsRepliesByRootMessageId(
+  teamsMessageId: string
+): Promise<{ synced: number; conversationId?: string; error?: string }> {
+  const summaries = await listConversations();
+  const match = summaries.find((c) => c.teamsMessageId === teamsMessageId);
+  if (!match) return { synced: 0, error: "thread_not_mapped" };
+
+  const result = await syncTeamsRepliesForConversation(match.id);
+  return {
+    synced: result.synced,
+    conversationId: match.id,
+    error: result.error,
+  };
 }

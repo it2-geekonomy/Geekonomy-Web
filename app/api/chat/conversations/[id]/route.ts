@@ -4,16 +4,18 @@ import {
   getConversation,
   markConversationRead,
   setConversationStatus,
+  withDedupedMessages,
 } from "@/lib/chat/store";
 import { syncTeamsRepliesForConversation } from "@/lib/chat/teams-bridge";
+import { getConversationTyping } from "@/lib/chat/typing";
 
 export const maxDuration = 30;
 
 type Ctx = { params: Promise<{ id: string }> };
 
-/** Avoid hammering Graph on every 2.5s widget poll */
+/** Keep Teams→site snappy without hammering Graph every tick */
 const lastPullAt = new Map<string, number>();
-const PULL_EVERY_MS = 4000;
+const PULL_EVERY_MS = 800;
 
 export async function GET(request: NextRequest, context: Ctx) {
   const { id } = await context.params;
@@ -32,7 +34,8 @@ export async function GET(request: NextRequest, context: Ctx) {
       }
     }
 
-    // Localhost never receives Graph webhooks — pull Teams replies while chatting
+    // Pull Teams replies while chatting (localhost has no Graph webhooks;
+    // production also benefits when webhook delivery lags)
     if (conversation.teamsMessageId) {
       const last = lastPullAt.get(id) || 0;
       if (Date.now() - last >= PULL_EVERY_MS) {
@@ -51,7 +54,10 @@ export async function GET(request: NextRequest, context: Ctx) {
       conversation = (await getConversation(id)) || conversation;
     }
 
-    return NextResponse.json({ conversation });
+    return NextResponse.json({
+      conversation: withDedupedMessages(conversation),
+      typing: getConversationTyping(id),
+    });
   } catch (error) {
     console.error("get conversation:", error);
     return NextResponse.json(
@@ -62,12 +68,8 @@ export async function GET(request: NextRequest, context: Ctx) {
 }
 
 export async function PATCH(request: NextRequest, context: Ctx) {
-  if (!(await isChatAdminAuthenticated())) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
   const { id } = await context.params;
-  let body: { status?: "open" | "closed" };
+  let body: { status?: "open" | "closed"; visitorId?: string };
   try {
     body = (await request.json()) as typeof body;
   } catch {
@@ -78,7 +80,26 @@ export async function PATCH(request: NextRequest, context: Ctx) {
     return NextResponse.json({ error: "Invalid status" }, { status: 400 });
   }
 
+  const isAdmin = await isChatAdminAuthenticated();
+
   try {
+    const existing = await getConversation(id);
+    if (!existing) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+
+    // Admin can always update; visitor can only close their own conversation
+    if (!isAdmin) {
+      const visitorId = (body.visitorId || "").trim();
+      if (
+        body.status !== "closed" ||
+        !visitorId ||
+        visitorId !== existing.visitorId
+      ) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+      }
+    }
+
     const conversation = await setConversationStatus(id, body.status);
     if (!conversation) {
       return NextResponse.json({ error: "Not found" }, { status: 404 });

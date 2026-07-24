@@ -40,6 +40,60 @@ function getOrCreateVisitorId(): string {
   return id;
 }
 
+function TypingDots({ label }: { label: string }) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "flex-start",
+      }}
+    >
+      <div
+        style={{
+          borderRadius: 16,
+          borderBottomLeftRadius: 4,
+          padding: "8px 12px",
+          background: "rgba(255,255,255,0.1)",
+          color: "#fff",
+          fontSize: 14,
+        }}
+      >
+        <p
+          style={{
+            margin: "0 0 4px",
+            fontSize: 10,
+            textTransform: "uppercase",
+            letterSpacing: "0.04em",
+            color: "rgba(255,255,255,0.4)",
+          }}
+        >
+          {label}
+        </p>
+        <span style={{ display: "inline-flex", gap: 4, alignItems: "center" }}>
+          {[0, 1, 2].map((i) => (
+            <span
+              key={i}
+              style={{
+                width: 6,
+                height: 6,
+                borderRadius: "50%",
+                background: "rgba(255,255,255,0.65)",
+                animation: `geekonomy-typing 1.1s ease-in-out ${i * 0.15}s infinite`,
+              }}
+            />
+          ))}
+        </span>
+      </div>
+      <style>{`
+        @keyframes geekonomy-typing {
+          0%, 80%, 100% { opacity: 0.25; transform: translateY(0); }
+          40% { opacity: 1; transform: translateY(-2px); }
+        }
+      `}</style>
+    </div>
+  );
+}
+
 export default function GeekonomyChatWidget() {
   const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);
@@ -51,14 +105,40 @@ export default function GeekonomyChatWidget() {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [hasUnread, setHasUnread] = useState(false);
+  const [agentTyping, setAgentTyping] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const lastCountRef = useRef(0);
+  const typingHeartbeatRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastTypingSentRef = useRef(0);
 
   useEffect(() => {
     setMounted(true);
     setVisitorId(getOrCreateVisitorId());
     setConversationId(localStorage.getItem(CONV_KEY));
     setVisitorName(localStorage.getItem(NAME_KEY) || "");
+  }, []);
+
+  const mergeServerMessages = useCallback((next: ChatMessage[]) => {
+    setMessages((prev) => {
+      const temps = prev.filter((m) => m.id.startsWith("temp_"));
+      const pending = temps.filter(
+        (temp) =>
+          !next.some(
+            (n) => n.role === "visitor" && n.content === temp.content
+          )
+      );
+      const merged = [...next, ...pending];
+      if (
+        prev.length === merged.length &&
+        prev.every(
+          (m, i) =>
+            m.id === merged[i]?.id && m.content === merged[i]?.content
+        )
+      ) {
+        return prev;
+      }
+      return merged;
+    });
   }, []);
 
   const refresh = useCallback(async () => {
@@ -75,9 +155,13 @@ export default function GeekonomyChatWidget() {
         }
         return;
       }
-      const data = (await res.json()) as { conversation: ChatConversation };
+      const data = (await res.json()) as {
+        conversation: ChatConversation;
+        typing?: { agentTyping?: boolean };
+      };
       const next = data.conversation.messages || [];
-      setMessages(next);
+      mergeServerMessages(next);
+      setAgentTyping(Boolean(data.typing?.agentTyping));
       if (
         !open &&
         next.length > lastCountRef.current &&
@@ -85,38 +169,103 @@ export default function GeekonomyChatWidget() {
       ) {
         setHasUnread(true);
       }
-      lastCountRef.current = next.length;
+      lastCountRef.current = Math.max(lastCountRef.current, next.length);
     } catch {
       // ignore poll errors
     }
-  }, [conversationId, visitorId, open]);
+  }, [conversationId, visitorId, open, mergeServerMessages]);
 
   useEffect(() => {
     if (!conversationId || !visitorId) return;
     void refresh();
-    const t = setInterval(() => void refresh(), 2500);
+    const intervalMs = open ? 800 : 3000;
+    const t = setInterval(() => void refresh(), intervalMs);
     return () => clearInterval(t);
-  }, [conversationId, visitorId, refresh]);
+  }, [conversationId, visitorId, refresh, open]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, open]);
+  }, [messages, open, agentTyping]);
 
   useEffect(() => {
     if (open) setHasUnread(false);
   }, [open]);
+
+  const pingTyping = useCallback(() => {
+    if (!conversationId || !visitorId) return;
+    const now = Date.now();
+    if (now - lastTypingSentRef.current < 1200) return;
+    lastTypingSentRef.current = now;
+    void fetch(`/api/chat/conversations/${conversationId}/typing`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ role: "visitor", visitorId }),
+    }).catch(() => undefined);
+  }, [conversationId, visitorId]);
+
+  const onDraftChange = (value: string) => {
+    setDraft(value);
+    if (!value.trim() || !conversationId) return;
+    if (typingHeartbeatRef.current) clearTimeout(typingHeartbeatRef.current);
+    typingHeartbeatRef.current = setTimeout(() => {
+      pingTyping();
+    }, 250);
+  };
 
   const canSend = useMemo(
     () => draft.trim().length > 0 && !sending && Boolean(visitorId),
     [draft, sending, visitorId]
   );
 
+  const endConversation = useCallback(async () => {
+    const endingId = conversationId;
+    const endingVisitorId = visitorId;
+
+    // Clear stored chat session (localStorage — used instead of cookies)
+    localStorage.removeItem(CONV_KEY);
+    localStorage.removeItem(NAME_KEY);
+
+    setConversationId(null);
+    setVisitorName("");
+    setMessages([]);
+    setDraft("");
+    setError(null);
+    setHasUnread(false);
+    setAgentTyping(false);
+    setSending(false);
+    lastCountRef.current = 0;
+
+    // Best-effort: mark closed on server so inbox shows it ended
+    if (endingId && endingVisitorId) {
+      void fetch(`/api/chat/conversations/${endingId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          status: "closed",
+          visitorId: endingVisitorId,
+        }),
+      }).catch(() => undefined);
+    }
+  }, [conversationId, visitorId]);
+
   async function handleSend() {
     if (!canSend) return;
     const text = draft.trim();
+    const tempId = `temp_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`;
+    const optimistic: ChatMessage = {
+      id: tempId,
+      role: "visitor",
+      content: text,
+      createdAt: new Date().toISOString(),
+      senderName: visitorName || "Visitor",
+    };
+
     setSending(true);
     setError(null);
     setDraft("");
+    // Show instantly — don't wait for Teams Graph
+    setMessages((prev) => [...prev, optimistic]);
+    lastCountRef.current += 1;
 
     try {
       if (!conversationId) {
@@ -136,7 +285,7 @@ export default function GeekonomyChatWidget() {
         localStorage.setItem(CONV_KEY, conv.id);
         if (visitorName) localStorage.setItem(NAME_KEY, visitorName);
         setConversationId(conv.id);
-        setMessages(conv.messages || []);
+        mergeServerMessages(conv.messages || []);
         lastCountRef.current = conv.messages?.length || 0;
       } else {
         const res = await fetch(
@@ -154,10 +303,11 @@ export default function GeekonomyChatWidget() {
         );
         const data = await res.json();
         if (!res.ok) throw new Error(data.error || "Failed to send");
-        setMessages(data.conversation.messages || []);
+        mergeServerMessages(data.conversation.messages || []);
         lastCountRef.current = data.conversation.messages?.length || 0;
       }
     } catch (err) {
+      setMessages((prev) => prev.filter((m) => m.id !== tempId));
       setDraft(text);
       setError(err instanceof Error ? err.message : "Could not send");
     } finally {
@@ -210,9 +360,10 @@ export default function GeekonomyChatWidget() {
                 borderBottom: "1px solid rgba(255,255,255,0.1)",
                 background: "#111",
                 padding: "12px 16px",
+                gap: 8,
               }}
             >
-              <div>
+              <div style={{ minWidth: 0, flex: 1 }}>
                 <p
                   style={{
                     margin: 0,
@@ -233,21 +384,41 @@ export default function GeekonomyChatWidget() {
                   We typically reply in minutes
                 </p>
               </div>
-              <button
-                type="button"
-                aria-label="Close chat"
-                onClick={() => setOpen(false)}
-                style={{
-                  border: "none",
-                  background: "transparent",
-                  color: "rgba(255,255,255,0.6)",
-                  cursor: "pointer",
-                  padding: 6,
-                  borderRadius: 999,
-                }}
-              >
-                <X size={18} />
-              </button>
+              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                {conversationId && (
+                  <button
+                    type="button"
+                    onClick={() => void endConversation()}
+                    style={{
+                      border: "1px solid rgba(255,255,255,0.15)",
+                      background: "transparent",
+                      color: "rgba(255,255,255,0.7)",
+                      cursor: "pointer",
+                      padding: "6px 10px",
+                      borderRadius: 999,
+                      fontSize: 11,
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    End chat
+                  </button>
+                )}
+                <button
+                  type="button"
+                  aria-label="Close chat"
+                  onClick={() => setOpen(false)}
+                  style={{
+                    border: "none",
+                    background: "transparent",
+                    color: "rgba(255,255,255,0.6)",
+                    cursor: "pointer",
+                    padding: 6,
+                    borderRadius: 999,
+                  }}
+                >
+                  <X size={18} />
+                </button>
+              </div>
             </header>
 
             <div
@@ -276,6 +447,7 @@ export default function GeekonomyChatWidget() {
               )}
               {messages.map((m) => {
                 const mine = m.role === "visitor";
+                const pending = m.id.startsWith("temp_");
                 return (
                   <div
                     key={m.id}
@@ -296,6 +468,7 @@ export default function GeekonomyChatWidget() {
                         whiteSpace: "pre-wrap",
                         background: mine ? ACCENT : "rgba(255,255,255,0.1)",
                         color: mine ? "#000" : "#fff",
+                        opacity: pending ? 0.75 : 1,
                       }}
                     >
                       {!mine && (
@@ -316,6 +489,7 @@ export default function GeekonomyChatWidget() {
                   </div>
                 );
               })}
+              {agentTyping && <TypingDots label="Geekonomy" />}
               <div ref={bottomRef} />
             </div>
 
@@ -359,7 +533,7 @@ export default function GeekonomyChatWidget() {
               >
                 <textarea
                   value={draft}
-                  onChange={(e) => setDraft(e.target.value)}
+                  onChange={(e) => onDraftChange(e.target.value)}
                   rows={1}
                   placeholder="Type a message…"
                   style={{
@@ -408,7 +582,6 @@ export default function GeekonomyChatWidget() {
           </div>
         )}
 
-        {/* Same Geekonomy avatar launcher as the old Chatwoot bubble */}
         <button
           type="button"
           aria-label={open ? "Close Geekonomy chat" : "Open Geekonomy chat"}
