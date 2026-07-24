@@ -4,8 +4,9 @@ import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 import { syncAllThreadReplies } from "@/lib/chatwoot-teams/sync";
 
 /**
- * Backup sync + subscription renew.
- * Prefer Graph notifications for speed; keep this for recovery.
+ * Safety net: renew Graph subscription + sweep any missed Teams replies.
+ * Primary delivery is /api/teams/graph-notifications (near real-time).
+ * Cron: every 6 hours (vercel.json).
  */
 async function run() {
   const config = getGraphBridgeConfig();
@@ -17,16 +18,33 @@ async function run() {
   }
 
   let subscription = null;
+  let subscriptionError: string | null = null;
   try {
     subscription = await ensureChannelSubscription(config);
+    console.info("Subscription renew/ensure ok:", {
+      id: subscription.id,
+      expirationDateTime: subscription.expirationDateTime,
+      resource: subscription.resource,
+    });
   } catch (error) {
-    console.error("ensureChannelSubscription:", error);
+    subscriptionError =
+      error instanceof Error ? error.message : "ensure failed";
+    console.error("ensureChannelSubscription FAILED:", error);
   }
 
   const sync = await syncAllThreadReplies(config);
+  if (sync.errors.length) {
+    console.warn("Backup sync errors:", sync.errors);
+  }
+
   return {
     status: 200 as const,
-    body: { ok: true, subscription, ...sync },
+    body: {
+      ok: true,
+      subscription,
+      subscriptionError,
+      ...sync,
+    },
   };
 }
 

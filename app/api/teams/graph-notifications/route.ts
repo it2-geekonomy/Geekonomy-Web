@@ -1,18 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
+import { after, NextRequest, NextResponse } from "next/server";
 import { getGraphBridgeConfig } from "@/lib/chatwoot-teams/config";
 import { ensureChannelSubscription } from "@/lib/chatwoot-teams/subscriptions";
 import {
-  syncAllThreadReplies,
+  processGraphNotifications,
+  type GraphNotificationItem,
 } from "@/lib/chatwoot-teams/sync";
-
-type GraphNotification = {
-  subscriptionId?: string;
-  clientState?: string;
-  changeType?: string;
-  resource?: string;
-  lifecycleEvent?: string;
-  resourceData?: { id?: string };
-};
 
 function expectedClientState(): string {
   return (
@@ -20,17 +12,21 @@ function expectedClientState(): string {
   );
 }
 
+function validationResponse(token: string) {
+  return new NextResponse(token, {
+    status: 200,
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
+
 /**
  * Microsoft Graph change + lifecycle notifications.
- * Must answer validationToken within seconds as text/plain.
+ * Ack in <1s (202); heavy work runs via `after()` so Graph does not throttle us.
  */
 export async function POST(request: NextRequest) {
   const validationToken = request.nextUrl.searchParams.get("validationToken");
   if (validationToken) {
-    return new NextResponse(validationToken, {
-      status: 200,
-      headers: { "Content-Type": "text/plain; charset=utf-8" },
-    });
+    return validationResponse(validationToken);
   }
 
   const config = getGraphBridgeConfig();
@@ -38,58 +34,38 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Not configured" }, { status: 503 });
   }
 
-  let payload: { value?: GraphNotification[] };
+  let payload: { value?: GraphNotificationItem[] };
   try {
-    payload = (await request.json()) as { value?: GraphNotification[] };
+    payload = (await request.json()) as { value?: GraphNotificationItem[] };
   } catch {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const expected = expectedClientState();
-  const items = payload.value || []; 
-
-  // Acknowledge quickly; process sync inline (serverless has no background)
-  for (const item of items) {
-    if (item.clientState && item.clientState !== expected) {
-      console.warn("Graph notification clientState mismatch");
-      continue;
-    }
-
-    // Lifecycle: renew subscription
-    if (item.lifecycleEvent) {
-      console.info("Graph lifecycle:", item.lifecycleEvent);
-      try {
-        await ensureChannelSubscription(config);
-      } catch (error) {
-        console.error("Lifecycle renew failed:", error);
-      }
-      continue;
-    }
-
-    if (item.changeType !== "created") continue;
-
-    try {
-      // Always sync all mapped threads on any channel activity.
-      // Single-message lookup is unreliable for reply IDs vs root IDs.
-      const result = await syncAllThreadReplies(config);
-      console.info("Graph notification sync:", result);
-    } catch (error) {
-      console.error("Graph notification sync failed:", error);
-    }
+  const items = payload.value || [];
+  if (items.length === 0) {
+    return new NextResponse(null, { status: 202 });
   }
 
-  return NextResponse.json({ ok: true }, { status: 202 });
+  after(async () => {
+    try {
+      await processGraphNotifications(config, items, {
+        expectedClientState: expectedClientState(),
+        renewSubscription: () => ensureChannelSubscription(config),
+      });
+    } catch (error) {
+      console.error("Graph notification after() failed:", error);
+    }
+  });
+
+  return new NextResponse(null, { status: 202 });
 }
 
 export async function GET(request: NextRequest) {
-  // Some validators use GET with validationToken
   const validationToken = request.nextUrl.searchParams.get("validationToken");
   if (validationToken) {
-    return new NextResponse(validationToken, {
-      status: 200,
-      headers: { "Content-Type": "text/plain; charset=utf-8" },
-    });
+    return validationResponse(validationToken);
   }
+
   return NextResponse.json({
     service: "graph-notifications",
     hint: "Microsoft Graph posts change notifications here.",
