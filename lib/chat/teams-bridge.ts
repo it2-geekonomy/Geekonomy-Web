@@ -21,7 +21,8 @@ export function getTeamsConfig(): GraphBridgeConfig | null {
 
 function shouldSkipTeamsText(text: string): boolean {
   return (
-    text.includes("Conversation ID:") && text.includes("New website chat")
+    text.includes("New chat from") &&
+    text.includes("Reply in this thread to answer them.")
   );
 }
 
@@ -104,14 +105,12 @@ export async function pushVisitorMessageToTeams(
   try {
     if (!conversation.teamsMessageId) {
       const teamsText = [
-        `New website chat #${conversation.id.slice(0, 8)}`,
-        `From: ${conversation.visitorName}`,
+        `New chat from ${conversation.visitorName}`,
         conversation.pageUrl ? `Page: ${conversation.pageUrl}` : "",
         "",
         visitorText,
         "",
-        `Reply in this thread to answer on the website.`,
-        `Conversation ID: ${conversation.id}`,
+        "Reply in this thread to answer them.",
       ]
         .filter(Boolean)
         .join("\n");

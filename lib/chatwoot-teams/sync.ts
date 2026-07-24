@@ -17,7 +17,8 @@ import {
 
 function shouldSkipText(text: string): boolean {
   return (
-    text.includes("Conversation ID:") && text.includes("New website chat")
+    text.includes("New chat from") &&
+    text.includes("Reply in this thread to answer them.")
   );
 }
 

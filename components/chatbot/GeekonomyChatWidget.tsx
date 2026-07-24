@@ -217,6 +217,37 @@ export default function GeekonomyChatWidget() {
     [draft, sending, visitorId]
   );
 
+  const endConversation = useCallback(async () => {
+    const endingId = conversationId;
+    const endingVisitorId = visitorId;
+
+    // Clear stored chat session (localStorage — used instead of cookies)
+    localStorage.removeItem(CONV_KEY);
+    localStorage.removeItem(NAME_KEY);
+
+    setConversationId(null);
+    setVisitorName("");
+    setMessages([]);
+    setDraft("");
+    setError(null);
+    setHasUnread(false);
+    setAgentTyping(false);
+    setSending(false);
+    lastCountRef.current = 0;
+
+    // Best-effort: mark closed on server so inbox shows it ended
+    if (endingId && endingVisitorId) {
+      void fetch(`/api/chat/conversations/${endingId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          status: "closed",
+          visitorId: endingVisitorId,
+        }),
+      }).catch(() => undefined);
+    }
+  }, [conversationId, visitorId]);
+
   async function handleSend() {
     if (!canSend) return;
     const text = draft.trim();
@@ -329,9 +360,10 @@ export default function GeekonomyChatWidget() {
                 borderBottom: "1px solid rgba(255,255,255,0.1)",
                 background: "#111",
                 padding: "12px 16px",
+                gap: 8,
               }}
             >
-              <div>
+              <div style={{ minWidth: 0, flex: 1 }}>
                 <p
                   style={{
                     margin: 0,
@@ -352,21 +384,41 @@ export default function GeekonomyChatWidget() {
                   We typically reply in minutes
                 </p>
               </div>
-              <button
-                type="button"
-                aria-label="Close chat"
-                onClick={() => setOpen(false)}
-                style={{
-                  border: "none",
-                  background: "transparent",
-                  color: "rgba(255,255,255,0.6)",
-                  cursor: "pointer",
-                  padding: 6,
-                  borderRadius: 999,
-                }}
-              >
-                <X size={18} />
-              </button>
+              <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                {conversationId && (
+                  <button
+                    type="button"
+                    onClick={() => void endConversation()}
+                    style={{
+                      border: "1px solid rgba(255,255,255,0.15)",
+                      background: "transparent",
+                      color: "rgba(255,255,255,0.7)",
+                      cursor: "pointer",
+                      padding: "6px 10px",
+                      borderRadius: 999,
+                      fontSize: 11,
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    End chat
+                  </button>
+                )}
+                <button
+                  type="button"
+                  aria-label="Close chat"
+                  onClick={() => setOpen(false)}
+                  style={{
+                    border: "none",
+                    background: "transparent",
+                    color: "rgba(255,255,255,0.6)",
+                    cursor: "pointer",
+                    padding: 6,
+                    borderRadius: 999,
+                  }}
+                >
+                  <X size={18} />
+                </button>
+              </div>
             </header>
 
             <div

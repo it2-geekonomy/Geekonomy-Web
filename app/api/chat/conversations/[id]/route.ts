@@ -68,12 +68,8 @@ export async function GET(request: NextRequest, context: Ctx) {
 }
 
 export async function PATCH(request: NextRequest, context: Ctx) {
-  if (!(await isChatAdminAuthenticated())) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
   const { id } = await context.params;
-  let body: { status?: "open" | "closed" };
+  let body: { status?: "open" | "closed"; visitorId?: string };
   try {
     body = (await request.json()) as typeof body;
   } catch {
@@ -84,7 +80,26 @@ export async function PATCH(request: NextRequest, context: Ctx) {
     return NextResponse.json({ error: "Invalid status" }, { status: 400 });
   }
 
+  const isAdmin = await isChatAdminAuthenticated();
+
   try {
+    const existing = await getConversation(id);
+    if (!existing) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+
+    // Admin can always update; visitor can only close their own conversation
+    if (!isAdmin) {
+      const visitorId = (body.visitorId || "").trim();
+      if (
+        body.status !== "closed" ||
+        !visitorId ||
+        visitorId !== existing.visitorId
+      ) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+      }
+    }
+
     const conversation = await setConversationStatus(id, body.status);
     if (!conversation) {
       return NextResponse.json({ error: "Not found" }, { status: 404 });
