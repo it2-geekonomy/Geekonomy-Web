@@ -68,7 +68,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Meta Pixel Code */}
         <script
           dangerouslySetInnerHTML={{
             __html: `!function(f,b,e,v,n,t,s)
@@ -79,16 +78,10 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1651612692772299');
+fbq('init', '803972362726573');
 fbq('track', 'PageView');`,
           }}
         />
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1651612692772299&ev=PageView&noscript=1" />`,
-          }}
-        />
-        {/* End Meta Pixel Code */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-RGKDG2K8H6"
