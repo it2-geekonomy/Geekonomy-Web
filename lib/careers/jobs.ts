@@ -40,19 +40,8 @@ export const CAREER_JOBS: CareerJob[] = [
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=13",
   },
   {
-    id: "social-media-manager",
-    title: "Social Media Manager",
-    team: "DIGI360",
-    location: "Bengaluru",
-    employmentType: "Full-time",
-    experience: "Create scroll-stopping content and conversations!",
-    recruitmentId: "12",
-    applicationUrl:
-      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=12",
-  },
-  {
-    id: "seo-strategist-intern",
-    title: "SEO Strategist - Intern",
+    id: "seo-intern",
+    title: "SEO Intern",
     team: "DIGI360",
     location: "Bengaluru",
     employmentType: "Internship",
@@ -70,9 +59,9 @@ export const CAREER_JOBS: CareerJob[] = [
     employmentType: "Full-time",
     experience:
       "Turn conversations into partnerships and opportunities into revenue!",
-    recruitmentId: "9",
+    recruitmentId: "15",
     applicationUrl:
-      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=9",
+      "https://people.thegeekonomy.com/recruitment/application-form?recruitmentId=15",
   },
   {
     id: "bdr-intern",
@@ -84,6 +73,18 @@ export const CAREER_JOBS: CareerJob[] = [
     recruitmentId: "10",
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=10",
+  },
+  {
+    id: "project-delivery-coordinator",
+    title: "Project Delivery Coordinator",
+    team: "OPERATIONS",
+    location: "Bengaluru",
+    employmentType: "Full-time",
+    experience:
+      "Keep client projects moving from kickoff to delivery with clarity and ownership!",
+    recruitmentId: "16",
+    applicationUrl:
+      "https://people.thegeekonomy.com/recruitment/application-form?recruitmentId=16",
   },
 ];
 

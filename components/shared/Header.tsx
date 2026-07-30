@@ -20,49 +20,21 @@ export default function Navbar() {
   const [isInBanner, setIsInBanner] = useState(true);
 
   useEffect(() => {
-    // Reset to true when pathname changes
-    setIsInBanner(true);
-
     const checkScrollPosition = () => {
-      // Try to find first section - check main first, then body
-      const firstSection = document.querySelector('main > section:first-of-type') || 
-                          document.querySelector('main section:first-of-type') ||
-                          document.querySelector('body > section:first-of-type') ||
-                          document.querySelector('section:first-of-type');
-      
-      if (!firstSection) {
-        setIsInBanner(false);
-        return;
-      }
-
-      const sectionRect = firstSection.getBoundingClientRect();
       const scrollY = window.scrollY || window.pageYOffset;
-      
-      // Check if first section is visible in viewport (at least 20% visible)
-      const viewportHeight = window.innerHeight;
-      const sectionTop = sectionRect.top;
-      const sectionBottom = sectionRect.bottom;
-      
-      // Section is considered visible if any part of it is in the viewport
-      // and we haven't scrolled past most of it
-      const isSectionVisible = sectionBottom > 0 && sectionTop < viewportHeight;
-      const scrollPastThreshold = scrollY > (sectionRect.height * 0.2); // Scrolled past 20% of section
-      
-      setIsInBanner(isSectionVisible && !scrollPastThreshold);
+      const collapseThreshold = window.innerHeight * 0.2;
+      setIsInBanner(scrollY <= collapseThreshold);
     };
 
-    // Initial check after a small delay to ensure DOM is ready
-    const timeoutId = setTimeout(() => {
-      checkScrollPosition();
-    }, 100);
+    const frameId = requestAnimationFrame(checkScrollPosition);
 
-    window.addEventListener('scroll', checkScrollPosition, { passive: true });
-    window.addEventListener('resize', checkScrollPosition);
+    window.addEventListener("scroll", checkScrollPosition, { passive: true });
+    window.addEventListener("resize", checkScrollPosition);
 
     return () => {
-      clearTimeout(timeoutId);
-      window.removeEventListener('scroll', checkScrollPosition);
-      window.removeEventListener('resize', checkScrollPosition);
+      cancelAnimationFrame(frameId);
+      window.removeEventListener("scroll", checkScrollPosition);
+      window.removeEventListener("resize", checkScrollPosition);
     };
   }, [pathname]);
 
