@@ -200,17 +200,17 @@ const webDevelopmentCostInBangaloreForSmallBusinessesContent: BlogContentItem[] 
 
 export const webDevelopmentCostInBangaloreForSmallBusinesses: BlogData = {
   slug: "web-development-cost-in-bangalore-for-small-businesses",
-  heading: "Web Development Cost in Bangalore for Small Businesses",
+  heading: "Web Development Cost in Bangalore for Small Businesses | Free Audit",
   coverImage,
   sections: contentToSections(
     webDevelopmentCostInBangaloreForSmallBusinessesContent,
     { src: coverImage, alt: "Web Development Cost in Bangalore for Small Businesses" },
-    { introTitle: "Web Development Cost in Bangalore for Small Businesses" }
+    { introTitle: "Web Development Cost in Bangalore for Small Businesses | Free Audit" }
   ),
 };
 
 export const webDevelopmentCostInBangaloreForSmallBusinessesSEO = {
-  title: "Web Development Cost in Bangalore for Small Businesses",
+  title: "Web Development Cost in Bangalore for Small Businesses | Free Audit",
   description:
     " Discover web development cost in Bangalore for small businesses. Learn pricing, factors, and what to expect when building a business website.",
   url: "https://thegeekonomy.com/blog/web-development-cost-in-bangalore-for-small-businesses",

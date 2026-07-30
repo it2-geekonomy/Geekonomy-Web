@@ -198,16 +198,16 @@ const seoCostAhmedabadContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInAhmedabad: BlogData = {
     slug: "how-much-does-seo-cost-in-ahmedabad",
-    heading: "How Much Does SEO Cost in Ahmedabad | 2026 Guide",
+    heading: "How Much Does SEO Cost in Ahmedabad | Get Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostAhmedabadContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Ahmedabad" },
-        { introTitle: "How Much Does SEO Cost in Ahmedabad | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Ahmedabad | Get Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInAhmedabadSEO = {
-    title: "How Much Does SEO Cost in Ahmedabad | 2026 Guide",
+    title: "How Much Does SEO Cost in Ahmedabad | Get Free SEO Audit",
     description:
         "Discover premium SEO services in Ahmedabad. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-ahmedabad",

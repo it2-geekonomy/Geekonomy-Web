@@ -146,17 +146,17 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
 
 export const seoForPhysiotherapists: BlogData = {
   slug: "seo-for-physiotherapists-rank-higher",
-  heading: "SEO for Physiotherapists: Rank Higher & Get More Patients",
+  heading: "SEO for Physiotherapists: Rank Higher & Get Free Local SEO Audit",
   coverImage,
   sections: contentToSections(
     seoForPhysiotherapistsContent,
     { src: coverImage, alt: "SEO for Physiotherapists" },
-    { introTitle: "SEO for Physiotherapists: Rank Higher & Get More Patients | Geekonomy" }
+    { introTitle: "SEO for Physiotherapists: Rank Higher & Get Free Local SEO Audit" }
   ),
 };
 
 export const seoForPhysiotherapistsSEO = {
-  title: "SEO for Physiotherapists: Rank Higher & Get More Patients",
+  title: "SEO for Physiotherapists: Rank Higher & Get Free Local SEO Audit",
   description:
     "Improve your clinic's online visibility with effective SEO for physiotherapists. Rank higher, attract local patients, and grow your practice.",
   url: "https://thegeekonomy.com/blog/seo-for-physiotherapists-rank-higher",

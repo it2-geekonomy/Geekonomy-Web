@@ -151,18 +151,18 @@ const bestToolsForSEOTopicalMapContent: BlogContentItem[] = [
 
 export const bestToolsForSEOTopicalMap: BlogData = {
   slug: "best-tools-for-seo-topical-map-boost-your-seo",
-  heading: "Best Tools for SEO Topical Map: Boost Your SEO in 2026",
+  heading: "Best Tools for SEO Topical Map | Grow Organic Traffic Upto 60%",
   coverImage,
   sections: contentToSections(
     bestToolsForSEOTopicalMapContent,
     { src: coverImage, alt: "Best Tools for SEO Topical Map: Boost Your SEO in 2026" },
-    { introTitle: "Best Tools for SEO Topical Map: Boost Your SEO in 2026 | Geekonomy" }
+    { introTitle: "Best Tools for SEO Topical Map | Grow Organic Traffic Upto 60%" }
   ),
 };
 
 // SEO data for this blog
 export const bestToolsForSEOTopicalMapSEO = {
-  title: "Best Tools for SEO Topical Map: Boost Your SEO in 2026",
+  title: "Best Tools for SEO Topical Map | Grow Organic Traffic Upto 60%",
   description:
     "Discover the best tools for creating SEO topical maps. Learn how to use AI-powered tools, build topic clusters, and boost your website's authority.",
   url: "https://thegeekonomy.com/blog/best-tools-for-seo-topical-map-boost-your-seo",

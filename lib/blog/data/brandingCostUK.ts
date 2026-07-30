@@ -229,17 +229,17 @@ const brandingCostUKContent: BlogContentItem[] = [
 
 export const brandingCostUK: BlogData = {
   slug: "how-much-does-branding-cost-in-the-uk",
-  heading: "How Much Does Branding Cost in the UK? [2026 Guide]",
+  heading: "How Much Does Branding Cost in the UK | Book a Free SEO Audit",
   coverImage,
   sections: contentToSections(
     brandingCostUKContent,
     { src: coverImage, alt: "How Much Does Branding Cost in the UK? [2026 Guide]" },
-    { introTitle: "How Much Does Branding Cost in the UK? [2026 Guide]" }
+    { introTitle: "How Much Does Branding Cost in the UK | Book a Free SEO Audit" }
   ),
 };
 
 export const brandingCostUKSEO = {
-  title: "How Much Does Branding Cost in the UK? [2026 Guide]",
+  title: "How Much Does Branding Cost in the UK | Book a Free SEO Audit",
   description: "Discover branding costs in the UK for 2026. Learn average prices, small business packages, and how to choose the right branding agency.",
   url: "https://thegeekonomy.com/blog/how-much-does-branding-cost-in-the-uk",
   canonical: "https://thegeekonomy.com/blog/how-much-does-branding-cost-in-the-uk",

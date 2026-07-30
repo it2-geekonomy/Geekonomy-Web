@@ -214,16 +214,16 @@ const seoCostHyderabadContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInHyderabad: BlogData = {
     slug: "how-much-does-seo-cost-in-hyderabad",
-    heading: "How Much Does SEO Cost in Hyderabad | 2026 Guide",
+    heading: "How Much Does SEO Cost in Hyderabad | Book a Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostHyderabadContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Hyderabad" },
-        { introTitle: "How Much Does SEO Cost in Hyderabad | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Hyderabad | Book a Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInHyderabadSEO = {
-    title: "How Much Does SEO Cost in Hyderabad | 2026 Guide",
+    title: "How Much Does SEO Cost in Hyderabad | Book a Free SEO Audit",
     description:
         "Discover how much SEO costs in Hyderabad. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-hyderabad",

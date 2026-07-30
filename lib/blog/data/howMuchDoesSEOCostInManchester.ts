@@ -198,18 +198,18 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInManchester: BlogData = {
   slug: "how-much-does-seo-cost-in-manchester",
-  heading: "How Much Does SEO Cost in Manchester | 2026 Guide",
+  heading: "How Much Does SEO Cost in Manchester | Book a Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInManchesterContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Manchester" },
-    { introTitle: "How Much Does SEO Cost in Manchester" }
+    { introTitle: "How Much Does SEO Cost in Manchester | Book a Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInManchesterSEO = {
-  title: "How Much Does SEO Cost in Manchester | 2026 Guide",
+  title: "How Much Does SEO Cost in Manchester | Book a Free SEO Audit",
   description:
     "Discover SEO pricing and costs for Manchester businesses. Learn about packages to boost your online visibility and rankings.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-manchester",

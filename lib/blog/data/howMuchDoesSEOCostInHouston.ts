@@ -235,18 +235,18 @@ const howMuchDoesSEOCostInHoustonContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInHouston: BlogData = {
   slug: "how-much-do-seo-services-cost-in-houston",
-  heading: "How Much Does SEO Cost in Houston | 2026 Guide",
+  heading: "How Much Does SEO Cost in Houston | Book a Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInHoustonContent,
     { src: coverImage, alt: "How Much Do SEO Services Cost In Houston" },
-    { introTitle: "How Much Do SEO Services Cost In Houston" }
+    { introTitle: "How Much Does SEO Cost in Houston | Book a Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInHoustonSEO = {
-  title: "How Much Does SEO Cost in Houston | 2026 Guide",
+  title: "How Much Does SEO Cost in Houston | Book a Free SEO Audit",
   description:
     "Discover SEO pricing and service costs for Houston businesses. Learn about SEO packages and pricing models to boost your online visibility.",
   url: "https://thegeekonomy.com/blog/how-much-do-seo-services-cost-in-houston",

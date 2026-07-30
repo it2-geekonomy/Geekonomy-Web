@@ -227,16 +227,16 @@ const seoCostMumbaiContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInMumbai: BlogData = {
     slug: "how-much-does-seo-cost-in-mumbai",
-    heading: "How Much Does SEO Cost in Mumbai | 2026 Guide",
+    heading: "How Much Does SEO Cost in Mumbai | Book a Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostMumbaiContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Mumbai" },
-        { introTitle: "How Much Does SEO Cost in Mumbai | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Mumbai | Book a Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInMumbaiSEO = {
-    title: "How Much Does SEO Cost in Mumbai | 2026 Guide",
+    title: "How Much Does SEO Cost in Mumbai | Book a Free SEO Audit",
     description:
         "Discover how much SEO costs in Mumbai. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-mumbai",
