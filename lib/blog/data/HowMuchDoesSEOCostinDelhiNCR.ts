@@ -273,16 +273,16 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInDelhiNCR: BlogData = {
     slug: "how-much-does-seo-cost-in-delhi-ncr",
-    heading: "How Much Does SEO Cost in Delhi NCR | 2026 Guide",
+    heading: "How Much Does SEO Cost in Delhi NCR | Book a Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostDelhiNCRContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Delhi NCR" },
-        { introTitle: "How Much Does SEO Cost in Delhi NCR | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Delhi NCR | Book a Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInDelhiNCRSEO = {
-    title: "How Much Does SEO Cost in DelhiNCR | 2026 Guide",
+    title: "How Much Does SEO Cost in Delhi NCR | Book a Free SEO Audit",
     description:
         "Discover how much SEO costs in Delhi NCR. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-delhi-ncr",

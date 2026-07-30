@@ -163,17 +163,17 @@ const howMuchDoesDigitalMarketingCostInBangaloreContent: BlogContentItem[] = [
 
 export const howMuchDoesDigitalMarketingCostInBangalore: BlogData = {
   slug: "how-much-does-digital-marketing-cost-in-bangalore",
-  heading: "How Much Does Digital Marketing Cost in Bangalore?",
+  heading: "How Much Does Digital Marketing Cost in Bangalore | Get Free Aduit",
   coverImage,
   sections: contentToSections(
     howMuchDoesDigitalMarketingCostInBangaloreContent,
     { src: coverImage, alt: "How Much Does Digital Marketing Cost in Bangalore" },
-    { introTitle: "How Much Does Digital Marketing Cost in Bangalore?" }
+    { introTitle: "How Much Does Digital Marketing Cost in Bangalore | Get Free Aduit" }
   ),
 };
 
 export const howMuchDoesDigitalMarketingCostInBangaloreSEO = {
-  title: "How Much Does Digital Marketing Cost in Bangalore?",
+  title: "How Much Does Digital Marketing Cost in Bangalore | Get Free Aduit",
   description:
     "Understand digital marketing costs in Bangalore: SEO, PPC, social media pricing, package options, and how to choose the right agency for your budget.",
   url: "https://thegeekonomy.com/blog/how-much-does-digital-marketing-cost-in-bangalore",

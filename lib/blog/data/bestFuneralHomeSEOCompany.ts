@@ -150,17 +150,17 @@ const bestFuneralHomeSEOCompanyContent: BlogContentItem[] = [
 
 export const bestFuneralHomeSEOCompany: BlogData = {
   slug: "best-funeral-home-seo-company-for-growth",
-  heading: "Best Funeral Home SEO Company for Growth | Complete Guide",
+  heading: "Best Funeral Home SEO Company | Book a Free SEO Audit",
   coverImage,
   sections: contentToSections(
     bestFuneralHomeSEOCompanyContent,
     { src: coverImage, alt: "Best Funeral Home SEO Company for Growth | Complete Guide" },
-    { introTitle: "Best Funeral Home SEO Company for Growth | Complete Guide | Geekonomy" }
+    { introTitle: "Best Funeral Home SEO Company | Book a Free SEO Audit" }
   ),
 };
 
 export const bestFuneralHomeSEOCompanySEO = {
-  title: "Best Funeral Home SEO Company for Growth | Complete Guide",
+  title: "Best Funeral Home SEO Company | Book a Free SEO Audit",
   description:
     "Complete guide to the best funeral home SEO company for growth, helping you boost visibility, leads, and long-term online success.",
   url: "https://thegeekonomy.com/blog/best-funeral-home-seo-company-for-growth",

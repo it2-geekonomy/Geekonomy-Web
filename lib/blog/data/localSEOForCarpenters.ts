@@ -137,17 +137,17 @@ const localSEOForCarpentersContent: BlogContentItem[] = [
 
 export const localSEOForCarpenters: BlogData = {
   slug: "local-seo-for-carpenters-complete-guide",
-  heading: "Local SEO for Carpenters: Complete Guide For Ranking",
+  heading: "Local SEO for Carpenters Complete Guide | Free Local SEO Audit",
   coverImage,
   sections: contentToSections(
     localSEOForCarpentersContent,
     { src: coverImage, alt: "Local SEO for Carpenters: Complete Guide For Ranking" },
-    { introTitle: "Local SEO for Carpenters: Complete Guide For Ranking | Geekonomy" }
+    { introTitle: "Local SEO for Carpenters Complete Guide | Free Local SEO Audit" }
   ),
 };
 
 export const localSEOForCarpentersSEO = {
-  title: "Local SEO for Carpenters: Complete Guide For Ranking",
+  title: "Local SEO for Carpenters Complete Guide | Free Local SEO Audit",
   description:
     "Boost local visibility with SEO for carpenters. Rank higher in search, attract nearby clients, and grow your carpentry business.",
   url: "https://thegeekonomy.com/blog/local-seo-for-carpenters-complete-guide",

@@ -191,18 +191,18 @@ const howMuchDoesSEOCostInSanFranciscoContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInSanFrancisco: BlogData = {
   slug: "how-much-does-seo-cost-in-san-francisco",
-  heading: "How Much Does SEO Cost in San Francisco | 2026 Guide",
+  heading: "How Much Does SEO Cost in San Francisco | Book a Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInSanFranciscoContent,
     { src: coverImage, alt: "How Much Does SEO Cost in San Francisco" },
-    { introTitle: "How Much Does SEO Cost in San Francisco" }
+    { introTitle: "How Much Does SEO Cost in San Francisco | Book a Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInSanFranciscoSEO = {
-  title: "How Much Does SEO Cost in San Francisco | 2026 Guide",
+  title: "How Much Does SEO Cost in San Francisco | Book a Free SEO Audit",
   description:
     "Learn about SEO pricing and service costs for San Francisco businesses. Discover SEO packages and pricing models to boost your online visibility.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-san-francisco",
