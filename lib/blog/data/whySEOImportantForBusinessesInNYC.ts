@@ -120,12 +120,12 @@ const whySEOImportantForBusinessesInNYCContent: BlogContentItem[] = [
 
 export const whySEOImportantForBusinessesInNYC: BlogData = {
   slug: "why-seo-is-important-for-businesses-in-nyc",
-  heading: "Why SEO is Important for Businesses in NYC | Get Free SEO Audit",
+  heading: "Why SEO is Important for Businesses in NYC | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     whySEOImportantForBusinessesInNYCContent,
     { src: coverImage, alt: "Why SEO is Important for Businesses in NYC" },
-    { introTitle: "Why SEO is Important for Businesses in NYC | Get Free SEO Audit" }
+    { introTitle: "Why SEO is Important for Businesses in NYC | Free SEO Audit" }
   ),
 };
 

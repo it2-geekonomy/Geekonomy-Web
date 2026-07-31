@@ -198,12 +198,12 @@ const howMuchDoesSEOCostInManchesterContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInManchester: BlogData = {
   slug: "how-much-does-seo-cost-in-manchester",
-  heading: "How Much Does SEO Cost in Manchester | Book a Free SEO Audit",
+  heading: "How Much Does SEO Cost in Manchester | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInManchesterContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Manchester" },
-    { introTitle: "How Much Does SEO Cost in Manchester | Book a Free SEO Audit" }
+    { introTitle: "How Much Does SEO Cost in Manchester | Free SEO Audit" }
   ),
 };
 

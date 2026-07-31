@@ -226,7 +226,7 @@ const howMuchDoesSEOCostInNewYorkContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInNewYork: BlogData = {
   slug: "how-much-does-seo-cost-in-new-york",
-  heading: "How Much Does SEO Cost in New York | 2026 Guide",
+  heading: "How Much Does SEO Cost in New York | Get Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInNewYorkContent,

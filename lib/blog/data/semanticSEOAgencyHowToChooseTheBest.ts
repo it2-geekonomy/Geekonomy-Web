@@ -246,12 +246,12 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const semanticSEOAgencyHowToChooseTheBest: BlogData = {
   slug: "semantic-seo-agency-how-to-choose-the-best-agency",
-  heading: "Semantic SEO Agency: How to Choose | Free SEO Consultation",
+  heading: "Semantic SEO Agency: How to Choose | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     semanticSEOAgencyHowToChooseTheBestContent,
     { src: coverImage, alt: "Semantic SEO Agency: How To Choose the Best Agency" },
-    { introTitle: "Semantic SEO Agency: How to Choose | Free SEO Consultation" }
+    { introTitle: "Semantic SEO Agency: How to Choose | Free SEO Audit" }
   ),
 };
 

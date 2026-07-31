@@ -114,12 +114,12 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
 
 export const bestFoundationRepairSEOStrategies: BlogData = {
   slug: "best-foundation-repair-seo-strategies",
-  heading: "Best Foundation Repair SEO Strategies for Growth 2026",
+  heading: "Best Foundation Repair SEO Strategies | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     bestFoundationRepairSEOStrategiesContent,
     { src: coverImage, alt: "Best Foundation Repair SEO Strategies for Growth 2026" },
-    { introTitle: "Best Foundation Repair SEO Strategies for Growth 2026 | Geekonomy" }
+    { introTitle: "Best Foundation Repair SEO Strategies | Free SEO Audit | Geekonomy" }
   ),
 };
 

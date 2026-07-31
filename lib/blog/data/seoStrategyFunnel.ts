@@ -143,12 +143,12 @@ const seoStrategyFunnelContent: BlogContentItem[] = [
 
 export const seoStrategyFunnel: BlogData = {
   slug: "seo-strategy-funnel",
-  heading: "SEO Strategy Funnel: How to Turn Traffic Into Revenue",
+  heading: "SEO Strategy Funnel | Turn Traffic into Qualified Leads",
   coverImage,
   sections: contentToSections(
     seoStrategyFunnelContent,
     { src: coverImage, alt: "SEO Strategy Funnel: How to Turn Traffic Into Revenue" },
-    { introTitle: "SEO Strategy Funnel: How to Turn Traffic Into Revenue" }
+    { introTitle: "SEO Strategy Funnel | Turn Traffic into Qualified Leads" }
   ),
 };
 

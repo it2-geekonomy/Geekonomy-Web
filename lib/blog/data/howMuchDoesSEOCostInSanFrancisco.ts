@@ -191,12 +191,12 @@ const howMuchDoesSEOCostInSanFranciscoContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInSanFrancisco: BlogData = {
   slug: "how-much-does-seo-cost-in-san-francisco",
-  heading: "How Much Does SEO Cost in San Francisco | Book a Free SEO Audit",
+  heading: "How Much Does SEO Cost in San Francisco | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInSanFranciscoContent,
     { src: coverImage, alt: "How Much Does SEO Cost in San Francisco" },
-    { introTitle: "How Much Does SEO Cost in San Francisco | Book a Free SEO Audit" }
+    { introTitle: "How Much Does SEO Cost in San Francisco | Free SEO Audit" }
   ),
 };
 

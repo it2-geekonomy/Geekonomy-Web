@@ -164,12 +164,12 @@ const wordPressSEOOxfordshireContent: BlogContentItem[] = [
 
 export const wordPressSEOOxfordshire: BlogData = {
   slug: "how-to-improve-wordpress-seo-for-oxfordshire-sites",
-  heading: "How to Improve WordPress SEO for Oxfordshire Sites",
+  heading: "Improve WordPress SEO for Oxfordshire Sites | Free Audit",
   coverImage,
   sections: contentToSections(
     wordPressSEOOxfordshireContent,
     { src: coverImage, alt: "How to Improve WordPress SEO for Oxfordshire Sites" },
-    { introTitle: "How to Improve WordPress SEO for Oxfordshire Sites" }
+    { introTitle: "Improve WordPress SEO for Oxfordshire Sites | Free Audit" }
   ),
 };
 

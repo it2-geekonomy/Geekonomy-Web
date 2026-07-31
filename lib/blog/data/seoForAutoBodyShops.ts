@@ -168,12 +168,12 @@ const seoForAutoBodyShopsContent: BlogContentItem[] = [
 
 export const seoForAutoBodyShops: BlogData = {
   slug: "seo-for-auto-body-shops-strategies-to-boost-local-seo",
-  heading: "SEO for Auto Body Shops: Strategies to Boost Local SEO",
+  heading: "SEO for Auto Body Shops Strategies | Get Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoForAutoBodyShopsContent,
     { src: coverImage, alt: "SEO for Auto Body Shops" },
-    { introTitle: "SEO for Auto Body Shops: Strategies to Boost Local SEO" }
+    { introTitle: "SEO for Auto Body Shops Strategies | Get Free SEO Audit" }
   ),
 };
 

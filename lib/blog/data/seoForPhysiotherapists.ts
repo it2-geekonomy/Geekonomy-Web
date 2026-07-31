@@ -146,12 +146,12 @@ const seoForPhysiotherapistsContent: BlogContentItem[] = [
 
 export const seoForPhysiotherapists: BlogData = {
   slug: "seo-for-physiotherapists-rank-higher",
-  heading: "SEO for Physiotherapists: Rank Higher & Get Free Local SEO Audit",
+  heading: "SEO for Physiotherapists: Rank Higher & Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoForPhysiotherapistsContent,
     { src: coverImage, alt: "SEO for Physiotherapists" },
-    { introTitle: "SEO for Physiotherapists: Rank Higher & Get Free Local SEO Audit" }
+    { introTitle: "SEO for Physiotherapists: Rank Higher & Free SEO Audit" }
   ),
 };
 

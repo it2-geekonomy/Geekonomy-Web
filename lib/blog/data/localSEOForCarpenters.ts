@@ -137,12 +137,12 @@ const localSEOForCarpentersContent: BlogContentItem[] = [
 
 export const localSEOForCarpenters: BlogData = {
   slug: "local-seo-for-carpenters-complete-guide",
-  heading: "Local SEO for Carpenters Complete Guide | Free Local SEO Audit",
+  heading: "Local SEO for Carpenters Complete Guide | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     localSEOForCarpentersContent,
     { src: coverImage, alt: "Local SEO for Carpenters: Complete Guide For Ranking" },
-    { introTitle: "Local SEO for Carpenters Complete Guide | Free Local SEO Audit" }
+    { introTitle: "Local SEO for Carpenters Complete Guide | Free SEO Audit" }
   ),
 };
 

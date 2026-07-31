@@ -179,7 +179,7 @@ const howMuchDoesSEOCostInBirminghamContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInBirmingham: BlogData = {
   slug: "how-much-does-seo-cost-in-birmingham",
-  heading: "How Much Does SEO Cost in Birmingham | 2026 Guide",
+  heading: "How Much Does SEO Cost in Birmingham | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInBirminghamContent,

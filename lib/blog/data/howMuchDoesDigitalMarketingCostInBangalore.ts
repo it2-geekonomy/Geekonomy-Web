@@ -163,12 +163,12 @@ const howMuchDoesDigitalMarketingCostInBangaloreContent: BlogContentItem[] = [
 
 export const howMuchDoesDigitalMarketingCostInBangalore: BlogData = {
   slug: "how-much-does-digital-marketing-cost-in-bangalore",
-  heading: "How Much Does Digital Marketing Cost in Bangalore | Get Free Aduit",
+  heading: "Digital Marketing Cost in Bangalore | Get Free Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesDigitalMarketingCostInBangaloreContent,
     { src: coverImage, alt: "How Much Does Digital Marketing Cost in Bangalore" },
-    { introTitle: "How Much Does Digital Marketing Cost in Bangalore | Get Free Aduit" }
+    { introTitle: "Digital Marketing Cost in Bangalore | Get Free Audit" }
   ),
 };
 

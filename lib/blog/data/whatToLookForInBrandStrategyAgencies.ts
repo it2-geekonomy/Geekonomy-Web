@@ -191,12 +191,12 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const whatToLookForInBrandStrategyAgencies: BlogData = {
   slug: "what-to-look-for-in-brand-strategy-agencies",
-  heading: "What to Look for in Brand Strategy Agencies | Free Brand Consultation",
+  heading: "What to Look for in Brand Strategy Agencies | Free Brand Audit",
   coverImage,
   sections: contentToSections(
     whatToLookForInBrandStrategyAgenciesContent,
     { src: coverImage, alt: "What to Look for in Brand Strategy Agencies" },
-    { introTitle: "What to Look for in Brand Strategy Agencies | Free Brand Consultation" }
+    { introTitle: "What to Look for in Brand Strategy Agencies | Free Brand Audit" }
   ),
 };
 

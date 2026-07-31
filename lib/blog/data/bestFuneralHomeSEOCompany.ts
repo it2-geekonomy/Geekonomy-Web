@@ -150,12 +150,12 @@ const bestFuneralHomeSEOCompanyContent: BlogContentItem[] = [
 
 export const bestFuneralHomeSEOCompany: BlogData = {
   slug: "best-funeral-home-seo-company-for-growth",
-  heading: "Best Funeral Home SEO Company | Book a Free SEO Audit",
+  heading: "Best Funeral Home SEO Company | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     bestFuneralHomeSEOCompanyContent,
     { src: coverImage, alt: "Best Funeral Home SEO Company for Growth | Complete Guide" },
-    { introTitle: "Best Funeral Home SEO Company | Book a Free SEO Audit" }
+    { introTitle: "Best Funeral Home SEO Company | Free SEO Audit" }
   ),
 };
 

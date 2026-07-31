@@ -250,12 +250,12 @@ const seoCostBangaloreContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInBangalore: BlogData = {
   slug: "how-much-does-seo-cost-in-bangalore",
-  heading: "How Much Does SEO Cost in Bangalore | Book a Free SEO Audit",
+  heading: "How Much Does SEO Cost in Bangalore | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoCostBangaloreContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Bangalore" },
-    { introTitle: "How Much Does SEO Cost in Bangalore | Book a Free SEO Audit" }
+    { introTitle: "How Much Does SEO Cost in Bangalore | Free SEO Audit" }
   ),
 };
 

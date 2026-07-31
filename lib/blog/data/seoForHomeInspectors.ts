@@ -146,12 +146,12 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
 
 export const seoForHomeInspectors: BlogData = {
   slug: "seo-for-home-inspectors-business-best-seo-strategies",
-  heading: "SEO for Home Inspectors Business: Best SEO Strategies",
+  heading: "SEO for Home Inspectors Business: Get Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoForHomeInspectorsContent,
     { src: coverImage, alt: "SEO for Home Inspectors Business: Best SEO Strategies" },
-    { introTitle: "SEO for Home Inspectors Business: Best SEO Strategies" }
+    { introTitle: "SEO for Home Inspectors Business: Get Free SEO Audit" }
   ),
 };
 

@@ -160,12 +160,12 @@ img(imageCommon, "Common Challenges in Increasing B2B Brand Awareness"),
 
 export const howToIncreaseBrandAwarenessB2B: BlogData = {
   slug: "how-to-increase-brand-awareness-in-b2b",
-  heading: "How to Increase Brand Awareness in B2B",
+  heading: "How to Increase Brand Awareness in B2B | Get Free Audit",
   coverImage,
   sections: contentToSections(
     howToIncreaseBrandAwarenessB2BContent,
     { src: coverImage, alt: "How to Increase Brand Awareness in B2B" },
-    { introTitle: "How to Increase Brand Awareness in B2B" }
+    { introTitle: "How to Increase Brand Awareness in B2B | Get Free Audit" }
   ),
 };
 
