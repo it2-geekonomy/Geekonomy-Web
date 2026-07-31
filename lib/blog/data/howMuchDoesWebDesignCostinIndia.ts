@@ -160,12 +160,12 @@ p("You will also need to take into account your overhead costs (software license
 
 export const howMuchDoesWebDesignCostinIndia: BlogData = {
   slug: "web-design-cost-india",
-  heading: " How Much Does Web Design Cost in India (2026 Guide)",
+  heading: " How Much Does Web Design Cost in India | Get Free Audit",
   coverImage,
   sections: contentToSections(
    howMuchDoesWebDesignCostinIndiaContent,
     { src: coverImage, alt: " How Much Does Web Design Cost in India" },
-    { introTitle: " How Much Does Web Design Cost in India (2026 Guide)" }
+    { introTitle: " How Much Does Web Design Cost in India | Get Free Audit" }
   ),
 };
 

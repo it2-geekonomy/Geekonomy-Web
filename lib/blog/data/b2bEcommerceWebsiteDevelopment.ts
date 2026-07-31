@@ -155,12 +155,12 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
 
 export const b2bEcommerceWebsiteDevelopment: BlogData = {
   slug: "b2b-ecommerce-website-development-strategies",
-  heading: "B2B eCommerce Website Development Strategies | Increase Sales 60%",
+  heading: "B2B eCommerce Website Development Strategies | 60% Improve",
   coverImage,
   sections: contentToSections(
     b2bEcommerceWebsiteDevelopmentContent,
     { src: coverImage, alt: "B2B eCommerce Website Development Strategies" },
-    { introTitle: "B2B eCommerce Website Development Strategies | Increase Sales 60%" }
+    { introTitle: "B2B eCommerce Website Development Strategies | 60% Improve" }
   ),
 };
 

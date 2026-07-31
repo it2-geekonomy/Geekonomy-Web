@@ -334,12 +334,12 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const BestLLMSEOToolsforAgenciesin2026: BlogData = {
   slug: "best-llm-seo-tools-for-agencies",
-  heading: "Best LLM SEO Tools for Agencies in 2026",
+  heading: "Best LLM SEO Tools for Agencies | Free LLM SEO Audit",
   coverImage,
   sections: contentToSections(
     BestLLMSEOToolsforAgenciesin2026Content,
     { src: coverImage, alt: "Best LLM SEO Tools for Agencies in 2026" },
-    { introTitle: "Best LLM SEO Tools for Agencies in 2026" }
+    { introTitle: "Best LLM SEO Tools for Agencies | Free LLM SEO Audit" }
   ),
 };
 

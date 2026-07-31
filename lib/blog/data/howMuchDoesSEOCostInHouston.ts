@@ -235,12 +235,12 @@ const howMuchDoesSEOCostInHoustonContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInHouston: BlogData = {
   slug: "how-much-do-seo-services-cost-in-houston",
-  heading: "How Much Does SEO Cost in Houston | Book a Free SEO Audit",
+  heading: "How Much Does SEO Cost in Houston | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     howMuchDoesSEOCostInHoustonContent,
     { src: coverImage, alt: "How Much Do SEO Services Cost In Houston" },
-    { introTitle: "How Much Does SEO Cost in Houston | Book a Free SEO Audit" }
+    { introTitle: "How Much Does SEO Cost in Houston | Free SEO Audit" }
   ),
 };
 

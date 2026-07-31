@@ -181,12 +181,12 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const HowMuchDoesBrandingCostinBangalore: BlogData = {
   slug: "branding-cost-in-bangalore",
-  heading: "How Much Does Branding Cost in Bangalore | Get Free Brand Audit",
+  heading: "How Much Does Branding Cost in Bangalore | Free Audit",
   coverImage,
   sections: contentToSections(
     HowMuchDoesBrandingCostinBangaloreContent,
     { src: coverImage, alt: "How Much Does Branding Cost in Bangalore?" },
-    { introTitle: "How Much Does Branding Cost in Bangalore | Get Free Brand Audit" }
+    { introTitle: "How Much Does Branding Cost in Bangalore | Free Audit" }
   ),
 };
 

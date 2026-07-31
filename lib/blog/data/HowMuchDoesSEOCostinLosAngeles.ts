@@ -245,12 +245,12 @@ const seoCostLosAngelesContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInLosAngeles: BlogData = {
     slug: "how-much-does-seo-cost-in-los-angeles",
-    heading: "How Much Does SEO Cost in Los Angeles | 2026 Guide",
+    heading: "How Much Does SEO Cost in Los Angeles | Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostLosAngelesContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Los Angeles" },
-        { introTitle: "How Much Does SEO Cost in Los Angeles | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Los Angeles | Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInLosAngelesSEO = {

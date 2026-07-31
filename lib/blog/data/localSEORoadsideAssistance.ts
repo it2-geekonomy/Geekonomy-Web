@@ -163,12 +163,12 @@ const localSEORoadsideAssistanceContent: BlogContentItem[] = [
 
 export const localSEORoadsideAssistance: BlogData = {
   slug: "local-seo-for-roadside-assistance-providers-best-strategies",
-  heading: "Local SEO for Roadside Assistance | Get Free Local SEO Audit",
+  heading: "Local SEO for Roadside Assistance | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     localSEORoadsideAssistanceContent,
     { src: coverImage, alt: "Local SEO for Roadside Assistance Providers: Best Strategies" },
-    { introTitle: "Local SEO for Roadside Assistance | Get Free Local SEO Audit" }
+    { introTitle: "Local SEO for Roadside Assistance | Free SEO Audit" }
   ),
 };
 

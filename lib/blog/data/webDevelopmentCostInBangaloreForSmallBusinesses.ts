@@ -200,12 +200,12 @@ const webDevelopmentCostInBangaloreForSmallBusinessesContent: BlogContentItem[] 
 
 export const webDevelopmentCostInBangaloreForSmallBusinesses: BlogData = {
   slug: "web-development-cost-in-bangalore-for-small-businesses",
-  heading: "Web Development Cost in Bangalore for Small Businesses | Free Audit",
+  heading: "Web Development Cost in Bangalore for Small Businesses",
   coverImage,
   sections: contentToSections(
     webDevelopmentCostInBangaloreForSmallBusinessesContent,
     { src: coverImage, alt: "Web Development Cost in Bangalore for Small Businesses" },
-    { introTitle: "Web Development Cost in Bangalore for Small Businesses | Free Audit" }
+    { introTitle: "Web Development Cost in Bangalore for Small Businesses" }
   ),
 };
 

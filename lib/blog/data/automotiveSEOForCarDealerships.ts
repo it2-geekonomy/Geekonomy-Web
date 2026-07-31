@@ -140,12 +140,12 @@ const automotiveSEOForCarDealershipsContent: BlogContentItem[] = [
 
 export const automotiveSEOForCarDealerships: BlogData = {
   slug: "automotive-seo-for-car-dealerships",
-  heading: "Automotive SEO for Car Dealerships | Get Free Local SEO Audit",
+  heading: "Automotive SEO for Car Dealerships | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     automotiveSEOForCarDealershipsContent,
     { src: coverImage, alt: "Automotive SEO for Car Dealerships: Get More Leads" },
-    { introTitle: "Automotive SEO for Car Dealerships | Get Free Local SEO Audit" }
+    { introTitle: "Automotive SEO for Car Dealerships | Free SEO Audit" }
   ),
 };
 

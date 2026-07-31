@@ -126,12 +126,12 @@ const bestCleaningServiceSEOStrategiesContent: BlogContentItem[] = [
 
 export const bestCleaningServiceSEOStrategies: BlogData = {
   slug: "best-cleaning-service-seo-strategies",
-  heading: "Best Cleaning Service SEO Strategies for Booking in 2026",
+  heading: "Best Cleaning Service SEO Strategies | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     bestCleaningServiceSEOStrategiesContent,
     { src: coverImage, alt: "Best Cleaning Service SEO" },
-    { introTitle: "Best Cleaning Service SEO Strategies for Booking in 2026 | Geekonomy" }
+    { introTitle: "Best Cleaning Service SEO Strategies | Free SEO Audit | Geekonomy" }
   ),
 };
 

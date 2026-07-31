@@ -267,12 +267,12 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const semanticContentNetworksByBenStace: BlogData = {
   slug: "semantic-content-networks-by-ben-stace",
-  heading: "Semantic Content Networks by Ben Stace | Book Free Semantic Audit",
+  heading: "Semantic Content Networks by Ben Stace | Free Semantic Audit",
   coverImage,
   sections: contentToSections(
     semanticContentNetworksByBenStaceContent,
     { src: coverImage, alt: "Semantic Content Networks by Ben Stace" },
-    { introTitle: "Semantic Content Networks by Ben Stace | Book Free Semantic Audit" }
+    { introTitle: "Semantic Content Networks by Ben Stace | Free Semantic Audit" }
   ),
 };
 

@@ -214,12 +214,12 @@ const seoCostHyderabadContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInHyderabad: BlogData = {
     slug: "how-much-does-seo-cost-in-hyderabad",
-    heading: "How Much Does SEO Cost in Hyderabad | Book a Free SEO Audit",
+    heading: "How Much Does SEO Cost in Hyderabad | Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostHyderabadContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Hyderabad" },
-        { introTitle: "How Much Does SEO Cost in Hyderabad | Book a Free SEO Audit" }
+        { introTitle: "How Much Does SEO Cost in Hyderabad | Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInHyderabadSEO = {

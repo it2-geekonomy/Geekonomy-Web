@@ -229,12 +229,12 @@ const brandingCostUKContent: BlogContentItem[] = [
 
 export const brandingCostUK: BlogData = {
   slug: "how-much-does-branding-cost-in-the-uk",
-  heading: "How Much Does Branding Cost in the UK | Book a Free SEO Audit",
+  heading: "How Much Does Branding Cost in the UK | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     brandingCostUKContent,
     { src: coverImage, alt: "How Much Does Branding Cost in the UK? [2026 Guide]" },
-    { introTitle: "How Much Does Branding Cost in the UK | Book a Free SEO Audit" }
+    { introTitle: "How Much Does Branding Cost in the UK | Free SEO Audit" }
   ),
 };
 

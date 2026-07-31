@@ -162,12 +162,12 @@ const bestPracticesForSEOEnhancingAIVisibilityContent: BlogContentItem[] = [
 
 export const bestPracticesForSEOEnhancingAIVisibility: BlogData = {
   slug: "best-practices-for-seo-enhancing-ai-visibility",
-  heading: "Best Practices for SEO Enhancing AI Visibility in 2026",
+  heading: "Best Practices for SEO Enhancing AI Visibility | Free Audit",
   coverImage,
   sections: contentToSections(
     bestPracticesForSEOEnhancingAIVisibilityContent,
     { src: coverImage, alt: "Best Practices for SEO Enhancing AI Visibility in 2026" },
-    { introTitle: "Best Practices for SEO Enhancing AI Visibility in 2026 | Geekonomy" }
+    { introTitle: "Best Practices for SEO Enhancing AI Visibility | Free Audit | Geekonomy" }
   ),
 };
 

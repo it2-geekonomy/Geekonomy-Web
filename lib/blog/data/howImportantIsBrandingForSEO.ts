@@ -103,12 +103,12 @@ const howImportantIsBrandingForSEOContent: BlogContentItem[] = [
 
 export const howImportantIsBrandingForSEO: BlogData = {
   slug: "how-important-is-branding-for-seo",
-  heading: "How Important is Branding for SEO? | Increase Organic Traffic",
+  heading: "How Important is Branding for SEO? | 80% Increase Traffic",
   coverImage,
   sections: contentToSections(
     howImportantIsBrandingForSEOContent,
     { src: coverImage, alt: "How Important is Branding for SEO" },
-    { introTitle: "How Important is Branding for SEO? | Increase Organic Traffic" }
+    { introTitle: "How Important is Branding for SEO? | 80% Increase Traffic" }
   ),
 };
 

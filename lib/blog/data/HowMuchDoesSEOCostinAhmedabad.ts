@@ -198,12 +198,12 @@ const seoCostAhmedabadContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInAhmedabad: BlogData = {
     slug: "how-much-does-seo-cost-in-ahmedabad",
-    heading: "How Much Does SEO Cost in Ahmedabad | Get Free SEO Audit",
+    heading: "How Much Does SEO Cost in Ahmedabad | Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostAhmedabadContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Ahmedabad" },
-        { introTitle: "How Much Does SEO Cost in Ahmedabad | Get Free SEO Audit" }
+        { introTitle: "How Much Does SEO Cost in Ahmedabad | Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInAhmedabadSEO = {

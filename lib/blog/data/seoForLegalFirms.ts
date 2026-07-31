@@ -384,12 +384,12 @@ const seoForLegalFirmsContent: BlogContentItem[] = [
 
 export const seoForLegalFirms: BlogData = {
   slug: "seo-for-legal-firms-complete-guide",
-  heading: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher",
+  heading: "SEO for Legal Firms | Get Free SEO Audit | Rank 1 Page",
   coverImage,
   sections: contentToSections(
     seoForLegalFirmsContent,
     { src: coverImage, alt: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher" },
-    { introTitle: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher" }
+    { introTitle: "SEO for Legal Firms | Get Free SEO Audit | Rank 1 Page" }
   ),
 };
 
