@@ -345,7 +345,7 @@ export const BestLLMSEOToolsforAgenciesin2026: BlogData = {
 
 // SEO data for this blog
 export const BestLLMSEOToolsforAgenciesin2026SEO = {
-  title: "Best LLM SEO Tools for Agencies in 2026",
+  title: "Best LLM SEO Tools for Agencies | Free LLM SEO Audit",
   description:
     "Discover best practices for SEO to enhance AI visibility. Learn how to optimize content for AI search engines, leverage structured data, and stay ahead.",
   url: "https://thegeekonomy.com/blog/best-llm-seo-tools-for-agencies",

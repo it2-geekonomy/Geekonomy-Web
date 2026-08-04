@@ -160,7 +160,7 @@ export const bestFuneralHomeSEOCompany: BlogData = {
 };
 
 export const bestFuneralHomeSEOCompanySEO = {
-  title: "Best Funeral Home SEO Company | Book a Free SEO Audit",
+  title: "Best Funeral Home SEO Company | Free SEO Audit",
   description:
     "Complete guide to the best funeral home SEO company for growth, helping you boost visibility, leads, and long-term online success.",
   url: "https://thegeekonomy.com/blog/best-funeral-home-seo-company-for-growth",

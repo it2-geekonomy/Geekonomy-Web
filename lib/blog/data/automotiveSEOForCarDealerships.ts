@@ -150,7 +150,7 @@ export const automotiveSEOForCarDealerships: BlogData = {
 };
 
 export const automotiveSEOForCarDealershipsSEO = {
-  title: "Automotive SEO for Car Dealerships | Get Free Local SEO Audit",
+  title: "Automotive SEO for Car Dealerships | Free SEO Audit",
   description: "Boost sales with Automotive SEO for car dealerships. Improve search rankings, get more leads, and turn online car shoppers into ready-to-buy customers.",
   url: "https://thegeekonomy.com/blog/automotive-seo-for-car-dealerships",
   canonical: "https://thegeekonomy.com/blog/automotive-seo-for-car-dealerships",

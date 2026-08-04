@@ -174,7 +174,7 @@ export const wordPressSEOOxfordshire: BlogData = {
 };
 
 export const wordPressSEOOxfordshireSEO = {
-  title: "How to Improve WordPress SEO for Oxfordshire Sites",
+  title: "Improve WordPress SEO for Oxfordshire Sites | Free Audit",
   description: "Boost your Oxfordshire WordPress site's SEO. Improve rankings, attract local visitors, and grow traffic with proven optimization strategies.",
   url: "https://thegeekonomy.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",
   canonical: "https://thegeekonomy.com/blog/how-to-improve-wordpress-seo-for-oxfordshire-sites",

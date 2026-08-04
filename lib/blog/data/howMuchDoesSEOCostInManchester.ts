@@ -209,7 +209,7 @@ export const howMuchDoesSEOCostInManchester: BlogData = {
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInManchesterSEO = {
-  title: "How Much Does SEO Cost in Manchester | Book a Free SEO Audit",
+  title: "How Much Does SEO Cost in Manchester | Free SEO Audit",
   description:
     "Discover SEO pricing and costs for Manchester businesses. Learn about packages to boost your online visibility and rankings.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-manchester",

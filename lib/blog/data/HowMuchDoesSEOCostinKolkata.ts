@@ -216,7 +216,7 @@ export const howMuchDoesSEOCostInKolkata: BlogData = {
     ),
 };
 export const howMuchDoesSEOCostInKolkataSEO = {
-    title: "How Much Does SEO Cost in Kolkata | 2026 Guide",
+    title: "How Much Does SEO Cost in Kolkata | Get Free SEO Audit",
     description:
         "Discover premium SEO services in Kolkata. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-kolkata",

@@ -277,7 +277,7 @@ export const semanticContentNetworksByBenStace: BlogData = {
 };
 
 export const semanticContentNetworksByBenStaceSEO = {
-  title: "Semantic Content Networks by Ben Stace | Book Free Semantic Audit",
+  title: "Semantic Content Networks by Ben Stace | Free Semantic Audit",
   description:
     "Learn about semantic content networks by Ben Stace and how they improve topical authority, rankings, and search visibility.",
   url: "https://thegeekonomy.com/blog/semantic-content-networks-by-ben-stace",

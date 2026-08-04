@@ -202,7 +202,7 @@ export const whatToLookForInBrandStrategyAgencies: BlogData = {
 
 
 export const whatToLookForInBrandStrategyAgenciesSEO = {
-  title: "What to Look for in Brand Strategy Agencies | Free Brand Consultation",
+  title: "What to Look for in Brand Strategy Agencies | Free Brand Audit",
   description:
     "Discover what to look for in a brand strategy agency, from expertise and process to results, ensuring you choose the right partner for growth.",
   url: "https://thegeekonomy.com/blog/what-to-look-for-in-brand-strategy-agencies",

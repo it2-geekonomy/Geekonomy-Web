@@ -210,7 +210,7 @@ export const webDevelopmentCostInBangaloreForSmallBusinesses: BlogData = {
 };
 
 export const webDevelopmentCostInBangaloreForSmallBusinessesSEO = {
-  title: "Web Development Cost in Bangalore for Small Businesses | Free Audit",
+  title: "Web Development Cost in Bangalore for Small Businesses",
   description:
     " Discover web development cost in Bangalore for small businesses. Learn pricing, factors, and what to expect when building a business website.",
   url: "https://thegeekonomy.com/blog/web-development-cost-in-bangalore-for-small-businesses",

@@ -178,7 +178,7 @@ export const seoForAutoBodyShops: BlogData = {
 };
 
 export const seoForAutoBodyShopsSEO = {
-  title: "SEO for Auto Body Shops: Strategies to Boost Local SEO",
+  title: "SEO for Auto Body Shops Strategies | Get Free SEO Audit",
   description:
     "Boost your auto body shop's visibility with local SEO. Rank higher on Google, attract nearby customers, and increase repair bookings.",
   url: "https://thegeekonomy.com/blog/seo-for-auto-body-shops-strategies-to-boost-local-seo",

@@ -130,7 +130,7 @@ export const whySEOImportantForBusinessesInNYC: BlogData = {
 };
 
 export const whySEOImportantForBusinessesInNYCSEO = {
-  title: "Why SEO is Important for Businesses in NYC | Get Free SEO Audit",
+  title: "Why SEO is Important for Businesses in NYC | Free SEO Audit",
   description:
     "Discover why SEO is essential for NYC businesses. Improve visibility, outrank competitors, attract local customers, and drive consistent growth.",
   url: "https://thegeekonomy.com/blog/why-seo-is-important-for-businesses-in-nyc",

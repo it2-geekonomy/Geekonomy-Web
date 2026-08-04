@@ -114,7 +114,7 @@ export const howImportantIsBrandingForSEO: BlogData = {
 
 // SEO data for this blog
 export const howImportantIsBrandingForSEOSEO = {
-  title: "How Important is Branding for SEO? | Increase Organic Traffic",
+  title: "How Important is Branding for SEO? | 80% Increase Traffic",
   description:
     "Discover how branding impacts SEO success. Learn strategies to combine branding with SEO for better visibility, rankings, and organic traffic growth.",
   url: "https://thegeekonomy.com/blog/how-important-is-branding-for-seo",

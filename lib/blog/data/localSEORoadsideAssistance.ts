@@ -173,7 +173,7 @@ export const localSEORoadsideAssistance: BlogData = {
 };
 
 export const localSEORoadsideAssistanceSEO = {
-  title: "Local SEO for Roadside Assistance | Get Free Local SEO Audit",
+  title: "Local SEO for Roadside Assistance | Free SEO Audit",
   description: "Grow your roadside assistance business with local SEO. Rank higher, get more emergency calls, and attract nearby drivers fast.",
   url: "https://thegeekonomy.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",
   canonical: "https://thegeekonomy.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",

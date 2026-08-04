@@ -223,7 +223,7 @@ export const howMuchDoesSEOCostInHyderabad: BlogData = {
     ),
 };
 export const howMuchDoesSEOCostInHyderabadSEO = {
-    title: "How Much Does SEO Cost in Hyderabad | Book a Free SEO Audit",
+    title: "How Much Does SEO Cost in Hyderabad | Free SEO Audit",
     description:
         "Discover how much SEO costs in Hyderabad. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-hyderabad",

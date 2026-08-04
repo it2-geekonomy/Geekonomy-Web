@@ -144,18 +144,18 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 ];
 export const HowGoogleDisplayAdsGrowMarketingResultsforAdvertisers: BlogData = {
   slug: "google-display-ads-grow-marketing-results",
-  heading: "How Google Display Ads Grow Marketing Results for Advertisers",
+  heading: "How Google Display Ads Grow Marketing | Free Ads Audit",
   coverImage,
   sections: contentToSections(
     HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersContent,
     { src: coverImage, alt: "How Google Display Ads Grow Marketing Results for Advertisers" },
-    { introTitle: "How Google Display Ads Grow Marketing Results for Advertisers| Geekonomy" }
+    { introTitle: "How Google Display Ads Grow Marketing | Free Ads Audit" }
   ),
 };
 
 // SEO data for this blog
 export const HowGoogleDisplayAdsGrowMarketingResultsforAdvertisersSEO = {
-  title: "How Google Display Ads Grow Marketing Results for Advertisers",
+  title: "How Google Display Ads Grow Marketing | Free Ads Audit",
   description:
     "Learn how Google Display Ads help advertisers boost brand awareness, reach targeted audiences, and drive measurable marketing results.",
   url: "https://thegeekonomy.com/blog/google-display-ads-grow-marketing-results",

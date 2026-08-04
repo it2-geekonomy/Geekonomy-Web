@@ -147,7 +147,7 @@ export const localSEOForCarpenters: BlogData = {
 };
 
 export const localSEOForCarpentersSEO = {
-  title: "Local SEO for Carpenters Complete Guide | Free Local SEO Audit",
+  title: "Local SEO for Carpenters Complete Guide | Free SEO Audit",
   description:
     "Boost local visibility with SEO for carpenters. Rank higher in search, attract nearby clients, and grow your carpentry business.",
   url: "https://thegeekonomy.com/blog/local-seo-for-carpenters-complete-guide",

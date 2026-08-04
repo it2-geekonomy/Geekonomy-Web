@@ -246,7 +246,7 @@ export const howMuchDoesSEOCostInHouston: BlogData = {
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInHoustonSEO = {
-  title: "How Much Does SEO Cost in Houston | Book a Free SEO Audit",
+  title: "How Much Does SEO Cost in Houston | Free SEO Audit",
   description:
     "Discover SEO pricing and service costs for Houston businesses. Learn about SEO packages and pricing models to boost your online visibility.",
   url: "https://thegeekonomy.com/blog/how-much-do-seo-services-cost-in-houston",

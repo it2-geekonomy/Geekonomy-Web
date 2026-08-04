@@ -167,13 +167,13 @@ export const bestPracticesForSEOEnhancingAIVisibility: BlogData = {
   sections: contentToSections(
     bestPracticesForSEOEnhancingAIVisibilityContent,
     { src: coverImage, alt: "Best Practices for SEO Enhancing AI Visibility in 2026" },
-    { introTitle: "Best Practices for SEO Enhancing AI Visibility | Free Audit | Geekonomy" }
+    { introTitle: "Best Practices for SEO Enhancing AI Visibility | Free Audit" }
   ),
 };
 
 // SEO data for this blog
 export const bestPracticesForSEOEnhancingAIVisibilitySEO = {
-  title: "Best Practices for SEO Enhancing AI Visibility in 2026",
+  title: "Best Practices for SEO Enhancing AI Visibility | Free Audit",
   description:
     "Discover best practices for SEO to enhance AI visibility. Learn how to optimize content for AI search engines, leverage structured data, and stay ahead.",
   url: "https://thegeekonomy.com/blog/best-practices-for-seo-enhancing-ai-visibility",
