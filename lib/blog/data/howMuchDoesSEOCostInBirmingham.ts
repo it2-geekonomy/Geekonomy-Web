@@ -184,13 +184,13 @@ export const howMuchDoesSEOCostInBirmingham: BlogData = {
   sections: contentToSections(
     howMuchDoesSEOCostInBirminghamContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Birmingham" },
-    { introTitle: "How Much Does SEO Cost in Birmingham" }
+    { introTitle: "How Much Does SEO Cost in Birmingham | Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInBirminghamSEO = {
-  title: "How Much Does SEO Cost in Birmingham | 2026 Guide",
+  title: "How Much Does SEO Cost in Birmingham | Free SEO Audit",
   description:
     "Discover SEO pricing and costs for Birmingham businesses. Learn about packages to boost your online visibility and rankings.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-birmingham",

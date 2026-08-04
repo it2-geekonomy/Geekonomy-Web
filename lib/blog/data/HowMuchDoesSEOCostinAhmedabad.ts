@@ -207,7 +207,7 @@ export const howMuchDoesSEOCostInAhmedabad: BlogData = {
     ),
 };
 export const howMuchDoesSEOCostInAhmedabadSEO = {
-    title: "How Much Does SEO Cost in Ahmedabad | Get Free SEO Audit",
+    title: "How Much Does SEO Cost in Ahmedabad | Free SEO Audit",
     description:
         "Discover premium SEO services in Ahmedabad. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-ahmedabad",

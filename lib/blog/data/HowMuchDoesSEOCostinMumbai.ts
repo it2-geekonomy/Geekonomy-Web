@@ -236,7 +236,7 @@ export const howMuchDoesSEOCostInMumbai: BlogData = {
     ),
 };
 export const howMuchDoesSEOCostInMumbaiSEO = {
-    title: "How Much Does SEO Cost in Mumbai | Book a Free SEO Audit",
+    title: "How Much Does SEO Cost in Mumbai | Free SEO Audit",
     description:
         "Discover how much SEO costs in Mumbai. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-mumbai",

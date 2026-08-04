@@ -219,13 +219,13 @@ export const howMuchDoesSEOCostInSeattle: BlogData = {
   sections: contentToSections(
     howMuchDoesSEOCostInSeattleContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Seattle" },
-    { introTitle: "How Much Does SEO Cost in Seattle" }
+    { introTitle: "How Much Does SEO Cost in Seattle | Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInSeattleSEO = {
-  title: "How Much Does SEO Cost in Seattle | 2026 Guide",
+  title: "How Much Does SEO Cost in Seattle | Free SEO Audit",
   description:
     "Discover SEO pricing and service costs for Seattle businesses. Learn about SEO packages and pricing models to boost your online visibility and rankings.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-seattle",

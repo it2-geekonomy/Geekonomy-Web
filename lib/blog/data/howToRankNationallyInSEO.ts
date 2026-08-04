@@ -155,13 +155,13 @@ export const howToRankNationallyInSEO: BlogData = {
   sections: contentToSections(
     howToRankNationallyInSEOContent,
     { src: coverImage, alt: "How to Rank Nationally in SEO: Complete Guide 2026" },
-    { introTitle: "How to Rank Nationally in SEO 2026: Get Free SEO Audit | Geekonomy" }
+    { introTitle: "How to Rank Nationally in SEO 2026: Get Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howToRankNationallyInSEOSEO = {
-  title: "How to Rank Nationally in SEO: Complete Guide 2026",
+  title: "How to Rank Nationally in SEO 2026: Get Free SEO Audit",
   description:
     "Discover How to rank nationally in SEO with proven strategies for keywords, content, backlinks, technical optimization, and scalable growth.",
   url: "https://thegeekonomy.com/blog/how-to-rank-nationally-in-seo",

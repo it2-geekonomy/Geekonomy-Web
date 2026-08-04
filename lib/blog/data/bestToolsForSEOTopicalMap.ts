@@ -162,7 +162,7 @@ export const bestToolsForSEOTopicalMap: BlogData = {
 
 // SEO data for this blog
 export const bestToolsForSEOTopicalMapSEO = {
-  title: "Best Tools for SEO Topical Map | Grow Organic Traffic Upto 60%",
+  title: "Best Tools for SEO Topical Map | 60% Grow Traffic Upto",
   description:
     "Discover the best tools for creating SEO topical maps. Learn how to use AI-powered tools, build topic clusters, and boost your website's authority.",
   url: "https://thegeekonomy.com/blog/best-tools-for-seo-topical-map-boost-your-seo",

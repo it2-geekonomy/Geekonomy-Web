@@ -282,7 +282,7 @@ export const howMuchDoesSEOCostInDelhiNCR: BlogData = {
     ),
 };
 export const howMuchDoesSEOCostInDelhiNCRSEO = {
-    title: "How Much Does SEO Cost in Delhi NCR | Book a Free SEO Audit",
+    title: "How Much Does SEO Cost in Delhi NCR | Free SEO Audit",
     description:
         "Discover how much SEO costs in Delhi NCR. Compare SEO packages, pricing & services to improve your website's ranking and online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-delhi-ncr",

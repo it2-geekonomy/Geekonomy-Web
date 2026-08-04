@@ -260,7 +260,7 @@ export const howMuchDoesSEOCostInBangalore: BlogData = {
 };
 
 export const howMuchDoesSEOCostInBangaloreSEO = {
-  title: "How Much Does SEO Cost in Bangalore | Book a Free SEO Audit",
+  title: "How Much Does SEO Cost in Bangalore | Free SEO Audit",
   description:
     "Discover premium SEO services in Bangalore. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-bangalore",

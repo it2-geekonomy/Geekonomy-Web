@@ -142,13 +142,13 @@ export const howVerifyingOriginProtectsBrandReputation: BlogData = {
   sections: contentToSections(
   howVerifyingOriginProtectsBrandReputationContent,
     { src: coverImage, alt: " How Verifying Origin Protects Brand Reputation" },
-    { introTitle: " How Verifying Origin Protects Brand Reputation | Free Audit" }
+    { introTitle: "How Verifying Origin Protects Brand Reputation | Free Audit" }
   ),
 };
 
 
 export const howVerifyingOriginProtectsBrandReputationSEO = {
-  title: "How Verifying Origin Protects Brand Reputation",
+  title: "How Verifying Origin Protects Brand Reputation | Free Audit",
   description:
     " Learn how verifying origin protects brand reputation by ensuring authenticity, preventing misinformation, and building trust with your audience.",
   url: "https://thegeekonomy.com/blog/verifying-origin-protects-brand-reputation",

@@ -156,7 +156,7 @@ export const seoForPhysiotherapists: BlogData = {
 };
 
 export const seoForPhysiotherapistsSEO = {
-  title: "SEO for Physiotherapists: Rank Higher & Get Free Local SEO Audit",
+  title: "SEO for Physiotherapists: Rank Higher & Free SEO Audit",
   description:
     "Improve your clinic's online visibility with effective SEO for physiotherapists. Rank higher, attract local patients, and grow your practice.",
   url: "https://thegeekonomy.com/blog/seo-for-physiotherapists-rank-higher",

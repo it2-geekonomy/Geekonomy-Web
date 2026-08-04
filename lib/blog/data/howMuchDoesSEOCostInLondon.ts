@@ -171,13 +171,13 @@ export const howMuchDoesSEOCostInLondon: BlogData = {
   sections: contentToSections(
     howMuchDoesSEOCostInLondonContent,
     { src: coverImage, alt: "How Much Does SEO Cost in London" },
-    { introTitle: "How Much Does SEO Cost in London" }
+    { introTitle: "How Much Does SEO Cost in London | Get Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInLondonSEO = {
-  title: "How Much Does SEO Cost in London | 2026 Guide",
+  title: "How Much Does SEO Cost in London | Get Free SEO Audit",
   description:
     "Discover SEO pricing and service costs for London businesses. Learn about SEO packages and pricing models to boost your online visibility and rankings.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-london",

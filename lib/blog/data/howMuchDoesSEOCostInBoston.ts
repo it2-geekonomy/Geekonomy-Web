@@ -236,13 +236,13 @@ export const howMuchDoesSEOCostInBoston: BlogData = {
   sections: contentToSections(
     howMuchDoesSEOCostInBostonContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Boston" },
-    { introTitle: "How Much Does SEO Cost in Boston" }
+    { introTitle: "How Much Does SEO Cost in Boston | Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInBostonSEO = {
-  title: "How Much Does SEO Cost in Boston | 2026 Guide",
+  title: "How Much Does SEO Cost in Boston | Free SEO Audit",
   description:
     "Learn about SEO pricing and service costs for Boston businesses. Discover SEO packages and pricing models to boost your online visibility.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-boston",

@@ -119,12 +119,12 @@ export const bestFoundationRepairSEOStrategies: BlogData = {
   sections: contentToSections(
     bestFoundationRepairSEOStrategiesContent,
     { src: coverImage, alt: "Best Foundation Repair SEO Strategies for Growth 2026" },
-    { introTitle: "Best Foundation Repair SEO Strategies | Free SEO Audit | Geekonomy" }
+    { introTitle: "Best Foundation Repair SEO Strategies | Free SEO Audit" }
   ),
 };
 
 export const bestFoundationRepairSEOStrategiesSEO = {
-  title: "Best Foundation Repair SEO Strategies for Growth 2026",
+  title: "Best Foundation Repair SEO Strategies | Free SEO Audit",
   description:
     "Grow your business with proven foundation repair SEO strategies. Rank higher, attract local homeowners, and generate more service calls and leads.",
   url: "https://thegeekonomy.com/blog/best-foundation-repair-seo-strategies",

@@ -176,7 +176,7 @@ export const buildBrandAuthorityOnline: BlogData = {
 };
 
 export const buildBrandAuthorityOnlineSEO = {
-  title: "How to Build Brand Authority Online (2026 Guide)",
+  title: "How to Build Brand Authority Online | Get More Leads",
   description:
     "Learn how to build brand authority online through consistent content, thought leadership, social proof, and strategic digital presence.",
   url: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",

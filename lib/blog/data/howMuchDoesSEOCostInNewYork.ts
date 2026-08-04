@@ -231,13 +231,13 @@ export const howMuchDoesSEOCostInNewYork: BlogData = {
   sections: contentToSections(
     howMuchDoesSEOCostInNewYorkContent,
     { src: coverImage, alt: "How Much Does SEO Cost in New York" },
-    { introTitle: "How Much Does SEO Cost in New York" }
+    { introTitle: "How Much Does SEO Cost in New York | Get Free SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const howMuchDoesSEOCostInNewYorkSEO = {
-  title: "How Much Does SEO Cost in New York | 2026 Guide",
+  title: "How Much Does SEO Cost in New York | Get Free SEO Audit",
   description:
     "Discover SEO pricing and costs for New York businesses. Learn about packages to boost your online visibility and rankings.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-new-york",
