@@ -1,7 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Typography } from "@/components/ui/Typography";
+
+const LANDING_PAGE_SLUG = "digital-marketing-for-pool-companies-san-diego";
+const THANK_YOU_PATH = `/${LANDING_PAGE_SLUG}/thank-you`;
+
 type FormState = {
   name: string;
   email: string;
@@ -13,6 +18,7 @@ type FormState = {
 type FormErrors = Partial<Record<keyof FormState | "consent", string>>;
 
 export default function ContactForm() {
+  const router = useRouter();
   const [form, setForm] = useState<FormState>({
     name: "",
     email: "",
@@ -23,7 +29,8 @@ export default function ContactForm() {
   const [consent, setConsent] = useState(false);
   const [consentExpanded, setConsentExpanded] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleChange =
     (field: keyof FormState) => (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,17 +39,50 @@ export default function ContactForm() {
         setErrors((prev) => ({ ...prev, [field]: undefined }));
     };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const nextErrors: FormErrors = {};
     if (!form.name.trim()) nextErrors.name = "Name is required";
     if (!form.email.trim()) nextErrors.email = "Email is required";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+      nextErrors.email = "Enter a valid email";
+    }
     if (!form.phone.trim()) nextErrors.phone = "Phone is required";
     if (!form.message.trim()) nextErrors.message = "Message is required";
     if (!consent) nextErrors.consent = "Please provide consent to continue";
 
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length === 0) {
-      setSubmitted(true);
+    if (Object.keys(nextErrors).length > 0) return;
+
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch("/api/send-landing-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          contact: form.phone.trim(),
+          organisation: form.company.trim(),
+          message: form.message.trim(),
+          landingPage: LANDING_PAGE_SLUG,
+        }),
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      router.push(THANK_YOU_PATH);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "Failed to send message. Please try again."
+      );
+      setIsSubmitting(false);
     }
   };
 
@@ -203,18 +243,20 @@ export default function ContactForm() {
 
         <div className="flex justify-center mt-7">
           <button
-            onClick={handleSubmit}
-            className="bg-[#69AE44] hover:bg-[#5c9a3a] transition-colors border-none rounded-full px-11 py-4 cursor-pointer"
+            type="button"
+            onClick={() => void handleSubmit()}
+            disabled={isSubmitting}
+            className="bg-[#69AE44] hover:bg-[#5c9a3a] transition-colors border-none rounded-full px-11 py-4 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <Typography variant="body-lg" as="p" className="text-white font-bold">
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Typography>
           </button>
         </div>
 
-        {submitted && (
-          <Typography variant="body-lg" as="p" className="text-center text-[#69AE44] mt-4">
-            Thanks — your message has been sent.
+        {submitError && (
+          <Typography variant="body-lg" as="p" className="text-center text-red-400 mt-4">
+            {submitError}
           </Typography>
         )}
       </div>
