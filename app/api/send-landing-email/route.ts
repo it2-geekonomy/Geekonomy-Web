@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
                   </td>
                   <td style="vertical-align:middle;">
                     <h1 style="margin:0;color:#69AE44;font-size:24px;font-weight:700;">
-                      New Landing Page Lead
+                      New Lead
                     </h1>
                   </td>
                 </tr>
