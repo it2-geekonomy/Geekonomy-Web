@@ -3,7 +3,7 @@ import { Typography } from "@/components/ui/Typography";
 
 export default function CTA() {
   return (
-    <section id="contact" className="bg-black py-8 lg:py-10">
+    <section className="bg-black py-8 lg:py-10">
       <div className="mx-auto max-w-full">
         <div className="relative overflow-hidden border border-white/10 bg-[#69AE44]/20 px-8 py-16 text-center sm:px-16">
           <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-[#69AE44]/25 blur-[100px]" />
@@ -23,7 +23,7 @@ export default function CTA() {
             </Typography>
 
             <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-  <a href="#" className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03] sm:w-auto">
+  <a href="#contact" className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03] sm:w-auto">
     <Typography variant="body-lg" className="font-semibold text-black">
       Book a Free Strategy Call
     </Typography>

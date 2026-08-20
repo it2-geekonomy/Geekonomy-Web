@@ -1,6 +1,15 @@
-// layout.tsx — clean version, no metadata needed
+import type { Metadata } from "next";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Header";
+
+export const metadata: Metadata = {
+  title: "",
+  description:
+    "",
+  alternates: {
+    canonical: "",
+  },
+};
 
 export default function LandingLayout({
   children,
@@ -10,7 +19,9 @@ export default function LandingLayout({
   return (
     <>
       <Navbar />
+
       {children}
+
     </>
   );
 }
