@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       minute: "2-digit",
       hour12: true,
     });
-    const uniqueSubject = `New Landing Page Lead: ${safeLandingPage} [${time12hr}]`;
+    const uniqueSubject = `New Lead: ${safeLandingPage} [${time12hr}]`;
 
     const emailHtml = `
 <!DOCTYPE html>
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Landing Page Lead</title>
+  <title>New Lead</title>
 </head>
 <body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background-color:#f5f5f5;">
   <table role="presentation" style="width:100%;border-collapse:collapse;background-color:#f5f5f5;">
@@ -79,7 +79,7 @@ export async function POST(request: NextRequest) {
           <tr>
             <td style="padding:30px 40px;background-color:#f9f9f9;border-bottom:2px solid #69AE44;">
               <h2 style="margin:0 0 10px 0;color:#1a1a1a;font-size:18px;font-weight:600;">
-                Landing Page
+                Landing Page:
               </h2>
               <p style="margin:0 0 8px 0;color:#69AE44;font-size:16px;font-weight:500;">
                 ${safeLandingPage}
