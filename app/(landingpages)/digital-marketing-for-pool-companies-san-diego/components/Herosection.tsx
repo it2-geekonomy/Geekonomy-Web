@@ -199,7 +199,7 @@ export default function Hero() {
               business.
             </Typography>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
-              <a href="#services" className="inline-flex w-72 items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-white backdrop-blur-sm transition-colors hover:bg-white/10 sm:w-auto">
+              <a href="#contact" className="inline-flex w-72 items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-white backdrop-blur-sm transition-colors hover:bg-white/10 sm:w-auto">
                 <Typography variant="body-lg" className="font-semibold text-white">
                   Explore Services
                 </Typography>
