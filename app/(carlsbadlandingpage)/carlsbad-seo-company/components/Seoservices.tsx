@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
-import mapImage from "../images/map.png";
+import mapImage from "../images/mapC.png";
 
 const areas = [
   "Carlsbad Village",
