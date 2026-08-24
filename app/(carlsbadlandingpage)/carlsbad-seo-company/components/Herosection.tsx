@@ -23,13 +23,12 @@ export default function Hero() {
                             <span className="text-[#69AE44]">Turn Searches Into Customers</span>
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                            Geekonomy is a  <span className="text-[#FFFFFF] font-semibold">Carlsbad SEO</span> firm. We help local companies get more searched-usayition by expanding your organic visibility, loading in more pre-sell customers, and converting more legitimate leads from search. Our methods include a blend of 
+                            Geekonomy is a  <span className="text-[#FFFFFF] font-semibold">Carlsbad SEO</span> company. We help local companies get more searches by expanding your organic visibility, bringing in more pre-sale customers, and converting more legitimate leads from search. Our methods include a blend of
                            <span className="text-[#FFFFFF] font-semibold"> local SEO,</span> technical, <span className="text-[#FFFFFF] font-semibold"> semantic</span> optimization, on and off-page 
                            <span className="text-[#FFFFFF] font-semibold"> content and authority</span> optimization to help get your business in front of searchers.
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                            From increasing your ranking in Google to optimizing your presence in local search, or growing your website organically over time, we develop an SEO plan based on your business objectives-not a cookie-cutter approach.
-                        </Typography>
+                        From increasing your ranking in Google to optimizing your presence in local search, or growing your website organically over time, we develop an SEO plan based on your business objectives-not a cookie-cutter approach.                        </Typography>
 
                         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
                             <a href="#contact" className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-black transition-transform hover:scale-[1.03] sm:w-auto">
