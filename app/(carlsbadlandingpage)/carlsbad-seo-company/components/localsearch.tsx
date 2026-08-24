@@ -4,6 +4,7 @@ import {
   FileText,
   BadgeCheck,
   Star,
+  ArrowRight,
 } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 
@@ -54,7 +55,7 @@ export default function WhyUs() {
             Get Found by Customers Searching in Carlsbad
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-          When potential customers search for a service in Carlsbad, they’ll tend to look for a business that’s local, related, and trustworthy. Geekonomy’s Carlsbad local SEO services help your business appear for these high-intent local searches on Google Search and Google Maps.          </Typography>
+            When potential customers search for a service in Carlsbad, they’ll tend to look for a business that’s local, related, and trustworthy. Geekonomy’s Carlsbad local SEO services help your business appear for these high-intent local searches on Google Search and Google Maps.          </Typography>
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -74,9 +75,25 @@ export default function WhyUs() {
               </Typography>
             </div>
           ))}
+          <div className="flex min-h-full w-full max-w-[380px] mx-auto flex-col justify-center rounded-[20px] border border-[#69AE44]/40 bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 shadow-lg shadow-[#69AE44]/10 md:max-w-none md:mx-0">
+            <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
+              Not sure where to start?
+            </Typography>
+            <Typography variant="body-lg" className="mb-5 text-black/70">
+              We will build a custom strategy around the channels most
+              relevant to your pool business.
+            </Typography>
+            <a
+              href="#contact"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
+            >
+              Get a Free Plan
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
         <Typography variant="body-xl" className="mt-7 leading-relaxed text-white/90">
-        The objective is not necessarily to rank for “Carlsbad SEO” or “SEO near me.” The objective is to get your business on the first page of search results when people in your area are searching for your product or service. 
+          The objective is not necessarily to rank for “Carlsbad SEO” or “SEO near me.” The objective is to get your business on the first page of search results when people in your area are searching for your product or service.
         </Typography>
       </div>
     </section>

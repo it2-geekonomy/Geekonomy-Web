@@ -113,23 +113,6 @@ export default function Services() {
                             </Typography>
                         </div>
                     ))}
-
-                    <div className="flex flex-col justify-center w-full max-w-[380px] mx-auto md:max-w-none md:mx-0 rounded-[20px] bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7">
-                        <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
-                            Not sure where to start?
-                        </Typography>
-                        <Typography variant="body-lg" className="mb-5 text-black/70">
-                            We will build a custom strategy around the channels most
-                            relevant to your pool business.
-                        </Typography>
-                        <a
-                            href="#contact"
-                            className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
-                        >
-                            Get a Free Plan
-                            <ArrowRight className="h-4 w-4" />
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>

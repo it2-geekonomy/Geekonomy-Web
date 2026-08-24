@@ -12,7 +12,7 @@ import FAQ from "./components/FAQ";
 import Comparision from "./components/Comparision";
 import DataCompliance from "./components/Datacompliance";
 import TargetCTA from "./components/TargetingCTA";
-import Form from "./components/Form";
+import LandingPageForm from "@/components/forms/LandingPageForm";
 
 const PUBLISHED_DATE = "2026-08-20T08:00:00.000Z";
 
@@ -64,7 +64,7 @@ export default function Home() {
       <Measurablegrowth />
       <DataCompliance />
       <FAQ />
-      <Form />
+      <LandingPageForm landingPageSlug="digital-marketing-for-pool-companies-san-diego" />
     </main>
   );
 }

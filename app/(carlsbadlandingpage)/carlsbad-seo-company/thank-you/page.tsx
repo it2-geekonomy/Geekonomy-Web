@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
-  return <LandingThankYou landingPageSlug="digital-marketing-for-pool-companies-san-diego" />;
+  return <LandingThankYou landingPageSlug="carlsbad-seo-company" />;
 }
