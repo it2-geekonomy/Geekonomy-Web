@@ -58,7 +58,7 @@ export default function Home() {
       <Ourapproach />
       <Growth />
       <FAQ />
-      <LandingPageForm landingPageSlug="carlsbad-landingpage" />
+      <LandingPageForm landingPageSlug="carlsbad-seo-company" />
       </main>
   );
 }
