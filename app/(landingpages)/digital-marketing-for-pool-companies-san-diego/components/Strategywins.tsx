@@ -1,6 +1,5 @@
 import { Search, TrendingUp, MapPin, LineChart } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
-import strategyImage from "../images/strategy2.jpg";
 
 const items = [
   {
@@ -58,7 +57,7 @@ export default function ValueGrid() {
           <div className="relative mx-auto w-full max-w-[320px] lg:max-w-[420px] lg:mx-0">
             <div className="relative aspect-[4/4.4] overflow-hidden border border-white/10 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
               <img
-                src={strategyImage.src}
+                src="https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/strategy2.jpg"
                 alt="San Diego pool marketing strategy"
                 className="h-full w-full object-cover"
               />
