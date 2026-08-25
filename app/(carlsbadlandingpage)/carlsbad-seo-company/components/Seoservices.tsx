@@ -1,6 +1,5 @@
 import { MapPin } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
-import mapImage from "../images/mapC.png";
 
 const areas = [
   "Carlsbad Village",
@@ -47,7 +46,7 @@ export default function ServiceAreas() {
           <div className="order-2 mx-auto w-full max-w-[380px] lg:mx-0 lg:max-w-[520px] lg:justify-self-end">
             <div className="aspect-[4/3] w-full overflow-hidden border border-white/10 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
               <img
-                src={mapImage.src}
+                src="https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/mapC.png"
                 alt="Map of San Diego County service areas"
                 className="h-full w-full object-cover"
               />

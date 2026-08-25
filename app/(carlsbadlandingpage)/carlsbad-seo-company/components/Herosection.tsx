@@ -1,6 +1,5 @@
 import { Eye, TrendingUp, Search, ArrowRight } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
-import heroImage from "../images/herosection.png";
 
 export default function Hero() {
     return (
@@ -49,7 +48,7 @@ export default function Hero() {
                     <div className="relative">
                         <div className="relative aspect-[4/4.4] w-full max-w-[320px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 mx-auto sm:max-w-[420px] lg:max-w-[520px] lg:mx-0">
                             <img
-                                src={heroImage.src}
+                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/herosection.png"
                                 alt="Pool company marketing and San Diego local visibility"
                                 className="h-full w-full object-cover"
                             />

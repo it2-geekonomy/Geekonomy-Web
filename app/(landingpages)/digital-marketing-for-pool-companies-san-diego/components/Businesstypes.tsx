@@ -1,59 +1,51 @@
 import { Typography } from "@/components/ui/Typography";
-import poolCleaningImage from "../images/poolcleaning.png";
-import poolMaintainanceImage from "../images/poolmaintainance.png";
-import poolRepairImage from "../images/poolrepair.png";
-import poolRemodelingImage from "../images/poolremodeling.png";
-import poolBuildersImage from "../images/poolbuilders.png";
-import poolResurfacingImage from "../images/poolresurfacing.png";
-import commercialServicesImage from "../images/commercialservices.png";
-import equipmentImage from "../images/equipment.png";
 
 const types = [
   {
     label: "Pool Cleaning",
-    image: poolCleaningImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/poolcleaning.png",
     title: "Pool Cleaning Companies",
     desc: "Create a consistent pipeline of homeowners looking for trustworthy pool cleaning and maintenance services. Focus on Local SEO, Google Business Profile optimization, paid search, review collection, and conversion-optimized service pages to bring in customers needing regular pool maintenance.",
   },
   {
     label: "Maintenance",
-    image: poolMaintainanceImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/poolmaintainance.png",
     title: "Pool Maintenance Companies",
     desc: "Present a solution to meet homeowners’ needs for reliable recurring maintenance, equipment checks, water treatment, and seasonal pool services. Use marketing campaigns with local search engine optimization, landing pages for specific services, reviews, and lead generation campaigns.",
   },
   {
     label: "Repair",
-    image: poolRepairImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/poolrepair.png",
     title: "Pool Repair Companies",
     desc: "Target high- intent searches from all customers with leaks, pumps, filters, heaters, plumbing issues, and any other pool-related problem. A carefully targeted SEO and PPC campaign will put your business in front of customers looking for your product or service now.",
   },
   {
     label: "Remodeling",
-    image: poolRemodelingImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/poolremodeling.png",
     title: "Pool Remodeling Companies",
     desc: "Remodeling your pools is a large expense, so most customers will do their homework on contractors, designs, materials, costs, and previous project references before choosing. Content marketing, project-specific landing pages, image galleries, local SEO, and advertising can drive qualified remodeling leads.",
   },
   {
     label: "Pool Builders",
-    image: poolBuildersImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/poolbuilders.png",
     title: "Pool Builders",
     desc: "New pool construction necessitates an extended customer journey and an extremely high-value lead. This can fund campaigns based on pool installation inquiries, design pointers, financing queries, project costing, and location-based inquiries, complemented by conversion-based landing pages to convert that fresh interest into consultations.",
   },
   {
     label: "Resurfacing",
-    image: poolResurfacingImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/poolresurfacing.png",
     title: "Pool Resurfacing Companies",
     desc: "Reach homeowners searching for replastering, resurfacing, tile replacement, finishes, and pool renovation areas. Services pages targeted on high-intent search campaigns can get your company in front of searchers ready to undertake a resurfacing project.",
   },
   {
     label: "Commercial",
-    image: commercialServicesImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/commercialservices.png",
     title: "Commercial Pool Services",
     desc: "Commercial clients have different needs than residential clients. You can use marketing efforts toward managers of properties, hotels, rental communities, gyms, schools, or other businesses with pools that need professional care and regulatory compliance.",
   },
   {
     label: "Equipment",
-    image: equipmentImage,
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/equipment.png",
     title: "Pool Equipment & Installation Companies",
     desc: "Target customers in need of pool pumps, filters, heaters, automation systems, saltwater systems, lighting, or replacement equipment. Targeted service-specific SEO and paid campaigns can help capture demand from customers who are looking to upgrade or repair equipment.",
   },
@@ -92,7 +84,7 @@ export default function BusinessTypes() {
             >
               <div className="mb-4 overflow-hidden rounded-[14px] border border-white/10 bg-white/[0.03]">
                 <img
-                  src={image.src}
+                  src={image}
                   alt={title}
                   className="aspect-[16/10] w-full object-cover object-top"
                 />
