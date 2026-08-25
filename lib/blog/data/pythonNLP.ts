@@ -135,17 +135,17 @@ const pythonNLPContent: BlogContentItem[] = [
 
 export const pythonNLP: BlogData = {
   slug: "how-to-use-python-for-nlp-and-semantic-seo",
-  heading: "How to Use Python for NLP and Semantic SEO",
+  heading: "How to Use Python for NLP and Semantic SEO | Rank 1 Page",
   coverImage,
   sections: contentToSections(
     pythonNLPContent,
     { src: coverImage, alt: "How to Use Python for NLP and Semantic SEO" },
-    { introTitle: "How to Use Python for NLP and Semantic SEO | Geekonomy" }
+    { introTitle: "How to Use Python for NLP and Semantic SEO | Rank 1 Page" }
   ),
 };
 
 export const pythonNLPSEO = {
-  title: "How to Use Python for NLP and Semantic SEO",
+  title: "How to Use Python for NLP and Semantic SEO | Rank 1 Page",
   description:
     "Learn how to use Python for NLP and semantic SEO. Automate keyword research, optimize content, improve rankings, and boost search relevance.",
   url: "https://thegeekonomy.com/blog/how-to-use-python-for-nlp-and-semantic-seo",

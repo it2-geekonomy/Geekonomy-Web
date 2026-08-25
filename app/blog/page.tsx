@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function BlogsPage() {
   return (
     <>
-      <JsonLd data={buildBlogIndexJsonLd()} />
+      {/* <JsonLd data={buildBlogIndexJsonLd()} /> */}
       <Suspense fallback={<BlogsPageLoading />}>
         <BlogsPageClient />
       </Suspense>

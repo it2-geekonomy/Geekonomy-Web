@@ -198,17 +198,17 @@ const seoCostLeedsContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInLeeds: BlogData = {
   slug: "seo-cost-in-leeds",
-  heading: "How Much Does SEO Cost in Leeds | 2026 Guide",
+  heading: "How Much Does SEO Cost in Leeds | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoCostLeedsContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Leeds | 2026 Guide" },
-    { introTitle: "How Much Does SEO Cost in Leeds | 2026 Guide" }
+    { introTitle: "How Much Does SEO Cost in Leeds | Free SEO Audit" }
   ),
 };
 
 export const howMuchDoesSEOCostInLeedsSEO = {
-  title: "How Much Does SEO Cost in Leeds | 2026 Guide",
+  title: "How Much Does SEO Cost in Leeds | Free SEO Audit",
   description:
     "Discover how much SEO costs in Leeds. Learn pricing, factors affecting SEO costs, and how businesses can choose the right SEO services.",
   url: "https://thegeekonomy.com/blog/seo-cost-in-leeds",

@@ -177,16 +177,16 @@ const seoCostPuneContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInPune: BlogData = {
     slug: "how-much-does-seo-cost-in-pune",
-    heading: "How Much Does SEO Cost in Pune | 2026 Guide",
+    heading: "How Much Does SEO Cost in Pune | Get Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostPuneContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Pune" },
-        { introTitle: "How Much Does SEO Cost in Pune | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Pune | Get Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInPuneSEO = {
-    title: "How Much Does SEO Cost in Pune | 2026 Guide",
+    title: "How Much Does SEO Cost in Pune | Get Free SEO Audit",
     description:
         "Discover premium SEO services in Pune. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-pune",

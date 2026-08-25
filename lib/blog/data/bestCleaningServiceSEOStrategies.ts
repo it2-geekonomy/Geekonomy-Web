@@ -126,17 +126,17 @@ const bestCleaningServiceSEOStrategiesContent: BlogContentItem[] = [
 
 export const bestCleaningServiceSEOStrategies: BlogData = {
   slug: "best-cleaning-service-seo-strategies",
-  heading: "Best Cleaning Service SEO Strategies for Booking in 2026",
+  heading: "Best Cleaning Service SEO Strategies | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     bestCleaningServiceSEOStrategiesContent,
     { src: coverImage, alt: "Best Cleaning Service SEO" },
-    { introTitle: "Best Cleaning Service SEO Strategies for Booking in 2026 | Geekonomy" }
+    { introTitle: "Best Cleaning Service SEO Strategies | Free SEO Audit" }
   ),
 };
 
 export const bestCleaningServiceSEOStrategiesSEO = {
-  title: "Best Cleaning Service SEO Strategies for Booking in 2026",
+  title: "Best Cleaning Service SEO Strategies | Free SEO Audit",
   description:
     "Discover the best cleaning service SEO strategies to increase bookings, rank higher on Google, attract local customers, and grow your cleaning business.",
   url: "https://thegeekonomy.com/blog/best-cleaning-service-seo-strategies",

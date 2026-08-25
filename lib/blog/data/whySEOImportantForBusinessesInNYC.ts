@@ -120,17 +120,17 @@ const whySEOImportantForBusinessesInNYCContent: BlogContentItem[] = [
 
 export const whySEOImportantForBusinessesInNYC: BlogData = {
   slug: "why-seo-is-important-for-businesses-in-nyc",
-  heading: "Why SEO is Important for Businesses in NYC",
+  heading: "Why SEO is Important for Businesses in NYC | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     whySEOImportantForBusinessesInNYCContent,
     { src: coverImage, alt: "Why SEO is Important for Businesses in NYC" },
-    { introTitle: "Why SEO is Important for Businesses in NYC | Geekonomy" }
+    { introTitle: "Why SEO is Important for Businesses in NYC | Free SEO Audit" }
   ),
 };
 
 export const whySEOImportantForBusinessesInNYCSEO = {
-  title: "Why SEO is Important for Businesses in NYC",
+  title: "Why SEO is Important for Businesses in NYC | Free SEO Audit",
   description:
     "Discover why SEO is essential for NYC businesses. Improve visibility, outrank competitors, attract local customers, and drive consistent growth.",
   url: "https://thegeekonomy.com/blog/why-seo-is-important-for-businesses-in-nyc",

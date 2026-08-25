@@ -166,17 +166,17 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const buildBrandAuthorityOnline: BlogData = {
   slug: "how-to-build-brand-authority-online",
-  heading: "How to Build Brand Authority Online (2026 Guide)",
+  heading: "How to Build Brand Authority Online | Get More Leads",
   coverImage,
   sections: contentToSections(
     buildBrandAuthorityOnlineContent,
     { src: coverImage, alt: "How to Build Brand Authority Online" },
-    { introTitle: "How to Build Brand Authority Online (2026 Guide)" }
+    { introTitle: "How to Build Brand Authority Online | Get More Leads" }
   ),
 };
 
 export const buildBrandAuthorityOnlineSEO = {
-  title: "How to Build Brand Authority Online (2026 Guide)",
+  title: "How to Build Brand Authority Online | Get More Leads",
   description:
     "Learn how to build brand authority online through consistent content, thought leadership, social proof, and strategic digital presence.",
   url: "https://thegeekonomy.com/blog/how-to-build-brand-authority-online",

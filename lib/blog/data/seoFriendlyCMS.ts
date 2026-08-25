@@ -153,17 +153,17 @@ const seoFriendlyCMSContent: BlogContentItem[] = [
 
 export const seoFriendlyCMS: BlogData = {
   slug: "seo-friendly-cms-find-the-best",
-  heading: "10 Best SEO Friendly CMS: Find the Best CMS As Per Needs",
+  heading: "10 Best SEO-Friendly CMS to Boost Your Google Rankings",
   coverImage,
   sections: contentToSections(
     seoFriendlyCMSContent,
     { src: coverImage, alt: "10 Best SEO Friendly CMS: Find the Best CMS As Per Needs" },
-    { introTitle: "10 Best SEO Friendly CMS: Find the Best CMS As Per Needs" }
+    { introTitle: "10 Best SEO-Friendly CMS to Boost Your Google Rankings" }
   ),
 };
 
 export const seoFriendlyCMSSEO = {
-  title: "10 Best SEO Friendly CMS: Find the Best CMS As Per Needs",
+  title: "10 Best SEO-Friendly CMS to Boost Your Google Rankings",
   description: "Discover the 10 best SEO-friendly CMS platforms. Compare features and performance to choose the best CMS for your website needs.",
   url: "https://thegeekonomy.com/blog/seo-friendly-cms-find-the-best",
   canonical: "https://thegeekonomy.com/blog/seo-friendly-cms-find-the-best",

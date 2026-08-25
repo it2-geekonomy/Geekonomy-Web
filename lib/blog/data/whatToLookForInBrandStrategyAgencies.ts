@@ -191,18 +191,18 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const whatToLookForInBrandStrategyAgencies: BlogData = {
   slug: "what-to-look-for-in-brand-strategy-agencies",
-  heading: "What to Look for in Brand Strategy Agencies (2026 Guide)",
+  heading: "What to Look for in Brand Strategy Agencies | Free Brand Audit",
   coverImage,
   sections: contentToSections(
     whatToLookForInBrandStrategyAgenciesContent,
     { src: coverImage, alt: "What to Look for in Brand Strategy Agencies" },
-    { introTitle: "What to Look for in Brand Strategy Agencies (2026 Guide)" }
+    { introTitle: "What to Look for in Brand Strategy Agencies | Free Brand Audit" }
   ),
 };
 
 
 export const whatToLookForInBrandStrategyAgenciesSEO = {
-  title: "What to Look for in Brand Strategy Agencies (2026 Guide)",
+  title: "What to Look for in Brand Strategy Agencies | Free Brand Audit",
   description:
     "Discover what to look for in a brand strategy agency, from expertise and process to results, ensuring you choose the right partner for growth.",
   url: "https://thegeekonomy.com/blog/what-to-look-for-in-brand-strategy-agencies",

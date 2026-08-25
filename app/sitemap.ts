@@ -14,6 +14,7 @@ function slugify(value: string): string {
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://thegeekonomy.com'
   const currentDate = new Date('2026-02-19T03:57:01+00:00').toISOString()
+  const landingPageDate = new Date('2026-08-24T00:00:00+00:00').toISOString()
 
   // Static pages with priorities
   const staticPages: MetadataRoute.Sitemap = [
@@ -31,12 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/how-we-work`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/success-lab`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -60,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/career`,
+      url: `${baseUrl}/careers`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -70,6 +65,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/carlsbad-seo-company`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/digital-marketing-for-pool-companies-san-diego`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
   ]
 

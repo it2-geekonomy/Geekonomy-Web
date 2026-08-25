@@ -4,7 +4,7 @@ import { getSchemaBaseUrl, orgId, websiteId } from "./constants";
 const HOME_DESC =
   "From branding and digital marketing to full-stack development, Geekonomy builds unforgettable brand legacies powered by research, design, and code.";
 
-/** Homepage @graph: Organization, LocalBusiness, WebSite, WebPage (no fake ratings / phone). */
+/** Homepage @graph: Organization, LocalBusiness, WebSite, WebPage */
 export function buildHomePageJsonLd() {
   const base = getSchemaBaseUrl();
   const org = orgId(base);
@@ -22,11 +22,17 @@ export function buildHomePageJsonLd() {
         logo: logoImageObject(),
         description: HOME_DESC,
         foundingDate: "2020",
+        founder: {
+          "@type": "Person",
+          name: "Arjun Sindhia",
+        },
         sameAs: [...SAME_AS],
         address: getPostalAddress(),
         contactPoint: {
           "@type": "ContactPoint",
-          contactType: "customer support",
+          contactType: "Sales",
+          telephone: "+91-9900005968",
+          email: "hello@thegeekonomy.com",
           url: `${base}/contact-us`,
         },
         areaServed: [
@@ -38,24 +44,24 @@ export function buildHomePageJsonLd() {
         "@type": "LocalBusiness",
         "@id": `${base}/#local-business`,
         name: "Geekonomy",
-        image: `${base}/Logo.png`,
-        description:
-          "Digital agency offering branding, web development, and marketing services.",
+        image: `${base}/assets/geekonomy-logo.png`,
         url: base,
+        telephone: "+91-9900005968",
+        email: "hello@thegeekonomy.com",
+        description:
+          "Digital agency offering branding, web development, and marketing services",
         address: getPostalAddress(),
         priceRange: "$$",
-        openingHoursSpecification: [
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            opens: "09:00",
-            closes: "18:00",
-          },
-        ],
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "09:00",
+          closes: "18:00",
+        },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 12.910929,
-          longitude: 77.577966,
+          latitude: "12.910929",
+          longitude: "77.577966",
         },
       },
       {
@@ -75,12 +81,6 @@ export function buildHomePageJsonLd() {
         isPartOf: { "@id": web },
         publisher: { "@id": org },
         mainEntity: { "@id": org },
-        image: {
-          "@type": "ImageObject",
-          url: `${base}/assets/og-home.jpg`,
-          width: 1200,
-          height: 630,
-        },
       },
     ],
   };

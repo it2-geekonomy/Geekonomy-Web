@@ -245,16 +245,16 @@ const seoCostLosAngelesContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInLosAngeles: BlogData = {
     slug: "how-much-does-seo-cost-in-los-angeles",
-    heading: "How Much Does SEO Cost in Los Angeles | 2026 Guide",
+    heading: "How Much Does SEO Cost in Los Angeles | Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostLosAngelesContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Los Angeles" },
-        { introTitle: "How Much Does SEO Cost in Los Angeles | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Los Angeles | Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInLosAngelesSEO = {
-    title: "How Much Does SEO Cost in Los Angeles | 2026 Guide",
+    title: "How Much Does SEO Cost in Los Angeles | Free SEO Audit",
     description:
         "Learn about SEO pricing and service costs for Los Angeles businesses. Discover SEO packages and pricing models to boost your online visibility.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-los-angeles",

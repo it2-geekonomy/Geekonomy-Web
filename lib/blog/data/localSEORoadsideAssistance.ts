@@ -163,17 +163,17 @@ const localSEORoadsideAssistanceContent: BlogContentItem[] = [
 
 export const localSEORoadsideAssistance: BlogData = {
   slug: "local-seo-for-roadside-assistance-providers-best-strategies",
-  heading: "Local SEO for Roadside Assistance Providers: Best Strategies",
+  heading: "Local SEO for Roadside Assistance | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     localSEORoadsideAssistanceContent,
     { src: coverImage, alt: "Local SEO for Roadside Assistance Providers: Best Strategies" },
-    { introTitle: "Local SEO for Roadside Assistance Providers: Best Strategies" }
+    { introTitle: "Local SEO for Roadside Assistance | Free SEO Audit" }
   ),
 };
 
 export const localSEORoadsideAssistanceSEO = {
-  title: "Local SEO for Roadside Assistance Providers: Best Strategies",
+  title: "Local SEO for Roadside Assistance | Free SEO Audit",
   description: "Grow your roadside assistance business with local SEO. Rank higher, get more emergency calls, and attract nearby drivers fast.",
   url: "https://thegeekonomy.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",
   canonical: "https://thegeekonomy.com/blog/local-seo-for-roadside-assistance-providers-best-strategies",

@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
-  // Indexed / bookmarked typo URLs — keep 308s so equity consolidates on the real slug.
+
   async redirects() {
     return [
       {
@@ -17,13 +17,9 @@ const nextConfig: NextConfig = {
         destination: "/blog/what-makes-a-good-business-website-in-the-uk",
         permanent: true,
       },
-      {
-        source: "/case-studies/branding/mushashi-delta",
-        destination: "/case-studies/branding/musashi-delta",
-        permanent: true,
-      },
     ];
   },
+
   images: {
     unoptimized: true,
     remotePatterns: [

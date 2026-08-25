@@ -12,7 +12,7 @@ export function buildAboutJsonLd() {
         url: `${base}/about`,
         name: "About Geekonomy - Our Story",
         description:
-          "Learn about Geekonomy's mission and approach to building growth systems.",
+          "Learn about Geekonomy's mission and approach to building growth systems",
         publisher: { "@type": "Organization", "@id": orgId(base) },
       },
       {
@@ -20,14 +20,24 @@ export function buildAboutJsonLd() {
         "@id": `${base}/about#organization-details`,
         name: "Geekonomy",
         description:
-          "Geekonomy is a growth systems company that partners with businesses to create structure, clarity and momentum in how they grow. We believe growth is not achieved through isolated efforts, but through well-built systems that work together over time.",
-        foundingDate: "2015",
+          "Geekonomy is a growth systems company that partners with businesses to create structure, clarity and momentum in how they grow.",
+        foundingDate: "2020",
+        founder: {
+          "@type": "Person",
+          name: "Arjun Sindhia",
+        },
         foundingLocation: {
           "@type": "Place",
           name: "Bengaluru, India",
         },
         url: base,
-        logo: `${base}/Logo.png`,
+        logo: `${base}/assets/geekonomy-logo.png`,
+        sameAs: [
+          "https://www.facebook.com/thegeekonomy",
+          "https://www.instagram.com/thegeekonomy",
+          "https://x.com/TheGeekonomy",
+          "https://www.linkedin.com/company/thegeekonomy/",
+        ],
         knowsAbout: [
           "Branding Strategy",
           "Digital Marketing",
@@ -35,10 +45,6 @@ export function buildAboutJsonLd() {
           "Growth Systems",
           "Business Strategy",
         ],
-        image: {
-          "@type": "ImageObject",
-          url: `${base}/assets/og-about.jpg`,
-        },
       },
     ],
   };

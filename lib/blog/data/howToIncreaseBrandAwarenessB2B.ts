@@ -160,18 +160,18 @@ img(imageCommon, "Common Challenges in Increasing B2B Brand Awareness"),
 
 export const howToIncreaseBrandAwarenessB2B: BlogData = {
   slug: "how-to-increase-brand-awareness-in-b2b",
-  heading: "How to Increase Brand Awareness in B2B",
+  heading: "How to Increase Brand Awareness in B2B | Get Free Audit",
   coverImage,
   sections: contentToSections(
     howToIncreaseBrandAwarenessB2BContent,
     { src: coverImage, alt: "How to Increase Brand Awareness in B2B" },
-    { introTitle: "How to Increase Brand Awareness in B2B" }
+    { introTitle: "How to Increase Brand Awareness in B2B | Get Free Audit" }
   ),
 };
 
 
 export const howToIncreaseBrandAwarenessB2BSEO = {
-  title: "How to Increase Brand Awareness in B2B (Guide 2026)",
+  title: "How to Increase Brand Awareness in B2B | Get Free Audit",
   description:
     "Learn how to increase B2B brand awareness with proven strategies like content marketing, SEO, and thought leadership to attract quality leads.",
   url: "https://thegeekonomy.com/blog/how-to-increase-brand-awareness-in-b2b",

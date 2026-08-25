@@ -6,7 +6,7 @@ export function ContactFormLeftPanel() {
   return (
     <div className="space-y-12">
       <Typography as="p" variant="h4" className="text-white">
-        Let's Get Your Portfolio Strategy
+       Let’s define the next stage of your growth.
       </Typography>
 
       <div className="space-y-12">
@@ -32,7 +32,7 @@ export function ContactFormLeftPanel() {
             className="w-7 h-7 sm:w-[28px] sm:h-[28px]"
           />
           <Typography as="p" variant="body-xl" className="text-white">
-            connect@geekonomy.in
+          connect@thegeekonomy.com
           </Typography>
         </div>
 

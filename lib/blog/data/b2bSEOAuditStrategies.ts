@@ -140,17 +140,17 @@ const b2bSEOAuditStrategiesContent: BlogContentItem[] = [
 
 export const b2bSEOAuditStrategies: BlogData = {
   slug: "b2b-seo-audit-strategies",
-  heading: "B2B SEO Audit Strategies to Improve SEO Performance",
+  heading: "B2B SEO Audit Strategies to Improve | Get Free SEO Audit",
   coverImage,
   sections: contentToSections(
     b2bSEOAuditStrategiesContent,
     { src: coverImage, alt: "B2B SEO Audit Strategies" },
-    { introTitle: "B2B SEO Audit Strategies to Improve SEO Performance | Geekonomy" }
+    { introTitle: "B2B SEO Audit Strategies to Improve | Get Free SEO Audit" }
   ),
 };
 
 export const b2bSEOAuditStrategiesSEO = {
-  title: "B2B SEO Audit Strategies to Improve SEO Performance",
+  title: "B2B SEO Audit Strategies to Improve | Get Free SEO Audit",
   description:
     "Improve rankings and conversions with a detailed B2B SEO audit. Identify issues, fix technical errors, and optimize for better traffic and leads.",
   url: "https://thegeekonomy.com/blog/b2b-seo-audit-strategies",

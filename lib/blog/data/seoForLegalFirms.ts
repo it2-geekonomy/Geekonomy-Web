@@ -384,17 +384,17 @@ const seoForLegalFirmsContent: BlogContentItem[] = [
 
 export const seoForLegalFirms: BlogData = {
   slug: "seo-for-legal-firms-complete-guide",
-  heading: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher",
+  heading: "SEO for Legal Firms | Get Free SEO Audit | Rank 1 Page",
   coverImage,
   sections: contentToSections(
     seoForLegalFirmsContent,
     { src: coverImage, alt: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher" },
-    { introTitle: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher" }
+    { introTitle: "SEO for Legal Firms | Get Free SEO Audit | Rank 1 Page" }
   ),
 };
 
 export const seoForLegalFirmsSEO = {
-  title: "SEO for Legal Firms: Complete Guide 2026 to Rank Higher",
+  title: "SEO for Legal Firms | Get Free SEO Audit | Rank 1 Page",
   description: "SEO for legal firms helps boost rankings, attract qualified leads, and improve online visibility for lawyers and law firms. Learn proven strategies",
   url: "https://thegeekonomy.com/blog/seo-for-legal-firms-complete-guide",
   canonical: "https://thegeekonomy.com/blog/seo-for-legal-firms-complete-guide",
