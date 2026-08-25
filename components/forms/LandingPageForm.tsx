@@ -122,7 +122,7 @@ export default function LandingPageForm({ landingPageSlug }: LandingPageFormProp
             className="mt-1 w-4 h-4 accent-[#69AE44] shrink-0"
           />
           <Typography variant="body-lg" as="p" className="text-neutral-300 leading-relaxed m-0 inline">
-            I consent to receive service-related SMS messages and phone calls from Geekonomy. {consentExpanded && (
+            I consent to receive service-related communications from Geekonomy. {consentExpanded && (
               <span>Message and data rates may apply. See our <a href="#" onClick={(event) => event.preventDefault()} className="text-[#69AE44] underline">Privacy Policy</a> and <a href="#" onClick={(event) => event.preventDefault()} className="text-[#69AE44] underline">Terms &amp; Conditions</a>. </span>
             )}
             <a href="#" onClick={(event) => { event.preventDefault(); setConsentExpanded((previous) => !previous); }} className="text-[#69AE44] underline whitespace-nowrap">
