@@ -334,18 +334,18 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const BestLLMSEOToolsforAgenciesin2026: BlogData = {
   slug: "best-llm-seo-tools-for-agencies",
-  heading: "Best LLM SEO Tools for Agencies in 2026",
+  heading: "Best LLM SEO Tools for Agencies | Free LLM SEO Audit",
   coverImage,
   sections: contentToSections(
     BestLLMSEOToolsforAgenciesin2026Content,
     { src: coverImage, alt: "Best LLM SEO Tools for Agencies in 2026" },
-    { introTitle: "Best LLM SEO Tools for Agencies in 2026" }
+    { introTitle: "Best LLM SEO Tools for Agencies | Free LLM SEO Audit" }
   ),
 };
 
 // SEO data for this blog
 export const BestLLMSEOToolsforAgenciesin2026SEO = {
-  title: "Best LLM SEO Tools for Agencies in 2026",
+  title: "Best LLM SEO Tools for Agencies | Free LLM SEO Audit",
   description:
     "Discover best practices for SEO to enhance AI visibility. Learn how to optimize content for AI search engines, leverage structured data, and stay ahead.",
   url: "https://thegeekonomy.com/blog/best-llm-seo-tools-for-agencies",

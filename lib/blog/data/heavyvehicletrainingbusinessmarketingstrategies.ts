@@ -156,18 +156,18 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const heavyvehicletrainingbusinessmarketingstrategies: BlogData = {
   slug: "heavy-vehicle-training-business-marketing-strategies",
-  heading: "Heavy vehicle training business marketing strategies",
+  heading: "Heavy Vehicle Training Business Marketing | Free Ads Audit",
   coverImage,
   sections: contentToSections(
    heavyvehicletrainingbusinessmarketingstrategiesContent,
     { src: coverImage, alt: "Heavy vehicle training business marketing strategies" },
-    { introTitle: "Heavy vehicle training business marketing strategies" }
+    { introTitle: "Heavy Vehicle Training Business Marketing | Free Ads Audit" }
   ),
 };
 
 // SEO data for this blog
 export const heavyvehicletrainingbusinessmarketingstrategiesSEO = {
-  title: "Heavy vehicle training business marketing strategies",
+  title: "Heavy Vehicle Training Business Marketing | Free Ads Audit",
   description:
     " Discover marketing strategies for heavy vehicle training businesses to attract students, build trust, and grow enrollments effectively.",
   url: "https://thegeekonomy.com/blog/heavy-vehicle-training-business-marketing-strategies",

@@ -267,17 +267,17 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const semanticContentNetworksByBenStace: BlogData = {
   slug: "semantic-content-networks-by-ben-stace",
-  heading: "Semantic Content Networks by Ben Stace (2026 Guide)",
+  heading: "Semantic Content Networks by Ben Stace | Free Semantic Audit",
   coverImage,
   sections: contentToSections(
     semanticContentNetworksByBenStaceContent,
     { src: coverImage, alt: "Semantic Content Networks by Ben Stace" },
-    { introTitle: "Semantic Content Networks by Ben Stace (2026 Guide)" }
+    { introTitle: "Semantic Content Networks by Ben Stace | Free Semantic Audit" }
   ),
 };
 
 export const semanticContentNetworksByBenStaceSEO = {
-  title: "Semantic Content Networks by Ben Stace (2026 Guide)",
+  title: "Semantic Content Networks by Ben Stace | Free Semantic Audit",
   description:
     "Learn about semantic content networks by Ben Stace and how they improve topical authority, rankings, and search visibility.",
   url: "https://thegeekonomy.com/blog/semantic-content-networks-by-ben-stace",

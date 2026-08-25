@@ -250,17 +250,17 @@ const seoCostBangaloreContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInBangalore: BlogData = {
   slug: "how-much-does-seo-cost-in-bangalore",
-  heading: "How Much Does SEO Cost in Bangalore | 2026 Guide",
+  heading: "How Much Does SEO Cost in Bangalore | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoCostBangaloreContent,
     { src: coverImage, alt: "How Much Does SEO Cost in Bangalore" },
-    { introTitle: "How Much Does SEO Cost in Bangalore | 2026 Guide" }
+    { introTitle: "How Much Does SEO Cost in Bangalore | Free SEO Audit" }
   ),
 };
 
 export const howMuchDoesSEOCostInBangaloreSEO = {
-  title: "How Much Does SEO Cost in Bangalore | 2026 Guide",
+  title: "How Much Does SEO Cost in Bangalore | Free SEO Audit",
   description:
     "Discover premium SEO services in Bangalore. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
   url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-bangalore",

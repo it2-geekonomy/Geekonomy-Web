@@ -148,18 +148,18 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const howtoUseSocialListeningforInfluencerMarketing: BlogData = {
   slug: "use-social-listening-influencer-marketing",
-  heading: "How to Use Social Listening for Influencer Marketing",
+  heading: "How to Use Social Listening for Influencer Marketing | Free Audit",
   coverImage,
   sections: contentToSections(
   howtoUseSocialListeningforInfluencerMarketingContent,
     { src: coverImage, alt: " How to Use Social Listening for Influencer Marketing" },
-    { introTitle: " How to Use Social Listening for Influencer Marketing" }
+    { introTitle: "How to Use Social Listening for Influencer Marketing | Free Audit" }
   ),
 };
 
 
 export const howtoUseSocialListeningforInfluencerMarketingSEO = {
-  title: "How to Use Social Listening for Influencer Marketing",
+  title: "How to Use Social Listening for Influencer Marketing | Free Audit",
   description:
     " Learn how to use social listening for influencer marketing to identify trends, find the right creators, and improve campaign performance.",
   url: "https://thegeekonomy.com/blog/use-social-listening-influencer-marketing",

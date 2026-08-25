@@ -155,17 +155,17 @@ const b2bEcommerceWebsiteDevelopmentContent: BlogContentItem[] = [
 
 export const b2bEcommerceWebsiteDevelopment: BlogData = {
   slug: "b2b-ecommerce-website-development-strategies",
-  heading: "B2B eCommerce Website Development Strategies",
+  heading: "B2B eCommerce Website Development Strategies | 60% Improve",
   coverImage,
   sections: contentToSections(
     b2bEcommerceWebsiteDevelopmentContent,
     { src: coverImage, alt: "B2B eCommerce Website Development Strategies" },
-    { introTitle: "B2B eCommerce Website Development Strategies" }
+    { introTitle: "B2B eCommerce Website Development Strategies | 60% Improve" }
   ),
 };
 
 export const b2bEcommerceWebsiteDevelopmentSEO = {
-  title: "B2B eCommerce Website Development Strategies",
+  title: "B2B eCommerce Website Development Strategies | 60% Improve",
   description: "Explore effective B2B eCommerce website development strategies to improve user experience, boost conversions, and drive scalable business growth.",
   url: "https://thegeekonomy.com/blog/b2b-ecommerce-website-development-strategies",
   canonical: "https://thegeekonomy.com/blog/b2b-ecommerce-website-development-strategies",

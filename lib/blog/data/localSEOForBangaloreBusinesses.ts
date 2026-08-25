@@ -151,17 +151,17 @@ const localSEOForBangaloreBusinessesContent: BlogContentItem[] = [
 
 export const localSEOForBangaloreBusinesses: BlogData = {
   slug: "local-seo-for-bangalore-businesses",
-  heading: "Local SEO for Bangalore Businesses: Step-by-Step Guide",
+  heading: "Local SEO for Bangalore Businesses: Get Free SEO Audit",
   coverImage,
   sections: contentToSections(
     localSEOForBangaloreBusinessesContent,
     { src: coverImage, alt: "Local SEO for Bangalore Businesses" },
-    { introTitle: "Local SEO for Bangalore Businesses: Step-by-Step Guide" }
+    { introTitle: "Local SEO for Bangalore Businesses: Get Free SEO Audit" }
   ),
 };
 
 export const localSEOForBangaloreBusinessesSEO = {
-  title: "Local SEO for Bangalore Businesses: Step-by-Step Guide",
+  title: "Local SEO for Bangalore Businesses: Get Free SEO Audit",
   description:
     "Learn how local SEO helps Bangalore businesses improve Google rankings, attract nearby customers, and generate more local leads.",
   url: "https://thegeekonomy.com/blog/local-seo-for-bangalore-businesses",

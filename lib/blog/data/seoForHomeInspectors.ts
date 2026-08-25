@@ -146,17 +146,17 @@ const seoForHomeInspectorsContent: BlogContentItem[] = [
 
 export const seoForHomeInspectors: BlogData = {
   slug: "seo-for-home-inspectors-business-best-seo-strategies",
-  heading: "SEO for Home Inspectors Business: Best SEO Strategies",
+  heading: "SEO for Home Inspectors Business: Get Free SEO Audit",
   coverImage,
   sections: contentToSections(
     seoForHomeInspectorsContent,
     { src: coverImage, alt: "SEO for Home Inspectors Business: Best SEO Strategies" },
-    { introTitle: "SEO for Home Inspectors Business: Best SEO Strategies" }
+    { introTitle: "SEO for Home Inspectors Business: Get Free SEO Audit" }
   ),
 };
 
 export const seoForHomeInspectorsSEO = {
-  title: "SEO for Home Inspectors Business: Best SEO Strategies",
+  title: "SEO for Home Inspectors Business: Get Free SEO Audit",
   description: "Boost your SEO for home inspectors business with the best SEO strategies. Rank higher, attract local clients, and generate more leads.",
   url: "https://thegeekonomy.com/blog/seo-for-home-inspectors-business-best-seo-strategies",
   canonical: "https://thegeekonomy.com/blog/seo-for-home-inspectors-business-best-seo-strategies",

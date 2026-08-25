@@ -181,17 +181,17 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const HowMuchDoesBrandingCostinBangalore: BlogData = {
   slug: "branding-cost-in-bangalore",
-  heading: "How Much Does Branding Cost in Bangalore?",
+  heading: "How Much Does Branding Cost in Bangalore | Free Audit",
   coverImage,
   sections: contentToSections(
     HowMuchDoesBrandingCostinBangaloreContent,
     { src: coverImage, alt: "How Much Does Branding Cost in Bangalore?" },
-    { introTitle: "How Much Does Branding Cost in Bangalore?" }
+    { introTitle: "How Much Does Branding Cost in Bangalore | Free Audit" }
   ),
 };
 
 export const HowMuchDoesBrandingCostinBangaloreSEO = {
-  title: "How Much Does Branding Cost in Bangalore?",
+  title: "How Much Does Branding Cost in Bangalore | Free Audit",
   description:
     "Learn how much branding costs in Bangalore, including logo design, brand strategy, and full branding packages for startups and businesses.",
   url: "https://thegeekonomy.com/blog/branding-cost-in-bangalore",

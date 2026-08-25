@@ -168,17 +168,17 @@ const TopMarketingMistakesBangaloreStartupsContent: BlogContentItem[] = [
 
 export const TopMarketingMistakesBangaloreStartups: BlogData = {
   slug: "top-marketing-mistakes-bangalore-startups",
-  heading: "Top Marketing Mistakes Made by Bangalore Startups",
+  heading: "Marketing Mistakes Made by Bangalore Startups | Free Audit",
   coverImage,
   sections: contentToSections(
     TopMarketingMistakesBangaloreStartupsContent,
     { src: coverImage, alt: "Top Marketing Mistakes Made by Bangalore Startups" },
-    { introTitle: "Top Marketing Mistakes Made by Bangalore Startups" }
+    { introTitle: "Marketing Mistakes Made by Bangalore Startups | Free Audit" }
   ),
 };
 
 export const TopMarketingMistakesBangaloreStartupsSEO = {
-  title: "Top Marketing Mistakes Made by Bangalore Startups",
+  title: "Marketing Mistakes Made by Bangalore Startups | Free Audit",
   description: "Discover the biggest marketing mistakes Bangalore startups make and learn practical strategies to improve branding, SEO, lead generation, and growth.",
   url: "https://thegeekonomy.com/blog/top-marketing-mistakes-bangalore-startups",
   canonical: "https://thegeekonomy.com/blog/top-marketing-mistakes-bangalore-startups",

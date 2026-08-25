@@ -143,17 +143,17 @@ const fashionSEOAgencyContent: BlogContentItem[] = [
 
 export const fashionSEOAgency: BlogData = {
   slug: "fashion-seo-agency-seo-strategies-to-grow",
-  heading: "Fashion SEO Agency: SEO Strategies To Grow Your Brand",
+  heading: "Fashion SEO Agency: Rank 1 Page Plan | Free SEO Audit",
   coverImage,
   sections: contentToSections(
     fashionSEOAgencyContent,
     { src: coverImage, alt: "Fashion SEO Agency: SEO Strategies To Grow Your Brand" },
-    { introTitle: "Fashion SEO Agency: SEO Strategies To Grow Your Brand | Geekonomy" }
+    { introTitle: "Fashion SEO Agency: Rank 1 Page Plan | Free SEO Audit" }
   ),
 };
 
 export const fashionSEOAgencySEO = {
-  title: "Fashion SEO Agency: SEO Strategies To Grow Your Brand",
+  title: "Fashion SEO Agency: Rank 1 Page Plan | Free SEO Audit",
   description:
     "Boost your fashion brand with a top SEO agency. Improve rankings, attract more customers, and grow your online presence effectively.",
   url: "https://thegeekonomy.com/blog/fashion-seo-agency-seo-strategies-to-grow",

@@ -169,18 +169,18 @@ p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#6
 
 export const  bestSemanticSEOConsultantsHowtoChoosetheRight: BlogData = {
   slug: "best-semantic-seo-consultants-how-to-choose",
-  heading: "Best Semantic SEO Consultants: How to Choose the Right",
+  heading: "Best Semantic SEO Consultants: Get Free Semantic Audit",
   coverImage,
   sections: contentToSections(
      bestSemanticSEOConsultantsHowtoChoosetheRightContent,
     { src: coverImage, alt: "Best Semantic SEO Consultants: How to Choose the Right" },
-    { introTitle: "Best Semantic SEO Consultants: How to Choose the Right" }
+    { introTitle: "Best Semantic SEO Consultants: Get Free Semantic Audit" }
   ),
 };
 
 // SEO data for this blog
 export const  bestSemanticSEOConsultantsHowtoChoosetheRightSEO = {
-  title: "Best Semantic SEO Consultants: How to Choose the Right",
+  title: "Best Semantic SEO Consultants: Get Free Semantic Audit",
   description:
     " Learn how to choose the best semantic SEO consultants by evaluating expertise in entities, topical authority, and proven search growth strategies.",
   url: "https://thegeekonomy.com/blog/best-semantic-seo-consultants-how-to-choose",

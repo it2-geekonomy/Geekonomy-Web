@@ -207,16 +207,16 @@ const seoCostKolkataContent: BlogContentItem[] = [
 
 export const howMuchDoesSEOCostInKolkata: BlogData = {
     slug: "how-much-does-seo-cost-in-kolkata",
-    heading: "How Much Does SEO Cost in Kolkata | 2026 Guide",
+    heading: "How Much Does SEO Cost in Kolkata | Get Free SEO Audit",
     coverImage,
     sections: contentToSections(
         seoCostKolkataContent,
         { src: coverImage, alt: "How Much Does SEO Cost in Kolkata" },
-        { introTitle: "How Much Does SEO Cost in Kolkata | 2026 Guide" }
+        { introTitle: "How Much Does SEO Cost in Kolkata | Get Free SEO Audit" }
     ),
 };
 export const howMuchDoesSEOCostInKolkataSEO = {
-    title: "How Much Does SEO Cost in Kolkata | 2026 Guide",
+    title: "How Much Does SEO Cost in Kolkata | Get Free SEO Audit",
     description:
         "Discover premium SEO services in Kolkata. Explore SEO packages, pricing, and strategies to boost your website's Google ranking effectively.",
     url: "https://thegeekonomy.com/blog/how-much-does-seo-cost-in-kolkata",
