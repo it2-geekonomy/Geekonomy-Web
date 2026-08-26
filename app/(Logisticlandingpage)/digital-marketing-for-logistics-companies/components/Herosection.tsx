@@ -116,7 +116,7 @@ export default function Hero() {
                     <div className="flex max-w-md flex-wrap justify-center gap-4 lg:justify-start">
                         {[
                             "SEO",
-                            "PPC & Paid Search",
+                            "PPC & Paid Ads",
                             "Content Marketing",
                             "Local SEO",
                             "Conversion Optimization",

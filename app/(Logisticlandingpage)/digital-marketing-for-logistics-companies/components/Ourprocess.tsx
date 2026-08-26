@@ -44,18 +44,15 @@ export default function OurProcess() {
           ))}
         </div>
 
-
-
-        <div className="mt-11 rounded-[1.25rem] border border-[#69AE44] bg-[#69AE44]/10 p-7">
-          <div className="flex w-full flex-wrap items-center justify-center gap-3">
+        <div className="mt-11 overflow-x-auto lg:overflow-visible rounded-[20px] border border-[#69AE44] bg-[#69AE44]/10 p-7">
+          <div className="flex w-max items-center gap-3 lg:w-full lg:flex-wrap lg:justify-center">
             {flow.map((s, i) => (
               <div key={s} className="flex items-center gap-3">
                 <span
-                  className={`whitespace-nowrap rounded-full text-xs px-4 py-2.5 sm:text-sm font-semibold ${
-                    i === flow.length - 1
+                  className={`whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-semibold ${i === flow.length - 1
                       ? "bg-[#69AE44] text-black"
                       : "border border-white/10 bg-white/10 text-white/80"
-                  }`}
+                    }`}
                 >
                   {s}
                 </span>
@@ -64,9 +61,6 @@ export default function OurProcess() {
             ))}
           </div>
         </div>
-
-
-
 
         <Typography variant="body-xl" className="mt-7 leading-relaxed text-white/90">
           This allows you to focus your digital marketing on ongoing iterations, rather than a single “throw it at the wall” effort.
