@@ -207,3 +207,53 @@ body {
   position: relative;
   z-index: 10;
 }
+
+
+
+/* Lead Generation step card glow effect */
+@property --step-glow-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.step-glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--step-glow-angle),
+    transparent 0%,
+    #69ae44 8%,
+    #b6ffa1 14%,
+    #69ae44 20%,
+    transparent 32%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  animation: step-glow-rotate 2.4s linear infinite;
+  animation-play-state: paused;
+}
+
+.step-glow-card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.step-glow-card:hover {
+  border-color: rgba(105, 174, 68, 0.4);
+}
+
+@keyframes step-glow-rotate {
+  to {
+    --step-glow-angle: 360deg;
+  }
+}
