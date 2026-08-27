@@ -1,13 +1,6 @@
 
 
-
-/**
- * Examples:
- *   "Website: [thegeekonomy.com](https://thegeekonomy.com)"
- *
- *   "Read more about [The Geekonomy](https://thegeekonomy.com/about)"
- */
-
+//  Examples: "Website: [thegeekonomy.com](https://thegeekonomy.com)"  
 
 import { Fragment, type ReactNode } from "react";
 

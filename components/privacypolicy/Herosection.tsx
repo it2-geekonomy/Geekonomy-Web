@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 import { Typography } from "@/components/ui/Typography";
 import { privacyMeta, privacySections } from "@/lib/constants/PrivacyPolicyData";
 import { renderWithLinks } from "@/lib/linkifDomain";
@@ -14,7 +8,6 @@ export default function PrivacyPolicyPage() {
   return (
     <section id="privacy-policy" className="bg-black py-16 lg:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        {/* Header */}
 
         <div className="mb-14">
           <Typography
@@ -56,11 +49,7 @@ export default function PrivacyPolicyPage() {
                     <span className="text-[#FFFFFF] font-semibold"> European Economic Area (EEA), United Kingdom, Switzerland, and the United States</span>.
               </Typography>
           </div>
-
         </div>
-
-
-
 
 
         {/* Sections */}
@@ -85,8 +74,7 @@ export default function PrivacyPolicyPage() {
                   variant="body-lg"
                   className="mb-3 leading-relaxed whitespace-pre-line text-white/90"
                 >
-                  {/* {para} */}
-                  {/* {linkifDomain(para)} */}
+
                   {renderWithLinks(para)}
                 </Typography>
               ))}

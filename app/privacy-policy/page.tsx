@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
   },
  
-};
+}; 
 
 export default function PrivacyPolicy() {
   return (

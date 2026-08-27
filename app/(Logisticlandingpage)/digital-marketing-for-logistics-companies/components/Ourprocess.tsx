@@ -44,7 +44,7 @@ export default function OurProcess() {
           ))}
         </div>
 
-        <div className="mt-11 overflow-x-auto lg:overflow-visible rounded-[1.25rem] border border-[#69AE44] bg-[#69AE44]/10 p-7">
+        <div className="mt-11 overflow-x-auto lg:overflow-visible rounded-[20px] border border-[#69AE44] bg-[#69AE44]/10 p-7">
           <div className="flex w-max items-center gap-3 lg:w-full lg:flex-wrap lg:justify-center">
             {flow.map((s, i) => (
               <div key={s} className="flex items-center gap-3">
