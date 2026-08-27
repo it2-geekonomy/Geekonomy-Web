@@ -11,7 +11,7 @@ export default function CTA() {
 
             <div className="relative ">
            
-                <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
+                <Typography variant="display-2xl" as="p" className="text-white  leading-tight">
                 Turn digital visibility into qualified logistics opportunities.     
                 </Typography>
 

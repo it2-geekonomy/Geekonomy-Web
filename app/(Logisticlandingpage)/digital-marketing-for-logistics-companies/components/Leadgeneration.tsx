@@ -44,28 +44,23 @@ export default function LeadGeneration() {
           ))}
         </div>
 
-
-
-<div className="mt-11 rounded-[1.25rem] border border-[#69AE44] bg-[#69AE44]/10 p-7">
-  <div className="flex w-full flex-wrap items-center justify-center gap-3">
-    {flow.map((s, i) => (
-      <div key={s} className="flex items-center gap-3">
-        <span
-          className={`whitespace-nowrap rounded-full text-xs px-4 py-2.5 sm:text-sm font-semibold ${
-            i === flow.length - 1
-              ? "bg-[#69AE44] text-black"
-              : "border border-white/10 bg-white/10 text-white/80"
-          }`}
-        >
-          {s}
-        </span>
-        {i < flow.length - 1 && <span className="text-[#69AE44]">→</span>}
-      </div>
-    ))}
-  </div>
-</div>
-
-
+        <div className="mt-11 overflow-x-auto lg:overflow-visible rounded-[20px] border border-[#69AE44] bg-[#69AE44]/10 p-7">
+          <div className="flex w-max items-center gap-3 lg:w-full lg:flex-wrap lg:justify-center">
+            {flow.map((s, i) => (
+              <div key={s} className="flex items-center gap-3">
+                <span
+                  className={`whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-semibold ${i === flow.length - 1
+                      ? "bg-[#69AE44] text-black"
+                      : "border border-white/10 bg-white/10 text-white/80"
+                    }`}
+                >
+                  {s}
+                </span>
+                {i < flow.length - 1 && <span className="text-[#69AE44]">→</span>}
+              </div>
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>
