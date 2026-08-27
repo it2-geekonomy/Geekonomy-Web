@@ -1,4 +1,5 @@
-import type { PrivacySection } from "./PrivacyPolicyTypes";
+
+import { PrivacySection } from "./PrivacyPolicyData";
 
 export const privacySections6: PrivacySection[] = [
   {
