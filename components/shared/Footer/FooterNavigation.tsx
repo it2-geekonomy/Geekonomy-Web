@@ -15,8 +15,8 @@ export function FooterNavigation({
   className = "",
   navClassName = "",
 }: FooterNavigationProps) {
-  const listClasses = layout === "grid" 
-    ? "grid grid-cols-2 gap-x-8 gap-y-2 px-4" 
+  const listClasses = layout === "grid"
+    ? "grid grid-cols-[auto_auto] gap-x-6 xl:gap-x-12 gap-y-2 px-2 xl:px-4"
     : "flex flex-col gap-1.5 items-center";
 
   return (
@@ -27,7 +27,7 @@ export function FooterNavigation({
             <Link href={item.href} className="uppercase">
               <Typography
                 variant="body-xl"
-                className={`font-light text-white hover:text-[#69AE44] transition-colors duration-200 ${textAlign}`}
+                className={`font-light whitespace-nowrap text-white hover:text-[#69AE44] transition-colors duration-200 lg:text-[16px] xl:text-[17px] ${textAlign}`}
               >
                 {item.label}
               </Typography>

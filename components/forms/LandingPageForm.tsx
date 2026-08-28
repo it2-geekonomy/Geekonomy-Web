@@ -130,11 +130,11 @@ export default function LandingPageForm({ landingPageSlug }: LandingPageFormProp
             {consentExpanded && (
               <span>
                 Message and data rates may apply. See our{" "}
-                <Link href="/privacy-policy" className="text-[#69AE44] underline hover:opacity-80">
+                <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#69AE44] underline hover:opacity-80">
                   Privacy Policy
                 </Link>{" "}
                 and{" "}
-                <Link href="/terms-and-conditions" className="text-[#69AE44] underline hover:opacity-80">
+                <Link href="/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="text-[#69AE44] underline hover:opacity-80">
                   Terms &amp; Conditions
                 </Link>
                 .{" "}
