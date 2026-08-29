@@ -15,5 +15,7 @@ export const FOOTER_NAV_ITEMS = [
   { label: "ABOUT", href: "/about" },
   { label: "CAREERS", href: "/careers" },
   { label: "BLOGS", href: "/blog" },
+  { label: "PRIVACY POLICY", href: "/privacy-policy" },
+  { label: "TERMS & CONDITIONS", href: "/terms-and-conditions" },
   { label: "CONTACT US", href: "/contact-us" },
 ] as const;

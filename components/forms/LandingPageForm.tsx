@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type ChangeEvent } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Typography } from "@/components/ui/Typography";
 
@@ -113,6 +114,7 @@ export default function LandingPageForm({ landingPageSlug }: LandingPageFormProp
 
         <div className="flex items-start gap-2.5 mb-2 mt-4">
           <input
+            id="landing-consent"
             type="checkbox"
             checked={consent}
             onChange={(event) => {
@@ -121,14 +123,31 @@ export default function LandingPageForm({ landingPageSlug }: LandingPageFormProp
             }}
             className="mt-1 w-4 h-4 accent-[#69AE44] shrink-0"
           />
-          <Typography variant="body-lg" as="p" className="text-neutral-300 leading-relaxed m-0 inline">
-            I consent to receive service-related communications from Geekonomy. {consentExpanded && (
-              <span>Message and data rates may apply. See our <a href="#" onClick={(event) => event.preventDefault()} className="text-[#69AE44] underline">Privacy Policy</a> and <a href="#" onClick={(event) => event.preventDefault()} className="text-[#69AE44] underline">Terms &amp; Conditions</a>. </span>
+          <div className="text-neutral-300 text-[14px] sm:text-[14px] md:text-[15px] lg:text-[15px] leading-relaxed m-0">
+            <label htmlFor="landing-consent" className="cursor-pointer">
+              I consent to receive service-related communications from Geekonomy.
+            </label>{" "}
+            {consentExpanded && (
+              <span>
+                Message and data rates may apply. See our{" "}
+                <Link href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#69AE44] underline hover:opacity-80">
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link href="/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="text-[#69AE44] underline hover:opacity-80">
+                  Terms &amp; Conditions
+                </Link>
+                .{" "}
+              </span>
             )}
-            <a href="#" onClick={(event) => { event.preventDefault(); setConsentExpanded((previous) => !previous); }} className="text-[#69AE44] underline whitespace-nowrap">
+            <button
+              type="button"
+              onClick={() => setConsentExpanded((previous) => !previous)}
+              className="text-[#69AE44] underline whitespace-nowrap bg-transparent border-none p-0 cursor-pointer font-inherit"
+            >
               {consentExpanded ? "Show less" : "Read more"}
-            </a>
-          </Typography>
+            </button>
+          </div>
         </div>
         {errors.consent && <Typography variant="body-sm" as="p" className="text-red-300 mt-0 mb-2">{errors.consent}</Typography>}
 

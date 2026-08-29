@@ -358,7 +358,7 @@ export default function CareerApplicationSection() {
                 I agree to Geekonomy storing my details for recruitment
                 purposes. My information will not be shared with third parties.{" "}
                 <Link
-                  href="/contact-us"
+                  href="/privacy-policy"
                   className="text-[#69AE44] underline-offset-2 hover:underline"
                 >
                   View our Privacy Policy
