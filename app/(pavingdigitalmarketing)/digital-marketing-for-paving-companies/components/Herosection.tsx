@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { badges, HeroKeywords, stats } from "../const/Herosection";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function Hero() {
     return (
@@ -30,7 +31,7 @@ export default function Hero() {
                         </Typography>
 
                         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
-                            <a href="#contact" className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-black transition-transform hover:scale-[1.03] sm:w-auto">
+                            <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-black transition-transform hover:scale-[1.03] sm:w-auto">
                                 <Typography variant="body-lg" className="font-semibold text-black">
                                     Get Your Free Marketing Strategy
                                 </Typography>

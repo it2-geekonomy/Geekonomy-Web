@@ -17,7 +17,7 @@ import CTA from "./components/CTA";
 const PUBLISHED_DATE = "2026-08-25T08:00:00.000Z";
 
 export const metadata: Metadata = {
-  title: "Charlotte PPC Agency | Get a Free Ad Account Audit",
+  title: "Charlotte PPC Agency | Best Charlotte PPC Company",
   description:
     "Partner with the best Charlotte PPC agency that drives qualified leads, maximizes ad spend, and turns Google Ads into measurable business growth.",
   alternates: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "article",
-    title: "Charlotte PPC Agency | Get a Free Ad Account Audit",
+    title: "Charlotte PPC Agency | Best Charlotte PPC Company",
     description:
       "Partner with the best Charlotte PPC agency that drives qualified leads, maximizes ad spend, and turns Google Ads into measurable business growth.",
     url: "https://thegeekonomy.com/charlotte-ppc-agency",
@@ -45,7 +45,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            headline: "Charlotte PPC Agency | Get a Free Ad Account Audit",
+            headline: "Charlotte PPC Agency | Best Charlotte PPC Company",
             datePublished: PUBLISHED_DATE,
           }),
         }}

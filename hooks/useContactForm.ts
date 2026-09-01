@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { useRouter } from "next/navigation";
 import { CONTACT_SUBJECTS } from "@/lib/constants";
 import { ContactFormValues } from "@/types/ContactTypes";
 import { validateContactForm } from "@/lib/validations";
@@ -35,6 +36,8 @@ async function sendContactEmailFallback(payload: ContactEmailPayload) {
 }
 
 export function useContactForm() {
+  const router = useRouter();
+
   const [values, setValues] = useState<ContactFormValues>({
     name: "",
     email: "",
@@ -137,7 +140,6 @@ export function useContactForm() {
           });
         }
 
-        setSubmitStatus("success");
         setValues({
           name: "",
           email: "",
@@ -146,10 +148,7 @@ export function useContactForm() {
           subject: [],
           message: "",
         });
-
-        setTimeout(() => {
-          setSubmitStatus("idle");
-        }, 5000);
+        router.push("/contact-us/thank-you");
       } catch (error: any) {
         console.error("EmailJS Error:", error);
         setSubmitStatus("error");

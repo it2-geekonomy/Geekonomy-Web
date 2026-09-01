@@ -22,7 +22,7 @@ export const SpecializedItems = [
   },
   {
     icon: Clock,
-    title: "seasonal demand",
+    title: "Seasonal demand",
     desc: ["Adapt to the seasonal demand for paving services to be maintained appropriately with specific email marketing campaigns for targeting paving clients. Adapt campaigns and content to variations of demand of paving services according to the season with appropriate marketing ideas for the paving industry and local paving opportunities.",
     ]
   },

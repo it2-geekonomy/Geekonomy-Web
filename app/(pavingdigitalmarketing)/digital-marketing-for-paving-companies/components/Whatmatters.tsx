@@ -2,6 +2,7 @@
 import { Typography } from "@/components/ui/Typography";
 import {  metrics, tags } from "../const/Whatmatters";
 import { ArrowRight, Check } from "lucide-react";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function WhatMatters() {
   return (
@@ -59,6 +60,7 @@ export default function WhatMatters() {
             </Typography>
             <a
               href="#contact"
+              onClick={handleScrollToContact}
               className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
             >
               Get a Free Plan
