@@ -1,4 +1,5 @@
 import { Typography } from "@/components/ui/Typography";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 const rows = [
   {
@@ -145,6 +146,7 @@ export default function Comparison() {
         <div className="mt-10 flex justify-center">
           <a
             href="#contact"
+            onClick={handleScrollToContact}
             className="inline-flex w-full max-w-[260px] items-center justify-center rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-center text-black transition-transform hover:scale-[1.03] sm:w-auto sm:max-w-none"
           >
             <Typography variant="body-lg" className="font-semibold text-black">

@@ -1,6 +1,7 @@
 import { Typography } from "@/components/ui/Typography";
 import { types } from "../const/Strategybussiness";
 import { ArrowRight } from "lucide-react";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function StrategyBussiness() {
   return (
@@ -74,6 +75,7 @@ export default function StrategyBussiness() {
             </Typography>
             <a
               href="#contact"
+              onClick={handleScrollToContact}
               className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
             >
               Get a Free Plan

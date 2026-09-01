@@ -7,6 +7,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 const items = [
   {
@@ -85,6 +86,7 @@ export default function WhyUs() {
             </Typography>
             <a
               href="#contact"
+              onClick={handleScrollToContact}
               className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
             >
               Get a Free Plan

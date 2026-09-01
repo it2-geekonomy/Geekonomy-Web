@@ -2,6 +2,7 @@
 import { Typography } from "@/components/ui/Typography";
 import { RealGoalItems } from "../const/Realgoal";
 import { ArrowRight } from "lucide-react";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function RealGoal() {
   return (
@@ -61,7 +62,7 @@ export default function RealGoal() {
         </div>
 
         <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-        <a href="#contact" className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03] sm:w-auto">
+        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03] sm:w-auto">
             <Typography variant="body-lg" className="font-semibold text-black">
             Get Your Free Digital Marketing Strategy
             </Typography>
