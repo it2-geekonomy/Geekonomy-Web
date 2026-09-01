@@ -52,10 +52,10 @@ export default function WhatMatters() {
                 Not sure where to start?
             </Typography>
             <Typography variant="body-lg" className="mb-2 text-black/70">
-              Every window and door company is different. We’ll create a custom digital marketing strategy based on your goals, target market, and the channels most likely to bring you qualified leads.
+              Every paving company is different. We’ll create a custom digital marketing strategy based on your goals, service area, target customers, and the channels most likely to generate qualified paving leads.
             </Typography>
             <Typography variant="body-lg" className="mb-4 text-black/70">
-              From SEO and local search to PPC and lead generation, we’ll focus on what helps turn more searches into estimate requests and customers.
+              From SEO and local search to PPC and lead generation, we’ll focus on what helps turn more searches into quote requests, paving projects, and new customers.
             </Typography>
             <a
               href="#contact"
