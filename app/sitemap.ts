@@ -78,6 +78,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/charlotte-ppc-agency`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/digital-marketing-for-logistics-companies`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/digital-marketing-company-in-jaipur`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/digital-marketing-for-window-and-door-companies`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/digital-marketing-for-paving-companies`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 
   // Case studies - using first category for canonical URL
