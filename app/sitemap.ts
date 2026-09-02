@@ -120,6 +120,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/digital-marketing-agency-guwahati`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 
   // Case studies - using first category for canonical URL
