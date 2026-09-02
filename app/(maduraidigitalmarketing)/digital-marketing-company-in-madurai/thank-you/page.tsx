@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
-  return <LandingThankYou landingPageSlug="digital-marketing-company-in-ghaziabad" />;
+  return <LandingThankYou landingPageSlug="digital-marketing-company-in-madurai" />;
 }
