@@ -15,7 +15,7 @@ export default function Hero() {
                         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2 backdrop-blur-sm">
                             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
                             <Typography variant="overline" className="text-white text-nowrap">
-                                Guwahati Digital Marketing Agency
+                                Guwahati Digital Marketing Company
                             </Typography>
                         </div>
 
