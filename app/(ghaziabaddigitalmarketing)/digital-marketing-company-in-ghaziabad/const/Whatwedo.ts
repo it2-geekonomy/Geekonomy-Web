@@ -31,7 +31,6 @@ export const WhatWeDoItems = [
   },
   {
     image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/webdesignpaving.png",
-    // image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/socialmediapaving.png",
     title: "Website Design & Conversion Optimization",
     desc: ["Your website should not only be professional looking, but should be aiding your digital reputation and building your brand. We design and optimize user orientated pages which help navigators to understand your offer, trust your business and convert into enquiries and customers."
     ]
