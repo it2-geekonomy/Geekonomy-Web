@@ -1,8 +1,6 @@
 
 import { Typography } from "@/components/ui/Typography";
 import { WhyGeekonomyItems } from "../const/Whygeekonomy";
-import { ArrowRight } from "lucide-react";
-import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function WhyGeekonomy() {
   return (
@@ -59,31 +57,7 @@ export default function WhyGeekonomy() {
               )}
             </div>
           ))}
-
-        {/* <div className="flex flex-col justify-center w-full max-w-95 mx-auto md:max-w-none md:mx-0 rounded-[1.25rem] bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 ">
-            <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
-              Not sure where to start?
-            </Typography>
-            <Typography variant="body-lg" className="mb-2 text-black/70">
-              Every business in Ghaziabad is different. We create tailored digital marketing strategies focused on your goals, target audience, and local market.
-            </Typography>
-            <Typography variant="body-lg" className="mb-4 text-black/70">
-            From SEO and Google Ads to social media and lead generation, we help turn local searches into quality leads and customers.
-            </Typography>
-            <a
-              href="#contact"
-              onClick={handleScrollToContact}
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
-            >
-              Get a Free Plan
-              <ArrowRight className="h-4 w-4" />
-            </a>
-          </div> */}
         </div>
-
-         {/* <Typography variant="body-xl" className="mt-6 max-w-7xl leading-relaxed text-white ">
-          The aim is not to just get your company more online exposure, it's to actually help it thrive in the very competitive online world. It‘s to develop a digital footprint that helps your business grow steadily by ways of performance marketing strategies.
-        </Typography> */}
       </div>
     </section>
   );

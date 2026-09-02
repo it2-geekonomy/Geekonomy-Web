@@ -46,11 +46,6 @@ export default function Industries() {
             </div>
           ))}
         </div>
-
-         {/* <Typography variant="body-xl" className="mt-6 max-w-7xl leading-relaxed text-white">
-          Your approach should be guided by your target industry, audience, sales cycle, competition, and such business objectives that determine partnering with the best digital marketing agency not a cookie cutter marketing template.
-        </Typography> */}
-
       </div>
     </section>
   );
