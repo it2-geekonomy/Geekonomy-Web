@@ -17,9 +17,13 @@ type FormErrors = Partial<Record<keyof FormState | "consent", string>>;
 
 type LandingPageFormProps = {
   landingPageSlug: string;
+    headline?: string;
 };
 
-export default function LandingPageForm({ landingPageSlug }: LandingPageFormProps) {
+export default function LandingPageForm({ 
+  landingPageSlug,
+  headline = "Contact Our Digital Marketing Agency Today and Start Generating More Qualified Leads.",
+ }: LandingPageFormProps) {
   const router = useRouter();
   const [form, setForm] = useState<FormState>({
     name: "",
@@ -99,7 +103,7 @@ export default function LandingPageForm({ landingPageSlug }: LandingPageFormProp
           GET IN TOUCH
         </Typography>
         <Typography variant="display-xl" as="p" className="text-white text-xl sm:text-2xl lg:text-3xl leading-[1.2] text-center mb-9 px-2 lg:px-0">
-          Contact Our Digital Marketing Agency Today and Start Generating More Qualified Leads.
+          {headline}
         </Typography>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
