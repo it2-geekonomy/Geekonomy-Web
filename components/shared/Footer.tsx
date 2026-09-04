@@ -7,8 +7,15 @@ import { FooterNavigation } from "./Footer/FooterNavigation";
 import { FooterAddress } from "./Footer/FooterAddress";
 import { FooterDivider } from "./Footer/FooterDivider";
 import { FooterBottom } from "./Footer/FooterBottom";
+import { usePathname } from "next/navigation";
+import { HIDE_FOOTER_ROUTES } from "@/lib/constants/Hidefooterroutes";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const hideFooter = HIDE_FOOTER_ROUTES.some((route) => pathname === (route));
+
+  if (hideFooter) return null;
+
   return (
     <footer className="bg-black w-full border-t-2 border-gray-600">
       <div className="px-4 sm:px-6 lg:px-2 xl:px-8 py-2 lg:py-3">
