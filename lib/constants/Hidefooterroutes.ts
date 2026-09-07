@@ -13,4 +13,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/digital-marketing-company-in-madurai",
   "/digital-marketing-agency-guwahati",
   "/seo-company-davis-ca",
+  "/seo-company-rock-hill-sc",
 ];
