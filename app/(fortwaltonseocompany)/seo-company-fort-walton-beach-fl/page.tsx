@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     "Looking for an SEO company in Fort Walton Beach FL? Get local SEO, technical SEO, content, and strategies built to generate qualified leads.",
   alternates: {
-    canonical: "/fort-walton-beach-seo-company",
+    canonical: "/seo-company-fort-walton-beach-fl",
   },
   keywords: ["seo company fort walton beach fl",
     "fort walton beach seo company",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "SEO Company Fort Walton Beach FL | Get Free SEO Audit",
     description:
       "Looking for an SEO company in Fort Walton Beach FL? Get local SEO, technical SEO, content, and strategies built to generate qualified leads.",
-    url: "https://thegeekonomy.com/fort-walton-beach-seo-company",
+    url: "https://thegeekonomy.com/seo-company-fort-walton-beach-fl",
     publishedTime: PUBLISHED_DATE,
   },
   other: {
@@ -62,8 +62,8 @@ export default function Home() {
       <CTA/>
       <WhyGeekonomy/>
       <FAQ />  
-      <LandingPageForm landingPageSlug="fort-walton-beach-seo-company" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69013.76463058396!2d-86.64211038686514!3d30.4378474430818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889116d2aaa0387d%3A0xe3a6ad0f3c9e67c7!2sFort%20Walton%20Beach%2C%20FL%2C%20USA!5e1!3m2!1sen!2sin!4v1788782655320!5m2!1sen!2sin" />
+      <LandingPageForm landingPageSlug="seo-company-fort-walton-beach-fl" />
+      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55039.77984447924!2d-86.67128107514473!3d30.436491984170964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889116d2aaa0387d%3A0xe3a6ad0f3c9e67c7!2sFort%20Walton%20Beach%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1788840454590!5m2!1sen!2sin" />
       </main>
   );
 }
