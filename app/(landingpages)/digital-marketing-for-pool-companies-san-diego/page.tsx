@@ -13,6 +13,7 @@ import Comparision from "./components/Comparision";
 import DataCompliance from "./components/Datacompliance";
 import TargetCTA from "./components/TargetingCTA";
 import LandingPageForm from "@/components/forms/LandingPageForm";
+import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 
 const PUBLISHED_DATE = "2026-08-20T08:00:00.000Z";
 
@@ -65,6 +66,7 @@ export default function Home() {
       <DataCompliance />
       <FAQ />
       <LandingPageForm landingPageSlug="digital-marketing-for-pool-companies-san-diego" />
+      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429155.64976173657!2d-117.43739978192153!3d32.8246330485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1788843602160!5m2!1sen!2sin" />
     </main>
   );
 }

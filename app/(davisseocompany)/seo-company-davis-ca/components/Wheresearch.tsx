@@ -14,9 +14,9 @@ export default function WhereSearch() {
             </Typography>
           </div>
           <Typography
-            variant="display-xl"
+            variant="display-2xl"
             as="h2"
-            className="text-white text-2xl sm:text-4xl lg:text-5xl leading-[1.1]"
+            className="text-white leading-tight"
           >
            Get Found Where Davis Customers Are Searching
           </Typography>

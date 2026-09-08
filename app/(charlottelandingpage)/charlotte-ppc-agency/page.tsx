@@ -12,6 +12,7 @@ import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import PPCManagment from "./components/PPCmanagmentcost";
 import CTA from "./components/CTA";
+import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 
 
 const PUBLISHED_DATE = "2026-08-25T08:00:00.000Z";
@@ -52,20 +53,19 @@ export default function Home() {
       />
 
       <Hero />
-       <WhatWeDo />
-       <ServiceAreas />
-       <Howitworks />
-       <YourGoal />
-       <WhyGeekonomy />
-       <GoogleAds />
-       <Industry />
-       <CTA />
-
-       <Measures />
-       <PPCManagment />
-
+      <WhatWeDo />
+      <ServiceAreas />
+      <Howitworks />
+      <YourGoal />
+      <WhyGeekonomy />
+      <GoogleAds />
+      <Industry />
+      <CTA />
+      <Measures />
+      <PPCManagment />
       <FAQ />
       <LandingPageForm landingPageSlug="charlotte-ppc-agency" />
+      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208642.48358318326!2d-80.98696795635306!3d35.20550234178583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20NC%2C%20USA!5e0!3m2!1sen!2sin!4v1788843336005!5m2!1sen!2sin" />
       </main>
   );
 }
