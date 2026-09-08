@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function ThankYouPage() {
-  return <LandingThankYou landingPageSlug="fort-walton-beach-seo-company" />;
+  return <LandingThankYou landingPageSlug="seo-company-fort-walton-beach-fl" />;
 }

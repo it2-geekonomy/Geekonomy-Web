@@ -157,7 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/fort-walton-beach-seo-company`,
+      url: `${baseUrl}/seo-company-fort-walton-beach-fl`,
       lastModified: landingPageDate,
       changeFrequency: 'monthly',
       priority: 0.9,
