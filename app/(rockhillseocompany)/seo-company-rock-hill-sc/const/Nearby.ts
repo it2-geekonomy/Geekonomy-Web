@@ -7,5 +7,5 @@ export const rockhillareas = [
   "Clover",
   "Indian Land ",
   "Lancaster",
-  "Nearby Charlotte-area communities",
+  "Charlotte-area",
 ];

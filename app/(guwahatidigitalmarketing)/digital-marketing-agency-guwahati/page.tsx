@@ -10,6 +10,7 @@ import Industries from "./components/Industries";
 import BussinessStrategy from "./components/Bussinessstrategy";
 import ServiceAreas from "./components/Acrossguwahati";
 import SearchOpportunity from "./components/Searchopportunity";
+import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 
 const PUBLISHED_DATE = "2026-09-02T08:00:00.000Z";
 
@@ -59,6 +60,7 @@ export default function Home() {
       <WhyGeekonomy/>
       <FAQ />  
       <LandingPageForm landingPageSlug="digital-marketing-agency-guwahati" />
+      <LandingPageMap mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114612.57740019081!2d91.62048214230462!3d26.143179269078516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5a287f9133ff%3A0x2bbd1332436bde32!2sGuwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1788841888433!5m2!1sen!2sin" />
       </main>
   );
 }

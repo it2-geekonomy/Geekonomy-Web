@@ -11,7 +11,7 @@ export const Lists = [
     desc: "Law firms, accountants, real estate professionals, financial businesses, and other professional service providers need search visibility that builds both relevance and trust. We focus on service pages, useful content, local signals, and conversion paths that support customer enquiries.",
   },
   {
-    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/healthcare--Professional-Practice.png",
+    image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/hotels.png",
     title: "Tourism, Hospitality & Recreation",
     desc: "Fort Walton Beach and the surrounding Emerald Coast attract customers searching for places to stay, eat, explore, and enjoy local experiences. SEO can help hospitality and recreation businesses reach people researching destinations, services, activities, and local experiences.",
   },

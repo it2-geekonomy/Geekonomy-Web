@@ -1,5 +1,3 @@
-
-
 export const faqs = [
   {
     q: "What does an SEO company in Fort Walton Beach FL do?",

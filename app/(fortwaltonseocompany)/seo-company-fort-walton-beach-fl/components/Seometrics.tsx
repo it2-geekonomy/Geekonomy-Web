@@ -1,7 +1,6 @@
 
 import { Typography } from "@/components/ui/Typography";
 import { MetricsItems } from "../const/Seometrics";
-// import { WhyGeekonomyItems } from "../const/Whygeekonomy";
 
 export default function SeoMetrics() {
   return (

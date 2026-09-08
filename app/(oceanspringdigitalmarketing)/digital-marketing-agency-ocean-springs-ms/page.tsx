@@ -12,6 +12,7 @@ import BusinessGoal from "./components/Businessgoal";
 import DigitalGrowth from "./components/Digitalgrowth";
 import OurProcess from "./components/Ourprocess";
 import BusinessGrowth from "./components/Businessgrowth";
+import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 
 const PUBLISHED_DATE = "2026-09-03T08:00:00.000Z";
 
@@ -63,6 +64,7 @@ export default function Home() {
       <BusinessGrowth/>  
       <FAQ />  
       <LandingPageForm landingPageSlug="digital-marketing-agency-ocean-springs-ms" />
+      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55057.56080792445!2d-88.83186397536691!3d30.404974062048822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b8b0855fd698b%3A0x4269255cf68f01f2!2sOcean%20Springs%2C%20MS%2039564%2C%20USA!5e0!3m2!1sen!2sin!4v1788842854862!5m2!1sen!2sin" />
       </main>
   );
 }

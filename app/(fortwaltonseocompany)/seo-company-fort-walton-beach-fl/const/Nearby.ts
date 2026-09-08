@@ -1,5 +1,3 @@
-
-
 export const rockhillareas = [
   "Destin",
   "Niceville",

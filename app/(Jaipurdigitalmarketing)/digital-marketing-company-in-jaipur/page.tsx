@@ -13,6 +13,7 @@ import Comparison from "./components/Clearcomparison";
 import Collaborate from "./components/Collaborate";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
+import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 
 const PUBLISHED_DATE = "2026-08-29T08:00:00.000Z";
 
@@ -65,6 +66,7 @@ export default function Home() {
       <Collaborate/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="digital-marketing-company-in-jaipur" />
+      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113874.30006233433!2d75.70815711078538!3d26.88533996479717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1788842640687!5m2!1sen!2sin" />
       </main>
   );
 }
