@@ -1,4 +1,4 @@
-export const rockhillareas = [
+export const areas = [
   "Palm Harbor",
   "Dunedin",
   "Safety Harbor",

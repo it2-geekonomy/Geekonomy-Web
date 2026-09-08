@@ -1,10 +1,6 @@
 import {
-  Search,
   MapPin,
   Map,
-  FileText,
-  Link,
-  StickyNote,
   Target,
   ScanEye,
   CircleUserRound,

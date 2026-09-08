@@ -1,4 +1,4 @@
-export const rockhillareas = [
+export const areas = [
   "Destin",
   "Niceville",
   "Mary Esther",
@@ -8,12 +8,3 @@ export const rockhillareas = [
   "Okaloosa Island",
   "Okaloosa County",
 ];
-
-
-
-
-
-
-
-
-
