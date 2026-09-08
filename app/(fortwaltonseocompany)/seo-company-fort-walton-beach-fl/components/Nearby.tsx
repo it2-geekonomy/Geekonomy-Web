@@ -1,6 +1,6 @@
 import { ArrowRight, MapPin } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
-import { rockhillareas } from "../const/Nearby";
+import { areas } from "../const/Nearby";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function ServingNearby() {
@@ -42,7 +42,7 @@ export default function ServingNearby() {
         </div>
 
         <div className="mb-12 flex flex-wrap gap-3">
-          {rockhillareas.map((area) => (
+          {areas.map((area) => (
             <Typography
               key={area}
               as="span"

@@ -1,8 +1,5 @@
-
 import { Typography } from "@/components/ui/Typography";
 import { Lists } from "../const/Industries";
-import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
-import { ArrowRight } from "lucide-react";
 
 export default function Industries() {
   return (
@@ -71,14 +68,6 @@ export default function Industries() {
         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
           When you adapt the strategy to your market with our <span className="text-[#FFFFFF] font-semibold">SEO company Palm Harbor FL</span> then it allows your business to rank for searches that are aimed toward the type of customers you want to attract.
         </Typography>
-        {/* <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-          <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
-              <Typography variant="body-lg" className="font-semibold text-black">
-                Get Your Free SEO Strategy
-              </Typography>
-              <ArrowRight/>
-          </a>
-        </div> */}
       </div>
     </section>
   );
