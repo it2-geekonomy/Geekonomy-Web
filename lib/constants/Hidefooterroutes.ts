@@ -15,4 +15,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-davis-ca",
   "/seo-company-rock-hill-sc",
   "/seo-company-fort-walton-beach-fl",
+  "/seo-company-palm-harbor-fl",
 ];
