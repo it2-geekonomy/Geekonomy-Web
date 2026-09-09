@@ -1,17 +1,6 @@
 import { MapPin } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
-
-const areas = [
-  "Carlsbad Village",
-  "Olde Carlsbad",
-  "La Costa",
-  "Aviara",
-  "Bressi Ranch",
-  "Calavera Hills",
-  "Rancho Carrillo",
-  "South Carlsbad",
-  "North Carlsbad",
-];
+import { areas } from "../const/Seoservices";
 
 export default function ServiceAreas() {
   return (
@@ -26,9 +15,9 @@ export default function ServiceAreas() {
               </Typography>
             </div>
             <Typography
-              variant="display-xl"
+              variant="display-2xl"
               as="h2"
-              className="text-white text-2xl sm:text-4xl lg:text-5xl"
+              className="text-white leading-tight"
             >
               SEO Services Across Carlsbad, California
             </Typography>
@@ -43,11 +32,11 @@ export default function ServiceAreas() {
             </Typography>
           </div>
 
-          <div className="order-2 mx-auto w-full max-w-[380px] lg:mx-0 lg:max-w-[520px] lg:justify-self-end">
-            <div className="aspect-[4/3] w-full overflow-hidden border border-white/10 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
+          <div className="order-2 mx-auto w-full max-w-95 lg:mx-0 lg:max-w-130 lg:justify-self-end">
+            <div className="aspect-[4/3] w-full overflow-hidden border border-white/10 rounded-[1.5rem] bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
               <img
                 src="https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/mapC.png"
-                alt="Map of San Diego County service areas"
+                alt="Map of carlsbad service areas"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -69,7 +58,7 @@ export default function ServiceAreas() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-8">
+          <div className="rounded-[1.25rem] border border-white/10 bg-white/[0.03] p-8">
             <Typography variant="h3" as="h3" className="mb-2.5 text-white font-semibold">
               Built Around Search Intent
             </Typography>
@@ -77,7 +66,7 @@ export default function ServiceAreas() {
               We match your pages to informational, commercial, and transactional intent so the visitors your website brings through are more likely to become your customers.
             </Typography>
           </div>
-          <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-8">
+          <div className="rounded-[1.25rem] border border-white/10 bg-white/[0.03] p-8">
             <Typography variant="h3" as="h3" className="mb-2.5 text-white font-semibold">
               Local Signals That Matter
             </Typography>

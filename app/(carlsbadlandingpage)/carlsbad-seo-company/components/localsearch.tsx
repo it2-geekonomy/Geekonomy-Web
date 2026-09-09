@@ -1,41 +1,8 @@
-import {
-  Building2,
-  MapPinned,
-  FileText,
-  BadgeCheck,
-  Star,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
+import { items } from "../const/Localsearch";
 
-const items = [
-  {
-    icon: Building2,
-    title: "Google Business Profile Optimization",
-    desc: "Your google Business profile. Your GBP is an essential local search asset. We optimize your business information, categories, services, descriptions, and other signals to build local relevance so that users can find your business more easily.",
-  },
-  {
-    icon: MapPinned,
-    title: "Local Search & Google Maps Visibility",
-    desc: "We optimize your website and local listings so that they rank for local searches with a service or product combined with a place. This involves implementing measures that enhance exposure for searches for Carlsbad and related “near me” terms.",
-  },
-  {
-    icon: FileText,
-    title: "Location-Relevant Content",
-    desc: "Your location and product should be immediately evident on your site. We generate naturally occurring location-specific content that conveys your service offerings aligning to Carlsbad and nearby areas without keyword spamming.",
-  },
-  {
-    icon: BadgeCheck,
-    title: "Local Citations & Business Signals",
-    desc: "Having consistent business information throughout the relevant directories, local sources, and other media will strengthen your business identity. We ensure your name, address, phone, website, and category details are accurate across all your citation sources.",
-  },
-  {
-    icon: Star,
-    title: "Reviews & Local Trust",
-    desc: "Customer reviews can impact local ranking as well as purchasing decisions. We assist in integrating reputation and review factors into your general local SEO campaign and establish trust with potential clients.",
-  },
-];
 
 export default function WhyUs() {
   return (
@@ -49,9 +16,9 @@ export default function WhyUs() {
             </Typography>
           </div>
           <Typography
-            variant="display-xl"
+            variant="display-2xl"
             as="h2"
-            className="text-white text-2xl sm:text-4xl lg:text-5xl leading-tight"
+            className="text-white leading-tight"
           >
             Get Found by Customers Searching in Carlsbad
           </Typography>
@@ -63,9 +30,9 @@ export default function WhyUs() {
           {items.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="w-[380px] max-w-full mx-auto md:w-auto md:mx-0 rounded-[20px] border border-white/10 bg-white/[0.03] p-7 transition-all hover:-translate-y-1 hover:border-[#69AE44]/40 hover:bg-white/[0.05]"
+              className="w-95 max-w-full mx-auto md:w-auto md:mx-0 rounded-[1.25rem] border border-white/10 bg-white/[0.03] p-7 transition-all hover:-translate-y-1 hover:border-[#69AE44]/40 hover:bg-white/[0.05]"
             >
-              <div className="mb-4 flex h-9 w-9 sm:h-12 sm:w-12 items-center justify-center rounded-[13px] bg-[#69AE44]/10 text-[#69AE44]">
+              <div className="mb-4 flex h-9 w-9 sm:h-12 sm:w-12 items-center justify-center rounded-[0.625rem] bg-[#69AE44]/10 text-[#69AE44]">
                 <Icon className="h-4.5 w-4.5 sm:h-6 sm:w-6" strokeWidth={1.8} />
               </div>
               <Typography variant="h3" as="h3" className="mb-2 text-white font-semibold">
@@ -76,7 +43,7 @@ export default function WhyUs() {
               </Typography>
             </div>
           ))}
-          <div className="flex min-h-full w-full max-w-[380px] mx-auto flex-col justify-center rounded-[20px] border border-[#69AE44]/40 bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 shadow-lg shadow-[#69AE44]/10 md:max-w-none md:mx-0">
+          <div className="flex min-h-full w-full max-w-95 mx-auto flex-col justify-center rounded-[1.25rem] border border-[#69AE44]/40 bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 shadow-lg shadow-[#69AE44]/10 md:max-w-none md:mx-0">
             <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
               Not sure where to start?
             </Typography>
