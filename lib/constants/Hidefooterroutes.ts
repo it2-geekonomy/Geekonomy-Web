@@ -18,4 +18,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-palm-harbor-fl",
   "/seo-company-murrieta-ca",
   "/seo-company-frederick-maryland",
+  "/seo-company-in-coral-springs-fl",
 ];
