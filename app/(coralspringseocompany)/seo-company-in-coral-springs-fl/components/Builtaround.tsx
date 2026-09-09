@@ -10,29 +10,32 @@ export default function BuiltAround() {
            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
              <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
              <Typography variant="overline" className="text-white/80">
-              Palm Harbor Search
+              Coral Springs Search
              </Typography>
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            Get Found by Customers Searching in Palm Harbor
+            SEO That Helps Coral Springs Businesses Compete Locally
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            Anyone in Palm Harbor looking for a service will most likely search Google before they select a business. Your website must rank for the right types of searches not only for broad keywords but for local, service-oriented keywords with true buying intent.
+            Getting ranked for local search means more than just having the words “Coral Springs” on your website. You must have business that is relevant to popular searches, user friendly for Google and present in the venues customers use to make purchasing choices.
           </Typography>
           <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
-            Geekonomy improves your company‘s visibility not only in organic search, but also throughout local results through mapping your local presence, website and content with the way your customers search. Starting with location-based keywords and service pages, how you get listed in Google Maps and optimized to maximize conversions, every detail is geared toward attracting relevant prospects to your business.
+            We craft SEO campaigns focused on the services you offer and the customers you want to attract. This may involve website optimization, strengthening your local search visibility, enhancement of your Google Business Profile, developing content targeted at your services and increasing relevant local authority.
           </Typography>
           <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
-            Using the right <span className="text-[#FFFFFF] font-semibold">Palm Harbor SEO company</span> you can increase your search relevance for services related to your business, get found by your potential clients at just the right point in their buying cycle, and convert more local searches into enquiries.
+            As a Coral Springs <span className="text-[#FFFFFF] font-semibold">SEO company</span> we take a different approach, we look at where your business is showing up in organic search as well as local listings not just where one individual key word is. Our aim is to boost your exposure for those search terms that matter most and draw more potential customers in.
+          </Typography>
+          <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
+            Your website, with the proper approach, can become not only a brochure, but also a steady transmitter of targeted traffic, calls, enquiries and growth opportunities.
           </Typography>
         </div>
 
           <div className="order-2 mx-auto w-full max-w-95 lg:mx-0 lg:max-w-130 lg:justify-self-end">
             <div className="aspect-[3.5/4] w-full overflow-hidden rounded-[1rem] border border-white/10 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
               <img
-                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/palm-harbor-h2.webp"
-                alt="Business in Palm Harbor FL"
+                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Coral-Springs-h2.webp"
+                alt="Business in Coral Springs"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -42,4 +45,3 @@ export default function BuiltAround() {
     </section>
   );
 }
-

@@ -4,8 +4,9 @@ import {
   Search,
   Settings,
   Eye,
-  Funnel,
   MapPin,
+  Rocket,
+  TrendingUp,
 } from "lucide-react";
 
 export const WhyGeekonomyItems = [
@@ -17,7 +18,7 @@ export const WhyGeekonomyItems = [
     ]
   },
   {
-    icon: Search,
+    icon: Rocket,
     title: "SEO Focused on Traffic, Leads, and Growth",
     desc: [
       "Top rankings on the search engines are not everything. We emphasize on bringing the appropriate visitors to your site and also making the navigation path from the search results to your website, inquiry and the customer more easier and convenient."
@@ -38,21 +39,21 @@ export const WhyGeekonomyItems = [
     ]
   },
   {
-    icon: Eye,
+    icon: Search,
     title: "Content That Builds Search Relevance",
     desc: [
       "We build content based on the topics, questions, services, and search intent that is important to your customers. Rather than writing content solely for the purpose of optimizing keywords we develop valuable pages that enhance your site‘s thematic relevance for all important areas."
     ]
   },
   {
-    icon: Funnel,
+    icon: Eye,
     title: "Data-Driven SEO With Transparent Progress",
     desc: [
       "You want to understand what your investment in SEO is delivering. We measure performance throughout and crucially for any long-term SEO campaign as performance indicators are critical; so this helps us to understand the changes in search visibility; quantify the opportunities and use this information to advance your SEO strategy accordingly."
     ]
   },
   {
-    icon: Target,
+    icon: TrendingUp,
     title: "A Long-Term Approach to Sustainable Growth",
     desc: [
       "Search Engine Optimization is not an overnight process. If you‘re looking for a Frederick SEO firm to help you conquer your local area, or a more comprehensive organic search plan, Geekonomy is committed to sustainable visibility, targeted traffic and long-term growth rather than short-term SEO."

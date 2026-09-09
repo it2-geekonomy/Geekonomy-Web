@@ -1,10 +1,10 @@
 import {
   Search,
-  ArrowUpRight,
   MapPin,
   Phone,
   TrendingUp,
-  LayoutGrid,
+  StickyNote,
+  Funnel,
 } from "lucide-react";
 
 export const Items = [
@@ -16,7 +16,7 @@ export const Items = [
     ]
   },
   {
-    icon: ArrowUpRight,
+    icon: TrendingUp,
     title: "Organic traffic",
     desc: [
       "Is the right and relevant traffic coming to your site?"
@@ -37,14 +37,14 @@ export const Items = [
     ]
   },
   {
-    icon: TrendingUp,
+    icon: Funnel,
     title: "Conversions",
     desc: [
       "How well organic visits turn into prospects or customers."
     ]
   },
   {
-    icon: LayoutGrid,
+    icon: StickyNote,
     title: "Page performance",
     desc: [
       "Which landing pages are providing the most opportunities."
