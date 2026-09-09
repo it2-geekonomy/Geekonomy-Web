@@ -1,36 +1,5 @@
-"use client";
 import { Typography } from "@/components/ui/Typography";
-
-const steps = [
-  {
-    n: "1",
-    title: "Audit",
-    desc: "Through audits, we identify your opportunities and issues. In our audits, we then examine your website, technical SEO, existing content, local presence, links, search results and competitors.",
-  },
-  {
-    n: "2",
-    title: "Strategy",
-    desc: "According to the type of services you offer, your target customers, your competitors, intention when searching and your business objectives, we create a customized SEO strategy Roadmap. Our Roadmap results from investigating specific keywords, entity associations, opportunities of the discussed subject and signals of the area.",
-  },
-  {
-    n: "3",
-    title: "Optimization",
-    desc: "We optimize the pages and SEO factors on your site most relevant to your business including technical SEO and on-page signals, site architecture, internal linking, local relevancy and topical authority.",
-  },
-  {
-    n: "4",
-    title: "Growth",
-    desc: "SEO is a continuous process. We track organic visibility, rankings, qualified traffic, leads, and other key indicators of performance to discover new opportunities and help to grow your presence in search.",
-  },
-];
-
-const flow = [
-  "Audit",
-  "Strategy",
-  "Optimization",
-  "Qualified Traffic",
-  "Growth",
-];
+import { flow, steps } from "../const/Ourapproach";
 
 export default function Strategy() {
   return (
@@ -44,9 +13,9 @@ export default function Strategy() {
             </Typography>
           </div>
           <Typography
-            variant="display-xl"
+            variant="display-2xl"
             as="h2"
-            className="text-white text-2xl sm:text-4xl lg:text-5xl leading-tight"
+            className="text-white leading-tight"
           >
             Our Carlsbad SEO Process
           </Typography>
@@ -59,9 +28,9 @@ export default function Strategy() {
           {steps.map((s) => (
             <div
               key={s.n}
-              className="step-glow-card relative grid grid-cols-[auto_1fr] items-start gap-6 rounded-[20px] border border-white/10 bg-white/[0.03] p-7 transition-transform hover:translate-x-1.5 sm:p-8"
+              className="step-glow-card relative grid grid-cols-[auto_1fr] items-start gap-6 rounded-[1.25rem] border border-white/10 bg-white/[0.03] p-7 transition-transform hover:translate-x-1.5 sm:p-8"
             >
-              <span className="flex h-[58px] w-[58px] flex-none items-center justify-center rounded-2xl bg-[#69AE44] text-2xl font-extrabold text-black">
+              <span className="flex h-14.5 w-14.5 flex-none items-center justify-center rounded-[1rem] bg-[#69AE44] text-2xl font-extrabold text-black">
                 {s.n}
               </span>
               <div>
@@ -76,56 +45,7 @@ export default function Strategy() {
           ))}
         </div>
 
-        <style jsx>{`
-          @property --step-glow-angle {
-            syntax: "<angle>";
-            initial-value: 0deg;
-            inherits: false;
-          }
-
-          .step-glow-card::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            padding: 1.5px;
-            background: conic-gradient(
-              from var(--step-glow-angle),
-              transparent 0%,
-              #69ae44 8%,
-              #b6ffa1 14%,
-              #69ae44 20%,
-              transparent 32%,
-              transparent 100%
-            );
-            -webkit-mask: linear-gradient(#fff 0 0) content-box,
-              linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.35s ease;
-            animation: step-glow-rotate 2.4s linear infinite;
-            animation-play-state: paused;
-          }
-
-          .step-glow-card:hover::before {
-            opacity: 1;
-            animation-play-state: running;
-          }
-
-          .step-glow-card:hover {
-            border-color: rgba(105, 174, 68, 0.4);
-          }
-
-          @keyframes step-glow-rotate {
-            to {
-              --step-glow-angle: 360deg;
-            }
-          }
-        `}</style>
-
-        <div className="mt-11 overflow-x-auto lg:overflow-visible rounded-[20px] border border-[#69AE44] bg-[#69AE44]/10 p-7">
+        <div className="mt-11 overflow-x-auto lg:overflow-visible rounded-[1.25rem] border border-[#69AE44] bg-[#69AE44]/10 p-7">
           <div className="flex w-max items-center gap-3 lg:w-full lg:flex-wrap lg:justify-center">
             {flow.map((s, i) => (
               <div key={s} className="flex items-center gap-3">
