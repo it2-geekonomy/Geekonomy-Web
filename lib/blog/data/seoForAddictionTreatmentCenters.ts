@@ -134,7 +134,7 @@ const seoForAddictionTreatmentCentersContent: BlogContentItem[] = [
   p("Keyword research is basically discovering the words that users will use when looking for addiction centres."),
   p("Content marketing, in contrast, is completely focused on producing helpful and friendly content that addresses their problems and answers their questions."),
   p("On-page optimisation helps both search engines and users to navigate your site easily."),
-  p("<a href=\"/blog/local-seo-service-Explained\" class=\"underline text-[#6FAF4E]\">Local SEO helps you to get noticed in local searches</a> very easily."),
+  p("<a href=\"/blog/local-seo-service-explained\" class=\"underline text-[#6FAF4E]\">Local SEO helps you to get noticed in local searches</a> very easily."),
   p("Link building, however, is the way to get backlinks from trusted sites that make your website more authoritative in the drug and alcohol treatment field."),
   p("Knowing the range of addiction treatment SEO services will enable you to make a wiser decision regarding your digital marketing strategy and the right SEO company for help."),
 

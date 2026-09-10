@@ -112,7 +112,7 @@ const seoForBeautyIndustryBrandsContent: BlogContentItem[] = [
   p("Keep your profile fresh with updates from time to time, and also, make it a point to respond to customer reviews."),
   p("So, it can be said that a perfectly optimised Google My Business account has the potential to raise the level of your visibility considerably in local search results."),
   h3("Building Local Citations"),
-  p("Beauty businesses can <a href=\"/blog/local-seo-service-Explained\" class=\"underline text-[#6FAF4E]\">benefit significantly from local SEO</a> if they build local citations."),
+  p("Beauty businesses can <a href=\"/blog/local-seo-service-explained\" class=\"underline text-[#6FAF4E]\">benefit significantly from local SEO</a> if they build local citations."),
   p("Local citations refer to the mentions of your business name, address, and phone number (NAP) on the internet, for instance, on beauty blogs and other websites."),
   p("Your NAP information must be the same across all online platforms."),
   p("Do the submission of your business details to trustworthy online directories and local business listings."),

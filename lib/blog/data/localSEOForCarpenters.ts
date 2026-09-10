@@ -65,7 +65,7 @@ const localSEOForCarpentersContent: BlogContentItem[] = [
   h2("Utilizing Google Business for Local Ranking"),
   img(`${imageDir}/Essential SEO Strategies for Carpenters.webp`, "Utilizing Google Business for Local Ranking"),
   h3("Setting Up Your Google Business Profile"),
-  p('For carpenters, setting up your Google Business Profile is a <a href="/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">major part of local SEO</a> and a necessary step to extend your influence on business listing sites.'),
+  p('For carpenters, setting up your Google Business Profile is a <a href="/blog/local-seo-service-explained" class="underline text-[#6FAF4E]">major part of local SEO</a> and a necessary step to extend your influence on business listing sites.'),
   p("A Google Business Profile of yours is like a virtual shop that shows search engine results pages the necessary details about your carpentry business and visually tells the services you offer."),
   p("As a first step in your marketing plan, claim your listing on Google Business if it is already there, or create a new one if it doesn't exist, and don't forget to set up Google Search Console for better tracking."),
   p("Make sure that every detail is correct and complete, that is, the business name, address, phone number, website URL, and hours of operation."),
