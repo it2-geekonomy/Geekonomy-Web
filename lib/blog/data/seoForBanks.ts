@@ -34,7 +34,7 @@ const seoForBanksContent: BlogContentItem[] = [
   p("Local SEO is a significant factor in the online visibility of banking services on the internet."),
   p("In case customers are looking for \"banks near me\" or particular banking products like \"mortgage rates,\" local SEO for banks is what makes the closest branches to be the ones that show up in the results of the search engines."),
   p("Indeed, this factor is essential for banks and credit unions that are dependent on a local customer base to gain trust and offer the right financial advice."),
-  p('A <a href="/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">good local SEO plan</a> for banks brings in more walk-in customers and creates the opportunity for them to become valuable leads, thus strengthening their position in the community by means of targeted marketing services, which banks engage in.'),
+  p('A <a href="/blog/local-seo-service-explained" class="underline text-[#6FAF4E]">good local SEO plan</a> for banks brings in more walk-in customers and creates the opportunity for them to become valuable leads, thus strengthening their position in the community by means of targeted marketing services, which banks engage in.'),
   h3("Enhancing Local SEO for Banks and Credit Unions"),
   p("These are the steps that local SEO for banks and credit unions can improve. The first step is to enhance their online presence and engage with customers."),
   p("It is very important for financial brands to claim and optimise their Google Business Profile listings in order to increase their online visibility and see banks getting a competitive advantage."),

@@ -29,7 +29,7 @@ const seoCostMumbaiContent: BlogContentItem[] = [
 
     h3("Understanding SEO Pricing in Mumbai"),
     p("Local SEO is one of the most essential parts of a complete SEO marketing strategy, often aided by these technologies that offer affordable SEO packages."),
-    p("Thus, SEO agencies in Mumbai offer dedicated, <a href=\"/blog/local-seo-service-Explained\" class=\"underline text-[#6FAF4E] cursor-pointer pointer-events-auto inline-block\">specialized local SEO </a> services to improve Google's search visibility for local businesses."),
+    p("Thus, SEO agencies in Mumbai offer dedicated, <a href=\"/blog/local-seo-service-explained\" class=\"underline text-[#6FAF4E] cursor-pointer pointer-events-auto inline-block\">specialized local SEO </a> services to improve Google's search visibility for local businesses."),
     p("SEO prices in Mumbai differ according to the dynamic market of the city, which offers plenty of avenues for businesses to rank their sites for Google searches."),
     p("Cost-wise, SEO services would range from budget-friendly packages to accommodate small enterprises to larger and more customized programs for giant companies."),
     p("SEO Services Mumbai can have relatively cumbersome SEO pricing for local businesses, encompassing a consumer market that would promote the services mentioned above at the same time."),

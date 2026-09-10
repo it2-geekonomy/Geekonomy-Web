@@ -82,7 +82,7 @@ const localSEOForBangaloreBusinessesContent: BlogContentItem[] = [
   h3("Local Citations and Their Impact on Rankings"),
   p("Local citations refer to references of your business in the name, address, and phone number (NAP) of other websites, including local directories, review sites, and other industry-specific websites that are used to assist businesses in gaining more publicity."),
   p("The creation of consistent and correct local citations is essential in local optimization to local SEO because it assists in making search engines validate your location and authenticity in Bangalore, as well as your business."),
-  p('Pay attention to getting <a href="/blog/local-seo-service-Explained" class="underline text-[#6FAF4E] hover:text-[#86d65c]">good local SEO tactics</a>, which can cause involvement. local references to authoritative sources that apply to your sector and location.'),
+  p('Pay attention to getting <a href="/blog/local-seo-service-explained" class="underline text-[#6FAF4E] hover:text-[#86d65c]">good local SEO tactics</a>, which can cause involvement. local references to authoritative sources that apply to your sector and location.'),
   p("The existence of NAP information on all the leading SEO companies in Bangalore is a necessity."),
   p("Local citations are necessary to prevent confusion as well as to ensure that your marketing company in Bangalore is known."),
   p("Your business must be prominently present online to gain more visibility in local traffic."),

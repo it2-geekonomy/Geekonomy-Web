@@ -262,7 +262,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-does-ben-stace-do-semantic-seo': 0.41,
     'how-to-rank-nationally-in-seo': 0.41,
     'seo-for-legal-firms-complete-guide': 0.41,
-    'local-seo-service-Explained': 0.41,
+    'local-seo-service-explained': 0.41,
     'local-seo-for-orthodontists-best-strategies': 0.41,
     'how-much-does-seo-cost-in-seattle': 0.41,
     'how-much-does-seo-cost-in-pune': 0.33,
