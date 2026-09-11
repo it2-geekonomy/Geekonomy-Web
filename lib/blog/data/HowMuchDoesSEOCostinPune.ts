@@ -15,7 +15,7 @@ const seoCostPuneContent: BlogContentItem[] = [
 
     p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need Transparent SEO Pricing for Pune?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
-    h3("Overview of SEO in Pune"),
+    h2("Overview of SEO in Pune"),
     h3("Importance of SEO for Businesses in Pune"),
     p("Businesses in Pune require local SEO strategies because the digital landscape of the city functions as a competitive environment that determines their ability to achieve higher rankings in local search results."),
     p("SEO serves as the essential requirement for businesses that seek to enhance their online presence."),
