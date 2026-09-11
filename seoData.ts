@@ -109,7 +109,7 @@ const seoData: Record<string, SEOData> = {
   },
 
   careers: {
-    title: "Careers | Join Our Team",
+    title: "Careers at Geekonomy | Join Our Team",
     description:
       "Join a team focused on building scalable growth systems for ambitious businesses. Explore career opportunities in branding, marketing, and development.",
     url: "https://thegeekonomy.com/careers",

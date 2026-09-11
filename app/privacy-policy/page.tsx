@@ -6,14 +6,14 @@ import PrivacyPolicyPage from "@/components/privacypolicy/Herosection";
 
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Geekonomy",
+  title: "Privacy Policy For Users | Geekonomy",
   description:
     "Learn how Geekonomy collects, uses, protects, and manages your personal information when you use our website and services.",
   alternates: {
     canonical: "/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy | Geekonomy",
+    title: "Privacy Policy For Users | Geekonomy",
     description:
       "Learn how Geekonomy collects, uses, protects, and manages your personal information when you use our website and services.",
     url: "https://thegeekonomy.com/privacy-policy",
