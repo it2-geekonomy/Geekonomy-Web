@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Digital Marketing for Pool Companies in San Diego",
     description:
       "Grow your pool business with a digital marketing agency in San Diego. Get more local visibility, qualified leads, and pool customers.",
-    url: "https://YOUR-DOMAIN.com/digital-marketing-for-pool-companies-san-diego",
+    url: "https://thegeekonomy.com/digital-marketing-for-pool-companies-san-diego",
     publishedTime: PUBLISHED_DATE,
   },
   other: {
