@@ -16,7 +16,7 @@ p("Many small businesses have been robbed of the opportunity to attract new cust
 p("Let‘s find out why you require a website."),
 p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Why Small Businesses Need a Website in India</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Establish credibility, reach more customers online, and showcase your products or services with a professional website that works 24/7.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Get Your Free Website Consultation</a></div>'),
 
-h3("Defining the Needs of Small Businesses"),
+h2("Defining the Needs of Small Businesses"),
 p("Identifying the needs of small businesses often begins with the need for visibility and access,  two of the main reasons that small businesses need a website."),
 p("Every small business needs to promote to a broader audience, and a website allows just that. An easy way for future clients to find out about your business, let's think about seven reasons why your small business needs a website."),
 p("First, a website for a small business helps to attract future clients who just may not be in your local community."),
