@@ -15,25 +15,28 @@ export default function Hero() {
                         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2 backdrop-blur-sm">
                             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
                             <Typography variant="overline" className="text-white text-nowrap">
-                              Orange Beach SEO Agency
+                              Columbia SEO Agency
                             </Typography>
                         </div>
 
                         <Typography variant="display-2xl" as="h1" className="text-white  leading-tight">
-                            Orange Beach SEO Company{" "}
-                            <span className="text-[#69AE44]">For Local Business Growth</span>
+                          Columbia SEO Company{" "}
+                          <span className="text-[#69AE44]">Built For Local Business Growth</span>
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                          Make your business a success with an SEO campaign designed specifically for the Orange Beach area. We work with local businesses to increase their prominence in Google Search and Google Maps, drive more targeted visitors to their site and convert local searchers into calls, enquiries, reservations and customers.
+                          Your business requires more than just ranking higher; it requires being found by the right audience at the right moment. We are an Columbia, MO based SEO Company that can help businesses improve visibility on Google Search and local search results and convert that visibility into calls and customers.
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                          Because we’re seasoned with the best local <span className="text-[#FFFFFF] font-semibold">Orange Beach AL</span> SEO Company you could hire, we concentrate on the search phrases your clients actually enter when searching for services in Orange Beach. From local seo and on-page optimization to technical enhancements and content strategies, every campaign is tailored to your business objectives and the local market.
+                          All our SEO campaigns are customized around your business objectives, business focus and customer base as well as your services/products and your competitive position. We concentrate on opportunities that can help your business to grow in Columbia, Missouri by means of local and Google Maps optimizations, technical, content and authority parts of the campaign.
+                        </Typography>
+                        <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
+                          If you need a Columbia SEO company to target your local customers or you need a complete SEO strategy to catch the attention of a larger audience, we design a personalized blueprint for long-term organic growth and accountable results.
                         </Typography>
 
                         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
                             <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
                                 <Typography variant="body-lg" className="font-semibold text-black">
-                                  Get Your Free SEO Strategy
+                                  Get Free SEO Audit
                                 </Typography>
                                 <ArrowRight className="h-4 w-4" />
                             </a>
@@ -43,8 +46,8 @@ export default function Hero() {
                     <div className="relative">
                         <div className="relative aspect-[3.4/4.4] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
                             <img
-                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Orange-Beach.webp"
-                                alt="Orange Beach"
+                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Columbia-Missouri.webp"
+                                alt="Columbia"
                                 className="h-full w-full  object-cover"
                             />
 
@@ -87,7 +90,7 @@ export default function Hero() {
             <div className="relative border-t border-white/30">
                 <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6 py-10 text-center lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:text-left">
                     <Typography variant="body-lg" className="rounded-full bg-[#69AE44]/20 px-4 py-2 text-white font-semibold uppercase">
-                      DATA-DRIVEN SEO THAT TURNS Orange Beach SEARCHES INTO CUSTOMERS
+                      DATA-DRIVEN SEO THAT TURNS Columbia SEARCHES INTO CUSTOMERS
                     </Typography>
 
                     <div className="flex max-w-md flex-wrap justify-center gap-4 lg:justify-start">
