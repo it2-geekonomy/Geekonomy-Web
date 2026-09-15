@@ -15,28 +15,25 @@ export default function Hero() {
                         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2 backdrop-blur-sm">
                             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
                             <Typography variant="overline" className="text-white text-nowrap">
-                              St. Joseph SEO Agency
+                              Yorba Linda SEO Agency
                             </Typography>
                         </div>
 
                         <Typography variant="display-2xl" as="h1" className="text-white  leading-tight">
-                          St. Joseph SEO Company{" "}
-                          <span className="text-[#69AE44]">For More Local Visibility</span>
+                          Yorba Linda SEO Company{" "}
+                          <span className="text-[#69AE44]">That Helps Local Businesses Grow</span>
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                          Your customers are searching for your type of business every single day. An increased position in Google will allow you to show up when your customers are actually searching for the products or services you offer.
+                          Your customers are looking for the services you offer in Yorba Linda. Geekonomy will help your business be found when it counts. Our SEO strategies blend local search optimization, technical enhancements, valuable content and conversion-driven website optimization to bring you more targeted traffic.
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                          Geekonomy develops SEO offers based on your business objectives, local competition, and the St. Joseph search market enabling relevant search exposure to generate more calls, enquiries, and qualified leads.
-                        </Typography>
-                        <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                          No matter if you want more calls, quote requests, appointments or website enquiries, we focus on the searches that count.
+                          For a results-based Yorba Linda SEO Company, we are all about developing strategies around your business objectives, not just rankings. From more phone calls and form submissions to more visits to your store or more contacts from your service area, we excel in delivering measurable business results from search visibility.
                         </Typography>
 
                         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
                             <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
                                 <Typography variant="body-lg" className="font-semibold text-black">
-                                  Get Your Free SEO Consultation
+                                  Get Your Free SEO Audit
                                 </Typography>
                                 <ArrowRight className="h-4 w-4" />
                             </a>
@@ -46,8 +43,8 @@ export default function Hero() {
                     <div className="relative">
                         <div className="relative aspect-[3.4/4.4] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
                             <img
-                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Saint-Joseph.webp"
-                                alt="St. Joseph"
+                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Yorba-Linda.webp"
+                                alt="Yorba Linda"
                                 className="h-full w-full  object-cover"
                             />
 
@@ -90,7 +87,7 @@ export default function Hero() {
             <div className="relative border-t border-white/30">
                 <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6 py-10 text-center lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:text-left">
                     <Typography variant="body-lg" className="rounded-full bg-[#69AE44]/20 px-4 py-2 text-white font-semibold uppercase">
-                      DATA-DRIVEN SEO THAT TURNS St. Joseph SEARCHES INTO CUSTOMERS
+                      DATA-DRIVEN SEO THAT TURNS Yorba Linda SEARCHES INTO CUSTOMERS
                     </Typography>
 
                     <div className="flex max-w-md flex-wrap justify-center gap-4 lg:justify-start">

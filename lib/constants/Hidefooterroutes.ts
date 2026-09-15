@@ -23,5 +23,6 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-league-city-tx",
   "/seo-company-orange-beach-al",
   "/seo-company-columbia-mo",
-  "/seo-company-st-joseph-mo"
+  "/seo-company-st-joseph-mo",
+  "/seo-company-yorba-linda-ca",
 ];
