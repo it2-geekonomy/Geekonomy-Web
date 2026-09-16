@@ -25,4 +25,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-columbia-mo",
   "/seo-company-st-joseph-mo",
   "/seo-company-yorba-linda-ca",
+  "/seo-company-chapel-hill-nc",
 ];

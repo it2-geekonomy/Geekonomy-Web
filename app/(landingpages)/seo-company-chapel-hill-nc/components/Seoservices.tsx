@@ -1,26 +1,24 @@
 
 import { Typography } from "@/components/ui/Typography";
-import { Items } from "../const/Seostrategy";
-import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
-import { ArrowRight } from "lucide-react";
+import { Items } from "../const/Seoservices";
 
-export default function SeoStrategy () {
+export default function SeoServices() {
   return (
-    <section id="strategy" className="bg-black py-6 lg:py-10 ">
+    <section id="service" className="bg-black py-6 lg:py-10 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-5xl text-center">
            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
              <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
              <Typography variant="overline" className="text-white/80">
-               SEO Strategy
+               SEO Services
              </Typography>
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            SEO Strategies Built Around Your Business Goals
+            SEO Services Built for Chapel Hill Businesses
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            Your SEO should bring in profit not a higher page rank! Geekonomy develops every strategy focusing on the actions that have the greatest impact on your business and your target customers in Yorba Linda.
+            A solid Search Engine Optimization plan involves more than placing keywords on a site. Geekonomy combines technical optimization, valuable content, local search signals and authoritative site/link strategies to enable businesses to compete on lucrative search terms and help get to the right customer at the right purchasing phase.
           </Typography>
         </div>
 
@@ -56,14 +54,6 @@ export default function SeoStrategy () {
               )}
             </div>
           ))}
-        </div>
-        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
-            <Typography variant="body-lg" className="font-semibold text-black">
-            Get Your Free SEO Strategy
-            </Typography>
-            <ArrowRight className="h-4 w-4 "/>
-        </a>
         </div>
       </div>
     </section>
