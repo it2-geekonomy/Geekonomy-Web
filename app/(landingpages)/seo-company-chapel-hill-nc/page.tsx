@@ -53,8 +53,8 @@ export default function Home() {
       <Hero /> 
       <SeoServices/>
       <ServingNearby/>
-      <SeoStrategy/>/
-      <Industries/>/
+      <SeoStrategy/>
+      <Industries/>
       <OurProcess/>
       <Differents/>
       <ResultMatters/>
