@@ -1,31 +1,33 @@
-
 import { Typography } from "@/components/ui/Typography";
-import { Items } from "../const/Localseo";
+import { Lists } from "../const/Industries";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 import { ArrowRight } from "lucide-react";
 
-export default function LocalSeoService() {
+export default function Industries() {
   return (
-    <section id="service" className="bg-black py-6 lg:py-10 ">
+    <section id="results" className="bg-black py-8 lg:py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-5xl text-center">
-           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
-             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
-             <Typography variant="overline" className="text-white/80">
-                Local SEO Services
-             </Typography>
-           </div>
-
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
+            <Typography variant="overline" className="text-white/80">
+              Industries
+            </Typography>
+          </div>
+          
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            Build a Stronger Presence in Yorba Linda Search Results
+            SEO Services Designed for Local Growth
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            Local Search rankings are not achieved by merely placing a city name into your website. Geekonomy develops a Yorba Linda SEO plan aimed at how local clients search, compare competing companies, and contact who they find.
+            No two businesses have the same customers, competition and search marketing opportunities. Our services, the <span className="text-[#FFFFFF] font-semibold">Henderson SEO Company</span>, have been developed for your marketplace and how your potential customers search.
+          </Typography>
+          <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
+            No matter if you run a local service company or have multiple locations serving customers across the country, we can design your search engine optimization plan to focus on the most targeted searches for your business.
           </Typography>
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {Items.map(({  image, title, desc }) => (
+          {Lists.map(({  image, title, desc }) => (
             <div
               key={title}
               className="w-95 max-w-full mx-auto md:w-auto md:mx-0 rounded-[1.2rem] border border-white/10 bg-white/[0.03] p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-white/[0.05]"
@@ -74,4 +76,3 @@ export default function LocalSeoService() {
     </section>
   );
 }
-
