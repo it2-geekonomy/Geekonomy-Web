@@ -17,10 +17,13 @@ export default function SeoStrategy () {
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            SEO Strategies Built Around Your Business Goals
+            A Chapel Hill Focused SEO Strategy That Works
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            Your SEO should bring in profit not a higher page rank! Geekonomy develops every strategy focusing on the actions that have the greatest impact on your business and your target customers in Yorba Linda.
+            Getting ranked in local search is more than just knocking out a city name. Your local search engine optimization needs to match what Chapel Hill people are looking for, what they are seeking in services, and what companies are trying to rank best for these. 
+          </Typography>
+          <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
+            Geekonomy develops a Chapel Hill SEO Company plan based on these key issues to achieve better visibility and more quality leads.
           </Typography>
         </div>
 
@@ -56,14 +59,22 @@ export default function SeoStrategy () {
               )}
             </div>
           ))}
-        </div>
-        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
-            <Typography variant="body-lg" className="font-semibold text-black">
-            Get Your Free SEO Strategy
+          <div className="flex flex-col justify-center w-full max-w-95 mx-auto md:max-w-none md:mx-0 rounded-[1.25rem] bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 ">
+            <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
+              Not sure where to start?
             </Typography>
-            <ArrowRight className="h-4 w-4 "/>
-        </a>
+            <Typography variant="body-lg" className="mb-2 text-black/70">
+              We help Chapel Hill businesses improve search visibility, attract the right customers, and grow with a tailored SEO strategy.
+            </Typography>
+            <a
+              href="#contact"
+              onClick={handleScrollToContact}
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
+            >
+              Get a Free Plan
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
