@@ -15,28 +15,28 @@ export default function Hero() {
                         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2 backdrop-blur-sm">
                             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
                             <Typography variant="overline" className="text-white text-nowrap">
-                            Bangalore Branding Agency
+                              Andover SEO Agency
                             </Typography>
                         </div>
 
                         <Typography variant="display-2xl" as="h1" className="text-white  leading-tight">
-                            Bangalore Branding Company{" "}
-                            <span className="text-[#69AE44]">That Builds Brands People Remember</span>
+                          Andover SEO Company{" "}
+                          <span className="text-[#69AE44]">That Helps Local Businesses Get Found</span>
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                            Your brand isn‘t just a logo, your brand is your whole brand experience. People will identify your brand and identity, and learn what you stand for, and whether they can trust you, which is key for your global branding. At Geekonomy, we craft unique brands and position them with our strategy, voice and message, color and logo.
+                          Achieve increased exposure, relevant Website visitors and leads through an SEO campaign tailored to your business objectives. Geekonomy is an <span className="text-[#FFFFFF] font-semibold">SEO Company in Andover Minnesota</span> working with local Businesses to boost their Google presence with a mixture of local SEO, technical optimization, content, on page improvements and conversion focused SEO.
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                            As a branding company in Bangalore we work with start ups, growing business and established business to build brands that are distinguishable in those markets. We put together the brand positioning to a comprehensive identity system for your business ideas.. We are committed towards providing the perfect branding solutions to boost your growth.
+                          A powerful search engine presence begins with the ability to easily determine what customers are searching for and where they find the information about services like yours. We help identify search opportunities, optimize your website around targeted keywords, enhance core website technical factors and develop content that gives search engines and potential customers better understanding of your solutions.
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
-                            Build a brand with intent and let a branding agency be the conduit to your vision. Build a brand worth remembering.
+                          However, regardless of whether you‘d like to enhance your local visibility, drive more qualified visitors, generate more calls, or increase inquiries to your website, our SEO process is built with clear business goals rather than simply rankings in mind.
                         </Typography>
 
                         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
-                            <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-black transition-transform hover:scale-[1.03] sm:w-auto">
+                            <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
                                 <Typography variant="body-lg" className="font-semibold text-black">
-                                   Start Your Branding Project
+                                  Get Free SEO Consultation
                                 </Typography>
                                 <ArrowRight className="h-4 w-4" />
                             </a>
@@ -44,11 +44,11 @@ export default function Hero() {
                     </div>
 
                     <div className="relative">
-                        <div className="relative aspect-[4/4.4] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
+                        <div className="relative aspect-[3.4/4.4] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
                             <img
-                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/bangalorehcity.png"
-                                alt="Bangalore city"
-                                className="h-full w-full object-top object-cover"
+                                src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Andover.webp"
+                                alt="Andover"
+                                className="h-full w-full  object-cover"
                             />
 
                             {badges.map((badge) => (
@@ -90,7 +90,7 @@ export default function Hero() {
             <div className="relative border-t border-white/30">
                 <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6 py-10 text-center lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:text-left">
                     <Typography variant="body-lg" className="rounded-full bg-[#69AE44]/20 px-4 py-2 text-white font-semibold uppercase">
-                      Strategy-Led Branding across every customer touchpoint
+                      DATA-DRIVEN SEO THAT TURNS Andover SEARCHES INTO CUSTOMERS
                     </Typography>
 
                     <div className="flex max-w-md flex-wrap justify-center gap-4 lg:justify-start">
