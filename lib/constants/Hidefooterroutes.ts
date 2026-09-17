@@ -28,4 +28,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-chapel-hill-nc",
   "/seo-company-henderson-nv",
   "/seo-company-st-ives-cornwall-uk",
+  "/seo-company-in-andover-minnesota",
 ];
