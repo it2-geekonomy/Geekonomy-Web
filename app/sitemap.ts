@@ -246,6 +246,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/seo-company-mentor-oh`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/seo-company-winchester-virginia`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 
   // Case studies - using first category for canonical URL
