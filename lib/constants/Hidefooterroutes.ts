@@ -30,4 +30,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-st-ives-cornwall-uk",
   "/seo-company-in-andover-minnesota",
   "/seo-company-mentor-oh",
+  "/seo-company-winchester-virginia"
 ];
