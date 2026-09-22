@@ -270,6 +270,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/seo-company-lakewood-ranch-fl`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 
   // Case studies - using first category for canonical URL
