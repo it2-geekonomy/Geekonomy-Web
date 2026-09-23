@@ -5,28 +5,28 @@ import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
-import OurProcess from "./components/Ourprocess";
 import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
-import SeoMatters from "./components/Seomatters";
-import LocalSeo from "./components/Localseo";
 import SeoStrategy from "./components/Seostrategy";
+import GrowBusiness from "./components/Growbusiness";
+import LocalSearch from "./components/Localsearch";
+import WhatHolding from "./components/Whatholding";
 
 const PUBLISHED_DATE = "2026-09-23T08:00:00.000Z";
 
 export const metadata: Metadata = {
-  title: "SEO Company Enfield, Connecticut | Get Free SEO Audit",
+  title: "SEO Company Downey CA | Local SEO | Get Free SEO Audit",
   description:
-    "Grow your online visibility and attract more local customers with Geekonomy, a results-focused SEO company in Enfield, Connecticut.",
+    "Grow your Downey business with expert SEO services. Geekonomy helps improve local visibility, organic traffic, and qualified leads.",
   alternates: {
-    canonical: "/seo-company-enfield-connecticut",
+    canonical: "/seo-company-downey-ca",
   },
   openGraph: {
     type: "article",
-    title: "SEO Company Enfield, Connecticut | Get Free SEO Audit",
+    title: "SEO Company Downey CA | Local SEO | Get Free SEO Audit",
     description:
-      "Grow your online visibility and attract more local customers with Geekonomy, a results-focused SEO company in Enfield, Connecticut.",
-    url: "https://thegeekonomy.com/seo-company-enfield-connecticut",
+      "Grow your Downey business with expert SEO services. Geekonomy helps improve local visibility, organic traffic, and qualified leads.",
+    url: "https://thegeekonomy.com/seo-company-downey-ca",
     publishedTime: PUBLISHED_DATE,
   },
   other: {
@@ -43,24 +43,24 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            headline: "SEO Company Enfield, Connecticut | Get Free SEO Audit",
+            headline: "SEO Company Downey CA | Local SEO | Get Free SEO Audit",
             datePublished: PUBLISHED_DATE,
           }),
         }}
       />
 
       <Hero />
-      <SeoMatters/>
-      <LocalSeo/>
+      <GrowBusiness/> 
       <SeoServices/>
-      <SeoStrategy/>
+      <LocalSearch/>
+      <SeoStrategy/> 
       <Industries/>
-      <OurProcess/>
-      <CTA/>
       <WhyGeekonomy/>
+      <CTA/>
+      <WhatHolding/> 
       <FAQ /> 
-      <LandingPageForm landingPageSlug="seo-company-enfield-connecticut" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47451.76382815575!2d-72.59928087799419!3d41.98449393597454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6fa8aedc1219f%3A0xdf969d153b030806!2sEnfield%2C%20CT%2006082%2C%20USA!5e0!3m2!1sen!2sin!4v1790135172704!5m2!1sen!2sin" />
+      <LandingPageForm landingPageSlug="seo-company-downey-ca" />
+      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52962.0853323801!2d-118.17157649896153!3d33.937775799323404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cc4c1e082291%3A0x9140a72616789d0a!2sDowney%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1790143230202!5m2!1sen!2sin" />
       </main>
   );
 }
