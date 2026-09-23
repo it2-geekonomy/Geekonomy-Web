@@ -34,4 +34,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-bee-cave-texas",
   "/seo-company-kyle-texas",
   "/seo-company-lakewood-ranch-fl",
+  "/seo-company-enfield-connecticut",
 ];
