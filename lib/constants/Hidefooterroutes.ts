@@ -38,4 +38,6 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-downey-ca",
   "/seo-company-in-fredericksburg-virginia",
   "/seo-company-brentwood-california",
+  "/seo-company-georgetown-texas",
+  "/seo-company-rocky-river-ohio",
 ];
