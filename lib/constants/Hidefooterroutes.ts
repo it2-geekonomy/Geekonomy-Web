@@ -42,4 +42,6 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-rocky-river-ohio",
   "/seo-company-in-pompano-beach-fl",
   "/seo-company-in-apopka-fl",
+  "/seo-company-calabasas-ca",
+  "/seo-company-boynton-beach-fl",
 ];
