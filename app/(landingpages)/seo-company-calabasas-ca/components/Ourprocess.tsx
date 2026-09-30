@@ -1,7 +1,5 @@
 import { Typography } from "@/components/ui/Typography";
 import { steps } from "../const/Ourprocess";
-import { ArrowRight } from "lucide-react";
-import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function OurProcess() {
   return (
@@ -48,14 +46,6 @@ export default function OurProcess() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
-            <Typography variant="body-lg" className="font-semibold text-black">
-            Get Your Free SEO Strategy
-            </Typography>
-            <ArrowRight className="h-4 w-4 "/>
-        </a>
         </div>
       </div>
     </section>
