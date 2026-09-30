@@ -1,9 +1,7 @@
 import { Typography } from "@/components/ui/Typography";
-import { Items } from "../const/Seostrategy";
-import { ArrowRight } from "lucide-react";
-import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
+import { Items } from "../const/Digistrategy";
 
-export default function SeoStrategy() {
+export default function DigiStrategy() {
   return (
     <section id="result" className="bg-black py-6 lg:py-10 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -11,15 +9,15 @@ export default function SeoStrategy() {
            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
              <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
              <Typography variant="overline" className="text-white/80">
-              SEO Strategy
+              Digital Marketing Strategy
              </Typography>
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            SEO Strategies Built for Calabasas Businesses
+            Our Digital Marketing Strategy for JP Nagar Businesses
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            A good local SEO Strategy is built on how local customers find your business. Geekonomy builds campaigns built on local relevance, search intent, quality of your site and the services you want to promote. This creates a better link between your site and the searches that matter!
+            A winning online campaign is business-centric, not one size fits all. Geekonomy are experts at developing a campaign tailored to your sector, competition, your target audience, search patterns and your desired conversion rate.
           </Typography>
         </div>
 
@@ -55,17 +53,6 @@ export default function SeoStrategy() {
               )}
             </div>
           ))}
-        </div>
-        <Typography variant="body-xl" className="mt-7 leading-relaxed text-white/90">
-          All of which in the end produces a harmonized SEO plan that links your clients behavior and requirements with the seo companies in calabasas California services.
-        </Typography>
-        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
-            <Typography variant="body-lg" className="font-semibold text-black">
-            Get Your Free SEO Strategy
-            </Typography>
-            <ArrowRight className="h-4 w-4 "/>
-        </a>
         </div>
       </div>
     </section>

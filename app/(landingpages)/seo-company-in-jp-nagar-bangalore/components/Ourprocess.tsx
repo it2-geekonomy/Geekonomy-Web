@@ -1,5 +1,7 @@
 import { Typography } from "@/components/ui/Typography";
 import { steps } from "../const/Ourprocess";
+import { ArrowRight } from "lucide-react";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function OurProcess() {
   return (
@@ -14,10 +16,10 @@ export default function OurProcess() {
           </div>
  
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            How Our SEO Process Works
+            How Our SEO Strategy Works
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            An effective SEO campaign requires a process that links research, website optimization, content and continuous measurement. The Geekonomy platform employs a defined workflow so that each stage of the campaign builds on the last and your SEO initiative can be adjusted as your website and the search environment change.
+            If you want a successful SEO campaign it has to have a process not just optimization activities. Geekonomy's data driven approach is based on this process beginning with knowing your site and market and leading into building toward improved organic visibility, relevant traffic and concrete conversions.
           </Typography>
         </div>
 
@@ -46,6 +48,14 @@ export default function OurProcess() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
+        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
+            <Typography variant="body-lg" className="font-semibold text-black">
+            Get Your Free SEO Strategy
+            </Typography>
+            <ArrowRight className="h-4 w-4 "/>
+        </a>
         </div>
       </div>
     </section>

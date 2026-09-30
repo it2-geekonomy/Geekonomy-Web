@@ -1,25 +1,28 @@
 import { Typography } from "@/components/ui/Typography";
-import { Items } from "../const/Seostrategy";
+import { Items } from "../const/Whyneeddigi";
 import { ArrowRight } from "lucide-react";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
-export default function SeoStrategy() {
+export default function WhyNeedDigi() {
   return (
-    <section id="result" className="bg-black py-6 lg:py-10 ">
+    <section id="strategy" className="bg-black py-6 lg:py-10 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-5xl text-center">
            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
              <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
              <Typography variant="overline" className="text-white/80">
-              SEO Strategy
+               Why Need Digital Marketing
              </Typography>
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            SEO Strategies Built for Calabasas Businesses
+            Why Businesses in JP Nagar Need Digital Marketing
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            A good local SEO Strategy is built on how local customers find your business. Geekonomy builds campaigns built on local relevance, search intent, quality of your site and the services you want to promote. This creates a better link between your site and the searches that matter!
+            JP Nagar's business environment is varied, from local service providers and professional practices to shops, restaurants, start-ups and middle size companies. Consumers are now commonly searching online to find businesses before they even make contact through engines, maps, social networks and review portals. It is important then for businesses to be 'found' online because the consumer is actively seeking your product or service.
+          </Typography>
+          <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
+            A digital marketing company JP Nagar may provide a greater reach to a business instead of relying on a single source of traffic. Instead an integrated approach that ties together search engines, paid marketing, social media, content, conversions, and objectives can be implemented.
           </Typography>
         </div>
 
@@ -56,13 +59,10 @@ export default function SeoStrategy() {
             </div>
           ))}
         </div>
-        <Typography variant="body-xl" className="mt-7 leading-relaxed text-white/90">
-          All of which in the end produces a harmonized SEO plan that links your clients behavior and requirements with the seo companies in calabasas California services.
-        </Typography>
         <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
         <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
             <Typography variant="body-lg" className="font-semibold text-black">
-            Get Your Free SEO Strategy
+              Get Your Free SEO Strategy
             </Typography>
             <ArrowRight className="h-4 w-4 "/>
         </a>

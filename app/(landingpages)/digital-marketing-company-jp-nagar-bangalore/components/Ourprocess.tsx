@@ -14,10 +14,10 @@ export default function OurProcess() {
           </div>
  
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            How Our SEO Process Works
+            Our Digital Marketing Process
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            An effective SEO campaign requires a process that links research, website optimization, content and continuous measurement. The Geekonomy platform employs a defined workflow so that each stage of the campaign builds on the last and your SEO initiative can be adjusted as your website and the search environment change.
+            It is possible to have a well-structured process that shifts digital marketing away from an ad-hoc set of activities and closer to a real growth strategy. Geekonomy clearly adheres to this standard procedure, which goes from analysis and planning to execution, measurement, and iteration.
           </Typography>
         </div>
 
