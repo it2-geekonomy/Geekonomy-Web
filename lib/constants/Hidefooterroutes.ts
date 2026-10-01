@@ -46,4 +46,5 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-boynton-beach-fl",
   "/seo-company-tomball-texas",
   "/seo-company-casselberry-florida",
+  "/seo-company-fresno-texas",
 ];
