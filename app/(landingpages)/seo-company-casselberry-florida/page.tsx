@@ -12,6 +12,7 @@ import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 import SeoMetrics from "./components/Seometrics";
 import SeoStrategy from "./components/Seostrategy";
 import WhyNeedSeo from "./components/Whyneedseo";
+import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
 
 const PUBLISHED_DATE = "2026-10-01T08:00:00.000Z";
 
@@ -66,6 +67,7 @@ export default function Home() {
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-casselberry-florida" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56018.842367630146!2d-81.35926658732463!3d28.654399037216226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e76e0e0795bf05%3A0x21e5ed218cf34e84!2sCasselberry%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1790831335568!5m2!1sen!2sin" />
+      <FloridaLocationSection HidecurrentSlug="seo-company-casselberry-florida"/>
       </main>
   );
 }

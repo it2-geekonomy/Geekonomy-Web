@@ -10,6 +10,7 @@ import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
 import SeoResults from "./components/Seoresults";
 import SeoMatters from "./components/Seomatters";
+import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
 
 const PUBLISHED_DATE = "2026-09-22T08:00:00.000Z";
 
@@ -59,6 +60,7 @@ export default function Home() {
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-lakewood-ranch-fl" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56664.077532657175!2d-82.44221909528359!3d27.422373082525475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c339a1a62cd811%3A0xc829d2e8924438f0!2sLakewood%20Ranch%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1790068256028!5m2!1sen!2sin" />
+      <FloridaLocationSection HidecurrentSlug="seo-company-lakewood-ranch-fl"/>
       </main>
   );
 }
