@@ -11,6 +11,7 @@ import LandingPageForm from "@/components/forms/LandingPageForm";
 import ServingNearby from "./components/Nearby";
 import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 import SeoMetrics from "./components/Seometrics";
+import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
 
 const PUBLISHED_DATE = "2026-09-07T08:00:00.000Z";
 
@@ -64,6 +65,7 @@ export default function Home() {
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-fort-walton-beach-fl" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55039.77984447924!2d-86.67128107514473!3d30.436491984170964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889116d2aaa0387d%3A0xe3a6ad0f3c9e67c7!2sFort%20Walton%20Beach%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1788840454590!5m2!1sen!2sin" />
+      <FloridaLocationSection HidecurrentSlug="seo-company-fort-walton-beach-fl"/>
       </main>
   );
 }
