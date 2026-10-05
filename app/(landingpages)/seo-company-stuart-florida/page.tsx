@@ -15,6 +15,7 @@ import Difference from "./components/Difference";
 import SeoResults from "./components/Seoresults";
 import WhyLocalSeo from "./components/Whylocalseo";
 import LocalSeo from "./components/Localseo";
+import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
 
 const PUBLISHED_DATE = "2026-10-05T08:00:00.000Z";
 
@@ -74,6 +75,7 @@ export default function Home() {
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-stuart-florida" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56779.884034064715!2d-80.28190804670568!3d27.195820922149267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dedc3582d450af%3A0xe7653cad7577bc83!2sStuart%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1791173044517!5m2!1sen!2sin" />
+      <FloridaLocationSection HidecurrentSlug="seo-company-stuart-florida"/>
       </main>
   );
 }
