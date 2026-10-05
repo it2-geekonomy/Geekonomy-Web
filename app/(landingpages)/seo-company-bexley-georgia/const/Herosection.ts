@@ -19,7 +19,7 @@ export const badges = [
 export const stats = [
     { value: "9+", label: "Businesses Helped Grow" },
     { value: "Visibility → Conversion", label: "From Search to Customers" },
-    { value: "Stuart-Focused", label: "Built Around Your Market" },
+    { value: "Bexley-Focused", label: "Built Around Your Market" },
 ];
 
 
@@ -31,5 +31,4 @@ export const HeroKeywords =[
     "Content Strategy",
     "Business Profile Optimize",
     "Link Building",
-    "SEO Audits",
 ];
