@@ -12,7 +12,7 @@ import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 import SeoStrategy from "./components/Seostrategy";
 import LocalSeoService from "./components/Localseo";
 import Metrics from "./components/Metrics";
-import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-09T08:00:00.000Z";
 
@@ -64,7 +64,7 @@ export default function Home() {
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-in-coral-springs-fl" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57243.72703010103!2d-80.29084250238047!3d26.270329588248917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d905341976e065%3A0x8907b0b59129202b!2sCoral%20Springs%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1788948399434!5m2!1sen!2sin" />
-      <FloridaLocationSection HidecurrentSlug="seo-company-in-coral-springs-fl"/>
+      <LocationList region="florida" HidecurrentSlug="seo-company-in-coral-springs-fl"/>
       </main>
   );
 }

@@ -12,6 +12,7 @@ import WhyNeedSeo from "./components/Whyneedseo";
 import OurProcess from "./components/Ourprocess";
 import SeoMetrics from "./components/Seometrics";
 import SeoEffective from "./components/Seoeffective";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-29T08:00:00.000Z";
 
@@ -63,6 +64,7 @@ export default function Home() {
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-calabasas-ca" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26419.139926492757!2d-118.68360560693645!3d34.13629935157678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29e2317efd3c1%3A0x61a2e2c26fe615ae!2sCalabasas%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1790654096820!5m2!1sen!2sin" />
+      <LocationList region="california" HidecurrentSlug="seo-company-calabasas-ca"/>
       </main>
   );
 }
