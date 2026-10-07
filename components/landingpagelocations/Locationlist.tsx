@@ -1,6 +1,6 @@
 "use client";
 
-import { LOCATIONS, getLocationUrl } from "@/lib/constants/Floridalocations";
+import { LOCATIONS, getLocationUrl, type Region, REGION_TITLES } from "@/lib/constants/Locationlist";
 import { useMemo, useState } from "react";
 import Typography from "../ui/Typography";
 import { MapPin } from "lucide-react";
@@ -9,10 +9,11 @@ import { MapPin } from "lucide-react";
   const LOAD_STEP = 35;
 
 type LocationSectionProps = {
+  region: Region;
   HidecurrentSlug?: string;
 };
 
-export default function LocationSection({ HidecurrentSlug }: LocationSectionProps) {
+export default function LocationList({ region, HidecurrentSlug }: LocationSectionProps) {
   const [query, setQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
 
@@ -22,10 +23,10 @@ export default function LocationSection({ HidecurrentSlug }: LocationSectionProp
   // exclude the current page, then sort A-Z
   const sortedLocations = useMemo(
     () =>
-      LOCATIONS.filter((l) => l.slug !== HidecurrentSlug).sort((a, b) =>
+      LOCATIONS.filter((l) => l.region === region && l.slug !== HidecurrentSlug).sort((a, b) =>
         a.name.localeCompare(b.name, "en", { sensitivity: "base" })
       ),
-    [HidecurrentSlug]
+    [region, HidecurrentSlug]
   );
 
   const filtered = useMemo(
@@ -51,7 +52,8 @@ export default function LocationSection({ HidecurrentSlug }: LocationSectionProp
             </Typography>
         </div>
         <Typography variant="display-2xl" className="text-white mt-1 leading-tight ">
-          Explore Our SEO Services Across Florida
+          {/* Explore Our SEO Services Across Florida */}
+          {REGION_TITLES[region]}
         </Typography>
         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 ">
           Find your City from our serviced locations.

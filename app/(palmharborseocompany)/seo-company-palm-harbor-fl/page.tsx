@@ -12,7 +12,7 @@ import ServingNearby from "./components/Nearby";
 import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
 import SeoStrategy from "./components/Seostrategy";
 import LocalSeoService from "./components/Localseo";
-import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-08T08:00:00.000Z";
 
@@ -64,7 +64,7 @@ export default function Home() {
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-palm-harbor-fl" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56319.74315939135!2d-82.8195505410435!3d28.08603252238431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f1d307e6570d%3A0x40993b1f9b5af5fc!2sPalm%20Harbor%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1788846148636!5m2!1sen!2sin" />
-      <FloridaLocationSection HidecurrentSlug="seo-company-palm-harbor-fl"/>
+      <LocationList region="florida" HidecurrentSlug="seo-company-palm-harbor-fl"/>
       </main>
   );
 }

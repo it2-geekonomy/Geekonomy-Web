@@ -14,7 +14,7 @@ import Difference from "./components/Difference";
 import OurProcess from "./components/Ourprocess";
 import SeoResults from "./components/Seoresults";
 import HelpsBusiness from "./components/Helpbusiness";
-import FloridaLocationSection from "@/components/landingpagelocations/Floridalocationsection";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-29T08:00:00.000Z";
 
@@ -68,7 +68,7 @@ export default function Home() {
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-boynton-beach-fl" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57116.044928197836!2d-80.12332550082184!3d26.528073426282518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8df208877e343%3A0xeeeca5b1b3279236!2sBoynton%20Beach%2C%20FL%2C%20USA!5e0!3m2!1sen!2sin!4v1790659479731!5m2!1sen!2sin" />
-      <FloridaLocationSection HidecurrentSlug="seo-company-boynton-beach-fl"/>
+      <LocationList region="florida" HidecurrentSlug="seo-company-boynton-beach-fl"/>
       </main>
   );
 }
