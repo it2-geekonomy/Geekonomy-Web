@@ -1,3 +1,4 @@
+import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
 import {
   TrendingUp,
   Search,
@@ -6,7 +7,15 @@ import {
   Bot,
 } from "lucide-react";
 
-export const Items = [
+export const WhyNeedDigi: IconCardLayout = {
+  label: "Why Need Digital Marketing",
+  heading: "Why Businesses in JP Nagar Need Digital Marketing",
+  intro: [
+    "JP Nagar's business environment is varied, from local service providers and professional practices to shops, restaurants, start-ups and middle size companies. Consumers are now commonly searching online to find businesses before they even make contact through engines, maps, social networks and review portals. It is important then for businesses to be 'found' online because the consumer is actively seeking your product or service.",
+    "A digital marketing company JP Nagar may provide a greater reach to a business instead of relying on a single source of traffic. Instead an integrated approach that ties together search engines, paid marketing, social media, content, conversions, and objectives can be implemented.",
+  ],
+
+  card: [
   {
     icon: TrendingUp,
     title: "Increasing Online Competition",
@@ -42,4 +51,5 @@ export const Items = [
       "Search behavior is also extending beyond traditional search results. AI functionality in certain platforms can extract summaries and give recommendations based on what is found online. Creating comprehensive, structured, relevant and authoritative content can be one way to get ready for this emerging world of search."
     ]
   }
-];
+]
+};

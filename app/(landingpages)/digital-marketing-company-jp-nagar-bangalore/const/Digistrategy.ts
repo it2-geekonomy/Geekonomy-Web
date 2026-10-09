@@ -1,3 +1,4 @@
+import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
 import {
   Search,
   Target,
@@ -9,7 +10,14 @@ import {
   BarChart3,
 } from "lucide-react";
 
-export const Items = [
+export const DigiStrategy: IconCardLayout = {
+  label: "Digital Marketing Strategy",
+  heading: "Our Digital Marketing Strategy for JP Nagar Businesses",
+  intro: [
+    "A winning online campaign is business-centric, not one size fits all. Geekonomy are experts at developing a campaign tailored to your sector, competition, your target audience, search patterns and your desired conversion rate.",
+  ],
+
+  card: [
   {
     icon: Search,
     title: "Business & Competitor Research",
@@ -66,4 +74,5 @@ export const Items = [
       "Performance should be evaluated in terms of tangible business goals. Performance metrics include traffic, rankings, leads, conversions, campaign success, engagement etc. in order to identify what is optimally performing and what might require further alignment."
     ]
   }
-];
+]
+};

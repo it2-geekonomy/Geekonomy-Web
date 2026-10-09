@@ -1,4 +1,5 @@
-import {
+import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
+import { 
   Settings,
   TrendingUp,
   MapPinned,
@@ -6,9 +7,16 @@ import {
   BarChart3,
   Target,
   LineChart,
-} from "lucide-react";
+ } from "lucide-react";
 
-export const WhyGeekonomyItems = [
+export const whyGeekonomyContent: IconCardLayout = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy as Your Digital Marketing Company in JP Nagar?",
+  intro: [
+    "Selecting a digital marketing partner isn't about ticking off each item in an available services list. Your digital marketing agency should have insight into how all digital channels fit together, and how the activity from your website should have a tangible effect on your overall business objectives. Geekonomy integrates SEO, paid marketing, content, social media, website conversion and a search strategy centered around artificial intelligence.",
+  ],
+
+  card: [
   {
     icon: Settings,
     title: "Customized Strategies",
@@ -58,4 +66,6 @@ export const WhyGeekonomyItems = [
       "Digital marketing is a process of continuous tuning. Performance data makes it easy to see what is working and what is not so, you can tune campaigns, content, landing pages & targeting any time new data emerges."
     ]
   }
-];
+  ]
+};
+

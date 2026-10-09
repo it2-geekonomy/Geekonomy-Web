@@ -1,8 +1,13 @@
-export const faqs = [
+import type { FAQContent } from "@/components/Landingpage/FAQ";
+
+export const faqContent: FAQContent = {
+  label: "ANSWERS",
+  heading: "Frequently Asked Questions",
+  faqs: [
   {
     q: "How much does digital marketing cost in JP Nagar?",
     a: [
-      "Costs: Costs for digital marketing can differ greatly according to service needs, size of business, competitive pressure, campaign goals and the level of the effort. Many service categories, such as SEO, PPC, social media, content marketing etc, demand different investment levels."
+      "Costs: Costs for digital marketing can differ greatly according to service needs, size of business, competitive pressure, campaign goals and the level of the effort. Many service categories, such as SEO, PPC, social media, content marketing etc, demand different investment levels.",
     ]
   },
   {
@@ -47,4 +52,5 @@ export const faqs = [
       "Reflect on the agency's relevant experience, services, strategy, reporting, interaction, measurement system, and insights into your business objectives. Explain too, what work will be done, which metrics will be used, and what feedback will be given."
     ]
   }
-];
+]
+};

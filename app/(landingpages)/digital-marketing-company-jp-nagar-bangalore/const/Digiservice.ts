@@ -1,3 +1,4 @@
+import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
 import {
   Search,
   MapPin,
@@ -9,7 +10,14 @@ import {
   Bot,
 } from "lucide-react";
 
-export const Items = [
+export const DigiServices: IconCardLayout = {
+  label: "Digital Marketing Services",
+  heading: "Digital Marketing Services in JP Nagar",
+  intro: [
+    "Having a website isn't enough for business to compete in the digital space. A solid digital strategy combines several different channels so a brand is able to target potential customers along varied stages of their buying funnel. Geekonomy offers digital marketing services in JP Nagar to enhance a brand's visibility, engagement and lead conversions.",
+  ],
+
+  card: [
   {
     icon: Search,
     title: "Search Engine Optimization (SEO)",
@@ -66,4 +74,5 @@ export const Items = [
       "Get your brand ready for the future of search with semantic content, optimized entities, structured data, and tactics to maximize exposure in AI-enabled search and answer experiences."
     ]
   }
-];
+  ]
+};
