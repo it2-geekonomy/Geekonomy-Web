@@ -52,8 +52,8 @@ export default function Hero({ content }: HeroProps) {
 
   return (
     <section id="top" className="relative w-full bg-black overflow-hidden">
-      <div className="pointer-events-none absolute -top-40 -right-40 h-125 w-125 rounded-full bg-[#69AE44]/20 blur-[7.5rem]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-100 w-100 rounded-full bg-[#69AE44]/10 blur-[6.25rem]" />
+      <div className="pointer-events-none absolute top-0 right-0 h-75 w-75 bg-gradient-to-bl from-[#69AE44]/55 to-transparent blur-[7.25rem]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-65 w-65 bg-gradient-to-tr from-[#69AE44]/20 to-transparent blur-[6.25rem]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-4 md:py-8 lg:px-8">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-center">

@@ -20,8 +20,8 @@ export default function CTA({ content }: CTAProps) {
     <section id="cta" className="bg-black py-8 lg:py-10">
       <div className="mx-auto max-w-full">
         <div className="relative overflow-hidden border border-white/10 bg-[#69AE44]/20 px-8 py-16 text-center sm:px-16">
-          <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-[#69AE44]/25 blur-[6.25rem]" />
-          <div className="pointer-events-none absolute -bottom-24 -right-20 h-72 w-72 rounded-full bg-[#69AE44]/15 blur-[6.25rem]" />
+          <div className="pointer-events-none absolute left-0 top-0 h-52 w-52  bg-gradient-to-br from-[#69AE44] via-[#69AE44]/20 to-transparent blur-[6.25rem]" />
+          <div className="pointer-events-none absolute bottom-0 right-0 h-52 w-52 bg-gradient-to-tl from-[#69AE44] via-[#69AE44]/10 to-transparent blur-[6.25rem]" />
 
           <div className="relative mx-auto max-w-5xl">
             <Typography variant="display-2xl" as="p" className="text-white leading-tight">
