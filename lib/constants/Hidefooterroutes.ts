@@ -51,5 +51,6 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-bexley-georgia",
   "/seo-company-atascocita-texas",
   "/seo-company-winter-springs-fl",
-  "/seo-company-panama-city-beach-fl",
+  "/seo-company-auburn-alabama",
+  "/seo-company-miramar-florida",
 ];
