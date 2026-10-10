@@ -1,3 +1,4 @@
+import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
 import {
   Info,
   Bot,
@@ -6,7 +7,14 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-export const Items = [
+export const GeoOptimize: IconCardLayout = {
+  label: "AI SEO & GEO Optimization",
+  heading: "AI SEO & GEO for JP Nagar Businesses",
+  intro: [
+    "Search is far more than blue-link results. Customers can find businesses in a variety of ways for example, through AI driven search engines and conversational tools, answer engines. Geekonomy's digital strategy includes AI and Generative Engine Optimization (GEO) so that businesses can develop a more powerful, accessible web presence.",
+  ],
+
+  card: [
   {
     icon: Info,
     title: "What Is Generative Engine Optimization?",
@@ -42,4 +50,5 @@ export const Items = [
       "You can use an AI SEO JP Nagar to support your standard organic search. It will ready your web presence and identify your brand assets for whatever behaviour shifts are ahead. Geekonomy builds internal links, authoritative content, semantic SEO, and entity optimized techniques in preparation of the next wave of search."
     ]
   }
-];
+]
+};

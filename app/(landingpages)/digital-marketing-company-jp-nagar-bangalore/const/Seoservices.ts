@@ -1,3 +1,4 @@
+import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
 import {
   FileSearch,
   Settings,
@@ -8,7 +9,14 @@ import {
   Building,
 } from "lucide-react";
 
-export const Items = [
+export const SeoServices: IconCardLayout = {
+  label: "SEO Services",
+  heading: "SEO Services for Businesses in JP Nagar",
+  intro: [
+    "Search visibility is crucial to your customers being able to find your business online. Geekonomy blends technical optimization, content, local search strategies and authority building to create an SEO foundation that is right for your businesses goals. Our approach is focused on delivering relevant organic visibility and a better user experience.",
+  ],
+
+  card: [
   {
     icon: FileSearch,
     title: "On-Page SEO",
@@ -58,4 +66,5 @@ export const Items = [
       "Having a fully optimized Google Business Profile makes it easier for your target audience to discover basic information about your local business on Google Search and Maps. The objective is to ensure your profile information ,categories, services, content and local signals are in sync with the general SEO strategy."
     ]
   }
-];
+]
+};

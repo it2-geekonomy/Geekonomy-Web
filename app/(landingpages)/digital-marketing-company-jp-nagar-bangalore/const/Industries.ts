@@ -1,4 +1,12 @@
-export const Lists = [
+import type { ImageCardContent } from "@/components/Landingpage/Imagecardlayout";
+
+export const industriesContent: ImageCardContent = {
+  label: "Industries",
+  heading: "Digital Marketing for Different JP Nagar Businesses",
+  intro: [
+    "Since every business has unique customers, competitors, sales cycle and conversion needs. Therefore a JP Nagar digital marketing agency should customize a digital marketing strategy according to the business model rather than a constant campaign for every industry. Geekonomy designs different digital marketing plans for each channel based on the behavior of target audiences, searching purpose and business plan.",
+  ],
+  items: [
   {
     image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Local-Service-Business.webp",
     title: "Local Businesses",
@@ -34,4 +42,5 @@ export const Lists = [
     title: "Restaurants & Hospitality",
     desc: "Restaurants and hospitality businesses rely on local discovery. Appearing in search results, being optimized to appear locally, reviews, social media channels, location pages and local advertising can help you be found when the customer is searching for something close to home.",
   },
-];
+]
+};

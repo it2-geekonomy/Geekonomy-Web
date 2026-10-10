@@ -1,4 +1,12 @@
-export const steps = [
+import type { OurProcessContent } from "@/components/Landingpage/Stepcardlayout";
+
+export const ourProcessContent: OurProcessContent = {
+  label: "Our Process",
+  heading: "Our Digital Marketing Process",
+  intro: [
+    "It is possible to have a well-structured process that shifts digital marketing away from an ad-hoc set of activities and closer to a real growth strategy. Geekonomy clearly adheres to this standard procedure, which goes from analysis and planning to execution, measurement, and iteration.",
+  ],
+  steps: [
   {
     n: "1",
     title: "Discover",
@@ -41,4 +49,5 @@ export const steps = [
       "Digital marketing is continuous. We track performance, discover opportunities, improve campaigns and content, fix problems and grow approaches that support your business aims, regular optimization that allows your online identity to evolve as your market and customers do."
     ]
   }
-];  
+]
+};  

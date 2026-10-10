@@ -1,0 +1,163 @@
+import type { LucideIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Typography } from "@/components/ui/Typography";
+import { Boldtext } from "./Boldtext";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
+
+export interface HeroBadge {
+  icon: LucideIcon;
+  title: string;
+  subtitle: string;
+  position: string;
+}
+
+export interface HeroStat {
+  value: string;
+  label: string;
+}
+
+export interface HeroContent {
+  label: string;
+  headingMain: string;
+  headingHighlight: string;
+  paragraphs: string[]; // use **double asterisks** for bold
+  buttonText: string;
+  image: string;
+  imageAlt: string;
+  aspect?: string;
+  badges: HeroBadge[];
+  stats: HeroStat[];
+  bannerText: string;
+  keywords: string[];
+}
+
+interface HeroProps {
+  content: HeroContent;
+}
+
+export default function Hero({ content }: HeroProps) {
+  const {
+    label,
+    headingMain,
+    headingHighlight,
+    paragraphs,
+    buttonText,
+    image,
+    imageAlt,
+    badges,
+    stats,
+    bannerText,
+    keywords,
+  } = content;
+
+  return (
+    <section id="top" className="relative w-full bg-black overflow-hidden">
+      <div className="pointer-events-none absolute top-0 right-0 h-75 w-75 bg-gradient-to-bl from-[#69AE44]/55 to-transparent blur-[7.25rem]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-65 w-65 bg-gradient-to-tr from-[#69AE44]/20 to-transparent blur-[6.25rem]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 py-4 md:py-8 lg:px-8">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-center">
+          <div className="text-center lg:text-left">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
+              <Typography variant="overline" className="text-white text-nowrap">
+                {label}
+              </Typography>
+            </div>
+
+            <Typography variant="display-2xl" as="h1" className="text-white leading-tight">
+              {headingMain} <span className="text-[#69AE44]">{headingHighlight}</span>
+            </Typography>
+
+            <div className="mt-4 space-y-4">
+              {paragraphs.map((paragraph, i) => (
+                <Typography
+                  key={i}
+                  variant="body-xl"
+                  className="leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left"
+                >
+                  {Boldtext(paragraph)}
+                </Typography>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:flex-wrap sm:justify-center lg:justify-start">
+              <a
+                href="#contact"
+                onClick={handleScrollToContact}
+                className="inline-flex w-72 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto"
+              >
+                <Typography variant="body-lg" className="font-semibold text-black">
+                  {buttonText}
+                </Typography>
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="relative aspect-[3.4/4.7] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
+              <img src={image} alt={imageAlt} className="h-full w-full object-cover" />
+
+              {badges.map((badge) => (
+                <div
+                  key={badge.title}
+                  className={`absolute ${badge.position} flex items-center gap-3 rounded-[1rem] bg-white px-4 py-3 shadow-xl`}
+                >
+                  <div className="flex h-9 w-9 items-center justify-center rounded-[0.5rem] bg-[#69AE44]/10 text-[#69AE44]">
+                    <badge.icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <Typography variant="body-sm" className="font-bold text-black">
+                      {badge.title}
+                    </Typography>
+                    <Typography variant="caption" className="text-black/50">
+                      {badge.subtitle}
+                    </Typography>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 flex flex-col items-center gap-y-8 text-center sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:text-left">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <Typography variant="display-xl" as="p" className="text-[#69AE44] whitespace-nowrap">
+                {stat.value}
+              </Typography>
+              <Typography variant="body-lg" className="text-white">
+                {stat.label}
+              </Typography>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="relative border-t border-white/30">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6 py-10 text-center lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:text-left">
+          <Typography
+            variant="body-lg"
+            className="rounded-full bg-[#69AE44]/20 px-4 py-2 text-white font-semibold uppercase"
+          >
+            {bannerText}
+          </Typography>
+
+          <div className="flex max-w-md flex-wrap justify-center gap-4 lg:justify-start">
+            {keywords.map((keyword) => (
+              <span
+                key={keyword}
+                className="w-fit whitespace-nowrap rounded-full border border-[#69AE44]/90 bg-white/5 px-4 py-2.5"
+              >
+                <Typography variant="body-sm" className="font-semibold text-white">
+                  {keyword}
+                </Typography>
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

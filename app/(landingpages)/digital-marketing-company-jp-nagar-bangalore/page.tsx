@@ -1,18 +1,25 @@
 import type { Metadata } from "next";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
-import SeoServices from "./components/Seoservices";
-import Hero from "./components/Herosection";
-import WhyNeedDigi from "./components/Whyneeddigi";
-import OurProcess from "./components/Ourprocess";
-import Measure from "./components/Measure";
-import GeoOptimize from "./components/GEOoptimize";
-import DigiServices from "./components/Digiservice";
-import DigiStrategy from "./components/Digistrategy";
+import Hero from "@/components/Landingpage/Hero";
+import { heroContent } from "./const/Herosection";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { DigiServices } from "./const/Digiservice";
+import { WhyNeedDigi } from "./const/Whyneeddigi";
+import { DigiStrategy } from "./const/Digistrategy";
+import { SeoServices } from "./const/Seoservices";
+import { GeoOptimize } from "./const/GEOoptimize";
+import { Measure } from "./const/Measure";
+import CTA from "@/components/Landingpage/CTA";
+import { ctaContent } from "./const/cta";
+import FAQ from "@/components/Landingpage/FAQ";
+import { faqContent } from "./const/FAQ";
+import { ourProcessContent } from "./const/Ourprocess";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import { industriesContent } from "./const/Industries";
 
 const PUBLISHED_DATE = "2026-09-30T08:00:00.000Z";
 
@@ -51,18 +58,20 @@ export default function Home() {
         }}
         />
 
-      <Hero />
-      <DigiServices/>
-      <WhyNeedDigi/> 
-      <DigiStrategy/>  
-      <SeoServices/>
-      <GeoOptimize/>  
-      <Industries/>
-      <WhyGeekonomy/>
-      <OurProcess/>
-      <CTA/>
-      <Measure/>       
-      <FAQ /> 
+      <Hero content={heroContent} />
+      <CardSection content={DigiServices} />
+      <CardSection content={WhyNeedDigi} />
+      <CTAButton text="Get Your Free Digital Marketing Strategy"/>
+      <CardSection content={DigiStrategy} />
+      <CardSection content={SeoServices} />
+      <CTAButton text="Get Your Free Digital Marketing Strategy"/>
+      <CardSection content={GeoOptimize} />
+      <ImageCardSection content={industriesContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <StepSection content={ourProcessContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={Measure} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="digital-marketing-company-jp-nagar-bangalore" />
       <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31114.234590424596!2d77.55747526540114!3d12.889752079118638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150d7349a72b%3A0xf3d03ea1e1dd3d46!2sJ.%20P.%20Nagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1790748087257!5m2!1sen!2sin" />
       </main>

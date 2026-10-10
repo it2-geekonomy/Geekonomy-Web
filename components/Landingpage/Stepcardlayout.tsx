@@ -1,7 +1,27 @@
 import { Typography } from "@/components/ui/Typography";
-import { steps } from "../const/Ourprocess";
+import { Boldtext } from "./Boldtext";
 
-export default function OurProcess() {
+export interface ProcessStep {
+  n: string | number;
+  title: string;
+  desc: string[];
+}
+
+export interface OurProcessContent {
+  label: string;
+  heading: string;
+  intro: string[];
+  bottom?: string[];
+  steps: ProcessStep[];
+}
+
+interface OurProcessProps {
+  content: OurProcessContent;
+}
+
+export default function StepSection({ content }: OurProcessProps) {
+  const { label, heading, intro, bottom, steps } = content;
+
   return (
     <section id="process" className="bg-white/[0.02] py-6 lg:py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -9,16 +29,21 @@ export default function OurProcess() {
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
             <Typography variant="overline" className="text-white/80">
-              Our Process
+              {label}
             </Typography>
           </div>
- 
-          <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            Our Digital Marketing Process
+
+          <Typography variant="display-2xl" as="h2" className="text-white leading-tight">
+            {heading}
           </Typography>
-          <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
-            It is possible to have a well-structured process that shifts digital marketing away from an ad-hoc set of activities and closer to a real growth strategy. Geekonomy clearly adheres to this standard procedure, which goes from analysis and planning to execution, measurement, and iteration.
-          </Typography>
+
+          <div className="mt-5 space-y-4">
+            {intro.map((paragraph, i) => (
+              <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
+                {Boldtext(paragraph)}
+              </Typography>
+            ))}
+          </div>
         </div>
 
         <div className="grid gap-4">
@@ -35,18 +60,28 @@ export default function OurProcess() {
                   {s.title}
                 </Typography>
 
-              {s.desc.map((sentence, i) => (
-                <Typography
+                {s.desc.map((sentence, i) => (
+                  <Typography
                     key={i}
                     variant="body-lg"
-                    className={`leading-relaxed text-white/90 ${i > 0 ? "mt-2" : ""}`}>
+                    className={`leading-relaxed text-white/90 ${i > 0 ? "mt-2" : ""}`}
+                  >
                     {sentence}
-                </Typography>
+                  </Typography>
                 ))}
               </div>
             </div>
           ))}
         </div>
+        {bottom && (
+          <div className="mt-5 space-y-4">
+            {bottom.map((paragraph, i) => (
+              <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
+                {Boldtext(paragraph)}
+              </Typography>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
