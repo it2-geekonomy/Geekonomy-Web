@@ -44,7 +44,7 @@ export default function Hero() {
                     </div>
 
                     <div className="relative">
-                        <div className="relative aspect-[4/4.4] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
+                        <div className="relative aspect-[3.5/4.7] w-full max-w-[20rem] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 mx-auto sm:max-w-105 lg:max-w-130 lg:mx-0">
                             <img
                                 src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/bangalorehcity.png"
                                 alt="Bangalore city"

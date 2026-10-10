@@ -1,5 +1,3 @@
-
-
 export const faqs = [
   {
     q: "How much does SEO cost in Carmel, Indiana?",

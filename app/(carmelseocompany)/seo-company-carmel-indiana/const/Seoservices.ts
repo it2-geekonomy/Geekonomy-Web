@@ -1,5 +1,3 @@
-
-
 import {
   Search,
   MapPin,

@@ -21,7 +21,7 @@ export default function WhyGeekonomy() {
             Selecting the right SEO partner is not just about finding someone who can get you on the first page of the search engines, it‘s about making the connection between your search visibility, your website, your customers and your core business objectives.
           </Typography>
           <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90">
-            Geoknomy adopts a pragmatic, data-driven SEO strategy aimed at creating sustainable organic visibility.
+            Geekonomy adopts a pragmatic, data-driven SEO strategy aimed at creating sustainable organic visibility.
           </Typography>
         </div>
 

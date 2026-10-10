@@ -30,7 +30,7 @@ export default function BuiltAround() {
             <div className="aspect-[4/4] w-full overflow-hidden rounded-[1rem] border border-white/10 bg-white/5 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
               <img
                 src= "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/carmelindiana-h2.png"
-                alt="Ocean Springs Business"
+                alt="Carmel Indiana Business"
                 className="h-full w-full object-cover"
               />
             </div>

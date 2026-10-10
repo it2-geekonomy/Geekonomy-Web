@@ -1,5 +1,3 @@
-
-
 export const BulletPoints = [
   {
     point: "Targeted searches on Carmel used to relate your services with customers in the local market.",
@@ -17,7 +15,6 @@ export const BulletPoints = [
     point: "Commercial searches from consumers actively shopping for a provider using search engines to compare providers, requesting quotes or finding a company to hire.",
   },
   {
-
     point: "Searches from around in places like Fishers, Westfield, Noblesville or Indianapolis that could extend your visibility.",
   },
 ];

@@ -9,10 +9,12 @@ import WhenHire from "./components/Whenhire";
 import BrandIdentity from "./components/Brandidentity";
 import StrongBrand from "./components/Strongbrand";
 import BrandProcess from "./components/Brandprocess";
-import StandOut from "./components/Brandstandsout";
+// import StandOut from "./components/Brandstandsout";
 import BrandServices from "./components/brandservice";
 import BrandStrategy from "./components/Strategybeforedesign";
 import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { standOutContent } from "./const/Brandstandout";
+import ImageContent from "@/components/Landingpage/Imagecontent";
 
 const PUBLISHED_DATE = "2026-09-03T08:00:00.000Z";
 
@@ -52,7 +54,8 @@ export default function Home() {
       />
 
       <Hero /> 
-      <StandOut/> 
+      <ImageContent content={standOutContent} />
+      {/* <StandOut/>  */}
       <BrandServices/> 
       <BrandStrategy/>  
       <BrandProcess/>  
