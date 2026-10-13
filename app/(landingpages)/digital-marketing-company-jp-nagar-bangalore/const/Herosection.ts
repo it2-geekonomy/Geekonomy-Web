@@ -1,5 +1,5 @@
 import { Search, TrendingUp } from "lucide-react";
-import type { HeroContent } from "@/components/Landingpage/Hero";
+import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
   label: "JP Nagar Digital Marketing Agency",

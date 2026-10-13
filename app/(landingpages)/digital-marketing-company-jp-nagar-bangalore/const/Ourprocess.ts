@@ -1,4 +1,4 @@
-import type { OurProcessContent } from "@/components/Landingpage/Stepcardlayout";
+import type { OurProcessContent } from "@/lib/constants/Landingpagetypes";
 
 export const ourProcessContent: OurProcessContent = {
   label: "Our Process",

@@ -1,5 +1,5 @@
 
-import type { CTAContent } from "@/components/Landingpage/CTA";
+import type { CTAContent } from "@/lib/constants/Landingpagetypes";
 
 export const ctaContent: CTAContent = {
   heading: "Ready to Get More Leads From Digital Marketing?",

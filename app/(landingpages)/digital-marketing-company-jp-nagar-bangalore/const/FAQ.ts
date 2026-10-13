@@ -1,4 +1,4 @@
-import type { FAQContent } from "@/components/Landingpage/FAQ";
+import type { FAQContent } from "@/lib/constants/Landingpagetypes";
 
 export const faqContent: FAQContent = {
   label: "ANSWERS",

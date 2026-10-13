@@ -1,4 +1,4 @@
-import { IconCardLayout } from "@/components/Landingpage/Iconcardlayout";
+import { IconCardLayout } from "@/lib/constants/Landingpagetypes";
 import {
   Info,
   Bot,

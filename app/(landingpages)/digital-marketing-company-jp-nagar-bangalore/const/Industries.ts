@@ -1,4 +1,4 @@
-import type { ImageCardContent } from "@/components/Landingpage/Imagecardlayout";
+import type { ImageCardContent } from "@/lib/constants/Landingpagetypes";
 
 export const industriesContent: ImageCardContent = {
   label: "Industries",

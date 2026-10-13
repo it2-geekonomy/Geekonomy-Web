@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import Hero from "@/components/Landingpage/Hero";
 import { heroContent } from "./const/Herosection";
 import CTAButton from "@/components/Landingpage/CTAbutton";
@@ -73,7 +73,7 @@ export default function Home() {
       <CardSection content={Measure} />
       <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="digital-marketing-company-jp-nagar-bangalore" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31114.234590424596!2d77.55747526540114!3d12.889752079118638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150d7349a72b%3A0xf3d03ea1e1dd3d46!2sJ.%20P.%20Nagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1790748087257!5m2!1sen!2sin" />
+      <LandingPageMap location="Jp_Nagar"  />
       </main>
   );
 }
