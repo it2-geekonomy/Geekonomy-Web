@@ -33,7 +33,7 @@ export default function ServingNearby({ content }: Readonly<ServingNearbyProps>)
 
           <div className="order-2 flex w-full justify-center lg:justify-end">
             <div
-              className="relative w-full overflow-hidden rounded-[1rem] border border-white/10 bg-white/5 sm:w-3/4 lg:w-full aspect-video"
+              className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 sm:w-3/4 lg:w-full aspect-video"
             >
               <Image
                 src={image}

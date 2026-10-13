@@ -13,12 +13,14 @@ export function LandingPageMap({
   className = "",
 }: LandingPageMapProps) {
   return (
-    <section id="map" className="bg-black px-4 sm:px-6 lg:px-10 py-9 lg:py-10 lg:pb-15 font-sans">
-      <div className={`w-full max-w-5xl mx-auto h-75 rounded-[1rem] overflow-hidden ${className}`}>
+    <section id="map" className="w-full max-w-5xl mx-auto bg-black px-6 py-8 lg:py-10 font-sans">
+      <div
+        className={`w-full h-76 overflow-hidden rounded-2xl border border-white/10 bg-white/5 ${className}`}
+      >
         <iframe
           src={LANDING_PAGE_MAPS[location]}
           title={title}
-          className="w-full h-full"
+          className="h-full w-full"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

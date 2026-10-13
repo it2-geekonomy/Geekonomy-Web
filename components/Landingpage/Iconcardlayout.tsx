@@ -11,7 +11,7 @@ export default function CardSection({ content }: Readonly<SectionProps>) {
   return (
     <section id="iconcard" className="flex w-full flex-col items-center bg-black py-6 lg:py-10">
       <div className="flex w-full max-w-7xl flex-col gap-10 px-6 lg:gap-14 lg:px-8">
-        <div className="flex w-full max-w-5xl flex-col items-center gap-5 self-center text-center">
+        <div className="flex w-full lg:w-4/5 flex-col items-center gap-5 self-center text-center">
           <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
             <span className="size-1.5 rounded-full bg-[#69AE44]" />
             <Typography variant="overline" className="text-white/80">
@@ -38,9 +38,9 @@ export default function CardSection({ content }: Readonly<SectionProps>) {
           {card.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="flex w-full flex-col gap-4 rounded-[1.2rem] border border-white/10 bg-white/5 p-7 transition-all hover:-translate-y-1 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
+              className="flex w-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-7 transition-all hover:-translate-y-1 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
             >
-              <div className="flex size-9 items-center justify-center rounded-[0.8125rem] bg-[#69AE44]/10 text-[#69AE44] sm:size-12">
+              <div className="flex size-9 items-center justify-center rounded-xl bg-[#69AE44]/10 text-[#69AE44] sm:size-12">
                 <Icon className="size-4.5 sm:size-6" strokeWidth={1.8} />
               </div>
 
@@ -67,7 +67,7 @@ export default function CardSection({ content }: Readonly<SectionProps>) {
           ))}
 
           {cta && (
-            <div className="flex w-full flex-col justify-center gap-2 rounded-[1.25rem] bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 md:w-full">
+            <div className="flex w-full flex-col justify-center gap-2 rounded-2xl bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 md:w-full">
               <div className="flex flex-col">
                 <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
                   {cta.title}

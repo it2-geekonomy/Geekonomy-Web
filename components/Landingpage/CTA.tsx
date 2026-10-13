@@ -13,7 +13,6 @@ export default function CTA({ content }: Readonly<CTAProps>) {
     <section id="cta" className="flex w-full justify-center bg-black my-6 sm:my-8 lg:my-10">
       <div className="relative flex w-full overflow-hidden border border-white/10 bg-[#69AE44]/20 px-4 py-10 sm:px-8 sm:py-12 md:px-12 md:py-14 lg:px-16 lg:py-16">
         <div
-          aria-hidden="true"
           className="pointer-events-none absolute inset-0 flex flex-col justify-between"
         >
           <div className="size-52 self-start bg-gradient-to-br from-[#69AE44] via-[#69AE44]/20 to-transparent blur-[6.25rem] " />

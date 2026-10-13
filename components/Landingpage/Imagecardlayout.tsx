@@ -9,7 +9,7 @@ export default function ImageCardSection({ content }: Readonly<ImageCardProps>) 
   return (
     <section id="results" className="flex w-full flex-col items-center bg-black py-8 lg:py-10">
       <div className="flex w-full max-w-7xl flex-col gap-10 px-6 lg:gap-14 lg:px-8">
-        <div className="flex w-full max-w-5xl flex-col items-center gap-5 self-center text-center">
+        <div className="flex w-full lg:w-4/5 flex-col items-center gap-5 self-center text-center">
           <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
             <span className="size-1.5 rounded-full bg-[#69AE44]" />
             <Typography variant="overline" className="text-white/80">
@@ -37,9 +37,9 @@ export default function ImageCardSection({ content }: Readonly<ImageCardProps>) 
             return (
               <div
                 key={title}
-                className="flex flex-col gap-4 rounded-[1.2rem] border border-white/10 bg-white/5 p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
+                className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
               >
-                <div className="relative aspect-video w-full overflow-hidden rounded-[0.8125rem] border border-white/10 bg-white/5">
+                <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5">
                   <Image
                     src={image}
                     alt={title}

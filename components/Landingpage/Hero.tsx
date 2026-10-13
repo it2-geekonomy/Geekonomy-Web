@@ -13,7 +13,6 @@ export default function Hero({ content }: Readonly<HeroProps>) {
   return (
     <section id="top" className="relative flex w-full flex-col items-center overflow-hidden bg-black">
       <div
-        aria-hidden="true"
         className="pointer-events-none absolute inset-0 flex flex-col justify-between"
       >
         <div className="size-75 self-end bg-gradient-to-bl from-[#69AE44]/55 to-transparent blur-[7.25rem]" />
@@ -35,12 +34,12 @@ export default function Hero({ content }: Readonly<HeroProps>) {
                 {headingMain} <span className="text-[#69AE44]">{headingHighlight}</span>
               </Typography>
 
-              <div className="flex w-full flex-col gap-4 lg:w-[min(100%,36rem)]">
+              <div className="flex w-full flex-col gap-4">
                 {paragraphs.map((paragraph, i) => (
                   <Typography
                     key={i}
                     variant="body-xl"
-                    className="leading-relaxed text-white/90 px-6 lg:px-0 text-left"
+                    className="leading-relaxed text-white/90"
                   >
                     {Boldtext(paragraph)}
                   </Typography>
@@ -61,7 +60,7 @@ export default function Hero({ content }: Readonly<HeroProps>) {
           </div>
 
           <div className="flex w-full justify-center lg:justify-start">
-            <div className="relative aspect-[4/5] w-full max-w-md lg:max-w-xl overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 ">
+            <div className="relative aspect-[4/5] w-full max-w-md lg:max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 ">
               <Image
                 src={image}
                 alt={imageAlt}
@@ -74,9 +73,9 @@ export default function Hero({ content }: Readonly<HeroProps>) {
               {badges.map((badge) => (
                 <div
                   key={badge.title}
-                  className={`absolute ${badge.position} flex items-center gap-3 rounded-[1rem] bg-white px-4 py-3 shadow-xl`}
+                  className={`absolute ${badge.position} flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-xl`}
                 >
-                  <div className="flex size-9 items-center justify-center rounded-[1rem] bg-[#69AE44]/10 text-[#69AE44]">
+                  <div className="flex size-9 items-center justify-center rounded-xl bg-[#69AE44]/10 text-[#69AE44]">
                     <badge.icon className="size-5" />
                   </div>
                   <div className="flex flex-col">
@@ -108,15 +107,17 @@ export default function Hero({ content }: Readonly<HeroProps>) {
       </div>
 
       <div className="relative flex w-full justify-center border-t border-white/30">
-        <div className="flex w-[min(100%,80rem)] flex-col items-center gap-10 px-6 py-10 text-center lg:flex-row lg:justify-between lg:px-8 lg:text-left">
-          <Typography
-            variant="body-lg"
-            className="rounded-full bg-[#69AE44]/20 px-4 py-2 text-white font-semibold uppercase"
-          >
-            {bannerText}
-          </Typography>
+        <div className="grid max-w-7xl grid-cols-1 items-center gap-8 px-6 py-10 text-center lg:grid-cols-[3fr_2fr] lg:gap-12 lg:px-8 lg:text-left">
+          <div className="flex justify-center lg:justify-start">
+            <Typography
+              variant="body-lg"
+              className="rounded-full bg-[#69AE44]/20 px-4 py-2 text-white font-semibold uppercase"
+            >
+              {bannerText}
+            </Typography>
+          </div>
 
-          <div className="flex w-[min(100%,28rem)] flex-wrap justify-center gap-4 lg:justify-start">
+          <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
             {keywords.map((keyword) => (
               <span
                 key={keyword}
