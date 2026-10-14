@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Typography } from "@/components/ui/Typography";
 import { Boldtext } from "./Boldtext";
 
@@ -34,6 +35,22 @@ export default function ImageCardSection({ content }: ImageCardProps) {
         <div className="mx-auto mb-14 max-w-5xl text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
             <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
+=======
+import Image from "next/image";
+import { Typography } from "@/components/ui/Typography";
+import { Boldtext } from "./Boldtext";
+import { gridCols, ImageCardProps } from "@/lib/constants/Landingpagetypes";
+
+export default function ImageCardSection({ content }: Readonly<ImageCardProps>) {
+  const { label, heading, intro, bottom, items, columns = 4 } = content;
+
+  return (
+    <section id="results" className="flex w-full flex-col items-center bg-black py-8 lg:py-10">
+      <div className="flex w-full max-w-7xl flex-col gap-10 px-6 lg:gap-14 lg:px-8">
+        <div className="flex w-full lg:w-4/5 flex-col items-center gap-5 self-center text-center">
+          <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
+            <span className="size-1.5 rounded-full bg-[#69AE44]" />
+>>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
             <Typography variant="overline" className="text-white/80">
               {label}
             </Typography>
@@ -43,7 +60,11 @@ export default function ImageCardSection({ content }: ImageCardProps) {
             {heading}
           </Typography>
 
+<<<<<<< HEAD
           <div className="mt-5 space-y-4">
+=======
+          <div className="flex w-full flex-col gap-4">
+>>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
             {intro.map((paragraph, i) => (
               <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
                 {Boldtext(paragraph)}
@@ -52,11 +73,16 @@ export default function ImageCardSection({ content }: ImageCardProps) {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className={`grid gap-5 ${gridCols[columns]}`}>
+=======
+        <div className={`grid justify-items-center gap-5 md:justify-items-stretch ${gridCols[columns]}`}>
+>>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
           {items.map(({ image, title, desc }) => {
             const lines = Array.isArray(desc) ? desc : [desc];
 
             return (
+<<<<<<< HEAD
             <div
               key={title}
               className="w-95 max-w-full mx-auto md:w-auto md:mx-0 rounded-[1.2rem] border border-white/10 bg-white/[0.03] p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-white/[0.05]"
@@ -78,13 +104,46 @@ export default function ImageCardSection({ content }: ImageCardProps) {
                       {line}
                     </Typography>
                   ))}
+=======
+              <div
+                key={title}
+                className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
+              >
+                <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                  <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
+
+                <div className="flex flex-col">
+                  <Typography variant="h3" as="h3" className="mb-2 text-white font-semibold">
+                    {title}
+                  </Typography>
+
+                  <div className="flex flex-col gap-2">
+                    {lines.map((line, i) => (
+                      <Typography key={i} variant="body-lg" className="leading-relaxed text-white/90">
+                        {line}
+                      </Typography>
+                    ))}
+                  </div>
+>>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
                 </div>
               </div>
             );
           })}
         </div>
+<<<<<<< HEAD
         {bottom && (
           <div className="mt-5 space-y-4">
+=======
+
+        {!!bottom?.length && (
+          <div className="flex w-full flex-col gap-4">
+>>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
             {bottom.map((paragraph, i) => (
               <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
                 {Boldtext(paragraph)}

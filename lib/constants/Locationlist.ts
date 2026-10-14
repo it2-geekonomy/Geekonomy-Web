@@ -26,6 +26,7 @@ export const LOCATIONS: Location[] = [
   { region: "florida", name: "Boynton Beach", slug: "seo-company-boynton-beach-fl" },
   { region: "florida", name: "Casselberry", slug: "seo-company-casselberry-florida" },
   { region: "florida", name: "Stuart", slug: "seo-company-stuart-florida" },
+  { region: "florida", name: "Stuart", slug: "seo-company-miramar-florida" },
 
 
   // Display Califonia Landing Pages
