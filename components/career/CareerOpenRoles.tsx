@@ -19,7 +19,7 @@ function JobRow({ job }: { job: CareerJob }) {
     <>
       <div className="min-w-0 flex-1 text-left">
         <Typography
-          as="h3"
+          as="h2"
           variant="h2"
           className="mb-2 text-[20px] font-semibold text-white transition-colors duration-200 group-hover:text-[#69AE44] sm:text-[22px] lg:text-[25px]"
         >

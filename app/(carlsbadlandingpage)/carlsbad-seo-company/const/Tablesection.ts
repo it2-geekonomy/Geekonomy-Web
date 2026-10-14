@@ -1,0 +1,80 @@
+export const rows = [
+  {
+    need: "Carlsbad-focused keyword strategy",
+    geekonomy: "Built around local search intent",
+    generalist: "Broad regional keyword targeting",
+    selfManaged: "Often focused on obvious keywords",
+  },
+  {
+    need: "Google Business Profile optimization",
+    geekonomy: "Optimized for local visibility & leads",
+    generalist: "Usually a standard setup",
+    selfManaged: "Easy to overlook key factors",
+  },
+  {
+    need: "Carlsbad location targeting",
+    geekonomy: "City, neighborhood & service-level targeting",
+    generalist: "Generic location targeting",
+    selfManaged: "Limited local strategy",
+  },
+  {
+    need: "Local SEO & map visibility",
+    geekonomy: "Ongoing local SEO management",
+    generalist: "May be an add-on service",
+    selfManaged: "Inconsistent optimization",
+  },
+  {
+    need: "Service pages that attract local buyers",
+    geekonomy: "Built around services + Carlsbad search intent",
+    generalist: "Template-based pages",
+    selfManaged: "Usually basic service content",
+  },
+  {
+    need: "Local citations & directory consistency",
+    geekonomy: "Managed across relevant platforms",
+    generalist: "Often handled periodically",
+    selfManaged: "Rarely maintained consistently",
+  },
+  {
+    need: "Reviews & local reputation signals",
+    geekonomy: "Strategy focused on building local trust",
+    generalist: "Basic review monitoring",
+    selfManaged: "Usually reactive",
+  },
+  {
+    need: "Technical SEO & site performance",
+    geekonomy: "Ongoing technical improvements",
+    generalist: "Audited occasionally",
+    selfManaged: "Difficult to identify and fix issues",
+  },
+  {
+    need: "SEO content strategy",
+    geekonomy: "Content mapped to local customer journeys",
+    generalist: "Generic industry content",
+    selfManaged: "Content created when time allows",
+  },
+  {
+    need: "Local schema & search signals",
+    geekonomy: "Structured for stronger local relevance",
+    generalist: "Depends on the agency",
+    selfManaged: "Commonly missed",
+  },
+   {
+    need: "SEO reporting & lead tracking",
+    geekonomy: "Focused on rankings, traffic & qualified leads",
+    generalist: "Often focused on traffic and rankings",
+    selfManaged: "Limited measurement",
+  },
+   {
+    need: "Strategy built around business growth",
+    geekonomy: "SEO aligned with your services and revenue goals",
+    generalist: "One-size-fits-most approach",
+    selfManaged: "Trial-and-error approach",
+  },
+  {
+    need: "Dedicated SEO expertise",
+    geekonomy: "Specialists managing your SEO strategy",
+    generalist: "Mixed-experience team",
+    selfManaged: "Requires learning SEO yourself",
+  },
+];

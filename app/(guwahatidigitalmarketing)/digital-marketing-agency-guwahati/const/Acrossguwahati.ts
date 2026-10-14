@@ -1,0 +1,16 @@
+export const guwahatiareas = [
+  "Dispur",
+  "Beltola",
+  "Ganeshguri",
+  "Six Mile",
+  "GS Road",
+  "Chandmari",
+  "Zoo Road",
+  "Bhangagarh",
+  "Hatigaon",
+  "Panjabari",
+  "Khanapara",
+  "Jalukbari",
+  "Paltan Bazaar",
+  "Fancy Bazaar",
+];

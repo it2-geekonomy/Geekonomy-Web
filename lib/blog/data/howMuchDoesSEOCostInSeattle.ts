@@ -57,7 +57,7 @@ const howMuchDoesSEOCostInSeattleContent: BlogContentItem[] = [
   p("<em>Your complete investment total will be determined after we conduct a detailed assessment of your website, your products, and your specific business requirements.</em>"),
   h2("Local SEO Packages in Seattle"),
   img(`${imageDir}/How Much Does SEO Cost in Seattle new.webp`, "Local SEO Packages in Seattle"),
-  p('The business needs of local Seattle companies that want to increase their customer base through search engine optimization require <a href="https://thegeekonomy.com/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">special local SEO services</a> that improve their online presence for Seattle search results.'),
+  p('The business needs of local Seattle companies that want to increase their customer base through search engine optimization require <a href="https://thegeekonomy.com/blog/local-seo-service-explained" class="underline text-[#6FAF4E]">special local SEO services</a> that improve their online presence for Seattle search results.'),
   p("Local SEO pricing typically ranges from $750 to $3,000 per month, depending on factors which include the number of targeted keywords and website pages, service locations, and current search rankings within the area."),
   p("Local SEO packages enable businesses to improve their online search results for Seattle customers, which leads to increased customer visits to their stores."),
   p("The services provide customers with Google Business Profile optimization and local citation management, as well as on-page and off-page SEO services, which help build a strong local presence."),

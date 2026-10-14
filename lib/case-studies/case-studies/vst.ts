@@ -6,7 +6,7 @@ export const vstCaseStudy: CaseStudy = {
   id: 2,
   title: "VST Group",
   internalTitle: "Website redesign and development",
-  subtitle: "VST Group is one of South India's most established automotive networks, representing some of the world's most trusted automobile brands. With a strong legacy across retail, distribution, and logistics",
+  subtitle: "VST Group is a leading South Indian automotive network representing trusted global automobile brands across retail, distribution, and logistics.",
   image: "/case-studies/image4.webp",
   slug: "vst-group",
   pdfUrl: "/case-studies/VST.pdf",

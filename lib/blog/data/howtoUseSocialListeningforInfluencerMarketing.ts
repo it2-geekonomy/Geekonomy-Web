@@ -159,7 +159,7 @@ export const howtoUseSocialListeningforInfluencerMarketing: BlogData = {
 
 
 export const howtoUseSocialListeningforInfluencerMarketingSEO = {
-  title: "How to Use Social Listening for Influencer Marketing | Free Audit",
+  title: "Social Listening for Influencer Marketing: Free Audit",
   description:
     " Learn how to use social listening for influencer marketing to identify trends, find the right creators, and improve campaign performance.",
   url: "https://thegeekonomy.com/blog/use-social-listening-influencer-marketing",

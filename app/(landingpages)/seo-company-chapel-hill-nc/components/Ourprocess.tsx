@@ -1,0 +1,64 @@
+
+import { Typography } from "@/components/ui/Typography";
+import { steps } from "../const/Ourprocess";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
+import { ArrowRight } from "lucide-react";
+
+export default function OurProcess() {
+  return (
+    <section id="process" className="bg-white/[0.02] py-6 lg:py-10">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto mb-14 max-w-5xl text-center">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#69AE44]" />
+            <Typography variant="overline" className="text-white/80">
+              Our Process
+            </Typography>
+          </div>
+
+          <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
+            How Geekonomy Helps You Compete in Local Search
+          </Typography>
+          <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
+            To do good SEO, you need a disciplined plan, regular maintenance, and continuous improvement. Geekonomy takes a comprehensive approach, integrating technical SEO, content, local search, and link-building into a cohesive program that will help boost your visibility and generate more leads.
+          </Typography>
+        </div>
+
+        <div className="grid gap-4">
+          {steps.map((s) => (
+            <div
+              key={s.n}
+              className="step-glow-card relative grid grid-cols-[auto_1fr] items-start gap-6 rounded-[1.25rem] border border-white/10 bg-white/[0.03] p-7 transition-transform hover:translate-x-1.5 sm:p-8"
+            >
+              <span className="flex h-14.5 w-14.5 flex-none items-center justify-center rounded-[0.8125rem] bg-[#69AE44] text-2xl font-extrabold text-black">
+                {s.n}
+              </span>
+              <div>
+                <Typography variant="h3" as="h3" className="mb-2 text-white font-semibold">
+                  {s.title}
+                </Typography>
+
+              {s.desc.map((sentence, i) => (
+                <Typography
+                    key={i}
+                    variant="body-lg"
+                    className={`leading-relaxed text-white/90 ${i > 0 ? "mt-2" : ""}`}>
+                    {sentence}
+                </Typography>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
+        <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 transition-transform hover:scale-[1.03] sm:w-auto">
+            <Typography variant="body-lg" className="font-semibold text-black">
+            Get Your Free SEO Strategy
+            </Typography>
+            <ArrowRight className="h-4 w-4 "/>
+        </a>
+        </div>
+      </div>
+    </section>
+  );
+}

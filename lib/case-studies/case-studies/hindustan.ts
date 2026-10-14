@@ -6,7 +6,7 @@ export const hindustanCaseStudy: CaseStudy = {
   id: 4,
   title: "Hindustan Power",
   internalTitle: "Website redesign and development \n Social Media Creatives",
-  subtitle: "Hindustan Power Projects Pvt. Ltd. is one of India's leading power infrastructure companies with a strong presence in thermal, hydro, solar, and renewable energy sectors",
+  subtitle: "Hindustan Power Projects is a leading Indian power infrastructure company with expertise across thermal, hydro, solar, and renewable energy sectors.",
   image: "/case-studies/image3.webp",
   slug: "hindustan-power",
   pdfUrl: "/case-studies/Hindustan.pdf",

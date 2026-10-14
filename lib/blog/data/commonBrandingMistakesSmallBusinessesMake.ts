@@ -196,7 +196,7 @@ export const commonBrandingMistakesSmallBusinessesMake: BlogData = {
 
 export const commonBrandingMistakesSmallBusinessesMakeSEO = {
   title: "Common Branding Mistakes Small Businesses Make",
-  description: "Boost sales with Automotive SEO for car dealerships. Improve search rankings, get more leads, and turn online car shoppers into ready-to-buy customers.",
+  description: "Common branding mistakes can weaken your small business brand. Learn avoid branding errors and build a stronger, more consistent brand identity.",
   url: "https://thegeekonomy.com/blog/common-branding-mistakes-small-businesses-make",
   canonical: "https://thegeekonomy.com/blog/common-branding-mistakes-small-businesses-make",
   image: coverImage,

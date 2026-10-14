@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
+import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 
 export default function CTA() {
   return (
@@ -33,13 +34,13 @@ export default function CTA() {
             </Typography>
 
             <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-  <a href="#contact" className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03] sm:w-auto">
+  <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03] sm:w-auto">
     <Typography variant="body-lg" className="font-semibold text-black">
       Get Your Free Pool Marketing Strategy
     </Typography>
     <ArrowRight className="h-6 w-4" />
   </a>
-  <a href="#contact" className="inline-flex w-64 items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/10 sm:w-auto">
+  <a href="#contact" onClick={handleScrollToContact} className="inline-flex w-64 items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/10 sm:w-auto">
     <Typography variant="body-lg" className="font-semibold text-white">
       Book a Consultation
     </Typography>

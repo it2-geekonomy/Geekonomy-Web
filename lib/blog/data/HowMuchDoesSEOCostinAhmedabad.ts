@@ -130,7 +130,7 @@ const seoCostAhmedabadContent: BlogContentItem[] = [
 
     h3("Cost-Effective SEO Strategies"),
     p("Small businesses can achieve cost-effective SEO through local SEO and content marketing because these strategies deliver maximum community reach."),
-    p("<a href=\"/blog/local-seo-service-Explained\" class=\"underline text-[#6FAF4E]\">The optimization of local SEO </a> helps medium-sized businesses to appear in local search results because it enables them to connect with their target customers through local search."),
+    p("<a href=\"/blog/local-seo-service-explained\" class=\"underline text-[#6FAF4E]\">The optimization of local SEO </a> helps medium-sized businesses to appear in local search results because it enables them to connect with their target customers through local search."),
     p("Businesses that want to enhance their online presence through advanced SEO techniques should create high-quality content, which will attract organic traffic and establish their business as an industry authority."),
     p("When you customize these affordable SEO services to your business requirements, they will generate high returns on investment."),
     p("The strategies achieve cost-effective results because they maintain optimization quality, which leads to positive SEO outcomes that enhance search rankings and decrease search expenses over time."),

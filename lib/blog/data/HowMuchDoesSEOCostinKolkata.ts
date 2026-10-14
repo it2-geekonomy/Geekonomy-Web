@@ -16,7 +16,7 @@ const seoCostKolkataContent: BlogContentItem[] = [
 
     p('<div class="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] border-2 border-[#69AE44] rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 my-4 sm:my-6 md:my-8 text-center max-w-full box-border"><p class="text-white font-bold mb-2 sm:mb-3 md:mb-4 text-base sm:text-xl md:text-2xl leading-tight break-words">Need Transparent SEO Pricing for Kolkata?</p><p class="text-white/70 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg leading-snug break-words">Get a custom SEO quote for your business. Clear packages and pricing that fit your goals and budget.</p><a href="/contact-us" data-blog-cta class="inline-block bg-[#69AE44] text-white font-bold py-2.5 px-4 text-sm sm:py-3.5 sm:px-6 sm:text-base md:py-3.5 md:px-8 rounded-full no-underline transition-all duration-300 ease-in-out hover:opacity-90">Schedule Your Free Consultation</a></div>'),
 
-    h3("Overview of SEO in Kolkata"),
+    h2("Overview of SEO in Kolkata"),
     h3("What is Search Engine Optimization?"),
     p("Search engine optimization, or SEO, is a methodology of strategies, techniques, and tactics used to increase the number of visitors to a website by obtaining a high-ranking placement in the search engine results page (SERP). There are three techniques of SEO, which are on-page SEO, off-page SEO, and technical SEO, and these techniques lead to the maximization of organic search traffic."),
     p("The main objective of Search Engine Optimization, also commonly referred to as SEO, is to ensure that for the customers who are searching for things related to your business, you appear at the top of the search results."),

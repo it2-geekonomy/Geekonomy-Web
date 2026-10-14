@@ -186,7 +186,7 @@ const seoCostDelhiNCRContent: BlogContentItem[] = [
     p("There is a specific approach to SEO that is required for local businesses."),
 
     h3("Benefits of Local SEO for Delhi Businesses"),
-    p("As such, <a href=\"/blog/local-seo-service-Explained\" class=\"underline text-[#6FAF4E] cursor-pointer pointer-events-auto inline-block\">local SEO is beneficial</a> to businesses found in Delhi. Local Search engine optimization also improves visibility in search engine results to potential customers who seek \"products and services near me\"."),
+    p("As such, <a href=\"/blog/local-seo-service-explained\" class=\"underline text-[#6FAF4E] cursor-pointer pointer-events-auto inline-block\">local SEO is beneficial</a> to businesses found in Delhi. Local Search engine optimization also improves visibility in search engine results to potential customers who seek \"products and services near me\"."),
     p("This leads to more website traffic, more phone calls, and more in-store visits."),
     p("In addition, customers have trust and credibility in those businesses as they see a higher number of accurate business listing sites with positive reviews."),
     p("Businesses are also able to compete with larger national chains as they capitalize on their advantage within the unique local market."),

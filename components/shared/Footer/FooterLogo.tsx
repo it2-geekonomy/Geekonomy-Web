@@ -26,7 +26,7 @@ export function FooterLogo({
           priority
         />
       </Link>
-      
+
       {/* Social Media Icons */}
       <div className={`flex items-center gap-3 ${socialJustify}`}>
         <Link

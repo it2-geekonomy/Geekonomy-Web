@@ -209,7 +209,7 @@ export const measureBrandVisibilityInChatGPT: BlogData = {
 export const measureBrandVisibilityInChatGPTSEO = {
   title: "How to Measure Brand Visibility in ChatGPT (2026 Guide)",
   description:
-    "Discover what to look for in a brand strategy agency, from expertise and process to results, ensuring you choose the right partner for growth.",
+    "Measure your brand visibility in ChatGPT with key metrics, AI mentions, competitor analysis, and practical strategies to improve your AI search.",
   url: "https://thegeekonomy.com/blog/measure-brand-visibility-in-chatgpt",
   canonical: "https://thegeekonomy.com/blog/measure-brand-visibility-in-chatgpt",
   image: coverImage,

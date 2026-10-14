@@ -6,7 +6,7 @@ export const divyasreeCaseStudy: CaseStudy = {
   id: 3,
   title: " Divyasree Builders",
   internalTitle: "Website redesign and development",
-  subtitle: "DivyaSree Developers is one of India's most trusted real estate brands, known for landmark commercial and residential projects across Bangalore, Hyderabad, and Chennai.",
+  subtitle: "DivyaSree Developers is a trusted Indian real estate brand delivering commercial and residential projects across Bangalore, Hyderabad, and Chennai.",
   image: "/case-studies/image2.webp",
   slug: "divyasree-builders",
   pdfUrl: "/case-studies/DivyaShree.pdf",

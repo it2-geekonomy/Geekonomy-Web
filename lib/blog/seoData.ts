@@ -271,7 +271,7 @@ export const blogSEOData = {
   "blog/can-international-seo-efforts-be-enhanced-with-rapid-url-indexer": internationalSEORapidURLIndexerSEO,
   "blog/seo-for-legal-firms-complete-guide": seoForLegalFirmsSEO,
   "blog/how-to-choose-the-best-ecommerce-seo-company": howToChooseBestEcommerceSEOCompanySEO,
-  "blog/local-seo-service-Explained": localSEOServiceExplainedSEO,
+  "blog/local-seo-service-explained": localSEOServiceExplainedSEO,
   "blog/automotive-seo-for-car-dealerships": automotiveSEOForCarDealershipsSEO,
   "blog/how-seo-audit-services-improve-seo": seoAuditServicesSEO,
   "blog/local-seo-for-estate-agents": localSEOForEstateAgentsSEO,

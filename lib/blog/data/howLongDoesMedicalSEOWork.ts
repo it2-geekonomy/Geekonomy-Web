@@ -29,7 +29,7 @@ const howLongDoesMedicalSEOWorkContent: BlogContentItem[] = [
   p("One of the main components of medical SEO is keyword research, which is done to figure out the words that potential patients will use in their search for medical services."),
   p("It takes a few months at least for the high-quality content creation, which is informative, engaging, and optimised for the relevant keywords, to start showing the results, and this is crucial for attracting and retaining visitors and realizing the time it takes to show results."),
   p("Link building by encouraging your website to be linked to by authoritative sites is a way to help your website's credibility and ranking be improved, thus leading to increased traffic to your site."),
-  p('<a href="/blog/local-seo-service-Explained" class="underline text-[#6FAF4E]">The use of local SEO</a>, including the optimisation of your Google Business Profile, is very important to make sure your medical practice is the first to be seen in the search results when people do local searches.'),
+  p('<a href="/blog/local-seo-service-explained" class="underline text-[#6FAF4E]">The use of local SEO</a>, including the optimisation of your Google Business Profile, is very important to make sure your medical practice is the first to be seen in the search results when people do local searches.'),
   p("Besides that, optimising your medical site and concentrating on patient experience are very important too because these factors also take time to show results in getting new patients for your practice."),
   p("Thus, you can enhance your medical search engine optimisation by concentrating on these elements, and as a result, you can expect your listing to be up in search engine results."),
   h2("SEO Timeline and Results"),

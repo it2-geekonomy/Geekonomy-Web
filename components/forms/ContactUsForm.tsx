@@ -37,14 +37,6 @@ export default function ContactUsForm() {
           toggleSubject={toggleSubject}
         />
 
-        {submitStatus === "success" && (
-          <div className="pt-4">
-            <Typography as="p" variant="body-xl" className="text-[#69AE44]">
-              ✓ Message sent successfully! We'll get back to you soon.
-            </Typography>
-          </div>
-        )}
-
         {submitStatus === "error" && (
           <div className="pt-4">
             <Typography as="p" variant="body-xl" className="text-red-500">

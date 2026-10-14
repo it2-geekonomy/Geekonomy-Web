@@ -60,7 +60,7 @@ const bestFoundationRepairSEOStrategiesContent: BlogContentItem[] = [
   p("Present good pictures of your foundation repair work and convince the customers to leave their feedback."),
   p("Keep sharing your products or services, offers, and brand news via your GBP to remain active online and receive a higher local search results ranking."),
   h3("Building Local Citations and Backlinks"),
-  p("One of the most important <a href=\"/blog/local-seo-service-Explained\" class=\"underline text-[#6FAF4E]\">methods of increasing local SEO</a> is through local citations and backlinks."),
+  p("One of the most important <a href=\"/blog/local-seo-service-explained\" class=\"underline text-[#6FAF4E]\">methods of increasing local SEO</a> is through local citations and backlinks."),
   p("This will be a great way for local customers to be able to find your foundation repair services more conveniently."),
   p("Local citations are records of the business name, address, and phone number (NAP) of your company that are mentioned on other sites that can be local or general directories, review sites, and industry-specific platforms."),
   p("They are a way of making it easier for local customers to find your foundation repair business."),

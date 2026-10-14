@@ -117,7 +117,7 @@ const localSEOServiceGuideContent: BlogContentItem[] = [
 ];
 
 export const localSEOServiceExplained: BlogData = {
-  slug: "local-seo-service-Explained",
+  slug: "local-seo-service-explained",
   heading: "Local SEO Service Explained: Benefits & Strategy",
   coverImage,
   sections: contentToSections(
@@ -130,8 +130,8 @@ export const localSEOServiceExplained: BlogData = {
 export const localSEOServiceExplainedSEO = {
   title: "Local SEO Service Explained: Benefits & Strategy",
   description: "This Local SEO services guide explains how to rank higher on Google, optimize listings, and generate more local leads for your business.",
-  url: "https://thegeekonomy.com/blog/local-seo-service-Explained",
-  canonical: "https://thegeekonomy.com/blog/local-seo-service-Explained",
+  url: "https://thegeekonomy.com/blog/local-seo-service-explained",
+  canonical: "https://thegeekonomy.com/blog/local-seo-service-explained",
   image: "https://thegeekonomy.com/Local%20SEO%20Service%20Explained/Local%20SEO%20Service%20Explained.main%20image.webp",
   twitterHandle: "@Geekonomy",
 };

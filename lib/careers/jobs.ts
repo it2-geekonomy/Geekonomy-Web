@@ -51,41 +51,6 @@ export const CAREER_JOBS: CareerJob[] = [
     applicationUrl:
       "https://people.geekonomy.in/recruitment/application-form?recruitmentId=14",
   },
-  {
-    id: "sales-manager",
-    title: "Sales Manager",
-    team: "SALES",
-    location: "Bengaluru",
-    employmentType: "Full-time",
-    experience:
-      "Turn conversations into partnerships and opportunities into revenue!",
-    recruitmentId: "15",
-    applicationUrl:
-      "https://people.thegeekonomy.com/recruitment/application-form?recruitmentId=15",
-  },
-  {
-    id: "bdr-intern",
-    title: "Business Development Representative Interns",
-    team: "SALES",
-    location: "Bengaluru",
-    employmentType: "Internship",
-    experience: "Learn sales by doing, not by watching!",
-    recruitmentId: "10",
-    applicationUrl:
-      "https://people.geekonomy.in/recruitment/application-form?recruitmentId=10",
-  },
-  {
-    id: "project-delivery-coordinator",
-    title: "Project Delivery Coordinator",
-    team: "OPERATIONS",
-    location: "Bengaluru",
-    employmentType: "Full-time",
-    experience:
-      "Keep client projects moving from kickoff to delivery with clarity and ownership!",
-    recruitmentId: "16",
-    applicationUrl:
-      "https://people.thegeekonomy.com/recruitment/application-form?recruitmentId=16",
-  },
 ];
 
 export const CAREER_APPLICATION_POSITIONS: {
