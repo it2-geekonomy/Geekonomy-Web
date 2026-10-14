@@ -33,7 +33,7 @@ export default function ServingNearby({ content }: Readonly<ServingNearbyProps>)
 
           <div className="order-2 flex w-full justify-center lg:justify-end">
             <div
-              className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 sm:w-3/4 lg:w-full aspect-video"
+              className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-[#111111] sm:w-3/4 lg:w-full aspect-video"
             >
               <Image
                 src={image}
@@ -51,7 +51,7 @@ export default function ServingNearby({ content }: Readonly<ServingNearbyProps>)
               key={area}
               as="span"
               variant="body-lg"
-              className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 font-medium text-white/90 transition-all hover:-translate-y-0.5 hover:border-[#69AE44]/40 hover:bg-[#69AE44]/10 hover:text-white"
+              className="flex items-center gap-2 rounded-full border border-white/10 bg-[#111111] px-5 py-3 font-medium text-white/90 transition-all hover:-translate-y-0.5 hover:border-[#69AE44]/40 hover:bg-[#69AE44]/10 hover:text-white"
             >
               <MapPin className="size-3.5 text-[#69AE44]" />
               {area}
