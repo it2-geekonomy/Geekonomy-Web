@@ -38,7 +38,7 @@ export default function CardSection({ content }: Readonly<SectionProps>) {
           {card.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="flex w-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-7 transition-all hover:-translate-y-1 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
+              className="flex w-full flex-col gap-4 rounded-2xl border border-white/10 bg-[#111111] p-7 transition-all hover:-translate-y-1 hover:border-[#69AE44]/40 hover:bg-[#111111] md:w-full"
             >
               <div className="flex size-9 items-center justify-center rounded-xl bg-[#69AE44]/10 text-[#69AE44] sm:size-12">
                 <Icon className="size-4.5 sm:size-6" strokeWidth={1.8} />
@@ -67,12 +67,12 @@ export default function CardSection({ content }: Readonly<SectionProps>) {
           ))}
 
           {cta && (
-            <div className="flex w-full flex-col justify-center gap-2 rounded-2xl bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7 md:w-full">
+            <div className="flex w-full flex-col justify-center gap-2 rounded-2xl bg-gradient-to-br from-[#69AE44] to-[#4d8a2f] p-7">
               <div className="flex flex-col">
-                <Typography variant="h3" as="p" className="mb-2 text-black font-bold">
+                <Typography variant="h3" as="p" className="pb-2 text-black font-bold">
                   {cta.title}
                 </Typography>
-                <Typography variant="body-lg" className="mb-2 text-black/70">
+                <Typography variant="body-lg" className="pb-5 text-black/70">
                   {cta.description}
                 </Typography>
               </div>
@@ -80,9 +80,9 @@ export default function CardSection({ content }: Readonly<SectionProps>) {
               <Link
                 href="#contact"
                 onClick={handleScrollToContact}
-                className="group inline-flex w-auto items-center justify-center gap-2 bg-[#69AE44] text-white border-2 border-transparent px-10 py-3 rounded-full text-sm font-semibold transition-all duration-200 hover:bg-transparent hover:border-[#69AE44] hover:scale-105"
+                className="group inline-flex w-fit self-center items-center justify-center gap-2 bg-black text-white border-2 border-transparent px-5 py-3 rounded-full text-sm font-semibold transition-all duration-200 hover:scale-105"
               >
-                <Typography as="span" variant="body-lg" className="text-white group-hover:text-[#69AE44] transition-colors duration-200">
+                <Typography as="span" variant="body-lg" className="text-white transition-colors duration-200">
                   {cta.buttonText}
                 </Typography>
                 <ArrowRight className="size-4" />

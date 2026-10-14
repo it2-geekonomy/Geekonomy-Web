@@ -39,7 +39,7 @@ export default function FAQ({ content }: Readonly<FAQProps>) {
                 <Typography as="h3" variant="h3" className="text-lg font-semibold text-white">
                   {q}
                 </Typography>
-                <span className="flex size-8 flex-none items-center justify-center rounded-xl bg-white/5 transition-colors group-open:bg-[#69AE44]">
+                <span className="flex size-8 flex-none items-center justify-center rounded-xl bg-[#111111] transition-colors group-open:bg-[#69AE44]">
                   <Plus className="size-4 text-[#69AE44] transition-transform duration-300 group-open:rotate-45 group-open:text-black" />
                 </span>
               </summary>

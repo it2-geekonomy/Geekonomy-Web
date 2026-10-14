@@ -60,7 +60,7 @@ export default function Hero({ content }: Readonly<HeroProps>) {
           </div>
 
           <div className="flex w-full justify-center lg:justify-start">
-            <div className="relative aspect-[4/5] w-full max-w-md lg:max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-white/5 ">
+            <div className="relative aspect-4/5 w-full max-w-md lg:max-w-xl overflow-hidden rounded-2xl border border-white/10 bg-[#111111] ">
               <Image
                 src={image}
                 alt={imageAlt}
@@ -121,7 +121,7 @@ export default function Hero({ content }: Readonly<HeroProps>) {
             {keywords.map((keyword) => (
               <span
                 key={keyword}
-                className="w-fit whitespace-nowrap rounded-full border border-[#69AE44]/90 bg-white/5 px-4 py-2.5"
+                className="w-fit whitespace-nowrap rounded-full border border-[#69AE44]/90 bg-[#111111] px-4 py-2.5"
               >
                 <Typography variant="body-sm" className="font-semibold text-white">
                   {keyword}

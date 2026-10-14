@@ -33,7 +33,7 @@ export default function StepSection({ content }: Readonly<OurProcessProps>) {
           {steps.map((s) => (
             <div
               key={s.n}
-              className="step-glow-card relative grid grid-cols-[auto_1fr] items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 transition-transform hover:translate-x-1.5 sm:gap-6 sm:p-8"
+              className="step-glow-card relative grid grid-cols-[auto_1fr] items-start gap-4 rounded-2xl border border-white/10 bg-[#111111] p-5 transition-transform hover:translate-x-1.5 sm:gap-6 sm:p-8"
             >
               <span className="flex size-14 flex-none items-center justify-center rounded-xl bg-[#69AE44] text-2xl font-extrabold text-black">
                 {s.n}
