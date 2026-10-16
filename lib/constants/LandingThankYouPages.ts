@@ -55,5 +55,8 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-atascocita-texas",
   "seo-company-winter-springs-fl",
   "seo-company-panama-city-beach-fl",
+  "seo-company-in-jp-nagar-bangalore",
+  "seo-company-auburn-alabama",
+  "seo-company-miramar-florida",
 
 ];

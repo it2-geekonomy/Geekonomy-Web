@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { allBlogsData } from '@/lib/blog'
 import { caseStudies } from '@/lib/case-studies/data'
+import landingPageSlugs from '@/lib/landingpage/landingpageslug.json'
 
 function slugify(value: string): string {
   return value
@@ -49,12 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/our-work`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/careers`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -66,343 +61,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/carlsbad-seo-company`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-for-pool-companies-san-diego`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/charlotte-ppc-agency`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-for-logistics-companies`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-company-in-jaipur`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-for-window-and-door-companies`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-for-paving-companies`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-company-in-ghaziabad`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-company-in-madurai`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-agency-guwahati`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/branding-company-in-bangalore`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-agency-ocean-springs-ms`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-carmel-indiana`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-davis-ca`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-rock-hill-sc`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-fort-walton-beach-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-palm-harbor-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-murrieta-ca`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-frederick-maryland`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-in-coral-springs-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-waco-tx`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-league-city-tx`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-orange-beach-al`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-columbia-mo`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-st-joseph-mo`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-yorba-linda-ca`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-chapel-hill-nc`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-henderson-nv`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-st-ives-cornwall-uk`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-in-andover-minnesota`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-mentor-oh`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-winchester-virginia`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-bee-cave-texas`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-kyle-texas`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-lakewood-ranch-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-enfield-connecticut`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-downey-ca`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-in-fredericksburg-virginia`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-brentwood-california`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-georgetown-texas`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-rocky-river-ohio`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-in-pompano-beach-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-in-apopka-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-calabasas-ca`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-boynton-beach-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-in-jp-nagar-bangalore`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/digital-marketing-company-jp-nagar-bangalore`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-tomball-texas`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-casselberry-florida`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-fresno-texas`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-stuart-florida`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-bexley-georgia`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-atascocita-texas`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-winter-springs-fl`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-auburn-alabama`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/seo-company-miramar-florida`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
   ]
+
+  // Landing pages with priority 0.9
+  const landingPages: MetadataRoute.Sitemap = landingPageSlugs.flatMap(slug => [
+    {
+      url: `${baseUrl}/${slug}`,
+      lastModified: landingPageDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    }
+  ])
 
   // Case studies - using first category for canonical URL
   const caseStudyPages: MetadataRoute.Sitemap = caseStudies
@@ -491,6 +160,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'what-triggers-an-ai-overview-seo': 0.33,
     'seo-for-auto-body-shops-strategies-to-boost-local-seo': 0.33,
     '7-reasons-why-your-business-should-invest-in-seo': 0.33,
+    'best-llm-seo-tools-for-agencies': 0.33,
     'how-to-improve-wordpress-seo-for-oxfordshire-sites': 0.33,
     'seo-for-addiction-treatment-centers-complete-guide': 0.33,
     'how-a-hotel-seo-consultant-helps-you-rank': 0.33,
@@ -543,5 +213,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   })
 
-  return [...staticPages, ...caseStudyPages, ...blogPages]
+  return [...staticPages, ...landingPages, ...caseStudyPages, ...blogPages]
 }
