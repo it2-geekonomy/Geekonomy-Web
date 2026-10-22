@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "Grow your local visibility with a Tomball SEO company Texas offering local SEO, technical SEO, content, and strategies to generate qualified leads.",
   alternates: {
-    canonical: "/seo-company-tomball-texas/",
+    canonical: "/seo-company-tomball-texas",
   },
   keywords: ["seo company tomball tx",
     "tomball seo company",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "SEO Company Tomball Texas | Local SEO | Get Free Audit",
     description:
       "Grow your local visibility with a Tomball SEO company Texas offering local SEO, technical SEO, content, and strategies to generate qualified leads.",
-    url: "https://thegeekonomy.com/seo-company-tomball-texas/",
+    url: "https://thegeekonomy.com/seo-company-tomball-texas",
     publishedTime: PUBLISHED_DATE,
   },
   other: {
