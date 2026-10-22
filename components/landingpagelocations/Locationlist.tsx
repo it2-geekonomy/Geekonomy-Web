@@ -51,7 +51,7 @@ export default function LocationList({ region, HidecurrentSlug }: LocationSectio
               SEO Services With AI, ML, NLP
             </Typography>
         </div>
-        <Typography variant="display-2xl" className="text-white mt-1 leading-tight ">
+        <Typography variant="display-2xl" as="h2" className="text-white mt-1 leading-tight ">
           {/* Explore Our SEO Services Across Florida */}
           {REGION_TITLES[region]}
         </Typography>
@@ -65,7 +65,7 @@ export default function LocationList({ region, HidecurrentSlug }: LocationSectio
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search your City..."
           aria-label="Search your city"
-          className="mx-auto mt-6 block w-full max-w-sm rounded-[0.5rem] border border-white/30 px-4 py-2.5 text-sm text-white outline-none transition focus:border-white/70"
+          className="mx-auto mt-6 block w-full max-w-sm rounded-xl border border-white/30 px-4 py-2.5 text-sm text-white outline-none transition focus:border-white/70"
         />
 
         {visible.length > 0 ? (

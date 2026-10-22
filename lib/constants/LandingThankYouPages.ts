@@ -58,5 +58,6 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-in-jp-nagar-bangalore",
   "seo-company-auburn-alabama",
   "seo-company-miramar-florida",
+  "seo-company-camarillo-ca",
 
 ];
