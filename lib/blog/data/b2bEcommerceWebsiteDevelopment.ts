@@ -165,7 +165,7 @@ export const b2bEcommerceWebsiteDevelopment: BlogData = {
 };
 
 export const b2bEcommerceWebsiteDevelopmentSEO = {
-  title: "B2B eCommerce Website Development Strategies | 60% Improve",
+  title: "B2B eCommerce Website Development Strategies | 60% Up",
   description: "Explore effective B2B eCommerce website development strategies to improve user experience, boost conversions, and drive scalable business growth.",
   url: "https://thegeekonomy.com/blog/b2b-ecommerce-website-development-strategies",
   canonical: "https://thegeekonomy.com/blog/b2b-ecommerce-website-development-strategies",

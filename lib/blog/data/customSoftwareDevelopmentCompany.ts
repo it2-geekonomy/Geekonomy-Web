@@ -131,7 +131,7 @@ export const customSoftwareDevelopmentCompany: BlogData = {
 };
 
 export const customSoftwareDevelopmentCompanySEO = {
-  title: "How to Choose the Right Custom Software Development Company",
+  title: "How to Choose Right Custom Software Development Company",
   description: "Learn how to choose the right custom software development company by evaluating expertise, cost, technology stack, and real project results.",
   url: "https://thegeekonomy.com/blog/choose-the-right-custom-software-development-company",
   canonical: "https://thegeekonomy.com/blog/choose-the-right-custom-software-development-company",
