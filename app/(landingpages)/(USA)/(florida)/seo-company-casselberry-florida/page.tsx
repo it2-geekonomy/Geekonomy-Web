@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Grow your local visibility with a Casselberry SEO company Florida offering local SEO, technical SEO, content, and lead-focused strategies.",
   alternates: {
-    canonical: "/seo-company-casselberry-florida/",
+    canonical: "/seo-company-casselberry-florida",
   },
   keywords: ["seo company casselberry fl",
     "casselberry seo company",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "SEO Company Casselberry FL | Local SEO | Get Free Audit",
     description:
       "Grow your local visibility with a Casselberry SEO company Florida offering local SEO, technical SEO, content, and lead-focused strategies.",
-    url: "https://thegeekonomy.com/seo-company-casselberry-florida/",
+    url: "https://thegeekonomy.com/seo-company-casselberry-florida",
     publishedTime: PUBLISHED_DATE,
   },
   other: {
