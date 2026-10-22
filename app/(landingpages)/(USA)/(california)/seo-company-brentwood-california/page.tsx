@@ -4,13 +4,14 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import OurProcess from "./components/Ourprocess";
 import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
 import GrowBusiness from "./components/Growbusiness";
 import LocalSeo from "./components/Localseo";
 import SeoStrategy from "./components/Seostrategy";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-24T08:00:00.000Z";
 
@@ -60,7 +61,8 @@ export default function Home() {
       <OurProcess/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-brentwood-california" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50352.226236518436!2d-121.7601789655766!3d37.93010011923896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff999f087c8cd%3A0x7e19835b56d29a02!2sBrentwood%2C%20CA%2094513%2C%20USA!5e0!3m2!1sen!2sin!4v1790226048733!5m2!1sen!2sin" />
+      <LandingPageMap location="brentwood" />
+      <LocationList region="california" HidecurrentSlug="seo-company-brentwood-california"/>
       </main>
   );
 }

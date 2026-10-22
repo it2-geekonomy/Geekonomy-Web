@@ -4,7 +4,7 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
 import SeoStrategy from "./components/Seostrategy";
@@ -13,6 +13,7 @@ import LocalSearch from "./components/Localsearch";
 import Difference from "./components/Difference";
 import OurProcess from "./components/Ourprocess";
 import SeoMetrics from "./components/Seometrics";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-25T08:00:00.000Z";
 
@@ -64,7 +65,8 @@ export default function Home() {
       <SeoMetrics/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-georgetown-texas" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109824.40725430025!2d-97.79135013650146!3d30.66177012510263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d5fd54dafbdf%3A0x61ec34de94c03a09!2sGeorgetown%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1790307948685!5m2!1sen!2sin" />
+      <LandingPageMap location="georgetown" />
+      <LocationList region="texas" HidecurrentSlug="seo-company-georgetown-texas"/>
       </main>
   );
 }

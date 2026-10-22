@@ -4,13 +4,14 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import SeoStrategy from "./components/Seostrategy";
 import OurProcess from "./components/Ourprocess";
 import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
 import LocalSeo from "./components/Localseo";
 import SeoBusiness from "./components/Seobusiness";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-22T08:00:00.000Z";
 
@@ -60,7 +61,8 @@ export default function Home() {
       <Industries/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-kyle-texas" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55287.12261926051!2d-97.93026002823257!3d29.99537152301577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b507c4a9e12fd%3A0x48f508e9716fb676!2sKyle%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1790053903351!5m2!1sen!2sin" />
+      <LandingPageMap location="kyle" />
+      <LocationList region="texas" HidecurrentSlug="seo-company-kyle-texas"/>
       </main>
   );
 }
