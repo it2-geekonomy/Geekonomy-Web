@@ -5,12 +5,13 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import SeoStrategy from "./components/Seostrategy";
 import LocalSeoService from "./components/Localseo";
 import SeoServices from "./components/Seoservices";
 import OurProcess from "./components/Ourprocess";
 import Metrics from "./components/Metrics";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-10T08:00:00.000Z";
 
@@ -60,7 +61,8 @@ export default function Home() {
       <OurProcess/>
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-league-city-tx" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55564.46037702913!2d-95.15295653168639!3d29.493651411769406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86408323cd6cb1b3%3A0x14dec35f5a4064d6!2sLeague%20City%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1789031199532!5m2!1sen!2sin" />
+      <LandingPageMap location="league_city" />
+      <LocationList region="texas" HidecurrentSlug="seo-company-league-city-tx"/>
       </main>
   );
 }

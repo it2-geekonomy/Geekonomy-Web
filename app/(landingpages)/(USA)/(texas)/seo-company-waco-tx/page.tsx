@@ -5,11 +5,12 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import SeoStrategy from "./components/Seostrategy";
 import LocalSeoService from "./components/Localseo";
 import SeoApproach from "./components/Seoapproach";
 import SeoServices from "./components/Seoservices";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-10T08:00:00.000Z";
 
@@ -58,7 +59,8 @@ export default function Home() {
       <WhyGeekonomy/>
       <FAQ />  
       <LandingPageForm landingPageSlug="seo-company-waco-tx" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108798.09322941226!2d-97.27536911017444!3d31.553249865366144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864f82f1230151d3%3A0xfbd74b03d6d1aa10!2sWaco%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1789014561801!5m2!1sen!2sin" />
+      <LandingPageMap location="waco" />
+      <LocationList region="texas" HidecurrentSlug="seo-company-waco-tx"/>
       </main>
   );
 }

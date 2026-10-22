@@ -4,12 +4,13 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import OurProcess from "./components/Ourprocess";
 import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
 import LocalSeo from "./components/Localseo";
 import SeoMeasure from "./components/Seomeasure";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-09-22T08:00:00.000Z";
 
@@ -58,7 +59,8 @@ export default function Home() {
       <SeoMeasure/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-bee-cave-texas" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27556.054192961255!2d-97.97685501402079!3d30.308099986869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b37f4c74315e3%3A0x113488848db59d6d!2sBee%20Cave%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1790049406325!5m2!1sen!2sin" />
+      <LandingPageMap location="bee_cave" />
+      <LocationList region="texas" HidecurrentSlug="seo-company-bee-cave-texas"/>
       </main>
   );
 }

@@ -162,7 +162,7 @@ export const commonSEOMistakesSmallBusinesses: BlogData = {
 };
 
 export const commonSEOMistakesSmallBusinessesSEO = {
-  title: "Common SEO Mistakes Small Businesses Make (and How to Fix)",
+  title: "Common SEO Mistakes Small Businesses Make (How to Fix)",
   description: "Discover common SEO mistakes small businesses make and how to fix them to improve rankings, boost traffic, and grow online visibility.",
   url: "https://thegeekonomy.com/blog/common-seo-mistakes-small-businesses-make",
   canonical: "https://thegeekonomy.com/blog/common-seo-mistakes-small-businesses-make",
