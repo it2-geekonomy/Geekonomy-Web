@@ -37,6 +37,8 @@ export const LOCATIONS: Location[] = [
   { region: "california", name: "Downey", slug: "seo-company-downey-ca" },
   { region: "california", name: "Murrieta", slug: "seo-company-murrieta-ca" },
   { region: "california", name: "Yorba Linda", slug: "seo-company-yorba-linda-ca" },
+  { region: "california", name: "Camarillo", slug: "seo-company-camarillo-ca" },
+  { region: "california", name: "Moreno Valley", slug: "seo-company-moreno-valley-ca" },
 
 
   // Display Texas Landing Pages
