@@ -164,7 +164,7 @@ export const WhyBangaloreBusinessesNeedGenerativeEngineOptimization: BlogData = 
 };
 
 export const WhyBangaloreBusinessesNeedGenerativeEngineOptimizationSEO = {
-  title: "Why Bangalore Businesses Need Generative Engine Optimization",
+  title: "Why Bangalore Businesses Need GEO",
   description: "Learn why Bangalore businesses need Generative Engine Optimization (GEO) to improve visibility in AI search, attract qualified leads, and stay ahead.",
   url: "https://thegeekonomy.com/blog/why-bangalore-businesses-need-generative-engine-optimization",
   canonical: "https://thegeekonomy.com/blog/why-bangalore-businesses-need-generative-engine-optimization",

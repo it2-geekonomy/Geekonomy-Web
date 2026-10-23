@@ -26,13 +26,30 @@ export const LOCATIONS: Location[] = [
   { region: "florida", name: "Boynton Beach", slug: "seo-company-boynton-beach-fl" },
   { region: "florida", name: "Casselberry", slug: "seo-company-casselberry-florida" },
   { region: "florida", name: "Stuart", slug: "seo-company-stuart-florida" },
-  { region: "florida", name: "Stuart", slug: "seo-company-miramar-florida" },
+  { region: "florida", name: "Miramar", slug: "seo-company-miramar-florida" },
+  { region: "florida", name: "Winter Springs", slug: "seo-company-winter-springs-fl" },
 
 
   // Display Califonia Landing Pages
   { region: "california", name: "Calabasas", slug: "seo-company-calabasas-ca" },
+  { region: "california", name: "Brentwood", slug: "seo-company-brentwood-california" },
+  { region: "california", name: "Davis", slug: "seo-company-davis-ca" },
+  { region: "california", name: "Downey", slug: "seo-company-downey-ca" },
+  { region: "california", name: "Murrieta", slug: "seo-company-murrieta-ca" },
+  { region: "california", name: "Yorba Linda", slug: "seo-company-yorba-linda-ca" },
+  { region: "california", name: "Camarillo", slug: "seo-company-camarillo-ca" },
+  { region: "california", name: "Moreno Valley", slug: "seo-company-moreno-valley-ca" },
 
 
+  // Display Texas Landing Pages
+  { region: "texas", name: "Atascocita", slug: "seo-company-atascocita-texas" },
+  { region: "texas", name: "Bee Cave", slug: "seo-company-bee-cave-texas" },
+  { region: "texas", name: "Fresno", slug: "seo-company-fresno-texas" },
+  { region: "texas", name: "Georgetown", slug: "seo-company-georgetown-texas" },
+  { region: "texas", name: "Kyle", slug: "seo-company-kyle-texas" },
+  { region: "texas", name: "League City", slug: "seo-company-league-city-tx" },
+  { region: "texas", name: "Tomball", slug: "seo-company-tomball-texas" },
+  { region: "texas", name: "Waco", slug: "seo-company-waco-tx" },
 
 
 ];

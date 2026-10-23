@@ -82,7 +82,7 @@ export default function ImageContent({ content }: Readonly<ImageContentProps>) {
               <img src={image} alt={imageAlt} className="h-full w-full object-cover" />
 =======
           <div className="order-2 flex w-full justify-center">
-            <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-white/5 lg:max-w-none">
+            <div className="relative aspect-4/5 w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-[#111111] lg:max-w-none">
               <Image
                 src={image}
                 alt={imageAlt}

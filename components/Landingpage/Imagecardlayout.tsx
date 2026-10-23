@@ -107,9 +107,9 @@ export default function ImageCardSection({ content }: Readonly<ImageCardProps>) 
 =======
               <div
                 key={title}
-                className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-white/5 md:w-full"
+                className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-[#111111] p-6 transition-all hover:-translate-y-1.5 hover:border-[#69AE44]/40 hover:bg-[#111111] md:w-full"
               >
-                <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5">
+                <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-[#111111]">
                   <Image
                     src={image}
                     alt={title}
