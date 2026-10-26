@@ -11,7 +11,7 @@ export const LocalSeo : ImageCardContent = {
 
   items: [
     {
-      image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Local-Search-Signals.webp",
+      image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/local-search.webp",
       title: "Strengthen Your Local Presence",
       desc: "We enhance key signals as they occur about your business to ensure the online signals are accurate, relevant and consistent. These include location related website content, business listings, Google Business Profile and local pages. Consistency across all of these signals provides a strong basis for search engines to understand your business.",
     },
