@@ -1,4 +1,4 @@
-export type Region = "florida" | "california" | "texas" ;
+export type Region = "florida" | "california" | "texas" | "india";
 
 export type Location = {
   name: string;
@@ -12,10 +12,19 @@ export const getLocationUrl = (slug: string) => `${LOCATION_BASE_URL}/${slug}`;
 export const REGION_TITLES: Record<Region, string> = {
   florida: "Explore Our SEO Services Across Florida",
   california: "Explore Our SEO Services Across California",
-  texas: "Explore Our SEO Services Texas",
+  texas: "Explore Our SEO Services Across Texas",
+  india: "Explore Our Digital Marketing Services Across India"
 };
 
 export const LOCATIONS: Location[] = [
+
+  // Display Florida Landing Pages
+  { region: "india", name: "Guwahati", slug: "digital-marketing-agency-guwahati" },
+  { region: "india", name: "Ghaziabad", slug: "digital-marketing-company-in-ghaziabad" },
+  { region: "india", name: "Jaipur", slug: "digital-marketing-company-in-jaipur" },
+  { region: "india", name: "Madurai", slug: "digital-marketing-company-in-madurai" },
+
+
   // Display Florida Landing Pages
   { region: "florida", name: "Fort Walton Beach", slug: "seo-company-fort-walton-beach-fl" },
   { region: "florida", name: "Palm Harbor", slug: "seo-company-palm-harbor-fl" },
