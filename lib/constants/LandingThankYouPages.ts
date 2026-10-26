@@ -62,5 +62,7 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-moreno-valley-ca",
   "seo-company-redmond-washington",
   "seo-company-lynchburg-virginia",
+  "seo-company-secane-pennsylvania",
+  "seo-company-gettysburg-pennsylvania",
 
 ];

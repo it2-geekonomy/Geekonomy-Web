@@ -57,4 +57,6 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-moreno-valley-ca",
   "/seo-company-redmond-washington",
   "/seo-company-lynchburg-virginia",
+  "/seo-company-secane-pennsylvania",
+  "/seo-company-gettysburg-pennsylvania",
 ];
