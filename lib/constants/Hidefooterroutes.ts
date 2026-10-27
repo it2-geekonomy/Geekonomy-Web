@@ -59,4 +59,7 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-lynchburg-virginia",
   "/seo-company-secane-pennsylvania",
   "/seo-company-gettysburg-pennsylvania",
+  "/seo-company-castle-rock-colorado",
+  "/seo-company-woodstock-georgia",
+  "/seo-company-downingtown-pennsylvania",
 ];
