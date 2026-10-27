@@ -62,4 +62,6 @@ export const HIDE_FOOTER_ROUTES = [
   "/seo-company-castle-rock-colorado",
   "/seo-company-woodstock-georgia",
   "/seo-company-downingtown-pennsylvania",
+  "/seo-company-hervey-bay-queensland-australia",
+  "/seo-company-el-granada-ca",
 ];

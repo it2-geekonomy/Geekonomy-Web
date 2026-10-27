@@ -67,5 +67,7 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-castle-rock-colorado",
   "seo-company-woodstock-georgia",
   "seo-company-downingtown-pennsylvania",
+  "seo-company-hervey-bay-queensland-australia",
+  "seo-company-el-granada-ca",
 
 ];

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "./components/Herosection";
-
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import WhySpecialized from "./components/Whyspecialized";
 import WhatWeDo from "./components/Whatwedo";
 import LogisticsType from "./components/Logisticstype";
@@ -65,6 +65,7 @@ export default function Home() {
      <MeasurableGrowth/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="digital-marketing-for-logistics-companies" />
+      <LandingPageMap location="usa" />
       </main>
   );
 }
