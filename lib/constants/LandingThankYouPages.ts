@@ -72,5 +72,6 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-lichfield-uk",
   "seo-company-hampton-roads-virginia",
   "seo-company-chesterfield-uk",
+  "seo-company-pooler-georgia",
 
 ];
