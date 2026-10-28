@@ -51,7 +51,7 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-casselberry-florida",
   "seo-company-fresno-texas",
   "seo-company-stuart-florida",
-  "seo-company-bexley-georgia",
+  "seo-company-bexley-ohio",
   "seo-company-atascocita-texas",
   "seo-company-winter-springs-fl",
   "seo-company-panama-city-beach-fl",
@@ -71,5 +71,7 @@ export const ThankYou_PAGE_SLUGS = [
   "seo-company-el-granada-ca",
   "seo-company-lichfield-uk",
   "seo-company-hampton-roads-virginia",
+  "seo-company-chesterfield-uk",
+  "seo-company-pooler-georgia",
 
 ];

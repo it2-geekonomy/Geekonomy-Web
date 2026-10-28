@@ -15,7 +15,7 @@ export default function BuiltAround() {
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            Local SEO Services Built for Bexley Businesses
+            Local SEO Services Built for Bexley Ohio Businesses
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
             Having a solid presence in local search can ensure your business is found by customers who are searching locally for your goods and services. Our local SEO approach is centred on enhancing your website’s geographic relevancy, refining your Google Business Profile, increasing local citations, creating location-specific content and building signals for local search visibility.

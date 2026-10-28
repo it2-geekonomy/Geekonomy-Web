@@ -15,7 +15,7 @@ export default function WhyGeekonomy() {
            </div>
 
           <Typography variant="display-2xl" as="h2" className="text-white  leading-tight">
-            Why Choose Geekonomy as Your Bexley SEO Partner?
+            Why Choose Geekonomy as Your Bexley Ohio SEO Partner?
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
             Selecting the appropriate SEO service company can have a huge impact on the success of your website in terms of bringing targeted search traffic and converting visitors to prospects. Geekonomy blends local SEO knowledge, website optimization, content strategy and conversion optimization elements to formulate an approach to suit your needs.
