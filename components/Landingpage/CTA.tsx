@@ -2,35 +2,6 @@ import { ArrowRight } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 import { Boldtext } from "./Boldtext";
-<<<<<<< HEAD
-
-export interface CTAContent {
-  heading: string;
-  paragraphs: string[];
-  buttonText: string;
-}
-
-interface CTAProps {
-  content: CTAContent;
-}
-
-export default function CTA({ content }: CTAProps) {
-  const { heading, paragraphs, buttonText } = content;
-
-  return (
-    <section id="cta" className="bg-black py-8 lg:py-10">
-      <div className="mx-auto max-w-full">
-        <div className="relative overflow-hidden border border-white/10 bg-[#69AE44]/20 px-8 py-16 text-center sm:px-16">
-          <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-[#69AE44]/25 blur-[6.25rem]" />
-          <div className="pointer-events-none absolute -bottom-24 -right-20 h-72 w-72 rounded-full bg-[#69AE44]/15 blur-[6.25rem]" />
-
-          <div className="relative mx-auto max-w-5xl">
-            <Typography variant="display-2xl" as="p" className="text-white leading-tight">
-              {heading}
-            </Typography>
-
-            <div className="mx-auto mt-5 max-w-4xl space-y-4">
-=======
 import Link from "next/link";
 import { CTAProps } from "@/lib/constants/Landingpagetypes";
 
@@ -55,28 +26,12 @@ export default function CTA({ content }: Readonly<CTAProps>) {
             </Typography>
 
             <div className="flex w-full flex-col gap-3 sm:gap-4 ">
->>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
               {paragraphs.map((paragraph, i) => (
                 <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
                   {Boldtext(paragraph)}
                 </Typography>
               ))}
             </div>
-<<<<<<< HEAD
-
-            <div className="mt-7 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-              <a
-                href="#contact"
-                onClick={handleScrollToContact}
-                className="inline-flex w-auto items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#69AE44] to-[#8FCB63] px-7 py-4 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
-              >
-                <Typography variant="body-lg" className="font-semibold text-black">
-                  {buttonText}
-                </Typography>
-                <ArrowRight className="h-5 w-5" />
-              </a>
-            </div>
-=======
           </div>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
@@ -90,7 +45,6 @@ export default function CTA({ content }: Readonly<CTAProps>) {
               </Typography>
               <ArrowRight className="h-4 w-4 group-hover:text-[#69AE44] transition-colors duration-200" />
             </Link>
->>>>>>> 90330df232d63e4529553dd5d67ba34e58ee68f8
           </div>
         </div>
       </div>
