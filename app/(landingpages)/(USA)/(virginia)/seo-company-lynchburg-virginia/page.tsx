@@ -23,6 +23,7 @@ import { ourProcessContent } from "./const/Ourprocess";
 import { Nearby } from "./const/Nearby";
 import ServingNearby from "@/components/Landingpage/NearbyArea";
 import { GrowingBusinesses } from "./const/Growingbusiness";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-10-26T08:00:00.000Z";
 
@@ -79,6 +80,7 @@ export default function Home() {
       <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-lynchburg-virginia" />
       <LandingPageMap location="lynchburg" />
+      <LocationList region="virginia" HidecurrentSlug="seo-company-lynchburg-virginia"/>
       </main>
   );
 }
