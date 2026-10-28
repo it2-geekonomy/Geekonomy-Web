@@ -1,4 +1,4 @@
-export type Region = "florida" | "california" | "texas" | "india";
+export type Region = "florida" | "california" | "texas" | "india" | "virginia" ;
 
 export type Location = {
   name: string;
@@ -13,12 +13,14 @@ export const REGION_TITLES: Record<Region, string> = {
   florida: "Explore Our SEO Services Across Florida",
   california: "Explore Our SEO Services Across California",
   texas: "Explore Our SEO Services Across Texas",
-  india: "Explore Our Digital Marketing Services Across India"
+  india: "Explore Our Digital Marketing Services Across India",
+  virginia: "Explore Our SEO Services Across Virginia",
+
 };
 
 export const LOCATIONS: Location[] = [
 
-  // Display Florida Landing Pages
+  // Display India Landing Pages
   { region: "india", name: "Guwahati", slug: "digital-marketing-agency-guwahati" },
   { region: "india", name: "Ghaziabad", slug: "digital-marketing-company-in-ghaziabad" },
   { region: "india", name: "Jaipur", slug: "digital-marketing-company-in-jaipur" },
@@ -61,5 +63,10 @@ export const LOCATIONS: Location[] = [
   { region: "texas", name: "Tomball", slug: "seo-company-tomball-texas" },
   { region: "texas", name: "Waco", slug: "seo-company-waco-tx" },
 
+  // Display Virginia Landing Pages
+  { region: "virginia", name: "Hampton Roads", slug: "seo-company-hampton-roads-virginia" },
+  { region: "virginia", name: "Winchester", slug: "seo-company-winchester-virginia" },
+  { region: "virginia", name: "Lynchburg", slug: "seo-company-lynchburg-virginia" },
+  { region: "virginia", name: "Fredericksburg", slug: "seo-company-in-fredericksburg-virginia" },
 
 ];
