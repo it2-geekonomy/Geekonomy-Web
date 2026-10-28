@@ -13,7 +13,7 @@ export default function Industries() {
             </Typography>
           </div>
           <Typography variant="display-2xl" as="h2" className="text-white leading-tight" >
-           Industries We Serve in Bexley
+           Industries We Serve in Bexley Ohio
           </Typography>
           <Typography variant="body-xl" className="mt-5 leading-relaxed text-white/90">
             Every industry has a different set of customers, competitors, search habits and conversion objectives. Geekonomy creates SEO strategies customized to these distinctions in order for your site to rank for the most appropriate searches and express your value proposition.
