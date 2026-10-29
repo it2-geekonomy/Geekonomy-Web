@@ -30,7 +30,6 @@ const charlottePPCCostsContent: BlogContentItem[] = [
   p("What does this mean? It means that the best ad with a better Quality Score can outbid the biggest bid and it can happen at a lower cost! This can be translated as being more relevant – and paying less for this relevance. Quality Score is a diagnostic tool and not a ranking factor. Yet, the diagnostics flag where an account is weak."),
 
   h2("Where Charlotte PPC Campaigns Usually Waste Ad Spend"),
-//   img(budgetDrainsImage, "Where Charlotte PPC Campaigns Usually Waste Ad Spend"),
   p("If you are going to do any kind of change at all; check for the leaks. These are the ones I see most."),
 
   p(`<div class="my-6 w-full overflow-x-auto">
@@ -92,7 +91,7 @@ const charlottePPCCostsContent: BlogContentItem[] = [
     <li><strong>Use bidding wisely.</strong> Automated bidding, such as Maximize conversions or Target CPA, can save money after you have enough reliable conversion data in an account. It performs poorly when the conversions it optimizes on are weak (page views, clicks) and worse when tracking is incorrectly setup. Fix your tracking first, otherwise automation will be aiming at the wrong goal at high speed.</li>
   </ol>`),
   
-  p("If this seems overwhelming to keep up with on top of running your business, a Charlotte PPC agency can take a look at the account, clear up the mess, and communicate the cost per lead and lead quality in easy to understand language."),
+  p('If this seems overwhelming to keep up with on top of running your business, a <a href="/charlotte-ppc-agency" class="underline text-[#6FAF4E]">Charlotte PPC agency</a> can take a look at the account, clear up the mess, and communicate the cost per lead and lead quality in easy to understand language.'),
 
   h2("How to Improve Lead Quality, Not Just Lead Volume"),
   img(responseImage, "Respond Quickly to Leads"),
