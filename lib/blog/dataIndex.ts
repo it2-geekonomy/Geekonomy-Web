@@ -171,7 +171,14 @@ import { TopMarketingMistakesBangaloreStartups } from "./data/topMarketingMistak
 import { WhyBangaloreBusinessesNeedGenerativeEngineOptimization } from "./data/whyBangaloreBusinessesNeedGenerativeEngineOptimization";
 import { HowBangaloreBusinessesCanUseAIToAccelerateGrowth } from "./data/howBangaloreBusinessesCanUseAIToAccelerateGrowth";
 import { WebsiteRedesignCostBangaloreSmesStartups } from "./data/websiteRedesignCostBangaloreSmesStartups";
+import { poolCompanyLeadGenerationSanDiego } from "./data/poolCompanyLeadGenerationSanDiego";
+import { carlsbadLocalSEOChecklist } from "./data/carlsbadLocalSEOChecklist";
+import { charlottePPCCosts } from "./data/charlottePPCCosts";
+
 export const allBlogsData: BlogData[] = [
+  charlottePPCCosts,
+  carlsbadLocalSEOChecklist,
+  poolCompanyLeadGenerationSanDiego,
   WebsiteRedesignCostBangaloreSmesStartups,
   HowBangaloreBusinessesCanUseAIToAccelerateGrowth,
   WhyBangaloreBusinessesNeedGenerativeEngineOptimization,

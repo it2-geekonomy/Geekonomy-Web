@@ -162,6 +162,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-your-website-is-not-ranking-on-google": "Rahul Dutta",
   "on-page-seo-checklist-for-service-based-websites": "Rahul Dutta",
   "technical-seo-mistakes-that-kill-google-rankings": "Rahul Dutta",
+  "pool-company-lead-generation-san-diego": "Rahul Dutta",
+  "carlsbad-local-seo-checklist": "Rahul Dutta",
+  "charlotte-ppc-lower-google-ads-costs": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -392,6 +395,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
   "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
   "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "July 1 , 2026",
+  "pool-company-lead-generation-san-diego": "October 29, 2026",
+  "carlsbad-local-seo-checklist": "October 29, 2026",
+  "charlotte-ppc-lower-google-ads-costs": "October 29, 2026",
 };
 
 /**
