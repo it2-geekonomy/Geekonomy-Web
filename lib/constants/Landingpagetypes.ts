@@ -110,10 +110,11 @@ export interface ImageCardContent {
   intro: string[];
   bottom?: string[];
   items: CardItem[];
-  columns?: 3 | 4;
+  columns?: 2 | 3 | 4;
 }
 
 export const gridCols = {
+  2: "grid-cols-1 md:grid-cols-2 ",
   3: "grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
   4: "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
 } as const;
@@ -127,7 +128,7 @@ export interface ImageCardProps {
 export interface ImageContentList {
   label: string;
   heading: string;
-  paragraphs: string[];
+  intro: string[];
   image: string;
   imageAlt: string;
 }

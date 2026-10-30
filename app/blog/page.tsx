@@ -5,6 +5,7 @@ import BlogsPageClient from "./BlogsPageClient";
 import BlogsPageLoading from "./BlogsPageLoading";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildBlogIndexJsonLd } from "@/lib/schema/blogIndex";
+import LandingPageLinks from "@/components/shared/LandingPageLinks";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoData = await getDynamicSEODataFromHeaders("blog");
@@ -39,6 +40,7 @@ export default function BlogsPage() {
       <Suspense fallback={<BlogsPageLoading />}>
         <BlogsPageClient />
       </Suspense>
+      <LandingPageLinks />
     </>
   );
 } 

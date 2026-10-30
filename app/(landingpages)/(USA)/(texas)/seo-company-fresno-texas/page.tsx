@@ -4,13 +4,14 @@ import CTA from "./components/CTA";
 import WhyGeekonomy from "./components/Whygeekonomy";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import SeoServices from "./components/Seoservices";
 import Hero from "./components/Herosection";
 import SeoStrategy from "./components/Seostrategy";
 import GrowBusiness from "./components/Growbusiness";
 import OurProcess from "./components/Ourprocess";
 import WhyNeedSeo from "./components/Whyneedseo";
+import LocationList from "@/components/landingpagelocations/Locationlist";
 
 const PUBLISHED_DATE = "2026-10-01T08:00:00.000Z";
 
@@ -60,7 +61,8 @@ export default function Home() {
       <WhyGeekonomy/>
       <FAQ /> 
       <LandingPageForm landingPageSlug="seo-company-fresno-texas" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27770.164972458344!2d-95.49089206533974!3d29.537612299765673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e2462f42b22f%3A0x813c6457ef21fb55!2sFresno%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1790836251187!5m2!1sen!2sin" />
+      <LandingPageMap location="fresno" />
+      <LocationList region="texas" HidecurrentSlug="seo-company-fresno-texas"/>
       </main>
   );
 }
