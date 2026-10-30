@@ -1,4 +1,4 @@
-export type Region = "florida" | "california" | "texas" ;
+export type Region = "florida" | "california" | "texas" | "india" | "virginia" ;
 
 export type Location = {
   name: string;
@@ -12,10 +12,21 @@ export const getLocationUrl = (slug: string) => `${LOCATION_BASE_URL}/${slug}`;
 export const REGION_TITLES: Record<Region, string> = {
   florida: "Explore Our SEO Services Across Florida",
   california: "Explore Our SEO Services Across California",
-  texas: "Explore Our SEO Services Texas",
+  texas: "Explore Our SEO Services Across Texas",
+  india: "Explore Our Digital Marketing Services Across India",
+  virginia: "Explore Our SEO Services Across Virginia",
+
 };
 
 export const LOCATIONS: Location[] = [
+
+  // Display India Landing Pages
+  { region: "india", name: "Guwahati", slug: "digital-marketing-agency-guwahati" },
+  { region: "india", name: "Ghaziabad", slug: "digital-marketing-company-in-ghaziabad" },
+  { region: "india", name: "Jaipur", slug: "digital-marketing-company-in-jaipur" },
+  { region: "india", name: "Madurai", slug: "digital-marketing-company-in-madurai" },
+
+
   // Display Florida Landing Pages
   { region: "florida", name: "Fort Walton Beach", slug: "seo-company-fort-walton-beach-fl" },
   { region: "florida", name: "Palm Harbor", slug: "seo-company-palm-harbor-fl" },
@@ -39,6 +50,7 @@ export const LOCATIONS: Location[] = [
   { region: "california", name: "Yorba Linda", slug: "seo-company-yorba-linda-ca" },
   { region: "california", name: "Camarillo", slug: "seo-company-camarillo-ca" },
   { region: "california", name: "Moreno Valley", slug: "seo-company-moreno-valley-ca" },
+  { region: "california", name: "El Granada", slug: "seo-company-el-granada-ca" },
 
 
   // Display Texas Landing Pages
@@ -51,5 +63,10 @@ export const LOCATIONS: Location[] = [
   { region: "texas", name: "Tomball", slug: "seo-company-tomball-texas" },
   { region: "texas", name: "Waco", slug: "seo-company-waco-tx" },
 
+  // Display Virginia Landing Pages
+  { region: "virginia", name: "Hampton Roads", slug: "seo-company-hampton-roads-virginia" },
+  { region: "virginia", name: "Winchester", slug: "seo-company-winchester-virginia" },
+  { region: "virginia", name: "Lynchburg", slug: "seo-company-lynchburg-virginia" },
+  { region: "virginia", name: "Fredericksburg", slug: "seo-company-in-fredericksburg-virginia" },
 
 ];

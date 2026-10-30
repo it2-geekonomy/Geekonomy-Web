@@ -163,5 +163,9 @@
    "website-design-mistakes-indian-businesses-must-avoid": "lib/blog/data/10WebsiteDesignMistakesIndianBusinessesMustAvoid.ts",
    "top-marketing-mistakes-bangalore-startups": "lib/blog/data/topMarketingMistakesBangaloreStartups.ts",
    "why-bangalore-businesses-need-generative-engine-optimization": "lib/blog/data/whyBangaloreBusinessesNeedGenerativeEngineOptimization.ts",
-    "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "lib/blog/data/howBangaloreBusinessesCanUseAIToAccelerateGrowth.ts"
-  }
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "lib/blog/data/howBangaloreBusinessesCanUseAIToAccelerateGrowth.ts",
+  "pool-company-lead-generation-san-diego": "lib/blog/data/poolCompanyLeadGenerationSanDiego.ts",
+  "carlsbad-local-seo-checklist": "lib/blog/data/carlsbadLocalSEOChecklist.ts",
+  "charlotte-ppc-lower-google-ads-costs": "lib/blog/data/charlottePPCCosts.ts"
+    
+}

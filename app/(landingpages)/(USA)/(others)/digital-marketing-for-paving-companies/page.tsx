@@ -10,6 +10,7 @@ import WhatMatters from "./components/Whatmatters";
 import WhySpecialized from "./components/Whyspecialized";
 import OurApproach from "./components/Ourapproach";
 import LocalSearch from "./components/Localsearch";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 
 const PUBLISHED_DATE = "2026-09-01T08:00:00.000Z";
 
@@ -59,6 +60,7 @@ export default function Home() {
       <WhyGeekonomy/>
       <FAQ />  
       <LandingPageForm landingPageSlug="digital-marketing-for-paving-companies" />
+      <LandingPageMap location="usa" />
       </main>
   );
 }

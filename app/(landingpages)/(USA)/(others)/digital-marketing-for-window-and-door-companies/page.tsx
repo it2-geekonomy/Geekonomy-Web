@@ -8,6 +8,7 @@ import WhyGeekonomy from "./components/Whygeekonomy";
 import CTA from "./components/CTA";
 import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 
 const PUBLISHED_DATE = "2026-08-31T08:00:00.000Z";
 
@@ -55,6 +56,7 @@ export default function Home() {
       <WhyGeekonomy/>
       <FAQ />  
       <LandingPageForm landingPageSlug="digital-marketing-for-window-and-door-companies" />
+      <LandingPageMap location="usa" />
       </main>
   );
 }

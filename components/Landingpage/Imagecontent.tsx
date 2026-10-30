@@ -4,7 +4,7 @@ import { Boldtext } from "./Boldtext";
 import { ImageContentProps } from "@/lib/constants/Landingpagetypes";
 
 export default function ImageContent({ content }: Readonly<ImageContentProps>) {
-  const { label, heading, paragraphs, image, imageAlt } = content;
+  const { label, heading, intro, image, imageAlt } = content;
 
   return (
     <section id="strategy" className="flex w-full flex-col items-center bg-black py-6 lg:py-10">
@@ -23,7 +23,7 @@ export default function ImageContent({ content }: Readonly<ImageContentProps>) {
             </Typography>
 
             <div className="flex w-full flex-col gap-4">
-              {paragraphs.map((paragraph, i) => (
+              {intro.map((paragraph, i) => (
                 <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
                   {Boldtext(paragraph)}
                 </Typography>
