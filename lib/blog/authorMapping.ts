@@ -149,7 +149,6 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "semantic-seo-agency-how-to-choose-the-best-agency": "Rahul Dutta",
   "semantic-content-networks-by-ben-stace": "Rahul Dutta",
   "ben-stace-semantic-seo-writing-tool": "Rahul Dutta",
-
   "best-semantic-seo-consultants-how-to-choose": "Rahul Dutta",
   "why-you-need-a-free-seo-audit": "Rahul Dutta",
   "how-to-improve-local-seo-ctr": "Rahul Dutta",
@@ -165,6 +164,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "pool-company-lead-generation-san-diego": "Rahul Dutta",
   "carlsbad-local-seo-checklist": "Rahul Dutta",
   "charlotte-ppc-lower-google-ads-costs": "Rahul Dutta",
+  "b2b-lead-generation-logistics-freight-companies": "Rahul Dutta",
+  "digital-marketing-plan-jaipur-small-businesses": "Rahul Dutta",
+  "window-door-installers-estimate-requests": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -372,7 +374,6 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "how-branding-increases-business-valuation": "March 27, 2026",
   "ecommerce-development-cost-in-bangalore": "March 28, 2026",
   "ben-stace-semantic-seo-writing-tool": "March 28, 2026",
-
   "semantic-content-networks-by-ben-stace": "March 27, 2026",
   "best-semantic-seo-consultants-how-to-choose": "March 27, 2026",
   "why-you-need-a-free-seo-audit": "March 28, 2026",
@@ -398,6 +399,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "pool-company-lead-generation-san-diego": "October 29, 2026",
   "carlsbad-local-seo-checklist": "October 29, 2026",
   "charlotte-ppc-lower-google-ads-costs": "October 29, 2026",
+  "b2b-lead-generation-logistics-freight-companies": "October 30, 2026",
+  "digital-marketing-plan-jaipur-small-businesses": "October 30, 2026",
+  "window-door-installers-estimate-requests": "October 30, 2026",
 };
 
 /**

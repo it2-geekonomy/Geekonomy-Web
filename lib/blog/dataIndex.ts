@@ -174,8 +174,14 @@ import { WebsiteRedesignCostBangaloreSmesStartups } from "./data/websiteRedesign
 import { poolCompanyLeadGenerationSanDiego } from "./data/poolCompanyLeadGenerationSanDiego";
 import { carlsbadLocalSEOChecklist } from "./data/carlsbadLocalSEOChecklist";
 import { charlottePPCCosts } from "./data/charlottePPCCosts";
+import { b2bLeadGenerationLogisticsFreightCompanies } from "./data/b2bLeadGenerationLogisticsFreightCompanies";
+import { digitalMarketingPlanJaipurSmallBusinesses } from "./data/digitalMarketingPlanJaipurSmallBusinesses";
+import { windowDoorInstallersEstimateRequests } from "./data/windowDoorInstallersEstimateRequests";
 
 export const allBlogsData: BlogData[] = [
+  windowDoorInstallersEstimateRequests,
+  digitalMarketingPlanJaipurSmallBusinesses,
+  b2bLeadGenerationLogisticsFreightCompanies,
   charlottePPCCosts,
   carlsbadLocalSEOChecklist,
   poolCompanyLeadGenerationSanDiego,
@@ -347,4 +353,3 @@ export const allBlogsData: BlogData[] = [
   omnichannelMarketing,
   nursingHomesSEOCompany,
 ];
-
