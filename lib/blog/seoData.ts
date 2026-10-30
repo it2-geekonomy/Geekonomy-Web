@@ -168,6 +168,9 @@ import { WebsiteRedesignCostBangaloreSmesStartupsSEO } from "./data/websiteRedes
 import { poolCompanyLeadGenerationSanDiegoSEO } from "./data/poolCompanyLeadGenerationSanDiego";
 import { carlsbadLocalSEOChecklistSEO } from "./data/carlsbadLocalSEOChecklist";
 import { charlottePPCCostsSEO } from "./data/charlottePPCCosts";
+import { b2bLeadGenerationLogisticsFreightCompaniesSEO } from "./data/b2bLeadGenerationLogisticsFreightCompanies";
+import { digitalMarketingPlanJaipurSmallBusinessesSEO } from "./data/digitalMarketingPlanJaipurSmallBusinesses";
+import { windowDoorInstallersEstimateRequestsSEO } from "./data/windowDoorInstallersEstimateRequests";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -340,4 +343,7 @@ export const blogSEOData = {
   "blog/pool-company-lead-generation-san-diego": poolCompanyLeadGenerationSanDiegoSEO,
   "blog/carlsbad-local-seo-checklist": carlsbadLocalSEOChecklistSEO,
   "blog/charlotte-ppc-lower-google-ads-costs": charlottePPCCostsSEO,
+  "blog/b2b-lead-generation-logistics-freight-companies": b2bLeadGenerationLogisticsFreightCompaniesSEO,
+  "blog/digital-marketing-plan-jaipur-small-businesses": digitalMarketingPlanJaipurSmallBusinessesSEO,
+  "blog/window-door-installers-estimate-requests": windowDoorInstallersEstimateRequestsSEO,
 };
