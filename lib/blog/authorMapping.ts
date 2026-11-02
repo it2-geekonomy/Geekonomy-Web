@@ -167,6 +167,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "b2b-lead-generation-logistics-freight-companies": "Rahul Dutta",
   "digital-marketing-plan-jaipur-small-businesses": "Rahul Dutta",
   "window-door-installers-estimate-requests": "Rahul Dutta",
+  "seasonal-marketing-paving-contractors": "Rahul Dutta",
+  "local-search-ghaziabad-businesses": "Rahul Dutta",
+  "digital-marketing-ideas-madurai-businesses": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -402,6 +405,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "b2b-lead-generation-logistics-freight-companies": "October 30, 2026",
   "digital-marketing-plan-jaipur-small-businesses": "October 30, 2026",
   "window-door-installers-estimate-requests": "October 30, 2026",
+  "seasonal-marketing-paving-contractors": "November 2, 2026",
+  "local-search-ghaziabad-businesses": "November 2, 2026",
+  "digital-marketing-ideas-madurai-businesses": "November 2, 2026",
 };
 
 /**
