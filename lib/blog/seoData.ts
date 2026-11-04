@@ -174,6 +174,9 @@ import { windowDoorInstallersEstimateRequestsSEO } from "./data/windowDoorInstal
 import { seasonalMarketingPavingContractorsSEO } from "./data/seasonalMarketingPavingContractors";
 import { localSearchGhaziabadBusinessesSEO } from "./data/localSearchGhaziabadBusinesses";
 import { digitalMarketingIdeasMaduraiBusinessesSEO } from "./data/digitalMarketingIdeasMaduraiBusinesses";
+import { guwahatiDigitalMarketingStrategySEO } from "./data/guwahatiDigitalMarketingStrategy";
+import { bangaloreStartupBrandingGuideSEO } from "./data/bangaloreStartupBrandingGuide";
+import { oceanSpringsSeasonalMarketingSEO } from "./data/oceanSpringsSeasonalMarketing";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -352,4 +355,7 @@ export const blogSEOData = {
   "blog/seasonal-marketing-paving-contractors": seasonalMarketingPavingContractorsSEO,
   "blog/local-search-ghaziabad-businesses": localSearchGhaziabadBusinessesSEO,
   "blog/digital-marketing-ideas-madurai-businesses": digitalMarketingIdeasMaduraiBusinessesSEO,
+  "blog/guwahati-digital-marketing-strategy": guwahatiDigitalMarketingStrategySEO,
+  "blog/bangalore-startup-branding-guide": bangaloreStartupBrandingGuideSEO,
+  "blog/ocean-springs-seasonal-marketing": oceanSpringsSeasonalMarketingSEO,
 };

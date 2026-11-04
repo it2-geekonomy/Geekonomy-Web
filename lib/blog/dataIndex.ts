@@ -180,8 +180,14 @@ import { windowDoorInstallersEstimateRequests } from "./data/windowDoorInstaller
 import { seasonalMarketingPavingContractors } from "./data/seasonalMarketingPavingContractors";
 import { localSearchGhaziabadBusinesses } from "./data/localSearchGhaziabadBusinesses";
 import { digitalMarketingIdeasMaduraiBusinesses } from "./data/digitalMarketingIdeasMaduraiBusinesses";
+import { guwahatiDigitalMarketingStrategy } from "./data/guwahatiDigitalMarketingStrategy";
+import { bangaloreStartupBrandingGuide } from "./data/bangaloreStartupBrandingGuide";
+import { oceanSpringsSeasonalMarketing } from "./data/oceanSpringsSeasonalMarketing";
 
 export const allBlogsData: BlogData[] = [
+  oceanSpringsSeasonalMarketing,
+  bangaloreStartupBrandingGuide,
+  guwahatiDigitalMarketingStrategy,
   digitalMarketingIdeasMaduraiBusinesses,
   localSearchGhaziabadBusinesses,
   seasonalMarketingPavingContractors,
