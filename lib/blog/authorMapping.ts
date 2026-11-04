@@ -173,6 +173,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "guwahati-digital-marketing-strategy": "Rahul Dutta",
   "bangalore-startup-branding-guide": "Rahul Dutta",
   "ocean-springs-seasonal-marketing": "Rahul Dutta",
+  "carmel-google-business-profile-visibility": "Rahul Dutta",
+  "davis-ca-content-marketing-ideas": "Rahul Dutta",
+  "high-intent-local-keywords-rock-hill": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -414,6 +417,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "guwahati-digital-marketing-strategy": "November 4, 2026",
   "bangalore-startup-branding-guide": "November 4, 2026",
   "ocean-springs-seasonal-marketing": "November 4, 2026",
+  "carmel-google-business-profile-visibility": "November 4, 2026",
+  "davis-ca-content-marketing-ideas": "November 4, 2026",
+  "high-intent-local-keywords-rock-hill": "November 4, 2026",
 };
 
 /**

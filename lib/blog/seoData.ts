@@ -177,6 +177,9 @@ import { digitalMarketingIdeasMaduraiBusinessesSEO } from "./data/digitalMarketi
 import { guwahatiDigitalMarketingStrategySEO } from "./data/guwahatiDigitalMarketingStrategy";
 import { bangaloreStartupBrandingGuideSEO } from "./data/bangaloreStartupBrandingGuide";
 import { oceanSpringsSeasonalMarketingSEO } from "./data/oceanSpringsSeasonalMarketing";
+import { carmelGoogleBusinessProfileVisibilitySEO } from "./data/carmelGoogleBusinessProfileVisibility";
+import { davisCAContentMarketingIdeasSEO } from "./data/davisCAContentMarketingIdeas";
+import { rockHillHighIntentLocalKeywordsSEO } from "./data/rockHillHighIntentLocalKeywords";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -358,4 +361,7 @@ export const blogSEOData = {
   "blog/guwahati-digital-marketing-strategy": guwahatiDigitalMarketingStrategySEO,
   "blog/bangalore-startup-branding-guide": bangaloreStartupBrandingGuideSEO,
   "blog/ocean-springs-seasonal-marketing": oceanSpringsSeasonalMarketingSEO,
+  "blog/carmel-google-business-profile-visibility": carmelGoogleBusinessProfileVisibilitySEO,
+  "blog/davis-ca-content-marketing-ideas": davisCAContentMarketingIdeasSEO,
+  "blog/high-intent-local-keywords-rock-hill": rockHillHighIntentLocalKeywordsSEO,
 };
