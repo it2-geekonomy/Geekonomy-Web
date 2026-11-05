@@ -42,3 +42,13 @@ export const WhatWeDoItems = [
     ]
   },
 ];
+
+export const whatWeDoContent = {
+  label: "what we do",
+  heading: "Digital Marketing Services in Guwahati",
+  intro: [
+    "Potential clients could want to find your business by service, by place or just by searching for the best around. Our digital marketing services are centered on the way Guwahatians find, compare and contact local businesses.",
+  ],
+  items: WhatWeDoItems,
+  columns: 3 as const,
+};
