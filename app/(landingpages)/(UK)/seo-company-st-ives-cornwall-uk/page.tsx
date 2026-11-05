@@ -1,18 +1,27 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
-import SeoStrategy from "./components/Seostrategy";
-import OurProcess from "./components/Ourprocess";
-import BuiltAround from "./components/Buildaround";
-import Searching from "./components/Searching";
-import SeoServices from "./components/Seoservices";
-import LocalSearch from "./components/Localsearch";
-import Approach from "./components/Approach";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
+import Hero from "@/components/Landingpage/Hero";
+import CTA from "@/components/Landingpage/CTA";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import FAQ from "@/components/Landingpage/FAQ";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import TextSection from "@/components/Landingpage/Textsection";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import { heroContent } from "./const/Herosection";
+import { builtAroundContent } from "./const/Buildaround";
+import { seoServicesContent } from "./const/Seoservices";
+import { localSearchContent } from "./const/Localsearch";
+import { searchingContent } from "./const/Searching";
+import { ourProcessContent } from "./const/Ourprocess";
+import { seoStrategyContent } from "./const/Seostrategy";
+import { industriesContent } from "./const/Industries";
+import { approachContent } from "./const/Approach";
+import { ctaContent } from "./const/cta";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-17T08:00:00.000Z";
 
@@ -51,20 +60,22 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <BuiltAround/>
-      <SeoServices/>
-      <LocalSearch/>
-      <Searching/>
-      <OurProcess/>
-      <SeoStrategy/>
-      <Industries/>
-      <Approach/>
-      <CTA/>
-      <WhyGeekonomy/>
-      <FAQ />  
+      <Hero content={heroContent} />
+      <ImageContent content={builtAroundContent} />
+      <CardSection content={seoServicesContent} />
+      <CardSection content={localSearchContent} />
+      <TextSection content={searchingContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <StepSection content={ourProcessContent} />
+      <CardSection content={seoStrategyContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <ImageCardSection content={industriesContent} />
+      <CardSection content={approachContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-st-ives-cornwall-uk" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10213.404050359311!2d-5.498132220914773!3d50.21066077700321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ac1883d3d7aed%3A0x90fba57b84271131!2sSt%20Ives%2C%20UK!5e0!3m2!1sen!2sin!4v1789617713224!5m2!1sen!2sin" />
+      <LandingPageMap location="st_ives" />
       </main>
   );
 }
