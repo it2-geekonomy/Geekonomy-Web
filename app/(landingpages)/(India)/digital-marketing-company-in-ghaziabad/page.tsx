@@ -1,18 +1,27 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import WhatWeDo from "./components/Whatwedo";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import CTA from "./components/CTA";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import WhySpecialized from "./components/Whyspecialized";
-import OurApproach from "./components/Ourapproach";
-import LocalSearch from "./components/Localsearch";
-import RightStrategy from "./components/Rightstrategy";
-import SearchService from "./components/Searchservice";
-import Industries from "./components/Industries";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
+import Hero from "@/components/Landingpage/Hero";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import TextSection from "@/components/Landingpage/Textsection";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { heroContent } from "./const/Herosection";
+import { searchServiceContent } from "./const/Searchservice";
+import { whatWeDoContent } from "./const/Whatwedo";
+import { specializedContent } from "./const/Whyspecialized";
+import { localSearchContent } from "./const/Localsearch";
+import { industriesContent } from "./const/Industries";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { rightStrategyContent } from "./const/Rightstrategy";
+import { ctaContent } from "./const/cta";
+import { ourApproachContent } from "./const/Ourapproach";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-01T08:00:00.000Z";
 
@@ -51,17 +60,19 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <SearchService/>
-      <WhatWeDo/>
-      <WhySpecialized/>
-      <LocalSearch/>
-      <Industries/>
-      <WhyGeekonomy/>
-      <RightStrategy/>
-      <CTA/>
-      <OurApproach/>
-      <FAQ />  
+      <Hero content={heroContent} />
+      <ImageContent content={searchServiceContent} />
+      <ImageCardSection content={whatWeDoContent} />
+      <CTAButton text="Get Your Free Digital Marketing Strategy" />
+      <CardSection content={specializedContent} />
+      <TextSection content={localSearchContent} />
+      <CTAButton text="Get Your Free Digital Marketing Strategy" />
+      <CardSection content={industriesContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <CardSection content={rightStrategyContent} />
+      <CTA content={ctaContent} />
+      <StepSection content={ourApproachContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="digital-marketing-company-in-ghaziabad" />
       <LandingPageMap location="ghaziabad" />
       <LocationList region="india" HidecurrentSlug="digital-marketing-company-in-ghaziabad"/>

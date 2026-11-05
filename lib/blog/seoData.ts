@@ -168,6 +168,18 @@ import { WebsiteRedesignCostBangaloreSmesStartupsSEO } from "./data/websiteRedes
 import { poolCompanyLeadGenerationSanDiegoSEO } from "./data/poolCompanyLeadGenerationSanDiego";
 import { carlsbadLocalSEOChecklistSEO } from "./data/carlsbadLocalSEOChecklist";
 import { charlottePPCCostsSEO } from "./data/charlottePPCCosts";
+import { b2bLeadGenerationLogisticsFreightCompaniesSEO } from "./data/b2bLeadGenerationLogisticsFreightCompanies";
+import { digitalMarketingPlanJaipurSmallBusinessesSEO } from "./data/digitalMarketingPlanJaipurSmallBusinesses";
+import { windowDoorInstallersEstimateRequestsSEO } from "./data/windowDoorInstallersEstimateRequests";
+import { seasonalMarketingPavingContractorsSEO } from "./data/seasonalMarketingPavingContractors";
+import { localSearchGhaziabadBusinessesSEO } from "./data/localSearchGhaziabadBusinesses";
+import { digitalMarketingIdeasMaduraiBusinessesSEO } from "./data/digitalMarketingIdeasMaduraiBusinesses";
+import { guwahatiDigitalMarketingStrategySEO } from "./data/guwahatiDigitalMarketingStrategy";
+import { bangaloreStartupBrandingGuideSEO } from "./data/bangaloreStartupBrandingGuide";
+import { oceanSpringsSeasonalMarketingSEO } from "./data/oceanSpringsSeasonalMarketing";
+import { carmelGoogleBusinessProfileVisibilitySEO } from "./data/carmelGoogleBusinessProfileVisibility";
+import { davisCAContentMarketingIdeasSEO } from "./data/davisCAContentMarketingIdeas";
+import { rockHillHighIntentLocalKeywordsSEO } from "./data/rockHillHighIntentLocalKeywords";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -340,4 +352,16 @@ export const blogSEOData = {
   "blog/pool-company-lead-generation-san-diego": poolCompanyLeadGenerationSanDiegoSEO,
   "blog/carlsbad-local-seo-checklist": carlsbadLocalSEOChecklistSEO,
   "blog/charlotte-ppc-lower-google-ads-costs": charlottePPCCostsSEO,
+  "blog/b2b-lead-generation-logistics-freight-companies": b2bLeadGenerationLogisticsFreightCompaniesSEO,
+  "blog/digital-marketing-plan-jaipur-small-businesses": digitalMarketingPlanJaipurSmallBusinessesSEO,
+  "blog/window-door-installers-estimate-requests": windowDoorInstallersEstimateRequestsSEO,
+  "blog/seasonal-marketing-paving-contractors": seasonalMarketingPavingContractorsSEO,
+  "blog/local-search-ghaziabad-businesses": localSearchGhaziabadBusinessesSEO,
+  "blog/digital-marketing-ideas-madurai-businesses": digitalMarketingIdeasMaduraiBusinessesSEO,
+  "blog/guwahati-digital-marketing-strategy": guwahatiDigitalMarketingStrategySEO,
+  "blog/bangalore-startup-branding-guide": bangaloreStartupBrandingGuideSEO,
+  "blog/ocean-springs-seasonal-marketing": oceanSpringsSeasonalMarketingSEO,
+  "blog/carmel-google-business-profile-visibility": carmelGoogleBusinessProfileVisibilitySEO,
+  "blog/davis-ca-content-marketing-ideas": davisCAContentMarketingIdeasSEO,
+  "blog/high-intent-local-keywords-rock-hill": rockHillHighIntentLocalKeywordsSEO,
 };

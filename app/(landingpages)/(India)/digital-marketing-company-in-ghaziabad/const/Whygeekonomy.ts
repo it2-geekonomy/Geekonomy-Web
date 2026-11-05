@@ -53,3 +53,24 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Businesses Choose Geekonomy for Digital Marketing",
+  intro: [
+    "Selecting a digital marketing agency is more than simply locating a firm providing seo,ppc, or social media solutions - it requires locating an agency that can make sense of the digital realm. It requires a plan to link such tasks to your clear business objectives in the premier digital marketing field.",
+    "Our goal is to create marketing systems that are simple, profitable and usable, as well as consistent with the way your prospective customers look and decide.",
+  ],
+  card: WhyGeekonomyItems,
+  cta: {
+    title: "Not sure where to start?",
+    description: [
+      "Every business in Ghaziabad is different. We create tailored digital marketing strategies focused on your goals, target audience, and local market.",
+      "From SEO and Google Ads to social media and lead generation, we help turn local searches into quality leads and customers.",
+    ],
+    buttonText: "Get a Free Plan",
+  },
+  bottom: [
+    "The aim is not to just get your company more online exposure, it's to actually help it thrive in the very competitive online world. It‘s to develop a digital footprint that helps your business grow steadily by ways of performance marketing strategies.",
+  ],
+};

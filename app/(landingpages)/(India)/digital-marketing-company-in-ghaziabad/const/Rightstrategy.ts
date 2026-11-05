@@ -65,3 +65,16 @@ export const RightStrategyItems = [
     ]
   },
 ];
+
+export const rightStrategyContent = {
+  label: "Right Strategy",
+  heading: "Choose the Right Digital Marketing Strategy for Your Goals",
+  intro: [
+    "The most appropriate digital marketing strategy will be determined by what goals you want your business to achieve. What a local enquiries driven business in Ghaziabad will require will be entirely different to an online sales driven E commerce brand B to B business seeking to access decision makers.",
+    "By analyzing the nature of your business, we discover where your customers search in Delhi and Noida, how they want to buy, through what marketing channels you can reach them.",
+  ],
+  card: RightStrategyItems,
+  bottom: [
+    "Whether your focus is a higher proportion of local customers, improved Google rankings, quicker lead generation, higher conversions on your website, more online sales whatever the outcome you require we develop the strategy based on your desired result, not on a preset services package.",
+  ],
+};

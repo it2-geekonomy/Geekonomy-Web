@@ -174,8 +174,32 @@ import { WebsiteRedesignCostBangaloreSmesStartups } from "./data/websiteRedesign
 import { poolCompanyLeadGenerationSanDiego } from "./data/poolCompanyLeadGenerationSanDiego";
 import { carlsbadLocalSEOChecklist } from "./data/carlsbadLocalSEOChecklist";
 import { charlottePPCCosts } from "./data/charlottePPCCosts";
+import { b2bLeadGenerationLogisticsFreightCompanies } from "./data/b2bLeadGenerationLogisticsFreightCompanies";
+import { digitalMarketingPlanJaipurSmallBusinesses } from "./data/digitalMarketingPlanJaipurSmallBusinesses";
+import { windowDoorInstallersEstimateRequests } from "./data/windowDoorInstallersEstimateRequests";
+import { seasonalMarketingPavingContractors } from "./data/seasonalMarketingPavingContractors";
+import { localSearchGhaziabadBusinesses } from "./data/localSearchGhaziabadBusinesses";
+import { digitalMarketingIdeasMaduraiBusinesses } from "./data/digitalMarketingIdeasMaduraiBusinesses";
+import { guwahatiDigitalMarketingStrategy } from "./data/guwahatiDigitalMarketingStrategy";
+import { bangaloreStartupBrandingGuide } from "./data/bangaloreStartupBrandingGuide";
+import { oceanSpringsSeasonalMarketing } from "./data/oceanSpringsSeasonalMarketing";
+import { carmelGoogleBusinessProfileVisibility } from "./data/carmelGoogleBusinessProfileVisibility";
+import { davisCAContentMarketingIdeas } from "./data/davisCAContentMarketingIdeas";
+import { rockHillHighIntentLocalKeywords } from "./data/rockHillHighIntentLocalKeywords";
 
 export const allBlogsData: BlogData[] = [
+  rockHillHighIntentLocalKeywords,
+  davisCAContentMarketingIdeas,
+  carmelGoogleBusinessProfileVisibility,
+  oceanSpringsSeasonalMarketing,
+  bangaloreStartupBrandingGuide,
+  guwahatiDigitalMarketingStrategy,
+  digitalMarketingIdeasMaduraiBusinesses,
+  localSearchGhaziabadBusinesses,
+  seasonalMarketingPavingContractors,
+  windowDoorInstallersEstimateRequests,
+  digitalMarketingPlanJaipurSmallBusinesses,
+  b2bLeadGenerationLogisticsFreightCompanies,
   charlottePPCCosts,
   carlsbadLocalSEOChecklist,
   poolCompanyLeadGenerationSanDiego,
@@ -347,4 +371,3 @@ export const allBlogsData: BlogData[] = [
   omnichannelMarketing,
   nursingHomesSEOCompany,
 ];
-

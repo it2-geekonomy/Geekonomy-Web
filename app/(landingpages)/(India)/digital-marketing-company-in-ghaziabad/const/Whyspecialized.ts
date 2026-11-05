@@ -38,3 +38,16 @@ export const SpecializedItems = [
     ]
   },
 ];
+
+export const specializedContent = {
+  label: "Why Specialized",
+  heading: "A Digital Marketing Strategy Built for Ghaziabad",
+  intro: [
+    "You cannot simply market to ‘Ghaziabad’. If you have customers in the Indirapuram, Vaishali, Vasundhara, Raj Nagar, Raj Nagar Extension, Kaushambi or Kavi Nagar, your marketing requirements may be different to just aiming at the city name.",
+    "We leverage this local knowledge to tailor the digital marketing approach to match where customers are looking, what they require and how they make decisions.",
+  ],
+  card: SpecializedItems,
+  bottom: [
+    "This local-first strategy enables utilization of search visibility in Ghaziabad into relevant traffic, enquiries and customers is increased through best digital marketing services.",
+  ],
+};

@@ -1,17 +1,25 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import WhatWeDo from "./components/Whatwedo";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import CTA from "./components/CTA";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import RightStrategy from "./components/Rightstrategy";
-import Industries from "./components/Industries";
-import BussinessStrategy from "./components/Bussinessstrategy";
-import ServiceAreas from "./components/Acrossguwahati";
-import SearchOpportunity from "./components/Searchopportunity";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
+import Hero from "@/components/Landingpage/Hero";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import ServingNearby from "@/components/Landingpage/NearbyArea";
+import FAQ from "@/components/Landingpage/FAQ";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { heroContent } from "./const/Herosection";
+import { businessStrategyContent } from "./const/Businessstrategy";
+import { serviceAreasContent } from "./const/Acrossguwahati";
+import { whatWeDoContent } from "./const/Whatwedo";
+import { rightStrategyContent } from "./const/Rightstrategy";
+import { searchOpportunityContent } from "./const/Searchopportunity";
+import { industriesContent } from "./const/Industries";
+import { ctaContent } from "./const/cta";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-02T08:00:00.000Z";
 
@@ -50,16 +58,17 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <BussinessStrategy/>
-      <ServiceAreas/>
-      <WhatWeDo/>
-      <RightStrategy/>
-      <SearchOpportunity/>
-      <Industries/>
-      <CTA/>
-      <WhyGeekonomy/>
-      <FAQ />  
+      <Hero content={heroContent} />
+      <ImageContent content={businessStrategyContent} />
+      <ServingNearby content={serviceAreasContent} />
+      <CTAButton text="Get Your Free Digital Marketing Strategy" />
+      <ImageCardSection content={whatWeDoContent} />
+      <CardSection content={rightStrategyContent} />
+      <CardSection content={searchOpportunityContent} />
+      <CardSection content={industriesContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="digital-marketing-agency-guwahati" />
       <LandingPageMap location="guwahati" />
       <LocationList region="india" HidecurrentSlug="digital-marketing-agency-guwahati"/>

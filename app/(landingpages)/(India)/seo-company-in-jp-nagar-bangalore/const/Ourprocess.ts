@@ -41,4 +41,13 @@ export const steps = [
       "Long term activity We continuously track vital metrics including organic visibility, keyword changes, traffic, engagement, leads and conversions. From these insights, we can make strategic adjustments and set activity priorities."
     ]
   }
-];  
+];
+
+export const ourProcessContent = {
+  label: "Our Process",
+  heading: "How Our SEO Strategy Works",
+  intro: [
+    "If you want a successful SEO campaign it has to have a process not just optimization activities. Geekonomy's data driven approach is based on this process beginning with knowing your site and market and leading into building toward improved organic visibility, relevant traffic and concrete conversions.",
+  ],
+  steps,
+};

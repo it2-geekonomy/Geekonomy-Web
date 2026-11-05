@@ -1,6 +1,8 @@
 export type LandingPageMapKey = keyof typeof LANDING_PAGE_MAPS;
 
 export const LANDING_PAGE_MAPS = {
+  bangalore : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248815.57510945472!2d77.45716262182738!3d12.988259658071335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1790749301576!5m2!1sen!2sin",
+  st_ives : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10213.404050359311!2d-5.498132220914773!3d50.21066077700321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ac1883d3d7aed%3A0x90fba57b84271131!2sSt%20Ives%2C%20UK!5e0!3m2!1sen!2sin!4v1789617713224!5m2!1sen!2sin",
   guwahati : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114612.57740019081!2d91.62048214230462!3d26.143179269078516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5a287f9133ff%3A0x2bbd1332436bde32!2sGuwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1788841888433!5m2!1sen!2sin",
   ghaziabad : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.1594117515!2d77.31262765833954!3d28.69977876967229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1788842503572!5m2!1sen!2sin",
   jaipur : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113874.30006233433!2d75.70815711078538!3d26.88533996479717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1788842640687!5m2!1sen!2sin",

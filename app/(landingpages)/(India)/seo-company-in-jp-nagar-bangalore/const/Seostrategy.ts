@@ -51,3 +51,13 @@ export const Items = [
     ]
   }
 ];
+
+export const seoStrategyContent = {
+  label: "SEO Strategy",
+  heading: "Local SEO Strategies for JP Nagar Businesses",
+  intro: [
+    "Local search becomes an integral element for Consumer searching for Business, Service or Product within a geographic location. A thoughtful local strategy aims to create geographic relevancy and enhance it, making the business information easily found and assessed.",
+    "Geekonomy is a local seo company in jp nagar and concentrates on establishing location relevance, everything from website optimization, business details, local content, reviews, citations, and other local search signals.",
+  ],
+  card: Items,
+};

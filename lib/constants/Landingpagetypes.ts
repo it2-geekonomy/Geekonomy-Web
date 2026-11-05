@@ -38,6 +38,7 @@ export interface CTAContent {
   heading: string;
   paragraphs: string[];
   buttonText: string;
+  secondaryButtonText?: string;
 }
 
 export interface CTAProps {
@@ -79,7 +80,7 @@ export interface CardContent {
 
 export interface CTACard {
   title: string;
-  description: string;
+  description: string | string[];
   buttonText: string;
 }
 
@@ -87,6 +88,7 @@ export interface IconCardLayout {
   label: string;
   heading: string;
   intro?: string[];
+  flow?: string[];
   card: CardContent[];
   bottom?: string[];
   cta?: CTACard;
@@ -129,6 +131,8 @@ export interface ImageContentList {
   label: string;
   heading: string;
   intro: string[];
+  bullets?: string[];
+  flow?: string[];
   image: string;
   imageAlt: string;
 }
@@ -146,6 +150,7 @@ export interface ServingNearbyContent {
   image: string;
   imageAlt: string;
   areas: string[];
+  subheading?: string;
   bottom?: string[];
 }
 
@@ -165,6 +170,7 @@ export interface OurProcessContent {
   heading: string;
   intro: string[];
   bottom?: string[];
+  flow?: string[];
   steps: ProcessStep[];
 }
 
@@ -178,6 +184,8 @@ export interface TextSectionContent {
   label: string;
   heading: string;
   paragraphs: string[];
+  subheading?: string;
+  flow?: string[];
 }
 
 export interface TextSectionProps {

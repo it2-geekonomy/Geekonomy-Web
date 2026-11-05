@@ -7,7 +7,7 @@ import { CTAProps } from "@/lib/constants/Landingpagetypes";
 
 
 export default function CTA({ content }: Readonly<CTAProps>) {
-  const { heading, paragraphs, buttonText } = content;
+  const { heading, paragraphs, buttonText, secondaryButtonText } = content;
 
   return (
     <section id="cta" className="flex w-full justify-center bg-black my-6 sm:my-8 lg:my-10">
@@ -45,6 +45,17 @@ export default function CTA({ content }: Readonly<CTAProps>) {
               </Typography>
               <ArrowRight className="h-4 w-4 group-hover:text-[#69AE44] transition-colors duration-200" />
             </Link>
+            {secondaryButtonText && (
+              <Link
+                href="#contact"
+                onClick={handleScrollToContact}
+                className="inline-flex w-auto items-center justify-center rounded-full border-2 border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/10 hover:scale-105"
+              >
+                <Typography as="span" variant="body-lg" className="font-semibold text-white">
+                  {secondaryButtonText}
+                </Typography>
+              </Link>
+            )}
           </div>
         </div>
       </div>

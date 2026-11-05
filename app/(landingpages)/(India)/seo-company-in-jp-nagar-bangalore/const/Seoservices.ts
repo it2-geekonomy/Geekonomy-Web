@@ -51,3 +51,12 @@ export const Items = [
     ]
   }
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "Our SEO Services in JP Nagar",
+  intro: [
+    "All major elements of organic search visibility should be covered in a comprehensive SEO campaign. Geekonomy provides the requisite blend of technical SEO, content optimization, Local SEO, authority building, conversion optimization, and AI-enabled search strategy to strengthen your online visibility.",
+  ],
+  card: Items,
+};

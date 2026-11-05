@@ -3,12 +3,12 @@ import { Boldtext } from "./Boldtext";
 import { OurProcessProps } from "@/lib/constants/Landingpagetypes";
 
 export default function StepSection({ content }: Readonly<OurProcessProps>) {
-  const { label, heading, intro, bottom, steps } = content;
+  const { label, heading, intro, bottom, steps, flow } = content;
 
   return (
     <section id="process" className="flex w-full flex-col items-center bg-black py-6 lg:py-10">
-      <div className="flex w-full max-w-7xl flex-col gap-10 px-6 lg:gap-14 lg:px-8">
-        <div className="flex w-full flex-col items-center gap-5 text-center">
+      <div className="flex w-full max-w-7xl flex-col gap-10 px-6 lg:gap-10 lg:px-8">
+        <div className="flex w-full lg:px-30 flex-col items-center gap-5  text-center">
           <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#69AE44]/30 px-4 py-2">
             <span className="size-1.5 rounded-full bg-[#69AE44]" />
             <Typography variant="overline" className="text-white/80">
@@ -57,6 +57,29 @@ export default function StepSection({ content }: Readonly<OurProcessProps>) {
             </div>
           ))}
         </div>
+
+        {!!flow?.length && (
+          <div className="overflow-x-auto rounded-2xl border border-[#69AE44] bg-[#69AE44]/10 p-7 lg:overflow-visible">
+            <div className="flex w-max items-center gap-3 lg:w-full lg:flex-wrap lg:justify-center">
+              {flow.map((step, i) => (
+                <div key={step} className="flex items-center gap-3">
+                  <span
+                    className={`whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-semibold ${
+                      i === flow.length - 1
+                        ? "bg-[#69AE44] text-black"
+                        : "border border-white/10 bg-white/10 text-white/80"
+                    }`}
+                  >
+                    {step}
+                  </span>
+                  {i < flow.length - 1 && (
+                    <span className="text-[#69AE44]">→</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {!!bottom?.length && (
           <div className="flex w-full flex-col gap-4">

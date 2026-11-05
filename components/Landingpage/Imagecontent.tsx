@@ -4,7 +4,7 @@ import { Boldtext } from "./Boldtext";
 import { ImageContentProps } from "@/lib/constants/Landingpagetypes";
 
 export default function ImageContent({ content }: Readonly<ImageContentProps>) {
-  const { label, heading, intro, image, imageAlt } = content;
+  const { label, heading, intro, bullets, flow, image, imageAlt } = content;
 
   return (
     <section id="strategy" className="flex w-full flex-col items-center bg-black py-6 lg:py-10">
@@ -29,6 +29,19 @@ export default function ImageContent({ content }: Readonly<ImageContentProps>) {
                 </Typography>
               ))}
             </div>
+
+            {!!bullets?.length && (
+              <ul className="flex w-full flex-col gap-4 pt-1 pl-5 text-left">
+                {bullets.map((bullet) => (
+                  <li key={bullet} className="flex gap-4">
+                    <span className="mt-2.5 inline-block size-2.5 shrink-0 rounded-full bg-[#69AE44]" />
+                    <Typography variant="body-xl" className="leading-relaxed text-white/90">
+                      {Boldtext(bullet)}
+                    </Typography>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
 
           <div className="order-2 flex w-full justify-center">
@@ -42,6 +55,27 @@ export default function ImageContent({ content }: Readonly<ImageContentProps>) {
             </div>
           </div>
         </div>
+
+        {!!flow?.length && (
+          <div className="mt-11 overflow-x-auto rounded-2xl border border-[#69AE44] bg-[#69AE44]/10 p-7 lg:overflow-visible">
+            <div className="flex w-max items-center gap-3 lg:w-full lg:flex-wrap lg:justify-center">
+              {flow.map((step, i) => (
+                <div key={step} className="flex items-center gap-3">
+                  <span
+                    className={`whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-semibold ${
+                      i === flow.length - 1
+                        ? "bg-[#69AE44] text-black"
+                        : "border border-white/10 bg-white/10 text-white/80"
+                    }`}
+                  >
+                    {step}
+                  </span>
+                  {i < flow.length - 1 && <span className="text-[#69AE44]">→</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

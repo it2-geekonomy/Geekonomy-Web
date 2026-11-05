@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import CTA from "./components/CTA";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import Industries from "./components/Industries";
-import WhenHire from "./components/Whenhire";
-import BrandIdentity from "./components/Brandidentity";
-import StrongBrand from "./components/Strongbrand";
-import BrandProcess from "./components/Brandprocess";
-import StandOut from "./components/Brandstandsout";
-import BrandServices from "./components/brandservice";
-import BrandStrategy from "./components/Strategybeforedesign";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
+import Hero from "@/components/Landingpage/Hero";
+import CTA from "@/components/Landingpage/CTA";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import FAQ from "@/components/Landingpage/FAQ";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import { heroContent } from "./const/Herosection";
+import { standOutContent } from "./const/Brandstandout";
+import { brandServicesContent } from "./const/brandservice";
+import { brandStrategyContent } from "./const/Strategybeforedesign";
+import { brandProcessContent } from "./const/Brandprocess";
+import { industriesContent } from "./const/Industries";
+import { strongBrandContent } from "./const/Strongbrand";
+import { brandIdentityContent } from "./const/Brandidentity";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { whenHireContent } from "./const/Whenhire";
+import { faqContent } from "./const/FAQ";
+import { ctaContent } from "./const/cta";
 
 const PUBLISHED_DATE = "2026-09-03T08:00:00.000Z";
 
@@ -51,22 +59,25 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <StandOut/> 
-      <BrandServices/> 
-      <BrandStrategy/>  
-      <BrandProcess/>  
-      <Industries/>
-      <StrongBrand/> 
-      <BrandIdentity/> 
-      <WhyGeekonomy/>
-      <CTA/>
-      <WhenHire/>
-      <FAQ />  
-      <LandingPageForm 
-      landingPageSlug="branding-company-in-bangalore" 
-      headline="Contact Our Branding Agency Today and Start Generating More Qualified Leads."/>
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248815.57510945472!2d77.45716262182738!3d12.988259658071335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1790749301576!5m2!1sen!2sin" />
+      <Hero content={heroContent} />
+      <ImageContent content={standOutContent} />
+      <CardSection content={brandServicesContent} />
+      <CTAButton text="Start Building Your Brand" />
+      <CardSection content={brandStrategyContent} />
+      <StepSection content={brandProcessContent} />
+      <CTAButton text="Start Building Your Brand" />
+      <CardSection content={industriesContent} />
+      <CardSection content={strongBrandContent} />
+      <CardSection content={brandIdentityContent} />
+      <ImageCardSection content={whyGeekonomyContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whenHireContent} />
+      <FAQ content={faqContent} />
+      <LandingPageForm
+        landingPageSlug="branding-company-in-bangalore"
+        headline="Contact Our Branding Agency Today and Start Generating More Qualified Leads."
+      />
+      <LandingPageMap location="bangalore" />
       </main>
   );
 }
