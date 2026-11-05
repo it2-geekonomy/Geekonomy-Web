@@ -42,3 +42,13 @@ export const WhatWeDoItems = [
     ]
   },
 ];
+
+export const whatWeDoContent = {
+  label: "what we do",
+  heading: "Digital Marketing Services Built Around Your Growth Goals",
+  intro: [
+    "There isn‘t a one size fits all approach with digital marketing and that particularly applies when selecting the best digital marketing company for your business.",
+    "We offer the right combinations of channels for your customer base, industry and growth targets so your data-led marketing budget is directed where it can make the biggest difference.",
+  ],
+  items: WhatWeDoItems,
+};
