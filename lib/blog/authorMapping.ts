@@ -176,6 +176,9 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "carmel-google-business-profile-visibility": "Rahul Dutta",
   "davis-ca-content-marketing-ideas": "Rahul Dutta",
   "high-intent-local-keywords-rock-hill": "Rahul Dutta",
+  "local-seo-tips-fort-walton-beach": "Rahul Dutta",
+  "palm-harbor-service-business-reviews": "Rahul Dutta",
+  "build-location-pages-murrieta": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -420,6 +423,9 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "carmel-google-business-profile-visibility": "November 4, 2026",
   "davis-ca-content-marketing-ideas": "November 4, 2026",
   "high-intent-local-keywords-rock-hill": "November 4, 2026",
+  "local-seo-tips-fort-walton-beach": "November 5, 2026",
+  "palm-harbor-service-business-reviews": "November 5, 2026",
+  "build-location-pages-murrieta": "November 5, 2026",
 };
 
 /**
