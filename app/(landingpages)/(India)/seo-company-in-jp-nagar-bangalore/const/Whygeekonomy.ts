@@ -51,3 +51,12 @@ export const WhyGeekonomyItems = [
     ]
   }
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy for SEO in JP Nagar?",
+  intro: [
+    "An SEO partner isn't looking for a cookie cutter solution but rather a tailored strategy that fits your business. Geekonomy merges technical SEO, content marketing, Local SEO, Conversion Optimization and AI & GEO considerations to craft a more comprehensive search campaign.",
+  ],
+  card: WhyGeekonomyItems,
+};

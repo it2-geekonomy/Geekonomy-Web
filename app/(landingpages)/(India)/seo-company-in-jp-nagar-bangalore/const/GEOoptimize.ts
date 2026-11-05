@@ -43,3 +43,16 @@ export const Items = [
     ]
   }
 ];
+
+export const geoOptimizeContent = {
+  label: "GEO Optimization",
+  heading: "AI Search and GEO Optimization for JP Nagar Businesses",
+  intro: [
+    "Search is on the move away from search engine results page (SERP). AI-driven search journeys can synthesize information, counter questions, make comparisons between businesses, and bring out information from hundreds of websites. This opens new ways for businesses who create easy to find, valuable, and trustworthy digital information.",
+    "Geekonomy blows AI SEO and GEO optimization front and center into the search profiles it is developing for individual businesses so that they can more easily communicate their expertise, services, products and brand.",
+  ],
+  card: Items,
+  bottom: [
+    "If you are looking to attract customers in JP Nagar and in then mixing old school search optimization with modern AI search techniques can be a good strategy.",
+  ],
+};
