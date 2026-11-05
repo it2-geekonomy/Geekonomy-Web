@@ -40,3 +40,13 @@ export const Lists = [
     desc: "Technology companies can create organic visibility with product and service pages, topical authority creation through technical content, solution-based content, comparison based content etc.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO for Different Businesses in JP Nagar",
+  intro: [
+    "The SEO approach needs to mirror how customers search in each industry. Even in local services, a solid map and location presence is critical, whereas an ecommerce brand may be better served by category and product optimization. Geekonomy formulates strategies based on search habits, competitive landscape, and conversion path specific to your business.",
+  ],
+  items: Lists,
+  columns: 4 as const,
+};

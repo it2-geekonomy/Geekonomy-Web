@@ -39,3 +39,15 @@ export const metrics = [
     desc: "Work together to attract worldwide customers from organic searches, paid Advertising, content and to convert more visitors. Apply for retail and e-commerce business.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "Digital Marketing for Businesses in Guwahati",
+  intro: [
+    "Each business requires different methods of winning new customers. A small practice might be looking for listed listings on Google Maps and searches by appointment, whereas a property business may need a mix of Search Engine Optimization, Pay-per-click and lead nurturing. We tailor digital marketing strategies based upon your sector, target market, competitors and growth objectives.",
+  ],
+  card: metrics,
+  bottom: [
+    "No matter if you are in a single location or covering the entire Guwahati and Assam area, it‘s about targeting the most relevant customers and searching for opportunities for your business.",
+  ],
+};

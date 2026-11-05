@@ -61,3 +61,17 @@ export const flow = [
   "Ads Performance",
   "Customer ROI"
 ];
+
+export const ourApproachContent = {
+  label: "Our Approach",
+  heading: "How We Measure Digital Marketing Performance",
+  intro: [
+    "Your digital marketing should be measurable. This will help to make sure that you are doing what is in line with your digital growth goals and applying marketing best practices. Instead of just looking at rankings, impressions or traffic we look at if your marketing is actually creating business in a meaningful way, and this is achieved through data.",
+    "Depending on your objective we can track digital growth.",
+  ],
+  steps,
+  flow,
+  bottom: [
+    "This knowledge allows us to identify what campaigns and channels are growing as well as highlight the areas where there is room for improvement.",
+  ],
+};

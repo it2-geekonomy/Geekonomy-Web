@@ -39,3 +39,15 @@ export const metrics = [
     desc: "Build authority; reach decision makers; generate qualified enquiries by search, content marketing, LinkedIn, paid campaigns and well-optimised landing pages.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "Digital Marketing for Different Types of Businesses",
+  intro: [
+    "Your marketing plan should show how your industry draws in customers and turns them into leads through well-planned digital efforts. We tailor SEO, paid promotion, content, social media and conversion planning to the way your customers research and purchase from your business.",
+  ],
+  card: metrics,
+  bottom: [
+    "Your approach should be guided by your target industry, audience, sales cycle, competition, and such business objectives that determine partnering with the best digital marketing agency not a cookie cutter marketing template.",
+  ],
+};

@@ -39,3 +39,17 @@ export const steps = [
   },
 ];
 
+export const searchOpportunityContent = {
+  label: "Competitor",
+  heading: "Find the Search Opportunities Your Competitors Are Missing",
+  intro: [
+    "It is not simply about focusing on a selection of keywords. When ranking in Guwahati, we consider: how users search? Which businesses currently rank for those searches, and how can we improve your online presence? and what areas have the potential to establish improved prominence?",
+  ],
+  card: steps.map(({ icon, title, desc }) => ({ icon, title, desc })),
+  cta: {
+    title: "Not sure where to start?",
+    description:
+      "Your Guwahati business deserves a marketing strategy built around its audience and goals. We combine SEO, Google Ads, social media, and lead generation to improve your online visibility, attract potential customers, and drive steady business growth.",
+    buttonText: "Get a Free Plan",
+  },
+};

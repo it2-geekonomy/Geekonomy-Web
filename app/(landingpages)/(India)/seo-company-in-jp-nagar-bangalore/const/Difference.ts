@@ -51,3 +51,12 @@ export const Items = [
     ]
   }
 ];
+
+export const differenceContent = {
+  label: "Difference",
+  heading: "What Makes Our SEO Approach Different?",
+  intro: [
+    "When all SEO disciplines can work towards a well defined business goal, you will find the most effective implementation. Geekonomy adopts a holistic approach that links technical SEO, content, Local SEO, Authority, conversion and AI/GEO into a concerted plan.",
+  ],
+  card: Items,
+};

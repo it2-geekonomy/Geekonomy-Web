@@ -4,7 +4,7 @@ import { Typography } from "@/components/ui/Typography";
 import { ServingNearbyProps } from "@/lib/constants/Landingpagetypes";
 
 export default function ServingNearby({ content }: Readonly<ServingNearbyProps>) {
-  const { label, heading, intro, image, imageAlt, areas, bottom } = content;
+  const { label, heading, intro, image, imageAlt, areas, subheading, bottom } = content;
 
   return (
     <section id="areas" className="flex w-full flex-col items-center bg-black py-6 lg:py-10">
@@ -59,9 +59,14 @@ export default function ServingNearby({ content }: Readonly<ServingNearbyProps>)
           ))}
         </div>
 
-        {!!bottom?.length && (
+        {(subheading || bottom?.length) && (
           <div className="flex w-full flex-col gap-4">
-            {bottom.map((paragraph, i) => (
+            {subheading && (
+              <Typography variant="h3" as="h3" className="text-white font-semibold">
+                {subheading}
+              </Typography>
+            )}
+            {bottom?.map((paragraph, i) => (
               <Typography key={i} variant="body-xl" className="leading-relaxed text-white/90">
                 {paragraph}
               </Typography>

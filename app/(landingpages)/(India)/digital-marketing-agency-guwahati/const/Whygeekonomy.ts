@@ -45,3 +45,12 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy for Digital Marketing in Guwahati?",
+  intro: [
+    "When selecting a digital marketing partner you‘re looking for more than an agency that does SEO, advertising or manages social media. You need a team who understands the inter-working of all those channels, and know how to translate marketing activity into real business results.",
+  ],
+  card: WhyGeekonomyItems,
+};

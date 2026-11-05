@@ -42,3 +42,13 @@ export const RightStrategyItems = [
     ]
   },
 ];
+
+export const rightStrategyContent = {
+  label: "Right Strategy",
+  heading: "A Digital Marketing Strategy Built for the Guwahati Market",
+  intro: [
+    "The way the keyword is used is also important because Guwahati is not just a plonked down place. Businesses will lure people differently throughout the city so a strategy would have to include local search trends, the competitiveness of the market, the businesses target needs and areas serviced.",
+    "We first analyze how your customers find your product or services within Guwahati. From there we find the searches, the locations and channels that provide the best opportunities for growth.",
+  ],
+  card: RightStrategyItems,
+};
