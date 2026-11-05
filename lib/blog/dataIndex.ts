@@ -186,8 +186,14 @@ import { oceanSpringsSeasonalMarketing } from "./data/oceanSpringsSeasonalMarket
 import { carmelGoogleBusinessProfileVisibility } from "./data/carmelGoogleBusinessProfileVisibility";
 import { davisCAContentMarketingIdeas } from "./data/davisCAContentMarketingIdeas";
 import { rockHillHighIntentLocalKeywords } from "./data/rockHillHighIntentLocalKeywords";
+import { localSEOTipsFortWaltonBeach } from "./data/localSEOTipsFortWaltonBeach";
+import { palmHarborServiceBusinessReviews } from "./data/palmHarborServiceBusinessReviews";
+import { buildLocationPagesMurrieta } from "./data/buildLocationPagesMurrieta";
 
 export const allBlogsData: BlogData[] = [
+  buildLocationPagesMurrieta,
+  palmHarborServiceBusinessReviews,
+  localSEOTipsFortWaltonBeach,
   rockHillHighIntentLocalKeywords,
   davisCAContentMarketingIdeas,
   carmelGoogleBusinessProfileVisibility,

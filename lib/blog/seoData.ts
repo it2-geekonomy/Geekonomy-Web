@@ -180,6 +180,9 @@ import { oceanSpringsSeasonalMarketingSEO } from "./data/oceanSpringsSeasonalMar
 import { carmelGoogleBusinessProfileVisibilitySEO } from "./data/carmelGoogleBusinessProfileVisibility";
 import { davisCAContentMarketingIdeasSEO } from "./data/davisCAContentMarketingIdeas";
 import { rockHillHighIntentLocalKeywordsSEO } from "./data/rockHillHighIntentLocalKeywords";
+import { localSEOTipsFortWaltonBeachSEO } from "./data/localSEOTipsFortWaltonBeach";
+import { palmHarborServiceBusinessReviewsSEO } from "./data/palmHarborServiceBusinessReviews";
+import { buildLocationPagesMurrietaSEO } from "./data/buildLocationPagesMurrieta";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -364,4 +367,7 @@ export const blogSEOData = {
   "blog/carmel-google-business-profile-visibility": carmelGoogleBusinessProfileVisibilitySEO,
   "blog/davis-ca-content-marketing-ideas": davisCAContentMarketingIdeasSEO,
   "blog/high-intent-local-keywords-rock-hill": rockHillHighIntentLocalKeywordsSEO,
+  "blog/local-seo-tips-fort-walton-beach": localSEOTipsFortWaltonBeachSEO,
+  "blog/palm-harbor-service-business-reviews": palmHarborServiceBusinessReviewsSEO,
+  "blog/build-location-pages-murrieta": buildLocationPagesMurrietaSEO,
 };
