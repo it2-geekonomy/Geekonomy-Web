@@ -43,3 +43,12 @@ export const Items = [
     ]
   },
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "SEO Services to Grow Your Search Visibility",
+  intro: [
+    "To increase the search visibility in Orange Beach, it will take more than a handful of local keywords. We blend the key ingredients of SEO that make your website easier to interpret for search engines while making it a resource for possible customers.",
+  ],
+  card: Items,
+};

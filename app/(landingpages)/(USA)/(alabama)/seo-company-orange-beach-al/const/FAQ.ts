@@ -24,3 +24,9 @@ export const faqs = [
     a: ["Search for an SEO partner that understands local search, offers a tailor-made strategy, emphasizes on finding potential customers rather than rankings and gives clearly measurable results. The top SEO company Orange Beach AL clients choose should offer Orange Beach AL SEO that matches their existing business objectives."]
   },
 ];
+
+export const faqContent = {
+  label: "ANSWERS",
+  heading: "Frequently Asked Questions",
+  faqs,
+};
