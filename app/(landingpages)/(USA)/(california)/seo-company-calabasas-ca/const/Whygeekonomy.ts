@@ -43,3 +43,12 @@ export const WhyGeekonomyItems = [
     ]
   }
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy as Calabasas SEO Company?",
+  intro: [
+    "Selecting an SEO Partner isn’t about picking an agency that can get your website high in the rankings. Your SEO should really be aligned with your business goals, your customer segments, your service portfolio and your competition. Geekonomy‘s approach is rooted in strategy and aimed at sustainable organic growth.",
+  ],
+  card: WhyGeekonomyItems,
+};

@@ -43,3 +43,12 @@ export const Items = [
     ]
   }
 ];
+
+export const seoMetricsContent = {
+  label: "SEO Metrics",
+  heading: "Measuring SEO Success",
+  intro: [
+    "Rather than relying on a single search engine ranking position for a keyword, meaningful business metrics and search visibility metrics should be used to gauge search engine optimization performance. Geekonomy uses a number of metrics to help determine that your campaign is increasing visibility and relevant potential customers.",
+  ],
+  card: Items,
+};

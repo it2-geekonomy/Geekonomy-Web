@@ -43,3 +43,15 @@ export const Items = [
     ]
   }
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "Our Calabasas SEO Services",
+  intro: [
+    "Geekonomy offers a full spectrum of SEO services to increase organic visibility, relevant visitors and the long-term development of your business. Our SEO services include local and on-site optimization, content, and authority improvements, in accordance with your desired business targets.",
+  ],
+  card: Items,
+  bottom: [
+    "As a **seo company calabasas CA**, we want to combine all of these services into a single A coordinated plan, not treat each seo task as separate.",
+  ],
+};
