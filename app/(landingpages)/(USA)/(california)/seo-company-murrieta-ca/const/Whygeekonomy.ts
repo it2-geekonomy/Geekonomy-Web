@@ -52,3 +52,12 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy as Your SEO Company in Murrieta?",
+  intro: [
+    "Selecting an SEO partner is also more than simply selecting someone who can push your keywords up the rankings. You need an approach that links your technical achievements, related content, local exposure and reputation with the objectives of your organization.",
+  ],
+  card: WhyGeekonomyItems,
+};
