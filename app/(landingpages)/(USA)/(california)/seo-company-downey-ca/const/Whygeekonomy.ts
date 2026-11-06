@@ -51,3 +51,12 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy For Downey SEO Company",
+  card: WhyGeekonomyItems,
+  bottom: [
+    "Need a **seo company downey ca?** Geekonomy is the right place for you. We work on creating a tailored plan to align search visibility with your overall business objectives.",
+  ],
+};

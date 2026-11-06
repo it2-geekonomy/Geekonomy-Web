@@ -41,3 +41,14 @@ export const Lists = [
     desc: "Multi Location: For a multi location business, the solution should be scalable and present each market with useful content, without the risk of every city or country having duplicate or thin pages. Our method provides localization while supporting your business objectives.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO for Different Downey Businesses",
+  intro: [],
+  items: Lists,
+  columns: 3 as const,
+  bottom: [
+    "From a local service business to an ever-growing organization, Geekonomy can tailor an SEO campaign to your unique market. From a **downey seo company** to a local search, whether you’re a local-to-only search engine relying on free advertising, Geekonomy can get your website linked to the right searches and lead them to a conversion.",
+  ],
+};

@@ -67,3 +67,9 @@ export const Items = [
     ]
   },
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "Our Downey SEO Services",
+  card: Items,
+};
