@@ -31,3 +31,13 @@ export const Lists = [
     desc: "Make it easy for customers to find your business online via local search, services search, Google Maps, and other high-intent discovery sources.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO for Yorba Linda's Local Industries",
+  intro: [
+    "Various markets capture your customer through various searching behaviors. Geekonomy creates SEO campaigns based on your services, market, competition, and searches that can bring significant business to you in Yorba Linda.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+};

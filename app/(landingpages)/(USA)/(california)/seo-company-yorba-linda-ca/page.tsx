@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
-import SeoStrategy from "./components/Seostrategy";
-import SeoServices from "./components/Seoservices";
-import OurProcess from "./components/Ourprocess";
-import ServingNearby from "./components/Nearby";
-import QualifiedCustomers from "./components/Qualified";
-import LocalSeoService from "./components/Localseo";
+import Hero from "@/components/Landingpage/Hero";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import ServingNearby from "@/components/Landingpage/NearbyArea";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { heroContent } from "./const/Herosection";
+import { nearbyContent } from "./const/Nearby";
+import { seoServicesContent } from "./const/Seoservices";
+import { localSeoContent } from "./const/Localseo";
+import { ourProcessContent } from "./const/Ourprocess";
+import { seoStrategyContent } from "./const/Seostrategy";
+import { industriesContent } from "./const/Industries";
+import { qualifiedCustomersContent } from "./const/Qualified";
+import { ctaContent } from "./const/cta";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-15T08:00:00.000Z";
 
@@ -51,17 +59,20 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <ServingNearby/>
-      <SeoServices/>
-      <LocalSeoService/>
-      <OurProcess/>
-      <SeoStrategy/>
-      <Industries/>
-      <QualifiedCustomers/>
-      <CTA/>
-      <WhyGeekonomy/>
-      <FAQ />  
+      <Hero content={heroContent} />
+      <ServingNearby content={nearbyContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <CardSection content={seoServicesContent} />
+      <ImageCardSection content={localSeoContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <StepSection content={ourProcessContent} />
+      <CardSection content={seoStrategyContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <ImageCardSection content={industriesContent} />
+      <CardSection content={qualifiedCustomersContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-yorba-linda-ca" />
       <LandingPageMap location="yorba_linda" />
       <LocationList region="california" HidecurrentSlug="seo-company-yorba-linda-ca"/>
