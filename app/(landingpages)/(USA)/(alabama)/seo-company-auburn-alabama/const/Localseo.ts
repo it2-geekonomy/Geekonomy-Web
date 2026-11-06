@@ -21,3 +21,16 @@ export const Items = [
     ]
   },
 ];
+
+export const localSeoContent = {
+  label: "Local SEO Services",
+  heading: "Local SEO That Helps Auburn Businesses Get Found",
+  intro: [
+    "If your business provides services to Auburn, being found in local search can help grow your business. Customers might be searching while they are in the Downtown Auburn, Auburn University, or North or South Auburn areas, or along Opelika Road, South College Street, and other heavily traveled commercial roads. Geekonomy implements local SEO plans that help your business appear in these queries.",
+  ],
+  bottom: [
+    "Our method also looks beyond the city of Auburn, looking at the greater Auburn–Opelika market, which allows businesses to reach customers who could easily commute between these two places for products and services.",
+  ],
+  items: Items,
+  columns: 3 as const,
+};

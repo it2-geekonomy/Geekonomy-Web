@@ -25,3 +25,13 @@ export const Lists = [
     desc: "For Auburn customers, retailers and online businesses can improve their search visibility for specific items, product categories, and purchasing needs. Geekonomy helps organize product and category information so search engines understand what your business offers and consumers can easily find the information they need.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO Strategies for Different Auburn Industries",
+  intro: [
+    "There is a wide variety of companies in Auburn, so the way a customer searches varies depending on the exact service they are looking for. A place a resident would search might be a repairer, a nearby contractor or small service to a student searching for a restaurant or local business, and the search that business owner is comparing a variety of professional services before finally calling. Geekonomy customize the SEO solutions based on these different targeted searches and industry goals.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+};

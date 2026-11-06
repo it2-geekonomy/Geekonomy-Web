@@ -1,20 +1,29 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import SeoServices from "./components/Seoservices";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import ServingNearby from "./components/Nearby";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
-import Ranking from "./components/Ranking";
-import SeoResults from "./components/Seoresults";
-import OurApproach from "./components/Approach";
-import LocalSeo from "./components/Localseo";
-import WhySeoMatter from "./components/Whyseomatter";
-import BusinessServices from "./components/BusinessService";
-import RelyOn from "./components/Relyon";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
+import Hero from "@/components/Landingpage/Hero";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import TextSection from "@/components/Landingpage/Textsection";
+import ServingNearby from "@/components/Landingpage/NearbyArea";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
+import { heroContent } from "./const/Herosection";
+import { businessServicesContent } from "./const/BusinessService";
+import { whySeoMatterContent } from "./const/Whyseomatter";
+import { seoServicesContent } from "./const/Seoservices";
+import { localSeoContent } from "./const/Localseo";
+import { industriesContent } from "./const/Industries";
+import { seoResultsContent } from "./const/Seoresults";
+import { approachContent } from "./const/Approach";
+import { rankingContent } from "./const/Ranking";
+import { relyOnContent } from "./const/Relyon";
+import { nearbyContent } from "./const/Nearby";
+import { ctaContent } from "./const/cta";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-10-09T08:00:00.000Z";
 
@@ -53,22 +62,25 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <BusinessServices/>
-      <WhySeoMatter/>
-      <SeoServices /> 
-      <LocalSeo/>  
-      <Industries/> 
-      <SeoResults/>
-      <OurApproach/>
-      <Ranking /> 
-      <RelyOn/>
-      <ServingNearby/> 
-      <CTA/>
-      <WhyGeekonomy/> 
-      <FAQ />  
+      <Hero content={heroContent} />
+      <CardSection content={businessServicesContent} />
+      <CardSection content={whySeoMatterContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <CardSection content={seoServicesContent} />
+      <ImageCardSection content={localSeoContent} />
+      <ImageCardSection content={industriesContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <CardSection content={seoResultsContent} />
+      <StepSection content={approachContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <CardSection content={rankingContent} />
+      <TextSection content={relyOnContent} />
+      <ServingNearby content={nearbyContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-auburn-alabama" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107525.85542031478!2d-85.57675757740058!3d32.62795027068503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888cf12fb39bf883%3A0xcb25919235d39358!2sAuburn%2C%20AL%2C%20USA!5e0!3m2!1sen!2sin!4v1791541800576!5m2!1sen!2sin" />
+      <LandingPageMap location="auburn" />
       </main>
   );
 }
