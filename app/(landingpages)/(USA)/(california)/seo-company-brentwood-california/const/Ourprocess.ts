@@ -63,3 +63,12 @@ export const steps = [
     ]
   },
 ];
+
+export const ourProcessContent = {
+  label: "Our Process",
+  heading: "Our SEO Process",
+  intro: [
+    "Every SEO strategy should revolve around a measurable, repeatable system for research, optimization, content, local search, and continual measurement. Geekonomy implements a framework to identify opportunities, prioritize improvements, and build a more robust organic search footprint for organizations targeting Brentwood shoppers.",
+  ],
+  steps,
+};

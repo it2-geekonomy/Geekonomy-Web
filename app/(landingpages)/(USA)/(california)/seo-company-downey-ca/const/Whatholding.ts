@@ -29,3 +29,12 @@ export const Items = [
     ]
   },
 ];
+
+export const whatHoldingContent = {
+  label: "What Is Holding",
+  heading: "Find Out What Is Holding Your Website Back",
+  card: Items,
+  bottom: [
+    "Prepared to learn how to get your website to the next level? Grab your free seo strategy from one of our how to improve seo company downey ca and begin the path to organic success.",
+  ],
+};

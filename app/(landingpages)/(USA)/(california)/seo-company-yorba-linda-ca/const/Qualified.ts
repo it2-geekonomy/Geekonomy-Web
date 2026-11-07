@@ -35,3 +35,12 @@ export const Items = [
     ]
   },
 ];
+
+export const qualifiedCustomersContent = {
+  label: "Qualified Customers",
+  heading: "From Yorba Linda Searches to Qualified Customers",
+  intro: [
+    "Being discovered in search is just the beginning. Your site must convert that exposure into action. Geekonomy brings together search engine optimization, local search, content marketing and conversion optimization to ensure a flowing process from the initial search to the point of purchase.",
+  ],
+  card: Items,
+};

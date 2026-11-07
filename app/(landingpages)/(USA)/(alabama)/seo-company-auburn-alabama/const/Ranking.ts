@@ -51,3 +51,12 @@ export const Items = [
     ]
   },
 ];
+
+export const rankingContent = {
+  label: "Ranking",
+  heading: "Compete With Businesses Already Ranking in Auburn",
+  intro: [
+    "Auburn consumers have a wealth of choices when browsing the web for local products and services. In order for the locally targeting minded consumer to select them, business owners competing for is visibility must offer much more than a simple website or series of geographically targeted terms.",
+  ],
+  card: Items,
+};

@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import BuiltAround from "./components/Builtaround";
-import SeoServices from "./components/Seoservices";
-import OurProcess from "./components/Ourprocess";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import WhereSearch from "./components/Wheresearch";
+import Hero from "@/components/Landingpage/Hero";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { heroContent } from "./const/Herosection";
+import { builtAroundContent } from "./const/Builtaround";
+import { seoServicesContent } from "./const/Seoservices";
+import { whereSearchContent } from "./const/Wheresearch";
+import { industriesContent } from "./const/Industries";
+import { ourProcessContent } from "./const/Ourprocess";
+import { ctaContent } from "./const/cta";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-04T08:00:00.000Z";
 
@@ -49,15 +57,17 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <BuiltAround/> 
-      <SeoServices /> 
-      <WhereSearch/>
-      <Industries/>
-      <OurProcess/>
-      <CTA/>
-      <WhyGeekonomy/>
-      <FAQ />  
+      <Hero content={heroContent} />
+      <ImageContent content={builtAroundContent} />
+      <CardSection content={seoServicesContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <ImageCardSection content={whereSearchContent} />
+      <ImageCardSection content={industriesContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <StepSection content={ourProcessContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-davis-ca" />
       <LandingPageMap location="davis" />
       <LocationList region="california" HidecurrentSlug="seo-company-davis-ca"/>

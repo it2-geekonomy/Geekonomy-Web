@@ -44,3 +44,15 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Businesses Choose Geekonomy for SEO in Yorba Linda",
+  intro: [
+    "Selecting the best SEO partner for your business is selecting the right team to help you achieve your business goals and objectives, while understanding your industry and how best to convert search visibility into tangible growth. Geekonomy offers a cohesive package that combines technical search engine optimization, local search marketing, content and conversion optimization.",
+  ],
+  card: WhyGeekonomyItems,
+  bottom: [
+    "Experienced SEO Company Yorba Linda California that we are, Geekonomy strives to relate search visibility to business results.",
+  ],
+};

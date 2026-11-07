@@ -43,3 +43,12 @@ export const steps = [
     ]
   },
 ];
+
+export const ourProcessContent = {
+  label: "Our Process",
+  heading: "How Our Murrieta SEO Strategy Works",
+  intro: [
+    "SEO in the right way is all about understanding the market, competitors, customers, and your site and then deciding which approaches to take. We take a holistic approach to SEO, bringing together technology, search intent, content, local and authority into one cohesive strategy.",
+  ],
+  steps,
+};

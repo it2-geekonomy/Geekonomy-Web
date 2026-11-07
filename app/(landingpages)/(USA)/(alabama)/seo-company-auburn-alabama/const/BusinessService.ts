@@ -26,3 +26,13 @@ export const Items = [
     ]
   },
 ];
+
+export const businessServicesContent = {
+  label: "Business Services",
+  heading: "SEO Services Built for Auburn Businesses",
+  intro: [
+    "In Auburn, local markets are highly varied; from eateries and retailers in the city center to home services, professional services, physicians and hospitals, and firms engaged in business to the Auburn–Opelika regional economy. SEO must appeal to the way real consumers search in these communities.",
+    "Geekonomy builds a customized search engine optimization campaign around your industry, service area, competitors, and current customers. We discover search opportunities and increase your site’s rank for targeted Auburn keyword phrases. Then we enhance key landing pages so visitors know exactly what to do when they find you.",
+  ],
+  card: Items,
+};

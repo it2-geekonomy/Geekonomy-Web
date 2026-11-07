@@ -17,3 +17,17 @@ export const Lists = [
   },
 
 ];
+
+export const whereSearchContent = {
+  label: "Searching",
+  heading: "Get Found Where Davis Customers Are Searching",
+  intro: [
+    "Your customers might find your business in Google maps, local searches, service pages or in the knowledge panels, even before contacting you. Consequently, you should target several search experiences and not just a single ranking.",
+    "From a Davis SEO Company, Geekonomy helps you reach the right searches at varying steps in the buying cycle. We enhance your web site and local presence to help search engines more clearly comprehend your services, local area, experience, and where your potential customers are.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+  bottom: [
+    "Davis SEO easy is part of the mission: to just enable your business to be discovered easily when any of the Davis residents are searching for whatever product and/or service you have to offer.",
+  ],
+};

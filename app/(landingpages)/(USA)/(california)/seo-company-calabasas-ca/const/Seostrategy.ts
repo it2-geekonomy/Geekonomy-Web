@@ -35,3 +35,15 @@ export const Items = [
     ]
   }
 ];
+
+export const seoStrategyContent = {
+  label: "SEO Strategy",
+  heading: "SEO Strategies Built for Calabasas Businesses",
+  intro: [
+    "A good local SEO Strategy is built on how local customers find your business. Geekonomy builds campaigns built on local relevance, search intent, quality of your site and the services you want to promote. This creates a better link between your site and the searches that matter!",
+  ],
+  card: Items,
+  bottom: [
+    "All of which in the end produces a harmonized SEO plan that links your clients behavior and requirements with the seo companies in calabasas California services.",
+  ],
+};

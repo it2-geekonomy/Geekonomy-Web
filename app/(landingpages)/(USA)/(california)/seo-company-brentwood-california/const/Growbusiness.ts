@@ -35,3 +35,16 @@ export const Items = [
     ]
   },
 ];
+
+export const growBusinessContent = {
+  label: "Grow Business",
+  heading: "Grow Your Business With a Brentwood SEO Company",
+  intro: [
+    "When prospects require a product or service, search engines are frequently the first destination they visit for information. A powerful organic presence can put your business in front of very motivated consumers. At the exact moment they are seeking information, evaluating the options and ready to make a decision. Geekonomy can help your business develop that visibility with SEO tactics built around important keywords and tangible business objectives.",
+    "You are not just a **Brentwood seo company**. It is not simply about generating more website traffic. We want to draw in the right types of visitors and convert them into calling your Brentwood business, submitting a form, asking for a quote, booking a meeting or buying something.",
+  ],
+  card: Items,
+  bottom: [
+    "It doesn‘t matter if you own a business with an existing website, or if you are starting your online presence from zero, our solution will give a better base for your long term organic search growth.",
+  ],
+};

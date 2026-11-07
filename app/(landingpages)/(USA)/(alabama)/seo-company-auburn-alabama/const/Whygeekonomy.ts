@@ -35,3 +35,12 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy for Your SEO Strategy?",
+  intro: [
+    "Auburn businesses require an SEO campaign that incorporates a local search engine optimization strategy and a comprehensive understanding of other factors, such as competitive analysis, content development, and conversion rate optimization. Geekonomy does this by integrating both local search engine optimization and the overall optimization of your website:",
+  ],
+  card: WhyGeekonomyItems,
+};

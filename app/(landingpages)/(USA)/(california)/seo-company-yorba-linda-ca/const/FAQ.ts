@@ -28,3 +28,9 @@ export const faqs = [
     a: ["Yes. We will unlock the SEO basics for an empty competitor website and build a strategy for a small new business around appropriate services, local search intent, content, authority, and long-term organic development."]
   },
 ];
+
+export const faqContent = {
+  label: "ANSWERS",
+  heading: "Frequently Asked Questions",
+  faqs,
+};

@@ -44,3 +44,13 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy for SEO in Orange Beach?",
+  intro: [
+    "Selecting an SEO partner isn‘t just about ranking higher on keywords. It requires a plan that connects well with your business, your buyers and the Orange Beach market.",
+    "Our approach is built around:",
+  ],
+  card: WhyGeekonomyItems,
+};

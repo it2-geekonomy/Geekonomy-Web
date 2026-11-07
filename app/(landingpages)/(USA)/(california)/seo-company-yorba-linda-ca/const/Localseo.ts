@@ -20,3 +20,13 @@ export const Items = [
     desc: "Static business data, local citation signals, high quality content, reviews and trusted links can all help boost your local visibility. Our approach is to use these signals to build a sustainable presence in search, rather than a quick hit.",
   },
 ]
+
+export const localSeoContent = {
+  label: "Local SEO Services",
+  heading: "Build a Stronger Presence in Yorba Linda Search Results",
+  intro: [
+    "Local Search rankings are not achieved by merely placing a city name into your website. Geekonomy develops a Yorba Linda SEO plan aimed at how local clients search, compare competing companies, and contact who they find.",
+  ],
+  items: Items,
+  columns: 4 as const,
+};

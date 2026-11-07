@@ -67,3 +67,13 @@ export const Items = [
     ]
   },
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "Our Brentwood SEO Services",
+  intro: [
+    "Successful SEO is more than just optimizing a handful of keywords on your website. Search visibility is determined by an integrated approach to technical performance, local relevance, content, how your site is organized, your authority and the experience you give visitors. Geekonomy integrates the above to deliver an integrated SEO approach based on your business goals and who your customers are.",
+    "As a **Brentwood seo company** we offer a comprehensive range of SEO services to assist businesses to increase organic exposure, deliver targeted visitors and secure more search engine opportunities.",
+  ],
+  card: Items,
+};

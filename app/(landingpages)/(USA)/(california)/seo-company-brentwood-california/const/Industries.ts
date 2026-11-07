@@ -45,4 +45,15 @@ export const Lists = [
     title: "SEO Tailored to Your Industry",
     desc: "How you approach Search Engine Optimization is an extension of the above. It should be in the same language your customers use when they search and buy so for the most part, this is how we approach it. Geekonomy devises entirely personalized strategies instead of blitzing every business with the same thing. That’s the basis for a much better quality of organic engagement in Brentwood.",
   },
-]; 
+];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "Industries We Serve in Brentwood",
+  intro: [
+    "Different industries bring in consumers with different searches. A homeowner looking for a local contractor will follow a different path than a person looking for a professional service, doctor‘s, restaurant or B2B firm. Geekonomy tailors SEO strategies to each company‘s audience, product/service, competition, and search intent.",
+    "A **Brentwood seo company**, we assist companies establish search presence using strategies adapted to their industry and clients.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+};
