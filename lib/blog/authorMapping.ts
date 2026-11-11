@@ -179,6 +179,13 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "local-seo-tips-fort-walton-beach": "Rahul Dutta",
   "palm-harbor-service-business-reviews": "Rahul Dutta",
   "build-location-pages-murrieta": "Rahul Dutta",
+  "frederick-local-keyword-research": "Rahul Dutta",
+  "coral-springs-local-search-conversion": "Rahul Dutta",
+  "waco-customer-search-questions": "Rahul Dutta",
+  "league-city-google-maps-visibility": "Rahul Dutta",
+  "orange-beach-seo-content-ideas": "Rahul Dutta",
+  "columbia-missouri-local-content": "Rahul Dutta",
+  "st-joseph-local-seo-mistakes": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -426,6 +433,13 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "local-seo-tips-fort-walton-beach": "November 5, 2026",
   "palm-harbor-service-business-reviews": "November 5, 2026",
   "build-location-pages-murrieta": "November 5, 2026",
+  "frederick-local-keyword-research": "November 6, 2026",
+  "coral-springs-local-search-conversion": "November 6, 2026",
+  "waco-customer-search-questions": "November 11, 2026",
+  "league-city-google-maps-visibility": "November 11, 2026",
+  "orange-beach-seo-content-ideas": "November 11, 2026",
+  "columbia-missouri-local-content": "November 11, 2026",
+  "st-joseph-local-seo-mistakes": "November 11, 2026",
 };
 
 /**
