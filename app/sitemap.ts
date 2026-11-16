@@ -1,7 +1,11 @@
 import { MetadataRoute } from 'next'
 import { allBlogsData } from '@/lib/blog'
+import { getBlogFileLastModified } from '@/lib/blog/blogDatesServer'
 import { caseStudies } from '@/lib/case-studies/data'
-import landingPageSlugs from '@/lib/landingpage/landingpageslug.json'
+import landingPagesBySlug from '@/lib/landingpage/landingpageslug.json'
+import { generateLandingPageIndex } from '@/scripts/generate-landing-slugs.mjs'
+import { getDateInfoServer } from '@/lib/blog/blogDatesServer'
+import { dateToISO } from '@/lib/blog/authorMapping'
 
 function slugify(value: string): string {
   return value
@@ -15,7 +19,6 @@ function slugify(value: string): string {
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://thegeekonomy.com'
   const currentDate = new Date('2026-02-19T03:57:01+00:00').toISOString()
-  const landingPageDate = new Date('2026-08-24T00:00:00+00:00').toISOString()
 
   // Static pages with priorities
   const staticPages: MetadataRoute.Sitemap = [
@@ -88,14 +91,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Landing pages with priority 0.8
-  const landingPages: MetadataRoute.Sitemap = landingPageSlugs.flatMap(slug => [
-    {
-      url: `${baseUrl}/${slug}`,
-      lastModified: landingPageDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }
-  ])
+  const pageIndex: Record<string, { lastModified: string }> = process.env.NODE_ENV === 'development'
+    ? generateLandingPageIndex(process.cwd())
+    : landingPagesBySlug
+  const landingPages: MetadataRoute.Sitemap = Object.entries(pageIndex).map(([slug, page]) => ({
+    url: `${baseUrl}/${slug}`,
+    lastModified: page.lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }))
 
   // Case studies - using first category for canonical URL
   const caseStudyPages: MetadataRoute.Sitemap = caseStudies
@@ -116,9 +120,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog posts
   const blogPages: MetadataRoute.Sitemap = allBlogsData.map(blog => {
+    const dateInfo = getDateInfoServer(blog.slug)
+    const lastModified = dateInfo.updatedDate
+      ? dateToISO(dateInfo.updatedDate)
+      : dateToISO(dateInfo.publishedDate)
+
     return {
       url: `${baseUrl}/blog/${blog.slug}`,
-      lastModified: currentDate,
+      lastModified: getBlogFileLastModified(blog.slug),
       changeFrequency: 'daily' as const,
       priority: 0.8,
     }

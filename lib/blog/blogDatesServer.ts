@@ -1,5 +1,5 @@
 /**
- * Server-only: may use fs for blog file mtime as a published-date fallback. Import only from server components.
+ * Server-only: reads blog file modification times for the sitemap and as a published-date fallback.
  * "Updated On : " is shown only when the slug has an entry in BLOG_UPDATED_DATES (never from file mtime).
  */
 import fs from "fs";
@@ -38,30 +38,26 @@ function getSlugToFilePath(): Record<string, string> {
   return slugToFilePath;
 }
 
+export function getBlogFileLastModified(slug: string): Date | undefined {
+  const relativePath = getSlugToFilePath()[slug];
+  if (!relativePath) return undefined;
+
+  try {
+    return fs.statSync(path.join(process.cwd(), relativePath)).mtime;
+  } catch {
+    return undefined;
+  }
+}
+
 /**
  * Returns date info. Call from server only.
  * - "Updated On : " only if BLOG_UPDATED_DATES[slug] is set.
  * - Otherwise "Published On : " using BLOG_PUBLISHED_DATES, else file mtime, else today.
  */
 export function getDateInfoServer(slug: string): DateInfo {
-  const map = getSlugToFilePath();
-  const relativePath = map[slug];
   const publishedOverride = BLOG_PUBLISHED_DATES[slug];
   const updatedOverride = BLOG_UPDATED_DATES[slug];
-
-  let fileMtime: Date | null = null;
-  if (relativePath) {
-    try {
-      const fullPath = path.join(process.cwd(), relativePath);
-      const stat = fs.statSync(fullPath);
-      fileMtime = stat.mtime;
-    } catch {
-      // file missing or not readable
-    }
-  }
-
-  const formattedMtime = fileMtime ? formatDate(fileMtime) : null;
-  const publishedDate = publishedOverride ?? formattedMtime ?? formatDate(new Date());
+  const publishedDate = publishedOverride ?? formatDate(getBlogFileLastModified(slug) ?? new Date());
 
   if (updatedOverride) {
     return {

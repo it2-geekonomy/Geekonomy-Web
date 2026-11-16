@@ -1,20 +1,14 @@
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const ROOT_DIR = path.join(__dirname, "..");
-const LANDING_DIR = path.join(ROOT_DIR, "app", "(landingpages)");
-const OUT_FILE = path.join(ROOT_DIR, "lib", "landingpage", "landingpageslug.json");
+import { pathToFileURL, fileURLToPath } from "url";
+import { execFileSync } from "node:child_process";
 
 /**
- * Recursively scans app/(landingpages) to find all folders containing page.tsx.
- * The folder name is the URL slug.
+ * Finds landing-page folders, including pages nested in route groups.
  */
-function getLandingSlugs(dir) {
-  const slugs = [];
-  if (!fs.existsSync(dir)) return slugs;
+function getLandingPageFiles(dir, rootDir) {
+  const pages = [];
+  if (!fs.existsSync(dir)) return pages;
 
   const entries = fs.readdirSync(dir, { withFileTypes: true });
 
@@ -27,25 +21,74 @@ function getLandingSlugs(dir) {
         continue;
       }
 
-      // If this directory contains a page.tsx, its name is a landing page slug
-      const hasPage = fs.existsSync(path.join(fullPath, "page.tsx"));
-      if (hasPage) {
-        slugs.push(entry.name);
+      const pageFile = path.join(fullPath, "page.tsx");
+      if (fs.existsSync(pageFile)) {
+        const relativePath = path.relative(rootDir, fullPath).split(path.sep).join("/");
+        pages.push([entry.name, relativePath]);
       }
 
       // Continue searching subdirectories (e.g. route groups like (USA), (texas), etc.)
-      slugs.push(...getLandingSlugs(fullPath));
+      pages.push(...getLandingPageFiles(fullPath, rootDir));
     }
   }
 
-  return slugs;
+  return pages;
+}
+
+function git(rootDir, args) {
+  try {
+    return execFileSync("git", ["--no-optional-locks", ...args], {
+      cwd: rootDir, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"],
+    });
+  } catch {
+    return "";
+  }
+}
+
+// A deleted file's parent directory records the removal time.
+function changeTime(rootDir, file) {
+  let current = path.join(rootDir, file);
+  while (current !== rootDir) {
+    const stat = fs.lstatSync(current, { throwIfNoEntry: false });
+    if (stat) return stat.mtime.getTime();
+    current = path.dirname(current);
+  }
+  return fs.statSync(rootDir).mtime.getTime();
+}
+
+export function generateLandingPageIndex(rootDir) {
+  const outFile = path.join(rootDir, "lib", "landingpage", "landingpageslug.json");
+  const pages = getLandingPageFiles(path.join(rootDir, "app", "(landingpages)"), rootDir);
+  pages.sort(([firstSlug], [secondSlug]) => firstSlug.localeCompare(secondSlug));
+  const existing = fs.existsSync(outFile) ? fs.readFileSync(outFile, "utf8") : "{}";
+  const previous = JSON.parse(existing);
+  const status = git(rootDir, ["status", "--porcelain=v1", "-z", "--no-renames", "--untracked-files=all", "--", "app/(landingpages)"]);
+  const changedFiles = status.split("\0").filter(Boolean).map(entry => entry.slice(3));
+  const shallow = git(rootDir, ["rev-parse", "--is-shallow-repository"]).trim() === "true";
+  // A shallow boundary has no available parent to establish which files changed.
+  const historyArgs = ["log", "-1", "--no-show-signature", "--format=%cI"];
+  if (shallow) historyArgs.push("--min-parents=1");
+  const pagesBySlug = Object.create(null);
+  for (const [slug, directory] of pages) {
+    const edits = changedFiles.filter(file => file.startsWith(directory + "/"));
+    let lastModified;
+    if (edits.length) {
+      lastModified = new Date(Math.max(...edits.map(file => changeTime(rootDir, file)))).toISOString();
+    } else {
+      const date = git(rootDir, [...historyArgs, "--", directory]).trim();
+      lastModified = date ? new Date(date).toISOString() : previous[slug]?.lastModified;
+    }
+    lastModified ??= fs.statSync(path.join(rootDir, directory, "page.tsx")).mtime.toISOString();
+    pagesBySlug[slug] = { directory, lastModified };
+  }
+  const json = JSON.stringify(pagesBySlug, null, 2) + "\n";
+  if (json !== existing) fs.writeFileSync(outFile, json);
+  return pagesBySlug;
 }
 
 export function generateLandingSlugs() {
-  const slugs = Array.from(new Set(getLandingSlugs(LANDING_DIR))).sort();
-  fs.writeFileSync(OUT_FILE, JSON.stringify(slugs, null, 2) + "\n", "utf-8");
-  return slugs;
+  const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+  return Object.keys(generateLandingPageIndex(rootDir));
 }
 
-// Execute when run directly
-generateLandingSlugs();
+if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) generateLandingSlugs();
