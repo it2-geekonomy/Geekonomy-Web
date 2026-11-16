@@ -196,8 +196,12 @@ import { leagueCityGoogleMapsVisibility } from "./data/leagueCityGoogleMapsVisib
 import { orangeBeachSEOContentIdeas } from "./data/orangeBeachSEOContentIdeas";
 import { columbiaMissouriLocalContent } from "./data/columbiaMissouriLocalContent";
 import { stJosephLocalSEOMistakes } from "./data/stJosephLocalSEOMistakes";
+import { yorbaLindaLocalSearchVisibility } from "./data/yorbaLindaLocalSearchVisibility";
+import { chapelHillContentStrategy } from "./data/chapelHillContentStrategy";
 
 export const allBlogsData: BlogData[] = [
+  chapelHillContentStrategy,
+  yorbaLindaLocalSearchVisibility,
   stJosephLocalSEOMistakes,
   columbiaMissouriLocalContent,
   orangeBeachSEOContentIdeas,

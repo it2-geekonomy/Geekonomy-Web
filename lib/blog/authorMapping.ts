@@ -186,6 +186,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "orange-beach-seo-content-ideas": "Rahul Dutta",
   "columbia-missouri-local-content": "Rahul Dutta",
   "st-joseph-local-seo-mistakes": "Rahul Dutta",
+  "yorba-linda-local-search-visibility": "Rahul Dutta",
+  "chapel-hill-content-strategy": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -440,6 +442,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "orange-beach-seo-content-ideas": "November 11, 2026",
   "columbia-missouri-local-content": "November 11, 2026",
   "st-joseph-local-seo-mistakes": "November 11, 2026",
+  "yorba-linda-local-search-visibility": "November 16, 2026",
+  "chapel-hill-content-strategy": "November 16, 2026",
 };
 
 /**
