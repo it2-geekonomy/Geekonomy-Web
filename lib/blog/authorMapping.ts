@@ -186,6 +186,8 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "orange-beach-seo-content-ideas": "Rahul Dutta",
   "columbia-missouri-local-content": "Rahul Dutta",
   "st-joseph-local-seo-mistakes": "Rahul Dutta",
+  "yorba-linda-local-search-visibility": "Rahul Dutta",
+  "chapel-hill-content-strategy": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -415,6 +417,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
   "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
   "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "July 1 , 2026",
+  "website-redesign-cost-bangalore-smes-startups": "July 8, 2026",
   "pool-company-lead-generation-san-diego": "October 29, 2026",
   "carlsbad-local-seo-checklist": "October 29, 2026",
   "charlotte-ppc-lower-google-ads-costs": "October 29, 2026",
@@ -440,6 +443,8 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "orange-beach-seo-content-ideas": "November 11, 2026",
   "columbia-missouri-local-content": "November 11, 2026",
   "st-joseph-local-seo-mistakes": "November 11, 2026",
+  "yorba-linda-local-search-visibility": "November 16, 2026",
+  "chapel-hill-content-strategy": "November 16, 2026",
 };
 
 /**
@@ -470,25 +475,28 @@ export function getUpdatedDate(slug: string): string | null {
  */
 export function dateToISO(dateString: string): string {
   try {
-    // Parse date string like "March 3, 2026"
-    const date = new Date(dateString);
+    const trimmed = dateString.trim();
+    // Parse in UTC so local machine timezone offsets (e.g. IST +05:30) do not roll calendar dates backward to the previous day
+    const hasTimezone = /UTC|GMT|[+-]\d{2}/i.test(trimmed);
+    const dateToParse = hasTimezone ? trimmed : `${trimmed} UTC`;
+    const date = new Date(dateToParse);
     if (!isNaN(date.getTime())) {
       return date.toISOString();
     }
     // If parsing fails, try alternative format
-    const parts = dateString.match(/(\w+)\s+(\d+),\s+(\d+)/);
+    const parts = trimmed.match(/(\w+)\s+(\d+),\s+(\d+)/);
     if (parts) {
       const [, month, day, year] = parts;
-      const dateObj = new Date(`${month} ${day}, ${year}`);
+      const dateObj = new Date(`${month} ${day}, ${year} UTC`);
       if (!isNaN(dateObj.getTime())) {
         return dateObj.toISOString();
       }
     }
     // Fallback to default
-    return new Date("2026-03-03").toISOString();
+    return new Date("2026-03-03T00:00:00.000Z").toISOString();
   } catch {
     // If all parsing fails, return default ISO date
-    return new Date("2026-03-03").toISOString();
+    return new Date("2026-03-03T00:00:00.000Z").toISOString();
   }
 }
 

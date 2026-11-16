@@ -190,6 +190,8 @@ import { leagueCityGoogleMapsVisibilitySEO } from "./data/leagueCityGoogleMapsVi
 import { orangeBeachSEOContentIdeasSEO } from "./data/orangeBeachSEOContentIdeas";
 import { columbiaMissouriLocalContentSEO } from "./data/columbiaMissouriLocalContent";
 import { stJosephLocalSEOMistakesSEO } from "./data/stJosephLocalSEOMistakes";
+import { yorbaLindaLocalSearchVisibilitySEO } from "./data/yorbaLindaLocalSearchVisibility";
+import { chapelHillContentStrategySEO } from "./data/chapelHillContentStrategy";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -384,4 +386,6 @@ export const blogSEOData = {
   "blog/orange-beach-seo-content-ideas": orangeBeachSEOContentIdeasSEO,
   "blog/columbia-missouri-local-content": columbiaMissouriLocalContentSEO,
   "blog/st-joseph-local-seo-mistakes": stJosephLocalSEOMistakesSEO,
+  "blog/yorba-linda-local-search-visibility": yorbaLindaLocalSearchVisibilitySEO,
+  "blog/chapel-hill-content-strategy": chapelHillContentStrategySEO,
 };
