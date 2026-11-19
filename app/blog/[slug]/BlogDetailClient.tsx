@@ -8,21 +8,18 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { BlogCTAModal } from "@/components/Blogs/BlogCTAModal";
 import {
   getAuthorForBlog,
-  getDateInfo,
   getAuthorSlug,
-  type BlogDateDisplayLabel,
+  type BlogDates,
 } from "@/lib/blog/authorMapping";
 
 const BLOG_PAGE_STORAGE_KEY = "geekonomy_blog_current_page";
 
-export type DateInfoProp = { date: string; label: BlogDateDisplayLabel };
-
 interface BlogDetailClientProps {
   blogSlug: string;
-  dateInfo?: DateInfoProp;
+  dateInfo: BlogDates;
 }
 
-export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: BlogDetailClientProps) {
+export default function BlogDetailClient({ blogSlug, dateInfo }: BlogDetailClientProps) {
   const blog = BLOGS.find((b) => b.slug === blogSlug);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [returnPage, setReturnPage] = useState<number | null>(null);
@@ -66,7 +63,6 @@ export default function BlogDetailClient({ blogSlug, dateInfo: dateInfoProp }: B
   }
 
   const authorInfo = getAuthorForBlog(blogSlug);
-  const dateInfo = dateInfoProp ?? getDateInfo(blogSlug);
 
   // Add "About the author" section as the last content item
   const blogContentWithAuthor = [...blog.sections];

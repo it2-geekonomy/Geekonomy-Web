@@ -7,8 +7,7 @@ import {
   getDynamicSEODataFromHeaders,
 } from "@/seoData";
 import BlogsPageLoading from "@/app/blog/BlogsPageLoading";
-import { getAuthorForBlog, dateToISO } from "@/lib/blog/authorMapping";
-import { getDateInfoServer } from "@/lib/blog/blogDatesServer";
+import { getAuthorForBlog, getBlogDates } from "@/lib/blog/authorMapping";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getSchemaBaseUrl, orgId } from "@/lib/schema/constants";
 import { getBaseUrlFromHeaders } from "@/seoData";
@@ -33,11 +32,7 @@ export async function generateMetadata({
   const seoKey = `blog/${slug}`;
   const seoData = await getDynamicSEODataFromHeaders(seoKey);
   const authorInfo = getAuthorForBlog(slug);
-  const dateInfo = getDateInfoServer(slug);
-  const articlePublishedTime = dateToISO(dateInfo.publishedDate);
-  const articleModifiedTime = dateInfo.updatedDate
-    ? dateToISO(dateInfo.updatedDate)
-    : articlePublishedTime;
+  const { published, updated } = getBlogDates(slug);
 
   return {
     title: seoData.title,
@@ -56,8 +51,8 @@ export async function generateMetadata({
       siteName: "Geekonomy",
       type: "article",
       images: seoData.image ? [{ url: seoData.image }] : [],
-      publishedTime: articlePublishedTime || undefined,
-      modifiedTime: articleModifiedTime || undefined,
+      publishedTime: published?.iso,
+      modifiedTime: updated?.iso,
       authors: authorInfo ? [authorInfo.name] : undefined,
     },
     twitter: {
@@ -71,9 +66,14 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  return allBlogsData.map((blog) => ({
-    slug: blog.slug,
-  }));
+  return allBlogsData.map(({ slug }) => {
+    if (!getBlogDates(slug).published) {
+      throw new Error(
+        `Missing or invalid publication date for /blog/${slug}. Set its original publication date in BLOG_PUBLISHED_DATES.`
+      );
+    }
+    return { slug };
+  });
 }
 
 export default async function BlogDetailPage({
@@ -91,9 +91,7 @@ export default async function BlogDetailPage({
   const seoKey = `blog/${slug}`;
   const seoData = await getDynamicSEODataFromHeaders(seoKey);
   const authorInfo = getAuthorForBlog(slug);
-  const dateInfo = getDateInfoServer(slug);
-  const publishedDateISO = dateToISO(dateInfo.publishedDate);
-  const updatedDateISO = dateInfo.updatedDate ? dateToISO(dateInfo.updatedDate) : publishedDateISO;
+  const dates = getBlogDates(slug);
   const blogUrl = getBlogPostCanonicalUrl(slug);
   const schemaBase = getSchemaBaseUrl();
   const originForAssets = new URL(blogUrl).origin;
@@ -123,8 +121,9 @@ export default async function BlogDetailPage({
     headline: blog.heading,
     description: seoData.description,
     image: seoData.image ? [seoData.image] : [],
-    datePublished: publishedDateISO,
-    dateModified: updatedDateISO,
+    mainEntityOfPage: blogUrl,
+    datePublished: dates.published?.iso,
+    dateModified: dates.updated?.iso,
     inLanguage: "en",
     isPartOf: { "@id": `${getSchemaBaseUrl()}/blog#blog` },
     author: {
@@ -146,7 +145,7 @@ export default async function BlogDetailPage({
   return (
     <>
       <JsonLd data={articleSchema} />
-      <BlogDetailClient blogSlug={slug} dateInfo={{ date: dateInfo.date, label: dateInfo.label }} />
+      <BlogDetailClient blogSlug={slug} dateInfo={dates} />
     </>
   );
 }

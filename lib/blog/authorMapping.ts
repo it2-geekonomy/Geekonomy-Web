@@ -188,6 +188,7 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "st-joseph-local-seo-mistakes": "Rahul Dutta",
   "yorba-linda-local-search-visibility": "Rahul Dutta",
   "chapel-hill-content-strategy": "Rahul Dutta",
+  "website-redesign-cost-bangalore-smes-startups": "Rahul Dutta",
   // Aaron Roshan's blogs (Development, PPC, UX/UI related)
 
   "benefits-of-bespoke-website-development": "Aaron Roshan",
@@ -249,7 +250,7 @@ export function getAuthorForBlog(slug: string): AuthorInfo {
   return AUTHOR_INFO[authorName];
 }
 
-/** Publish date per blog (shown as "Published On" unless BLOG_UPDATED_DATES has this slug). */
+/** Original editorial publication date for each blog post. */
 export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "10-proven-seo-strategies-to-boost-seo-organic-traffic": "March 12, 2026",
   "360-international-seo-service-complete-guide": "March 11, 2026",
@@ -416,7 +417,7 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "website-design-mistakes-indian-businesses-must-avoid": "April 6, 2026",
   "top-marketing-mistakes-bangalore-startups": "June 26, 2026",
   "why-bangalore-businesses-need-generative-engine-optimization": "June 29, 2026",
-  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "July 1 , 2026",
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "July 1, 2026",
   "website-redesign-cost-bangalore-smes-startups": "July 8, 2026",
   "pool-company-lead-generation-san-diego": "October 29, 2026",
   "carlsbad-local-seo-checklist": "October 29, 2026",
@@ -447,75 +448,42 @@ export const BLOG_PUBLISHED_DATES: Record<string, string> = {
   "chapel-hill-content-strategy": "November 16, 2026",
 };
 
-/**
- * Optional "last updated" display date per slug. Only these posts show "Updated On : ".
- * File mtime is not used — it changes from saves, git, CI, and reloads without real edits.
- */
+/** Record a date here when the article receives a substantive update. */
 export const BLOG_UPDATED_DATES: Record<string, string> = {
-  "semantic-seo-agency-how-to-choose-the-best-agency": "July 16, 2026 UTC",
-  "how-wordpress-seo-services-improve-traffic": "July 17, 2026 UTC",
+  "semantic-seo-agency-how-to-choose-the-best-agency": "July 16, 2026",
+  "how-wordpress-seo-services-improve-traffic": "July 17, 2026",
 };
 
-/**
- * Get published date for a blog slug (manual only; server uses file mtime when needed).
- */
-export function getPublishedDate(slug: string): string | null {
-  return BLOG_PUBLISHED_DATES[slug] || null;
+interface BlogDate {
+  label: string;
+  iso: string;
 }
 
-/**
- * Get updated date for a blog slug (manual only; must be listed in BLOG_UPDATED_DATES).
- */
-export function getUpdatedDate(slug: string): string | null {
-  return BLOG_UPDATED_DATES[slug] ?? null;
+export interface BlogDates {
+  published?: BlogDate;
+  updated?: BlogDate;
 }
 
-/**
- * Convert date string (e.g., "March 3, 2026") to ISO format for structured data
- */
-export function dateToISO(dateString: string): string {
-  try {
-    const trimmed = dateString.trim();
-    // Parse in UTC so local machine timezone offsets (e.g. IST +05:30) do not roll calendar dates backward to the previous day
-    const hasTimezone = /UTC|GMT|[+-]\d{2}/i.test(trimmed);
-    const dateToParse = hasTimezone ? trimmed : `${trimmed} UTC`;
-    const date = new Date(dateToParse);
-    if (!isNaN(date.getTime())) {
-      return date.toISOString();
-    }
-    // If parsing fails, try alternative format
-    const parts = trimmed.match(/(\w+)\s+(\d+),\s+(\d+)/);
-    if (parts) {
-      const [, month, day, year] = parts;
-      const dateObj = new Date(`${month} ${day}, ${year} UTC`);
-      if (!isNaN(dateObj.getTime())) {
-        return dateObj.toISOString();
-      }
-    }
-    // Fallback to default
-    return new Date("2026-03-03T00:00:00.000Z").toISOString();
-  } catch {
-    // If all parsing fails, return default ISO date
-    return new Date("2026-03-03T00:00:00.000Z").toISOString();
+const editorialDateFormat = new Intl.DateTimeFormat("en-US", {
+  dateStyle: "long",
+  timeZone: "UTC",
+});
+
+function parseEditorialDate(label?: string): BlogDate | undefined {
+  if (!label) return undefined;
+  const date = new Date(`${label} UTC`);
+  if (Number.isNaN(date.getTime()) || editorialDateFormat.format(date) !== label) {
+    return undefined;
   }
+  // Editorial records have day precision. Preserve that across time zones.
+  return { label, iso: date.toISOString().slice(0, 10) };
 }
 
-/**
- * Get published date in ISO format for structured data
- */
-export function getPublishedDateISO(slug: string): string | null {
-  const date = getPublishedDate(slug);
-  if (!date) return null;
-  return dateToISO(date);
-}
-
-/**
- * Get updated date in ISO format for structured data
- */
-export function getUpdatedDateISO(slug: string): string | null {
-  const date = getUpdatedDate(slug);
-  if (!date) return null;
-  return dateToISO(date);
+export function getBlogDates(slug: string): BlogDates {
+  return {
+    published: parseEditorialDate(BLOG_PUBLISHED_DATES[slug]),
+    updated: parseEditorialDate(BLOG_UPDATED_DATES[slug]),
+  };
 }
 
 /**
@@ -547,25 +515,4 @@ export function getBlogsByAuthor(authorName: AuthorName): string[] {
   return Object.entries(BLOG_AUTHOR_MAP)
     .filter(([_, author]) => author === authorName)
     .map(([slug]) => slug);
-}
-
-/** UI label shown next to the blog date in sticky header */
-export type BlogDateDisplayLabel = "Published On : " | "Updated On : ";
-
-/**
- * Get the display date info (published or updated)
- */
-export function getDateInfo(slug: string): { date: string; label: BlogDateDisplayLabel } | null {
-  const updatedDate = getUpdatedDate(slug);
-  const publishedDate = getPublishedDate(slug);
-
-  if (updatedDate) {
-    return { date: updatedDate.replace(" UTC", ""), label: "Updated On : " };
-  }
-
-  if (publishedDate) {
-    return { date: publishedDate.replace(" UTC", ""), label: "Published On : " };
-  }
-
-  return { date: "March 3, 2026", label: "Published On : " };
 }
