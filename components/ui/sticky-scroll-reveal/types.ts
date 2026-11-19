@@ -1,4 +1,4 @@
-import type { AuthorInfo, BlogDateDisplayLabel } from "@/lib/blog/authorMapping";
+import type { AuthorInfo, BlogDates } from "@/lib/blog/authorMapping";
 
 export interface StickyScrollContent {
   title: string;
@@ -7,16 +7,11 @@ export interface StickyScrollContent {
   table?: React.ReactNode;
 }
 
-export interface DateInfo {
-  date: string;
-  label: BlogDateDisplayLabel;
-}
-
 export interface StickyScrollProps {
   content: StickyScrollContent[];
   contentClassName?: string;
   authorInfo?: AuthorInfo;
-  dateInfo?: DateInfo | null;
+  dateInfo?: BlogDates;
 }
 
-export type { AuthorInfo };
+export type { AuthorInfo, BlogDates };

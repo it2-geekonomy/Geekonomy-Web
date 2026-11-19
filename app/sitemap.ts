@@ -1,11 +1,9 @@
 import { MetadataRoute } from 'next'
 import { allBlogsData } from '@/lib/blog'
-import { getBlogFileLastModified } from '@/lib/blog/blogDatesServer'
+import { getBlogDates } from '@/lib/blog/authorMapping'
 import { caseStudies } from '@/lib/case-studies/data'
 import landingPagesBySlug from '@/lib/landingpage/landingpageslug.json'
 import { generateLandingPageIndex } from '@/scripts/generate-landing-slugs.mjs'
-import { getDateInfoServer } from '@/lib/blog/blogDatesServer'
-import { dateToISO } from '@/lib/blog/authorMapping'
 
 function slugify(value: string): string {
   return value
@@ -120,14 +118,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog posts
   const blogPages: MetadataRoute.Sitemap = allBlogsData.map(blog => {
-    const dateInfo = getDateInfoServer(blog.slug)
-    const lastModified = dateInfo.updatedDate
-      ? dateToISO(dateInfo.updatedDate)
-      : dateToISO(dateInfo.publishedDate)
+    const { published, updated } = getBlogDates(blog.slug)
 
     return {
       url: `${baseUrl}/blog/${blog.slug}`,
-      lastModified: getBlogFileLastModified(blog.slug),
+      lastModified: updated?.iso ?? published?.iso,
       changeFrequency: 'daily' as const,
       priority: 0.8,
     }
