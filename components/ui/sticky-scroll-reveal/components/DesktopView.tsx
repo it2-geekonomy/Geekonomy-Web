@@ -3,7 +3,8 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { StickyScrollContent, AuthorInfo, DateInfo } from "../types";
+import type { StickyScrollContent, AuthorInfo, BlogDates } from "../types";
+import { BlogBylineDates } from "./BlogBylineDates";
 import { stripHeadingTags } from "../utils";
 import { getAuthorSlug } from "@/lib/blog/authorMapping";
 
@@ -20,7 +21,7 @@ interface DesktopViewProps {
   contentClassName?: string;
   useSemanticHeadings?: boolean;
   authorInfo?: AuthorInfo;
-  dateInfo?: DateInfo | null;
+  dateInfo?: BlogDates;
 }
 
 export const DesktopView = ({
@@ -153,11 +154,7 @@ export const DesktopView = ({
                           {authorInfo.role}
                         </span>
                       </div>
-                      {dateInfo && (
-                        <span className="text-white text-xs md:text-sm mt-1">
-                          {dateInfo.label} {dateInfo.date}
-                        </span>
-                      )}
+                      {dateInfo && <BlogBylineDates {...dateInfo} />}
                     </div>
                   </div>
                 </div>

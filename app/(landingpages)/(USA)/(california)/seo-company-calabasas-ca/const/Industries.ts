@@ -25,3 +25,16 @@ export const Lists = [
     desc: "B2B (Business to Business) businesses can often have much longer customer journeys, more complex search queries, as well as need evidence and in-depth content and education. It will be possible to optimize for service pages, industry content, educational content and focus on keywords relevant to find in-journey decision makers.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "Industries We Help With SEO",
+  intro: [
+    "Different industries have different customers, competitors, searches and conversion goals. On Geekonomy, we develop SEO strategies based on the business type, services and demographics rather than using the same strategy for all clients.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+  bottom: [
+    "No matter if you are running a local service business or a multi-market customer business, Geekonomy will craft an SEO strategy tailored to your goals and customer types.",
+  ],
+};

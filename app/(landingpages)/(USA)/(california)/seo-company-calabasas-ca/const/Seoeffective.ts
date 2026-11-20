@@ -43,3 +43,12 @@ export const Items = [
     ]
   }
 ];
+
+export const seoEffectiveContent = {
+  label: "SEO Effective",
+  heading: "What Makes a Calabasas SEO Campaign Effective?",
+  intro: [
+    "Search engine optimization is not just about putting keywords on the website pages. Search engines want definite indicators of what the business does, who it targets, and how the content meets their needs. Geekonomy brings together various components of SEO into a comprehensive approach to SEO services for businesses.",
+  ],
+  card: Items,
+};

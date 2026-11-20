@@ -30,3 +30,13 @@ export const Lists = [
     desc: "This is when we search for business with the most relevant service and location searches, which help potential clients find your business when they are seeking your area of expertise in Orange Beach.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO for Different Orange Beach Businesses",
+  intro: [
+    "Each industry in Orange Beach has different search behavior. Your Orange Beach SEO approach would adapt to the various products, services, and customers you seek. We develop campaigns in accordance with the sorts of searches most relevant to your Orange Beach venture and local community.",
+  ],
+  items: Lists,
+  columns: 4 as const,
+};

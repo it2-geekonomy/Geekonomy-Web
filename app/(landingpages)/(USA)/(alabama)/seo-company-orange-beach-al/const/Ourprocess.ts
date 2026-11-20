@@ -42,3 +42,12 @@ export const steps = [
     ]
   },
 ];
+
+export const ourProcessContent = {
+  label: "SEO Approach",
+  heading: "A Data-Driven SEO Approach Focused on Business Growth",
+  intro: [
+    "A good SEO campaign begins with an insight into your business and ends with it having evolved as a result of constant search improvements. Geekonomy has a predefined process that ensures each phase is laser-focused on tangible potential.",
+  ],
+  steps,
+};

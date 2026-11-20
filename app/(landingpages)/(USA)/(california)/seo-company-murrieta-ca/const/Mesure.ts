@@ -59,3 +59,12 @@ export const Items = [
     ]
   },
 ];
+
+export const measureContent = {
+  label: "SEO Strategy",
+  heading: "How We Measure SEO Success",
+  intro: [
+    "Think Beyond Search PositionOur assessment of your search engine optimization program goes well beyond where your site ranks in the search engines. We determine if your increased visibility is delivering the targeted viewers you want, and providing new opportunities for your business.",
+  ],
+  card: Items,
+};

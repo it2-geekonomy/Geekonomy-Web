@@ -2,11 +2,12 @@ import { useMemo } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { StickyScrollContent, AuthorInfo, DateInfo } from "../types";
+import { StickyScrollContent, AuthorInfo, BlogDates } from "../types";
 import { NAV_HEIGHT, OPACITY_TRANSITION } from "../constants";
 import { getImageHeight, calculateContentPadding, stripHeadingTags } from "../utils";
 import { useSectionVisibility } from "../hooks";
 import { getAuthorSlug, AuthorName } from "@/lib/blog/authorMapping";
+import { BlogBylineDates } from "./BlogBylineDates";
 
 const SECTION_TITLE_STYLE: React.CSSProperties = {
   color: "#fff",
@@ -26,7 +27,7 @@ interface MobileViewProps {
   contentRef: React.RefObject<HTMLDivElement | null>;
   useSemanticHeadings?: boolean;
   authorInfo?: AuthorInfo;
-  dateInfo?: DateInfo | null;
+  dateInfo?: BlogDates;
 }
 
 export const MobileView = ({
@@ -176,11 +177,7 @@ export const MobileView = ({
                                   {authorInfo.role}
                                 </span>
                               </div>
-                      {dateInfo && (
-                        <span style={{ color: "white", fontSize: "0.75rem", marginTop: "0.25rem" }}>
-                          {dateInfo.label} {dateInfo.date}
-                        </span>
-                      )}
+                      {dateInfo && <BlogBylineDates {...dateInfo} />}
                     </div>
                   </div>
                 </motion.div>

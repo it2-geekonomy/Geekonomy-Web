@@ -186,8 +186,32 @@ import { oceanSpringsSeasonalMarketing } from "./data/oceanSpringsSeasonalMarket
 import { carmelGoogleBusinessProfileVisibility } from "./data/carmelGoogleBusinessProfileVisibility";
 import { davisCAContentMarketingIdeas } from "./data/davisCAContentMarketingIdeas";
 import { rockHillHighIntentLocalKeywords } from "./data/rockHillHighIntentLocalKeywords";
+import { localSEOTipsFortWaltonBeach } from "./data/localSEOTipsFortWaltonBeach";
+import { palmHarborServiceBusinessReviews } from "./data/palmHarborServiceBusinessReviews";
+import { buildLocationPagesMurrieta } from "./data/buildLocationPagesMurrieta";
+import { frederickLocalKeywordResearch } from "./data/frederickLocalKeywordResearch";
+import { coralSpringsLocalSearchConversionRates } from "./data/coralSpringsLocalSearchConversionRates";
+import { wacoCustomerSearchQuestions } from "./data/wacoCustomerSearchQuestions";
+import { leagueCityGoogleMapsVisibility } from "./data/leagueCityGoogleMapsVisibility";
+import { orangeBeachSEOContentIdeas } from "./data/orangeBeachSEOContentIdeas";
+import { columbiaMissouriLocalContent } from "./data/columbiaMissouriLocalContent";
+import { stJosephLocalSEOMistakes } from "./data/stJosephLocalSEOMistakes";
+import { yorbaLindaLocalSearchVisibility } from "./data/yorbaLindaLocalSearchVisibility";
+import { chapelHillContentStrategy } from "./data/chapelHillContentStrategy";
 
 export const allBlogsData: BlogData[] = [
+  chapelHillContentStrategy,
+  yorbaLindaLocalSearchVisibility,
+  stJosephLocalSEOMistakes,
+  columbiaMissouriLocalContent,
+  orangeBeachSEOContentIdeas,
+  leagueCityGoogleMapsVisibility,
+  wacoCustomerSearchQuestions,
+  coralSpringsLocalSearchConversionRates,
+  frederickLocalKeywordResearch,
+  buildLocationPagesMurrieta,
+  palmHarborServiceBusinessReviews,
+  localSEOTipsFortWaltonBeach,
   rockHillHighIntentLocalKeywords,
   davisCAContentMarketingIdeas,
   carmelGoogleBusinessProfileVisibility,

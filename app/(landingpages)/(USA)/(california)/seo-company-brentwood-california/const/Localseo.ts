@@ -30,3 +30,14 @@ export const Items = [
     desc: "The effectiveness of local SEO is maximized when all aspects of your digital footprint reinforce each other. Whether it is your website, your Google Business Profile, targeted localized content or your business information - Geekonomy integrates them all into a cohesive Brentwood seo company campaign designed to enhance your reach and to bring you quality local leads.",
   },
 ];
+
+export const localSeoContent = {
+  label: "Local SEO Services",
+  heading: "Local SEO for Brentwood, California Businesses",
+  intro: [
+    "Local Search Optimization Optimizing for Local Search For companies that provide services to residents of Brentwood, appearing in Local Search results will be a key element of developing your visibility online. Most consumers will turn to Google to find options, review businesses, access information and compare companies when making a decision on who to buy from.",
+    "Local Search Optimization As your local search **seo company Brentwood CA** businesses turn to, Geekonomy hones the search engine optimization strategy that will draw your website, business listings, your content, and your presence in local search results aligned with what your customers need.",
+  ],
+  items: Items,
+  columns: 3 as const,
+};

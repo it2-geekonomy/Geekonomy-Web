@@ -27,3 +27,13 @@ export const Items = [
     ]
   }
 ];
+
+export const whyNeedSeoContent = {
+  label: "Why Need SEO Services",
+  heading: "Why Businesses in Calabasas Need a Strong SEO Strategy",
+  intro: [
+    "Consumers use search engines more than ever before to find, compare, learn about, and reach out to local companies especially when they need to make a purchase decision. A solid organic foundation means your business can get in front of these potential customers at critical moments.",
+    "Partnering with a seasoned **seo company calabasas**, can guide your business to an approach based on local search intent. This involves great optimization of your crucial service pages, increasing your location-specific relevance, enhancing your site usability, and publishing content that gives answers for what your future clients are already asking.",
+  ],
+  card: Items,
+};

@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import Hero from "./components/Herosection";
-import BuiltAround from "./components/Builtaround";
-import SeoServices from "./components/Seoservices";
-import OurProcess from "./components/Ourprocess";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
-import { LandingPageMap } from "@/components/landingpagemap/Landingpagemap";
-import LocalSeoService from "./components/Localseo";
-import Matters from "./components/Matters";
+import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
+import Hero from "@/components/Landingpage/Hero";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
+import { heroContent } from "./const/Herosection";
+import { builtAroundContent } from "./const/Builtaround";
+import { localSeoContent } from "./const/Localseo";
+import { seoServicesContent } from "./const/Seoservices";
+import { industriesContent } from "./const/Industries";
+import { mattersContent } from "./const/Matters";
+import { ourProcessContent } from "./const/Ourprocess";
+import { ctaContent } from "./const/cta";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-11T08:00:00.000Z";
 
@@ -49,18 +57,19 @@ export default function Home() {
         }}
       />
 
-      <Hero /> 
-      <BuiltAround/> 
-      <LocalSeoService/>
-      <SeoServices /> 
-      <Industries/>
-      <Matters/>
-      <OurProcess/>
-      <CTA/>
-      <WhyGeekonomy/>
-      <FAQ />  
+      <Hero content={heroContent} />
+      <ImageContent content={builtAroundContent} />
+      <CardSection content={localSeoContent} />
+      <CardSection content={seoServicesContent} />
+      <ImageCardSection content={industriesContent} />
+      <ImageCardSection content={mattersContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <StepSection content={ourProcessContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-orange-beach-al" />
-      <LandingPageMap mapSrc= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55118.1291212418!2d-87.62523862545203!3d30.297390257171003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a0653ba3f0f09%3A0xea3bcac5eb6a8dbb!2sOrange%20Beach%2C%20AL%2C%20USA!5e0!3m2!1sen!2sin!4v1789099045008!5m2!1sen!2sin" />
+      <LandingPageMap location="orange_beach" />
       </main>
   );
 }

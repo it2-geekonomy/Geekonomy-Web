@@ -1,6 +1,5 @@
 /**
  * Generates lib/blog/slugToFilePath.json by scanning blog data files and extracting slug.
- * Run before build (prebuild) so server can resolve slug → file path for mtime.
  */
 import fs from "fs";
 import path from "path";

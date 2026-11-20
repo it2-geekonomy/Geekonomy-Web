@@ -36,3 +36,9 @@ export const faqs = [
     ]
   }
 ];
+
+export const faqContent = {
+  label: "ANSWERS",
+  heading: "Frequently Asked Questions",
+  faqs,
+};

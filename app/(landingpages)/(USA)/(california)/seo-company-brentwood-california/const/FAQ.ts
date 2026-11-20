@@ -40,3 +40,9 @@ export const faqs = [
     a: ["Geekonomy brings all aspects of technical SEO, local search optimization, content, keyword research, and conversions together into a tailored solution. For those seeking an seo company Brentwood CA businesses can partner with for a systematic SEO campaign, we can evaluate your existing search presence and recommend opportunities aligned to your objectives."]
   },
 ];
+
+export const faqContent = {
+  label: "ANSWERS",
+  heading: "Frequently Asked Questions",
+  faqs,
+};

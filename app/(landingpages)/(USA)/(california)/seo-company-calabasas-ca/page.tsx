@@ -1,18 +1,25 @@
 import type { Metadata } from "next";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
-import SeoServices from "./components/Seoservices";
-import Hero from "./components/Herosection";
-import SeoStrategy from "./components/Seostrategy";
-import WhyNeedSeo from "./components/Whyneedseo";
-import OurProcess from "./components/Ourprocess";
-import SeoMetrics from "./components/Seometrics";
-import SeoEffective from "./components/Seoeffective";
+import Hero from "@/components/Landingpage/Hero";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import StepSection from "@/components/Landingpage/Stepcardlayout";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { heroContent } from "./const/Herosection";
+import { whyNeedSeoContent } from "./const/Whyneedseo";
+import { seoServicesContent } from "./const/Seoservices";
+import { ourProcessContent } from "./const/Ourprocess";
+import { seoStrategyContent } from "./const/Seostrategy";
+import { industriesContent } from "./const/Industries";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { seoEffectiveContent } from "./const/Seoeffective";
+import { ctaContent } from "./const/cta";
+import { seoMetricsContent } from "./const/Seometrics";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-29T08:00:00.000Z";
 
@@ -51,17 +58,19 @@ export default function Home() {
         }}
       />
 
-      <Hero />
-      <WhyNeedSeo/> 
-      <SeoServices/>
-      <OurProcess/>
-      <SeoStrategy/> 
-      <Industries/>
-      <WhyGeekonomy/>
-      <SeoEffective/>
-      <CTA/>
-      <SeoMetrics/>
-      <FAQ /> 
+      <Hero content={heroContent} />
+      <CardSection content={whyNeedSeoContent} />
+      <CardSection content={seoServicesContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <StepSection content={ourProcessContent} />
+      <CardSection content={seoStrategyContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <ImageCardSection content={industriesContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <CardSection content={seoEffectiveContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={seoMetricsContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-calabasas-ca" />
       <LandingPageMap location="calabasas" />
       <LocationList region="california" HidecurrentSlug="seo-company-calabasas-ca"/>

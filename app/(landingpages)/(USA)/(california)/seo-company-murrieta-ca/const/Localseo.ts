@@ -21,3 +21,15 @@ export const Items = [
     ]
   },
 ];
+
+export const localSeoContent = {
+  label: "Local SEO Matters",
+  heading: "Why Local SEO Matters in Murrieta",
+  intro: [
+    "A local search optimization strategy is necessary because if consumers are looking for a local business or service, the majority will turn to Google to identify competitors, read reviews, view locations, and determine who to call.",
+    "A robust local SEO approach will ensure your business shows up when potential customers are searching, in your area, for services or products you provide. However, this includes more than just referring to your office location “Murrieta” on a web page. Your location relevance is established through your website, Google Business Profile, local content, citations, reviews, and uniform name, address, and phone number list.",
+    "Our Murrieta SEO firm methodology is centered around linking your business to high-intent local searches and developing a strong link from search results to your website, telephone calls, directions, or inquiries.",
+  ],
+  items: Items,
+  columns: 3 as const,
+};

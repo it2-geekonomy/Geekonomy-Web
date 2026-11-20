@@ -67,3 +67,12 @@ export const Items = [
     ]
   },
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "SEO Services for Yorba Linda Businesses",
+  intro: [
+    "Your SEO should be about more than just page views. At Geekonomy, we enable businesses in Yorba Linda to achieve higher search rankings, target high-buying-visibility customers, and convert organic traffic into real opportunities.",
+  ],
+  card: Items,
+};

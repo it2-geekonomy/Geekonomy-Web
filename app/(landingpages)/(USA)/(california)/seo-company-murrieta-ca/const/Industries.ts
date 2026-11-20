@@ -26,3 +26,13 @@ export const Lists = [
     desc: "Restaurants, malls, salons, auto businesses, specialty retail and business to business enterprises, other retail shops etc., can benefit greatly through our Search engine Optimization strategies to reach the local consumer seeking the desired product and local services. We attribute our internet marketing services efforts with local optimization context and relevant website information to address the local search results and own conversions.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO Strategies for Different Murrieta Businesses",
+  intro: [
+    "The various industries bring various search journeys. For a local service provider, it may rely on Maps and “near me” searchings, but for a professional service or ecommerce business, it has to have a wider content and commercial searchings.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+};

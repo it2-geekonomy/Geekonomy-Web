@@ -1,17 +1,25 @@
 import type { Metadata } from "next";
-import Industries from "./components/Industries";
-import CTA from "./components/CTA";
-import WhyGeekonomy from "./components/Whygeekonomy";
-import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
-import SeoServices from "./components/Seoservices";
-import Hero from "./components/Herosection";
-import SeoStrategy from "./components/Seostrategy";
-import GrowBusiness from "./components/Growbusiness";
-import LocalSearch from "./components/Localsearch";
-import WhatHolding from "./components/Whatholding";
+import Hero from "@/components/Landingpage/Hero";
+import ImageContent from "@/components/Landingpage/Imagecontent";
+import CardSection from "@/components/Landingpage/Iconcardlayout";
+import TextSection from "@/components/Landingpage/Textsection";
+import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
+import CTA from "@/components/Landingpage/CTA";
+import CTAButton from "@/components/Landingpage/CTAbutton";
+import FAQ from "@/components/Landingpage/FAQ";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { heroContent } from "./const/Herosection";
+import { growBusinessContent } from "./const/Growbusiness";
+import { seoServicesContent } from "./const/Seoservices";
+import { localSearchContent } from "./const/Localsearch";
+import { seoStrategyContent } from "./const/Seostrategy";
+import { industriesContent } from "./const/Industries";
+import { whyGeekonomyContent } from "./const/Whygeekonomy";
+import { ctaContent } from "./const/cta";
+import { whatHoldingContent } from "./const/Whatholding";
+import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-23T08:00:00.000Z";
 
@@ -50,16 +58,18 @@ export default function Home() {
         }}
       />
 
-      <Hero />
-      <GrowBusiness/> 
-      <SeoServices/>
-      <LocalSearch/>
-      <SeoStrategy/> 
-      <Industries/>
-      <WhyGeekonomy/>
-      <CTA/>
-      <WhatHolding/> 
-      <FAQ /> 
+      <Hero content={heroContent} />
+      <ImageContent content={growBusinessContent} />
+      <CardSection content={seoServicesContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <TextSection content={localSearchContent} />
+      <CardSection content={seoStrategyContent} />
+      <CTAButton text="Get Your Free SEO Strategy" />
+      <ImageCardSection content={industriesContent} />
+      <CardSection content={whyGeekonomyContent} />
+      <CTA content={ctaContent} />
+      <CardSection content={whatHoldingContent} />
+      <FAQ content={faqContent} />
       <LandingPageForm landingPageSlug="seo-company-downey-ca" />
       <LandingPageMap location="downey" />
       <LocationList region="california" HidecurrentSlug="seo-company-downey-ca"/>

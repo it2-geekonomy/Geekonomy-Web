@@ -31,3 +31,16 @@ export const Lists = [
     desc: "For online stores category, product, and supporting content is keyword optimized to meet transactional search intent and allow shoppers to research products in organic search.",
   },
 ];
+
+export const industriesContent = {
+  label: "Industries",
+  heading: "SEO for Different Types of Davis Businesses",
+  intro: [
+    "All businesses compete for a variety of searches, customers and conversion opportunities. Our SEO approach is tailored to your industry, your services, your target audiences and your competitors. We do not run the same campaign for all businesses.",
+  ],
+  items: Lists,
+  columns: 3 as const,
+  bottom: [
+    "Whether you‘re a local provider or an expanding online business, our approach to Davis SEO Company is based on the searches that have the biggest potential to support your growth.",
+  ],
+};

@@ -32,3 +32,9 @@ export const faqs = [
     a: ["Yes. Geekonomy will be able to build an SEO strategy around your site, the services, the market and your customers and your aims for the business. That plan will involve a combination of local SEO, technical SEO, on-site and keyword research & optimisation, traffic conversion."]
   },
 ];
+
+export const faqContent = {
+  label: "ANSWERS",
+  heading: "Frequently Asked Questions",
+  faqs,
+};

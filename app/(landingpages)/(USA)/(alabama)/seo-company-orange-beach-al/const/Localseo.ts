@@ -59,3 +59,18 @@ export const Items = [
     ]
   },
 ];
+
+export const localSeoContent = {
+  label: "Local SEO Services",
+  heading: "Local SEO That Helps You Get Found in Orange Beach",
+  intro: [
+    "For companies servicing Orange beach, local prominence allows you to connect with people searching for products and services in your area. We increase the local signals that make your business appear for geographically relevant Google Search and Maps listings.",
+  ],
+  card: Items,
+  cta: {
+    title: "Not sure where to start?",
+    description:
+      "We help Orange Beach, AL businesses improve their search visibility, reach the right local customers, and grow online with a tailored SEO strategy designed around their goals.",
+    buttonText: "Get a Free Plan",
+  },
+};

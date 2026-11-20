@@ -50,3 +50,15 @@ export const steps = [
     ]
   },
 ];
+
+export const ourProcessContent = {
+  label: "Our Process",
+  heading: "How We Build a Davis SEO Campaign",
+  intro: [
+    "Before starting to optimize it‘s important to have a plan. Geekonomy adopts a systematic approach which ties together research, editorial, technical, local profile and measurement into your business objectives.",
+  ],
+  steps,
+  bottom: [
+    "This provides our Davis SEO Company with a way to construct campaigns that are logical, metric and geared toward overall business growth as opposed to fluctuations in search engine rankings.",
+  ],
+};

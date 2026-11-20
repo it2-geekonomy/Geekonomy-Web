@@ -42,3 +42,12 @@ export const steps = [
     ]
   }
 ];
+
+export const approachContent = {
+  label: "Our Approach",
+  heading: "Our Approach to SEO in Auburn",
+  intro: [
+    "Geekonomy uses a step-by-step SEO methodology based on the requirements of Auburn businesses. Each step, from assessing the strength of your website, developing targeted SEO strategies, implementing and maintaining them to continually improvement in your organic visibility is designed to seek opportunities which can deliver higher rankings, qualified traffic and leads.",
+  ],
+  steps,
+};

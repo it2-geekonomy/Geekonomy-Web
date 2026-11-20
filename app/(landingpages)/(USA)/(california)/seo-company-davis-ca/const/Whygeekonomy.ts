@@ -43,3 +43,16 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Businesses Choose Geekonomy for SEO Company Davis CA",
+  intro: [
+    "Going to the right SEO provider is more than getting someone who can make sure your rankings are where you want them to be. It is about finding a provider with a strategic approach that will help your organization find a path to generate business that aligns with your priorities, and change along with the search engines while pursuing opportunities.",
+    "Then there is Geekonomy, which is a pragmatic approach to SEO. This includes combining everything from technical SEO, to content, to local search to authority boosting into a single, integrated art:",
+  ],
+  card: WhyGeekonomyItems,
+  bottom: [
+    "With Geekonomy, your Davis SEO Company is not someone who simply completes a task, but a strategic partner with a long-term vision for an ever-growing search presence.",
+  ],
+};

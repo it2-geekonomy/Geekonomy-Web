@@ -51,3 +51,9 @@ export const Items = [
     ]
   },
 ];
+
+export const seoStrategyContent = {
+  label: "SEO Strategy",
+  heading: "SEO Strategy Designed Around Your Business",
+  card: Items,
+};

@@ -59,3 +59,21 @@ export const Items = [
     ]
   },
 ];
+
+export const seoStrategyContent = {
+  label: "SEO Strategy",
+  heading: "SEO Strategies Built for Brentwood Businesses",
+  intro: [
+    "Each business has its own customers, services, competitors and growth targets. An universal SEO plan may increase your market visibility but a plan focusing on your target market gives you a clear direction toward reaching the right people. Geekonomy designs SEO plans taking into account your business, target customers, services, website and market.",
+    "As a **Brentwood seo agency**, Mysearch is a local search optimisation SEO agency, which is enhanced by technical SEO, content, keywords research and conversion enhancements to the website to formulate an all-encompassing strategy for sustained organic growth.",
+  ],
+  card: Items,
+  cta: {
+    title: "Not sure where to start?",
+    description: [
+      "We help Brentwood businesses improve search visibility, attract the right customers, and grow with a tailored SEO strategy.",
+      "Our approach focuses on building sustainable online visibility that brings more qualified traffic and leads to your business.",
+    ],
+    buttonText: "Get a Free Plan",
+  },
+};

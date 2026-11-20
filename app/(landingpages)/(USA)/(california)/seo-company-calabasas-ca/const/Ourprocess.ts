@@ -34,4 +34,13 @@ export const steps = [
       "Search Engine Optimization is a constant procedure. We also monitor the most important figures, measure the progress, find new possibilities, and develop the campaign not on the fact that it is a one-time effort of optimization, but on the fact that it must bring long term success as a result of organic growth."
     ]
   }
-];  
+];
+
+export const ourProcessContent = {
+  label: "Our Process",
+  heading: "How Our SEO Process Works",
+  intro: [
+    "An effective SEO campaign requires a process that links research, website optimization, content and continuous measurement. The Geekonomy platform employs a defined workflow so that each stage of the campaign builds on the last and your SEO initiative can be adjusted as your website and the search environment change.",
+  ],
+  steps,
+};

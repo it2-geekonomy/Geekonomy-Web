@@ -20,3 +20,14 @@ export const Items = [
     desc: "A targeted SEO marketing campaign can allow your business to rank in Orange Beach and nearby search markets for high-value terms. This can include regions like Gulf Shores, Foley, and others where searchers often evaluate multiple local options.",
   },
 ]
+
+export const mattersContent = {
+  label: "Local SEO Matters",
+  heading: "Why Local SEO Matters in Orange Beach, AL",
+  intro: [
+    "Orange Beach has a population of local residents, seasonal visitors and those people looking for businesses before they come to the location. For local search, this is where it‘s at.",
+    "A robust local SEO strategy will enable your business to be found in Orange Beach AL searches for your product or service whether the customer is nearby looking to buy, comparison shopping, or ready to call you up.",
+  ],
+  items: Items,
+  columns: 4 as const,
+};

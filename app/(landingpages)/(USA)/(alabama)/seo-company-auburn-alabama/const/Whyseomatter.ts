@@ -27,3 +27,12 @@ export const Items = [
     ]
   },
 ];
+
+export const whySeoMatterContent = {
+  label: "Why SEO Matters",
+  heading: "Why SEO Matters for Businesses in Auburn",
+  intro: [
+    "The competitive nature of a business within Auburn has made online presence more vital. Your would-be customer might stumble by your business on Google while at home, in proximity of a local hotel, near Auburn University Campus, downtown or while passing through, which if your online website listing is not one of the top listed search results then a competitor will.",
+  ],
+  card: Items,
+};

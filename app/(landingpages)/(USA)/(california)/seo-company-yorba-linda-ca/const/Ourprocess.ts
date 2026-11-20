@@ -43,3 +43,12 @@ export const steps = [
     ]
   },
 ];
+
+export const ourProcessContent = {
+  label: "Our Process",
+  heading: "Our Yorba Linda SEO Process",
+  intro: [
+    "The foundations of successful SEO are gaining a good knowledge of your site, your competitors and your potential customers. Geekonomy has a methodical approach that will help you find opportunities, optimize your search presence, and build your organic success.",
+  ],
+  steps,
+};

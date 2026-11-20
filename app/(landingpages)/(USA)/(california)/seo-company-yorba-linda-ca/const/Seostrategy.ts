@@ -43,3 +43,12 @@ export const Items = [
     ]
   },
 ];
+
+export const seoStrategyContent = {
+  label: "SEO Strategy",
+  heading: "SEO Strategies Built Around Your Business Goals",
+  intro: [
+    "Your SEO should bring in profit not a higher page rank! Geekonomy develops every strategy focusing on the actions that have the greatest impact on your business and your target customers in Yorba Linda.",
+  ],
+  card: Items,
+};

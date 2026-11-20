@@ -33,3 +33,21 @@ export const HeroKeywords =[
     "Digital PR",
     "Ecommerce SEO",
 ];
+
+export const heroContent = {
+  label: "Murrieta SEO Agency",
+  headingMain: "Murrieta SEO Company",
+  headingHighlight: "That Turns Search Visibility Into Growth",
+  paragraphs: [
+    "Your customers are already searching online for the products and services you sell. The question is… how do you make sure they find you and not your competition? As a **Murrieta SEO Company**, Geekonomy provides search strategies that increase your visibility, attract new visitors, and convert online searchers into customers.",
+    "Achieving these results isn‘t just about ranking for a few keywords. We analyze how your customers search, what your competition is doing, how your website is performing and which changes will have the most effect. Whether you‘re looking for greater local visibility, higher quality leads or a better website, we base our actions on measurable business objectives.",
+    "As a top **SEO company Murrieta CA**, Geekonomy is able to include a balance of technical SEO, local optimization, content, on-page enhancements, and authority building to generate long-term organic growth.",
+  ],
+  buttonText: "Get Your Free SEO Strategy",
+  image: "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/landing-pages/Murrieta-CA.webp",
+  imageAlt: "Murrieta CA",
+  badges,
+  stats,
+  bannerText: "DATA-DRIVEN SEO THAT TURNS Murrieta SEARCHES INTO CUSTOMERS",
+  keywords: HeroKeywords,
+};

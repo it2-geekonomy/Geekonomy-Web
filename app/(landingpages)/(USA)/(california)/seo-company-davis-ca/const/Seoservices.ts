@@ -51,3 +51,15 @@ export const Items = [
     ]
   },
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "What Our Davis SEO Company Can Do for Your Business",
+  intro: [
+    "It is most effective when its various elements (website, social media, online assets) are aligned toward the same search strategy, enhancing your overall online presence. Geekonomy integrates technical search engine optimization, local search optimization, content creation and linking authority, strengthening its foundation for sustainable search appearance.",
+  ],
+  card: Items,
+  bottom: [
+    "All these services work in tandem to create a unified approach to SEO that will boost your website‘s visibility, bring in more targeted traffic, and create opportunities for growth.",
+  ],
+};

@@ -59,3 +59,15 @@ export const WhyGeekonomyItems = [
     ]
   },
 ];
+
+export const whyGeekonomyContent = {
+  label: "Why Geekonomy",
+  heading: "Why Choose Geekonomy as Your Brentwood SEO Company?",
+  intro: [
+    "The right SEO partner can be one of the most defining business decisions for any business choosing to make a long-term strategic investment into growing their online presence. These decisions touch everything from your website and content to your local SEO and your customers’ ability to find you via search. Geekonomy integrates all of these areas into a strategic approach focused on your end business objectives.",
+  ],
+  card: WhyGeekonomyItems,
+  bottom: [
+    "Looking for a seo company Brentwood? Geekonomy can help you build a well-structured SEO plan built around your business and the needs of your customers for scalable and sustained growth.",
+  ],
+};

@@ -35,3 +35,12 @@ export const Items = [
     ],
   },
 ];
+
+export const seoResultsContent = {
+  label: "Difference",
+  heading: "What Makes Geekonomy Different?",
+  intro: [
+    "Any SEO efforts for an Auburn business should begin with the local market, the customers you are targeting, and the particular services you wish to expand. Geekonomy employs a strategy that moves beyond the simple use of geo-terms within pages and creates a search presence that is designed to generate a business impact.",
+  ],
+  card: Items,
+};

@@ -180,6 +180,18 @@ import { oceanSpringsSeasonalMarketingSEO } from "./data/oceanSpringsSeasonalMar
 import { carmelGoogleBusinessProfileVisibilitySEO } from "./data/carmelGoogleBusinessProfileVisibility";
 import { davisCAContentMarketingIdeasSEO } from "./data/davisCAContentMarketingIdeas";
 import { rockHillHighIntentLocalKeywordsSEO } from "./data/rockHillHighIntentLocalKeywords";
+import { localSEOTipsFortWaltonBeachSEO } from "./data/localSEOTipsFortWaltonBeach";
+import { palmHarborServiceBusinessReviewsSEO } from "./data/palmHarborServiceBusinessReviews";
+import { buildLocationPagesMurrietaSEO } from "./data/buildLocationPagesMurrieta";
+import { frederickLocalKeywordResearchSEO } from "./data/frederickLocalKeywordResearch";
+import { coralSpringsLocalSearchConversionRatesSEO } from "./data/coralSpringsLocalSearchConversionRates";
+import { wacoCustomerSearchQuestionsSEO } from "./data/wacoCustomerSearchQuestions";
+import { leagueCityGoogleMapsVisibilitySEO } from "./data/leagueCityGoogleMapsVisibility";
+import { orangeBeachSEOContentIdeasSEO } from "./data/orangeBeachSEOContentIdeas";
+import { columbiaMissouriLocalContentSEO } from "./data/columbiaMissouriLocalContent";
+import { stJosephLocalSEOMistakesSEO } from "./data/stJosephLocalSEOMistakes";
+import { yorbaLindaLocalSearchVisibilitySEO } from "./data/yorbaLindaLocalSearchVisibility";
+import { chapelHillContentStrategySEO } from "./data/chapelHillContentStrategy";
 /** All blog SEO data aggregated by slug key (blog/{slug}) */
 export const blogSEOData = {
   "blog/ben-stace-semantic-seo-writing-tool": benStaceSemanticSEOWritingToolBoostYourRankingSEO,
@@ -364,4 +376,16 @@ export const blogSEOData = {
   "blog/carmel-google-business-profile-visibility": carmelGoogleBusinessProfileVisibilitySEO,
   "blog/davis-ca-content-marketing-ideas": davisCAContentMarketingIdeasSEO,
   "blog/high-intent-local-keywords-rock-hill": rockHillHighIntentLocalKeywordsSEO,
+  "blog/local-seo-tips-fort-walton-beach": localSEOTipsFortWaltonBeachSEO,
+  "blog/palm-harbor-service-business-reviews": palmHarborServiceBusinessReviewsSEO,
+  "blog/build-location-pages-murrieta": buildLocationPagesMurrietaSEO,
+  "blog/frederick-local-keyword-research": frederickLocalKeywordResearchSEO,
+  "blog/coral-springs-local-search-conversion": coralSpringsLocalSearchConversionRatesSEO,
+  "blog/waco-customer-search-questions": wacoCustomerSearchQuestionsSEO,
+  "blog/league-city-google-maps-visibility": leagueCityGoogleMapsVisibilitySEO,
+  "blog/orange-beach-seo-content-ideas": orangeBeachSEOContentIdeasSEO,
+  "blog/columbia-missouri-local-content": columbiaMissouriLocalContentSEO,
+  "blog/st-joseph-local-seo-mistakes": stJosephLocalSEOMistakesSEO,
+  "blog/yorba-linda-local-search-visibility": yorbaLindaLocalSearchVisibilitySEO,
+  "blog/chapel-hill-content-strategy": chapelHillContentStrategySEO,
 };

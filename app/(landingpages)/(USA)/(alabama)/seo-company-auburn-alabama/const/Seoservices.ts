@@ -66,3 +66,12 @@ export const Items = [
     ]
   },
 ];
+
+export const seoServicesContent = {
+  label: "SEO Services",
+  heading: "Our Auburn SEO Services",
+  intro: [
+    "We offer full-spectrum of SEO services to assist Auburn companies to boost their search exposure, drive targeted local visitors, and earn more opportunities. We customize each SEO campaign by examining your industry, potential customers, service area, webpage analytics, and your competitors instead of running the same method on all business types.",
+  ],
+  card: Items,
+};
