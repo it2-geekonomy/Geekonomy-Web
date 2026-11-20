@@ -1,196 +1,778 @@
 {
-  "website-design-mistakes-indian-businesses-must-avoid": "lib/blog/data/10WebsiteDesignMistakesIndianBusinessesMustAvoid.ts",
-  "essential-features-every-business-website-must-have": "lib/blog/data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026.ts",
-  "automotive-seo-for-car-dealerships": "lib/blog/data/automotiveSEOForCarDealerships.ts",
-  "b2b-ecommerce-website-development-strategies": "lib/blog/data/b2bEcommerceWebsiteDevelopment.ts",
-  "b2b-lead-generation-logistics-freight-companies": "lib/blog/data/b2bLeadGenerationLogisticsFreightCompanies.ts",
-  "b2b-seo-audit-strategies": "lib/blog/data/b2bSEOAuditStrategies.ts",
-  "bangalore-startup-branding-guide": "lib/blog/data/bangaloreStartupBrandingGuide.ts",
-  "ben-stace-semantic-seo-writing-tool": "lib/blog/data/benStaceSemanticSEOWritingToolBoostYourRanking.ts",
-  "benefits-of-bespoke-website-development": "lib/blog/data/bespokeWebsiteDevelopment.ts",
-  "best-ai-avatar-services-multilingual-marketing-campaigns": "lib/blog/data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026.ts",
-  "best-branding-agency-in-bangalore-for-startups": "lib/blog/data/bestBrandingAgencyinBangaloreforStartups.ts",
-  "best-cleaning-service-seo-strategies": "lib/blog/data/bestCleaningServiceSEOStrategies.ts",
-  "best-digital-marketing-strategies-for-bangalore-businesses": "lib/blog/data/bestDigitalMarketingStrategiesforBangaloreBusinesses.ts",
-  "how-the-best-fintech-seo-agency-help-you-rank": "lib/blog/data/bestFintechSEOAgency.ts",
-  "best-foundation-repair-seo-strategies": "lib/blog/data/bestFoundationRepairSEOStrategies.ts",
-  "best-funeral-home-seo-company-for-growth": "lib/blog/data/bestFuneralHomeSEOCompany.ts",
-  "best-llm-seo-tools-for-agencies": "lib/blog/data/bestLLMSEOToolsforAgenciesin2026.ts",
-  "best-practices-for-seo-enhancing-ai-visibility": "lib/blog/data/bestPracticesForSEOEnhancingAIVisibility.ts",
-  "best-b2b-saas-seo-agency-strategies": "lib/blog/data/bestSaaSSEOAgencyStrategies.ts",
-  "best-semantic-seo-consultants-how-to-choose": "lib/blog/data/bestSemanticSEOConsultantsHowtoChoosetheRight.ts",
-  "best-seo-services-for-startups-in-bangalore": "lib/blog/data/bestSeoServicesForStartupsInBangalore.ts",
-  "best-tools-for-seo-topical-map-boost-your-seo": "lib/blog/data/bestToolsForSEOTopicalMap.ts",
-  "how-branding-affects-long-term-retention-strategies": "lib/blog/data/BrandingAffectsLongTermRetentionStrategies.ts",
-  "how-much-does-branding-cost-in-the-uk": "lib/blog/data/brandingCostUK.ts",
-  "branding-for-startups-bangalore-strategies": "lib/blog/data/brandingforStartupsinBangaloreStrategies2026.ts",
-  "how-branding-increases-business-valuation": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
-  "brand-positioning-strategies-competitive-markets": "lib/blog/data/brandPositioningStrategiesforCompetitiveMarkets.ts",
-  "how-to-build-brand-authority-online": "lib/blog/data/buildBrandAuthorityOnline.ts",
-  "build-location-pages-murrieta": "lib/blog/data/buildLocationPagesMurrieta.ts",
-  "build-strong-brand-for-startup-in-bangalore": "lib/blog/data/buildStrongBrandForStartupInBangalore.ts",
-  "can-adding-more-pictures-improve-seo": "lib/blog/data/canAddingMorePicturesImproveSEO.ts",
-  "carlsbad-local-seo-checklist": "lib/blog/data/carlsbadLocalSEOChecklist.ts",
-  "carmel-google-business-profile-visibility": "lib/blog/data/carmelGoogleBusinessProfileVisibility.ts",
-  "carpet-cleaning-seo-services-complete-guide": "lib/blog/data/carpetCleaningSEOServicesCompleteGuide.ts",
-  "chapel-hill-content-strategy": "lib/blog/data/chapelHillContentStrategy.ts",
-  "charlotte-ppc-lower-google-ads-costs": "lib/blog/data/charlottePPCCosts.ts",
-  "columbia-missouri-local-content": "lib/blog/data/columbiaMissouriLocalContent.ts",
-  "common-branding-mistakes-small-businesses-make": "lib/blog/data/commonBrandingMistakesSmallBusinessesMake.ts",
-  "common-seo-mistakes-small-businesses-make": "lib/blog/data/commonSEOMistakesSmallBusinesses.ts",
-  "coral-springs-local-search-conversion": "lib/blog/data/coralSpringsLocalSearchConversionRates.ts",
-  "corporate-branding-services-bangalore-guide": "lib/blog/data/corporateBrandingServicesinBangaloreGuide2026.ts",
-  "create-internal-links-for-semantic-relevance": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts",
-  "choose-the-right-custom-software-development-company": "lib/blog/data/customSoftwareDevelopmentCompany.ts",
-  "davis-ca-content-marketing-ideas": "lib/blog/data/davisCAContentMarketingIdeas.ts",
-  "digital-marketing-ideas-madurai-businesses": "lib/blog/data/digitalMarketingIdeasMaduraiBusinesses.ts",
-  "digital-marketing-plan-jaipur-small-businesses": "lib/blog/data/digitalMarketingPlanJaipurSmallBusinesses.ts",
-  "ecommerce-development-cost-in-bangalore": "lib/blog/data/EcommerceDevelopmentCostInBangalore.ts",
-  "ecommerce-website-development-services-help-you-grow": "lib/blog/data/ecommerceWebsiteDevelopment.ts",
-  "enterprise-seo-audits-complete-guide-for-large-websites": "lib/blog/data/enterpriseSEOAudits.ts",
-  "fashion-seo-agency-seo-strategies-to-grow": "lib/blog/data/fashionSEOAgency.ts",
-  "find-a-partner-for-brand-visibility-audit": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
-  "frederick-local-keyword-research": "lib/blog/data/frederickLocalKeywordResearch.ts",
-  "what-makes-a-good-business-website-in-the-uk": "lib/blog/data/goodBusinessWebsiteUK.ts",
-  "guwahati-digital-marketing-strategy": "lib/blog/data/guwahatiDigitalMarketingStrategy.ts",
-  "heavy-vehicle-training-business-marketing-strategies": "lib/blog/data/heavyvehicletrainingbusinessmarketingstrategies.ts",
-  "how-a-hotel-seo-consultant-helps-you-rank": "lib/blog/data/hotelSEOConsultant.ts",
-  "how-ai-seo-tools-help-scale-agile-solutions-faster": "lib/blog/data/howAISeoToolsHelpScaleAgileSolutionsFaster.ts",
-  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": "lib/blog/data/howBangaloreBusinessesCanUseAIToAccelerateGrowth.ts",
-  "how-branding-increases-customer-trust-and-conversions": "lib/blog/data/howBrandingIncreasesCustomerTrustandConversions.ts",
-  "how-celebrity-seo-servies-build-online-authority": "lib/blog/data/howCelebritySEOServicesBuildOnlineAuthority.ts",
-  "how-does-ben-stace-do-semantic-seo": "lib/blog/data/howDoesBenStaceDoSemanticSEO.ts",
-  "ensure-brand-tone-multilingual-marketing": "lib/blog/data/howDoIEnsureBrandToneinMultilingualMarketing.ts",
-  "how-do-local-seo-agencies-use-rapid-url-indexer": "lib/blog/data/howDoLocalSEOAgenciesUseRapidURLIndexer.ts",
-  "google-display-ads-grow-marketing-results": "lib/blog/data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers.ts",
-  "how-important-is-branding-for-seo": "lib/blog/data/howImportantIsBrandingForSEO.ts",
-  "how-long-to-build-business-website-india": "lib/blog/data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia.ts",
-  "how-long-does-it-take-for-medical-seo-to-work": "lib/blog/data/howLongDoesMedicalSEOWork.ts",
-  "branding-cost-in-bangalore": "lib/blog/data/howMuchDoesBrandingCostinBangalore.ts",
-  "how-much-does-digital-marketing-cost-in-bangalore": "lib/blog/data/howMuchDoesDigitalMarketingCostInBangalore.ts",
-  "how-much-does-seo-cost-in-ahmedabad": "lib/blog/data/HowMuchDoesSEOCostinAhmedabad.ts",
-  "how-much-does-seo-cost-in-australia": "lib/blog/data/howMuchDoesSEOCostInAustralia.ts",
-  "how-much-does-seo-cost-in-bangalore": "lib/blog/data/HowMuchDoesSEOCostinBangalore.ts",
-  "how-much-does-seo-cost-in-birmingham": "lib/blog/data/howMuchDoesSEOCostInBirmingham.ts",
-  "how-much-does-seo-cost-in-boston": "lib/blog/data/howMuchDoesSEOCostInBoston.ts",
-  "seo-cost-in-bristol": "lib/blog/data/howMuchDoesSEOCostInBristol.ts",
-  "how-much-does-seo-cost-in-chennai": "lib/blog/data/HowMuchDoesSEOCostinChennai.ts",
-  "how-much-does-seo-cost-in-chicago": "lib/blog/data/HowMuchDoesSEOCostinChicago.ts",
-  "how-much-does-seo-cost-in-delhi-ncr": "lib/blog/data/HowMuchDoesSEOCostinDelhiNCR.ts",
-  "how-much-do-seo-services-cost-in-houston": "lib/blog/data/howMuchDoesSEOCostInHouston.ts",
-  "how-much-does-seo-cost-in-hyderabad": "lib/blog/data/HowMuchDoesSEOCostinHyderabad.ts",
-  "how-much-does-seo-cost-in-kolkata": "lib/blog/data/HowMuchDoesSEOCostinKolkata.ts",
-  "seo-cost-in-leeds": "lib/blog/data/HowMuchDoesSEOCostinLeeds.ts",
-  "how-much-does-seo-cost-in-london": "lib/blog/data/howMuchDoesSEOCostInLondon.ts",
-  "how-much-does-seo-cost-in-los-angeles": "lib/blog/data/HowMuchDoesSEOCostinLosAngeles.ts",
-  "how-much-does-seo-cost-in-manchester": "lib/blog/data/howMuchDoesSEOCostInManchester.ts",
-  "how-much-does-seo-cost-in-mumbai": "lib/blog/data/HowMuchDoesSEOCostinMumbai.ts",
-  "how-much-does-seo-cost-in-new-york": "lib/blog/data/howMuchDoesSEOCostInNewYork.ts",
-  "how-much-does-seo-cost-in-pune": "lib/blog/data/HowMuchDoesSEOCostinPune.ts",
-  "how-much-does-seo-cost-in-san-francisco": "lib/blog/data/howMuchDoesSEOCostInSanFrancisco.ts",
-  "how-much-does-seo-cost-in-seattle": "lib/blog/data/howMuchDoesSEOCostInSeattle.ts",
-  "web-design-cost-india": "lib/blog/data/howMuchDoesWebDesignCostinIndia.ts",
-  "how-to-check-if-your-seo-is-working": "lib/blog/data/howToCheckIfYourSEOIsWorking.ts",
-  "how-to-choose-the-best-ecommerce-seo-company": "lib/blog/data/howToChooseBestEcommerceSEOCompany.ts",
-  "how-to-create-white-label-seo-reports-and-automate-them": "lib/blog/data/howToCreateWhiteLabelSEOReportsAndAutomateThem.ts",
-  "hire-brand-ambassadors-for-your-business": "lib/blog/data/howtoHireBrandAmbassadorsforYourBusiness.ts",
-  "how-to-improve-local-seo-ctr": "lib/blog/data/howtoImproveLocalSEOCTR2026Guide.ts",
-  "how-to-increase-brand-awareness-in-b2b": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
-  "how-to-rank-nationally-in-seo": "lib/blog/data/howToRankNationallyInSEO.ts",
-  "simplify-brand-message-effective-branding": "lib/blog/data/howToSimplifyYourBrandMessageforEffectiveBranding.ts",
-  "use-online-reviews-real-estate-appraiser-marketing": "lib/blog/data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing.ts",
-  "how-to-use-screaming-frog-to-improve-on-page-seo": "lib/blog/data/howToUseScreamingFrogToImproveOnPageSEO.ts",
-  "use-social-listening-influencer-marketing": "lib/blog/data/howtoUseSocialListeningforInfluencerMarketing.ts",
-  "verifying-origin-protects-brand-reputation": "lib/blog/data/howVerifyingOriginProtectsBrandReputation.ts",
-  "how-wordpress-seo-services-improve-traffic": "lib/blog/data/howWordPressSEOServicesImproveTraffic.ts",
-  "why-indexceptional-is-the-best-website-indexing-tool-for-seo": "lib/blog/data/indexceptionalIndexingTool.ts",
-  "can-international-seo-efforts-be-enhanced-with-rapid-url-indexer": "lib/blog/data/internationalSEORapidURLIndexer.ts",
-  "league-city-google-maps-visibility": "lib/blog/data/leagueCityGoogleMapsVisibility.ts",
-  "local-search-ghaziabad-businesses": "lib/blog/data/localSearchGhaziabadBusinesses.ts",
-  "local-seo-for-bangalore-businesses": "lib/blog/data/localSEOForBangaloreBusinesses.ts",
-  "local-seo-for-carpenters-complete-guide": "lib/blog/data/localSEOForCarpenters.ts",
-  "local-seo-for-estate-agents": "lib/blog/data/localSEOForEstateAgents.ts",
-  "local-seo-for-hotels-boost-visibility": "lib/blog/data/localSEOForHotels.ts",
-  "local-seo-for-orthodontists-best-strategies": "lib/blog/data/localSEOForOrthodontists.ts",
-  "local-seo-for-tradies-get-more-trade-business-with-seo": "lib/blog/data/localSEOForTradies.ts",
-  "best-local-seo-strategies-for-general-contractors": "lib/blog/data/localSEOGeneralContractors.ts",
-  "local-seo-for-roadside-assistance-providers-best-strategies": "lib/blog/data/localSEORoadsideAssistance.ts",
-  "local-seo-service-explained": "lib/blog/data/localSEOServiceExplained.ts",
-  "local-seo-tips-fort-walton-beach": "lib/blog/data/localSEOTipsFortWaltonBeach.ts",
-  "logo-designers-in-bangalore-how-to-choose-the-best": "lib/blog/data/logoDesignersInBangaloreHowToChooseTheBest.ts",
-  "measure-brand-visibility-in-chatgpt": "lib/blog/data/measureBrandVisibilityInChatGPT.ts",
-  "multilingual-ppc-services-reach-global-customers-faster": "lib/blog/data/multilingualPPCServices.ts",
-  "nursing-homes-seo-company-help-you-rank": "lib/blog/data/nursingHomesSEOCompany.ts",
-  "ocean-springs-seasonal-marketing": "lib/blog/data/oceanSpringsSeasonalMarketing.ts",
-  "omnichannel-marketing": "lib/blog/data/omnichannelMarketing.ts",
-  "on-page-seo-checklist-for-service-based-websites": "lib/blog/data/onPageSEOChecklistForServiceBasedWebsites.ts",
-  "orange-beach-seo-content-ideas": "lib/blog/data/orangeBeachSEOContentIdeas.ts",
-  "outsource-seo-india-smart-choice-for-companies": "lib/blog/data/outsourceSEOIndia.ts",
-  "palm-harbor-service-business-reviews": "lib/blog/data/palmHarborServiceBusinessReviews.ts",
-  "personal-branding-for-founders-in-bangalore-guide": "lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026.ts",
-  "pool-company-lead-generation-san-diego": "lib/blog/data/poolCompanyLeadGenerationSanDiego.ts",
-  "ppc-home-services-complete-guide": "lib/blog/data/ppcForHomeServices.ts",
-  "10-proven-seo-strategies-to-boost-seo-organic-traffic": "lib/blog/data/provenSEOStrategies.ts",
-  "how-to-use-python-for-nlp-and-semantic-seo": "lib/blog/data/pythonNLP.ts",
-  "how-rebranding-can-revive-a-struggling-business": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts",
-  "rebranding-services-in-bangalore-when-and-why-you-need": "lib/blog/data/rebrandingServicesInBangaloreWhenAndWhyYouNeed.ts",
-  "high-intent-local-keywords-rock-hill": "lib/blog/data/rockHillHighIntentLocalKeywords.ts",
-  "safe-link-building-techniques-avoid-google-penalties": "lib/blog/data/safeLinkBuildingTechniquestoAvoidGooglePenalties.ts",
-  "choose-the-best-searchgpt-seo-agency": "lib/blog/data/searchGPTSEOAgency.ts",
-  "seasonal-marketing-paving-contractors": "lib/blog/data/seasonalMarketingPavingContractors.ts",
-  "semantic-content-networks-by-ben-stace": "lib/blog/data/semanticContentNetworksByBenStace.ts",
-  "semantic-seo-agency-how-to-choose-the-best-agency": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
-  "how-seo-audit-services-improve-seo": "lib/blog/data/seoAuditServices.ts",
-  "how-much-does-seo-cost-in-uk": "lib/blog/data/seoCostUK.ts",
-  "seo-for-addiction-treatment-centers-complete-guide": "lib/blog/data/seoForAddictionTreatmentCenters.ts",
-  "seo-for-architects-best-strategies": "lib/blog/data/seoForArchitectsBestStrategies.ts",
-  "seo-for-auto-body-shops-strategies-to-boost-local-seo": "lib/blog/data/seoForAutoBodyShops.ts",
-  "seo-for-banks-proven-tactics": "lib/blog/data/seoForBanks.ts",
-  "seo-for-beauty-industry-brands-complete-guide": "lib/blog/data/seoForBeautyIndustryBrands.ts",
-  "seo-for-dentists-local-seo-to-get-more-patients": "lib/blog/data/seoForDentists.ts",
-  "seo-for-estate-planning-lawyers-complete-guide": "lib/blog/data/seoForEstatePlanningLawyers.ts",
-  "seo-for-financial-services-strategies": "lib/blog/data/seoForFinancialServices.ts",
-  "seo-for-home-inspectors-business-best-seo-strategies": "lib/blog/data/seoForHomeInspectors.ts",
-  "seo-for-immigration-attorneys-get-more-clients": "lib/blog/data/seoForImmigrationAttorneys.ts",
-  "seo-for-legal-firms-complete-guide": "lib/blog/data/seoForLegalFirms.ts",
-  "seo-for-msps-best-practices-and-local-seo": "lib/blog/data/seoForMSPsBestPractices.ts",
-  "seo-for-physiotherapists-rank-higher": "lib/blog/data/seoForPhysiotherapists.ts",
-  "seo-for-plumbers-proven-techniques-to-rank": "lib/blog/data/seoForPlumbers.ts",
-  "seo-for-startups-a-step-by-step-growth-strategy": "lib/blog/data/seoForStartups.ts",
-  "seo-friendly-cms-find-the-best": "lib/blog/data/seoFriendlyCMS.ts",
-  "seo-platform-for-b2b-companies": "lib/blog/data/seoPlatformB2B.ts",
-  "seo-strategy-funnel": "lib/blog/data/seoStrategyFunnel.ts",
-  "seo-vs-google-ads-for-bangalore-businesses": "lib/blog/data/seovsgoogleAdsFoeBengaloreBusiness2026Guide.ts",
-  "7-reasons-why-your-business-should-invest-in-seo": "lib/blog/data/sevenReasonsInvestInSEO.ts",
-  "sosoactive-seo-news-digital-marketing-trends-future-lifestyle": "lib/blog/data/sosoactiveSeoNews.ts",
-  "startup-branding-strategy-bangalore-entrepreneurs": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
-  "st-joseph-local-seo-mistakes": "lib/blog/data/stJosephLocalSEOMistakes.ts",
-  "difference-between-technical-seo-and-content-seo-audits": "lib/blog/data/technicalSEOContentSEOAudits.ts",
-  "technical-seo-mistakes-that-kill-google-rankings": "lib/blog/data/technicalSEOMistakesThatKillGoogleRankings.ts",
-  "360-international-seo-service-complete-guide": "lib/blog/data/threeSixtyInternationalSEOService.ts",
-  "top-marketing-mistakes-bangalore-startups": "lib/blog/data/topMarketingMistakesBangaloreStartups.ts",
-  "how-a-travel-seo-company-helps-you-rank-higher": "lib/blog/data/travelSEOCompany.ts",
-  "ux-ui-design-explained-for-uk-business-owners": "lib/blog/data/uxUIDesign.ts",
-  "waco-customer-search-questions": "lib/blog/data/wacoCustomerSearchQuestions.ts",
-  "web-development-cost-in-bangalore-for-small-businesses": "lib/blog/data/webDevelopmentCostInBangaloreForSmallBusinesses.ts",
-  "how-to-reduce-website-cost-uk": "lib/blog/data/websiteCostUK.ts",
-  "website-redesign-cost-bangalore-smes-startups": "lib/blog/data/websiteRedesignCostBangaloreSmesStartups.ts",
-  "what-do-you-need-to-balance-when-doing-seo": "lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO.ts",
-  "what-elements-are-foundational-for-seo-with-ai": "lib/blog/data/whatElementsFoundationalSEOWithAI.ts",
-  "what-to-look-for-in-brand-strategy-agencies": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
-  "what-triggers-an-ai-overview-seo": "lib/blog/data/whatTriggersAIOverviewSEO.ts",
-  "which-ecommerce-platform-is-best-for-seo": "lib/blog/data/whichEcommercePlatformIsBestForSEO.ts",
-  "white-label-ppc-services-usa": "lib/blog/data/whiteLabelPPCUSA.ts",
-  "why-bangalore-businesses-need-generative-engine-optimization": "lib/blog/data/whyBangaloreBusinessesNeedGenerativeEngineOptimization.ts",
-  "why-branding-is-important-before-running-ads": "lib/blog/data/whyBrandingisImportantBeforeRunningAds.ts",
-  "why-branding-is-important-for-bangalore-businesses": "lib/blog/data/whyBrandingIsImportantforBangaloreBusinesses.ts",
-  "why-seo-for-personal-injury-lawyers-matters": "lib/blog/data/whySEOForPersonalInjuryLawyersMatters.ts",
-  "why-seo-is-important-for-businesses-in-nyc": "lib/blog/data/whySEOImportantForBusinessesInNYC.ts",
-  "why-small-businesses-need-website-india": "lib/blog/data/whySmallBusinessesNeedaWebsiteinIndia.ts",
-  "why-white-label-seo-reporting-is-important-for-agencies": "lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies.ts",
-  "why-you-need-a-free-seo-audit": "lib/blog/data/whyYouNeedaFreeSEOAudit2026Guide.ts",
-  "why-your-website-is-not-ranking-on-google": "lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle.ts",
-  "window-door-installers-estimate-requests": "lib/blog/data/windowDoorInstallersEstimateRequests.ts",
-  "how-to-improve-wordpress-seo-for-oxfordshire-sites": "lib/blog/data/wordPressSEOOxfordshire.ts",
-  "yorba-linda-local-search-visibility": "lib/blog/data/yorbaLindaLocalSearchVisibility.ts"
+  "website-design-mistakes-indian-businesses-must-avoid": {
+    "filePath": "lib/blog/data/10WebsiteDesignMistakesIndianBusinessesMustAvoid.ts",
+    "lastModified": "2026-05-21T09:38:32.000Z"
+  },
+  "essential-features-every-business-website-must-have": {
+    "filePath": "lib/blog/data/7EssentialFeaturesEveryBusinessWebsiteMustHavein2026.ts",
+    "lastModified": "2026-07-15T12:07:33.000Z"
+  },
+  "how-branding-affects-long-term-retention-strategies": {
+    "filePath": "lib/blog/data/BrandingAffectsLongTermRetentionStrategies.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "create-internal-links-for-semantic-relevance": {
+    "filePath": "lib/blog/data/CreateInternalLinksForSemanticRelevance.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "ecommerce-development-cost-in-bangalore": {
+    "filePath": "lib/blog/data/EcommerceDevelopmentCostInBangalore.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "how-much-does-seo-cost-in-ahmedabad": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinAhmedabad.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "how-much-does-seo-cost-in-bangalore": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinBangalore.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-chennai": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinChennai.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-much-does-seo-cost-in-chicago": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinChicago.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-delhi-ncr": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinDelhiNCR.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "how-much-does-seo-cost-in-hyderabad": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinHyderabad.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-kolkata": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinKolkata.ts",
+    "lastModified": "2026-09-11T06:55:40.000Z"
+  },
+  "seo-cost-in-leeds": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinLeeds.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-los-angeles": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinLosAngeles.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-mumbai": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinMumbai.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "how-much-does-seo-cost-in-pune": {
+    "filePath": "lib/blog/data/HowMuchDoesSEOCostinPune.ts",
+    "lastModified": "2026-09-11T06:55:40.000Z"
+  },
+  "automotive-seo-for-car-dealerships": {
+    "filePath": "lib/blog/data/automotiveSEOForCarDealerships.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "b2b-ecommerce-website-development-strategies": {
+    "filePath": "lib/blog/data/b2bEcommerceWebsiteDevelopment.ts",
+    "lastModified": "2026-10-22T12:22:41.000Z"
+  },
+  "b2b-lead-generation-logistics-freight-companies": {
+    "filePath": "lib/blog/data/b2bLeadGenerationLogisticsFreightCompanies.ts",
+    "lastModified": "2026-10-30T10:29:11.000Z"
+  },
+  "b2b-seo-audit-strategies": {
+    "filePath": "lib/blog/data/b2bSEOAuditStrategies.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "bangalore-startup-branding-guide": {
+    "filePath": "lib/blog/data/bangaloreStartupBrandingGuide.ts",
+    "lastModified": "2026-11-04T05:14:38.000Z"
+  },
+  "ben-stace-semantic-seo-writing-tool": {
+    "filePath": "lib/blog/data/benStaceSemanticSEOWritingToolBoostYourRanking.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "benefits-of-bespoke-website-development": {
+    "filePath": "lib/blog/data/bespokeWebsiteDevelopment.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "best-ai-avatar-services-multilingual-marketing-campaigns": {
+    "filePath": "lib/blog/data/bestAIAvatarServicesforMultilingualMarketingCampaignsin2026.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "best-branding-agency-in-bangalore-for-startups": {
+    "filePath": "lib/blog/data/bestBrandingAgencyinBangaloreforStartups.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "best-cleaning-service-seo-strategies": {
+    "filePath": "lib/blog/data/bestCleaningServiceSEOStrategies.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "best-digital-marketing-strategies-for-bangalore-businesses": {
+    "filePath": "lib/blog/data/bestDigitalMarketingStrategiesforBangaloreBusinesses.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "how-the-best-fintech-seo-agency-help-you-rank": {
+    "filePath": "lib/blog/data/bestFintechSEOAgency.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "best-foundation-repair-seo-strategies": {
+    "filePath": "lib/blog/data/bestFoundationRepairSEOStrategies.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "best-funeral-home-seo-company-for-growth": {
+    "filePath": "lib/blog/data/bestFuneralHomeSEOCompany.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "best-llm-seo-tools-for-agencies": {
+    "filePath": "lib/blog/data/bestLLMSEOToolsforAgenciesin2026.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "best-practices-for-seo-enhancing-ai-visibility": {
+    "filePath": "lib/blog/data/bestPracticesForSEOEnhancingAIVisibility.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "best-b2b-saas-seo-agency-strategies": {
+    "filePath": "lib/blog/data/bestSaaSSEOAgencyStrategies.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "best-semantic-seo-consultants-how-to-choose": {
+    "filePath": "lib/blog/data/bestSemanticSEOConsultantsHowtoChoosetheRight.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "best-seo-services-for-startups-in-bangalore": {
+    "filePath": "lib/blog/data/bestSeoServicesForStartupsInBangalore.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "best-tools-for-seo-topical-map-boost-your-seo": {
+    "filePath": "lib/blog/data/bestToolsForSEOTopicalMap.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "brand-positioning-strategies-competitive-markets": {
+    "filePath": "lib/blog/data/brandPositioningStrategiesforCompetitiveMarkets.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "how-much-does-branding-cost-in-the-uk": {
+    "filePath": "lib/blog/data/brandingCostUK.ts",
+    "lastModified": "2026-09-11T06:55:40.000Z"
+  },
+  "how-branding-increases-business-valuation": {
+    "filePath": "lib/blog/data/brandingIncreasesBusinessValuation.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "branding-for-startups-bangalore-strategies": {
+    "filePath": "lib/blog/data/brandingforStartupsinBangaloreStrategies2026.ts",
+    "lastModified": "2026-08-05T12:22:38.000Z"
+  },
+  "how-to-build-brand-authority-online": {
+    "filePath": "lib/blog/data/buildBrandAuthorityOnline.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "build-location-pages-murrieta": {
+    "filePath": "lib/blog/data/buildLocationPagesMurrieta.ts",
+    "lastModified": "2026-11-05T09:28:03.000Z"
+  },
+  "build-strong-brand-for-startup-in-bangalore": {
+    "filePath": "lib/blog/data/buildStrongBrandForStartupInBangalore.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "can-adding-more-pictures-improve-seo": {
+    "filePath": "lib/blog/data/canAddingMorePicturesImproveSEO.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "carlsbad-local-seo-checklist": {
+    "filePath": "lib/blog/data/carlsbadLocalSEOChecklist.ts",
+    "lastModified": "2026-10-29T11:11:51.000Z"
+  },
+  "carmel-google-business-profile-visibility": {
+    "filePath": "lib/blog/data/carmelGoogleBusinessProfileVisibility.ts",
+    "lastModified": "2026-11-04T11:59:33.000Z"
+  },
+  "carpet-cleaning-seo-services-complete-guide": {
+    "filePath": "lib/blog/data/carpetCleaningSEOServicesCompleteGuide.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "chapel-hill-content-strategy": {
+    "filePath": "lib/blog/data/chapelHillContentStrategy.ts",
+    "lastModified": "2026-11-16T05:46:59.000Z"
+  },
+  "charlotte-ppc-lower-google-ads-costs": {
+    "filePath": "lib/blog/data/charlottePPCCosts.ts",
+    "lastModified": "2026-10-29T11:50:32.000Z"
+  },
+  "columbia-missouri-local-content": {
+    "filePath": "lib/blog/data/columbiaMissouriLocalContent.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "common-branding-mistakes-small-businesses-make": {
+    "filePath": "lib/blog/data/commonBrandingMistakesSmallBusinessesMake.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "common-seo-mistakes-small-businesses-make": {
+    "filePath": "lib/blog/data/commonSEOMistakesSmallBusinesses.ts",
+    "lastModified": "2026-10-22T12:22:41.000Z"
+  },
+  "coral-springs-local-search-conversion": {
+    "filePath": "lib/blog/data/coralSpringsLocalSearchConversionRates.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "corporate-branding-services-bangalore-guide": {
+    "filePath": "lib/blog/data/corporateBrandingServicesinBangaloreGuide2026.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "choose-the-right-custom-software-development-company": {
+    "filePath": "lib/blog/data/customSoftwareDevelopmentCompany.ts",
+    "lastModified": "2026-10-22T12:22:41.000Z"
+  },
+  "davis-ca-content-marketing-ideas": {
+    "filePath": "lib/blog/data/davisCAContentMarketingIdeas.ts",
+    "lastModified": "2026-11-04T11:59:33.000Z"
+  },
+  "digital-marketing-ideas-madurai-businesses": {
+    "filePath": "lib/blog/data/digitalMarketingIdeasMaduraiBusinesses.ts",
+    "lastModified": "2026-11-02T11:16:07.000Z"
+  },
+  "digital-marketing-plan-jaipur-small-businesses": {
+    "filePath": "lib/blog/data/digitalMarketingPlanJaipurSmallBusinesses.ts",
+    "lastModified": "2026-10-30T10:29:11.000Z"
+  },
+  "ecommerce-website-development-services-help-you-grow": {
+    "filePath": "lib/blog/data/ecommerceWebsiteDevelopment.ts",
+    "lastModified": "2026-10-22T12:22:41.000Z"
+  },
+  "enterprise-seo-audits-complete-guide-for-large-websites": {
+    "filePath": "lib/blog/data/enterpriseSEOAudits.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "fashion-seo-agency-seo-strategies-to-grow": {
+    "filePath": "lib/blog/data/fashionSEOAgency.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "find-a-partner-for-brand-visibility-audit": {
+    "filePath": "lib/blog/data/findAPartnerForBrandVisibilityAudit.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "frederick-local-keyword-research": {
+    "filePath": "lib/blog/data/frederickLocalKeywordResearch.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "what-makes-a-good-business-website-in-the-uk": {
+    "filePath": "lib/blog/data/goodBusinessWebsiteUK.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "guwahati-digital-marketing-strategy": {
+    "filePath": "lib/blog/data/guwahatiDigitalMarketingStrategy.ts",
+    "lastModified": "2026-11-04T05:14:38.000Z"
+  },
+  "heavy-vehicle-training-business-marketing-strategies": {
+    "filePath": "lib/blog/data/heavyvehicletrainingbusinessmarketingstrategies.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-a-hotel-seo-consultant-helps-you-rank": {
+    "filePath": "lib/blog/data/hotelSEOConsultant.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-ai-seo-tools-help-scale-agile-solutions-faster": {
+    "filePath": "lib/blog/data/howAISeoToolsHelpScaleAgileSolutionsFaster.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "how-bangalore-businesses-can-use-ai-to-accelerate-growth": {
+    "filePath": "lib/blog/data/howBangaloreBusinessesCanUseAIToAccelerateGrowth.ts",
+    "lastModified": "2026-07-01T12:24:05.000Z"
+  },
+  "how-branding-increases-customer-trust-and-conversions": {
+    "filePath": "lib/blog/data/howBrandingIncreasesCustomerTrustandConversions.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "how-celebrity-seo-servies-build-online-authority": {
+    "filePath": "lib/blog/data/howCelebritySEOServicesBuildOnlineAuthority.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "ensure-brand-tone-multilingual-marketing": {
+    "filePath": "lib/blog/data/howDoIEnsureBrandToneinMultilingualMarketing.ts",
+    "lastModified": "2026-04-07T05:19:51.000Z"
+  },
+  "how-do-local-seo-agencies-use-rapid-url-indexer": {
+    "filePath": "lib/blog/data/howDoLocalSEOAgenciesUseRapidURLIndexer.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-does-ben-stace-do-semantic-seo": {
+    "filePath": "lib/blog/data/howDoesBenStaceDoSemanticSEO.ts",
+    "lastModified": "2026-08-06T12:20:06.000Z"
+  },
+  "google-display-ads-grow-marketing-results": {
+    "filePath": "lib/blog/data/howGoogleDisplayAdsGrowMarketingResultsforAdvertisers.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-important-is-branding-for-seo": {
+    "filePath": "lib/blog/data/howImportantIsBrandingForSEO.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-long-to-build-business-website-india": {
+    "filePath": "lib/blog/data/howLongDoesItTaketoBuildaBusinessWebsiteinIndia.ts",
+    "lastModified": "2026-04-29T06:07:24.000Z"
+  },
+  "how-long-does-it-take-for-medical-seo-to-work": {
+    "filePath": "lib/blog/data/howLongDoesMedicalSEOWork.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "branding-cost-in-bangalore": {
+    "filePath": "lib/blog/data/howMuchDoesBrandingCostinBangalore.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-digital-marketing-cost-in-bangalore": {
+    "filePath": "lib/blog/data/howMuchDoesDigitalMarketingCostInBangalore.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-australia": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInAustralia.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-much-does-seo-cost-in-birmingham": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInBirmingham.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-boston": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInBoston.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "seo-cost-in-bristol": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInBristol.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-much-do-seo-services-cost-in-houston": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInHouston.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-london": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInLondon.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-manchester": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInManchester.ts",
+    "lastModified": "2026-08-06T12:20:06.000Z"
+  },
+  "how-much-does-seo-cost-in-new-york": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInNewYork.ts",
+    "lastModified": "2026-08-05T12:22:38.000Z"
+  },
+  "how-much-does-seo-cost-in-san-francisco": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInSanFrancisco.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-much-does-seo-cost-in-seattle": {
+    "filePath": "lib/blog/data/howMuchDoesSEOCostInSeattle.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "web-design-cost-india": {
+    "filePath": "lib/blog/data/howMuchDoesWebDesignCostinIndia.ts",
+    "lastModified": "2026-09-11T06:55:40.000Z"
+  },
+  "how-to-check-if-your-seo-is-working": {
+    "filePath": "lib/blog/data/howToCheckIfYourSEOIsWorking.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-to-choose-the-best-ecommerce-seo-company": {
+    "filePath": "lib/blog/data/howToChooseBestEcommerceSEOCompany.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-to-create-white-label-seo-reports-and-automate-them": {
+    "filePath": "lib/blog/data/howToCreateWhiteLabelSEOReportsAndAutomateThem.ts",
+    "lastModified": "2026-04-24T03:48:27.000Z"
+  },
+  "how-to-increase-brand-awareness-in-b2b": {
+    "filePath": "lib/blog/data/howToIncreaseBrandAwarenessB2B.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-to-rank-nationally-in-seo": {
+    "filePath": "lib/blog/data/howToRankNationallyInSEO.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "simplify-brand-message-effective-branding": {
+    "filePath": "lib/blog/data/howToSimplifyYourBrandMessageforEffectiveBranding.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-to-use-screaming-frog-to-improve-on-page-seo": {
+    "filePath": "lib/blog/data/howToUseScreamingFrogToImproveOnPageSEO.ts",
+    "lastModified": "2026-07-27T12:30:45.000Z"
+  },
+  "verifying-origin-protects-brand-reputation": {
+    "filePath": "lib/blog/data/howVerifyingOriginProtectsBrandReputation.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-wordpress-seo-services-improve-traffic": {
+    "filePath": "lib/blog/data/howWordPressSEOServicesImproveTraffic.ts",
+    "lastModified": "2026-07-17T12:31:29.000Z"
+  },
+  "hire-brand-ambassadors-for-your-business": {
+    "filePath": "lib/blog/data/howtoHireBrandAmbassadorsforYourBusiness.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-to-improve-local-seo-ctr": {
+    "filePath": "lib/blog/data/howtoImproveLocalSEOCTR2026Guide.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "use-online-reviews-real-estate-appraiser-marketing": {
+    "filePath": "lib/blog/data/howtoUseOnlineReviewsforRealEstateAppraiserMarketing.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "use-social-listening-influencer-marketing": {
+    "filePath": "lib/blog/data/howtoUseSocialListeningforInfluencerMarketing.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "why-indexceptional-is-the-best-website-indexing-tool-for-seo": {
+    "filePath": "lib/blog/data/indexceptionalIndexingTool.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "can-international-seo-efforts-be-enhanced-with-rapid-url-indexer": {
+    "filePath": "lib/blog/data/internationalSEORapidURLIndexer.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "league-city-google-maps-visibility": {
+    "filePath": "lib/blog/data/leagueCityGoogleMapsVisibility.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "local-seo-for-bangalore-businesses": {
+    "filePath": "lib/blog/data/localSEOForBangaloreBusinesses.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "local-seo-for-carpenters-complete-guide": {
+    "filePath": "lib/blog/data/localSEOForCarpenters.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "local-seo-for-estate-agents": {
+    "filePath": "lib/blog/data/localSEOForEstateAgents.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "local-seo-for-hotels-boost-visibility": {
+    "filePath": "lib/blog/data/localSEOForHotels.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "local-seo-for-orthodontists-best-strategies": {
+    "filePath": "lib/blog/data/localSEOForOrthodontists.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "local-seo-for-tradies-get-more-trade-business-with-seo": {
+    "filePath": "lib/blog/data/localSEOForTradies.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "best-local-seo-strategies-for-general-contractors": {
+    "filePath": "lib/blog/data/localSEOGeneralContractors.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "local-seo-for-roadside-assistance-providers-best-strategies": {
+    "filePath": "lib/blog/data/localSEORoadsideAssistance.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "local-seo-service-explained": {
+    "filePath": "lib/blog/data/localSEOServiceExplained.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "local-seo-tips-fort-walton-beach": {
+    "filePath": "lib/blog/data/localSEOTipsFortWaltonBeach.ts",
+    "lastModified": "2026-11-05T09:28:03.000Z"
+  },
+  "local-search-ghaziabad-businesses": {
+    "filePath": "lib/blog/data/localSearchGhaziabadBusinesses.ts",
+    "lastModified": "2026-11-02T11:16:07.000Z"
+  },
+  "logo-designers-in-bangalore-how-to-choose-the-best": {
+    "filePath": "lib/blog/data/logoDesignersInBangaloreHowToChooseTheBest.ts",
+    "lastModified": "2026-07-28T11:58:58.000Z"
+  },
+  "measure-brand-visibility-in-chatgpt": {
+    "filePath": "lib/blog/data/measureBrandVisibilityInChatGPT.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "multilingual-ppc-services-reach-global-customers-faster": {
+    "filePath": "lib/blog/data/multilingualPPCServices.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "nursing-homes-seo-company-help-you-rank": {
+    "filePath": "lib/blog/data/nursingHomesSEOCompany.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "ocean-springs-seasonal-marketing": {
+    "filePath": "lib/blog/data/oceanSpringsSeasonalMarketing.ts",
+    "lastModified": "2026-11-04T05:14:38.000Z"
+  },
+  "omnichannel-marketing": {
+    "filePath": "lib/blog/data/omnichannelMarketing.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "on-page-seo-checklist-for-service-based-websites": {
+    "filePath": "lib/blog/data/onPageSEOChecklistForServiceBasedWebsites.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "orange-beach-seo-content-ideas": {
+    "filePath": "lib/blog/data/orangeBeachSEOContentIdeas.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "outsource-seo-india-smart-choice-for-companies": {
+    "filePath": "lib/blog/data/outsourceSEOIndia.ts",
+    "lastModified": "2026-07-15T12:07:33.000Z"
+  },
+  "palm-harbor-service-business-reviews": {
+    "filePath": "lib/blog/data/palmHarborServiceBusinessReviews.ts",
+    "lastModified": "2026-11-05T09:28:03.000Z"
+  },
+  "personal-branding-for-founders-in-bangalore-guide": {
+    "filePath": "lib/blog/data/personalBrandingforFoundersinBangaloreGuide2026.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "pool-company-lead-generation-san-diego": {
+    "filePath": "lib/blog/data/poolCompanyLeadGenerationSanDiego.ts",
+    "lastModified": "2026-10-29T11:11:51.000Z"
+  },
+  "ppc-home-services-complete-guide": {
+    "filePath": "lib/blog/data/ppcForHomeServices.ts",
+    "lastModified": "2026-08-05T12:22:38.000Z"
+  },
+  "10-proven-seo-strategies-to-boost-seo-organic-traffic": {
+    "filePath": "lib/blog/data/provenSEOStrategies.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-to-use-python-for-nlp-and-semantic-seo": {
+    "filePath": "lib/blog/data/pythonNLP.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-rebranding-can-revive-a-struggling-business": {
+    "filePath": "lib/blog/data/rebrandingCanReviveAStrugglingBusiness.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "rebranding-services-in-bangalore-when-and-why-you-need": {
+    "filePath": "lib/blog/data/rebrandingServicesInBangaloreWhenAndWhyYouNeed.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "high-intent-local-keywords-rock-hill": {
+    "filePath": "lib/blog/data/rockHillHighIntentLocalKeywords.ts",
+    "lastModified": "2026-11-04T11:59:33.000Z"
+  },
+  "safe-link-building-techniques-avoid-google-penalties": {
+    "filePath": "lib/blog/data/safeLinkBuildingTechniquestoAvoidGooglePenalties.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "choose-the-best-searchgpt-seo-agency": {
+    "filePath": "lib/blog/data/searchGPTSEOAgency.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seasonal-marketing-paving-contractors": {
+    "filePath": "lib/blog/data/seasonalMarketingPavingContractors.ts",
+    "lastModified": "2026-11-02T11:16:07.000Z"
+  },
+  "semantic-content-networks-by-ben-stace": {
+    "filePath": "lib/blog/data/semanticContentNetworksByBenStace.ts",
+    "lastModified": "2026-10-22T12:22:41.000Z"
+  },
+  "semantic-seo-agency-how-to-choose-the-best-agency": {
+    "filePath": "lib/blog/data/semanticSEOAgencyHowToChooseTheBest.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-seo-audit-services-improve-seo": {
+    "filePath": "lib/blog/data/seoAuditServices.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-much-does-seo-cost-in-uk": {
+    "filePath": "lib/blog/data/seoCostUK.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-addiction-treatment-centers-complete-guide": {
+    "filePath": "lib/blog/data/seoForAddictionTreatmentCenters.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "seo-for-architects-best-strategies": {
+    "filePath": "lib/blog/data/seoForArchitectsBestStrategies.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-auto-body-shops-strategies-to-boost-local-seo": {
+    "filePath": "lib/blog/data/seoForAutoBodyShops.ts",
+    "lastModified": "2026-08-06T12:20:06.000Z"
+  },
+  "seo-for-banks-proven-tactics": {
+    "filePath": "lib/blog/data/seoForBanks.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "seo-for-beauty-industry-brands-complete-guide": {
+    "filePath": "lib/blog/data/seoForBeautyIndustryBrands.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "seo-for-dentists-local-seo-to-get-more-patients": {
+    "filePath": "lib/blog/data/seoForDentists.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-estate-planning-lawyers-complete-guide": {
+    "filePath": "lib/blog/data/seoForEstatePlanningLawyers.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-financial-services-strategies": {
+    "filePath": "lib/blog/data/seoForFinancialServices.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-home-inspectors-business-best-seo-strategies": {
+    "filePath": "lib/blog/data/seoForHomeInspectors.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "seo-for-immigration-attorneys-get-more-clients": {
+    "filePath": "lib/blog/data/seoForImmigrationAttorneys.ts",
+    "lastModified": "2026-07-15T12:07:33.000Z"
+  },
+  "seo-for-legal-firms-complete-guide": {
+    "filePath": "lib/blog/data/seoForLegalFirms.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "seo-for-msps-best-practices-and-local-seo": {
+    "filePath": "lib/blog/data/seoForMSPsBestPractices.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-physiotherapists-rank-higher": {
+    "filePath": "lib/blog/data/seoForPhysiotherapists.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "seo-for-plumbers-proven-techniques-to-rank": {
+    "filePath": "lib/blog/data/seoForPlumbers.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-for-startups-a-step-by-step-growth-strategy": {
+    "filePath": "lib/blog/data/seoForStartups.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-friendly-cms-find-the-best": {
+    "filePath": "lib/blog/data/seoFriendlyCMS.ts",
+    "lastModified": "2026-07-30T11:46:49.000Z"
+  },
+  "seo-platform-for-b2b-companies": {
+    "filePath": "lib/blog/data/seoPlatformB2B.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "seo-strategy-funnel": {
+    "filePath": "lib/blog/data/seoStrategyFunnel.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "seo-vs-google-ads-for-bangalore-businesses": {
+    "filePath": "lib/blog/data/seovsgoogleAdsFoeBengaloreBusiness2026Guide.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "7-reasons-why-your-business-should-invest-in-seo": {
+    "filePath": "lib/blog/data/sevenReasonsInvestInSEO.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "sosoactive-seo-news-digital-marketing-trends-future-lifestyle": {
+    "filePath": "lib/blog/data/sosoactiveSeoNews.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "st-joseph-local-seo-mistakes": {
+    "filePath": "lib/blog/data/stJosephLocalSEOMistakes.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "startup-branding-strategy-bangalore-entrepreneurs": {
+    "filePath": "lib/blog/data/startupBrandingStrategyforBangaloreEntrepreneurs.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "difference-between-technical-seo-and-content-seo-audits": {
+    "filePath": "lib/blog/data/technicalSEOContentSEOAudits.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "technical-seo-mistakes-that-kill-google-rankings": {
+    "filePath": "lib/blog/data/technicalSEOMistakesThatKillGoogleRankings.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "360-international-seo-service-complete-guide": {
+    "filePath": "lib/blog/data/threeSixtyInternationalSEOService.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "top-marketing-mistakes-bangalore-startups": {
+    "filePath": "lib/blog/data/topMarketingMistakesBangaloreStartups.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "how-a-travel-seo-company-helps-you-rank-higher": {
+    "filePath": "lib/blog/data/travelSEOCompany.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "ux-ui-design-explained-for-uk-business-owners": {
+    "filePath": "lib/blog/data/uxUIDesign.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "waco-customer-search-questions": {
+    "filePath": "lib/blog/data/wacoCustomerSearchQuestions.ts",
+    "lastModified": "2026-11-11T07:00:56.000Z"
+  },
+  "web-development-cost-in-bangalore-for-small-businesses": {
+    "filePath": "lib/blog/data/webDevelopmentCostInBangaloreForSmallBusinesses.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "how-to-reduce-website-cost-uk": {
+    "filePath": "lib/blog/data/websiteCostUK.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "website-redesign-cost-bangalore-smes-startups": {
+    "filePath": "lib/blog/data/websiteRedesignCostBangaloreSmesStartups.ts",
+    "lastModified": "2026-07-08T12:11:41.000Z"
+  },
+  "what-do-you-need-to-balance-when-doing-seo": {
+    "filePath": "lib/blog/data/whatDoYouNeedToBalanceWhenDoingSEO.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "what-elements-are-foundational-for-seo-with-ai": {
+    "filePath": "lib/blog/data/whatElementsFoundationalSEOWithAI.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "what-to-look-for-in-brand-strategy-agencies": {
+    "filePath": "lib/blog/data/whatToLookForInBrandStrategyAgencies.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "what-triggers-an-ai-overview-seo": {
+    "filePath": "lib/blog/data/whatTriggersAIOverviewSEO.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "which-ecommerce-platform-is-best-for-seo": {
+    "filePath": "lib/blog/data/whichEcommercePlatformIsBestForSEO.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "white-label-ppc-services-usa": {
+    "filePath": "lib/blog/data/whiteLabelPPCUSA.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "why-bangalore-businesses-need-generative-engine-optimization": {
+    "filePath": "lib/blog/data/whyBangaloreBusinessesNeedGenerativeEngineOptimization.ts",
+    "lastModified": "2026-10-22T12:22:41.000Z"
+  },
+  "why-branding-is-important-for-bangalore-businesses": {
+    "filePath": "lib/blog/data/whyBrandingIsImportantforBangaloreBusinesses.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "why-branding-is-important-before-running-ads": {
+    "filePath": "lib/blog/data/whyBrandingisImportantBeforeRunningAds.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "why-seo-for-personal-injury-lawyers-matters": {
+    "filePath": "lib/blog/data/whySEOForPersonalInjuryLawyersMatters.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "why-seo-is-important-for-businesses-in-nyc": {
+    "filePath": "lib/blog/data/whySEOImportantForBusinessesInNYC.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "why-small-businesses-need-website-india": {
+    "filePath": "lib/blog/data/whySmallBusinessesNeedaWebsiteinIndia.ts",
+    "lastModified": "2026-09-11T06:55:40.000Z"
+  },
+  "why-white-label-seo-reporting-is-important-for-agencies": {
+    "filePath": "lib/blog/data/whyWhiteLabelSEOReportingIsImportantForAgencies.ts",
+    "lastModified": "2026-09-10T12:30:28.000Z"
+  },
+  "why-you-need-a-free-seo-audit": {
+    "filePath": "lib/blog/data/whyYouNeedaFreeSEOAudit2026Guide.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "why-your-website-is-not-ranking-on-google": {
+    "filePath": "lib/blog/data/whyYourWebsiteIsNotRankingOnGoogle.ts",
+    "lastModified": "2026-04-07T05:34:56.000Z"
+  },
+  "window-door-installers-estimate-requests": {
+    "filePath": "lib/blog/data/windowDoorInstallersEstimateRequests.ts",
+    "lastModified": "2026-10-30T10:29:11.000Z"
+  },
+  "how-to-improve-wordpress-seo-for-oxfordshire-sites": {
+    "filePath": "lib/blog/data/wordPressSEOOxfordshire.ts",
+    "lastModified": "2026-08-04T11:53:35.000Z"
+  },
+  "yorba-linda-local-search-visibility": {
+    "filePath": "lib/blog/data/yorbaLindaLocalSearchVisibility.ts",
+    "lastModified": "2026-11-16T05:46:59.000Z"
+  }
 }

@@ -1,0 +1,35 @@
+/** Record a date here when the article receives a substantive update. */
+// run the script `node scripts/generate-slug-to-path.ts` to update the lastModified date automatically for the blog in slugToFilePath.json or update the date here manually.
+export const BLOG_UPDATED_DATES: Record<string, string> = {
+  "semantic-seo-agency-how-to-choose-the-best-agency": "October 20, 2026",
+  "how-wordpress-seo-services-improve-traffic": "July 17, 2026",
+  "best-branding-agency-in-bangalore-for-startups": "November 16, 2026",
+  // "best-digital-marketing-strategies-for-bangalore-businesses": "April 7, 2026",
+
+  "360-international-seo-service-complete-guide": "April 7, 2026",
+  "top-marketing-mistakes-bangalore-startups": "August 4, 2026",
+  "how-a-travel-seo-company-helps-you-rank-higher": "April 7, 2026",
+  "ux-ui-design-explained-for-uk-business-owners": "April 7, 2026",
+  "waco-customer-search-questions": "November 11, 2026",
+  "web-development-cost-in-bangalore-for-small-businesses": "April 7, 2026",
+  "how-to-reduce-website-cost-uk": "April 7, 2026",
+  "website-redesign-cost-bangalore-smes-startups": "July 8, 2026",
+  "what-do-you-need-to-balance-when-doing-seo": "April 7, 2026",
+  "what-elements-are-foundational-for-seo-with-ai": "April 7, 2026",
+  "what-to-look-for-in-brand-strategy-agencies": "September 10, 2026",
+  "what-triggers-an-ai-overview-seo": "April 7, 2026",
+  "which-ecommerce-platform-is-best-for-seo": "April 7, 2026",
+  "white-label-ppc-services-usa": "April 7, 2026",
+  "why-bangalore-businesses-need-generative-engine-optimization": "October 22, 2026",
+  "why-branding-is-important-for-bangalore-businesses": "April 7, 2026",
+  "why-branding-is-important-before-running-ads": "September 10, 2026",
+  "why-seo-for-personal-injury-lawyers-matters": "April 7, 2026",
+  "why-seo-is-important-for-businesses-in-nyc": "August 4, 2026",
+  "why-small-businesses-need-website-india": "September 11, 2026",
+  "why-white-label-seo-reporting-is-important-for-agencies": "September 10, 2026",
+  "why-you-need-a-free-seo-audit": "April 7, 2026",
+  "why-your-website-is-not-ranking-on-google": "April 7, 2026",
+  "window-door-installers-estimate-requests": "October 30, 2026",
+  "how-to-improve-wordpress-seo-for-oxfordshire-sites": "August 4, 2026",
+  "yorba-linda-local-search-visibility": "November 16, 2026"
+};

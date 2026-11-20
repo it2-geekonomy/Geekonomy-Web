@@ -9,7 +9,7 @@ const image1 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/c3f68e2d-b27
 
 const image2 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/083ef21b-26ca-434a-8421-51e80e9236cc-d2.webp";
 
-const image3 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/ae697d49-6327-4b97-be75-98a7e50d60e2-d3.webp";
+const image3 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/ac125aed-95c2-4c0d-b210-22e283c09daa-seoword.webp";
 
 const image4 = "https://pub-67a4c50822e240c78b2f040321a1da26.r2.dev/e5925b74-9e72-47b5-81fc-8975e0c9bb34-d4.webp";
 
