@@ -7,13 +7,10 @@ import {
   getDynamicSEODataFromHeaders,
 } from "@/seoData";
 import BlogsPageLoading from "@/app/blog/BlogsPageLoading";
-import { getAuthorForBlog, getBlogBylineDates, getBlogDates } from "@/lib/blog/authorMapping";
-import slugToFilePath from "@/lib/blog/slugToFilePath.json";
+import { getAuthorForBlog, getBlogDates } from "@/lib/blog/authorMapping";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getSchemaBaseUrl, orgId } from "@/lib/schema/constants";
 import { getBaseUrlFromHeaders } from "@/seoData";
-
-const blogFiles: Record<string, { lastModified: string | null } | undefined> = slugToFilePath;
 
 const BlogDetailClient = dynamic(
   () => import("@/app/blog/[slug]/BlogDetailClient"),
@@ -95,7 +92,6 @@ export default async function BlogDetailPage({
   const seoData = await getDynamicSEODataFromHeaders(seoKey);
   const authorInfo = getAuthorForBlog(slug);
   const dates = getBlogDates(slug);
-  const bylineDates = getBlogBylineDates(dates, blogFiles[slug]?.lastModified);
   const blogUrl = getBlogPostCanonicalUrl(slug);
   const schemaBase = getSchemaBaseUrl();
   const originForAssets = new URL(blogUrl).origin;
@@ -149,7 +145,7 @@ export default async function BlogDetailPage({
   return (
     <>
       <JsonLd data={articleSchema} />
-      <BlogDetailClient blogSlug={slug} dateInfo={bylineDates} />
+      <BlogDetailClient blogSlug={slug} dateInfo={dates} />
     </>
   );
 }
