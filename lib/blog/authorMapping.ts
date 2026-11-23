@@ -4,12 +4,10 @@
  */
 
 import { BLOG_AUTHOR_MAP } from "./blogAuthorMap";
-import type { AuthorName } from "./blogAuthorMap";
 import { BLOG_PUBLISHED_DATES } from "./blogPublishedDates";
 import { BLOG_UPDATED_DATES } from "./blogUpdatedDates";
 
-export { BLOG_AUTHOR_MAP, BLOG_PUBLISHED_DATES, BLOG_UPDATED_DATES };
-export type { AuthorName };
+export type AuthorName = "Rahul Dutta" | "Aaron Roshan";
 
 export interface AuthorInfo {
   name: AuthorName;
@@ -67,15 +65,14 @@ const editorialDateFormat = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
-function toBlogDate(date: Date): BlogDate | undefined {
-  if (Number.isNaN(date.getTime())) return undefined;
-  return { label: editorialDateFormat.format(date), iso: date.toISOString().slice(0, 10) };
-}
-
 function parseEditorialDate(label?: string): BlogDate | undefined {
   if (!label) return undefined;
-  const date = toBlogDate(new Date(`${label} UTC`));
-  return date?.label === label ? date : undefined;
+  const date = new Date(`${label} UTC`);
+  if (Number.isNaN(date.getTime()) || editorialDateFormat.format(date) !== label) {
+    return undefined;
+  }
+  // Editorial records have day precision. Preserve that across time zones.
+  return { label, iso: date.toISOString().slice(0, 10) };
 }
 
 export function getBlogDates(slug: string): BlogDates {
@@ -83,14 +80,6 @@ export function getBlogDates(slug: string): BlogDates {
     published: parseEditorialDate(BLOG_PUBLISHED_DATES[slug]),
     updated: parseEditorialDate(BLOG_UPDATED_DATES[slug]),
   };
-}
-
-export function getBlogBylineDates(
-  { published, updated }: BlogDates,
-  lastModified?: string | null,
-): BlogDates {
-  const updateDate = updated ?? (lastModified ? toBlogDate(new Date(lastModified)) : undefined);
-  return { published, updated: updateDate?.iso === published?.iso ? undefined : updateDate };
 }
 
 /**
