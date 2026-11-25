@@ -3,7 +3,7 @@ import { allBlogsData } from '@/lib/blog'
 import { getBlogDates } from '@/lib/blog/authorMapping'
 import { caseStudies } from '@/lib/case-studies/data'
 import landingPagesBySlug from '@/lib/landingpage/landingpageslug.json'
-import { generateLandingPageIndex } from '@/scripts/generate-landing-slugs.mjs'
+import { LANDING_UPDATED_DATES } from '@/lib/landingpage/LandingUpdatedDates'
 
 function slugify(value: string): string {
   return value
@@ -89,15 +89,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Landing pages with priority 0.8
-  const pageIndex: Record<string, { lastModified: string }> = process.env.NODE_ENV === 'development'
-    ? generateLandingPageIndex(process.cwd())
-    : landingPagesBySlug
-  const landingPages: MetadataRoute.Sitemap = Object.entries(pageIndex).map(([slug, page]) => ({
-    url: `${baseUrl}/${slug}`,
-    lastModified: page.lastModified,
-    changeFrequency: 'monthly',
-    priority: 0.8,
-  }))
+  const landingPages: MetadataRoute.Sitemap = landingPagesBySlug.map((slug) => {
+    const updatedDate = LANDING_UPDATED_DATES[slug]
+    if (!updatedDate) {
+      throw new Error(`Missing updated date for landing page /${slug}.`)
+    }
+
+    const lastModified = new Date(`${updatedDate} UTC`)
+    if (Number.isNaN(lastModified.getTime())) {
+      throw new Error(`Invalid updated date for landing page /${slug}: ${updatedDate}.`)
+    }
+
+    return {
+      url: `${baseUrl}/${slug}`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }
+  })
 
   // Case studies - using first category for canonical URL
   const caseStudyPages: MetadataRoute.Sitemap = caseStudies
