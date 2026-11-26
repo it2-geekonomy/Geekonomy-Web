@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "digital-marketing-company-jp-nagar-bangalore",
   label: "JP Nagar Digital Marketing Agency",
   headingMain: "JP Nagar Digital Marketing Company",
   headingHighlight: "For Measurable Business Growth",

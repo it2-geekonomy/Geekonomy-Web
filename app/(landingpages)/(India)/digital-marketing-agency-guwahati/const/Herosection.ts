@@ -33,6 +33,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "digital-marketing-agency-guwahati",
     label: "Guwahati Digital Marketing Company",
     headingMain: "Digital Marketing Agency in Guwahati",
     headingHighlight: "That Turns Searches Into Customers",

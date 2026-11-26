@@ -6,9 +6,11 @@ import { Typography } from "@/components/ui/Typography";
 import { Boldtext } from "./Boldtext";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
 import { HeroProps } from "@/lib/constants/Landingpagetypes";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 
 export default function Hero({ content }: Readonly<HeroProps>) {
-  const { label, headingMain, headingHighlight, paragraphs, buttonText, image, imageAlt, badges, stats, bannerText, keywords, } = content;
+  const { label, headingMain, headingHighlight, paragraphs, buttonText, image, imageAlt, badges, stats, bannerText, keywords, updatedDateSlug, } = content;
+  const updatedDate = getLandingUpdatedDate(updatedDateSlug);
 
   return (
     <section id="top" className="relative flex w-full flex-col items-center overflow-hidden bg-black">
@@ -29,9 +31,13 @@ export default function Hero({ content }: Readonly<HeroProps>) {
               </Typography>
             </div>
 
-            <div className="flex w-full flex-col items-center gap-4 lg:items-start">
+            <div className="flex w-full flex-col items-center gap-0 lg:items-start">
               <Typography variant="display-2xl" as="h1" className="text-white leading-tight">
                 {headingMain} <span className="text-[#69AE44]">{headingHighlight}</span>
+              </Typography>
+
+              <Typography as="p" variant="body-sm" className="text-white/60 pb-4">
+                Updated On: <time dateTime={updatedDate.iso}>{updatedDate.label}</time>
               </Typography>
 
               <div className="flex w-full flex-col gap-4">

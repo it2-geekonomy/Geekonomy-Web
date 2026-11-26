@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-redmond-washington",
   label: "Redmond SEO Agency",
   headingMain: "Redmond SEO Company",
   headingHighlight: "That Helps You Get More Leads",

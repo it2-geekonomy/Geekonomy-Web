@@ -33,6 +33,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-calabasas-ca",
   label: "Calabasas SEO Agency",
   headingMain: "Calabasas SEO Company",
   headingHighlight: "For Sustainable Local Business Growth",

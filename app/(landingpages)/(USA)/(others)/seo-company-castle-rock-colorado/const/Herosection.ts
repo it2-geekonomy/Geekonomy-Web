@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-castle-rock-colorado",
   label: "Castle Rock SEO Agency",
   headingMain: "Castle Rock SEO Company To Grow",
   headingHighlight: "Your Business With a Results-Driven SEO Strategy",

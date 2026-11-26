@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import Hero from "@/components/Landingpage/Hero";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 import ImageContent from "@/components/Landingpage/Imagecontent";
 import CardSection from "@/components/Landingpage/Iconcardlayout";
 import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
@@ -21,6 +22,7 @@ import { whyGeekonomyContent } from "./const/Whygeekonomy";
 import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-04T08:00:00.000Z";
+const MODIFIED_DATE = getLandingUpdatedDate(heroContent.updatedDateSlug).iso;
 
 export const metadata: Metadata = {
   title: "SEO Company Davis CA | Local SEO Services | Free Audit",
@@ -52,7 +54,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "SEO Company Davis CA | Local SEO Services | Free Audit",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
       />

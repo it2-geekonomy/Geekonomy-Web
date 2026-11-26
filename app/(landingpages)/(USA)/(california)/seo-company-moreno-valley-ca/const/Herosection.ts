@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-moreno-valley-ca",
   label: "Moreno Valley SEO Agency",
   headingMain: "Moreno Valley SEO Company",
   headingHighlight: "That Helps Businesses Grow Revenue",

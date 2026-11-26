@@ -15,13 +15,11 @@ import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import LocationList from "@/components/landingpagelocations/Locationlist";
-import { Typography } from "@/components/ui/Typography";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 
 const PUBLISHED_DATE = "2026-08-29T08:00:00.000Z";
-const PUBLISHED_DATE_LABEL = new Intl.DateTimeFormat("en-US", {
-  dateStyle: "long",
-  timeZone: "UTC",
-}).format(new Date(PUBLISHED_DATE));
+const MODIFIED_DATE =
+  getLandingUpdatedDate("digital-marketing-company-in-jaipur").iso;
 
 export const metadata: Metadata = { 
   title: "Digital Marketing Company in Jaipur | Get Free Strategy",
@@ -53,17 +51,12 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "Digital Marketing Company in Jaipur | Get Free Strategy",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
       />
 
-      <Hero /> 
-      <div className="flex justify-center px-6 pt-3">
-        <Typography as="p" variant="body-sm" className="text-white/60">
-          Published On: <time dateTime={PUBLISHED_DATE}>{PUBLISHED_DATE_LABEL}</time>
-        </Typography>
-      </div>
+      <Hero />
       <BussinessGoal/>
       <WhatWeDo/>
       <WhyJaipur/>

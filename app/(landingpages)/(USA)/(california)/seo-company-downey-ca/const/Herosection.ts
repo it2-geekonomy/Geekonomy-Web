@@ -35,6 +35,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-downey-ca",
   label: "Downey SEO Agency",
   headingMain: "Downey SEO Company",
   headingHighlight: "That Helps Local Businesses Get Found",

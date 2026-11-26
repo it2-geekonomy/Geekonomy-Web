@@ -32,6 +32,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-orange-beach-al",
   label: "Orange Beach SEO Agency",
   headingMain: "Orange Beach SEO Company",
   headingHighlight: "For Local Business Growth",

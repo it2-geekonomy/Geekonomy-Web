@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-secane-pennsylvania",
   label: "Secane SEO Agency",
   headingMain: "Secane SEO Company",
   headingHighlight: "That Helps Local Businesses Grow",

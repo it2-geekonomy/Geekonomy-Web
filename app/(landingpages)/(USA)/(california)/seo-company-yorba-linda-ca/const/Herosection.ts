@@ -35,6 +35,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-yorba-linda-ca",
   label: "Yorba Linda SEO Agency",
   headingMain: "Yorba Linda SEO Company",
   headingHighlight: "That Helps Local Businesses Grow",

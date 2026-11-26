@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import Hero from "@/components/Landingpage/Hero";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 import CTA from "@/components/Landingpage/CTA";
 import CTAButton from "@/components/Landingpage/CTAbutton";
 import CardSection from "@/components/Landingpage/Iconcardlayout";
@@ -24,6 +25,7 @@ import ServingNearby from "@/components/Landingpage/NearbyArea";
 import { Nearby } from "./const/Nearby";
 
 const PUBLISHED_DATE = "2026-10-22T08:00:00.000Z";
+const MODIFIED_DATE = getLandingUpdatedDate(heroContent.updatedDateSlug).iso;
 
 export const metadata: Metadata = {
   title: "Camarillo SEO Company CA | Local SEO | Get Free Audit",
@@ -55,10 +57,10 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "Camarillo SEO Company CA | Local SEO | Get Free Audit",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
-        />
+      />
 
       <Hero content={heroContent} />
       <CardSection content={SeoServices} />

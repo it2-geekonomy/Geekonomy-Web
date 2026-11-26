@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "branding-company-in-bangalore",
   label: "Bangalore Branding Agency",
   headingMain: "Bangalore Branding Company",
   headingHighlight: "That Builds Brands People Remember",

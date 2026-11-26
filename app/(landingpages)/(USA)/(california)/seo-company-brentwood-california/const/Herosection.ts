@@ -36,6 +36,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-brentwood-california",
   label: "Brentwood SEO Agency",
   headingMain: "Brentwood SEO Company",
   headingHighlight: "That Helps Local Businesses Get Found",
