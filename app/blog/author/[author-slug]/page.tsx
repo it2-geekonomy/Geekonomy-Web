@@ -72,7 +72,7 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  const authors: AuthorName[] = ["Rahul Dutta", "Aaron Roshan"];
+  const authors: AuthorName[] = ["Rahul Dutta", "Aaron Roshan", "Aniljith"];
   return authors.map((author) => ({
     "author-slug": author.toLowerCase().replace(/\s+/g, "-"),
   }));

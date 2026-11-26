@@ -7,7 +7,7 @@ import { BLOG_AUTHOR_MAP } from "./blogAuthorMap";
 import { BLOG_PUBLISHED_DATES } from "./blogPublishedDates";
 import { BLOG_UPDATED_DATES } from "./blogUpdatedDates";
 
-export type AuthorName = "Rahul Dutta" | "Aaron Roshan";
+export type AuthorName = "Rahul Dutta" | "Aaron Roshan" | "Aniljith";
 
 export interface AuthorInfo {
   name: AuthorName;
@@ -39,6 +39,16 @@ export const AUTHOR_INFO: Record<AuthorName, AuthorInfo> = {
     metaDescription:
       "Aaron Roshan is a content writer at Geekonomy who creates clear, research-driven articles on branding, digital marketing, web development, and growth.",
     biography: "A Content Writer At Geekonomy Who Focuses On Creating Clear, Practical, And Research-Driven Articles About Branding, Digital Marketing, Web Development, And Business Growth. His Work Helps Startups And Businesses Understand Complex Digital Concepts In Simple Terms And Apply Them To Improve Their Online Presence. Aaron Regularly Contributes To Geekonomy's Blog With Guides, Industry Insights, And Actionable Strategies For Modern Businesses.",
+  },
+  Aniljith: {
+    name: "Aniljith",
+    role: "SEO JUNIOR EXECUTIVE",
+    image: "/author/Aniljith author.webp",
+    mainImage: "/author/Aniljith author.webp",
+    metaDescription:
+      "Aniljith is an SEO Junior Executive at Geekonomy specializing in keyword research, on-page SEO, off-page SEO, and content optimization to improve online visibility and organic growth.",
+    biography:
+      "An SEO enthusiast with 6 months of practical experience in search engine optimization, keyword research, on-page SEO, off-page SEO, and content optimization. Passionate about improving website rankings, increasing organic traffic, and staying updated with the latest SEO trends.<br/><br/>At Geekonomy, he contributes to SEO campaigns and creates search-focused content while exploring the latest digital marketing trends, search engine updates, and strategies that help businesses strengthen their online presence and achieve sustainable growth.",
   },
 };
 

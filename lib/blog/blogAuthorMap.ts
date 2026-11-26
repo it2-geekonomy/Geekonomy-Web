@@ -1,6 +1,6 @@
 /** Blog author assignments keyed by blog slug. */
 
-export type AuthorName = "Rahul Dutta" | "Aaron Roshan";
+export type AuthorName = "Rahul Dutta" | "Aaron Roshan" | "Aniljith";
 
 /**
  * Mapping of blog slugs to authors
@@ -125,35 +125,39 @@ export const BLOG_AUTHOR_MAP: Record<string, AuthorName> = {
   "why-your-website-is-not-ranking-on-google": "Rahul Dutta",
   "on-page-seo-checklist-for-service-based-websites": "Rahul Dutta",
   "technical-seo-mistakes-that-kill-google-rankings": "Rahul Dutta",
-  "pool-company-lead-generation-san-diego": "Rahul Dutta",
-  "carlsbad-local-seo-checklist": "Rahul Dutta",
-  "charlotte-ppc-lower-google-ads-costs": "Rahul Dutta",
-  "b2b-lead-generation-logistics-freight-companies": "Rahul Dutta",
-  "digital-marketing-plan-jaipur-small-businesses": "Rahul Dutta",
-  "window-door-installers-estimate-requests": "Rahul Dutta",
-  "seasonal-marketing-paving-contractors": "Rahul Dutta",
-  "local-search-ghaziabad-businesses": "Rahul Dutta",
-  "digital-marketing-ideas-madurai-businesses": "Rahul Dutta",
-  "guwahati-digital-marketing-strategy": "Rahul Dutta",
-  "bangalore-startup-branding-guide": "Rahul Dutta",
-  "ocean-springs-seasonal-marketing": "Rahul Dutta",
-  "carmel-google-business-profile-visibility": "Rahul Dutta",
-  "davis-ca-content-marketing-ideas": "Rahul Dutta",
-  "high-intent-local-keywords-rock-hill": "Rahul Dutta",
-  "local-seo-tips-fort-walton-beach": "Rahul Dutta",
-  "palm-harbor-service-business-reviews": "Rahul Dutta",
-  "build-location-pages-murrieta": "Rahul Dutta",
-  "frederick-local-keyword-research": "Rahul Dutta",
-  "coral-springs-local-search-conversion": "Rahul Dutta",
-  "waco-customer-search-questions": "Rahul Dutta",
-  "league-city-google-maps-visibility": "Rahul Dutta",
-  "orange-beach-seo-content-ideas": "Rahul Dutta",
-  "columbia-missouri-local-content": "Rahul Dutta",
-  "st-joseph-local-seo-mistakes": "Rahul Dutta",
-  "yorba-linda-local-search-visibility": "Rahul Dutta",
-  "chapel-hill-content-strategy": "Rahul Dutta",
   "website-redesign-cost-bangalore-smes-startups": "Rahul Dutta",
 
+
+  
+
+// Aniljith blogs (SEO-related)
+  "pool-company-lead-generation-san-diego": "Aniljith",
+  "carlsbad-local-seo-checklist": "Aniljith",
+  "charlotte-ppc-lower-google-ads-costs": "Aniljith",
+  "b2b-lead-generation-logistics-freight-companies": "Aniljith",
+  "digital-marketing-plan-jaipur-small-businesses": "Aniljith",
+  "window-door-installers-estimate-requests": "Aniljith",
+  "seasonal-marketing-paving-contractors": "Aniljith",
+  "local-search-ghaziabad-businesses": "Aniljith",
+  "digital-marketing-ideas-madurai-businesses": "Aniljith",
+  "guwahati-digital-marketing-strategy": "Aniljith",
+  "bangalore-startup-branding-guide": "Aniljith",
+  "ocean-springs-seasonal-marketing": "Aniljith",
+  "carmel-google-business-profile-visibility": "Aniljith",
+  "davis-ca-content-marketing-ideas": "Aniljith",
+  "high-intent-local-keywords-rock-hill": "Aniljith",
+  "local-seo-tips-fort-walton-beach": "Aniljith",
+  "palm-harbor-service-business-reviews": "Aniljith",
+  "build-location-pages-murrieta": "Aniljith",
+  "frederick-local-keyword-research": "Aniljith",
+  "coral-springs-local-search-conversion": "Aniljith",
+  "waco-customer-search-questions": "Aniljith",
+  "league-city-google-maps-visibility": "Aniljith",
+  "orange-beach-seo-content-ideas": "Aniljith",
+  "columbia-missouri-local-content": "Aniljith",
+  "st-joseph-local-seo-mistakes": "Aniljith",
+  "yorba-linda-local-search-visibility": "Aniljith",
+  "chapel-hill-content-strategy": "Aniljith",
 
 
 
