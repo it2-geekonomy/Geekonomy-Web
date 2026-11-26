@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-gettysburg-pennsylvania",
   label: "Gettysburg SEO Agency",
   headingMain: "Gettysburg SEO Company",
   headingHighlight: "That Helps Local Businesses Grow Online",

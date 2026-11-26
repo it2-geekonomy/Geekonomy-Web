@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-hampton-roads-virginia",
   label: "Hampton Roads SEO Agency",
   headingMain: "Hampton Roads SEO Company",
   headingHighlight: "Helping Businesses Grow Online",

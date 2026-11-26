@@ -2,6 +2,9 @@ import { ArrowRight } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { badges, HeroKeywords, stats } from "../const/Herosection";
 import { handleScrollToContact } from "@/components/Scrolltosection/Scrolltocontact";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
+
+const UPDATED_DATE = getLandingUpdatedDate("digital-marketing-company-in-jaipur");
 
 export default function Hero() {
     return (
@@ -22,6 +25,9 @@ export default function Hero() {
                         <Typography variant="display-2xl" as="h1" className="text-white  leading-tight">
                             Digital Marketing Company in Jaipur{" "}
                             <span className="text-[#69AE44]">That Drives Real Business Growth</span>
+                        </Typography>
+                        <Typography as="p" variant="body-sm" className="pt-0 text-white/60 sm:px-6 lg:px-0  sm:text-left">
+                            Updated On: <time dateTime={UPDATED_DATE.iso}>{UPDATED_DATE.label}</time>
                         </Typography>
                         <Typography variant="body-xl" className="mt-4 leading-relaxed text-white/90 px-6 lg:px-0 lg:max-w-xl text-left">
                             Grow your business with a strategic digital marketing plan that centers on what you want rather than a jumble of random marketing modules. Geekonomy offers a comprehensive approach that ties together SEO and paid advertising with content, social media, conversion optimization, branding, and technology to give your business visibility, drive targeted customers, and convert your digital channels into tangible results.

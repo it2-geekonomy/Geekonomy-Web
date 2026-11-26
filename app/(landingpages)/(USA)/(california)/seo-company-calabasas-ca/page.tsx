@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import Hero from "@/components/Landingpage/Hero";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 import CardSection from "@/components/Landingpage/Iconcardlayout";
 import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
 import StepSection from "@/components/Landingpage/Stepcardlayout";
@@ -22,6 +23,7 @@ import { seoMetricsContent } from "./const/Seometrics";
 import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-29T08:00:00.000Z";
+const MODIFIED_DATE = getLandingUpdatedDate(heroContent.updatedDateSlug).iso;
 
 export const metadata: Metadata = {
   title: "SEO Company Calabasas CA | Local SEO | Get Free Audit",
@@ -53,7 +55,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "SEO Company Calabasas CA | Local SEO | Get Free Audit",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
       />

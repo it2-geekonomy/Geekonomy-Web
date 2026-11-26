@@ -35,6 +35,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-auburn-alabama",
   label: "Auburn SEO Agency",
   headingMain: "Auburn SEO Company",
   headingHighlight: "Helping Local Businesses Get More Customers",

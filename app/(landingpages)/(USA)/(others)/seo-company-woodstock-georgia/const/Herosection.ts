@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-woodstock-georgia",
   label: "Woodstock SEO Agency",
   headingMain: "Woodstock SEO Company",
   headingHighlight: "Helping Local Businesses Grow",

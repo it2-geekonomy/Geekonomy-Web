@@ -33,6 +33,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-davis-ca",
   label: "Davis SEO Agency",
   headingMain: "Davis SEO Company",
   headingHighlight: "That Helps Businesses Grow Online",

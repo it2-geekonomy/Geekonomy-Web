@@ -35,6 +35,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-murrieta-ca",
   label: "Murrieta SEO Agency",
   headingMain: "Murrieta SEO Company",
   headingHighlight: "That Turns Search Visibility Into Growth",

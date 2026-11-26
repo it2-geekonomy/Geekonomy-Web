@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import Hero from "@/components/Landingpage/Hero";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 import ImageContent from "@/components/Landingpage/Imagecontent";
 import ImageCardSection from "@/components/Landingpage/Imagecardlayout";
 import CardSection from "@/components/Landingpage/Iconcardlayout";
@@ -24,6 +25,7 @@ import { ourApproachContent } from "./const/Ourapproach";
 import { faqContent } from "./const/FAQ";
 
 const PUBLISHED_DATE = "2026-09-01T08:00:00.000Z";
+const MODIFIED_DATE = getLandingUpdatedDate(heroContent.updatedDateSlug).iso;
 
 export const metadata: Metadata = {
   title: "Digital Marketing Company in Ghaziabad | Get Free Plan",
@@ -55,7 +57,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "Digital Marketing Company in Ghaziabad | Get Free Plan",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
       />

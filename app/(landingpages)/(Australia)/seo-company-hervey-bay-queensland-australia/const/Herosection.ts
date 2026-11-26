@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-hervey-bay-queensland-australia",
   label: "Hervey Bay SEO Agency",
   headingMain: "Hervey Bay SEO Company",
   headingHighlight: "Helping Businesses Grow Online",

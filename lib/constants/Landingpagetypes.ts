@@ -26,6 +26,7 @@ export interface HeroContent {
   stats: HeroStat[];
   bannerText: string;
   keywords: string[];
+  updatedDateSlug: string;
 }
 
 export interface HeroProps {

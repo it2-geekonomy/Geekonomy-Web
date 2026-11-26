@@ -34,6 +34,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "seo-company-in-jp-nagar-bangalore",
   label: "JP Nagar SEO Agency",
   headingMain: "JP Nagar SEO Company",
   headingHighlight: "For Sustainable Online Growth for Local Businesses",

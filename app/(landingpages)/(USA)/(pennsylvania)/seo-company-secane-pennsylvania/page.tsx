@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import Hero from "@/components/Landingpage/Hero";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 import CTA from "@/components/Landingpage/CTA";
 import CTAButton from "@/components/Landingpage/CTAbutton";
 import CardSection from "@/components/Landingpage/Iconcardlayout";
@@ -20,6 +21,7 @@ import { ourProcessContent } from "./const/Ourprocess";
 import { LocalSeo } from "./const/LocalSeo";
 
 const PUBLISHED_DATE = "2026-10-26T08:00:00.000Z";
+const MODIFIED_DATE = getLandingUpdatedDate(heroContent.updatedDateSlug).iso;
 
 export const metadata: Metadata = {
   title: "SEO Company in Secane PA | Local SEO | Get Free Audit",
@@ -51,10 +53,10 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "SEO Company in Secane PA | Local SEO | Get Free Audit",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
-        />
+      />
 
       <Hero content={heroContent} />
       <ImageCardSection content={LocalSeo} /> 

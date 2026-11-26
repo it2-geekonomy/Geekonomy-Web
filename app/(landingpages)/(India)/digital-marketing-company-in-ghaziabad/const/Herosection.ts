@@ -34,6 +34,7 @@ export const HeroKeywords =[
 ];
 
 export const heroContent = {
+  updatedDateSlug: "digital-marketing-company-in-ghaziabad",
   label: "Ghaziabad Digital Marketing Agency",
   headingMain: "Digital Marketing Company in Ghaziabad",
   headingHighlight: "That Drives Real Business Growth",

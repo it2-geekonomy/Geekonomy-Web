@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-camarillo-ca",
   label: "Camarillo SEO Agency",
   headingMain: "Camarillo SEO Company",
   headingHighlight: "That Helps Local Businesses Grow",

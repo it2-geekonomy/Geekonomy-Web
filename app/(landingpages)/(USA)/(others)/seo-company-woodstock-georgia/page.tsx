@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import Hero from "@/components/Landingpage/Hero";
+import { getLandingUpdatedDate } from "@/lib/landingpage/LandingUpdatedDates";
 import CTA from "@/components/Landingpage/CTA";
 import CardSection from "@/components/Landingpage/Iconcardlayout";
 import FAQ from "@/components/Landingpage/FAQ";
@@ -17,6 +18,7 @@ import { SeoMatters } from "./const/Seomatters";
 import { GrowBusiness } from "./const/Growbusiness";
 
 const PUBLISHED_DATE = "2026-10-27T08:00:00.000Z";
+const MODIFIED_DATE = getLandingUpdatedDate(heroContent.updatedDateSlug).iso;
 
 export const metadata: Metadata = {
   title: "SEO Company in Woodstock, GA | Local SEO | Free Audit",
@@ -48,10 +50,10 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             headline: "SEO Company in Woodstock, GA | Local SEO | Free Audit",
-            datePublished: PUBLISHED_DATE,
+            dateModified: MODIFIED_DATE,
           }),
         }}
-        />
+      />
 
       <Hero content={heroContent} />
       <ImageCardSection content={GrowBusiness} /> 

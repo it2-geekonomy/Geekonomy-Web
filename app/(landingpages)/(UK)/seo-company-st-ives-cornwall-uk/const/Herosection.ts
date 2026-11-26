@@ -2,6 +2,7 @@ import { Search, TrendingUp } from "lucide-react";
 import type { HeroContent } from "@/lib/constants/Landingpagetypes";
 
 export const heroContent: HeroContent = {
+  updatedDateSlug: "seo-company-st-ives-cornwall-uk",
   label: "St Ives SEO Agency",
   headingMain: "St Ives SEO Company",
   headingHighlight: "That Helps Your Business Get Found and Grow",
