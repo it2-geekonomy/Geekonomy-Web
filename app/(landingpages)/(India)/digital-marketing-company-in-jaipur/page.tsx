@@ -15,10 +15,15 @@ import FAQ from "./components/FAQ";
 import LandingPageForm from "@/components/forms/LandingPageForm";
 import { LandingPageMap } from "@/components/Landingpage/Landingpagemap";
 import LocationList from "@/components/landingpagelocations/Locationlist";
+import { Typography } from "@/components/ui/Typography";
 
 const PUBLISHED_DATE = "2026-08-29T08:00:00.000Z";
+const PUBLISHED_DATE_LABEL = new Intl.DateTimeFormat("en-US", {
+  dateStyle: "long",
+  timeZone: "UTC",
+}).format(new Date(PUBLISHED_DATE));
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { 
   title: "Digital Marketing Company in Jaipur | Get Free Strategy",
   description:
     "Grow your business with a leading Digital Marketing Company in Jaipur. Get a custom strategy using SEO, PPC, social media, and content marketing.",
@@ -54,6 +59,11 @@ export default function Home() {
       />
 
       <Hero /> 
+      <div className="flex justify-center px-6 pt-3">
+        <Typography as="p" variant="body-sm" className="text-white/60">
+          Published On: <time dateTime={PUBLISHED_DATE}>{PUBLISHED_DATE_LABEL}</time>
+        </Typography>
+      </div>
       <BussinessGoal/>
       <WhatWeDo/>
       <WhyJaipur/>

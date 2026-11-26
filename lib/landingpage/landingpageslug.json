@@ -1,286 +1,73 @@
-{
-  "branding-company-in-bangalore": {
-    "directory": "app/(landingpages)/(India)/branding-company-in-bangalore",
-    "lastModified": "2026-11-05T07:08:00.000Z"
-  },
-  "carlsbad-seo-company": {
-    "directory": "app/(landingpages)/(USA)/(others)/carlsbad-seo-company",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "charlotte-ppc-agency": {
-    "directory": "app/(landingpages)/(USA)/(others)/charlotte-ppc-agency",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "digital-marketing-agency-guwahati": {
-    "directory": "app/(landingpages)/(India)/digital-marketing-agency-guwahati",
-    "lastModified": "2026-11-05T07:05:41.000Z"
-  },
-  "digital-marketing-agency-ocean-springs-ms": {
-    "directory": "app/(landingpages)/(USA)/(others)/digital-marketing-agency-ocean-springs-ms",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "digital-marketing-company-in-ghaziabad": {
-    "directory": "app/(landingpages)/(India)/digital-marketing-company-in-ghaziabad",
-    "lastModified": "2026-11-05T07:02:14.000Z"
-  },
-  "digital-marketing-company-in-jaipur": {
-    "directory": "app/(landingpages)/(India)/digital-marketing-company-in-jaipur",
-    "lastModified": "2026-10-26T04:59:26.000Z"
-  },
-  "digital-marketing-company-in-madurai": {
-    "directory": "app/(landingpages)/(India)/digital-marketing-company-in-madurai",
-    "lastModified": "2026-10-26T04:59:26.000Z"
-  },
-  "digital-marketing-company-jp-nagar-bangalore": {
-    "directory": "app/(landingpages)/(India)/digital-marketing-company-jp-nagar-bangalore",
-    "lastModified": "2026-10-14T05:19:16.000Z"
-  },
-  "digital-marketing-for-logistics-companies": {
-    "directory": "app/(landingpages)/(USA)/(others)/digital-marketing-for-logistics-companies",
-    "lastModified": "2026-10-27T12:24:21.000Z"
-  },
-  "digital-marketing-for-paving-companies": {
-    "directory": "app/(landingpages)/(USA)/(others)/digital-marketing-for-paving-companies",
-    "lastModified": "2026-10-27T12:24:21.000Z"
-  },
-  "digital-marketing-for-pool-companies-san-diego": {
-    "directory": "app/(landingpages)/(USA)/(others)/digital-marketing-for-pool-companies-san-diego",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "digital-marketing-for-window-and-door-companies": {
-    "directory": "app/(landingpages)/(USA)/(others)/digital-marketing-for-window-and-door-companies",
-    "lastModified": "2026-10-27T12:24:21.000Z"
-  },
-  "seo-company-atascocita-texas": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-atascocita-texas",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-auburn-alabama": {
-    "directory": "app/(landingpages)/(USA)/(alabama)/seo-company-auburn-alabama",
-    "lastModified": "2026-11-06T06:33:18.000Z"
-  },
-  "seo-company-bee-cave-texas": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-bee-cave-texas",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-bexley-ohio": {
-    "directory": "app/(landingpages)/(USA)/(ohio)/seo-company-bexley-ohio",
-    "lastModified": "2026-10-28T11:34:05.000Z"
-  },
-  "seo-company-boynton-beach-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-boynton-beach-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-brentwood-california": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-brentwood-california",
-    "lastModified": "2026-11-06T06:37:03.000Z"
-  },
-  "seo-company-calabasas-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-calabasas-ca",
-    "lastModified": "2026-11-06T06:38:20.000Z"
-  },
-  "seo-company-camarillo-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-camarillo-ca",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-carmel-indiana": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-carmel-indiana",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-casselberry-florida": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-casselberry-florida",
-    "lastModified": "2026-10-22T05:51:03.000Z"
-  },
-  "seo-company-castle-rock-colorado": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-castle-rock-colorado",
-    "lastModified": "2026-10-27T08:39:47.000Z"
-  },
-  "seo-company-chapel-hill-nc": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-chapel-hill-nc",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-chesterfield-uk": {
-    "directory": "app/(landingpages)/(UK)/seo-company-chesterfield-uk",
-    "lastModified": "2026-10-28T11:27:26.000Z"
-  },
-  "seo-company-columbia-mo": {
-    "directory": "app/(landingpages)/(USA)/(missouri)/seo-company-columbia-mo",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-davis-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-davis-ca",
-    "lastModified": "2026-11-06T06:39:21.000Z"
-  },
-  "seo-company-downey-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-downey-ca",
-    "lastModified": "2026-11-06T06:40:21.000Z"
-  },
-  "seo-company-downingtown-pennsylvania": {
-    "directory": "app/(landingpages)/(USA)/(pennsylvania)/seo-company-downingtown-pennsylvania",
-    "lastModified": "2026-10-27T10:21:10.000Z"
-  },
-  "seo-company-el-granada-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-el-granada-ca",
-    "lastModified": "2026-10-27T12:21:43.000Z"
-  },
-  "seo-company-enfield-connecticut": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-enfield-connecticut",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-fort-walton-beach-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-fort-walton-beach-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-frederick-maryland": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-frederick-maryland",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-fresno-texas": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-fresno-texas",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-georgetown-texas": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-georgetown-texas",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-gettysburg-pennsylvania": {
-    "directory": "app/(landingpages)/(USA)/(pennsylvania)/seo-company-gettysburg-pennsylvania",
-    "lastModified": "2026-10-26T12:04:35.000Z"
-  },
-  "seo-company-hampton-roads-virginia": {
-    "directory": "app/(landingpages)/(USA)/(virginia)/seo-company-hampton-roads-virginia",
-    "lastModified": "2026-10-28T08:34:47.000Z"
-  },
-  "seo-company-henderson-nv": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-henderson-nv",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-hervey-bay-queensland-australia": {
-    "directory": "app/(landingpages)/(Australia)/seo-company-hervey-bay-queensland-australia",
-    "lastModified": "2026-10-27T12:17:08.000Z"
-  },
-  "seo-company-in-andover-minnesota": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-in-andover-minnesota",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-in-apopka-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-in-apopka-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-in-coral-springs-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-in-coral-springs-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-in-fredericksburg-virginia": {
-    "directory": "app/(landingpages)/(USA)/(virginia)/seo-company-in-fredericksburg-virginia",
-    "lastModified": "2026-10-28T08:35:45.000Z"
-  },
-  "seo-company-in-jp-nagar-bangalore": {
-    "directory": "app/(landingpages)/(India)/seo-company-in-jp-nagar-bangalore",
-    "lastModified": "2026-11-05T07:08:59.000Z"
-  },
-  "seo-company-in-pompano-beach-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-in-pompano-beach-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-kyle-texas": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-kyle-texas",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-lakewood-ranch-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-lakewood-ranch-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-league-city-tx": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-league-city-tx",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-lichfield-uk": {
-    "directory": "app/(landingpages)/(UK)/seo-company-lichfield-uk",
-    "lastModified": "2026-10-28T07:27:49.000Z"
-  },
-  "seo-company-lynchburg-virginia": {
-    "directory": "app/(landingpages)/(USA)/(virginia)/seo-company-lynchburg-virginia",
-    "lastModified": "2026-10-28T08:35:45.000Z"
-  },
-  "seo-company-mentor-oh": {
-    "directory": "app/(landingpages)/(USA)/(ohio)/seo-company-mentor-oh",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-miramar-florida": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-miramar-florida",
-    "lastModified": "2026-10-14T06:45:36.000Z"
-  },
-  "seo-company-moreno-valley-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-moreno-valley-ca",
-    "lastModified": "2026-10-23T10:48:25.000Z"
-  },
-  "seo-company-murrieta-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-murrieta-ca",
-    "lastModified": "2026-11-06T07:18:48.000Z"
-  },
-  "seo-company-orange-beach-al": {
-    "directory": "app/(landingpages)/(USA)/(alabama)/seo-company-orange-beach-al",
-    "lastModified": "2026-11-06T06:34:58.000Z"
-  },
-  "seo-company-palm-harbor-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-palm-harbor-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-pooler-georgia": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-pooler-georgia",
-    "lastModified": "2026-10-28T11:51:21.000Z"
-  },
-  "seo-company-redmond-washington": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-redmond-washington",
-    "lastModified": "2026-10-26T07:04:57.000Z"
-  },
-  "seo-company-rock-hill-sc": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-rock-hill-sc",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-rocky-river-ohio": {
-    "directory": "app/(landingpages)/(USA)/(ohio)/seo-company-rocky-river-ohio",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-secane-pennsylvania": {
-    "directory": "app/(landingpages)/(USA)/(pennsylvania)/seo-company-secane-pennsylvania",
-    "lastModified": "2026-10-26T12:03:14.000Z"
-  },
-  "seo-company-st-ives-cornwall-uk": {
-    "directory": "app/(landingpages)/(UK)/seo-company-st-ives-cornwall-uk",
-    "lastModified": "2026-11-05T07:10:22.000Z"
-  },
-  "seo-company-st-joseph-mo": {
-    "directory": "app/(landingpages)/(USA)/(missouri)/seo-company-st-joseph-mo",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-stuart-florida": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-stuart-florida",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-tomball-texas": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-tomball-texas",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-waco-tx": {
-    "directory": "app/(landingpages)/(USA)/(texas)/seo-company-waco-tx",
-    "lastModified": "2026-10-22T12:22:41.000Z"
-  },
-  "seo-company-winchester-virginia": {
-    "directory": "app/(landingpages)/(USA)/(virginia)/seo-company-winchester-virginia",
-    "lastModified": "2026-10-28T08:35:45.000Z"
-  },
-  "seo-company-winter-springs-fl": {
-    "directory": "app/(landingpages)/(USA)/(florida)/seo-company-winter-springs-fl",
-    "lastModified": "2026-10-14T07:17:20.000Z"
-  },
-  "seo-company-woodstock-georgia": {
-    "directory": "app/(landingpages)/(USA)/(others)/seo-company-woodstock-georgia",
-    "lastModified": "2026-10-27T08:42:12.000Z"
-  },
-  "seo-company-yorba-linda-ca": {
-    "directory": "app/(landingpages)/(USA)/(california)/seo-company-yorba-linda-ca",
-    "lastModified": "2026-11-06T07:19:45.000Z"
-  }
-}
+[
+  "branding-company-in-bangalore",
+  "carlsbad-seo-company",
+  "charlotte-ppc-agency",
+  "digital-marketing-agency-guwahati",
+  "digital-marketing-agency-ocean-springs-ms",
+  "digital-marketing-company-in-ghaziabad",
+  "digital-marketing-company-in-jaipur",
+  "digital-marketing-company-in-madurai",
+  "digital-marketing-company-jp-nagar-bangalore",
+  "digital-marketing-for-logistics-companies",
+  "digital-marketing-for-paving-companies",
+  "digital-marketing-for-pool-companies-san-diego",
+  "digital-marketing-for-window-and-door-companies",
+  "seo-company-atascocita-texas",
+  "seo-company-auburn-alabama",
+  "seo-company-bee-cave-texas",
+  "seo-company-bexley-ohio",
+  "seo-company-boynton-beach-fl",
+  "seo-company-brentwood-california",
+  "seo-company-calabasas-ca",
+  "seo-company-camarillo-ca",
+  "seo-company-carmel-indiana",
+  "seo-company-casselberry-florida",
+  "seo-company-castle-rock-colorado",
+  "seo-company-chapel-hill-nc",
+  "seo-company-chesterfield-uk",
+  "seo-company-columbia-mo",
+  "seo-company-davis-ca",
+  "seo-company-downey-ca",
+  "seo-company-downingtown-pennsylvania",
+  "seo-company-el-granada-ca",
+  "seo-company-enfield-connecticut",
+  "seo-company-fort-walton-beach-fl",
+  "seo-company-frederick-maryland",
+  "seo-company-fresno-texas",
+  "seo-company-georgetown-texas",
+  "seo-company-gettysburg-pennsylvania",
+  "seo-company-hampton-roads-virginia",
+  "seo-company-henderson-nv",
+  "seo-company-hervey-bay-queensland-australia",
+  "seo-company-in-andover-minnesota",
+  "seo-company-in-apopka-fl",
+  "seo-company-in-coral-springs-fl",
+  "seo-company-in-fredericksburg-virginia",
+  "seo-company-in-jp-nagar-bangalore",
+  "seo-company-in-pompano-beach-fl",
+  "seo-company-kyle-texas",
+  "seo-company-lakewood-ranch-fl",
+  "seo-company-league-city-tx",
+  "seo-company-lichfield-uk",
+  "seo-company-lynchburg-virginia",
+  "seo-company-mentor-oh",
+  "seo-company-miramar-florida",
+  "seo-company-moreno-valley-ca",
+  "seo-company-murrieta-ca",
+  "seo-company-orange-beach-al",
+  "seo-company-palm-harbor-fl",
+  "seo-company-pooler-georgia",
+  "seo-company-redmond-washington",
+  "seo-company-rock-hill-sc",
+  "seo-company-rocky-river-ohio",
+  "seo-company-secane-pennsylvania",
+  "seo-company-st-ives-cornwall-uk",
+  "seo-company-st-joseph-mo",
+  "seo-company-stuart-florida",
+  "seo-company-tomball-texas",
+  "seo-company-waco-tx",
+  "seo-company-winchester-virginia",
+  "seo-company-winter-springs-fl",
+  "seo-company-woodstock-georgia",
+  "seo-company-yorba-linda-ca"
+]
